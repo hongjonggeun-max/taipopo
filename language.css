@@ -1,0 +1,5 @@
+.language-link{font-size:13px;white-space:nowrap;padding:10px 6px;min-height:44px;display:inline-flex;align-items:center;color:var(--teal)}
+.storage-note{font-size:13px;line-height:1.8;color:var(--muted);margin-top:14px;max-width:460px}
+html[lang=en] body{word-break:normal;overflow-wrap:break-word}
+html[lang=en] .phone{overflow-wrap:anywhere}
+@media(max-width:780px){.header{height:auto;min-height:84px;flex-wrap:wrap;padding-block:16px;gap:8px 12px}.header .brand{margin-right:auto}.header nav{order:2;width:100%;justify-content:center;margin:0;gap:16px;flex-wrap:wrap}.header nav a:first-child,.header nav a:last-child{display:inline}.header .theme-button{margin:0}.storage-note{margin-inline:auto}}

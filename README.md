@@ -1,6 +1,10 @@
 # TAIPOPO website
 
-Static, dependency-free Korean introduction and support site for GitHub Pages.
+Static, dependency-free Korean/English introduction and support site for GitHub Pages.
+
+- English pages: `en/`. Edit `tools/english-text.json`, then run `node tools/build-english.cjs` after updating Korean pages or exporting the manual. The generator preserves shared layouts and produces static English HTML with no runtime translation service. Language selection uses URLs, not extra browser storage.
+- `language.css` adds a responsive language link and header wrapping without changing the Glass design.
+- Run `tools/check-english.cjs` with Playwright alongside the existing website/manual checks.
 
 - Home: `index.html`
 - Detailed manual: `guide/` (13 topics, 16 languages, search and expandable contents).
