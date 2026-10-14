@@ -1,5 +1,12 @@
 .language-link{font-size:13px;white-space:nowrap;padding:10px 6px;min-height:44px;display:inline-flex;align-items:center;color:var(--teal)}
+.language-picker{position:relative;z-index:10;flex-shrink:0;margin-left:12px;color:var(--ink)}
+.language-picker summary{display:flex;align-items:center;gap:7px;min-height:44px;padding:0 12px;border:1px solid var(--border);border-radius:14px;background:var(--card);box-shadow:var(--small-shadow);cursor:pointer;list-style:none;font-size:12px;white-space:nowrap}
+.language-picker summary::-webkit-details-marker{display:none}
+.language-picker summary svg{width:19px;height:19px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.language-options{position:absolute;inset-block-start:calc(100% + 8px);inset-inline-end:0;display:grid;grid-template-columns:1fr 1fr;gap:2px;min-width:245px;max-height:min(65vh,420px);overflow:auto;padding:8px;border:1px solid var(--border);border-radius:14px;background:var(--surface);box-shadow:var(--shadow)}
+.language-options a{padding:7px 9px;border-radius:8px;font-size:12px;white-space:nowrap}
+.language-options a:hover,.language-options a[aria-current=true]{background:var(--surface-soft);color:var(--teal)}
 .storage-note{font-size:13px;line-height:1.8;color:var(--muted);margin-top:14px;max-width:460px}
 html[lang=en] body{word-break:normal;overflow-wrap:break-word}
 html[lang=en] .phone{overflow-wrap:anywhere}
-@media(max-width:780px){.header{height:auto;min-height:84px;flex-wrap:wrap;padding-block:16px;gap:8px 12px}.header .brand{margin-right:auto}.header nav{order:2;width:100%;justify-content:center;margin:0;gap:16px;flex-wrap:wrap}.header nav a:first-child,.header nav a:last-child{display:inline}.header .theme-button{margin:0}.storage-note{margin-inline:auto}}
+@media(max-width:780px){.header{height:auto;min-height:84px;flex-wrap:wrap;padding-block:16px;gap:8px 12px}.header .brand{margin-right:auto}.header nav{order:2;width:100%;justify-content:center;margin:0;gap:16px;flex-wrap:wrap}.header nav a:first-child,.header nav a:last-child{display:inline}.header .theme-button{margin:0}.language-picker{margin-left:0}.storage-note{margin-inline:auto}}
