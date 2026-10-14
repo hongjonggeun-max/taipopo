@@ -3,6 +3,8 @@
 Static, dependency-free Korean introduction and support site for GitHub Pages.
 
 - Home: `index.html`
+- Detailed manual: `guide/` (13 topics, 16 languages, search and expandable contents).
+- Manual content is generated from the app's ARB keys only. Edit `manual*` keys in the app, run `flutter gen-l10n`, then `node tools/sync-manual.cjs <path-to-app-lib/l10n>`. Never copy full app ARBs or private source into this public repository. Edit `tools/manual-template.html`, `guide/manual.css` and `guide/manual.js` for website layout; do not hand-edit generated `guide/index.html` or `guide/manual.json`.
 - Support / four-question email templates: `support/index.html`, `site.js`
 - Privacy navigation: `privacy/index.html` (links to the existing published policy; does not replace its legal text)
 - Theme, spacing, typography and responsive layout: `styles.css`

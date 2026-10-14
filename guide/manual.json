@@ -1,0 +1,1186 @@
+{
+  "ko": {
+    "name": "한국어",
+    "title": "사용 안내",
+    "intro": "처음 시작하는 방법부터 금액 연결, 사진, 백업까지 단계별로 안내합니다. 제목을 눌러 펼치거나 검색해 보세요. 설명서는 인터넷 없이도 읽을 수 있습니다. 화면 이름은 앱 버전과 언어에 따라 조금 다를 수 있습니다.",
+    "search": "검색",
+    "empty": "검색 결과가 없습니다.",
+    "sections": [
+      {
+        "id": "start",
+        "title": "처음 시작 · 설정과 근무지",
+        "body": "1. 설정에서 사용할 언어와 통화를 확인하세요. 통화 표시를 바꾸는 것을 환율에 따른 자동 환전으로 생각하면 안 됩니다. 금액을 입력하기 전에 사용할 통화를 정하세요.\n\n2. 메인 상단에서 근무지를 선택하세요. 새 현장은 ‘신규’에서 이름과 필요한 정보를 입력하고 저장합니다. 비슷한 이름의 현장이 있다면 주소나 구분할 수 있는 이름을 사용하세요.\n\n3. 출근·사진·금액을 기록하기 전에 선택된 근무지가 맞는지 다시 확인하세요. 다른 현장의 기록을 찾을 때는 먼저 근무지와 날짜 조건을 확인합니다.\n\n4. 카메라·위치 등 권한 안내가 나오면 해당 기능에 필요한 권한을 선택하세요. 권한을 거절했다면 Android 설정의 앱 권한에서 다시 허용할 수 있습니다. 권한을 허용해도 과거 기록의 정보가 자동으로 채워지는 것은 아닙니다."
+      },
+      {
+        "id": "home",
+        "title": "메인 화면 · 오늘의 기록",
+        "body": "메인은 당일 작업을 정리하는 화면입니다. 전체 누적 청구나 지난 기간의 목록을 보는 화면과 구분하세요. 상단 근무지·날짜를 먼저 확인하고 출퇴근, 총수입, 메모, 사진 카드를 이용합니다.\n\n총수입 카드에서는 임금에 해당하는 수입, 추가 수당, 별도 청구를 구분해서 봅니다. 표시된 금액이 실제로 통장에 입금됐다는 뜻은 아닙니다. 청구의 수령 여부는 별도 청구에서 관리합니다.\n\n연필 아이콘은 수입·수당·청구를 함께 수정하는 화면을 엽니다. 각 영역을 펼쳐 내용을 입력하고 하단 ‘저장’을 누르세요. ‘취소’는 저장을 대신하지 않습니다. 저장 후 메인 또는 해당 목록을 다시 열어 반영된 금액을 확인하세요.\n\n예: 오늘 임금 100,000, 수당 10,000, 대신 지출한 자재비 25,000이라면 세 항목을 구분해서 기록합니다. 같은 자재비를 수당과 청구에 중복 입력하지 마세요."
+      },
+      {
+        "id": "attendance",
+        "title": "출퇴근 · 휴게시간과 근무시간",
+        "body": "1. 근무지를 확인한 뒤 ‘출근’을 누릅니다. 이미 진행 중인 근무가 있는지 화면의 시각과 상태를 확인하세요.\n\n2. 총 체류시간, 휴게시간, 실제 근무시간은 서로 다릅니다. 실제 근무시간은 출퇴근 사이의 시간에서 반영된 휴게시간을 제외한 값입니다. 단가가 같아도 휴게시간이나 기록된 시각이 다르면 금액이 달라질 수 있습니다.\n\n3. 업무가 끝나면 ‘퇴근’을 누르고 안내에 따라 기록을 마무리하세요. 지난 기록을 수정할 때는 정산에서 정확한 근무지·날짜의 항목을 열고 시각과 휴게시간을 확인합니다. 수정 가능한 항목만 변경하고 저장합니다.\n\n예: 09:00 출근, 18:00 퇴근, 휴게 1시간이면 체류 9시간과 실제 근무 8시간을 구분해야 합니다. 날짜를 넘긴 근무는 종료 날짜도 확인하세요. 누락된 기록을 보정하려고 오늘의 출근·퇴근을 반복해서 누르지 마세요."
+      },
+      {
+        "id": "income",
+        "title": "수입과 수당 · 입력·수정·삭제",
+        "body": "수입은 근무와 급여 기준에 따른 임금이고, 수당은 별도로 더하는 항목입니다. 수당은 먼저 지출한 돈을 돌려받기 위한 별도 청구와 구분해 입력하세요.\n\n1. 메인 총수입의 연필을 누르고 수입 영역에서 단가·금액을 확인합니다. 현재 근무지의 급여 기준과 실제 근무시간도 함께 확인하세요.\n\n2. 수당 영역을 펼쳐 추가합니다. 제목에는 ‘식대’처럼 구분할 이름, 내용에는 지급 사유나 설명, 금액에는 해당 수당 금액을 입력합니다. 여러 수당은 각각 따로 기록하세요.\n\n3. 기존 수당을 수정하거나 삭제한 뒤 저장합니다. 항목 삭제와 페이지 전체 취소는 다릅니다. 저장 후 메인과 연결된 정산·리포트에서 수당과 합계를 확인하세요. 이미 외부로 저장·전송한 PDF는 새 값으로 자동 교체되지 않습니다.\n\n예: 수당 10,000을 12,000으로 고치려면 기존 항목을 수정합니다. 같은 이름으로 12,000을 새로 추가하면 두 항목이 합산될 수 있습니다.\n\n시급 계산은 휴게시간을 뺀 실제 근무시간에서 완료된 분만 사용합니다. 시급 × 근무 분 ÷ 60으로 계산하며 소수점 아래 금액은 버립니다. 예: 시급 12,000, 실제 근무 8시간이면 96,000입니다. 1분 미만의 진행 중 시간은 아직 반영되지 않을 수 있습니다."
+      },
+      {
+        "id": "claims",
+        "title": "별도 청구 · 기록과 수령 처리",
+        "body": "별도 청구는 임금이나 일당이 아니라 따로 받아야 할 돈을 관리하는 대장입니다. 예를 들어 사용자가 먼저 지출한 자재비나 교통비를 기록합니다. 앱이 상대방에게 청구서를 자동 전송하거나 돈을 이체하는 기능은 아닙니다.\n\n1. 메인 연필 화면의 청구 영역에서 추가를 누릅니다. 제목, 금액, 메모를 입력하고 필요한 증빙사진을 촬영합니다. 여러 건은 별도 카드로 추가한 뒤 저장하세요.\n\n2. 정산의 ‘별도 청구’ 카드를 누릅니다. 상단 왼쪽에서 근무지를 고른 다음 오른쪽에서 상태를 선택합니다. 목록은 선택 조건에 맞게 날짜순으로 표시됩니다. 긴 근무지명은 일부만 보일 수 있습니다.\n\n3. ‘미수령’은 아직 받지 않은 초기 상태(기존 미청구), ‘청구’는 지급을 요청한 상태, ‘수령’은 받은 상태입니다. 실제 돈을 받은 뒤 해당 항목 상세에서 수령으로 바꾸고 저장하세요. ‘미수령’ 필터에 ‘청구’ 상태까지 모두 포함된다고 생각하지 마세요.\n\n4. 목록을 누르면 상세에서 금액·내용·상태를 수정할 수 있습니다. 25,000을 지출했다면 미수령으로 기록하고, 요청한 뒤 청구로, 실제 받은 뒤 수령으로 변경하는 순서로 관리합니다."
+      },
+      {
+        "id": "sync",
+        "title": "금액 연동과 삭제 · 꼭 알아두세요",
+        "body": "금액 수정과 삭제는 서로 다른 규칙을 따릅니다. 별도 청구에서 연결된 원본 기록이 남아 있으면 명시적으로 저장한 수정 내용이 해당 정산 기록에도 반영됩니다. 연결된 기존 리포트에는 해당 청구 금액 변경이 반영됩니다.\n\n리포트는 청구 관리대장을 그대로 복제하는 화면이 아닙니다. 청구 수령 상태, 사진, 문구, 삭제가 모두 함께 바뀐다고 생각하지 마세요. 리포트 금액 연동은 같은 항목과 근무 연결이 확인되는 기존 기록에 적용되며, 관계없는 항목을 이름만으로 연결하거나 삭제한 리포트를 다시 만들지 않습니다.\n\n정산이나 리포트를 삭제해도 별도 청구 목록과 수령 상태는 남습니다. 반대로 청구 관리대장에서 ‘선택 → 삭제’를 해도 정산·리포트는 유지됩니다. 연결 원본이 없어도 남은 청구를 별도로 관리할 수 있습니다.\n\n관리대장 삭제는 ‘돈을 받았다’는 뜻이 아닙니다. 받았다면 수령 상태로 바꾸세요. 관리대장 삭제를 정산 휴지통의 복원과 같은 기능으로 생각하지 마세요. 삭제 전 보관할 내역과 백업을 확인하세요."
+      },
+      {
+        "id": "photos",
+        "title": "사진 · 촬영·미리보기·편집",
+        "body": "1. 올바른 근무지를 선택한 뒤 사진 촬영을 엽니다. 증빙에 필요한 내용이 잘 보이도록 촬영하고 저장 결과를 확인하세요. 청구의 사진 촬영 영역에서는 해당 청구와 함께 증빙을 관리합니다.\n\n2. 사진 미리보기는 여러 장이면 가로로 넘겨 확인합니다. 갤러리에서는 근무지·날짜·분류 등 현재 조건을 확인하고 사진을 열어 자세히 봅니다. 썸네일만 보고 원본의 선명도나 전체 구도를 판단하지 마세요.\n\n3. 사진의 정보카드나 메모 등을 편집했다면 저장한 뒤 상세 화면을 다시 열어 확인합니다. 편집 이미지와 최초 촬영 원본은 구분됩니다. 원본 보기·원본 복구 안내가 나오면 어떤 편집이 제거되는지 확인하세요.\n\n4. 첨부 미리보기의 제거와 갤러리 사진 삭제는 같은 범위라고 단정하지 마세요. 해당 확인창을 읽고 실행합니다. 공유 전에는 위치·촬영시각·기기정보나 사진 속 개인정보를 확인하세요. 이미 공유한 외부 사본은 앱에서 수정·삭제해도 함께 바뀌지 않습니다."
+      },
+      {
+        "id": "memos",
+        "title": "메모 · 작성과 확인",
+        "body": "메인 메모 카드에서 추가 기능을 열고 업무 내용이나 전달사항을 적어 저장합니다. 예: ‘동쪽 구역 작업 완료, 자재 추가 주문 필요’처럼 나중에 알아볼 수 있는 내용으로 작성하세요.\n\n메모가 여러 개라면 필요한 항목을 열어 수정하고 저장합니다. 현재 선택한 근무지와 날짜가 맞는지 확인하세요. 다른 날의 내용을 오늘 메모에 반복해서 적기보다 원래 기록을 찾아 수정하는 편이 혼동을 줄입니다.\n\n메모의 숫자는 수당이나 청구 금액 입력을 대신하지 않습니다. ‘교통비 20,000’이라고 메모해도 금액 항목이 자동 생성된다고 생각하지 마세요. 정산에 필요한 금액은 해당 수당·청구 입력란에 별도로 기록합니다.\n\n삭제할 때는 대상 메모를 확인하고, 복원이 필요하면 설정의 휴지통에서 해당 범주를 확인하세요. 비밀번호·인증번호 등 민감한 정보는 업무 메모에 남기지 않는 것이 좋습니다."
+      },
+      {
+        "id": "settlement",
+        "title": "정산 · 기간별 조회와 수정",
+        "body": "하단 ‘정산’에서 근무지와 일간·주간·월간 등 필요한 조회 범위를 고릅니다. 검색 조건도 함께 적용될 수 있으므로 목록이 비어 있으면 날짜와 근무지, 검색 조건을 순서대로 확인하세요.\n\n목록 카드를 누르면 해당 기록의 상세 내용을 확인할 수 있습니다. 날짜, 근무시간, 단가, 수당, 청구 등 수정하려는 항목을 확인한 뒤 저장하세요. 같은 날짜의 카드가 여러 개면 근무지와 기록 내용을 비교하고 선택합니다.\n\n메인은 당일 기록, 정산은 기간별 기록, 별도 청구는 계속 쌓이는 받을 돈의 관리대장이라는 차이가 있습니다. 별도 청구 필터의 상태와 정산의 날짜 조건을 혼동하지 마세요.\n\n수정 후 목록과 상세를 다시 열어 값을 확인합니다. 리포트까지 확인할 때는 같은 근무 기록에 연결된 문서를 선택하세요. 정산 삭제는 별도 청구 대장의 삭제가 아니며, 선택 삭제 전에 선택 개수와 대상을 확인해야 합니다."
+      },
+      {
+        "id": "reports",
+        "title": "리포트 · 버전·PDF·공유",
+        "body": "하단 ‘리포트’에서 원하는 근무지·기간의 문서를 찾고 엽니다. 문서의 근무일, 수입·수당·청구 금액과 첨부사진을 먼저 확인하세요. 리포트는 실제 은행 입금 내역이나 청구 수령 상태를 자동 확인해 주지 않습니다.\n\n저장된 리포트는 수정에 따라 새 버전이 생길 수 있습니다. 이전 버전과 최신 버전을 구분하고, 연결된 청구 금액을 수정했다면 최신 문서에서 확인하세요. 예전에 저장한 버전이나 PDF까지 같은 내용으로 덮어쓰는 것은 아닙니다.\n\nPDF 미리보기에서 글자·사진·금액을 확인한 뒤 저장하거나 공유합니다. 내용 수정 뒤 다시 보낼 때는 최신 값으로 PDF를 새로 생성하세요. 다운로드 폴더나 메신저에 이미 있는 파일은 앱 안의 변경을 자동으로 따라가지 않습니다.\n\n리포트를 삭제해도 별도 청구 관리대장은 남습니다. 앱에서 문서를 삭제하는 것만으로 상대방에게 보낸 파일이나 다른 앱에 저장한 사본이 삭제되지는 않습니다. 공유 전에 개인정보와 수신 대상을 확인하세요."
+      },
+      {
+        "id": "backup",
+        "title": "백업과 복구 · 교체 전 필독",
+        "body": "백업은 기기 분실·고장·앱 삭제에 대비한 별도 사본입니다. 기기 내부에만 보관하면 그 기기를 잃었을 때 함께 잃을 수 있습니다. 설정의 백업 메뉴에서 기기 저장, 외부 백업 또는 Google Drive 등 원하는 방식을 선택합니다.\n\n백업 완료 안내와 저장 위치·날짜를 확인하세요. 분할 백업이면 같은 백업에 속한 모든 파일을 함께 보관합니다. 이름을 바꾸거나 일부만 옮기지 말고 복구 화면에서 요구하는 전체 파일 또는 완전한 폴더를 선택하세요. Drive는 선택한 Google 계정과 인터넷 연결을 확인합니다.\n\n중요: 복구는 현재 앱 데이터를 백업 내용으로 교체할 수 있습니다. 두 기기의 새 기록이 자동으로 합쳐진다고 생각하지 마세요. 복구 전에 현재 데이터도 별도로 백업하고, 가져올 백업 날짜와 대상을 확인한 뒤 안내에 따라 진행합니다. 진행 중 앱 데이터 삭제나 저장장치 분리를 피하세요.\n\n완료 후 안내에 따라 앱을 다시 열고 근무지·최근 기록·사진·수당·청구·리포트를 확인합니다. 표준 ZIP 백업은 암호화되지 않은 개인정보 사본일 수 있으므로 공유 대상과 저장 장소를 신중하게 선택하세요. 오류가 나면 기존 백업을 지우지 말고 오류 문구와 선택한 파일 구성을 확인하세요."
+      },
+      {
+        "id": "trash",
+        "title": "휴지통 · 선택·복원·영구 삭제",
+        "body": "설정 → 휴지통에서 갤러리·근무지·메모·정산·리포트 중 원하는 범주를 엽니다. 항목의 체크박스로 선택하거나 ‘전체 선택’을 누릅니다. 전체 선택은 현재 범주에만 적용됩니다.\n\n잘못 삭제했다면 보관 중인 항목을 선택하고 ‘복원’을 누릅니다. 복원 후 원래 목록에서 조회 조건을 맞춰 다시 확인하세요. 필요 없는 항목은 대상을 확인한 뒤 ‘영구 삭제’를 선택합니다.\n\n일반적으로 삭제된 항목은 30일 보관되며, 기간이 지난 항목은 휴지통을 열 때 정리됩니다. ‘25일 후 영구 삭제’처럼 남은 기간을 확인하세요. 삭제 시각 정보가 없는 예전 항목은 자동 정리에서 제외될 수 있습니다.\n\n영구 삭제한 항목은 휴지통에서 복원할 수 없습니다. 다른 기록에서 사용하는 사진은 보호될 수 있습니다. 별도 청구 관리대장의 삭제는 이 범주의 정산 삭제와 별개입니다. 전체 데이터 초기화나 외부 백업 삭제도 휴지통 복원과 혼동하지 마세요."
+      },
+      {
+        "id": "help",
+        "title": "문제 해결 · 확인 순서와 문의",
+        "body": "금액이 다르다면 ① 근무지·날짜·통화 ② 출퇴근·휴게시간·단가 ③ 수당·청구 중복 ④ 저장 여부 ⑤ 같은 기록에 연결된 최신 리포트인지 순서대로 확인하세요. 이미 받은 돈인지 여부는 청구 상태와 실제 입금 내역을 별도로 확인합니다.\n\n목록이 비어 있다면 근무지·기간·상태·검색 조건을 해제하거나 바꿔 보세요. 다른 범주로 삭제한 기록은 휴지통에서 확인합니다. 사진이 보이지 않으면 원래 근무지·분류와 백업에 사진이 포함됐는지 확인하세요.\n\n카메라나 공유 앱이 열리지 않으면 Android 앱 권한, 저장공간, 사용할 외부 앱 설치 여부를 확인합니다. 해결을 위해 먼저 앱 삭제나 전체 데이터 초기화를 하지 마세요. 중요한 기록을 백업한 뒤 진행하는 것이 안전합니다.\n\n설정 → 고객지원에서 문의·오류 신고·기능 제안을 선택하세요. 오류가 난 화면, 수행 순서, 기대 결과와 실제 결과, 발생 빈도, 앱 버전·Android 버전·기기명을 알려주면 도움이 됩니다. 화면 캡처에는 개인정보를 가리고 비밀번호·인증번호는 보내지 마세요."
+      }
+    ]
+  },
+  "en": {
+    "name": "English",
+    "title": "User Guide",
+    "intro": "Step-by-step instructions for records, money, photos and backups. Expand a topic or search. This manual also works offline in the app. Screen names may vary by version and language.",
+    "search": "Search",
+    "empty": "No search results.",
+    "sections": [
+      {
+        "id": "start",
+        "title": "Getting started · settings and workplaces",
+        "body": "1. Check your language and currency in Settings before entering amounts. Changing the currency display is not automatic exchange-rate conversion.\n\n2. Select a workplace at the top of Home. Use New to register a site and save its name and details. Give similar sites distinct names or addresses.\n\n3. Confirm the selected workplace before recording attendance, photos or money. When looking for older entries, check both the workplace and date.\n\n4. Grant camera or location permission when the relevant feature requests it. If denied, change it in Android app permissions. Granting permission does not automatically fill missing information in older records."
+      },
+      {
+        "id": "home",
+        "title": "Home · today's records",
+        "body": "Home organizes the current day's work; it is not the accumulated claims ledger. Check the workplace and date, then use attendance, total income, memo and photo cards.\n\nIncome, allowances and separate claims are different categories. An amount shown on screen does not confirm a bank payment. Manage claim receipt in Separate claims.\n\nTap the pencil on Total income to edit income, allowances and claims together. Expand the relevant section, edit and tap Save. Cancel does not save. Reopen the record to verify the saved amount.\n\nExample: record wages of 100,000, an allowance of 10,000 and materials you paid for of 25,000 separately. Do not enter the same expense as both an allowance and a claim."
+      },
+      {
+        "id": "attendance",
+        "title": "Attendance · breaks and working time",
+        "body": "1. Confirm the workplace and tap Clock in. Check the displayed time and whether a shift is already running.\n\n2. Elapsed time, break time and actual working time differ. Actual working time excludes the recorded break. Different times or breaks can change the calculated amount even with the same rate.\n\n3. Tap Clock out when finished and follow the prompts. To correct an older record, open the exact workplace and date in Settlement, check times and breaks, edit the available fields and save.\n\nExample: 09:00–18:00 with a one-hour break means nine elapsed hours and eight working hours. For overnight work, also check the end date. Do not repeatedly clock in and out today to fix missing historical records."
+      },
+      {
+        "id": "income",
+        "title": "Income and allowances · editing",
+        "body": "Income represents wages based on work and pay settings. An allowance is an additional payment; distinguish it from reimbursement of money you paid first.\n\n1. Tap the Total income pencil and check the income rate or amount, workplace pay basis and working time.\n\n2. Expand Allowances and add an item. Enter a title such as Meal allowance, a description explaining the reason, and its amount. Record multiple allowances separately.\n\n3. Edit or remove an existing allowance, then save. Removing an item is different from cancelling the page. Check Home and the linked settlement/report after saving. Previously exported PDFs do not update automatically.\n\nExample: to change 10,000 to 12,000, edit the original item. Adding another item named the same may count both.\n\nHourly pay uses completed minutes of actual work after breaks. The calculation is hourly rate × working minutes ÷ 60, discarding fractional currency units. Example: a rate of 12,000 for eight working hours gives 96,000. An unfinished minute may not yet affect the displayed amount."
+      },
+      {
+        "id": "claims",
+        "title": "Separate claims · tracking payment",
+        "body": "This ledger tracks money owed separately from wages, such as materials or travel you paid for first. It does not automatically send an invoice or transfer money.\n\n1. In Home's pencil editor, add a claim with title, amount, memo and any supporting photos. Add separate cards for separate expenses and save.\n\n2. Open Separate claims from Settlement. Choose a workplace on the left, then a status on the right. Matching entries appear in date order; long workplace names may be shortened.\n\n3. Unreceived is the initial unpaid state (previously Unclaimed); Requested means payment has been requested; Received means you have received it. Change the detail to Received only after actual payment. The Unreceived filter does not also include Requested entries.\n\n4. Open a list item to edit its amount, details or status. Example: record 25,000 as unreceived, mark it requested after asking for payment, then received after payment."
+      },
+      {
+        "id": "sync",
+        "title": "Linked amounts and independent deletion",
+        "body": "Amount edits and deletion follow different rules. An explicit claim edit also updates its verified linked settlement source when that source still exists. An existing linked report receives the corresponding claim amount change.\n\nReports do not mirror every ledger field. Receipt status, photos, text and deletion are not all synchronized. Amount linking requires the same existing item and work relationship; it does not match unrelated items by name or recreate a deleted report.\n\nDeleting a settlement or report leaves the separate claim and receipt state intact. Selecting and deleting in the claims ledger leaves settlements and reports intact. A remaining claim can still be managed without its original source.\n\nDeletion does not mean payment was received: use Received for that. Do not assume ledger deletion has the same recovery behavior as settlement trash. Check what you need to retain and back up before deleting."
+      },
+      {
+        "id": "photos",
+        "title": "Photos · capture, preview and edit",
+        "body": "1. Select the correct workplace, open the camera and capture clear evidence. Check the saved result. Photos captured inside a claim support that claim.\n\n2. Swipe horizontally through multiple previews. In Gallery, check workplace, date and category filters, then open the photo. A thumbnail alone is not enough to judge original quality or framing.\n\n3. Save edits to information cards or memos and reopen the detail to verify them. Edited images and the original capture are distinct. Read what will be removed before restoring the original.\n\n4. Removing an attachment and deleting a gallery photo may have different effects; read the confirmation. Check location, capture time, device metadata and visible personal information before sharing. Copies already shared outside the app do not change when you edit or delete inside the app."
+      },
+      {
+        "id": "memos",
+        "title": "Memos · writing and reviewing",
+        "body": "Use Add on Home's memo card, enter work notes and save. Example: East section complete; more materials needed. Write enough context to understand it later.\n\nOpen the relevant memo to edit and save it. Check the selected workplace and date. Correcting the original entry is clearer than copying an older note into today repeatedly.\n\nNumbers in a memo do not create financial entries. Writing Travel 20,000 does not automatically create an allowance or claim; enter the amount in the appropriate financial section.\n\nBefore deleting, verify the memo. For recoverable deleted memos, check the relevant Trash category in Settings. Avoid storing passwords or verification codes in work notes."
+      },
+      {
+        "id": "settlement",
+        "title": "Settlement · periods and corrections",
+        "body": "Open Settlement and choose a workplace and daily, weekly or monthly period. Search conditions may also apply. If the list is empty, check the date, workplace and search filters in order.\n\nOpen a card to inspect the record. Verify the date, working time, rate, allowances and claims before editing and saving. If several cards share a date, compare workplace and record details.\n\nHome covers today; Settlement covers selected periods; Separate claims accumulates outstanding reimbursement records. Do not confuse claim-status filters with settlement date filters.\n\nReopen the list and detail after saving. When checking a report, choose the document linked to the same work record. Deleting a settlement does not delete its separate ledger claim. Verify the selected count and items before batch deletion."
+      },
+      {
+        "id": "reports",
+        "title": "Reports · versions, PDF and sharing",
+        "body": "Find the required workplace and period in Reports. Check the work date, income, allowances, claim amounts and photos. Reports do not automatically verify bank deposits or claim receipt.\n\nEdits can create a new saved report version. Distinguish history from the latest version and check the latest document after a linked claim amount changes. Earlier versions and exported PDFs are not overwritten with the new values.\n\nInspect text, photos and amounts in PDF preview before saving or sharing. After an edit, generate a new PDF to send the latest values. Files already in Downloads or a messaging app do not update automatically.\n\nDeleting a report leaves the claims ledger intact and does not delete copies sent to other people or saved in other apps. Check personal information and recipients before sharing."
+      },
+      {
+        "id": "backup",
+        "title": "Backup and restore · read before replacing",
+        "body": "A backup is a separate copy for device loss, failure or app removal. A copy kept only on the same phone may be lost with it. In Settings, choose device, external or Google Drive backup.\n\nCheck the completion message, location and date. Keep all files belonging to one split backup together. Do not rename or move only some parts; choose all required files or the complete folder when restoring. For Drive, verify the Google account and internet connection.\n\nImportant: restoration can replace current app data with the backup. Do not assume it merges newer records from two devices. Back up current data separately, verify the backup date and target, and follow the prompts. Avoid clearing app data or disconnecting storage during restoration.\n\nAfter completion, reopen as instructed and check workplaces, recent records, photos, allowances, claims and reports. Standard ZIP backups may be unencrypted personal-data copies. Store/share carefully. If an error occurs, keep the existing backup and check the error and selected files."
+      },
+      {
+        "id": "trash",
+        "title": "Trash · selection, restore and permanent deletion",
+        "body": "In Settings → Trash, open Gallery, Workplaces, Memos, Settlement or Reports. Select checkboxes or Select all. Select all applies only to the current category.\n\nTo undo an accidental deletion, select a retained item and Restore. Return to the original list with matching filters to verify it. For permanent deletion, check the exact targets first.\n\nItems are generally retained for 30 days; expired items are cleaned up when Trash opens. Check the remaining-day message. Older items without a deletion timestamp may be excluded from automatic cleanup.\n\nPermanently deleted items cannot be restored from Trash. Photos used by other records may be protected. Claims-ledger deletion is separate from this settlement category. Resetting all data and deleting external backups are also different operations."
+      },
+      {
+        "id": "help",
+        "title": "Troubleshooting · checks and support",
+        "body": "For different amounts, check: workplace/date/currency; clock times/break/rate; duplicate allowances or claims; whether you saved; and whether the report is the latest linked document. Verify actual payment separately.\n\nFor an empty list, change or clear workplace, period, status and search filters. Check Trash for deleted records. For missing photos, check the original workplace/category and whether the backup contained photos.\n\nIf the camera or sharing app will not open, check Android permissions, storage and installed external apps. Do not start by uninstalling or resetting all data. Back up important records before recovery actions.\n\nIn Settings → Support, choose contact, bug report or suggestion. Include the screen, steps, expected/actual result, frequency, app/Android versions and device model. Hide personal information in screenshots; never send passwords or verification codes."
+      }
+    ]
+  },
+  "de": {
+    "name": "Deutsch",
+    "title": "Benutzerhandbuch",
+    "intro": "Schrittweise Hilfe zu Einrichtung, Aufzeichnungen, Beträgen, Fotos und Sicherungen. Öffnen Sie ein Thema oder suchen Sie. In der App ist die Anleitung offline verfügbar. Bezeichnungen können je nach Version und Sprache abweichen.",
+    "search": "Suchen",
+    "empty": "Keine Suchergebnisse.",
+    "sections": [
+      {
+        "id": "start",
+        "title": "Erste Schritte · Einstellungen und Arbeitsorte",
+        "body": "1. Prüfen Sie Sprache und Währung in den Einstellungen. Eine andere Währungsanzeige rechnet Beträge nicht automatisch zum Wechselkurs um.\n\n2. Wählen Sie oben auf der Startseite einen Arbeitsort. Legen Sie neue Orte über Neu an und speichern Sie Name und Angaben. Ähnliche Orte sollten eindeutig benannt sein.\n\n3. Kontrollieren Sie vor Zeiten, Fotos und Beträgen den Ort; bei älteren Einträgen auch das Datum.\n\n4. Kamera- und Standortrechte lassen sich nach einer Ablehnung in den Android-App-Berechtigungen erlauben. Dadurch werden fehlende Angaben alter Aufzeichnungen nicht rückwirkend ergänzt."
+      },
+      {
+        "id": "home",
+        "title": "Startseite · heutige Aufzeichnungen",
+        "body": "Die Startseite zeigt den heutigen Arbeitstag, nicht das gesamte Forderungsbuch. Prüfen Sie Arbeitsort und Datum und verwenden Sie Zeit-, Einkommens-, Notiz- und Fotokarten.\n\nLohn, Zulagen und separate Forderungen sind unterschiedliche Posten. Ein angezeigter Betrag bestätigt keinen Zahlungseingang. Diesen verwalten Sie bei separaten Forderungen.\n\nMit dem Stift bei Gesamteinkommen öffnen Sie die gemeinsame Bearbeitung. Bereich aufklappen, ändern und speichern; Abbrechen speichert nicht. Öffnen Sie den Eintrag erneut zur Kontrolle.\n\nBeispiel: Lohn 100.000, Zulage 10.000 und vorgestreckte Materialkosten 25.000 getrennt erfassen. Dieselben Kosten nicht zugleich als Zulage und Forderung eintragen."
+      },
+      {
+        "id": "attendance",
+        "title": "Arbeitszeiten · Pausen",
+        "body": "1. Arbeitsort prüfen und Einstempeln wählen. Kontrollieren Sie Uhrzeit und eine eventuell bereits laufende Schicht.\n\n2. Anwesenheit, Pause und tatsächliche Arbeitszeit unterscheiden sich. Die erfasste Pause wird abgezogen; geänderte Zeiten können trotz gleichem Satz einen anderen Betrag ergeben.\n\n3. Zum Schluss ausstempeln. Ältere Zeiten über den passenden Ort und Tag in Abrechnung öffnen, bearbeitbare Zeiten/Pausen korrigieren und speichern.\n\n09:00–18:00 mit einer Stunde Pause bedeutet neun Stunden Anwesenheit und acht Stunden Arbeit. Bei Nachtschichten auch das Enddatum prüfen. Heutiges wiederholtes Ein-/Ausstempeln korrigiert keine alten Lücken."
+      },
+      {
+        "id": "income",
+        "title": "Einkommen und Zulagen",
+        "body": "Einkommen ist der arbeits- und lohnabhängige Verdienst. Zulagen sind zusätzliche Zahlungen, keine Erstattung bereits vorgestreckter Kosten.\n\n1. Über den Stift Satz, Betrag, Lohnbasis des Arbeitsorts und Arbeitszeit prüfen.\n\n2. Zulagen aufklappen und Titel, Beschreibung des Grunds und Betrag eintragen. Mehrere Zulagen getrennt erfassen.\n\n3. Bestehende Posten ändern oder entfernen und speichern. Danach Startseite sowie verknüpfte Abrechnung/Berichte prüfen. Abbrechen ist nicht dasselbe wie Entfernen. Um 10.000 auf 12.000 zu ändern, den alten Posten bearbeiten, nicht einen zweiten anlegen. Bereits exportierte PDFs bleiben unverändert.\n\nDer Stundenlohn verwendet abgeschlossene Arbeitsminuten nach Pausen: Stundensatz × Minuten ÷ 60, ohne Bruchteile der Währungseinheit. 12.000 pro Stunde bei acht Arbeitsstunden ergibt 96.000. Eine noch nicht volle Minute kann fehlen."
+      },
+      {
+        "id": "claims",
+        "title": "Separate Forderungen · Zahlungseingang",
+        "body": "Das Buch verwaltet Geld zusätzlich zum Lohn, etwa vorgestreckte Material- oder Fahrtkosten. Es verschickt keine Rechnung und überweist kein Geld automatisch.\n\n1. Im Stift-Editor der Startseite eine Forderung mit Titel, Betrag, Notiz und Belegfotos hinzufügen. Getrennte Ausgaben in getrennten Karten speichern.\n\n2. Unter Abrechnung Separate Forderungen öffnen. Links Arbeitsort, rechts Status wählen. Treffer erscheinen nach Datum; lange Ortsnamen können gekürzt sein.\n\n3. Nicht erhalten ist der anfängliche offene Status (früher Nicht angefordert); Angefordert heißt Zahlung erbeten, Erhalten heißt tatsächlich bezahlt. Der Filter Nicht erhalten schließt angeforderte Posten nicht automatisch ein.\n\n4. Eintrag öffnen und Betrag, Angaben oder Status speichern. Beispiel: 25.000 offen erfassen, nach Zahlungsbitte angefordert, erst nach Zahlung erhalten markieren."
+      },
+      {
+        "id": "sync",
+        "title": "Betragsverknüpfung und getrennte Löschung",
+        "body": "Eine ausdrücklich gespeicherte Forderungsänderung aktualisiert die zugehörige bestätigte Abrechnungsquelle, sofern sie noch existiert. Ein bestehender verknüpfter Bericht erhält die entsprechende Betragsänderung.\n\nNicht alle Felder werden synchronisiert: Empfangsstatus, Fotos, Text und Löschung bleiben eigenständig. Die Verknüpfung erfordert denselben Posten und Arbeitsbezug; gleiche Namen reichen nicht. Gelöschte Berichte werden nicht neu angelegt.\n\nAbrechnung oder Bericht löschen lässt Forderung und Status bestehen. Auswahl → Löschen im Forderungsbuch lässt Abrechnung und Berichte bestehen. Verbleibende Forderungen sind auch ohne Quelle verwaltbar.\n\nLöschen heißt nicht bezahlt: dafür Erhalten wählen. Die Wiederherstellung des Forderungsbuchs nicht mit dem Abrechnungspapierkorb gleichsetzen. Vorher benötigte Daten sichern."
+      },
+      {
+        "id": "photos",
+        "title": "Fotos · Aufnahme und Bearbeitung",
+        "body": "1. Arbeitsort wählen, klaren Beleg fotografieren und Speicherung prüfen. Fotos innerhalb einer Forderung gehören zu deren Nachweisen.\n\n2. Mehrere Vorschauen horizontal durchblättern. In der Galerie Ort, Datum und Kategorie kontrollieren. Ein Vorschaubild zeigt nicht zuverlässig Qualität und Ausschnitt des Originals.\n\n3. Änderungen an Infokarten oder Notizen speichern und Details erneut öffnen. Bearbeitung und Aufnahmeoriginal sind getrennt; vor Originalwiederherstellung den Hinweis lesen.\n\n4. Anhang entfernen und Galeriefoto löschen können unterschiedliche Folgen haben. Vor Bestätigung und Teilen Standort, Aufnahmezeit, Gerätemetadaten und persönliche Angaben prüfen. Bereits extern geteilte Kopien ändern sich nicht mit."
+      },
+      {
+        "id": "memos",
+        "title": "Notizen · Schreiben und Prüfen",
+        "body": "Über Hinzufügen auf der Notizkarte Arbeitshinweise schreiben und speichern, etwa Ostbereich fertig, Material fehlt. Genügend Kontext für später festhalten.\n\nZum Ändern die richtige Notiz öffnen, Ort und Datum prüfen und speichern. Besser den ursprünglichen Eintrag korrigieren als alte Inhalte mehrfach heute eintragen.\n\nFahrtkosten 20.000 in einer Notiz erzeugt keinen Finanzposten. Betrag separat als passende Zulage oder Forderung erfassen.\n\nLöschziel prüfen; wiederherstellbare Notizen finden Sie unter Einstellungen → Papierkorb. Keine Passwörter oder Bestätigungscodes notieren."
+      },
+      {
+        "id": "settlement",
+        "title": "Abrechnung · Zeiträume und Korrekturen",
+        "body": "Arbeitsort und Tages-, Wochen- oder Monatsbereich wählen. Auch Suchfilter wirken; bei leerer Liste Datum, Ort und Suche prüfen.\n\nKarte öffnen, Tag, Zeiten, Satz, Zulagen und Forderungen prüfen, bearbeiten und speichern. Gleichdatierte Karten anhand von Ort und Inhalt unterscheiden.\n\nStartseite bedeutet heute, Abrechnung den gewählten Zeitraum, separate Forderungen das fortlaufende Buch. Statusfilter und Datumsfilter nicht verwechseln.\n\nNach Speichern Liste und Details erneut prüfen; den Bericht derselben Arbeitsaufzeichnung wählen. Abrechnung löschen entfernt nicht den separaten Forderungseintrag. Vor Mehrfachlöschung Anzahl und Ziele kontrollieren."
+      },
+      {
+        "id": "reports",
+        "title": "Berichte · Versionen und PDF",
+        "body": "Dokument nach Arbeitsort und Zeitraum suchen und Datum, Lohn, Zulagen, Forderungen und Fotos prüfen. Berichte bestätigen weder Bankeingänge noch Empfangsstatus automatisch.\n\nÄnderungen können eine neue Version erzeugen. Nach einer verknüpften Betragsänderung die neueste Version öffnen. Alte Versionen und exportierte PDFs werden nicht überschrieben.\n\nText, Fotos und Beträge in der PDF-Vorschau prüfen, dann speichern/teilen. Nach Änderungen ein neues PDF erzeugen. Dateien in Downloads oder Messengern aktualisieren sich nicht automatisch.\n\nBerichtslöschung entfernt weder Forderungsbuch noch externe Kopien. Persönliche Angaben und Empfänger vor dem Teilen prüfen."
+      },
+      {
+        "id": "backup",
+        "title": "Sicherung und Wiederherstellung",
+        "body": "Sicherungen schützen gegen Verlust, Defekt oder App-Entfernung. Nur auf demselben Telefon gespeicherte Kopien können mit verloren gehen. In Einstellungen Geräte-, externe oder Google-Drive-Sicherung wählen.\n\nAbschluss, Speicherort und Datum prüfen. Alle Teile einer geteilten Sicherung zusammen behalten; nicht umbenennen oder nur teilweise verschieben. Beim Wiederherstellen alle benötigten Dateien oder den vollständigen Ordner wählen. Drive-Konto und Verbindung prüfen.\n\nWichtig: Wiederherstellen kann aktuelle Daten ersetzen, nicht neue Einträge zweier Geräte zusammenführen. Aktuelle Daten vorher separat sichern und Quelle/Datum prüfen. Währenddessen keine App-Daten löschen oder Speicher trennen.\n\nNach Abschluss gemäß Hinweis neu öffnen und Orte, Aufzeichnungen, Fotos, Zulagen, Forderungen und Berichte prüfen. Standard-ZIP-Dateien können unverschlüsselte persönliche Daten enthalten. Bei Fehlern Sicherung behalten und Meldung/Dateiauswahl prüfen."
+      },
+      {
+        "id": "trash",
+        "title": "Papierkorb · Auswahl und Wiederherstellung",
+        "body": "In Einstellungen → Papierkorb Galerie, Arbeitsorte, Notizen, Abrechnung oder Berichte öffnen. Kontrollkästchen oder Alle auswählen verwenden; dies gilt nur für die aktuelle Kategorie.\n\nAufbewahrte versehentlich gelöschte Einträge wiederherstellen und in der ursprünglichen Liste mit passenden Filtern prüfen. Vor endgültiger Löschung Ziele kontrollieren.\n\nNormalerweise 30 Tage Aufbewahrung; abgelaufene Einträge werden beim Öffnen bereinigt. Resttage beachten. Alte Einträge ohne Löschzeit können ausgenommen sein.\n\nEndgültig Gelöschtes ist im Papierkorb nicht wiederherstellbar. Anderweitig verwendete Fotos können geschützt sein. Forderungsbuch, Datenzurücksetzung und externe Sicherungen haben separate Löschvorgänge."
+      },
+      {
+        "id": "help",
+        "title": "Probleme · Prüfreihenfolge und Hilfe",
+        "body": "Bei Betragsabweichungen Ort/Datum/Währung, Zeiten/Pause/Satz, doppelte Zulagen/Forderungen, Speicherung und neuesten verknüpften Bericht prüfen. Tatsächliche Zahlung separat kontrollieren.\n\nBei leerer Liste Ort, Zeitraum, Status und Suche ändern/zurücksetzen. Gelöschtes im Papierkorb suchen. Bei Fotos ursprünglichen Ort/Kategorie und Sicherungsinhalt prüfen.\n\nBei Kamera-/Freigabeproblemen Android-Rechte, Speicher und installierte externe Apps prüfen. Nicht zuerst deinstallieren oder alle Daten zurücksetzen; wichtige Daten sichern.\n\nUnter Support Bildschirm, Schritte, erwartetes/tatsächliches Ergebnis, Häufigkeit, App-/Android-Version und Gerätemodell angeben. Persönliches in Bildern verdecken; keine Passwörter oder Codes senden."
+      }
+    ]
+  },
+  "es": {
+    "name": "Español",
+    "title": "Guía de usuario",
+    "intro": "Guía paso a paso de configuración, registros, importes, fotos y copias. Abre un tema o busca. En la app también funciona sin conexión. Los nombres pueden variar según versión e idioma.",
+    "search": "Buscar",
+    "empty": "Sin resultados de búsqueda.",
+    "sections": [
+      {
+        "id": "start",
+        "title": "Inicio · ajustes y lugares",
+        "body": "1. Comprueba idioma y moneda antes de introducir importes. Cambiar la moneda mostrada no convierte automáticamente los valores al tipo de cambio.\n\n2. Selecciona el lugar de trabajo en Inicio. Usa Nuevo para registrar nombre y datos; distingue lugares parecidos por nombre o dirección.\n\n3. Confirma el lugar antes de registrar horas, fotos o dinero; para registros antiguos, revisa también la fecha.\n\n4. Si denegaste cámara o ubicación, puedes permitirlas en los permisos de Android. Esto no completa retroactivamente los datos de registros anteriores."
+      },
+      {
+        "id": "home",
+        "title": "Inicio · registros de hoy",
+        "body": "Inicio organiza el día actual, no el registro acumulado de cobros. Comprueba lugar y fecha y utiliza las tarjetas de jornada, ingresos, notas y fotos.\n\nSalario, complementos y cobros separados son conceptos distintos. Un importe visible no confirma un ingreso bancario. Gestiona el cobro en el registro separado.\n\nEl lápiz de Ingresos totales abre la edición conjunta. Despliega la sección, modifica y guarda; Cancelar no guarda. Vuelve a abrir para comprobarlo.\n\nEjemplo: salario 100.000, complemento 10.000 y materiales adelantados 25.000 por separado. No dupliques el mismo gasto como complemento y cobro."
+      },
+      {
+        "id": "attendance",
+        "title": "Jornada · pausas y horas",
+        "body": "1. Comprueba el lugar y marca la entrada. Revisa hora y si ya hay una jornada activa.\n\n2. Permanencia, pausa y trabajo efectivo son diferentes. La pausa registrada se descuenta; horarios distintos pueden cambiar el importe con la misma tarifa.\n\n3. Al terminar, marca la salida. Para corregir registros antiguos, abre lugar y fecha exactos en Liquidación, modifica los campos disponibles de horas/pausas y guarda.\n\n09:00–18:00 con una hora de pausa son nueve horas de permanencia y ocho de trabajo. En turnos nocturnos revisa la fecha final. Repetir entradas y salidas hoy no corrige omisiones anteriores."
+      },
+      {
+        "id": "income",
+        "title": "Ingresos y complementos",
+        "body": "Los ingresos son salario según trabajo y configuración de pago. Un complemento es un pago adicional, distinto de recuperar dinero adelantado.\n\n1. Desde el lápiz revisa tarifa, importe, base salarial del lugar y tiempo trabajado.\n\n2. Despliega Complementos y añade título, descripción del motivo e importe. Separa cada concepto.\n\n3. Modifica o elimina el concepto existente y guarda. Comprueba Inicio y liquidación/informe vinculados. Quitar un concepto no equivale a cancelar la página. Para cambiar 10.000 a 12.000, edita el original; añadir otro puede duplicar el total. Los PDF exportados no se actualizan solos.\n\nEl pago por hora usa minutos completos tras descontar pausas: tarifa × minutos ÷ 60, descartando la fracción monetaria. Una tarifa de 12.000 durante ocho horas da 96.000. Un minuto sin completar puede no estar incluido todavía."
+      },
+      {
+        "id": "claims",
+        "title": "Cobros separados · recibir el dinero",
+        "body": "Registra cantidades pendientes ajenas al salario, como materiales o desplazamientos adelantados. No envía facturas ni transfiere dinero automáticamente.\n\n1. Añade un cobro desde el lápiz de Inicio con título, importe, nota y fotos justificativas. Guarda gastos distintos en tarjetas distintas.\n\n2. En Liquidación abre Cobros separados: lugar a la izquierda, estado a la derecha. Los resultados aparecen por fecha; nombres largos pueden abreviarse.\n\n3. No recibido es el estado inicial impagado (antes No solicitado); Solicitado indica petición de pago; Recibido indica pago real. El filtro No recibido no incluye automáticamente Solicitado.\n\n4. Abre el detalle para guardar cambios de importe, contenido o estado. Ejemplo: 25.000 no recibidos, solicitados tras pedirlos y recibidos solo después del pago."
+      },
+      {
+        "id": "sync",
+        "title": "Importes vinculados y borrado independiente",
+        "body": "Una edición guardada actualiza la fuente de liquidación vinculada y verificada cuando sigue existiendo. El informe existente asociado recibe el cambio de importe del mismo cobro.\n\nNo se sincroniza todo: estado de recepción, fotos, texto y borrado son independientes. Debe coincidir el concepto y trabajo; un nombre igual no basta. No se recrean informes borrados.\n\nBorrar liquidación o informe mantiene el cobro y su estado. Borrar desde el registro de cobros mantiene liquidaciones e informes. El cobro restante se puede gestionar sin su fuente.\n\nBorrar no significa haber cobrado: usa Recibido. No supongas que borrar el registro tiene la misma recuperación que la papelera de liquidaciones. Revisa y respalda lo necesario."
+      },
+      {
+        "id": "photos",
+        "title": "Fotos · captura y edición",
+        "body": "1. Selecciona el lugar, captura una prueba clara y comprueba el guardado. Las fotos tomadas dentro de un cobro documentan ese concepto.\n\n2. Desliza horizontalmente las vistas previas. En Galería revisa lugar, fecha y categoría. La miniatura no basta para juzgar calidad o encuadre del original.\n\n3. Guarda cambios en tarjetas informativas o notas y vuelve al detalle. Imagen editada y original son distintos; lee qué se elimina al restaurar el original.\n\n4. Quitar un adjunto puede diferir de borrar en Galería. Lee la confirmación. Antes de compartir, revisa ubicación, hora, metadatos y datos personales. Las copias externas ya enviadas no cambian con la app."
+      },
+      {
+        "id": "memos",
+        "title": "Notas · escribir y revisar",
+        "body": "Añade una nota desde Inicio y guarda el trabajo o aviso, por ejemplo Zona este terminada; faltan materiales. Incluye contexto para entenderla después.\n\nAbre la nota correcta, confirma lugar y fecha, modifica y guarda. Corrige el original en vez de copiar repetidamente una nota antigua a hoy.\n\nEscribir Transporte 20.000 no crea un complemento ni un cobro. Introduce el importe en el apartado financiero adecuado.\n\nVerifica qué borras; consulta Notas en la papelera para recuperar elementos disponibles. Evita contraseñas y códigos de verificación."
+      },
+      {
+        "id": "settlement",
+        "title": "Liquidación · periodos y cambios",
+        "body": "Selecciona lugar y periodo diario, semanal o mensual. La búsqueda también filtra; si no hay resultados, comprueba fecha, lugar y búsqueda.\n\nAbre una tarjeta y revisa día, horas, tarifa, complementos y cobros antes de editar y guardar. Distingue tarjetas de la misma fecha por lugar y contenido.\n\nInicio es hoy, Liquidación el periodo elegido y Cobros separados un registro acumulativo. No confundas estado del cobro con fecha de liquidación.\n\nTras guardar, reabre lista y detalle; comprueba el informe del mismo trabajo. Borrar una liquidación no borra el cobro separado. Revisa cantidad y elementos seleccionados antes de borrar en grupo."
+      },
+      {
+        "id": "reports",
+        "title": "Informes · versiones y PDF",
+        "body": "Busca por lugar y periodo y revisa fecha, salario, complementos, cobros y fotos. Los informes no verifican automáticamente pagos bancarios ni recepción.\n\nUna edición puede crear otra versión. Tras modificar un importe vinculado, consulta la última. No se sobrescriben versiones antiguas ni PDF exportados.\n\nRevisa texto, fotos e importes en la vista PDF antes de guardar o compartir. Después de cambios genera otro PDF; Descargas y mensajería conservan archivos anteriores.\n\nBorrar el informe mantiene el registro de cobros y no borra copias de destinatarios u otras apps. Revisa privacidad y destinatario antes de compartir."
+      },
+      {
+        "id": "backup",
+        "title": "Copias y restauración",
+        "body": "Una copia protege ante pérdida, avería o desinstalación. Si solo está en el mismo teléfono, puede perderse con él. En Ajustes elige dispositivo, copia externa o Google Drive.\n\nComprueba finalización, ubicación y fecha. Conserva juntas todas las partes de una copia dividida; no renombres ni muevas solo algunas. Selecciona todos los archivos necesarios o la carpeta completa. En Drive confirma cuenta y conexión.\n\nImportante: restaurar puede reemplazar los datos actuales, no fusionar registros nuevos de dos dispositivos. Haz antes otra copia del estado actual y verifica origen/fecha. No borres datos ni desconectes almacenamiento durante el proceso.\n\nAl terminar, reabre según indicaciones y comprueba lugares, registros, fotos, complementos, cobros e informes. Un ZIP estándar puede contener datos personales sin cifrar. Si falla, conserva la copia y revisa error y archivos seleccionados."
+      },
+      {
+        "id": "trash",
+        "title": "Papelera · selección y recuperación",
+        "body": "En Ajustes → Papelera abre Galería, Lugares, Notas, Liquidación o Informes. Marca casillas o Seleccionar todo, que afecta solo a la categoría actual.\n\nRestaura elementos aún conservados y compruébalos en su lista original con filtros correctos. Verifica los objetivos antes del borrado definitivo.\n\nNormalmente se conservan 30 días y se limpian los vencidos al abrir la papelera. Revisa los días restantes. Elementos antiguos sin fecha de borrado pueden quedar excluidos.\n\nEl borrado definitivo no se revierte desde la papelera. Fotos usadas en otros registros pueden estar protegidas. El registro de cobros, el reinicio de datos y las copias externas se borran por separado."
+      },
+      {
+        "id": "help",
+        "title": "Problemas · comprobaciones y ayuda",
+        "body": "Si difieren importes, revisa lugar/fecha/moneda, horas/pausa/tarifa, duplicados, guardado y último informe vinculado. Confirma el pago real aparte.\n\nPara listas vacías, cambia o elimina filtros de lugar, periodo, estado y búsqueda. Revisa papelera y, para fotos, lugar/categoría original y contenido de la copia.\n\nSi cámara o compartir no abre, comprueba permisos Android, espacio y apps externas instaladas. No empieces desinstalando ni reiniciando datos: respalda primero.\n\nContacta con soporte indicando pantalla, pasos, resultado esperado/real, frecuencia, versiones de app/Android y modelo. Oculta datos personales en capturas; no envíes contraseñas ni códigos."
+      }
+    ]
+  },
+  "fr": {
+    "name": "Français",
+    "title": "Guide utilisateur",
+    "intro": "Guide pas à pas : démarrage, montants, photos et sauvegardes. Ouvrez un sujet ou effectuez une recherche. Dans l’application, le guide reste disponible hors ligne. Les libellés peuvent varier selon la version et la langue.",
+    "search": "Rechercher",
+    "empty": "Aucun résultat de recherche.",
+    "sections": [
+      {
+        "id": "start",
+        "title": "Démarrage · réglages et lieux",
+        "body": "1. Vérifiez la langue et la devise avant de saisir des montants. Changer l’affichage de devise n’effectue pas de conversion automatique au taux de change.\n\n2. Choisissez le lieu de travail en haut de l’accueil. Utilisez Nouveau pour enregistrer un lieu et ses informations. Distinguez les lieux similaires par leur nom ou adresse.\n\n3. Vérifiez le lieu avant chaque pointage, photo ou montant, et la date pour les anciens enregistrements.\n\n4. Après un refus, les autorisations de caméra/localisation se modifient dans les réglages Android. Les accorder ne complète pas automatiquement les informations manquantes des anciens enregistrements."
+      },
+      {
+        "id": "home",
+        "title": "Accueil · la journée en cours",
+        "body": "L’accueil organise la journée actuelle, pas l’ensemble du registre des demandes. Vérifiez lieu et date, puis utilisez les cartes de pointage, revenu, notes et photos.\n\nSalaire, indemnités et demandes séparées sont distincts. Un montant affiché ne prouve pas un versement bancaire. Gérez la réception dans les demandes séparées.\n\nLe crayon du revenu total ouvre l’édition commune. Dépliez la rubrique, modifiez et enregistrez ; Annuler ne sauvegarde pas. Rouvrez pour vérifier.\n\nExemple : salaire 100 000, indemnité 10 000 et matériaux avancés 25 000 sont trois postes. Ne comptez pas la même dépense comme indemnité et remboursement."
+      },
+      {
+        "id": "attendance",
+        "title": "Pointage · pauses et temps travaillé",
+        "body": "1. Vérifiez le lieu, puis pointez l’arrivée. Contrôlez l’heure et l’éventuelle session déjà en cours.\n\n2. Présence, pause et travail effectif diffèrent. La pause enregistrée est déduite ; des horaires différents peuvent changer le montant à taux identique.\n\n3. Pointez le départ et suivez les indications. Pour corriger le passé, ouvrez le lieu et le jour exacts dans Décompte, modifiez les horaires/pauses disponibles et enregistrez.\n\n09:00–18:00 avec une heure de pause représente neuf heures de présence et huit de travail. Vérifiez la date de fin en cas de nuit. Répéter les pointages d’aujourd’hui ne corrige pas un ancien oubli."
+      },
+      {
+        "id": "income",
+        "title": "Revenus et indemnités",
+        "body": "Le revenu correspond au salaire selon le travail et les réglages de rémunération. Une indemnité est un supplément, distinct d’une dépense avancée à rembourser.\n\n1. Avec le crayon, vérifiez taux, montant, base salariale du lieu et temps travaillé.\n\n2. Dépliez les indemnités et ajoutez titre, description du motif et montant. Séparez les différents postes.\n\n3. Modifiez ou retirez un poste existant, puis enregistrez et contrôlez accueil, décompte et rapport liés. Retirer n’est pas annuler toute la page. Pour passer de 10 000 à 12 000, modifiez l’ancien poste ; un ajout peut faire doublon. Les PDF déjà exportés ne changent pas.\n\nLe salaire horaire utilise les minutes complètes après déduction des pauses : taux horaire × minutes ÷ 60, en supprimant la fraction monétaire. Un taux de 12 000 pendant huit heures donne 96 000. Une minute incomplète peut ne pas encore être comptée."
+      },
+      {
+        "id": "claims",
+        "title": "Demandes séparées · suivi du paiement",
+        "body": "Ce registre suit les sommes à recevoir hors salaire, comme matériaux ou déplacements avancés. Il n’envoie pas automatiquement une facture et n’effectue aucun virement.\n\n1. Dans l’éditeur au crayon, ajoutez titre, montant, note et photos justificatives. Enregistrez chaque dépense sur une carte distincte.\n\n2. Ouvrez Demandes séparées depuis Décompte. Choisissez le lieu à gauche puis l’état à droite. Les résultats suivent l’ordre des dates ; les noms longs peuvent être abrégés.\n\n3. Non reçu est l’état initial impayé (anciennement Non demandé), Demandé indique une demande de paiement, Reçu un paiement effectif. Le filtre Non reçu n’inclut pas automatiquement Demandé.\n\n4. Ouvrez une ligne pour modifier montant, contenu ou état et enregistrer. Exemple : 25 000 non reçus, puis demandés après relance, puis reçus après paiement."
+      },
+      {
+        "id": "sync",
+        "title": "Montants liés, suppressions indépendantes",
+        "body": "Une modification explicite met à jour la source de décompte liée et vérifiée si elle existe encore. Le rapport existant lié reçoit la modification du montant correspondant.\n\nTous les champs ne sont pas synchronisés : état de réception, photos, texte et suppression restent distincts. Le lien exige le même poste et travail ; un nom identique ne suffit pas. Aucun rapport supprimé n’est recréé.\n\nSupprimer un décompte ou rapport conserve la demande et son état. Supprimer une sélection du registre conserve décomptes et rapports. Une demande restante se gère même sans sa source.\n\nSupprimer ne signifie pas être payé : utilisez Reçu. N’assimilez pas la suppression du registre à la restauration depuis la corbeille des décomptes. Vérifiez et sauvegardez ce qui doit être conservé."
+      },
+      {
+        "id": "photos",
+        "title": "Photos · prise de vue et édition",
+        "body": "1. Sélectionnez le bon lieu, prenez une preuve lisible et vérifiez sa sauvegarde. Les photos prises dans une demande servent à cette demande.\n\n2. Faites défiler horizontalement les aperçus. Dans Galerie, vérifiez lieu, date et catégorie. Une miniature ne suffit pas pour juger l’original.\n\n3. Enregistrez les changements de carte d’informations ou note, puis rouvrez le détail. Image modifiée et original sont distincts ; lisez ce qui sera retiré avant de restaurer l’original.\n\n4. Retirer une pièce jointe peut différer de supprimer une photo de Galerie. Lisez la confirmation. Avant partage, vérifiez position, date, métadonnées et données personnelles. Les copies externes déjà partagées ne se mettent pas à jour."
+      },
+      {
+        "id": "memos",
+        "title": "Notes · rédiger et retrouver",
+        "body": "Ajoutez une note depuis l’accueil et enregistrez, par exemple Zone est terminée, matériaux nécessaires. Donnez assez de contexte pour la comprendre plus tard.\n\nOuvrez la bonne note, vérifiez lieu et date, modifiez et enregistrez. Corrigez l’original plutôt que recopier plusieurs fois une ancienne note aujourd’hui.\n\nÉcrire Transport 20 000 ne crée ni indemnité ni demande. Saisissez le montant dans la rubrique financière appropriée.\n\nVérifiez la cible avant suppression et consultez la catégorie Notes de la corbeille pour une restauration possible. Évitez mots de passe et codes de validation."
+      },
+      {
+        "id": "settlement",
+        "title": "Décompte · périodes et corrections",
+        "body": "Choisissez lieu et période quotidienne, hebdomadaire ou mensuelle. La recherche peut aussi filtrer : si la liste est vide, vérifiez date, lieu et recherche.\n\nOuvrez une carte, contrôlez jour, horaires, taux, indemnités et demandes avant de modifier et enregistrer. Distinguez les cartes du même jour par leur lieu et contenu.\n\nAccueil concerne aujourd’hui, Décompte une période, Demandes séparées un registre cumulatif. Ne confondez pas filtre d’état et filtre de date.\n\nRouvrez liste et détail après sauvegarde et choisissez le rapport du même travail. Supprimer un décompte ne supprime pas la demande séparée. Vérifiez nombre et éléments sélectionnés avant suppression groupée."
+      },
+      {
+        "id": "reports",
+        "title": "Rapports · versions, PDF et partage",
+        "body": "Recherchez le lieu et la période, puis contrôlez jour travaillé, salaire, indemnités, demandes et photos. Les rapports ne vérifient pas les virements ni la réception automatiquement.\n\nUne modification peut créer une nouvelle version. Après un changement de montant lié, vérifiez la dernière version. Les versions anciennes et PDF exportés ne sont pas écrasés.\n\nVérifiez texte, photos et montants dans l’aperçu PDF, puis sauvegardez/partagez. Régénérez le PDF après modification ; les fichiers téléchargés ou envoyés restent inchangés.\n\nLa suppression du rapport conserve le registre et ne retire pas les copies chez les destinataires ou dans d’autres applications. Vérifiez confidentialité et destinataire."
+      },
+      {
+        "id": "backup",
+        "title": "Sauvegarde et restauration",
+        "body": "Une sauvegarde protège contre perte, panne ou désinstallation. Une copie uniquement sur le même téléphone peut disparaître avec lui. Choisissez appareil, stockage externe ou Google Drive dans les réglages.\n\nVérifiez fin, emplacement et date. Gardez ensemble toutes les parties d’une sauvegarde fractionnée, sans renommage ni déplacement partiel. Sélectionnez tous les fichiers requis ou le dossier complet. Pour Drive, vérifiez compte et connexion.\n\nAttention : restaurer peut remplacer les données actuelles, pas fusionner les nouveautés de deux appareils. Sauvegardez d’abord l’état actuel, vérifiez source/date et suivez les indications. Ne videz pas les données et ne débranchez pas le stockage pendant l’opération.\n\nAprès réouverture, contrôlez lieux, enregistrements, photos, indemnités, demandes et rapports. Un ZIP standard peut contenir des données personnelles non chiffrées. En cas d’erreur, conservez la sauvegarde et vérifiez message et fichiers."
+      },
+      {
+        "id": "trash",
+        "title": "Corbeille · sélectionner et restaurer",
+        "body": "Dans Réglages → Corbeille, ouvrez Galerie, Lieux, Notes, Décompte ou Rapports. Cochez les éléments ou Tout sélectionner, limité à la catégorie actuelle.\n\nRestaurez un élément encore conservé et vérifiez la liste d’origine avec les bons filtres. Contrôlez les cibles avant suppression définitive.\n\nLa conservation habituelle est de 30 jours ; les éléments expirés sont nettoyés à l’ouverture. Vérifiez le délai restant. D’anciens éléments sans date de suppression peuvent être exclus du nettoyage automatique.\n\nUne suppression définitive n’est pas restaurable depuis la corbeille. Les photos utilisées ailleurs peuvent être protégées. Registre des demandes, réinitialisation globale et sauvegardes externes ont des suppressions distinctes."
+      },
+      {
+        "id": "help",
+        "title": "Dépannage · vérifications et assistance",
+        "body": "Montant différent : vérifiez lieu/date/devise, horaires/pause/taux, doublons, sauvegarde et dernière version du rapport lié. Vérifiez le paiement réel séparément.\n\nListe vide : changez ou effacez lieu, période, état et recherche. Cherchez les suppressions dans la corbeille. Pour une photo manquante, vérifiez lieu/catégorie et présence dans la sauvegarde.\n\nCaméra ou partage indisponible : vérifiez autorisations Android, espace et applications installées. Ne commencez pas par désinstaller ou réinitialiser ; sauvegardez d’abord.\n\nContactez l’assistance avec écran, étapes, résultat attendu/réel, fréquence, versions de l’app/Android et modèle. Masquez les informations personnelles des captures et ne transmettez aucun code ni mot de passe."
+      }
+    ]
+  },
+  "th": {
+    "name": "ไทย",
+    "title": "คู่มือผู้ใช้",
+    "intro": "คู่มือทีละขั้นตอนสำหรับการตั้งค่า บันทึก จำนวนเงิน รูปภาพ และการสำรองข้อมูล เปิดหัวข้อหรือค้นหาได้ อ่านแบบออฟไลน์ในแอปได้ ชื่อหน้าจออาจต่างกันตามรุ่นและภาษา",
+    "search": "ค้นหา",
+    "empty": "ไม่มีผลการค้นหา",
+    "sections": [
+      {
+        "id": "start",
+        "title": "เริ่มต้น · ตั้งค่าและสถานที่ทำงาน",
+        "body": "1. ตรวจสอบภาษาและสกุลเงินก่อนกรอกยอด การเปลี่ยนสกุลเงินที่แสดงไม่ได้แปลงยอดตามอัตราแลกเปลี่ยนอัตโนมัติ\n\n2. เลือกสถานที่ทำงานด้านบนหน้าหลัก ใช้ ใหม่ เพื่อบันทึกชื่อและรายละเอียด แยกสถานที่ชื่อคล้ายกันด้วยชื่อหรือที่อยู่ที่ชัดเจน\n\n3. ตรวจสอบสถานที่ก่อนบันทึกเวลา รูป หรือเงิน และตรวจวันที่ด้วยเมื่อต้องการบันทึกเก่า\n\n4. หากเคยปฏิเสธสิทธิ์กล้องหรือตำแหน่ง ให้เปลี่ยนในสิทธิ์แอปของ Android การอนุญาตไม่ได้เติมข้อมูลเก่าที่ขาดโดยอัตโนมัติ"
+      },
+      {
+        "id": "home",
+        "title": "หน้าหลัก · บันทึกวันนี้",
+        "body": "หน้าหลักใช้จัดการวันนี้ ไม่ใช่บัญชีเรียกเก็บสะสม ตรวจสถานที่และวันที่ก่อนใช้การ์ดเวลา รายได้ บันทึก และรูป\n\nค่าจ้าง เงินเพิ่ม และยอดเรียกเก็บแยกเป็นคนละรายการ ตัวเลขบนหน้าจอไม่ใช่หลักฐานว่าเงินเข้าธนาคารแล้ว ให้จัดการการรับเงินในยอดเรียกเก็บแยก\n\nดินสอที่รายได้รวมเปิดหน้าแก้ไขร่วม ขยายส่วนที่ต้องการ แก้แล้วบันทึก ยกเลิกไม่ใช่บันทึก เปิดอีกครั้งเพื่อตรวจสอบ\n\nตัวอย่าง ค่าจ้าง 100,000 เงินเพิ่ม 10,000 และค่าวัสดุออกก่อน 25,000 ให้แยกกัน อย่าลงค่าใช้จ่ายเดียวเป็นทั้งเงินเพิ่มและยอดเรียกเก็บ"
+      },
+      {
+        "id": "attendance",
+        "title": "เวลาเข้างาน · พักและเวลาทำงาน",
+        "body": "1. ตรวจสถานที่แล้วลงเวลาเข้า ตรวจเวลาและว่ามีงานที่กำลังดำเนินอยู่หรือไม่\n\n2. เวลาที่อยู่หน้างาน เวลาพัก และเวลาทำงานจริงต่างกัน เวลาพักที่บันทึกจะถูกหัก แม้อัตราเท่าเดิม เวลาเปลี่ยนอาจทำให้ยอดต่างกัน\n\n3. เสร็จงานแล้วลงเวลาออก หากแก้ย้อนหลัง ให้เปิดสถานที่และวันที่ถูกต้องในสรุปยอด แก้เวลาหรือพักที่แก้ได้แล้วบันทึก\n\n09:00–18:00 พักหนึ่งชั่วโมง คืออยู่เก้าชั่วโมงและทำงานแปดชั่วโมง งานข้ามคืนต้องตรวจวันสิ้นสุดด้วย อย่าลงเวลาเข้าออกวันนี้ซ้ำเพื่อแก้บันทึกเก่า"
+      },
+      {
+        "id": "income",
+        "title": "รายได้และเงินเพิ่ม",
+        "body": "รายได้คือค่าจ้างตามงานและการตั้งค่าจ่าย เงินเพิ่มเป็นเงินเพิ่มเติม ไม่ใช่การคืนเงินที่ออกไปก่อน\n\n1. ใช้ดินสอตรวจอัตรา ยอด ฐานค่าจ้างของสถานที่ และเวลาทำงาน\n\n2. ขยายเงินเพิ่ม ใส่ชื่อ เช่น ค่าอาหาร เนื้อหาเหตุผล และยอด แต่ละรายการให้แยกกัน\n\n3. แก้หรือลบรายการเดิมแล้วบันทึก ตรวจหน้าหลัก สรุปยอด และรายงานที่เชื่อมโยง การลบรายการต่างจากยกเลิกหน้า หากเปลี่ยน 10,000 เป็น 12,000 ให้แก้ของเดิม การเพิ่มใหม่อาจนับซ้ำ PDF ที่ส่งออกแล้วไม่เปลี่ยนเอง\n\nค่าจ้างรายชั่วโมงใช้เฉพาะนาทีที่ครบหลังหักพัก: อัตราต่อชั่วโมง × นาทีทำงาน ÷ 60 และตัดเศษทศนิยมของยอด เช่น อัตรา 12,000 ทำงานแปดชั่วโมงเป็น 96,000 นาทีที่ยังไม่ครบอาจยังไม่ถูกนับ"
+      },
+      {
+        "id": "claims",
+        "title": "ยอดเรียกเก็บแยก · รับเงิน",
+        "body": "บัญชีนี้ติดตามเงินนอกค่าจ้าง เช่น ค่าวัสดุหรือเดินทางที่คุณจ่ายก่อน ไม่ส่งใบแจ้งหนี้หรือโอนเงินอัตโนมัติ\n\n1. ในหน้าแก้ไขหน้าหลัก เพิ่มชื่อ ยอด บันทึก และรูปหลักฐาน แยกค่าใช้จ่ายเป็นการ์ดแล้วบันทึก\n\n2. เปิดยอดเรียกเก็บแยกจากสรุปยอด เลือกสถานที่ด้านซ้าย แล้วสถานะด้านขวา รายการเรียงตามวันที่ ชื่อยาวอาจย่อ\n\n3. ยังไม่ได้รับเป็นสถานะเริ่มต้นที่ยังไม่จ่าย (เดิมยังไม่เรียกเก็บ) เรียกเก็บแล้วคือขอจ่ายแล้ว รับแล้วคือได้รับจริง ตัวกรองยังไม่ได้รับไม่ได้รวมเรียกเก็บแล้วโดยอัตโนมัติ\n\n4. เปิดรายละเอียดแก้ยอด เนื้อหา หรือสถานะแล้วบันทึก เช่น 25,000 ยังไม่ได้รับ เปลี่ยนเป็นเรียกเก็บหลังขอ และรับแล้วหลังเงินจริงเข้า"
+      },
+      {
+        "id": "sync",
+        "title": "ยอดเชื่อมโยงและการลบแยกกัน",
+        "body": "การแก้และบันทึกอย่างชัดเจนอัปเดตต้นทางสรุปยอดที่ตรวจสอบว่าเชื่อมโยงและยังอยู่ รายงานเดิมที่เชื่อมโยงจะรับยอดที่เปลี่ยนของรายการเดียวกัน\n\nไม่ได้ซิงก์ทุกอย่าง สถานะรับเงิน รูป ข้อความ และการลบแยกกัน ต้องเป็นรายการและความสัมพันธ์งานเดียวกัน ไม่ใช่แค่ชื่อเหมือน ไม่สร้างรายงานที่ลบแล้วกลับมา\n\nลบสรุปยอดหรือรายงานแล้ว รายการเรียกเก็บและสถานะยังอยู่ ลบในบัญชีเรียกเก็บก็ยังเก็บสรุปยอดและรายงาน รายการที่เหลือจัดการได้แม้ไม่มีต้นทาง\n\nลบไม่ได้แปลว่ารับเงินแล้ว ให้ใช้รับแล้ว อย่าคิดว่าการกู้รายการบัญชีเหมือนถังขยะสรุปยอด ตรวจและสำรองสิ่งจำเป็นก่อนลบ"
+      },
+      {
+        "id": "photos",
+        "title": "รูปภาพ · ถ่ายและแก้ไข",
+        "body": "1. เลือกสถานที่ ถ่ายหลักฐานชัดเจนและตรวจว่าบันทึกแล้ว รูปในรายการเรียกเก็บเป็นหลักฐานของรายการนั้น\n\n2. ปัดภาพตัวอย่างแนวนอน ในแกลเลอรีตรวจสถานที่ วันที่ หมวด ภาพย่อไม่พอใช้ตัดสินคุณภาพหรือกรอบภาพต้นฉบับ\n\n3. บันทึกการแก้การ์ดข้อมูลหรือบันทึกแล้วเปิดรายละเอียดใหม่ ภาพแก้กับต้นฉบับต่างกัน อ่านสิ่งที่จะถูกลบก่อนคืนต้นฉบับ\n\n4. เอาสิ่งแนบออกอาจต่างจากลบรูปแกลเลอรี อ่านคำยืนยัน ตรวจตำแหน่ง เวลา ข้อมูลอุปกรณ์ และข้อมูลส่วนตัวก่อนแชร์ สำเนาที่ส่งออกไปแล้วไม่เปลี่ยนตามแอป"
+      },
+      {
+        "id": "memos",
+        "title": "บันทึก · เขียนและตรวจ",
+        "body": "เพิ่มบันทึกจากหน้าหลักแล้วบันทึกงาน เช่น โซนตะวันออกเสร็จ ต้องเพิ่มวัสดุ เขียนบริบทให้เข้าใจภายหลัง\n\nเปิดบันทึกที่ถูก ตรวจสถานที่และวันที่ แก้แล้วบันทึก ควรแก้ต้นฉบับแทนคัดลอกเรื่องเก่าลงวันนี้ซ้ำ\n\nเขียนค่าเดินทาง 20,000 ไม่สร้างเงินเพิ่มหรือยอดเรียกเก็บอัตโนมัติ ต้องกรอกยอดในส่วนการเงินที่เหมาะสม\n\nตรวจรายการก่อนลบ บันทึกที่กู้ได้อยู่ในหมวดถังขยะ หลีกเลี่ยงรหัสผ่านและรหัสยืนยัน"
+      },
+      {
+        "id": "settlement",
+        "title": "สรุปยอด · ช่วงเวลาและแก้ไข",
+        "body": "เลือกสถานที่และรายวัน สัปดาห์ หรือเดือน การค้นหามีผลต่อรายการด้วย หากว่างให้ตรวจวันที่ สถานที่ และการค้นหา\n\nเปิดการ์ด ตรวจวัน ชั่วโมง อัตรา เงินเพิ่ม และยอดเรียกเก็บก่อนแก้และบันทึก การ์ดวันเดียวกันให้แยกด้วยสถานที่และเนื้อหา\n\nหน้าหลักคือวันนี้ สรุปยอดคือช่วงที่เลือก ยอดเรียกเก็บแยกคือบัญชีสะสม อย่าสับสนตัวกรองสถานะกับวันที่สรุปยอด\n\nบันทึกแล้วเปิดรายการและรายละเอียดใหม่ ตรวจรายงานของงานเดียวกัน ลบสรุปยอดไม่ลบยอดเรียกเก็บแยก ตรวจจำนวนและรายการที่เลือกก่อนลบหลายรายการ"
+      },
+      {
+        "id": "reports",
+        "title": "รายงาน · รุ่นและ PDF",
+        "body": "ค้นหาสถานที่และช่วง ตรวจวัน ค่าจ้าง เงินเพิ่ม เรียกเก็บ และรูป รายงานไม่ยืนยันเงินเข้าธนาคารหรือรับเงินอัตโนมัติ\n\nการแก้อาจสร้างรุ่นใหม่ หลังยอดเชื่อมโยงเปลี่ยนให้ดูรุ่นล่าสุด ไม่เขียนทับรุ่นเก่าหรือ PDF ที่ส่งออกแล้ว\n\nตรวจข้อความ รูป และยอดในตัวอย่าง PDF ก่อนบันทึกหรือแชร์ หลังแก้ให้สร้าง PDF ใหม่ ไฟล์ในดาวน์โหลดหรือข้อความไม่อัปเดตเอง\n\nลบรายงานยังคงบัญชีเรียกเก็บ และไม่ลบสำเนาของผู้รับหรือแอปอื่น ตรวจข้อมูลส่วนตัวและผู้รับ"
+      },
+      {
+        "id": "backup",
+        "title": "สำรองและกู้คืน",
+        "body": "สำรองเป็นสำเนาแยกเผื่อเครื่องหาย เสีย หรือลบแอป เก็บเฉพาะเครื่องเดียวอาจหายพร้อมเครื่อง เลือกเครื่อง ภายนอก หรือ Google Drive ในตั้งค่า\n\nตรวจเสร็จสิ้น ที่เก็บ วันที่ เก็บทุกส่วนของสำรองที่แบ่งไว้ร่วมกัน อย่าเปลี่ยนชื่อหรือย้ายแค่บางส่วน เลือกไฟล์ที่ต้องการทั้งหมดหรือโฟลเดอร์ครบ ตรวจบัญชี Drive และอินเทอร์เน็ต\n\nสำคัญ: กู้คืนอาจแทนที่ข้อมูลปัจจุบัน ไม่ใช่รวมข้อมูลใหม่สองเครื่องอัตโนมัติ สำรองปัจจุบันแยกก่อน ตรวจต้นทางและวันที่ แล้วทำตามคำแนะนำ อย่าล้างข้อมูลแอปหรือถอดที่เก็บระหว่างทำ\n\nเสร็จแล้วเปิดตามคำแนะนำ ตรวจสถานที่ บันทึก รูป เงินเพิ่ม เรียกเก็บ รายงาน ZIP มาตรฐานอาจมีข้อมูลส่วนตัวไม่เข้ารหัส หากผิดพลาดเก็บสำรองเดิมและตรวจข้อความกับไฟล์"
+      },
+      {
+        "id": "trash",
+        "title": "ถังขยะ · เลือกและคืนค่า",
+        "body": "ตั้งค่า → ถังขยะ เลือกแกลเลอรี สถานที่ บันทึก สรุปยอด หรือรายงาน ใช้ช่องเลือกหรือเลือกทั้งหมด ซึ่งใช้เฉพาะหมวดปัจจุบัน\n\nคืนรายการที่ยังเก็บแล้วตรวจในรายการเดิมด้วยตัวกรองถูกต้อง ตรวจเป้าหมายก่อนลบถาวร\n\nโดยทั่วไปเก็บ 30 วัน และล้างหมดอายุเมื่อเปิดถังขยะ ตรวจวันที่เหลือ รายการเก่าที่ไม่มีเวลาลบอาจไม่ถูกล้างอัตโนมัติ\n\nลบถาวรแล้วกู้จากถังขยะไม่ได้ รูปที่รายการอื่นใช้อาจได้รับการปกป้อง การลบบัญชีเรียกเก็บ รีเซ็ตทั้งหมด และลบสำรองภายนอกเป็นคนละอย่าง"
+      },
+      {
+        "id": "help",
+        "title": "ปัญหา · ตรวจและติดต่อ",
+        "body": "ยอดต่างให้ตรวจสถานที่ วันที่ สกุลเงิน เวลา พัก อัตรา รายการซ้ำ การบันทึก และรายงานล่าสุดที่เชื่อมโยง ตรวจการจ่ายจริงแยกต่างหาก\n\nรายการว่างให้เปลี่ยนหรือล้างสถานที่ ช่วง สถานะ ค้นหา ดูถังขยะ รูปหายให้ตรวจสถานที่และหมวดเดิม รวมถึงรูปในสำรอง\n\nกล้องหรือแชร์ไม่เปิด ให้ดูสิทธิ์ Android พื้นที่ และแอปภายนอก อย่าเริ่มด้วยลบแอปหรือรีเซ็ต ควรสำรองก่อน\n\nแจ้งฝ่ายช่วยเหลือด้วยหน้าจอ ขั้นตอน ผลที่คาดและจริง ความถี่ รุ่นแอป Android และรุ่นเครื่อง ปิดข้อมูลส่วนตัวในรูป อย่าส่งรหัสผ่านหรือรหัสยืนยัน"
+      }
+    ]
+  },
+  "ar": {
+    "name": "العربية",
+    "title": "دليل المستخدم",
+    "intro": "دليل خطوة بخطوة للإعدادات والسجلات والمبالغ والصور والنسخ الاحتياطي. افتح موضوعًا أو ابحث. يمكن قراءته دون إنترنت داخل التطبيق. قد تختلف أسماء الشاشات حسب الإصدار واللغة.",
+    "search": "بحث",
+    "empty": "لا توجد نتائج بحث.",
+    "sections": [
+      {
+        "id": "start",
+        "title": "البدء · الإعدادات ومواقع العمل",
+        "body": "1. تحقق من اللغة والعملة قبل إدخال المبالغ. تغيير العملة المعروضة لا يحوّل القيم تلقائيًا بسعر الصرف.\n\n2. اختر موقع العمل أعلى الرئيسية. استخدم جديد لحفظ الاسم والتفاصيل، وميّز المواقع المتشابهة باسم أو عنوان واضح.\n\n3. تحقق من الموقع قبل تسجيل الوقت أو الصور أو المال، ومن التاريخ أيضًا عند مراجعة سجلات سابقة.\n\n4. إذا رفضت إذن الكاميرا أو الموقع، يمكنك تغييره من أذونات تطبيق Android. منح الإذن لا يكمل تلقائيًا معلومات السجلات القديمة الناقصة."
+      },
+      {
+        "id": "home",
+        "title": "الرئيسية · سجلات اليوم",
+        "body": "الرئيسية لتنظيم اليوم الحالي وليست سجل المطالبات المتراكمة. تحقق من الموقع والتاريخ ثم استخدم بطاقات الدوام والدخل والملاحظات والصور.\n\nالأجر والبدلات والمطالبات المنفصلة بنود مختلفة. ظهور مبلغ لا يثبت إيداعًا بنكيًا. تابع الاستلام في المطالبات المنفصلة.\n\nقلم إجمالي الدخل يفتح التحرير المشترك. افتح القسم وعدّل ثم احفظ؛ الإلغاء لا يحفظ. افتح السجل مجددًا للتحقق.\n\nمثال: أجر 100,000 وبدل 10,000 ومواد دفعتها مقدمًا 25,000 تُسجّل منفصلة. لا تُدخل المصروف نفسه كبدل ومطالبة معًا."
+      },
+      {
+        "id": "attendance",
+        "title": "الدوام · الاستراحة ووقت العمل",
+        "body": "1. تحقق من الموقع وسجّل الحضور. راجع الوقت وما إذا كان هناك دوام جارٍ بالفعل.\n\n2. مدة التواجد والاستراحة والعمل الفعلي تختلف. تُخصم الاستراحة المسجلة؛ اختلاف الأوقات قد يغيّر المبلغ رغم ثبات السعر.\n\n3. سجّل الانصراف عند النهاية. لتصحيح سجل سابق، افتح الموقع واليوم الصحيحين في التسوية، وعدّل الأوقات والاستراحات المتاحة ثم احفظ.\n\nمن 09:00 إلى 18:00 مع استراحة ساعة يعني تواجد تسع ساعات وعمل ثماني ساعات. في العمل الليلي تحقق من تاريخ النهاية. تكرار الحضور والانصراف اليوم لا يصحح نقصًا قديمًا."
+      },
+      {
+        "id": "income",
+        "title": "الدخل والبدلات",
+        "body": "الدخل أجر حسب العمل وإعدادات الدفع. البدل مبلغ إضافي يختلف عن استرداد مصروف دفعته مقدمًا.\n\n1. عبر القلم راجع السعر والمبلغ وأساس أجر الموقع ووقت العمل.\n\n2. افتح البدلات وأضف العنوان ووصف السبب والمبلغ. افصل كل بدل في بند.\n\n3. عدّل البند الموجود أو أزله ثم احفظ، وراجع الرئيسية والتسوية والتقرير المرتبطين. إزالة بند ليست إلغاء الصفحة. لتغيير 10,000 إلى 12,000 عدّل الأصل؛ إضافة بند آخر قد تضاعف الإجمالي. ملفات PDF المصدّرة لا تتحدث تلقائيًا.\n\nالأجر بالساعة يستخدم دقائق العمل المكتملة بعد الاستراحة: سعر الساعة × الدقائق ÷ 60، مع إسقاط الجزء الكسري من المبلغ. سعر 12,000 لثماني ساعات يعطي 96,000. قد لا تُحسب الدقيقة غير المكتملة بعد."
+      },
+      {
+        "id": "claims",
+        "title": "المطالبات المنفصلة · استلام المال",
+        "body": "سجل للأموال المستحقة خارج الأجر، مثل مواد أو تنقلات دفعتها مقدمًا. لا يرسل فاتورة ولا يحوّل المال تلقائيًا.\n\n1. في محرر الرئيسية أضف عنوانًا ومبلغًا وملاحظة وصور إثبات. احفظ المصروفات المختلفة في بطاقات منفصلة.\n\n2. افتح المطالبات المنفصلة من التسوية. اختر موقع العمل أولًا ثم الحالة من قائمة التصفية الأخرى. تظهر النتائج حسب التاريخ وقد تُختصر الأسماء الطويلة.\n\n3. غير مستلم هو الوضع الأولي غير المدفوع (سابقًا غير مطالب به)، تمت المطالبة يعني طلب الدفع، ومستلم يعني وصول المال فعلًا. مرشح غير مستلم لا يشمل تلقائيًا تمت المطالبة.\n\n4. افتح التفاصيل لتعديل المبلغ أو المحتوى أو الحالة واحفظ. مثال: 25,000 غير مستلم، ثم تمت المطالبة بعد الطلب، ثم مستلم بعد الدفع الحقيقي."
+      },
+      {
+        "id": "sync",
+        "title": "ربط المبالغ والحذف المستقل",
+        "body": "التعديل المحفوظ صراحة يحدّث مصدر التسوية المرتبط والمتحقق منه إذا بقي موجودًا. يتلقى التقرير المرتبط الموجود تغيير مبلغ المطالبة نفسها.\n\nليست كل الحقول متزامنة: حالة الاستلام والصور والنص والحذف مستقلة. يلزم البند نفسه وعلاقة العمل نفسها، وليس تشابه الأسماء. لا يُعاد إنشاء تقرير محذوف.\n\nحذف التسوية أو التقرير يُبقي المطالبة وحالتها. الحذف من سجل المطالبات يُبقي التسويات والتقارير. يمكن إدارة المطالبة الباقية دون مصدرها.\n\nالحذف لا يعني استلام المال؛ استخدم مستلم. لا تفترض أن استعادة سجل المطالبات مماثلة لسلة التسويات. تحقق مما تحتاج حفظه وخذ نسخة قبل الحذف."
+      },
+      {
+        "id": "photos",
+        "title": "الصور · الالتقاط والتحرير",
+        "body": "1. اختر الموقع والتقط إثباتًا واضحًا وتحقق من الحفظ. الصور داخل المطالبة تدعم ذلك البند.\n\n2. مرر المعاينات أفقيًا. في المعرض تحقق من الموقع والتاريخ والفئة. الصورة المصغرة لا تكفي للحكم على جودة الأصل أو إطاره.\n\n3. احفظ تعديلات بطاقة المعلومات أو الملاحظة وافتح التفاصيل مجددًا. الصورة المعدّلة والأصل منفصلان؛ اقرأ ما سيُزال عند استعادة الأصل.\n\n4. إزالة مرفق قد تختلف عن حذف صورة من المعرض. اقرأ التأكيد، وراجع الموقع والوقت وبيانات الجهاز والخصوصية قبل المشاركة. النسخ الخارجية المرسلة لا تتغير مع التطبيق."
+      },
+      {
+        "id": "memos",
+        "title": "الملاحظات · الكتابة والمراجعة",
+        "body": "أضف ملاحظة من الرئيسية واحفظ تفاصيل العمل، مثل اكتمل القسم الشرقي ونحتاج مواد. أضف سياقًا مفهومًا لاحقًا.\n\nافتح الملاحظة الصحيحة وراجع الموقع والتاريخ ثم عدّل واحفظ. صحح الأصل بدل نسخ ملاحظة قديمة إلى اليوم مرارًا.\n\nكتابة تنقلات 20,000 لا تنشئ بدلًا أو مطالبة تلقائيًا. أدخل المبلغ في القسم المالي المناسب.\n\nراجع العنصر قبل حذفه؛ الملاحظات القابلة للاستعادة في فئتها بسلة المحذوفات. تجنب حفظ كلمات المرور ورموز التحقق."
+      },
+      {
+        "id": "settlement",
+        "title": "التسوية · الفترات والتصحيح",
+        "body": "اختر الموقع والفترة اليومية أو الأسبوعية أو الشهرية. البحث يرشّح أيضًا؛ عند فراغ القائمة راجع التاريخ والموقع والبحث.\n\nافتح البطاقة وراجع اليوم والساعات والسعر والبدلات والمطالبات ثم عدّل واحفظ. ميّز بطاقات اليوم نفسه بالموقع والمحتوى.\n\nالرئيسية لليوم، والتسوية للفترة، والمطالبات المنفصلة لسجل متراكم. لا تخلط حالة المطالبة مع تاريخ التسوية.\n\nبعد الحفظ افتح القائمة والتفاصيل والتقرير المرتبط بالعمل نفسه. حذف التسوية لا يحذف المطالبة المنفصلة. راجع العدد والعناصر المحددة قبل الحذف الجماعي."
+      },
+      {
+        "id": "reports",
+        "title": "التقارير · الإصدارات وPDF",
+        "body": "ابحث بالموقع والفترة وراجع يوم العمل والأجر والبدلات والمطالبات والصور. التقارير لا تتحقق تلقائيًا من الإيداع أو الاستلام.\n\nقد ينشئ التعديل إصدارًا جديدًا. بعد تغيير مبلغ مرتبط راجع الأحدث. لا تُستبدل الإصدارات القديمة أو ملفات PDF المصدّرة.\n\nراجع النص والصور والمبالغ في معاينة PDF ثم احفظ أو شارك. بعد التعديل أنشئ PDF جديدًا؛ الملفات المنزّلة أو المرسلة لا تتحدث وحدها.\n\nحذف التقرير يُبقي سجل المطالبات ولا يحذف نسخ المستلمين أو التطبيقات الأخرى. راجع البيانات الشخصية والمستلم."
+      },
+      {
+        "id": "backup",
+        "title": "النسخ الاحتياطي والاستعادة",
+        "body": "النسخة الاحتياطية منفصلة للحماية من الفقد أو العطل أو إزالة التطبيق. وجودها فقط على الهاتف نفسه قد يؤدي لفقدها معه. اختر الجهاز أو الخارجي أو Google Drive في الإعدادات.\n\nراجع اكتمال العملية والمكان والتاريخ. احتفظ بكل أجزاء النسخة المقسمة معًا دون إعادة تسمية أو نقل بعض الأجزاء فقط. اختر كل الملفات المطلوبة أو المجلد الكامل. تحقق من حساب Drive والاتصال.\n\nمهم: الاستعادة قد تستبدل البيانات الحالية ولا تدمج تلقائيًا سجلات جهازين الجديدة. انسخ البيانات الحالية أولًا، وراجع المصدر والتاريخ واتبع التعليمات. لا تمسح بيانات التطبيق أو تفصل التخزين أثناء العملية.\n\nبعد الانتهاء أعد الفتح حسب الإرشاد وراجع المواقع والسجلات والصور والبدلات والمطالبات والتقارير. قد يحتوي ZIP القياسي بيانات شخصية غير مشفرة. عند الخطأ احتفظ بالنسخة وراجع الرسالة والملفات."
+      },
+      {
+        "id": "trash",
+        "title": "سلة المحذوفات · التحديد والاستعادة",
+        "body": "في الإعدادات ← سلة المحذوفات افتح المعرض أو المواقع أو الملاحظات أو التسوية أو التقارير. استخدم مربعات الاختيار أو تحديد الكل، للفئة الحالية فقط.\n\nاستعد العناصر التي ما زالت محفوظة وتحقق من القائمة الأصلية بمرشحات صحيحة. تحقق من الأهداف قبل الحذف النهائي.\n\nتُحفظ عادة 30 يومًا وتُنظف المنتهية عند فتح السلة. راجع الأيام المتبقية. قد تُستثنى العناصر القديمة بلا وقت حذف من التنظيف التلقائي.\n\nالمحذوف نهائيًا لا يُستعاد من السلة. قد تُحمى صور تستخدمها سجلات أخرى. حذف سجل المطالبات وإعادة ضبط البيانات وحذف النسخ الخارجية عمليات منفصلة."
+      },
+      {
+        "id": "help",
+        "title": "المشكلات · الفحص والدعم",
+        "body": "عند اختلاف المبلغ راجع الموقع والتاريخ والعملة، الأوقات والاستراحة والسعر، التكرار، الحفظ، وأحدث تقرير مرتبط. تحقق من الدفع الفعلي منفصلًا.\n\nلقائمة فارغة غيّر أو امسح الموقع والفترة والحالة والبحث. راجع السلة؛ وللصور تحقق من الموقع والفئة الأصلية ومحتوى النسخة.\n\nإذا لم تفتح الكاميرا أو المشاركة، راجع أذونات Android والمساحة والتطبيقات الخارجية. لا تبدأ بإزالة التطبيق أو مسح الجميع؛ انسخ البيانات أولًا.\n\nأرسل للدعم الشاشة والخطوات والنتيجة المتوقعة والفعلية والتكرار وإصداري التطبيق وAndroid وطراز الجهاز. اخفِ البيانات الشخصية في الصور ولا ترسل كلمات مرور أو رموزًا."
+      }
+    ]
+  },
+  "hi": {
+    "name": "हिन्दी",
+    "title": "उपयोगकर्ता मार्गदर्शिका",
+    "intro": "सेटिंग, रिकॉर्ड, रकम, फ़ोटो और बैकअप की चरण-दर-चरण मार्गदर्शिका। विषय खोलें या खोजें। ऐप में इसे ऑफ़लाइन भी पढ़ सकते हैं। नाम संस्करण और भाषा के अनुसार बदल सकते हैं।",
+    "search": "खोजें",
+    "empty": "कोई खोज परिणाम नहीं.",
+    "sections": [
+      {
+        "id": "start",
+        "title": "शुरुआत · सेटिंग और कार्यस्थल",
+        "body": "1. रकम भरने से पहले भाषा और मुद्रा जाँचें। दिखाई गई मुद्रा बदलना विनिमय दर से अपने-आप रकम बदलना नहीं है।\n\n2. होम पर कार्यस्थल चुनें। नया से नाम और विवरण सहेजें; मिलते-जुलते स्थलों को स्पष्ट नाम या पते से अलग रखें।\n\n3. समय, फ़ोटो या रकम दर्ज करने से पहले स्थल और पुराने रिकॉर्ड खोजते समय तारीख भी जाँचें।\n\n4. कैमरा या स्थान की अनुमति मना की हो तो Android ऐप अनुमतियों में बदलें। अनुमति देने से पुराने रिकॉर्ड की गायब जानकारी स्वतः नहीं भरती।"
+      },
+      {
+        "id": "home",
+        "title": "होम · आज के रिकॉर्ड",
+        "body": "होम आज का काम व्यवस्थित करता है, सभी जमा दावों का रजिस्टर नहीं। स्थल और तारीख जाँचकर उपस्थिति, आय, नोट और फ़ोटो कार्ड इस्तेमाल करें।\n\nमजदूरी, भत्ते और अलग दावे अलग मद हैं। स्क्रीन की रकम बैंक में भुगतान का प्रमाण नहीं है। प्राप्ति अलग दावों में संभालें।\n\nकुल आय का पेंसिल साझा संपादन खोलता है। भाग खोलें, बदलें और सहेजें; रद्द करना सहेजना नहीं है। दोबारा खोलकर जाँचें।\n\nउदाहरण: मजदूरी 100,000, भत्ता 10,000, पहले चुकाई सामग्री 25,000 अलग दर्ज करें। एक खर्च भत्ता और दावा दोनों में न डालें।"
+      },
+      {
+        "id": "attendance",
+        "title": "उपस्थिति · विराम और काम का समय",
+        "body": "1. स्थल जाँचकर काम शुरू दर्ज करें। समय और पहले से चल रही शिफ़्ट जाँचें।\n\n2. मौजूदगी, विराम और वास्तविक काम अलग हैं। दर्ज विराम घटता है; समान दर पर भी अलग समय रकम बदल सकता है।\n\n3. अंत में काम समाप्त दर्ज करें। पुराना रिकॉर्ड सुधारने के लिए हिसाब में सही स्थल/तारीख खोलें, उपलब्ध समय/विराम बदलकर सहेजें।\n\n09:00–18:00 और एक घंटे का विराम यानी नौ घंटे मौजूदगी, आठ घंटे काम। रात पार हो तो अंत की तारीख भी जाँचें। आज बार-बार शुरू/समाप्त करना पुरानी कमी नहीं सुधारता।"
+      },
+      {
+        "id": "income",
+        "title": "आय और भत्ते",
+        "body": "आय काम और वेतन सेटिंग के अनुसार मजदूरी है। भत्ता अतिरिक्त भुगतान है, पहले अपने पैसे से किया खर्च वापस लेना नहीं।\n\n1. पेंसिल से दर, रकम, स्थल का वेतन आधार और काम का समय जाँचें।\n\n2. भत्ते खोलकर शीर्षक, कारण का विवरण और रकम भरें। हर भत्ता अलग रखें।\n\n3. पुरानी मद बदलें या हटाएँ और सहेजें। होम और जुड़े हिसाब/रिपोर्ट जाँचें। मद हटाना पृष्ठ रद्द करना नहीं। 10,000 से 12,000 करने के लिए मूल मद बदलें; नई जोड़ने से दोनों जुड़ सकती हैं। निर्यातित PDF अपने-आप नहीं बदलती।\n\nघंटे की मजदूरी में विराम के बाद के पूरे मिनट लिए जाते हैं: घंटे की दर × मिनट ÷ 60, रकम का दशमलव भाग छोड़कर। 12,000 प्रति घंटे पर आठ घंटे 96,000 हैं। अधूरा मिनट अभी शामिल न हो सकता है।"
+      },
+      {
+        "id": "claims",
+        "title": "अलग दावे · पैसे मिलना",
+        "body": "यह मजदूरी से अलग मिलने वाले पैसे का रजिस्टर है, जैसे पहले चुकाए सामग्री या यात्रा खर्च। यह बिल स्वतः नहीं भेजता, न पैसे ट्रांसफ़र करता है।\n\n1. होम संपादक में शीर्षक, रकम, नोट और प्रमाण फ़ोटो सहित दावा जोड़ें। अलग खर्च अलग कार्ड में सहेजें।\n\n2. हिसाब से अलग दावे खोलें। बाईं ओर स्थल, दाईं ओर स्थिति चुनें। परिणाम तारीख क्रम में हैं; लंबे नाम छोटे दिख सकते हैं।\n\n3. अप्राप्त शुरुआती बकाया स्थिति है (पहले दावा नहीं किया), दावा किया यानी भुगतान माँगा, प्राप्त यानी वास्तव में मिला। अप्राप्त फ़िल्टर में दावा किया स्वतः शामिल नहीं होता।\n\n4. विवरण खोलकर रकम, सामग्री या स्थिति बदलें और सहेजें। उदाहरण: 25,000 अप्राप्त, माँगने पर दावा किया, पैसे मिलने पर प्राप्त।"
+      },
+      {
+        "id": "sync",
+        "title": "रकम का जुड़ाव और अलग हटाना",
+        "body": "स्पष्ट रूप से सहेजा दावा बदलाव सत्यापित जुड़े हिसाब स्रोत को भी बदलता है, यदि वह मौजूद है। मौजूदा जुड़ी रिपोर्ट में उसी दावे की रकम बदलती है।\n\nसब कुछ सिंक नहीं होता: प्राप्ति स्थिति, फ़ोटो, पाठ और हटाना अलग हैं। वही मद और काम का संबंध चाहिए, केवल समान नाम नहीं। हटाई रिपोर्ट दोबारा नहीं बनती।\n\nहिसाब/रिपोर्ट हटाने पर दावा और स्थिति रहते हैं। दावा रजिस्टर से हटाने पर हिसाब/रिपोर्ट रहते हैं। स्रोत न हो तब भी बचा दावा संभाल सकते हैं।\n\nहटाना भुगतान मिलना नहीं है: प्राप्त चुनें। रजिस्टर की पुनर्प्राप्ति को हिसाब के कूड़ेदान जैसा न मानें। हटाने से पहले जरूरी डेटा जाँचें और बैकअप लें।"
+      },
+      {
+        "id": "photos",
+        "title": "फ़ोटो · लेना और संपादित करना",
+        "body": "1. स्थल चुनकर साफ़ प्रमाण लें और सहेजना जाँचें। दावे के भीतर फ़ोटो उसी मद के प्रमाण हैं।\n\n2. कई पूर्वावलोकन क्षैतिज स्वाइप करें। गैलरी में स्थल, तारीख, श्रेणी जाँचें। थंबनेल मूल की गुणवत्ता या फ्रेम आँकने के लिए पर्याप्त नहीं।\n\n3. सूचना कार्ड/नोट बदलाव सहेजकर विवरण दोबारा खोलें। संपादित और मूल फ़ोटो अलग हैं; मूल लौटाने पर क्या हटेगा, पढ़ें।\n\n4. संलग्नक हटाना गैलरी फ़ोटो हटाने से अलग हो सकता है। पुष्टि पढ़ें; साझा करने से पहले स्थान, समय, डिवाइस मेटाडेटा और निजी जानकारी जाँचें। बाहर भेजी प्रतियाँ ऐप के बदलाव से नहीं बदलतीं।"
+      },
+      {
+        "id": "memos",
+        "title": "नोट · लिखना और जाँचना",
+        "body": "होम से नोट जोड़कर काम की जानकारी सहेजें, जैसे पूर्वी भाग पूरा, सामग्री चाहिए। बाद में समझने लायक संदर्भ लिखें।\n\nसही नोट खोलें, स्थल/तारीख जाँचें, बदलें और सहेजें। पुराने नोट को आज में बार-बार लिखने की जगह मूल सुधारें।\n\nयात्रा 20,000 लिखने से भत्ता या दावा स्वतः नहीं बनता। रकम सही वित्तीय भाग में अलग भरें।\n\nहटाने का लक्ष्य जाँचें; वापस लाने योग्य नोट कूड़ेदान की श्रेणी में हैं। पासवर्ड या सत्यापन कोड न रखें।"
+      },
+      {
+        "id": "settlement",
+        "title": "हिसाब · अवधि और सुधार",
+        "body": "स्थल और दिन, सप्ताह या माह चुनें। खोज भी फ़िल्टर करती है; खाली सूची हो तो तारीख, स्थल और खोज जाँचें।\n\nकार्ड खोलकर दिन, घंटे, दर, भत्ते और दावे देखें, फिर बदलकर सहेजें। एक तारीख के कार्ड स्थल और विवरण से अलग करें।\n\nहोम आज के लिए, हिसाब चुनी अवधि के लिए, अलग दावे जमा रजिस्टर के लिए हैं। स्थिति फ़िल्टर को हिसाब की तारीख से न मिलाएँ।\n\nसहेजने के बाद सूची/विवरण और उसी काम की रिपोर्ट खोलें। हिसाब हटाना अलग दावा नहीं हटाता। सामूहिक हटाने से पहले संख्या और चुनी मदें जाँचें।"
+      },
+      {
+        "id": "reports",
+        "title": "रिपोर्ट · संस्करण और PDF",
+        "body": "स्थल/अवधि से खोजकर दिन, मजदूरी, भत्ते, दावे और फ़ोटो जाँचें। रिपोर्ट बैंक भुगतान या प्राप्ति स्वतः सत्यापित नहीं करती।\n\nसंपादन नया संस्करण बना सकता है। जुड़ी रकम बदलने पर नवीनतम देखें। पुराने संस्करण और निर्यातित PDF नहीं लिखे जाते।\n\nPDF पूर्वावलोकन में पाठ, फ़ोटो, रकम जाँचकर सहेजें/साझा करें। बदलाव के बाद नया PDF बनाएँ; डाउनलोड या संदेश की फ़ाइल स्वतः नहीं बदलती।\n\nरिपोर्ट हटाने पर रजिस्टर और अन्य ऐप/प्राप्तकर्ता की प्रतियाँ नहीं हटतीं। निजी जानकारी और प्राप्तकर्ता जाँचें।"
+      },
+      {
+        "id": "backup",
+        "title": "बैकअप और बहाली",
+        "body": "बैकअप खोने, खराबी या ऐप हटने के लिए अलग प्रति है। केवल उसी फ़ोन में रखी प्रति साथ खो सकती है। सेटिंग में डिवाइस, बाहरी या Google Drive चुनें।\n\nपूर्णता, स्थान और तारीख जाँचें। विभाजित बैकअप के सभी हिस्से साथ रखें; नाम न बदलें या कुछ ही न हटाएँ। सभी जरूरी फ़ाइलें या पूरा फ़ोल्डर चुनें। Drive का खाता और नेटवर्क जाँचें।\n\nमहत्वपूर्ण: बहाली वर्तमान डेटा बदल सकती है, दो डिवाइस के नए रिकॉर्ड स्वतः नहीं मिलाती। पहले वर्तमान डेटा का अलग बैकअप लें, स्रोत/तारीख जाँचें। प्रक्रिया के बीच ऐप डेटा साफ़ न करें या स्टोरेज न निकालें।\n\nपूरा होने पर निर्देशानुसार खोलकर स्थल, रिकॉर्ड, फ़ोटो, भत्ते, दावे, रिपोर्ट जाँचें। मानक ZIP में बिना एन्क्रिप्शन निजी डेटा हो सकता है। त्रुटि पर बैकअप बचाएँ और संदेश/फ़ाइलें जाँचें।"
+      },
+      {
+        "id": "trash",
+        "title": "कूड़ेदान · चुनना और बहाल करना",
+        "body": "सेटिंग → कूड़ेदान में गैलरी, स्थल, नोट, हिसाब या रिपोर्ट खोलें। चेकबॉक्स या सभी चुनें इस्तेमाल करें; यह केवल वर्तमान श्रेणी पर लागू है।\n\nअभी रखी मद बहाल करें और मूल सूची में सही फ़िल्टर से देखें। स्थायी हटाने से पहले लक्ष्य जाँचें।\n\nआमतौर पर 30 दिन रखी जाती हैं; अवधि बीतने पर कूड़ेदान खोलते समय सफ़ाई होती है। बचे दिन देखें। बिना हटाने के समय वाली पुरानी मदें स्वतः सफ़ाई से बाहर हो सकती हैं।\n\nस्थायी हटाई मद कूड़ेदान से वापस नहीं आती। अन्य रिकॉर्ड की फ़ोटो सुरक्षित रह सकती हैं। दावा रजिस्टर हटाना, पूरा डेटा रीसेट और बाहरी बैकअप हटाना अलग प्रक्रियाएँ हैं।"
+      },
+      {
+        "id": "help",
+        "title": "समस्या · जाँच और सहायता",
+        "body": "रकम अलग हो तो स्थल/तारीख/मुद्रा, समय/विराम/दर, दोहरी मदें, सहेजना और नवीनतम जुड़ी रिपोर्ट जाँचें। वास्तविक भुगतान अलग सत्यापित करें।\n\nसूची खाली: स्थल, अवधि, स्थिति, खोज बदलें/हटाएँ। कूड़ेदान देखें; फ़ोटो गायब हो तो मूल स्थल/श्रेणी और बैकअप में फ़ोटो जाँचें।\n\nकैमरा/साझा न खुले तो Android अनुमति, जगह और बाहरी ऐप जाँचें। पहले ऐप हटाना या रीसेट न करें; बैकअप लें।\n\nसहायता को स्क्रीन, चरण, अपेक्षित/वास्तविक नतीजा, आवृत्ति, ऐप/Android संस्करण और मॉडल दें। तस्वीरों में निजी जानकारी छिपाएँ; पासवर्ड या कोड न भेजें।"
+      }
+    ]
+  },
+  "id": {
+    "name": "Bahasa Indonesia",
+    "title": "Panduan Pengguna",
+    "intro": "Panduan bertahap untuk pengaturan, catatan, jumlah uang, foto, dan cadangan. Buka topik atau cari. Di aplikasi, panduan dapat dibaca tanpa internet. Nama layar bisa berbeda menurut versi dan bahasa.",
+    "search": "Cari",
+    "empty": "Tidak ada hasil pencarian.",
+    "sections": [
+      {
+        "id": "start",
+        "title": "Memulai · pengaturan dan tempat kerja",
+        "body": "1. Periksa bahasa dan mata uang sebelum memasukkan jumlah. Mengubah tampilan mata uang bukan konversi otomatis berdasarkan kurs.\n\n2. Pilih tempat kerja di Beranda. Gunakan Baru untuk menyimpan nama dan detail lokasi; bedakan nama yang mirip dengan alamat atau nama khusus.\n\n3. Pastikan lokasi sebelum mencatat waktu, foto, atau uang. Untuk catatan lama, periksa tanggal juga.\n\n4. Jika izin kamera/lokasi ditolak, ubah melalui izin aplikasi Android. Izin baru tidak otomatis mengisi informasi catatan lama yang hilang."
+      },
+      {
+        "id": "home",
+        "title": "Beranda · catatan hari ini",
+        "body": "Beranda mengatur pekerjaan hari ini, bukan seluruh daftar tagihan terkumpul. Periksa tempat dan tanggal, lalu gunakan kartu kehadiran, pendapatan, memo, dan foto.\n\nUpah, tunjangan, dan tagihan terpisah berbeda. Jumlah di layar bukan bukti uang masuk ke rekening. Kelola penerimaan pada Tagihan terpisah.\n\nIkon pensil Pendapatan total membuka editor bersama. Buka bagian, ubah lalu Simpan; Batal tidak menyimpan. Buka kembali untuk memastikan.\n\nContoh: upah 100.000, tunjangan 10.000, bahan yang dibayar dahulu 25.000 dicatat terpisah. Jangan masukkan biaya sama sebagai tunjangan sekaligus tagihan."
+      },
+      {
+        "id": "attendance",
+        "title": "Kehadiran · istirahat dan jam kerja",
+        "body": "1. Pastikan tempat lalu tekan Masuk. Periksa jam dan apakah pekerjaan sudah berjalan.\n\n2. Lama berada di lokasi, istirahat, dan kerja aktual berbeda. Istirahat tercatat dikurangi; jam berbeda dapat mengubah jumlah meskipun tarif sama.\n\n3. Tekan Pulang saat selesai. Untuk koreksi lama, buka tempat dan tanggal yang tepat di Perhitungan, ubah jam/istirahat yang dapat diedit, lalu simpan.\n\n09:00–18:00 dengan istirahat satu jam berarti berada sembilan jam dan bekerja delapan jam. Untuk lintas malam, periksa tanggal selesai. Mengulang masuk/pulang hari ini bukan cara memperbaiki catatan lama."
+      },
+      {
+        "id": "income",
+        "title": "Pendapatan dan tunjangan",
+        "body": "Pendapatan adalah upah sesuai pekerjaan dan pengaturan pembayaran. Tunjangan adalah tambahan, berbeda dari penggantian biaya yang Anda talangi.\n\n1. Melalui pensil, periksa tarif, jumlah, dasar upah tempat kerja, dan jam kerja.\n\n2. Buka Tunjangan, isi judul, penjelasan alasan, dan jumlah. Pisahkan tiap tunjangan.\n\n3. Ubah atau hapus item lama lalu simpan. Periksa Beranda, perhitungan dan laporan terkait. Menghapus item berbeda dari membatalkan halaman. Untuk mengubah 10.000 menjadi 12.000, edit item asli; menambah baru dapat terhitung ganda. PDF yang sudah diekspor tidak berubah otomatis.\n\nUpah per jam memakai menit kerja penuh setelah istirahat: tarif × menit ÷ 60, dengan pecahan nilai uang dibuang. Tarif 12.000 selama delapan jam menghasilkan 96.000. Menit yang belum penuh mungkin belum dihitung."
+      },
+      {
+        "id": "claims",
+        "title": "Tagihan terpisah · penerimaan uang",
+        "body": "Buku ini melacak uang di luar upah yang harus diterima, misalnya bahan atau transportasi yang Anda bayar dahulu. Tidak otomatis mengirim tagihan atau mentransfer uang.\n\n1. Di editor Beranda, tambahkan judul, jumlah, memo, dan foto bukti. Simpan biaya berbeda dalam kartu terpisah.\n\n2. Dari Perhitungan buka Tagihan terpisah. Pilih tempat di kiri, status di kanan. Hasil berurutan tanggal; nama panjang bisa dipendekkan.\n\n3. Belum diterima adalah status awal belum dibayar (dulu Belum ditagih), Ditagih berarti sudah meminta pembayaran, Diterima berarti uang sudah diterima. Filter Belum diterima tidak otomatis mencakup Ditagih.\n\n4. Buka detail untuk mengubah jumlah, isi, atau status lalu simpan. Contoh 25.000 belum diterima, ditagih setelah meminta, diterima setelah benar-benar dibayar."
+      },
+      {
+        "id": "sync",
+        "title": "Jumlah terhubung, penghapusan terpisah",
+        "body": "Edit yang disimpan memperbarui sumber perhitungan terkait yang terverifikasi jika masih ada. Laporan terkait yang sudah ada menerima perubahan jumlah tagihan yang sama.\n\nTidak semua bidang sinkron: status penerimaan, foto, teks, dan penghapusan terpisah. Harus cocok item dan hubungan kerja yang sama, bukan sekadar nama. Laporan terhapus tidak dibuat kembali.\n\nMenghapus perhitungan/laporan tetap menyisakan tagihan dan statusnya. Menghapus dari buku tagihan tidak menghapus perhitungan/laporan. Tagihan tersisa bisa dikelola tanpa sumber asal.\n\nHapus bukan berarti sudah dibayar: gunakan Diterima. Jangan menganggap pemulihan buku tagihan sama dengan Sampah perhitungan. Periksa dan cadangkan yang perlu disimpan."
+      },
+      {
+        "id": "photos",
+        "title": "Foto · mengambil dan mengedit",
+        "body": "1. Pilih tempat, ambil bukti yang jelas, periksa penyimpanan. Foto dalam tagihan mendukung item tersebut.\n\n2. Geser pratinjau ke samping. Di Galeri periksa tempat, tanggal, kategori. Gambar kecil tidak cukup untuk menilai kualitas atau bingkai asli.\n\n3. Simpan edit kartu informasi atau memo dan buka detail lagi. Gambar edit dan asli berbeda; baca apa yang dihapus saat memulihkan asli.\n\n4. Melepas lampiran dapat berbeda dari menghapus foto Galeri. Baca konfirmasi dan periksa lokasi, waktu, metadata perangkat, serta data pribadi sebelum berbagi. Salinan di luar aplikasi tidak ikut berubah."
+      },
+      {
+        "id": "memos",
+        "title": "Memo · menulis dan memeriksa",
+        "body": "Tambahkan memo di Beranda lalu simpan pekerjaan atau pesan, misalnya Area timur selesai; perlu bahan. Berikan konteks agar mudah dipahami nanti.\n\nBuka memo yang benar, periksa tempat/tanggal, edit dan simpan. Koreksi catatan asli daripada berulang menyalin memo lama ke hari ini.\n\nMenulis Transportasi 20.000 tidak membuat tunjangan atau tagihan otomatis. Masukkan jumlah pada bagian keuangan yang sesuai.\n\nPastikan target sebelum menghapus; lihat kategori Memo di Sampah untuk pemulihan yang tersedia. Hindari menyimpan kata sandi dan kode verifikasi."
+      },
+      {
+        "id": "settlement",
+        "title": "Perhitungan · periode dan koreksi",
+        "body": "Pilih tempat serta periode harian, mingguan, atau bulanan. Pencarian juga memfilter; bila kosong periksa tanggal, tempat, dan pencarian.\n\nBuka kartu, periksa tanggal, jam, tarif, tunjangan, tagihan, lalu edit dan simpan. Bedakan kartu bertanggal sama berdasarkan tempat dan isinya.\n\nBeranda untuk hari ini, Perhitungan untuk periode, Tagihan terpisah untuk buku berkelanjutan. Jangan samakan filter status dengan tanggal perhitungan.\n\nSetelah simpan buka daftar/detail lagi dan periksa laporan dari pekerjaan yang sama. Menghapus perhitungan tidak menghapus tagihan terpisah. Periksa jumlah dan item terpilih sebelum hapus massal."
+      },
+      {
+        "id": "reports",
+        "title": "Laporan · versi dan PDF",
+        "body": "Cari tempat dan periode lalu periksa tanggal, upah, tunjangan, tagihan, foto. Laporan tidak memverifikasi transfer bank atau penerimaan secara otomatis.\n\nPerubahan dapat membuat versi baru. Setelah jumlah terkait berubah, periksa versi terbaru. Versi lama dan PDF hasil ekspor tidak ditimpa.\n\nPeriksa teks, foto, jumlah di pratinjau PDF sebelum menyimpan/berbagi. Buat PDF baru setelah perubahan; berkas di Unduhan atau pesan tidak berubah otomatis.\n\nMenghapus laporan tidak menghapus buku tagihan maupun salinan di penerima/aplikasi lain. Periksa privasi dan penerima."
+      },
+      {
+        "id": "backup",
+        "title": "Cadangan dan pemulihan",
+        "body": "Cadangan adalah salinan terpisah untuk kehilangan, kerusakan, atau penghapusan aplikasi. Salinan hanya di ponsel yang sama dapat ikut hilang. Pilih perangkat, eksternal, atau Google Drive di Pengaturan.\n\nPeriksa selesai, lokasi, tanggal. Simpan semua bagian cadangan terpisah bersama; jangan ubah nama atau pindahkan sebagian. Pilih semua berkas yang diminta atau folder lengkap. Untuk Drive, periksa akun dan koneksi.\n\nPenting: pemulihan bisa mengganti data saat ini, bukan menggabungkan catatan baru dua perangkat. Cadangkan data saat ini dahulu, periksa sumber/tanggal dan ikuti petunjuk. Jangan hapus data aplikasi atau lepaskan penyimpanan saat proses.\n\nSetelah selesai buka ulang sesuai petunjuk dan periksa tempat, catatan, foto, tunjangan, tagihan, laporan. ZIP standar bisa berisi data pribadi tanpa enkripsi. Jika gagal, simpan cadangan dan periksa pesan serta berkas."
+      },
+      {
+        "id": "trash",
+        "title": "Sampah · memilih dan memulihkan",
+        "body": "Di Pengaturan → Sampah, buka Galeri, Tempat kerja, Memo, Perhitungan, atau Laporan. Gunakan kotak centang atau Pilih semua, hanya untuk kategori saat ini.\n\nPulihkan item yang masih disimpan dan periksa daftar asal dengan filter tepat. Pastikan target sebelum hapus permanen.\n\nUmumnya disimpan 30 hari; yang kedaluwarsa dibersihkan ketika Sampah dibuka. Periksa sisa hari. Item lama tanpa waktu penghapusan bisa dikecualikan.\n\nHapus permanen tidak dapat dipulihkan dari Sampah. Foto yang dipakai catatan lain mungkin dilindungi. Buku tagihan, reset semua data, dan cadangan eksternal punya penghapusan terpisah."
+      },
+      {
+        "id": "help",
+        "title": "Masalah · pemeriksaan dan bantuan",
+        "body": "Jumlah berbeda: periksa tempat/tanggal/mata uang, waktu/istirahat/tarif, duplikat, simpan, dan laporan terkait terbaru. Periksa pembayaran nyata secara terpisah.\n\nDaftar kosong: ubah/hapus filter tempat, periode, status, pencarian. Periksa Sampah; foto hilang: tempat/kategori asal dan isi cadangan.\n\nKamera/berbagi tidak terbuka: periksa izin Android, ruang, dan aplikasi eksternal. Jangan mulai dengan menghapus aplikasi atau reset; cadangkan dahulu.\n\nHubungi dukungan dengan layar, langkah, hasil harapan/aktual, frekuensi, versi aplikasi/Android dan model. Tutupi data pribadi di tangkapan layar; jangan kirim kata sandi atau kode."
+      }
+    ]
+  },
+  "it": {
+    "name": "Italiano",
+    "title": "Guida utente",
+    "intro": "Guida passo passo a impostazioni, registrazioni, importi, foto e backup. Apri un argomento o cerca. Nell’app è leggibile anche offline. I nomi possono variare con versione e lingua.",
+    "search": "Cerca",
+    "empty": "Nessun risultato di ricerca.",
+    "sections": [
+      {
+        "id": "start",
+        "title": "Primi passi · impostazioni e luoghi",
+        "body": "1. Controlla lingua e valuta prima degli importi. Cambiare la valuta visualizzata non converte automaticamente i valori al tasso di cambio.\n\n2. Seleziona il luogo di lavoro nella schermata iniziale. Usa Nuovo per registrare nome e dettagli; distingui luoghi simili con nome o indirizzo.\n\n3. Verifica il luogo prima di orari, foto e importi, e la data per le registrazioni precedenti.\n\n4. Puoi riattivare fotocamera e posizione nei permessi Android se negati. Questo non completa automaticamente informazioni mancanti nei vecchi dati."
+      },
+      {
+        "id": "home",
+        "title": "Schermata iniziale · oggi",
+        "body": "La schermata iniziale riguarda oggi, non l’intero registro dei rimborsi. Controlla luogo e data, poi usa presenze, reddito, note e foto.\n\nStipendio, indennità e richieste separate sono distinti. Un importo visibile non conferma un accredito bancario. Gestisci la ricezione nel registro separato.\n\nLa matita del reddito totale apre la modifica comune. Espandi la sezione, modifica e salva; Annulla non salva. Riapri per verificare.\n\nEsempio: stipendio 100.000, indennità 10.000 e materiali anticipati 25.000 separati. Non inserire la stessa spesa sia come indennità sia come rimborso."
+      },
+      {
+        "id": "attendance",
+        "title": "Presenze · pause e ore",
+        "body": "1. Conferma il luogo e registra l’entrata. Verifica l’orario e se esiste già un turno attivo.\n\n2. Permanenza, pausa e lavoro effettivo differiscono. La pausa registrata viene sottratta; orari diversi possono cambiare il totale a tariffa invariata.\n\n3. Registra l’uscita a fine lavoro. Per correggere il passato, apri luogo e data esatti nel conteggio, modifica orari/pause disponibili e salva.\n\n09:00–18:00 con una pausa di un’ora significa nove ore di presenza e otto di lavoro. Nei turni notturni controlla anche il giorno finale. Ripetere entrate e uscite oggi non corregge omissioni passate."
+      },
+      {
+        "id": "income",
+        "title": "Reddito e indennità",
+        "body": "Il reddito rappresenta la retribuzione secondo lavoro e impostazioni salariali. Le indennità sono aggiunte, diverse dal rimborso di spese anticipate.\n\n1. Dalla matita controlla tariffa, importo, base salariale del luogo e ore.\n\n2. Espandi Indennità e inserisci titolo, spiegazione e importo. Separa le voci.\n\n3. Modifica o rimuovi una voce esistente e salva. Controlla schermata iniziale, conteggio e rapporto collegati. Rimuovere non significa annullare la pagina. Per passare da 10.000 a 12.000, modifica l’originale; aggiungerne un’altra può duplicare il totale. I PDF già esportati non cambiano.\n\nLa paga oraria usa minuti completi dopo le pause: tariffa × minuti ÷ 60, scartando la parte frazionaria dell’importo. 12.000 all’ora per otto ore dà 96.000. Un minuto incompleto può non essere ancora conteggiato."
+      },
+      {
+        "id": "claims",
+        "title": "Richieste separate · ricezione",
+        "body": "Il registro segue somme dovute oltre allo stipendio, come materiali o trasporti anticipati. Non invia fatture né trasferisce denaro automaticamente.\n\n1. Nell’editor iniziale aggiungi titolo, importo, nota e foto delle ricevute. Salva spese diverse in schede separate.\n\n2. Dal conteggio apri Richieste separate. Scegli luogo a sinistra e stato a destra. Risultati ordinati per data; nomi lunghi abbreviati.\n\n3. Non ricevuto è lo stato iniziale insoluto (prima Non richiesto), Richiesto indica pagamento domandato, Ricevuto pagamento effettivo. Il filtro Non ricevuto non include automaticamente Richiesto.\n\n4. Apri il dettaglio per modificare importo, contenuto o stato e salva. Esempio: 25.000 non ricevuti, poi richiesti dopo la domanda, ricevuti solo dopo il pagamento."
+      },
+      {
+        "id": "sync",
+        "title": "Importi collegati, eliminazioni separate",
+        "body": "Una modifica salvata aggiorna la fonte di conteggio verificata e collegata, se esiste ancora. Il rapporto esistente associato riceve la variazione dell’importo corrispondente.\n\nNon tutto è sincronizzato: stato, foto, testo ed eliminazione restano distinti. Servono la stessa voce e relazione lavorativa, non solo lo stesso nome. I rapporti cancellati non vengono ricreati.\n\nEliminare conteggio o rapporto conserva richiesta e stato. Eliminare dal registro conserva conteggi e rapporti. Una richiesta rimasta può essere gestita senza fonte.\n\nEliminare non significa aver ricevuto: usa Ricevuto. Non presumere che il registro si recuperi come il cestino dei conteggi. Controlla e salva i dati necessari prima di eliminare."
+      },
+      {
+        "id": "photos",
+        "title": "Foto · scatto e modifica",
+        "body": "1. Seleziona il luogo, scatta una prova leggibile e controlla il salvataggio. Le foto dentro una richiesta documentano quella voce.\n\n2. Scorri le anteprime orizzontalmente. In Galleria controlla luogo, data e categoria. La miniatura non basta a giudicare qualità o inquadratura originale.\n\n3. Salva le modifiche a schede informative o note e riapri il dettaglio. Immagine modificata e originale sono distinti; leggi cosa viene rimosso ripristinando l’originale.\n\n4. Rimuovere un allegato può differire dall’eliminare una foto. Leggi la conferma. Prima di condividere controlla posizione, ora, metadati e dati personali. Le copie esterne già inviate non vengono aggiornate."
+      },
+      {
+        "id": "memos",
+        "title": "Note · scrittura e consultazione",
+        "body": "Aggiungi e salva una nota dalla schermata iniziale, ad esempio Zona est completata; serve materiale. Scrivi abbastanza contesto per capirla in seguito.\n\nApri la nota corretta, controlla luogo/data, modifica e salva. Correggi l’originale invece di ricopiare più volte vecchie note su oggi.\n\nScrivere Trasporto 20.000 non crea automaticamente indennità o richieste. Inserisci l’importo nella sezione finanziaria corretta.\n\nVerifica cosa elimini; le note recuperabili sono nella categoria del cestino. Non annotare password o codici di verifica."
+      },
+      {
+        "id": "settlement",
+        "title": "Conteggio · periodi e correzioni",
+        "body": "Scegli luogo e periodo giornaliero, settimanale o mensile. Anche la ricerca filtra: se la lista è vuota controlla data, luogo e ricerca.\n\nApri la scheda, verifica giorno, ore, tariffa, indennità e richieste, poi modifica e salva. Distingui schede dello stesso giorno per luogo e contenuto.\n\nInizio riguarda oggi, Conteggio il periodo scelto, Richieste separate il registro cumulativo. Non confondere stato della richiesta e data del conteggio.\n\nRiapri lista e dettaglio dopo il salvataggio e controlla il rapporto dello stesso lavoro. Eliminare un conteggio non elimina la richiesta separata. Verifica numero e voci prima dell’eliminazione multipla."
+      },
+      {
+        "id": "reports",
+        "title": "Rapporti · versioni e PDF",
+        "body": "Cerca luogo e periodo e verifica data, stipendio, indennità, richieste e foto. I rapporti non verificano automaticamente accrediti o ricezione.\n\nLe modifiche possono creare nuove versioni. Dopo una variazione collegata consulta l’ultima. Vecchie versioni e PDF esportati non vengono sovrascritti.\n\nControlla testi, foto e importi nell’anteprima PDF prima di salvare/condividere. Dopo modifiche genera un nuovo PDF; file scaricati o inviati non cambiano automaticamente.\n\nEliminare il rapporto conserva il registro e non rimuove copie presso destinatari o altre app. Controlla privacy e destinatari."
+      },
+      {
+        "id": "backup",
+        "title": "Backup e ripristino",
+        "body": "Il backup protegge da perdita, guasto o disinstallazione. Una copia solo sullo stesso telefono può andare persa insieme al dispositivo. Scegli dispositivo, esterno o Google Drive nelle impostazioni.\n\nControlla completamento, posizione e data. Conserva insieme tutte le parti di un backup diviso; non rinominare né spostare solo alcune. Seleziona tutti i file necessari o la cartella completa. Per Drive verifica account e rete.\n\nAttenzione: il ripristino può sostituire i dati attuali, non unire nuove registrazioni di due dispositivi. Salva prima anche lo stato attuale, verifica fonte/data e segui le istruzioni. Non cancellare dati né scollegare la memoria durante il processo.\n\nRiapri come indicato e controlla luoghi, registrazioni, foto, indennità, richieste e rapporti. Uno ZIP standard può contenere dati personali non cifrati. In caso di errore conserva il backup e verifica messaggio e file."
+      },
+      {
+        "id": "trash",
+        "title": "Cestino · selezione e ripristino",
+        "body": "In Impostazioni → Cestino scegli Galleria, Luoghi, Note, Conteggio o Rapporti. Usa caselle o Seleziona tutto, limitato alla categoria corrente.\n\nRipristina le voci ancora conservate e controllale nella lista originale con filtri corretti. Verifica gli obiettivi prima dell’eliminazione definitiva.\n\nNormalmente sono conservate 30 giorni; quelle scadute vengono pulite aprendo il cestino. Controlla i giorni restanti. Vecchie voci senza data di eliminazione possono essere escluse.\n\nL’eliminazione definitiva non si annulla dal cestino. Foto usate altrove possono essere protette. Registro richieste, azzeramento dati e backup esterni sono operazioni separate."
+      },
+      {
+        "id": "help",
+        "title": "Problemi · controlli e assistenza",
+        "body": "Importi diversi: verifica luogo/data/valuta, orari/pausa/tariffa, doppioni, salvataggio e ultimo rapporto collegato. Verifica il pagamento reale separatamente.\n\nLista vuota: cambia o azzera luogo, periodo, stato e ricerca. Controlla il cestino; per foto mancanti, luogo/categoria originale e contenuto del backup.\n\nFotocamera o condivisione indisponibili: controlla permessi Android, spazio e app installate. Non iniziare disinstallando o azzerando; salva prima i dati.\n\nContatta l’assistenza con schermata, passi, risultato atteso/effettivo, frequenza, versioni app/Android e modello. Nascondi dati personali nelle immagini e non inviare password o codici."
+      }
+    ]
+  },
+  "ja": {
+    "name": "日本語",
+    "title": "ユーザーガイド",
+    "intro": "初期設定から金額の連動、写真、バックアップまで説明します。項目を開くか検索してください。アプリ内ではオフラインでも読めます。画面名はバージョンや言語により異なる場合があります。",
+    "search": "検索",
+    "empty": "検索結果はありません。",
+    "sections": [
+      {
+        "id": "start",
+        "title": "はじめに · 設定と勤務先",
+        "body": "1. 設定で言語と通貨を確認します。通貨表示の変更は為替レートによる自動換算ではありません。金額を入力する前に通貨を決めてください。\n\n2. ホーム上部で勤務先を選び、新しい現場は新規登録して保存します。似た名前の現場は住所や名称で区別しましょう。\n\n3. 出退勤・写真・金額の入力前に勤務先を確認します。古い記録を探す際は日付も確認してください。\n\n4. カメラや位置情報の権限を拒否した場合はAndroidのアプリ権限で変更できます。許可しても過去の欠落情報が自動補完されるわけではありません。"
+      },
+      {
+        "id": "home",
+        "title": "ホーム · 当日の記録",
+        "body": "ホームは当日の作業用で、累積した請求一覧とは異なります。勤務先と日付を確認し、出退勤・総収入・メモ・写真を利用します。\n\n賃金、手当、別途請求は区別します。金額表示は実際の入金を保証しません。受領状況は別途請求で管理します。\n\n総収入の鉛筆で各項目を開き、編集後に保存します。キャンセルでは保存されません。保存後に再表示して確認してください。\n\n例：賃金100,000、手当10,000、立替材料費25,000は別々に記録し、同じ費用を手当と請求に重複登録しないでください。"
+      },
+      {
+        "id": "attendance",
+        "title": "出退勤 · 休憩と勤務時間",
+        "body": "1. 勤務先を確認して出勤を押し、既に勤務中でないか時刻と状態を確認します。\n\n2. 滞在時間と実働時間は異なります。実働時間は記録された休憩を除くため、同じ単価でも時刻・休憩によって金額が変わります。\n\n3. 終了時に退勤を押して案内に従います。過去の修正は精算で該当勤務先・日付を開き、編集可能な時刻や休憩を直して保存します。\n\n例：09:00〜18:00、休憩1時間なら滞在9時間・実働8時間です。日をまたぐ場合は終了日も確認し、過去の不足を直すため今日の出退勤を繰り返さないでください。"
+      },
+      {
+        "id": "income",
+        "title": "収入と手当 · 編集と削除",
+        "body": "収入は勤務・給与設定に基づく賃金で、手当は追加の支給項目です。立替金の返還を求める別途請求とは分けます。\n\n1. 総収入の鉛筆で単価・金額・勤務先の給与基準と実働時間を確認します。\n\n2. 手当を開き、食事手当などのタイトル、理由を示す内容、金額を入力します。複数の手当は別項目にします。\n\n3. 既存項目を修正・削除した後に保存し、ホームと関連する精算・リポートを確認します。10,000を12,000に直すなら元の項目を編集し、追加による二重計上を避けます。出力済みPDFは自動更新されません。\n\n時給計算は休憩を除いた実働時間の完了した分単位です。時給 × 勤務分 ÷ 60で計算し、金額の小数部分を切り捨てます。時給12,000で実働8時間なら96,000です。進行中の1分未満はまだ反映されない場合があります。"
+      },
+      {
+        "id": "claims",
+        "title": "別途請求 · 受領までの管理",
+        "body": "賃金とは別に受け取る立替材料費・交通費などの台帳です。請求書の自動送信や送金は行いません。\n\n1. ホームの鉛筆から請求を追加し、タイトル・金額・メモ・証拠写真を保存します。別件は別カードにします。\n\n2. 精算の別途請求を開き、左で勤務先、右で状態を選びます。該当項目は日付順です。長い勤務先名は省略されます。\n\n3. 未受領は初期の未払い状態（旧未請求）、請求は支払依頼済み、受領は入金済みです。未受領フィルターに請求済み項目も含まれるとは限りません。\n\n4. 一覧を開いて金額・内容・状態を保存します。例：25,000を未受領で登録し、依頼後に請求、実際の入金後に受領へ変更します。"
+      },
+      {
+        "id": "sync",
+        "title": "金額連動と独立した削除",
+        "body": "元の勤務記録が残っている場合、請求の明示的な編集は関連する精算にも反映されます。既存の関連リポートには該当請求の金額変更が反映されます。\n\n受領状態・写真・文章・削除がすべて同期するわけではありません。同じ項目と勤務の関係が確認できる既存記録だけが対象で、同名の無関係な項目の結合や削除リポートの再作成はしません。\n\n精算やリポートを削除しても請求台帳と受領状態は残ります。台帳の選択削除も精算・リポートを削除しません。元の記録がなくても残った請求は管理できます。\n\n入金済みなら削除ではなく受領を使います。台帳削除を精算のごみ箱と同じ復元機能と思わず、必要な記録を保存・バックアップしてください。"
+      },
+      {
+        "id": "photos",
+        "title": "写真 · 撮影と編集",
+        "body": "1. 勤務先を選んで撮影し、保存結果を確認します。請求内の写真はその請求の証拠として管理します。\n\n2. 複数のプレビューは横にスワイプします。ギャラリーでは勤務先・日付・分類を確認して開きます。サムネイルだけで原本の画質や構図を判断しないでください。\n\n3. 情報カードやメモの編集を保存し、詳細を開き直します。編集画像と撮影原本は別です。原本復元で消える編集を確認してください。\n\n4. 添付除去とギャラリー削除の範囲は同じとは限りません。確認画面を読み、共有前に位置・撮影日時・端末情報・個人情報を確認します。外部へ共有済みのコピーは連動しません。"
+      },
+      {
+        "id": "memos",
+        "title": "メモ · 記入と確認",
+        "body": "ホームのメモから追加し、作業内容や連絡事項を保存します。「東側完了、追加資材が必要」のように後で分かる内容にします。\n\n修正は対象メモを開いて保存します。勤務先・日付を確認し、過去の内容を今日へ重複記入するより元の記録を修正してください。\n\nメモの「交通費20,000」は自動的な手当・請求登録ではありません。金額は該当する入力欄にも記録します。\n\n削除対象を確認し、復元できるメモは設定のごみ箱で確認します。パスワードや認証コードは記録しないでください。"
+      },
+      {
+        "id": "settlement",
+        "title": "精算 · 期間と修正",
+        "body": "精算で勤務先と日・週・月の範囲を選びます。検索条件も影響するため、空の一覧では日付・勤務先・検索を確認します。\n\nカードで日付、勤務時間、単価、手当、請求を確認して編集・保存します。同日の複数カードは勤務先と内容で区別します。\n\nホームは当日、精算は選択期間、別途請求は累積台帳です。請求状態のフィルターと精算の日付条件を混同しないでください。\n\n保存後に一覧と詳細を開き直し、リポートは同じ勤務記録の文書を確認します。精算削除では別途請求は消えません。一括削除前に選択数と対象を確認します。"
+      },
+      {
+        "id": "reports",
+        "title": "リポート · バージョンとPDF",
+        "body": "勤務先・期間から文書を探し、勤務日、収入・手当・請求と写真を確認します。銀行入金や請求の受領を自動確認する機能ではありません。\n\n編集で新しいバージョンが作られる場合があります。請求金額変更後は最新版を確認します。履歴や出力済みPDFを上書きするわけではありません。\n\nPDFプレビューで文字・写真・金額を見て保存・共有します。修正後は新しく生成し、ダウンロード済み・送信済みファイルの自動更新を期待しないでください。\n\nリポート削除でも請求台帳は残り、他人や他アプリのコピーも消えません。共有前に個人情報と送信先を確認します。"
+      },
+      {
+        "id": "backup",
+        "title": "バックアップと復元 · 置換に注意",
+        "body": "紛失・故障・アプリ削除に備える別コピーです。同じ端末だけに置くと一緒に失う可能性があります。設定から端末・外部・Google Driveの方法を選びます。\n\n完了通知、保存場所、日付を確認します。分割バックアップの全ファイルをまとめて保管し、改名や一部だけの移動を避けます。復元には必要な全ファイルまたは完全なフォルダーを選びます。Driveはアカウントと通信を確認します。\n\n復元は現在のデータを置き換える場合があります。端末間の新規記録が自動結合されるとは限りません。現在のデータも先に別途保存し、対象・日付を確認します。処理中のデータ消去やストレージ取り外しを避けてください。\n\n完了後は再起動の案内に従い、勤務先・記録・写真・手当・請求・リポートを確認します。標準ZIPは暗号化されていない個人情報のコピーの場合があります。エラー時は既存バックアップを消さず、表示とファイル構成を確認します。"
+      },
+      {
+        "id": "trash",
+        "title": "ごみ箱 · 選択と復元",
+        "body": "設定のごみ箱でギャラリー・勤務先・メモ・精算・リポートを選び、チェックボックスまたは全選択を使います。全選択は現在の分類だけが対象です。\n\n誤削除は保管中の項目を選んで復元し、元の一覧で条件を合わせて確認します。完全削除は対象を慎重に確認します。\n\n通常30日保管され、期限を過ぎた項目はごみ箱を開く際に整理されます。残日数を確認してください。削除日時のない古い項目は自動整理から除外される場合があります。\n\n完全削除はごみ箱から戻せません。他の記録が使う写真は保護される場合があります。請求台帳の削除、全データ初期化、外部バックアップ削除はそれぞれ別です。"
+      },
+      {
+        "id": "help",
+        "title": "問題解決 · 確認と問い合わせ",
+        "body": "金額が違う場合は勤務先・日付・通貨、時刻・休憩・単価、手当や請求の重複、保存、最新版の関連リポートかを順に確認します。実際の入金も別途確認します。\n\n空の一覧は勤務先・期間・状態・検索を変更・解除します。削除はごみ箱、写真は元の勤務先・分類とバックアップへの収録を確認します。\n\nカメラや共有アプリが開かない場合はAndroid権限・容量・アプリの有無を確認します。まずアンインストールや初期化をせず、重要データをバックアップしてください。\n\n設定のサポートから画面、操作手順、期待と実際の結果、頻度、アプリ・Androidのバージョン、端末名を連絡します。画像の個人情報を隠し、認証情報は送らないでください。"
+      }
+    ]
+  },
+  "pt": {
+    "name": "Português",
+    "title": "Guia do usuário",
+    "intro": "Instruções passo a passo sobre configuração, registros, valores, fotos e backups. Abra um tópico ou pesquise. Na aplicação, o guia também funciona offline. Os nomes podem variar conforme versão e idioma.",
+    "search": "Pesquisar",
+    "empty": "Nenhum resultado de pesquisa.",
+    "sections": [
+      {
+        "id": "start",
+        "title": "Primeiros passos · configurações e locais",
+        "body": "1. Confira idioma e moeda antes de inserir valores. Alterar a moeda exibida não converte automaticamente os valores pela taxa de câmbio.\n\n2. Selecione o local de trabalho no início. Use Novo para cadastrar nome e informações; diferencie locais semelhantes pelo nome ou endereço.\n\n3. Confirme o local antes de registrar horários, fotos ou valores e também a data ao buscar registros antigos.\n\n4. Permissões de câmera/localização negadas podem ser alteradas nas configurações Android. Isso não preenche automaticamente dados ausentes dos registros anteriores."
+      },
+      {
+        "id": "home",
+        "title": "Início · registros de hoje",
+        "body": "O início organiza o dia atual, não todo o histórico de cobranças. Confira local e data e use os cartões de jornada, renda, notas e fotos.\n\nSalário, adicionais e cobranças separadas são diferentes. Um valor exibido não confirma depósito bancário. O recebimento é controlado nas cobranças separadas.\n\nO lápis da renda total abre a edição conjunta. Expanda a seção, altere e salve; Cancelar não salva. Abra novamente para conferir.\n\nExemplo: salário 100.000, adicional 10.000 e material adiantado 25.000 são itens separados. Não registre a mesma despesa como adicional e cobrança."
+      },
+      {
+        "id": "attendance",
+        "title": "Jornada · intervalos e horas",
+        "body": "1. Confirme o local e registre a entrada. Confira horário e eventual jornada já ativa.\n\n2. Permanência, intervalo e trabalho efetivo são distintos. O intervalo registrado é descontado; horários diferentes podem alterar o valor mesmo com a mesma tarifa.\n\n3. Registre a saída ao terminar. Para corrigir o passado, abra local e data exatos em Acerto, altere horários/intervalos disponíveis e salve.\n\n09:00–18:00 com uma hora de intervalo são nove horas de permanência e oito de trabalho. Em jornadas noturnas, confira a data final. Repetir entradas e saídas hoje não corrige registros antigos."
+      },
+      {
+        "id": "income",
+        "title": "Renda e adicionais",
+        "body": "Renda é o salário conforme trabalho e configuração de pagamento. Adicional é um pagamento extra, diferente do reembolso de despesas adiantadas.\n\n1. Pelo lápis, confira tarifa, valor, base salarial do local e tempo trabalhado.\n\n2. Expanda Adicionais e insira título, descrição do motivo e valor. Registre cada adicional separadamente.\n\n3. Altere ou remova o item existente e salve. Confira início, acerto e relatório vinculados. Remover não é cancelar a página. Para mudar 10.000 para 12.000, edite o original; adicionar outro pode duplicar o total. PDFs exportados não se atualizam automaticamente.\n\nO pagamento por hora usa minutos completos após descontar pausas: tarifa × minutos ÷ 60, descartando a parte fracionária do valor. Tarifa de 12.000 por oito horas resulta em 96.000. Um minuto incompleto pode ainda não ser contado."
+      },
+      {
+        "id": "claims",
+        "title": "Cobranças separadas · recebimento",
+        "body": "Controla valores a receber além do salário, como materiais ou transporte pagos antecipadamente por você. Não envia faturas nem transfere dinheiro automaticamente.\n\n1. No editor do início, adicione título, valor, nota e fotos de comprovantes. Salve despesas distintas em cartões separados.\n\n2. Em Acerto, abra Cobranças separadas. Escolha local à esquerda e situação à direita. Os resultados seguem a data; nomes longos podem ser abreviados.\n\n3. Não recebido é a situação inicial sem pagamento (antes Não solicitado), Solicitado indica pedido de pagamento, Recebido indica pagamento real. O filtro Não recebido não inclui automaticamente Solicitado.\n\n4. Abra o detalhe para alterar e salvar valor, conteúdo ou situação. Exemplo: 25.000 não recebidos, solicitados após pedir e recebidos somente após o pagamento."
+      },
+      {
+        "id": "sync",
+        "title": "Valores vinculados e exclusão independente",
+        "body": "Uma edição salva atualiza a origem de acerto verificada e vinculada quando ela ainda existe. Um relatório existente vinculado recebe a alteração do valor da mesma cobrança.\n\nSituação de recebimento, fotos, texto e exclusão não são todos sincronizados. É preciso corresponder ao mesmo item e trabalho; nomes iguais não bastam. Relatórios excluídos não são recriados.\n\nExcluir acerto ou relatório mantém cobrança e situação. Excluir no controle de cobranças mantém acertos e relatórios. A cobrança restante pode ser gerenciada sem a origem.\n\nExcluir não significa receber: use Recebido. Não suponha que a recuperação da cobrança seja igual à lixeira dos acertos. Confira e faça backup do necessário antes de excluir."
+      },
+      {
+        "id": "photos",
+        "title": "Fotos · captura e edição",
+        "body": "1. Escolha o local, fotografe uma comprovação legível e confira o salvamento. Fotos dentro de uma cobrança documentam aquele item.\n\n2. Deslize as prévias horizontalmente. Na Galeria confira local, data e categoria. A miniatura não basta para avaliar qualidade ou enquadramento do original.\n\n3. Salve edições de cartões de informação ou notas e reabra os detalhes. Imagem editada e original são distintos; leia o que será removido ao restaurar o original.\n\n4. Remover anexo pode diferir de excluir foto na Galeria. Leia a confirmação e confira localização, horário, metadados e dados pessoais antes de compartilhar. Cópias externas já enviadas não acompanham alterações."
+      },
+      {
+        "id": "memos",
+        "title": "Notas · escrever e conferir",
+        "body": "Adicione uma nota no início e salve informações de trabalho, como Área leste concluída; faltam materiais. Inclua contexto para consultar depois.\n\nAbra a nota correta, confira local/data, edite e salve. Corrija o original em vez de copiar repetidamente notas antigas para hoje.\n\nEscrever Transporte 20.000 não cria um adicional nem uma cobrança. Insira o valor na seção financeira apropriada.\n\nConfira o alvo antes de excluir; notas recuperáveis ficam na categoria correspondente da lixeira. Evite guardar senhas ou códigos de verificação."
+      },
+      {
+        "id": "settlement",
+        "title": "Acerto · períodos e correções",
+        "body": "Selecione local e período diário, semanal ou mensal. A pesquisa também filtra; se a lista estiver vazia, confira data, local e busca.\n\nAbra um cartão e revise dia, horas, tarifa, adicionais e cobranças antes de editar e salvar. Diferencie cartões da mesma data por local e conteúdo.\n\nInício é hoje, Acerto é o período escolhido e Cobranças separadas é um controle acumulado. Não confunda filtro de situação com filtro de data.\n\nApós salvar, reabra lista/detalhe e confira o relatório do mesmo trabalho. Excluir um acerto não exclui a cobrança separada. Confira quantidade e itens antes da exclusão em grupo."
+      },
+      {
+        "id": "reports",
+        "title": "Relatórios · versões e PDF",
+        "body": "Busque local e período e confira data, salário, adicionais, cobranças e fotos. Relatórios não verificam automaticamente depósitos nem recebimento.\n\nUma edição pode gerar nova versão. Após mudar um valor vinculado, abra a mais recente. Versões anteriores e PDFs exportados não são sobrescritos.\n\nRevise texto, fotos e valores na prévia PDF, depois salve ou compartilhe. Após alterações, gere um novo PDF. Arquivos em Downloads ou mensagens não se atualizam sozinhos.\n\nExcluir relatório mantém o controle de cobranças e não remove cópias em outros aplicativos ou com destinatários. Confira dados pessoais e destinatário."
+      },
+      {
+        "id": "backup",
+        "title": "Backup e restauração",
+        "body": "Backup é uma cópia separada para perda, defeito ou desinstalação. Se estiver só no mesmo celular, pode ser perdido junto. Nas configurações, escolha dispositivo, externo ou Google Drive.\n\nConfira conclusão, local e data. Guarde juntas todas as partes do backup dividido, sem renomear ou mover apenas algumas. Escolha todos os arquivos necessários ou a pasta completa. No Drive confira conta e conexão.\n\nAtenção: restaurar pode substituir os dados atuais, não mesclar novos registros de dois aparelhos. Faça antes outro backup do estado atual, confira origem/data e siga as instruções. Não limpe dados nem desconecte armazenamento durante o processo.\n\nAo terminar, reabra conforme indicado e confira locais, registros, fotos, adicionais, cobranças e relatórios. ZIP padrão pode conter dados pessoais sem criptografia. Se falhar, preserve o backup e confira mensagem e arquivos."
+      },
+      {
+        "id": "trash",
+        "title": "Lixeira · selecionar e restaurar",
+        "body": "Em Configurações → Lixeira, abra Galeria, Locais, Notas, Acerto ou Relatórios. Use caixas de seleção ou Selecionar tudo, limitado à categoria atual.\n\nRestaure itens ainda guardados e confira a lista original com filtros corretos. Verifique os alvos antes da exclusão permanente.\n\nNormalmente são guardados por 30 dias e os vencidos são limpos ao abrir a lixeira. Confira os dias restantes. Itens antigos sem data de exclusão podem ficar fora da limpeza automática.\n\nExclusão permanente não pode ser desfeita pela lixeira. Fotos usadas em outros registros podem estar protegidas. Cobranças, redefinição de todos os dados e backups externos têm exclusões separadas."
+      },
+      {
+        "id": "help",
+        "title": "Problemas · verificações e suporte",
+        "body": "Se valores diferirem, confira local/data/moeda, horários/intervalo/tarifa, duplicidades, salvamento e relatório vinculado mais recente. Confirme o pagamento real separadamente.\n\nLista vazia: altere ou limpe local, período, situação e busca. Confira a lixeira; para fotos, local/categoria original e conteúdo do backup.\n\nSe câmera ou compartilhamento não abrir, confira permissões Android, espaço e aplicativos externos. Não comece desinstalando nem apagando tudo; faça backup primeiro.\n\nNo suporte, informe tela, passos, resultado esperado/real, frequência, versões do app/Android e modelo. Oculte dados pessoais nas capturas; nunca envie senhas ou códigos."
+      }
+    ]
+  },
+  "ru": {
+    "name": "Русский",
+    "title": "Руководство пользователя",
+    "intro": "Пошаговое руководство по настройкам, записям, суммам, фото и резервным копиям. Откройте тему или воспользуйтесь поиском. В приложении доступно без интернета. Названия зависят от версии и языка.",
+    "search": "Поиск",
+    "empty": "Нет результатов поиска.",
+    "sections": [
+      {
+        "id": "start",
+        "title": "Начало · настройки и места работы",
+        "body": "1. До ввода сумм проверьте язык и валюту. Изменение отображаемой валюты не пересчитывает суммы по обменному курсу.\n\n2. Выберите место работы на главной. Через Новый сохраните название и сведения; похожие места различайте по имени или адресу.\n\n3. Перед временем, фото или суммой проверьте место, а для старых записей — дату.\n\n4. Отклонённые разрешения камеры/геолокации можно изменить в настройках Android. Разрешение не заполняет автоматически пропуски в старых записях."
+      },
+      {
+        "id": "home",
+        "title": "Главная · записи за сегодня",
+        "body": "Главная предназначена для текущего дня, а не всего накопленного реестра требований. Проверьте место и дату, используйте карточки времени, дохода, заметок и фото.\n\nЗарплата, надбавки и отдельные требования различаются. Сумма на экране не подтверждает банковское поступление. Получение отмечается в отдельном реестре.\n\nКарандаш общего дохода открывает совместное редактирование. Раскройте раздел, измените и сохраните; Отмена не сохраняет. Откройте снова для проверки.\n\nПример: зарплата 100 000, надбавка 10 000 и оплаченные вами материалы 25 000 — отдельно. Не учитывайте один расход и как надбавку, и как требование."
+      },
+      {
+        "id": "attendance",
+        "title": "Учёт времени · перерывы",
+        "body": "1. Проверьте место и отметьте начало. Убедитесь в правильности времени и отсутствии уже активной смены.\n\n2. Время присутствия, перерыв и фактическая работа различаются. Записанный перерыв вычитается; при одинаковой ставке и разных часах сумма может отличаться.\n\n3. В конце отметьте уход. Для исправления прошлого откройте точное место и дату в Расчётах, измените доступные часы/перерывы и сохраните.\n\n09:00–18:00 с часовым перерывом — девять часов присутствия и восемь работы. При ночной смене проверьте дату окончания. Повторные отметки сегодня не исправляют старые пропуски."
+      },
+      {
+        "id": "income",
+        "title": "Доход и надбавки",
+        "body": "Доход — зарплата по работе и настройкам оплаты. Надбавка — дополнительная выплата, не возврат предварительно оплаченных вами расходов.\n\n1. Через карандаш проверьте ставку, сумму, основу оплаты места и рабочее время.\n\n2. Откройте Надбавки, введите заголовок, описание причины и сумму. Разные надбавки записывайте отдельно.\n\n3. Измените или удалите существующий пункт и сохраните. Проверьте главную, связанные расчёт и отчёт. Удаление пункта не равно отмене страницы. Меняя 10 000 на 12 000, исправьте исходный пункт: новый может дать двойной учёт. Экспортированные PDF не обновляются сами.\n\nПочасовая оплата использует полные рабочие минуты после перерывов: ставка × минуты ÷ 60, дробная часть суммы отбрасывается. Ставка 12 000 за восемь часов даёт 96 000. Неполная минута может ещё не учитываться."
+      },
+      {
+        "id": "claims",
+        "title": "Отдельные требования · получение денег",
+        "body": "Реестр денег сверх зарплаты, например ваших авансовых расходов на материалы и проезд. Он не отправляет счета и не переводит деньги автоматически.\n\n1. В редакторе главной добавьте заголовок, сумму, заметку и фото подтверждений. Разные расходы сохраняйте отдельными карточками.\n\n2. В Расчётах откройте Отдельные требования: слева место, справа статус. Результаты по дате; длинное название может сокращаться.\n\n3. Не получено — начальное неоплаченное состояние (ранее Не запрошено), Запрошено — оплата затребована, Получено — реально поступила. Фильтр Не получено не включает автоматически Запрошено.\n\n4. Откройте строку, измените сумму, содержание или статус и сохраните. Пример: 25 000 не получено, после обращения запрошено, после оплаты получено."
+      },
+      {
+        "id": "sync",
+        "title": "Связь сумм и независимое удаление",
+        "body": "Явно сохранённая правка обновляет проверенный связанный источник расчёта, если он ещё существует. Существующий связанный отчёт получает изменение суммы того же требования.\n\nНе всё синхронизируется: получение, фото, текст и удаление независимы. Нужны тот же пункт и рабочая связь, не просто одинаковое имя. Удалённый отчёт не создаётся заново.\n\nУдаление расчёта/отчёта сохраняет требование и статус. Удаление в реестре сохраняет расчёты и отчёты. Оставшимся требованием можно управлять без источника.\n\nУдаление не означает оплату: используйте Получено. Не считайте восстановление реестра тем же, что корзина расчётов. Перед удалением проверьте и сохраните нужное."
+      },
+      {
+        "id": "photos",
+        "title": "Фото · съёмка и редактирование",
+        "body": "1. Выберите место, снимите чёткое подтверждение и проверьте сохранение. Фото внутри требования относятся к нему.\n\n2. Листайте миниатюры горизонтально. В Галерее проверьте место, дату, категорию. Миниатюра не позволяет полноценно оценить оригинал.\n\n3. Сохраните изменения информационной карточки/заметки и откройте детали снова. Изменённое фото и оригинал различаются; прочтите, что исчезнет при восстановлении оригинала.\n\n4. Удаление вложения может отличаться от удаления в Галерее. Читайте подтверждение; перед отправкой проверьте место, время, метаданные и личные сведения. Внешние копии не меняются вместе с приложением."
+      },
+      {
+        "id": "memos",
+        "title": "Заметки · запись и проверка",
+        "body": "Добавьте заметку на главной и сохраните рабочие сведения, например Восточная зона готова, нужны материалы. Оставьте понятный контекст.\n\nОткройте нужную заметку, проверьте место/дату, исправьте и сохраните. Лучше менять оригинал, чем многократно копировать старую заметку в сегодня.\n\nТекст Проезд 20 000 не создаёт надбавку или требование автоматически. Внесите сумму в соответствующий финансовый раздел.\n\nПроверьте цель удаления; доступные для возврата заметки находятся в Корзине. Не храните пароли и коды подтверждения."
+      },
+      {
+        "id": "settlement",
+        "title": "Расчёты · периоды и исправления",
+        "body": "Выберите место и день, неделю или месяц. Поиск также фильтрует; при пустом списке проверьте дату, место, поиск.\n\nОткройте карточку, проверьте день, часы, ставку, надбавки и требования, затем исправьте и сохраните. Карточки за один день различайте по месту и содержанию.\n\nГлавная — сегодня, Расчёты — период, Отдельные требования — накопительный реестр. Не путайте статус требования с датой расчёта.\n\nПосле сохранения откройте список/детали и отчёт той же работы. Удаление расчёта не удаляет отдельное требование. Перед групповым удалением проверьте количество и выбранные пункты."
+      },
+      {
+        "id": "reports",
+        "title": "Отчёты · версии и PDF",
+        "body": "Найдите место/период, проверьте день, зарплату, надбавки, требования и фото. Отчёты не подтверждают банковские платежи или получение автоматически.\n\nПравка может создавать новую версию. После изменения связанной суммы смотрите последнюю. Старые версии и экспортированные PDF не перезаписываются.\n\nПроверьте текст, фото, суммы в предпросмотре PDF, затем сохраните/отправьте. После правки создайте новый PDF; скачанный или отправленный файл сам не обновляется.\n\nУдаление отчёта сохраняет реестр и внешние копии у получателей/в других приложениях. Проверьте личные сведения и получателя."
+      },
+      {
+        "id": "backup",
+        "title": "Резервное копирование и восстановление",
+        "body": "Копия защищает от потери, поломки или удаления приложения. Копия только на том же телефоне может пропасть вместе с ним. В настройках выберите устройство, внешний способ или Google Drive.\n\nПроверьте завершение, место и дату. Храните все части разделённой копии вместе; не переименовывайте и не переносите часть. Выберите все нужные файлы или полную папку. Для Drive проверьте аккаунт и сеть.\n\nВажно: восстановление может заменить текущие данные, а не объединить новые записи двух устройств. Сначала отдельно сохраните текущее состояние, проверьте источник/дату. Не очищайте данные приложения и не отключайте носитель во время операции.\n\nПосле завершения откройте приложение по инструкции и проверьте места, записи, фото, надбавки, требования и отчёты. Обычный ZIP может содержать незашифрованные личные данные. При ошибке сохраните копию и проверьте сообщение/файлы."
+      },
+      {
+        "id": "trash",
+        "title": "Корзина · выбор и возврат",
+        "body": "В Настройки → Корзина откройте Галерею, Места, Заметки, Расчёты или Отчёты. Используйте флажки или Выбрать всё — только для текущей категории.\n\nВосстановите ещё хранящиеся пункты и проверьте исходный список с правильными фильтрами. Перед окончательным удалением проверьте цели.\n\nОбычно хранение 30 дней; просроченное очищается при открытии корзины. Проверяйте остаток дней. Старые пункты без времени удаления могут исключаться из автоочистки.\n\nОкончательно удалённое из корзины не вернуть. Фото, используемые другими записями, могут защищаться. Удаление реестра, сброс всех данных и внешних копий — разные операции."
+      },
+      {
+        "id": "help",
+        "title": "Проблемы · проверки и поддержка",
+        "body": "При разных суммах проверьте место/дату/валюту, часы/перерыв/ставку, дубли, сохранение и последний связанный отчёт. Реальный платёж проверяйте отдельно.\n\nПустой список: измените/очистите место, период, статус, поиск. Проверьте корзину; для фото — исходное место/категорию и содержимое копии.\n\nКамера/отправка не открывается: проверьте права Android, место в памяти и внешние приложения. Не начинайте с удаления или сброса; сначала сделайте копию.\n\nСообщите поддержке экран, шаги, ожидаемый/реальный результат, частоту, версии приложения/Android и модель. Скройте личное на снимках; не отправляйте пароли и коды."
+      }
+    ]
+  },
+  "tr": {
+    "name": "Türkçe",
+    "title": "Kullanıcı Kılavuzu",
+    "intro": "Ayarlar, kayıtlar, tutarlar, fotoğraflar ve yedekler için adım adım kılavuz. Bir konuyu açın veya arayın. Uygulamada çevrimdışı okunabilir. Ekran adları sürüm ve dile göre değişebilir.",
+    "search": "Ara",
+    "empty": "Arama sonucu yok.",
+    "sections": [
+      {
+        "id": "start",
+        "title": "Başlangıç · ayarlar ve iş yerleri",
+        "body": "1. Tutar girmeden dil ve para birimini kontrol edin. Görüntülenen para birimini değiştirmek döviz kuruyla otomatik dönüşüm yapmaz.\n\n2. Ana sayfada iş yerini seçin. Yeni ile ad ve bilgileri kaydedin; benzer yerleri ad veya adresle ayırt edin.\n\n3. Saat, fotoğraf ve para kaydından önce yeri, eski kayıtlar için tarihi de doğrulayın.\n\n4. Reddedilen kamera/konum izinlerini Android uygulama izinlerinden değiştirebilirsiniz. İzin vermek eski kayıtların eksik bilgilerini otomatik tamamlamaz."
+      },
+      {
+        "id": "home",
+        "title": "Ana sayfa · bugünün kayıtları",
+        "body": "Ana sayfa bugünü düzenler; birikmiş alacak defteri değildir. Yer ve tarihi kontrol ederek mesai, gelir, not ve fotoğraf kartlarını kullanın.\n\nÜcret, ek ödemeler ve ayrı alacaklar farklıdır. Ekrandaki tutar banka ödemesini doğrulamaz. Tahsilatı ayrı alacaklarda izleyin.\n\nToplam gelirin kalemi ortak düzenlemeyi açar. Bölümü açın, değiştirin ve kaydedin; İptal kaydetmez. Yeniden açarak kontrol edin.\n\nÖrnek: ücret 100.000, ek ödeme 10.000, önceden ödediğiniz malzeme 25.000 ayrı kaydedilir. Aynı gideri ek ödeme ve alacak olarak iki kez yazmayın."
+      },
+      {
+        "id": "attendance",
+        "title": "Mesai · mola ve çalışma süresi",
+        "body": "1. İş yerini doğrulayıp giriş yapın. Saati ve süren bir mesai olup olmadığını kontrol edin.\n\n2. Bulunma süresi, mola ve fiilî çalışma farklıdır. Kayıtlı mola düşülür; aynı birim ücrette farklı saatler tutarı değiştirir.\n\n3. Bitince çıkış yapın. Eski kaydı düzeltmek için Hesaplaşma bölümünde doğru yer/tarihi açın, düzenlenebilir saat ve molayı değiştirip kaydedin.\n\n09:00–18:00, bir saat mola ile dokuz saat bulunma ve sekiz saat çalışmadır. Gece aşan işte bitiş tarihini de kontrol edin. Bugün giriş/çıkışı tekrarlamak geçmiş eksiği düzeltmez."
+      },
+      {
+        "id": "income",
+        "title": "Gelir ve ek ödemeler",
+        "body": "Gelir, çalışma ve ücret ayarlarına göre kazançtır. Ek ödeme, önce sizin ödediğiniz giderin geri alınmasından farklı bir ilavedir.\n\n1. Kalemden birim ücret, tutar, iş yerinin ücret temeli ve çalışma süresini kontrol edin.\n\n2. Ek ödemeleri açıp başlık, neden açıklaması ve tutar ekleyin. Her kalemi ayrı tutun.\n\n3. Mevcut kalemi değiştirin veya kaldırın, ardından kaydedin. Ana sayfa ve bağlı hesap/raporu kontrol edin. Kalem kaldırma sayfayı iptal etmek değildir. 10.000'i 12.000 yapmak için asıl kalemi düzenleyin; yeni kalem çift sayılabilir. Dışa aktarılan PDF otomatik değişmez.\n\nSaatlik ücret, mola sonrası tamamlanmış dakikaları kullanır: saat ücreti × dakika ÷ 60; tutarın kesirli kısmı atılır. Saatlik 12.000 ile sekiz saat 96.000 eder. Tamamlanmamış bir dakika henüz sayılmayabilir."
+      },
+      {
+        "id": "claims",
+        "title": "Ayrı alacaklar · tahsilat",
+        "body": "Ücret dışındaki, sizin önce ödediğiniz malzeme veya yol masrafı gibi alacakları takip eder. Otomatik fatura göndermez veya para transfer etmez.\n\n1. Ana sayfa editöründe başlık, tutar, not ve belge fotoğraflarıyla alacak ekleyin. Farklı giderleri ayrı kartlarda kaydedin.\n\n2. Hesaplaşma içinden Ayrı alacaklar açılır. Solda iş yeri, sağda durum seçilir. Sonuçlar tarih sırasındadır; uzun adlar kısalabilir.\n\n3. Alınmadı ilk ödenmemiş durumdur (önce Talep edilmedi), Talep edildi ödeme istendiğini, Alındı gerçek tahsilatı belirtir. Alınmadı filtresi Talep edildi durumunu otomatik kapsamaz.\n\n4. Ayrıntıdan tutar, içerik veya durumu değiştirip kaydedin. Örnek: 25.000 alınmadı, istendiğinde talep edildi, ödeme gelince alındı."
+      },
+      {
+        "id": "sync",
+        "title": "Bağlı tutarlar ve bağımsız silme",
+        "body": "Açıkça kaydedilen alacak düzenlemesi, doğrulanmış bağlı hesap kaynağı hâlâ varsa onu da günceller. Mevcut bağlı rapor aynı alacağın tutar değişimini alır.\n\nTahsilat durumu, fotoğraf, metin ve silme bütünüyle eşitlenmez. Aynı kalem ve çalışma ilişkisi gerekir; aynı ad yeterli değildir. Silinmiş rapor yeniden oluşturulmaz.\n\nHesap veya rapor silinse de alacak ve durumu kalır. Alacak defterinden silme de hesap ve raporları korur. Kaynak olmadan kalan alacak yönetilebilir.\n\nSilmek tahsil etmek değildir: Alındı kullanın. Defter silmesini hesap çöp kutusuyla aynı kurtarma işlemi saymayın. Önce gerekli kayıtları kontrol edip yedekleyin."
+      },
+      {
+        "id": "photos",
+        "title": "Fotoğraflar · çekim ve düzenleme",
+        "body": "1. Yeri seçip okunaklı kanıt çekin ve kaydı kontrol edin. Alacak içindeki fotoğraflar o kalemi destekler.\n\n2. Önizlemeleri yatay kaydırın. Galeride yer, tarih ve kategoriyi kontrol edin. Küçük resim asıl kaliteyi veya kadrajı değerlendirmeye yetmez.\n\n3. Bilgi kartı/not düzenlemelerini kaydedip ayrıntıyı yeniden açın. Düzenlenmiş ve orijinal görüntü ayrıdır; orijinale dönüşte kaldırılacakları okuyun.\n\n4. Ek kaldırmak Galeriden fotoğraf silmekten farklı olabilir. Onayı okuyun; paylaşmadan konum, saat, cihaz verileri ve kişisel bilgileri kontrol edin. Dışarıdaki kopyalar uygulamadaki değişiklikleri izlemez."
+      },
+      {
+        "id": "memos",
+        "title": "Notlar · yazma ve kontrol",
+        "body": "Ana sayfadan not ekleyip iş bilgilerini kaydedin; örneğin Doğu bölümü bitti, malzeme gerekli. Sonradan anlaşılacak bağlam ekleyin.\n\nDoğru notu açıp yer/tarihi kontrol ederek düzenleyin ve kaydedin. Eski notu bugüne tekrar tekrar kopyalamak yerine asıl kaydı düzeltin.\n\nYol 20.000 yazmak otomatik ek ödeme veya alacak oluşturmaz. Tutarı ilgili mali bölüme girin.\n\nSilinecek notu doğrulayın; kurtarılabilir notlar Çöp kutusundadır. Parola veya doğrulama kodu saklamayın."
+      },
+      {
+        "id": "settlement",
+        "title": "Hesaplaşma · dönem ve düzeltme",
+        "body": "Yer ve günlük, haftalık veya aylık dönem seçin. Arama da filtreler; boş listede tarih, yer ve aramayı kontrol edin.\n\nKartı açıp gün, saat, ücret, ek ödemeler ve alacakları kontrol ettikten sonra düzenleyip kaydedin. Aynı günün kartlarını yer ve içerikle ayırt edin.\n\nAna sayfa bugün, Hesaplaşma dönem, Ayrı alacaklar biriken defter içindir. Durum filtresini hesap tarihiyle karıştırmayın.\n\nKaydedince liste/ayrıntıyı yeniden açın, aynı çalışma raporunu kontrol edin. Hesap silme ayrı alacağı silmez. Toplu silmeden seçim sayısını ve kalemleri doğrulayın."
+      },
+      {
+        "id": "reports",
+        "title": "Raporlar · sürümler ve PDF",
+        "body": "Yer/dönemle arayıp gün, ücret, ek ödeme, alacak ve fotoğrafları kontrol edin. Raporlar banka ödemesi veya tahsilatı otomatik doğrulamaz.\n\nDüzenleme yeni sürüm oluşturabilir. Bağlı tutar değişince son sürümü kontrol edin. Eski sürüm ve dışa aktarılan PDF üzerine yazılmaz.\n\nPDF önizlemesinde metin, fotoğraf, tutarı kontrol edip kaydedin/paylaşın. Değişiklik sonrası yeni PDF üretin; indirilen veya gönderilen dosya otomatik yenilenmez.\n\nRapor silme defteri ve başka uygulama/alıcılardaki kopyaları silmez. Kişisel bilgileri ve alıcıyı kontrol edin."
+      },
+      {
+        "id": "backup",
+        "title": "Yedek ve geri yükleme",
+        "body": "Yedek; kayıp, arıza veya kaldırmaya karşı ayrı kopyadır. Yalnız aynı telefondaki kopya onunla kaybolabilir. Ayarlarda cihaz, harici veya Google Drive seçin.\n\nBitiş, konum ve tarihi doğrulayın. Bölünmüş yedeğin tüm parçalarını birlikte tutun; ad değiştirmeyin veya bir kısmını taşımayın. İstenen tüm dosyaları ya da tam klasörü seçin. Drive hesabını ve bağlantıyı kontrol edin.\n\nÖnemli: geri yükleme mevcut veriyi değiştirebilir; iki cihazın yeni kayıtlarını otomatik birleştirmez. Önce mevcut veriyi ayrıca yedekleyin, kaynak/tarihi kontrol edin. İşlemde uygulama verilerini silmeyin veya depolamayı çıkarmayın.\n\nSonra yönergeye göre açıp yerler, kayıtlar, fotoğraflar, ek ödemeler, alacaklar ve raporları kontrol edin. Standart ZIP şifresiz kişisel veri içerebilir. Hata olursa yedeği koruyup mesaj/dosyaları kontrol edin."
+      },
+      {
+        "id": "trash",
+        "title": "Çöp kutusu · seçim ve kurtarma",
+        "body": "Ayarlar → Çöp kutusunda Galeri, Yerler, Notlar, Hesaplaşma veya Raporlar seçilir. Kutuları işaretleyin veya Tümünü seç kullanın; yalnız mevcut kategoriye uygulanır.\n\nTutulan kayıtları geri yükleyip asıl listede doğru filtreyle kontrol edin. Kalıcı silmeden hedefleri doğrulayın.\n\nGenellikle 30 gün tutulur; süresi geçenler çöp kutusu açılırken temizlenir. Kalan günleri kontrol edin. Silinme tarihi olmayan eski kayıtlar otomatik temizliğe dahil olmayabilir.\n\nKalıcı silinen çöp kutusundan dönmez. Başka kayıtta kullanılan fotoğraflar korunabilir. Alacak defteri, tüm veri sıfırlama ve harici yedek silme ayrıdır."
+      },
+      {
+        "id": "help",
+        "title": "Sorunlar · kontroller ve destek",
+        "body": "Tutar farkında yer/tarih/para birimi, saat/mola/ücret, çift kalemler, kayıt ve son bağlı raporu kontrol edin. Gerçek ödemeyi ayrıca doğrulayın.\n\nBoş listede yer, dönem, durum ve aramayı değiştirin/temizleyin. Çöp kutusunu; eksik fotoda asıl yer/kategori ve yedek içeriğini kontrol edin.\n\nKamera/paylaşım açılmazsa Android izinleri, alan ve harici uygulamaları kontrol edin. Önce kaldırma veya sıfırlama yapmayın; yedekleyin.\n\nDesteğe ekran, adımlar, beklenen/gerçek sonuç, sıklık, uygulama/Android sürümleri ve modeli bildirin. Görsellerde kişisel bilgileri gizleyin; parola/kod göndermeyin."
+      }
+    ]
+  },
+  "vi": {
+    "name": "Tiếng Việt",
+    "title": "Hướng dẫn sử dụng",
+    "intro": "Hướng dẫn từng bước về cài đặt, bản ghi, số tiền, ảnh và sao lưu. Mở chủ đề hoặc tìm kiếm. Trong ứng dụng có thể đọc ngoại tuyến. Tên màn hình có thể khác theo phiên bản và ngôn ngữ.",
+    "search": "Tìm kiếm",
+    "empty": "Không có kết quả tìm kiếm.",
+    "sections": [
+      {
+        "id": "start",
+        "title": "Bắt đầu · cài đặt và nơi làm việc",
+        "body": "1. Kiểm tra ngôn ngữ và tiền tệ trước khi nhập số tiền. Đổi tiền tệ hiển thị không tự quy đổi theo tỷ giá.\n\n2. Chọn nơi làm việc ở Trang chủ. Dùng Mới để lưu tên và thông tin; phân biệt nơi trùng tên bằng địa chỉ hoặc tên rõ ràng.\n\n3. Xác nhận nơi trước khi ghi giờ, ảnh, tiền; kiểm tra cả ngày khi tìm bản ghi cũ.\n\n4. Nếu từ chối quyền camera/vị trí, có thể đổi trong quyền ứng dụng Android. Cấp quyền không tự bổ sung thông tin thiếu trong bản ghi cũ."
+      },
+      {
+        "id": "home",
+        "title": "Trang chủ · bản ghi hôm nay",
+        "body": "Trang chủ dành cho hôm nay, không phải toàn bộ sổ khoản phải thu tích lũy. Kiểm tra nơi và ngày rồi dùng các thẻ chấm công, thu nhập, ghi chú, ảnh.\n\nLương, phụ cấp và khoản thu riêng là các mục khác nhau. Số tiền hiển thị không chứng minh đã có tiền vào ngân hàng. Theo dõi nhận tiền trong khoản thu riêng.\n\nBút chì Tổng thu nhập mở trình sửa chung. Mở phần, sửa và Lưu; Hủy không lưu. Mở lại để kiểm tra.\n\nVí dụ lương 100.000, phụ cấp 10.000, vật liệu ứng trước 25.000 ghi riêng. Không nhập cùng chi phí vào cả phụ cấp lẫn khoản phải thu."
+      },
+      {
+        "id": "attendance",
+        "title": "Chấm công · nghỉ và giờ làm",
+        "body": "1. Xác nhận nơi rồi ghi vào ca. Kiểm tra giờ và có ca đang chạy hay không.\n\n2. Thời gian có mặt, nghỉ và làm thực tế khác nhau. Thời gian nghỉ đã ghi được trừ; giờ khác có thể đổi tiền dù đơn giá giống nhau.\n\n3. Kết thúc thì ghi ra ca. Sửa quá khứ bằng cách mở đúng nơi/ngày trong Quyết toán, sửa giờ/nghỉ cho phép và lưu.\n\n09:00–18:00 nghỉ một giờ là có mặt chín giờ, làm tám giờ. Ca qua đêm cần kiểm tra ngày kết thúc. Lặp chấm công hôm nay không sửa thiếu sót ngày cũ."
+      },
+      {
+        "id": "income",
+        "title": "Thu nhập và phụ cấp",
+        "body": "Thu nhập là lương theo công việc và cài đặt trả lương. Phụ cấp là khoản thêm, khác tiền hoàn lại chi phí bạn ứng trước.\n\n1. Qua bút chì, kiểm tra đơn giá, số tiền, cơ sở lương nơi làm và giờ làm.\n\n2. Mở Phụ cấp, thêm tiêu đề, nội dung lý do và số tiền. Mỗi khoản ghi riêng.\n\n3. Sửa hoặc xóa mục cũ rồi lưu. Kiểm tra Trang chủ, quyết toán/báo cáo liên kết. Xóa mục khác hủy trang. Đổi 10.000 thành 12.000 thì sửa mục gốc; thêm mục mới có thể cộng đôi. PDF đã xuất không tự cập nhật.\n\nLương giờ dùng phút làm việc hoàn chỉnh sau khi trừ nghỉ: đơn giá giờ × phút ÷ 60, bỏ phần lẻ của số tiền. Đơn giá 12.000 trong tám giờ là 96.000. Phút chưa đủ có thể chưa được tính."
+      },
+      {
+        "id": "claims",
+        "title": "Khoản thu riêng · nhận tiền",
+        "body": "Sổ theo dõi tiền ngoài lương như vật liệu hoặc đi lại bạn trả trước. Không tự gửi hóa đơn hay chuyển tiền.\n\n1. Trong trình sửa Trang chủ, thêm tiêu đề, tiền, ghi chú, ảnh chứng từ. Mỗi chi phí một thẻ rồi lưu.\n\n2. Từ Quyết toán mở Khoản thu riêng, chọn nơi bên trái rồi trạng thái bên phải. Kết quả theo ngày, tên dài có thể rút gọn.\n\n3. Chưa nhận là trạng thái chưa trả ban đầu (trước là Chưa yêu cầu), Đã yêu cầu nghĩa là đã đề nghị thanh toán, Đã nhận là đã nhận thực tế. Bộ lọc Chưa nhận không tự bao gồm Đã yêu cầu.\n\n4. Mở chi tiết để sửa tiền, nội dung hoặc trạng thái rồi lưu. Ví dụ 25.000 chưa nhận, chuyển đã yêu cầu khi đề nghị, đã nhận khi tiền thực sự về."
+      },
+      {
+        "id": "sync",
+        "title": "Liên kết tiền và xóa độc lập",
+        "body": "Sửa rõ ràng rồi lưu sẽ cập nhật nguồn quyết toán liên kết đã xác minh nếu còn tồn tại. Báo cáo liên kết có sẵn nhận thay đổi số tiền của cùng khoản.\n\nKhông đồng bộ mọi trường: trạng thái nhận, ảnh, chữ và xóa độc lập. Cần cùng mục và quan hệ công việc, không chỉ trùng tên. Báo cáo đã xóa không được tạo lại.\n\nXóa quyết toán/báo cáo vẫn giữ khoản thu và trạng thái. Xóa trong sổ khoản thu vẫn giữ quyết toán/báo cáo. Khoản còn lại có thể quản lý dù mất nguồn.\n\nXóa không có nghĩa đã nhận tiền: dùng Đã nhận. Không coi khôi phục sổ giống thùng rác quyết toán. Kiểm tra và sao lưu dữ liệu cần giữ trước khi xóa."
+      },
+      {
+        "id": "photos",
+        "title": "Ảnh · chụp và chỉnh sửa",
+        "body": "1. Chọn nơi, chụp bằng chứng rõ rồi kiểm tra đã lưu. Ảnh trong khoản thu làm chứng từ cho mục đó.\n\n2. Vuốt ngang các ảnh xem trước. Trong thư viện kiểm tra nơi, ngày, phân loại. Ảnh nhỏ không đủ đánh giá chất lượng hoặc khung hình gốc.\n\n3. Lưu sửa thẻ thông tin/ghi chú và mở lại chi tiết. Ảnh sửa và gốc khác nhau; đọc phần bị bỏ khi khôi phục gốc.\n\n4. Bỏ đính kèm có thể khác xóa ảnh thư viện. Đọc xác nhận; trước chia sẻ kiểm tra vị trí, giờ, dữ liệu thiết bị và thông tin cá nhân. Bản sao bên ngoài đã gửi không tự thay đổi."
+      },
+      {
+        "id": "memos",
+        "title": "Ghi chú · viết và kiểm tra",
+        "body": "Thêm ghi chú từ Trang chủ, lưu việc hoặc lời nhắn như Xong khu đông, cần vật liệu. Ghi đủ bối cảnh để hiểu về sau.\n\nMở đúng ghi chú, kiểm tra nơi/ngày, sửa và lưu. Nên sửa bản gốc thay vì chép lại ghi chú cũ vào hôm nay nhiều lần.\n\nViết Đi lại 20.000 không tự tạo phụ cấp hay khoản thu. Nhập tiền vào phần tài chính phù hợp.\n\nKiểm tra mục trước xóa; ghi chú có thể phục hồi nằm trong nhóm tương ứng của Thùng rác. Không ghi mật khẩu hoặc mã xác minh."
+      },
+      {
+        "id": "settlement",
+        "title": "Quyết toán · kỳ và sửa đổi",
+        "body": "Chọn nơi và kỳ ngày, tuần, tháng. Tìm kiếm cũng lọc; nếu trống kiểm tra ngày, nơi, tìm kiếm.\n\nMở thẻ, kiểm tra ngày, giờ, đơn giá, phụ cấp, khoản thu trước sửa và lưu. Phân biệt thẻ cùng ngày qua nơi và nội dung.\n\nTrang chủ là hôm nay, Quyết toán là kỳ đã chọn, Khoản thu riêng là sổ tích lũy. Không nhầm bộ lọc trạng thái với ngày quyết toán.\n\nSau lưu mở lại danh sách/chi tiết và báo cáo cùng công việc. Xóa quyết toán không xóa khoản thu riêng. Kiểm tra số lượng và mục đã chọn trước xóa hàng loạt."
+      },
+      {
+        "id": "reports",
+        "title": "Báo cáo · phiên bản và PDF",
+        "body": "Tìm theo nơi/kỳ, kiểm tra ngày, lương, phụ cấp, khoản thu, ảnh. Báo cáo không tự xác minh chuyển khoản hoặc nhận tiền.\n\nSửa có thể tạo phiên bản mới. Sau thay đổi tiền liên kết, xem bản mới nhất. Bản cũ và PDF đã xuất không bị ghi đè.\n\nKiểm tra chữ, ảnh, tiền trong xem trước PDF rồi lưu/chia sẻ. Sau sửa tạo PDF mới; tệp tải xuống hay tin nhắn không tự cập nhật.\n\nXóa báo cáo vẫn giữ sổ khoản thu và không xóa bản sao ở người nhận/ứng dụng khác. Kiểm tra thông tin riêng và người nhận."
+      },
+      {
+        "id": "backup",
+        "title": "Sao lưu và khôi phục",
+        "body": "Sao lưu là bản riêng chống mất máy, hỏng hoặc gỡ ứng dụng. Chỉ lưu cùng điện thoại có thể mất cùng máy. Chọn thiết bị, ngoài hoặc Google Drive trong Cài đặt.\n\nKiểm tra hoàn tất, vị trí, ngày. Giữ đủ mọi phần của bản chia nhỏ; không đổi tên hoặc chỉ di chuyển một phần. Chọn đủ tệp cần hoặc thư mục hoàn chỉnh. Với Drive kiểm tra tài khoản/mạng.\n\nQuan trọng: khôi phục có thể thay dữ liệu hiện tại, không tự gộp bản ghi mới hai máy. Sao lưu riêng trạng thái hiện tại trước, kiểm tra nguồn/ngày và làm theo hướng dẫn. Không xóa dữ liệu ứng dụng hoặc tháo bộ nhớ khi đang chạy.\n\nSau hoàn tất mở lại và kiểm tra nơi, bản ghi, ảnh, phụ cấp, khoản thu, báo cáo. ZIP tiêu chuẩn có thể chứa dữ liệu cá nhân không mã hóa. Nếu lỗi, giữ bản sao và kiểm tra thông báo/tệp."
+      },
+      {
+        "id": "trash",
+        "title": "Thùng rác · chọn và phục hồi",
+        "body": "Cài đặt → Thùng rác: mở Ảnh, Nơi làm, Ghi chú, Quyết toán hoặc Báo cáo. Đánh dấu ô hoặc Chọn tất cả, chỉ áp dụng nhóm hiện tại.\n\nKhôi phục mục còn lưu rồi kiểm tra danh sách gốc với đúng bộ lọc. Xác minh mục trước xóa vĩnh viễn.\n\nThường giữ 30 ngày; mục hết hạn được dọn khi mở thùng rác. Xem số ngày còn lại. Mục cũ thiếu thời điểm xóa có thể không bị dọn tự động.\n\nXóa vĩnh viễn không phục hồi từ thùng rác. Ảnh dùng ở bản ghi khác có thể được bảo vệ. Xóa sổ khoản thu, đặt lại toàn bộ dữ liệu và bản sao ngoài là khác nhau."
+      },
+      {
+        "id": "help",
+        "title": "Khắc phục · kiểm tra và hỗ trợ",
+        "body": "Tiền khác: kiểm tra nơi/ngày/tiền tệ, giờ/nghỉ/đơn giá, mục trùng, lưu và báo cáo liên kết mới nhất. Kiểm tra thanh toán thực tế riêng.\n\nDanh sách trống: đổi/xóa bộ lọc nơi, kỳ, trạng thái, tìm kiếm. Xem Thùng rác; ảnh thiếu: nơi/phân loại gốc và nội dung sao lưu.\n\nKhông mở được camera/chia sẻ: kiểm tra quyền Android, dung lượng và ứng dụng ngoài. Không bắt đầu bằng gỡ hoặc đặt lại; sao lưu trước.\n\nGửi hỗ trợ màn hình, bước làm, kết quả mong đợi/thực tế, tần suất, phiên bản ứng dụng/Android, mẫu máy. Che dữ liệu cá nhân trong ảnh; không gửi mật khẩu hoặc mã."
+      }
+    ]
+  },
+  "zh": {
+    "name": "中文",
+    "title": "用户指南",
+    "intro": "从初始设置到金额联动、照片与备份，按步骤介绍。展开章节或搜索即可阅读。应用内可离线查看。不同版本和语言的界面名称可能略有差异。",
+    "search": "搜索",
+    "empty": "没有搜索结果。",
+    "sections": [
+      {
+        "id": "start",
+        "title": "开始使用 · 设置与工作地点",
+        "body": "1. 输入金额前，在设置中确认语言和货币。更改货币显示不代表按汇率自动换算。\n\n2. 在主页顶部选择工作地点，通过新增登记新工地并保存名称和资料。相似地点请用名称或地址区分。\n\n3. 记录考勤、照片或金额前再次确认地点。查找旧记录时也要核对日期。\n\n4. 使用相应功能时允许相机或位置权限。若曾拒绝，可在Android应用权限中更改；授权不会自动补齐旧记录缺失的信息。"
+      },
+      {
+        "id": "home",
+        "title": "主页 · 当天记录",
+        "body": "主页用于整理当天工作，不是累计报销台账。确认地点和日期后使用考勤、总收入、备忘录和照片卡片。\n\n工资、津贴和单独报销应分开记录。显示金额不代表银行已到账，报销收款情况在单独报销中管理。\n\n点击总收入的铅笔，展开相应部分，编辑后保存。取消不等于保存。保存后重新打开核对。\n\n例如工资100,000、津贴10,000、垫付材料费25,000应分别记录，不要将同一费用同时记为津贴和报销。"
+      },
+      {
+        "id": "attendance",
+        "title": "考勤 · 休息与工时",
+        "body": "1. 确认地点后点击上班，检查时间及是否已经有进行中的工作。\n\n2. 停留时间、休息时间与实际工时不同。实际工时扣除记录的休息，因此单价相同也可能因时间不同而改变金额。\n\n3. 结束后点击下班并按提示完成。修正过去记录时，在结算中找到准确地点和日期，修改可编辑的时间、休息并保存。\n\n例如09:00至18:00休息1小时，停留9小时、实际工作8小时。跨夜工作也要核对结束日期。不要反复操作今天的上下班来补过去的记录。"
+      },
+      {
+        "id": "income",
+        "title": "收入与津贴 · 编辑和删除",
+        "body": "收入是按工作及薪资设置计算的工资，津贴是额外支付项目，与先垫付后报销不同。\n\n1. 点击总收入铅笔，核对单价、金额、地点薪资标准和实际工时。\n\n2. 展开津贴，填写如餐补的标题、说明原因的内容及金额。不同津贴分项记录。\n\n3. 修改或删除原项目后保存，再核对主页及关联结算、报告。删除项目与取消页面不同。把10,000改为12,000应修改原项，新增同名项可能重复计入。已导出的PDF不会自动更新。\n\n时薪按扣除休息后的完整工作分钟计算：时薪 × 工作分钟 ÷ 60，金额小数部分舍去。例如时薪12,000、实际工作8小时为96,000。正在进行的不满一分钟可能尚未计入。"
+      },
+      {
+        "id": "claims",
+        "title": "单独报销 · 追踪收款",
+        "body": "此台账用于工资以外应收回的垫付材料费、交通费等，不会自动发送账单或转账。\n\n1. 在主页铅笔编辑页新增报销，填写标题、金额、备注并拍摄凭证，分别建卡后保存。\n\n2. 从结算进入单独报销，先在左侧选地点，再在右侧选状态。结果按日期排列，长地点名可能省略。\n\n3. 未收款是初始未付状态（原未申请）；已申请表示已提出付款要求；已收款表示实际收到。未收款筛选不包含所有已申请项目。\n\n4. 点击列表进入详情修改金额、内容或状态并保存。例如垫付25,000后记未收款，提出申请后改已申请，实际到账后改已收款。"
+      },
+      {
+        "id": "sync",
+        "title": "金额联动与独立删除",
+        "body": "原始记录仍存在且关联得到确认时，明确保存的报销修改也会更新对应结算。已有的关联报告会更新同一报销的金额。\n\n报告不完整复制台账。收款状态、照片、文字及删除不会全部同步。金额只关联同一项目和工作关系，不会按同名连接无关项目，也不会重建已删除报告。\n\n删除结算或报告，报销台账及收款状态仍保留。台账中选择删除也不删除结算、报告。即使原记录不在，剩余报销仍可管理。\n\n删除不代表收到钱，收款请改为已收款。不要将台账删除当作结算回收站的同一种恢复方式。删除前确认保留内容并备份。"
+      },
+      {
+        "id": "photos",
+        "title": "照片 · 拍摄与编辑",
+        "body": "1. 选择正确地点后拍摄清晰凭证，检查保存结果。报销内拍摄的照片用于该项凭证。\n\n2. 多张预览可横向滑动。图库中确认地点、日期、分类后打开照片，不要只凭缩略图判断原图质量或构图。\n\n3. 编辑信息卡或备注后保存并重新进入详情。编辑图与拍摄原图不同，恢复原图前确认会移除哪些编辑。\n\n4. 移除附件与删除图库照片的范围可能不同，请阅读确认提示。分享前检查位置、拍摄时间、设备元数据及画面隐私。已分享的外部副本不会跟随应用内修改或删除。"
+      },
+      {
+        "id": "memos",
+        "title": "备忘录 · 编写与查阅",
+        "body": "在主页备忘录卡片中新增工作说明并保存，例如东区完成、需补充材料，写明以后能理解的上下文。\n\n打开对应备忘录编辑并保存，确认地点和日期。优先修改原记录，而不是把旧内容重复记到今天。\n\n备注写交通费20,000不会自动产生津贴或报销金额。需要结算的费用须在对应金额栏另行输入。\n\n删除前确认目标，需恢复时查看设置的回收站相应类别。不要记录密码或验证码。"
+      },
+      {
+        "id": "settlement",
+        "title": "结算 · 按期间查询与修正",
+        "body": "进入结算，选择地点及日、周、月范围。搜索条件也会影响列表，空白时依次检查日期、地点和搜索。\n\n打开卡片核对日期、工时、单价、津贴及报销后编辑保存。同日多条记录要比较地点和内容。\n\n主页针对当天，结算针对所选期间，单独报销是持续累积的应收台账。不要混淆报销状态与结算日期筛选。\n\n保存后重新进入列表和详情。报告须查看同一工作记录对应的文档。删除结算不删除独立报销，批量删除前核对选择数量与项目。"
+      },
+      {
+        "id": "reports",
+        "title": "报告 · 版本、PDF与分享",
+        "body": "在报告中按地点、期间查找，先检查工作日、收入、津贴、报销及照片。报告不会自动确认银行到账或报销收款。\n\n编辑可能生成新版本。报销金额改变后查看最新关联文档，旧版本和已经导出的PDF不会被覆盖。\n\n在PDF预览中检查文字、照片、金额，再保存或分享。修改后重新生成PDF，下载目录或聊天中的旧文件不会自动更新。\n\n删除报告不删除报销台账，也不删除他人或其他应用里的副本。分享前核对隐私及接收人。"
+      },
+      {
+        "id": "backup",
+        "title": "备份与恢复 · 替换前必读",
+        "body": "备份是应对设备丢失、损坏或卸载的独立副本，仅存同一手机可能一起丢失。设置中可选设备、外部或Google Drive备份。\n\n确认完成提示、位置和日期。分卷备份需完整保留所有部分，不要改名或只移动部分文件。恢复时选全部所需文件或完整文件夹。Drive需确认账号和网络。\n\n重要：恢复可能用备份替换当前数据，不是自动合并两台设备的新记录。先另备份当前数据，再确认恢复对象、日期并按提示操作。过程中避免清除应用数据或拔出存储设备。\n\n完成后按提示重开应用，检查地点、近期记录、照片、津贴、报销和报告。标准ZIP可能是未加密的个人资料副本，谨慎保存和分享。报错时保留现有备份并检查提示与所选文件。"
+      },
+      {
+        "id": "trash",
+        "title": "回收站 · 选择、恢复与永久删除",
+        "body": "设置→回收站中选择图库、地点、备忘录、结算或报告，勾选项目或全选。全选仅作用于当前类别。\n\n误删时选择仍保留的项目并恢复，在原列表调整筛选后确认。永久删除前仔细核对目标。\n\n通常保留30天，过期项目在打开回收站时清理，请查看剩余天数。缺少删除时间的旧项目可能不自动清理。\n\n永久删除后无法从回收站恢复。其他记录正在使用的照片可能受保护。报销台账删除、全部数据重置、删除外部备份都是不同操作。"
+      },
+      {
+        "id": "help",
+        "title": "问题排查 · 检查与联系",
+        "body": "金额不同时依次核对地点、日期、货币；上下班、休息、单价；重复津贴或报销；是否保存；是否为最新关联报告。实际到账另行核实。\n\n列表为空时更改或清除地点、期间、状态、搜索条件；已删记录看回收站。照片缺失时核对原地点、分类及备份是否包含照片。\n\n相机或分享应用无法打开时检查Android权限、存储空间及外部应用安装情况。不要首先卸载或重置，先备份重要记录。\n\n从设置的客户支持提交画面、操作顺序、预期和实际结果、频率、应用及Android版本、机型。截图遮挡隐私，不要发送密码或验证码。"
+      }
+    ]
+  }
+}
