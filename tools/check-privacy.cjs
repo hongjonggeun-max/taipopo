@@ -107,6 +107,19 @@ if (
 }
 
 const rootPrivacy = fs.readFileSync(path.join(root, 'privacy/index.html'), 'utf8');
+if (!rootPrivacy.includes(renderPolicy(policies.ko).html)) {
+  throw new Error('The root privacy URL must contain the full Korean policy.');
+}
+for (const code of codes) {
+  const notice = policies[code].websiteNotice;
+  if (
+    !notice?.heading ||
+    notice.paragraphs?.length !== 4 ||
+    !notice.paragraphs[2].includes('Google Sign-In')
+  ) {
+    throw new Error(`Missing website release/account disclosure: ${code}`);
+  }
+}
 if (
   !rootPrivacy.includes(
     'https://hongjonggeun-max.github.io/taipopo-privacy/privacy/',

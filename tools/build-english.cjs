@@ -18,9 +18,14 @@ for(const file of ['index.html','support/index.html','privacy/index.html']){
   if(file==='privacy/index.html'){
     ko=ko.replace('<html lang="ko">','<html lang="ko" dir="ltr">');
     ko=ko.replace(/<details class="language-picker">[\s\S]*?<\/details>/,picker('ko','../',false,'privacy/'));
+    ko=ko.replace(/<!-- app-privacy:start -->[\s\S]*?<!-- app-privacy:end -->/,`<!-- app-privacy:start -->${renderPolicy(policies.ko).html}<!-- app-privacy:end -->`);
   }
   fs.writeFileSync(source,ko);
-  let en=ko.replace(/lang="ko"(?: dir="ltr")?/,'lang="en" dir="ltr"');
+  // Policy bodies already have reviewed translations; do not translate them again.
+  const englishSource=file==='privacy/index.html'
+    ? ko.replace(/<div class="page-intro">[\s\S]*?<\/div><div class="policy-content">[\s\S]*?<\/div><\/main>/,'<!-- localized-privacy -->')
+    : ko;
+  let en=englishSource.replace(/lang="ko"(?: dir="ltr")?/,'lang="en" dir="ltr"');
   for(const [k,v] of pairs)en=en.split(k).join(v.replaceAll('&','&amp;'));
   en=en.replace(/<details class="language-picker">[\s\S]*?<\/details>/,picker('en',nested?'../../':'../',true,file==='privacy/index.html'?'privacy/':''));
   if(/[가-힣]/.test(en))throw Error('Untranslated text in '+file+': '+en.match(/[^<>]*[가-힣][^<>]*/g));
@@ -31,8 +36,8 @@ for(const file of ['index.html','support/index.html','privacy/index.html']){
   if(file==='privacy/index.html'){
     const policy=renderPolicy(policies.en);
     const privacyMain=`<div class="page-intro"><span class="eyebrow">Your records and privacy</span><h1>${escapeHtml(policy.title)}</h1><p>Read the app privacy policy in English below. The policy explains the information processed, storage, external services, retention, deletion and contact details.</p></div><div class="policy-content">${policy.html}<section class="glass"><h2>Information used by this website</h2><p>This website has no sign-up, advertising trackers or analytics scripts. Only your light or dark theme preference is stored in your browser. Contact buttons open your email app; the website itself does not receive or store your messages.</p><p>This website is hosted on GitHub Pages. The hosting provider may process data when you visit. For details, see the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a>.</p></section></div></main>`;
-    en=en.replace(/<div class="page-intro">[\s\S]*?<\/div><div class="policy-content">[\s\S]*?<\/div><\/main>/,privacyMain);
-    en=en.replace('<title>Privacy · TAIPOPO</title>',`<title>${escapeHtml(policy.title)} · TAIPOPO</title>`);
+    en=en.replace('<!-- localized-privacy -->',privacyMain);
+    en=en.replace(/<title>[^<]*<\/title>/,`<title>${escapeHtml(policy.title)} · TAIPOPO</title>`);
   }
   const dest=path.join(root,'en',file);
   fs.mkdirSync(path.dirname(dest),{recursive:true});fs.writeFileSync(dest,en);

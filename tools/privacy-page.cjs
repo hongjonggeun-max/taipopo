@@ -74,6 +74,9 @@ function renderPolicy(policy) {
       (section) =>
         `<section class="glass"><h2>${escapeHtml(section.heading)}</h2>${renderLines(section.lines)}</section>`,
     ),
+    ...(policy.websiteNotice
+      ? [`<section class="glass"><h2>${escapeHtml(policy.websiteNotice.heading)}</h2>${renderLines(policy.websiteNotice.paragraphs)}</section>`]
+      : []),
   ].join('');
   return { title, html };
 }

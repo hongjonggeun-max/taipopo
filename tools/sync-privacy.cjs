@@ -1,4 +1,4 @@
-// Export only the localized in-app privacy policy fields used by the website.
+// Export in-app policy text; preserve separately reviewed website release notes.
 const fs = require('node:fs');
 const path = require('node:path');
 
@@ -25,6 +25,7 @@ const codes = [
   'zh',
 ];
 const policies = {};
+const existingPolicies = require('./privacy-content.json');
 
 for (const code of codes) {
   const source = JSON.parse(
@@ -48,6 +49,9 @@ for (const code of codes) {
     throw new Error(`Incomplete privacy policy fields: ${code}`);
   }
   policies[code] = { effectiveDate, body };
+  if (existingPolicies[code]?.websiteNotice) {
+    policies[code].websiteNotice = existingPolicies[code].websiteNotice;
+  }
 }
 
 fs.writeFileSync(

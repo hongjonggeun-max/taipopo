@@ -10,3 +10,5 @@ html[data-theme=dark]{color-scheme:dark;--bg:#101214;--surface:#20242b;--surface
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;animation:none!important;transition:none!important}}
 /* The SVG wordmark already contains optical padding; avoid adding a second gap. */
 .header .brand{gap:0}
+
+.policy-content{overflow-wrap:anywhere}
