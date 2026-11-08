@@ -39,7 +39,10 @@ for (const code of codes) {
     typeof body !== 'string' ||
     effectiveDate !== '2026-08-23' ||
     placeholders.length !== 1 ||
-    !body.includes('2026-10-14') ||
+    !body.includes(source.privacyPolicyNoticeVersion) ||
+    source.privacyPolicyNoticeVersion !== '2026-11-07' ||
+    !source.privacyPolicyProcessingNotice?.includes('taipopo-site-theme') ||
+    !source.termsOfUseReviewNotice?.includes('2026-11-07') ||
     !body.includes(controller) ||
     !body.includes('30') ||
     !body.includes('Google Drive') ||
@@ -48,7 +51,24 @@ for (const code of codes) {
   ) {
     throw new Error(`Incomplete privacy policy fields: ${code}`);
   }
-  policies[code] = { effectiveDate, body };
+  policies[code] = {
+    locale: code,
+    effectiveDate,
+    body,
+    noticeVersion: source.privacyPolicyNoticeVersion,
+    processingNotice: source.privacyPolicyProcessingNotice,
+    deletion: {
+      body: source.dataDeleteGuideBody,
+      effectiveDate: source.policyEffectiveDate,
+      notice: source.dataDeletePrivacyNotice,
+    },
+    terms: {
+      title: source.termsOfUse,
+      body: source.termsOfUseBody,
+      effectiveDate: source.policyEffectiveDate,
+      reviewNotice: source.termsOfUseReviewNotice,
+    },
+  };
   if (existingPolicies[code]?.websiteNotice) {
     policies[code].websiteNotice = existingPolicies[code].websiteNotice;
   }

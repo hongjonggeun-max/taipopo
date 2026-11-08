@@ -12,3 +12,7 @@ html[data-theme=dark]{color-scheme:dark;--bg:#101214;--surface:#20242b;--surface
 .header .brand{gap:0}
 
 .policy-content{overflow-wrap:anywhere}
+.glass[data-support-processing],.glass[data-web-review]{overflow-wrap:anywhere;word-break:normal}
+#record-tool-notice{overflow-wrap:anywhere;word-break:normal;padding:24px;margin-top:24px}#record-tool-notice h2{font-size:23px;margin-bottom:16px}#record-tool-notice p{font-size:14px;line-height:1.9;margin-bottom:12px}
+.feature-grid>.glass{min-width:0;overflow-wrap:anywhere}
+.page-intro{overflow-wrap:anywhere}

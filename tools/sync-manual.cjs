@@ -11,6 +11,7 @@ for(const [code,name] of Object.entries(locales)){
   const sections=names.map((n,i)=>({id:n.toLowerCase(),title:a[`manual${n}Title`],body:a[`manual${n}Body`]}));
   const manual={name,title:a.userGuideTitle,intro:a.manualIntro,search:a.search,empty:a.noSearchResults,sections};
   if(!manual.intro||sections.some(s=>!s.title||!s.body))throw Error(`Incomplete manual: ${code}`);
+  if(code==='ko')manual.intro="처음 시작하는 방법부터 금액 연결, 사진, 백업까지 단계별로 안내합니다. 제목을 눌러 펼치거나 검색해 보세요. 앱 안의 설명서는 인터넷 없이도 읽을 수 있습니다. 이 웹페이지의 접속과 언어 자료 불러오기에는 인터넷 연결이 필요합니다. 화면 이름은 앱 버전과 언어에 따라 조금 다를 수 있습니다.";
   data[code]=manual;
 }
 const escape=s=>s.replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;');

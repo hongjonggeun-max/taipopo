@@ -37,7 +37,9 @@ for (const code of codes) {
   const source = policies[code];
   if (
     source.effectiveDate !== arb.privacyPolicyEffectiveDate ||
-    source.body !== arb.privacyPolicyBody
+    source.body !== arb.privacyPolicyBody ||
+    source.processingNotice !== arb.privacyPolicyProcessingNotice ||
+    source.noticeVersion !== arb.privacyPolicyNoticeVersion
   ) {
     throw new Error(`Website privacy source differs from app ARB: ${code}`);
   }
@@ -65,7 +67,7 @@ for (const code of codes) {
     `<html lang="${code}" dir="${expectedDirection}">`,
     `<title>${policyTitle} · TAIPOPO</title>`,
     '2026-08-23',
-    '2026-10-14',
+    '2026-11-07',
     controller,
     'Google Drive',
     'Google Sign-In',
@@ -114,8 +116,9 @@ for (const code of codes) {
   const notice = policies[code].websiteNotice;
   if (
     !notice?.heading ||
-    notice.paragraphs?.length !== 4 ||
-    !notice.paragraphs[2].includes('Google Sign-In')
+    notice.paragraphs?.length !== 6 ||
+    !notice.paragraphs[2].includes('Google Sign-In') ||
+    notice.paragraphs[4] !== JSON.parse(fs.readFileSync(path.join(arbDir, `app_${code}.arb`), 'utf8')).backupLocalStorageNotice
   ) {
     throw new Error(`Missing website release/account disclosure: ${code}`);
   }

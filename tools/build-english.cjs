@@ -3,7 +3,7 @@ const fs=require('node:fs');
 const path=require('node:path');
 const root=path.resolve(__dirname,'..');
 const policies=require('./privacy-content.json');
-const {escapeHtml,renderPolicy}=require('./privacy-page.cjs');
+const {escapeHtml,renderPolicy,renderSupportProcessing}=require('./privacy-page.cjs');
 const pairs=Object.entries(require('./english-text.json')).sort((a,b)=>b[0].length-a[0].length);
 const languages=[['ar','العربية'],['de','Deutsch'],['en','English'],['es','Español'],['fr','Français'],['hi','हिन्दी'],['id','Bahasa Indonesia'],['it','Italiano'],['ja','日本語'],['ko','한국어'],['pt','Português'],['ru','Русский'],['th','ไทย'],['tr','Türkçe'],['vi','Tiếng Việt'],['zh','中文']];
 const englishNames=['Arabic','German','English','Spanish','French','Hindi','Indonesian','Italian','Japanese','Korean','Portuguese','Russian','Thai','Turkish','Vietnamese','Chinese'];
@@ -22,9 +22,15 @@ for(const file of ['index.html','support/index.html','privacy/index.html']){
   }
   fs.writeFileSync(source,ko);
   // Policy bodies already have reviewed translations; do not translate them again.
-  const englishSource=file==='privacy/index.html'
-    ? ko.replace(/<div class="page-intro">[\s\S]*?<\/div><div class="policy-content">[\s\S]*?<\/div><\/main>/,'<!-- localized-privacy -->')
-    : ko;
+  // Generated legal notices and crawl metadata have their own locale sources.
+  // Do not send their Korean text through the general UI translation table.
+  let englishSource=ko.replace(/<!-- SEO:START -->[\s\S]*?<!-- SEO:END -->/g,'')
+    .replace(/<p class="legal-links">[\s\S]*?<\/p>/g,'')
+    .replace(/<section class="glass" data-(?:support-processing|web-review)="[^"]*">[\s\S]*?<\/section>/g,'')
+    .replace(/<title>[^<]*<\/title>/,`<title>TAIPOPO · ${nested?'Support':'Work records, photos, settlements and reports'}</title>`)
+    .replace(/<meta property="og:title" content="[^"]*">/g,'<meta property="og:title" content="TAIPOPO · Organize your working day">')
+    .replaceAll('aria-label="TAIPOPO(타이포포) 홈"','aria-label="TAIPOPO home"');
+  if(file==='privacy/index.html') englishSource=englishSource.replace(/(<main\b[^>]*>)[\s\S]*?<\/main>/,'$1<!-- localized-privacy -->');
   let en=englishSource.replace(/lang="ko"(?: dir="ltr")?/,'lang="en" dir="ltr"');
   for(const [k,v] of pairs)en=en.split(k).join(v.replaceAll('&','&amp;'));
   en=en.replace(/<details class="language-picker">[\s\S]*?<\/details>/,picker('en',nested?'../../':'../',true,file==='privacy/index.html'?'privacy/':''));
@@ -39,6 +45,7 @@ for(const file of ['index.html','support/index.html','privacy/index.html']){
     en=en.replace('<!-- localized-privacy -->',privacyMain);
     en=en.replace(/<title>[^<]*<\/title>/,`<title>${escapeHtml(policy.title)} · TAIPOPO</title>`);
   }
+  if(file==='support/index.html') en=en.replace('<footer',renderSupportProcessing(policies.en)+'<footer');
   const dest=path.join(root,'en',file);
   fs.mkdirSync(path.dirname(dest),{recursive:true});fs.writeFileSync(dest,en);
 }

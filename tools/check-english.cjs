@@ -9,8 +9,11 @@ for(const width of [1440,768,360,320]){
   await page.goto(base+lang+route);await page.evaluate(()=>document.fonts.ready);
   if(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth))throw Error('Overflow '+lang+route+' '+width);
   if(await page.locator('img').evaluateAll(imgs=>imgs.some(i=>!i.complete||!i.naturalWidth)))throw Error('Broken image');
-  const link=page.locator('.language-link');await link.click();
-  await page.waitForURL(base+(lang?'':'en/')+route);
+  const targetLanguage=lang?'ko':'en';
+  const picker=page.locator('.language-picker');
+  await picker.locator('summary').click();
+  await picker.locator(`a[lang="${targetLanguage}"]`).click();
+  await page.waitForURL(base+targetLanguage+'/'+(route==='privacy/'?'privacy/':''));
   if(await page.locator('html').getAttribute('lang')!==(lang?'ko':'en'))throw Error('Language navigation');
  }
 }

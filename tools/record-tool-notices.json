@@ -1,0 +1,194 @@
+{
+  "ar": {
+    "title": "إرشادات قبل الاستخدام",
+    "paragraphs": [
+      "TAIPOPO أداة للسجلات الشخصية تتيح للمستخدم تسجيل تفاصيل العمل والأوقات والصور والمبالغ وغيرها وإدارتها بنفسه.",
+      "تُنشأ السجلات استنادًا إلى إدخالات المستخدم والمعلومات التي يجمعها الجهاز أو يوفرها، وغير ذلك. لا يتحقق المطوّر بصورة مستقلة من وقوع العمل فعليًا أو من دقة السجلات، ولا يضمنهما.",
+      "المبالغ التي يحسبها التطبيق وسجلات التسوية والتقارير التي ينشئها هي نتائج استرشادية تعتمد على السجلات والشروط التي أدخلها المستخدم. وهي لا تحسم المبالغ المستحقة فعليًا، أو الضرائب والاستقطاعات، أو الحقوق والالتزامات القانونية. وعلى المستخدم التحقق بصورة منفصلة من المعلومات التي يحتاج إليها.",
+      "لا تُقدَّم السجلات والصور المحفوظة بوصفها شهادات رسمية أو مستندات مضمونة الأثر القانوني. وعلى المستخدم التحقق بنفسه من المعلومات ذات الصلة عند الحاجة.",
+      "قد تختلف معلومات الوقت والموقع والعنوان والملاحظات وبطاقة المعلومات في الصور بحسب إعدادات وقت الجهاز، وحالة استقبال معلومات الموقع وأخطائها، ونتائج تحويل الموقع إلى عنوان، وإدخالات المستخدم. لا تُعد العلامة المائية أو هذه المعلومات تصديقًا رسميًا على أصالة الصورة أو مكان التقاطها الفعلي أو وقوع العمل. راجع إرشادات كل وظيفة لمعرفة الفرق بين الصورة الأصلية والنسخة المعدلة وسياسة الاحتفاظ بالأصل.",
+      "قد يتأثر حفظ السجلات والنسخ الاحتياطي والاستعادة بحالة الجهاز ومساحة التخزين وتلف الملفات وأذونات الحساب وبيئة الشبكة وغيرها. ولا يُضمن نجاح هذه العمليات في جميع البيئات أو الاحتفاظ الدائم بالبيانات. أنشئ نسخًا احتياطية منتظمة للسجلات المهمة وتحقق من حالة ملفات النسخ الاحتياطية المحفوظة. راجع الفصل المختص لمعرفة شروط الاستعادة، ومنها استبدال البيانات الحالية وضرورة توفير مجموعة الملفات الكاملة للنسخة الاحتياطية المقسمة.",
+      "لا تستبعد هذه الإرشادات حقوق المستخدم أو مسؤولية المطوّر ولا تحدّ منهما حيث لا يجوز استبعادهما أو الحدّ منهما بموجب القوانين المعمول بها."
+    ]
+  },
+  "de": {
+    "title": "Hinweise vor der Nutzung",
+    "paragraphs": [
+      "TAIPOPO ist ein persönliches Aufzeichnungswerkzeug, mit dem Nutzer unter anderem Arbeitsinhalte, Zeiten, Fotos und Beträge selbst erfassen und verwalten können.",
+      "Die Aufzeichnungen beruhen unter anderem auf den Eingaben des Nutzers und den vom Gerät erfassten oder bereitgestellten Informationen. Der Entwickler überprüft weder die tatsächlich geleistete Arbeit noch die Richtigkeit der Aufzeichnungen unabhängig und gewährleistet diese auch nicht.",
+      "Die in der App berechneten Beträge sowie die erzeugten Abrechnungsaufzeichnungen und Berichte dienen der Orientierung und beruhen auf den vom Nutzer eingegebenen Aufzeichnungen und Bedingungen. Sie legen weder tatsächlich zu zahlende Beträge, Steuern oder Abzüge noch rechtliche Ansprüche oder Pflichten verbindlich fest. Erforderliche Angaben muss der Nutzer gesondert prüfen.",
+      "Gespeicherte Aufzeichnungen und Fotos werden nicht als amtliche Bescheinigungen oder als Dokumente mit garantierter Rechtswirkung bereitgestellt. Bei Bedarf muss der Nutzer die betreffenden Angaben selbst überprüfen.",
+      "Zeit, Standort, Adresse, Notizen und die Informationskarte eines Fotos können von der Zeiteinstellung des Geräts, dem Empfang und der Ungenauigkeit der Standortdaten, der Umwandlung in Adressangaben und den Nutzereingaben abhängen. Weder das Wasserzeichen noch diese Angaben bescheinigen amtlich die Echtheit des Fotos, den tatsächlichen Aufnahmeort oder die tatsächlich geleistete Arbeit. Hinweise zur Unterscheidung zwischen Originalaufnahme und bearbeiteter Fassung sowie zur Aufbewahrung des Originals finden Sie bei der jeweiligen Funktion.",
+      "Das Speichern von Aufzeichnungen sowie Sicherung und Wiederherstellung können unter anderem vom Gerätezustand, Speicherplatz, beschädigten Dateien, Kontoberechtigungen und der Netzwerkumgebung beeinflusst werden. Ein Erfolg unter allen Bedingungen oder eine dauerhafte Aufbewahrung wird nicht garantiert. Sichern Sie wichtige Aufzeichnungen regelmäßig und prüfen Sie den Zustand der aufbewahrten Sicherungsdateien. Die jeweiligen Kapitel erläutern das Ersetzen vorhandener Daten bei der Wiederherstellung und erforderliche Voraussetzungen wie den vollständigen Dateisatz einer aufgeteilten Sicherung.",
+      "Diese Hinweise schließen oder beschränken weder Rechte der Nutzer noch die Haftung des Entwicklers, soweit diese nach den anwendbaren gesetzlichen Bestimmungen nicht ausgeschlossen oder beschränkt werden dürfen."
+    ]
+  },
+  "en": {
+    "title": "Before you use TAIPOPO",
+    "paragraphs": [
+      "TAIPOPO is a personal record-management tool that lets users enter and manage their own work details, times, photos and amounts.",
+      "Records are based on user input and information collected or provided by the device. The developer does not independently verify or guarantee that the work took place or that the records are accurate.",
+      "Calculated amounts and generated settlement records and reports are reference results based on the records and conditions entered by the user. They do not determine actual payments, taxes, deductions or legal rights and obligations. Users should check the relevant details separately when needed.",
+      "Saved records and photos are not provided as official certificates or documents with guaranteed legal effect. Users should check the relevant details themselves when needed.",
+      "Photo times, locations, addresses, memos and information-card displays may vary with device time settings, location reception and its errors, address-conversion results and user input. Watermarks and this information do not officially authenticate a photo, the actual capture location or the fact that work took place. See the relevant feature instructions for the distinction between original and edited photos and the original-preservation policy.",
+      "Record storage, backup and restoration may be affected by device condition, storage capacity, file damage, account permissions and network conditions. Success in every environment and permanent retention are not guaranteed. Back up important records regularly and check that the backup files are retained. See the relevant chapters for restoration requirements, including replacement of existing data and the complete file set for a split backup.",
+      "This notice does not exclude or restrict any user rights or developer responsibilities that cannot be excluded or restricted under applicable law."
+    ]
+  },
+  "es": {
+    "title": "Aviso antes del uso",
+    "paragraphs": [
+      "TAIPOPO es una herramienta de registro personal que permite a los usuarios anotar y gestionar por sí mismos información sobre su trabajo, horarios, fotografías e importes, entre otros datos.",
+      "Los registros se elaboran a partir de los datos introducidos por el usuario y de la información recopilada o proporcionada por el dispositivo, entre otras fuentes. El desarrollador no comprueba de forma independiente ni garantiza que el trabajo se haya realizado realmente ni la exactitud de los registros.",
+      "Los importes calculados por la aplicación y los registros de liquidación e informes generados son resultados orientativos basados en los registros y las condiciones introducidos por el usuario. No determinan los importes que deben pagarse realmente, los impuestos o deducciones ni los derechos u obligaciones legales. El usuario debe comprobar por separado la información que necesite.",
+      "Los registros y las fotografías guardados no se proporcionan como certificados oficiales ni como documentos cuya eficacia jurídica esté garantizada. Cuando sea necesario, el usuario debe comprobar directamente la información correspondiente.",
+      "La hora, la ubicación, la dirección, las notas y la tarjeta de información de una fotografía pueden variar según la configuración horaria del dispositivo, la recepción y los errores de los datos de ubicación, el resultado de la conversión de coordenadas a direcciones y los datos introducidos por el usuario. Ni la marca de agua ni estos datos certifican oficialmente la autenticidad de la fotografía, el lugar real de la toma o la realización del trabajo. Consulte las instrucciones de cada función sobre la distinción entre la captura original y la versión editada y la política de conservación del original.",
+      "El guardado de registros, las copias de seguridad y la restauración pueden verse afectados por el estado del dispositivo, el espacio disponible, los archivos dañados, los permisos de la cuenta y la conexión de red, entre otros factores. No se garantiza su éxito en todos los entornos ni la conservación permanente. Haga copias de seguridad periódicas de los registros importantes y compruebe el estado de los archivos guardados. Consulte el capítulo correspondiente sobre la sustitución de los datos existentes durante la restauración y los requisitos necesarios, como disponer del conjunto completo de archivos de una copia dividida.",
+      "Este aviso no excluye ni limita los derechos del usuario ni las responsabilidades del desarrollador que no puedan excluirse o limitarse conforme a la legislación aplicable."
+    ]
+  },
+  "fr": {
+    "title": "À lire avant utilisation",
+    "paragraphs": [
+      "TAIPOPO est un outil de tenue de registres personnels qui permet aux utilisateurs de saisir et de gérer eux-mêmes notamment le contenu de leur travail, les horaires, les photos et les montants.",
+      "Les enregistrements reposent notamment sur les saisies de l’utilisateur et sur les informations recueillies ou fournies par l’appareil. Le développeur ne vérifie pas de manière indépendante et ne garantit pas la réalité du travail effectué ni l’exactitude des enregistrements.",
+      "Les montants calculés par l’application ainsi que les relevés de règlement et les rapports générés sont des résultats indicatifs fondés sur les enregistrements et les conditions saisis par l’utilisateur. Ils ne fixent ni les montants effectivement dus, ni les impôts ou retenues, ni les droits ou obligations juridiques. L’utilisateur doit vérifier séparément les informations nécessaires.",
+      "Les enregistrements et les photos sauvegardés ne sont pas fournis comme des certificats officiels ou des documents dont l’effet juridique est garanti. Si nécessaire, l’utilisateur doit vérifier lui-même les informations concernées.",
+      "L’heure, la localisation, l’adresse, les notes et la carte d’information d’une photo peuvent varier selon le réglage de l’heure de l’appareil, la réception et les erreurs des données de localisation, les résultats de leur conversion en adresse et les saisies de l’utilisateur. Ni le filigrane ni ces informations ne certifient officiellement l’authenticité de la photo, son lieu réel de prise de vue ou la réalité du travail effectué. Consultez les instructions de chaque fonction pour la distinction entre la prise de vue originale et la version modifiée, ainsi que pour les règles de conservation de l’original.",
+      "L’enregistrement des données, la sauvegarde et la restauration peuvent être affectés notamment par l’état de l’appareil, l’espace de stockage, des fichiers endommagés, les autorisations du compte et l’environnement réseau. Leur réussite dans tous les environnements et la conservation permanente ne sont pas garanties. Sauvegardez régulièrement les enregistrements importants et vérifiez l’état des fichiers de sauvegarde conservés. Consultez les chapitres correspondants pour le remplacement des données existantes lors d’une restauration et les conditions requises, notamment le jeu complet de fichiers d’une sauvegarde fractionnée.",
+      "Le présent avis n’exclut ni ne limite les droits des utilisateurs ou la responsabilité du développeur qui ne peuvent être exclus ou limités en vertu de la législation applicable."
+    ]
+  },
+  "hi": {
+    "title": "उपयोग से पहले जानकारी",
+    "paragraphs": [
+      "TAIPOPO व्यक्तिगत रिकॉर्ड रखने का एक साधन है, जिससे उपयोगकर्ता अपने काम का विवरण, समय, फ़ोटो, रकम और अन्य जानकारी स्वयं दर्ज और प्रबंधित कर सकते हैं।",
+      "रिकॉर्ड उपयोगकर्ता की प्रविष्टियों तथा डिवाइस से एकत्र या उपलब्ध कराई गई जानकारी आदि पर आधारित होते हैं। डेवलपर वास्तव में काम किए जाने या रिकॉर्ड की सटीकता की स्वतंत्र रूप से जाँच या गारंटी नहीं देता।",
+      "ऐप में गणना की गई रकम और बनाए गए हिसाब-किताब के रिकॉर्ड तथा रिपोर्ट, उपयोगकर्ता के दर्ज किए गए रिकॉर्ड और शर्तों के आधार पर संदर्भ के लिए दिए गए परिणाम हैं। ये वास्तव में देय रकम, कर या कटौती, अथवा कानूनी अधिकार और दायित्व तय नहीं करते। उपयोगकर्ता को आवश्यक जानकारी की अलग से जाँच करनी चाहिए।",
+      "सहेजे गए रिकॉर्ड और फ़ोटो आधिकारिक प्रमाणपत्र या कानूनी प्रभाव की गारंटी वाले दस्तावेज़ के रूप में प्रदान नहीं किए जाते। आवश्यकता होने पर उपयोगकर्ता को संबंधित जानकारी स्वयं जाँचनी चाहिए।",
+      "फ़ोटो का समय, स्थान, पता, मेमो और सूचना कार्ड का प्रदर्शन डिवाइस की समय सेटिंग, स्थान की जानकारी मिलने की स्थिति और उसकी त्रुटियों, स्थान से पता निर्धारित करने के परिणामों तथा उपयोगकर्ता की प्रविष्टियों पर निर्भर करके बदल सकते हैं। वॉटरमार्क या यह जानकारी फ़ोटो की प्रामाणिकता, उसके वास्तविक स्थान या काम वास्तव में किए जाने का आधिकारिक प्रमाणन नहीं है। मूल फ़ोटो और संपादित प्रति के अंतर तथा मूल को सुरक्षित रखने की नीति के लिए संबंधित सुविधा के निर्देश देखें।",
+      "रिकॉर्ड सहेजना, बैकअप और पुनर्स्थापना डिवाइस की स्थिति, खाली जगह, फ़ाइल खराब होने, खाते की अनुमतियों और नेटवर्क आदि से प्रभावित हो सकते हैं। सभी परिस्थितियों में सफलता या हमेशा के लिए सुरक्षित रहने की गारंटी नहीं है। महत्वपूर्ण रिकॉर्ड का नियमित बैकअप लें और रखी गई बैकअप फ़ाइलों की स्थिति जाँचें। पुनर्स्थापना में मौजूदा डेटा बदले जाने और विभाजित बैकअप की सभी फ़ाइलों का पूरा सेट उपलब्ध होने जैसी आवश्यक शर्तों के लिए संबंधित अध्याय देखें।",
+      "यह जानकारी उपयोगकर्ता के उन अधिकारों या डेवलपर की उस जिम्मेदारी को समाप्त या सीमित नहीं करती, जिन्हें लागू कानून के अनुसार समाप्त या सीमित नहीं किया जा सकता।"
+    ]
+  },
+  "id": {
+    "title": "Sebelum menggunakan",
+    "paragraphs": [
+      "TAIPOPO adalah alat pencatatan pribadi yang digunakan pengguna untuk mencatat dan mengelola sendiri pekerjaan, waktu, foto, jumlah uang, dan informasi lainnya.",
+      "Catatan dibuat berdasarkan masukan pengguna serta informasi yang dikumpulkan atau disediakan perangkat. Pengembang tidak memverifikasi secara independen atau menjamin bahwa pekerjaan benar-benar dilakukan maupun bahwa catatannya akurat.",
+      "Jumlah yang dihitung aplikasi serta catatan perhitungan upah dan laporan yang dibuatnya hanya merupakan informasi acuan berdasarkan catatan dan ketentuan yang dimasukkan pengguna. Hasil tersebut tidak menetapkan secara final pembayaran yang sebenarnya, pajak dan potongan, atau hak dan kewajiban hukum. Pengguna perlu memeriksa sendiri informasi yang diperlukan.",
+      "Catatan dan foto yang disimpan tidak disediakan sebagai sertifikat resmi atau dokumen yang dijamin memiliki kekuatan hukum. Bila diperlukan, pengguna perlu memeriksa sendiri informasi terkait.",
+      "Waktu, lokasi, alamat, memo, dan kartu informasi pada foto dapat dipengaruhi oleh pengaturan waktu perangkat, penerimaan dan kesalahan lokasi, hasil konversi koordinat menjadi alamat, serta masukan pengguna. Tanda air dan informasi tersebut bukan pengesahan resmi atas keaslian foto, lokasi pemotretan yang sebenarnya, atau fakta pelaksanaan pekerjaan. Lihat petunjuk fungsi terkait untuk membedakan foto asli dan hasil edit serta memahami penyimpanan foto asli.",
+      "Penyimpanan catatan, pencadangan, dan pemulihan dapat dipengaruhi oleh kondisi perangkat, ruang penyimpanan, kerusakan file, izin akun, jaringan, dan kondisi lainnya. Keberhasilan dalam semua lingkungan maupun penyimpanan permanen tidak dijamin. Cadangkan catatan penting secara berkala dan periksa kondisi file cadangan yang disimpan. Lihat bab terkait untuk penggantian data yang ada saat pemulihan dan persyaratan lainnya, termasuk kelengkapan seluruh bagian cadangan yang terbagi.",
+      "Penjelasan ini tidak mengecualikan atau membatasi hak pengguna maupun tanggung jawab pengembang yang tidak dapat dikecualikan atau dibatasi menurut hukum yang berlaku."
+    ]
+  },
+  "it": {
+    "title": "Prima dell’uso",
+    "paragraphs": [
+      "TAIPOPO è uno strumento di registrazione personale con cui gli utenti inseriscono e gestiscono direttamente attività lavorative, tempi, foto, importi e altre informazioni.",
+      "I registri si basano sui dati inseriti dall’utente e sulle informazioni raccolte o fornite dal dispositivo. Lo sviluppatore non verifica in modo indipendente né garantisce l’effettivo svolgimento del lavoro o l’accuratezza dei registri.",
+      "Gli importi calcolati dall’app e i documenti di conteggio retributivo e i rapporti generati sono risultati di riferimento basati sui registri e sulle condizioni inserite dall’utente. Non determinano in via definitiva gli importi effettivamente dovuti, le imposte e le trattenute, né i diritti e gli obblighi giuridici. L’utente deve verificare separatamente le informazioni necessarie.",
+      "I registri e le foto salvati non sono forniti come certificazioni ufficiali o documenti con efficacia giuridica garantita. Se necessario, l’utente deve verificare autonomamente le informazioni pertinenti.",
+      "L’ora, la posizione, l’indirizzo, le note e la scheda informativa delle foto possono dipendere dall’orologio del dispositivo, dalla ricezione e dagli errori di posizione, dai risultati della conversione delle coordinate in indirizzi e dai dati inseriti dall’utente. La filigrana e tali informazioni non costituiscono una certificazione ufficiale dell’autenticità della foto, del luogo effettivo dello scatto o dello svolgimento del lavoro. Consultare le istruzioni delle relative funzioni per distinguere l’originale dalla versione modificata e per la conservazione dell’originale.",
+      "Il salvataggio dei registri, il backup e il ripristino possono essere influenzati dalle condizioni del dispositivo, dallo spazio disponibile, da file danneggiati, dalle autorizzazioni dell’account, dalla rete e da altri fattori. Non sono garantiti il successo in tutti gli ambienti o la conservazione permanente. Eseguire regolarmente il backup dei registri importanti e controllare lo stato dei file di backup conservati. Per la sostituzione dei dati esistenti durante il ripristino e i requisiti necessari, inclusa la disponibilità di tutte le parti di un backup suddiviso, consultare il capitolo pertinente.",
+      "Queste indicazioni non escludono né limitano i diritti degli utenti o la responsabilità dello sviluppatore che non possono essere esclusi o limitati ai sensi della legge applicabile."
+    ]
+  },
+  "ja": {
+    "title": "ご利用前のご案内",
+    "paragraphs": [
+      "TAIPOPOは、利用者自身が勤務内容、時刻、写真、金額などを入力し、管理するための個人用記録ツールです。",
+      "記録は利用者の入力と、端末が収集・提供する情報などに基づいて作成されます。開発者が実際の勤務の事実や記録の正確さを独立して確認したり、保証したりするものではありません。",
+      "アプリの計算金額や生成される精算記録・レポートは、利用者が入力した記録と条件に基づく参考結果です。実際の支払額、税金・控除、法的な権利・義務を確定するものではありません。必要な内容は別途ご確認ください。",
+      "保存された記録と写真は、公的な証明書や法的効力が保証された文書として提供されるものではありません。必要に応じて、利用者自身で内容をご確認ください。",
+      "写真の時刻・位置・住所・メモや情報カードの表示は、端末の時刻設定、位置情報の受信状況や誤差、住所変換の結果、利用者の入力によって変わる場合があります。ウォーターマークやこれらの情報は、写真の真正性、実際の撮影場所、勤務の事実を公的に認証するものではありません。撮影原本と編集版の区別や原本保存の方針は、各機能の案内をご確認ください。",
+      "記録の保存やバックアップ・復元は、端末の状態、空き容量、ファイルの破損、アカウントの権限、ネットワーク環境などの影響を受けます。すべての環境での成功や永久保存を保証するものではありません。重要な記録は定期的にバックアップし、バックアップファイルの保管状態を確認してください。復元時の既存データの置換や、分割バックアップの全ファイルが必要となる条件などは、該当の章をご確認ください。",
+      "この案内は、適用法令によって排除・制限することが認められない利用者の権利や開発者の責任を排除・制限するものではありません。"
+    ]
+  },
+  "ko": {
+    "title": "사용 전 안내",
+    "paragraphs": [
+      "TAIPOPO는 사용자가 근무 내용, 시간, 사진 및 금액 등을 직접 기록하고 관리할 수 있도록 제공되는 개인 기록 도구입니다.",
+      "기록 내용은 사용자의 입력과 기기에서 수집·제공되는 정보 등을 바탕으로 작성됩니다. 개발자가 실제 근무 사실이나 기록의 정확성을 독립적으로 확인하거나 보증하지 않습니다.",
+      "앱에서 계산되는 금액과 생성되는 정산 기록·리포트는 사용자가 입력한 기록과 조건에 따른 참고용 결과입니다. 실제 지급 금액, 세금·공제 또는 법적 권리·의무를 확정하지 않으며, 필요한 내용은 사용자가 별도로 확인해야 합니다.",
+      "저장된 기록과 사진은 공식 인증서 또는 법적 효력이 보장된 문서로 제공되지 않습니다. 필요한 경우 사용자가 관련 내용을 직접 확인해야 합니다.",
+      "사진의 시간·위치·주소·메모와 정보카드 표시는 기기 시간 설정, 위치정보 수신 상태와 오차, 주소 변환 결과 및 사용자 입력에 따라 달라질 수 있습니다. 워터마크나 이러한 정보가 사진의 진위, 실제 촬영 장소 또는 근무 사실을 공식 인증하는 것은 아닙니다. 촬영 원본과 편집본의 구분 및 원본 보존 정책은 각 기능의 안내를 확인하세요.",
+      "기록 저장과 백업·복원은 기기 상태, 저장공간, 파일 손상, 계정 권한 및 네트워크 환경 등의 영향을 받을 수 있으며 모든 환경에서의 성공이나 영구 보존을 보장하지 않습니다. 중요한 기록은 정기적으로 백업하고 백업 파일의 보관 상태를 확인하세요. 복원 시 기존 데이터 교체와 분할 백업 전체 파일 세트 등 필요한 조건은 해당 장을 확인하세요.",
+      "이 안내는 관계 법령에 따라 배제하거나 제한할 수 없는 이용자의 권리나 개발자의 책임을 배제하거나 제한하지 않습니다."
+    ]
+  },
+  "pt": {
+    "title": "Antes de usar",
+    "paragraphs": [
+      "O TAIPOPO é uma ferramenta de registro pessoal que permite ao usuário registrar e gerenciar diretamente atividades de trabalho, horários, fotos, valores e outras informações.",
+      "Os registros se baseiam nas informações inseridas pelo usuário e nas informações coletadas ou fornecidas pelo dispositivo. O desenvolvedor não verifica de forma independente nem garante a realização efetiva do trabalho ou a precisão dos registros.",
+      "Os valores calculados pelo aplicativo e os documentos de liquidação e relatórios gerados são resultados de referência baseados nos registros e nas condições inseridas pelo usuário. Eles não determinam de forma definitiva os pagamentos efetivamente devidos, os impostos e descontos, nem os direitos e obrigações legais. O usuário deve verificar separadamente as informações necessárias.",
+      "Os registros e as fotos salvos não são fornecidos como certificados oficiais ou documentos com efeito jurídico garantido. Quando necessário, o usuário deve verificar por conta própria as informações pertinentes.",
+      "O horário, a localização, o endereço, as notas e o cartão de informações das fotos podem variar conforme a configuração de horário do dispositivo, a recepção e os erros de localização, os resultados da conversão de coordenadas em endereço e as informações inseridas pelo usuário. A marca d’água e essas informações não constituem certificação oficial da autenticidade da foto, do local real da captura ou da realização do trabalho. Consulte as instruções das funções correspondentes para distinguir o original da versão editada e para entender a preservação do original.",
+      "O salvamento dos registros, o backup e a restauração podem ser afetados pelo estado do dispositivo, espaço de armazenamento, arquivos danificados, permissões da conta, rede e outras condições. Não há garantia de sucesso em todos os ambientes nem de preservação permanente. Faça backups regulares dos registros importantes e verifique o estado dos arquivos de backup armazenados. Consulte o capítulo correspondente sobre a substituição dos dados existentes na restauração e os requisitos necessários, incluindo o conjunto completo de arquivos de um backup dividido.",
+      "Estas orientações não excluem nem limitam os direitos dos usuários ou a responsabilidade do desenvolvedor que não possam ser excluídos ou limitados pela legislação aplicável."
+    ]
+  },
+  "ru": {
+    "title": "Перед использованием",
+    "paragraphs": [
+      "TAIPOPO — инструмент для личного учёта, с помощью которого пользователи самостоятельно записывают и управляют сведениями о работе, времени, фотографиях, суммах и другими данными.",
+      "Записи формируются на основе данных, введённых пользователем, а также информации, собранной или предоставленной устройством, и других подобных сведений. Разработчик не проверяет независимо и не гарантирует факт выполнения работы или точность записей.",
+      "Рассчитанные приложением суммы, созданные записи расчётов и отчёты являются справочными результатами на основе записей и условий, введённых пользователем. Они не определяют окончательно фактически причитающиеся суммы, налоги и удержания, а также юридические права и обязанности. Необходимые сведения пользователь должен проверять отдельно.",
+      "Сохранённые записи и фотографии не предоставляются в качестве официальных свидетельств или документов с гарантированной юридической силой. При необходимости пользователь должен самостоятельно проверить соответствующие сведения.",
+      "Время, местоположение, адрес, заметки и информационная карточка фотографии могут зависеть от настройки времени устройства, приёма и погрешностей данных о местоположении, результатов преобразования координат в адрес и пользовательского ввода. Водяной знак и эти сведения не являются официальным удостоверением подлинности фотографии, фактического места съёмки или факта выполнения работы. Различия между исходным снимком и отредактированной версией, а также правила сохранения оригинала описаны в инструкциях к соответствующим функциям.",
+      "На сохранение записей, резервное копирование и восстановление могут влиять состояние устройства, свободное место, повреждение файлов, разрешения учётной записи, сеть и другие условия. Успех во всех условиях и бессрочное хранение не гарантируются. Регулярно создавайте резервные копии важных записей и проверяйте состояние хранящихся файлов резервных копий. Сведения о замене существующих данных при восстановлении и необходимых условиях, включая полный набор файлов разделённой резервной копии, приведены в соответствующей главе.",
+      "Эти пояснения не исключают и не ограничивают права пользователей или ответственность разработчика, которые не могут быть исключены или ограничены в соответствии с применимым законодательством."
+    ]
+  },
+  "th": {
+    "title": "ข้อควรทราบก่อนใช้งาน",
+    "paragraphs": [
+      "TAIPOPO เป็นเครื่องมือบันทึกส่วนบุคคลที่ให้ผู้ใช้บันทึกและจัดการรายละเอียดงาน เวลา ภาพถ่าย จำนวนเงิน และข้อมูลอื่น ๆ ด้วยตนเอง",
+      "ข้อมูลในบันทึกจัดทำขึ้นจากข้อมูลที่ผู้ใช้กรอกและข้อมูลที่อุปกรณ์รวบรวมหรือจัดหาให้ เป็นต้น ผู้พัฒนาไม่ได้ตรวจสอบอย่างเป็นอิสระหรือรับรองว่ามีการทำงานจริงหรือว่าบันทึกมีความถูกต้อง",
+      "จำนวนเงินที่แอปคำนวณ รวมถึงบันทึกสรุปค่าจ้างและรายงานที่สร้างขึ้น เป็นผลลัพธ์เพื่อใช้อ้างอิงตามบันทึกและเงื่อนไขที่ผู้ใช้กรอก ไม่ได้กำหนดจำนวนเงินที่ต้องจ่ายจริง ภาษีหรือรายการหัก หรือสิทธิและหน้าที่ตามกฎหมาย ผู้ใช้ต้องตรวจสอบข้อมูลที่จำเป็นแยกต่างหาก",
+      "บันทึกและภาพถ่ายที่จัดเก็บไม่ได้จัดให้เป็นใบรับรองอย่างเป็นทางการหรือเอกสารที่รับประกันผลทางกฎหมาย หากจำเป็น ผู้ใช้ต้องตรวจสอบข้อมูลที่เกี่ยวข้องด้วยตนเอง",
+      "เวลา ตำแหน่ง ที่อยู่ บันทึกช่วยจำ และการแสดงการ์ดข้อมูลของภาพถ่ายอาจแตกต่างกันตามการตั้งค่าเวลาของอุปกรณ์ การรับข้อมูลตำแหน่งและความคลาดเคลื่อน ผลการแปลงตำแหน่งเป็นที่อยู่ และข้อมูลที่ผู้ใช้กรอก ลายน้ำหรือข้อมูลเหล่านี้ไม่ได้รับรองอย่างเป็นทางการว่าภาพเป็นของแท้ ถ่ายในสถานที่นั้นจริง หรือมีการทำงานจริง โปรดดูคำแนะนำของแต่ละฟังก์ชันเกี่ยวกับความแตกต่างระหว่างภาพต้นฉบับกับฉบับแก้ไขและนโยบายการเก็บต้นฉบับ",
+      "การบันทึกข้อมูล การสำรองและกู้คืนอาจได้รับผลกระทบจากสภาพอุปกรณ์ พื้นที่เก็บข้อมูล ไฟล์เสียหาย สิทธิ์ของบัญชี และสภาพเครือข่าย เป็นต้น จึงไม่รับประกันความสำเร็จในทุกสภาพแวดล้อมหรือการเก็บรักษาถาวร ควรสำรองบันทึกสำคัญเป็นประจำและตรวจสอบสภาพไฟล์สำรองที่เก็บไว้ โปรดดูบทที่เกี่ยวข้องเกี่ยวกับการแทนที่ข้อมูลเดิมขณะกู้คืนและเงื่อนไขที่จำเป็น เช่น ต้องมีไฟล์สำรองแบบแบ่งส่วนครบทั้งชุด",
+      "คำแนะนำนี้ไม่ยกเว้นหรือจำกัดสิทธิของผู้ใช้หรือความรับผิดของผู้พัฒนาที่ไม่อาจยกเว้นหรือจำกัดได้ตามกฎหมายที่ใช้บังคับ"
+    ]
+  },
+  "tr": {
+    "title": "Kullanmadan önce",
+    "paragraphs": [
+      "TAIPOPO, kullanıcıların iş içeriğini, süreleri, fotoğrafları, tutarları ve diğer bilgileri doğrudan kaydedip yönettiği kişisel bir kayıt aracıdır.",
+      "Kayıtlar, kullanıcının girdiği bilgiler ile cihazın topladığı veya sağladığı bilgilere dayanır. Geliştirici, işin gerçekten yapıldığını veya kayıtların doğruluğunu bağımsız olarak doğrulamaz ve garanti etmez.",
+      "Uygulamanın hesapladığı tutarlar ile oluşturduğu ücret hesabı belgeleri ve raporlar, kullanıcının kayıtlarına ve girdiği koşullara dayanan referans sonuçlardır. Gerçekte ödenecek tutarları, vergi ve kesintileri ya da hukuki hak ve yükümlülükleri kesin olarak belirlemezler. Kullanıcı, gerekli bilgileri ayrıca kontrol etmelidir.",
+      "Kaydedilen kayıtlar ve fotoğraflar, resmî sertifika veya hukuki geçerliliği garanti edilen belgeler olarak sunulmaz. Gerektiğinde kullanıcı ilgili bilgileri kendisi kontrol etmelidir.",
+      "Fotoğraflardaki saat, konum, adres, not ve bilgi kartı; cihazın saat ayarı, konum sinyalinin alınması ve hataları, koordinatların adrese dönüştürülmesi sonuçları ve kullanıcı girişleri gibi etkenlere göre değişebilir. Filigran ve bu bilgiler, fotoğrafın gerçekliğini, gerçek çekim yerini veya işin yapıldığını resmî olarak onaylamaz. Orijinal ile düzenlenmiş sürümün ayrımı ve orijinalin korunması için ilgili işlevlerin açıklamalarına bakın.",
+      "Kayıtların saklanması, yedekleme ve geri yükleme; cihazın durumu, depolama alanı, dosya bozulması, hesap izinleri, ağ ve diğer koşullardan etkilenebilir. Her ortamda başarı veya kalıcı saklama garanti edilmez. Önemli kayıtları düzenli olarak yedekleyin ve saklanan yedek dosyalarının durumunu kontrol edin. Geri yüklemede mevcut verilerin değiştirilmesi ve bölünmüş yedeğin tüm dosyalarının bulunması gibi gerekli koşullar için ilgili bölüme bakın.",
+      "Bu açıklamalar, geçerli mevzuat uyarınca hariç tutulamayan veya sınırlandırılamayan kullanıcı haklarını ya da geliştiricinin sorumluluğunu hariç tutmaz veya sınırlandırmaz."
+    ]
+  },
+  "vi": {
+    "title": "Lưu ý trước khi sử dụng",
+    "paragraphs": [
+      "TAIPOPO là công cụ ghi chép cá nhân để người dùng tự ghi lại và quản lý nội dung công việc, thời gian, ảnh, số tiền và các thông tin khác.",
+      "Các bản ghi dựa trên thông tin do người dùng nhập và thông tin do thiết bị thu thập hoặc cung cấp. Nhà phát triển không độc lập xác minh hay bảo đảm việc công việc đã thực sự được thực hiện hoặc tính chính xác của bản ghi.",
+      "Số tiền do ứng dụng tính toán, tài liệu quyết toán và báo cáo được tạo chỉ là kết quả tham khảo dựa trên các bản ghi và điều kiện do người dùng nhập. Chúng không xác định dứt khoát khoản thanh toán thực tế, thuế và các khoản khấu trừ, hoặc quyền và nghĩa vụ pháp lý. Người dùng cần tự kiểm tra riêng những thông tin cần thiết.",
+      "Các bản ghi và ảnh đã lưu không được cung cấp dưới dạng chứng nhận chính thức hoặc tài liệu được bảo đảm có hiệu lực pháp lý. Khi cần, người dùng phải tự kiểm tra thông tin liên quan.",
+      "Thời gian, vị trí, địa chỉ, ghi chú và thẻ thông tin trên ảnh có thể thay đổi tùy theo cài đặt giờ của thiết bị, khả năng tiếp nhận và sai số vị trí, kết quả chuyển tọa độ thành địa chỉ và thông tin người dùng nhập. Hình mờ và những thông tin này không phải là chứng nhận chính thức về tính xác thực của ảnh, nơi chụp thực tế hoặc việc công việc đã được thực hiện. Xem hướng dẫn của từng chức năng để phân biệt ảnh gốc với bản đã chỉnh sửa và hiểu cách giữ ảnh gốc.",
+      "Việc lưu bản ghi, sao lưu và khôi phục có thể chịu ảnh hưởng của tình trạng thiết bị, dung lượng lưu trữ, tệp bị hỏng, quyền tài khoản, mạng và các điều kiện khác. Không bảo đảm thành công trong mọi môi trường hoặc lưu giữ vĩnh viễn. Hãy thường xuyên sao lưu các bản ghi quan trọng và kiểm tra tình trạng của các tệp sao lưu đã lưu trữ. Xem chương liên quan về việc thay thế dữ liệu hiện có khi khôi phục và các điều kiện cần thiết, bao gồm đầy đủ mọi tệp của bản sao lưu chia nhỏ.",
+      "Những lưu ý này không loại trừ hoặc giới hạn các quyền của người dùng hay trách nhiệm của nhà phát triển mà pháp luật áp dụng không cho phép loại trừ hoặc giới hạn."
+    ]
+  },
+  "zh": {
+    "title": "使用前须知",
+    "paragraphs": [
+      "TAIPOPO是一款供用户自行输入和管理工作内容、时间、照片、金额等信息的个人记录工具。",
+      "记录根据用户输入以及设备收集或提供的信息等生成。开发者不会独立核实或保证实际工作是否发生，也不保证记录的准确性。",
+      "应用计算的金额及生成的结算记录、报告，仅为依据用户输入的记录和条件得出的参考结果，不确定实际支付金额、税款、扣除项目或法律上的权利义务。需要时，请另行核实相关内容。",
+      "保存的记录和照片不作为官方证书或法律效力有保证的文件提供。需要时，用户应自行核实相关内容。",
+      "照片的时间、位置、地址、备忘录及信息卡显示，可能受设备时间设置、定位接收状态及误差、地址转换结果和用户输入影响。水印及这些信息不会对照片真伪、实际拍摄地点或工作事实作官方认证。拍摄原图与编辑版的区别及原图保留政策，请参阅各项功能说明。",
+      "记录保存、备份和恢复可能受设备状态、存储空间、文件损坏、账号权限及网络环境等因素影响，无法保证在所有环境下成功，也不保证永久保存。请定期备份重要记录，并检查备份文件的保管状态。恢复时替换现有数据、分卷备份需完整文件集等条件，请参阅相应章节。",
+      "本须知不排除或限制适用法律规定不得排除或限制的用户权利或开发者责任。"
+    ]
+  }
+}

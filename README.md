@@ -1,6 +1,6 @@
 # TAIPOPO website
 
-Static, dependency-free Korean/English introduction and support site for GitHub Pages.
+Static, dependency-free introduction, privacy and support site in 16 languages for GitHub Pages.
 
 - English pages: `en/`. Edit `tools/english-text.json`, then run `node tools/build-english.cjs` after updating Korean pages or exporting the manual. The generator preserves shared layouts and produces static English HTML with no runtime translation service. Language selection uses URLs, not extra browser storage.
 - `language.css` adds a responsive language link and header wrapping without changing the Glass design.
@@ -10,7 +10,8 @@ Static, dependency-free Korean/English introduction and support site for GitHub 
 - Detailed manual: `guide/` (13 topics, 16 languages, search and expandable contents).
 - Manual content is generated from the app's ARB keys only. Edit `manual*` keys in the app, run `flutter gen-l10n`, then `node tools/sync-manual.cjs <path-to-app-lib/l10n>`. Never copy full app ARBs or private source into this public repository. Edit `tools/manual-template.html`, `guide/manual.css` and `guide/manual.js` for website layout; do not hand-edit generated `guide/index.html` or `guide/manual.json`.
 - Support / four-question email templates: `support/index.html`, `site.js`
-- Privacy: `privacy/index.html` (the local change contains the complete Korean policy and website addendum; the currently deployed root page is still a policy navigation page)
+- Privacy: `privacy/index.html` and `/{language}/privacy/`. The local review includes the full policy and common website/email/rights notices in 16 languages; production must be checked separately.
+- Terms drafts: `terms/index.html` and `/{language}/terms/`. These remain clearly labeled review copies with an unconfirmed effective date and `noindex,follow`; publication does not establish an effective date.
 - Theme, spacing, typography and responsive layout: `styles.css`
 - Brand: existing TAIPOPO SVG symbol and wordmark, used without redesign.
 
@@ -26,13 +27,30 @@ Edit copy in the HTML files. The sample interface is illustrative, with no user 
 
 ## Deployment
 
-Publish the root of the `main` branch with GitHub Pages only after separate deployment approval. Official URL: https://taipopo.app/ . The previous URL, https://hongjonggeun-max.github.io/taipopo/ , redirects to it. Current domain configuration is recorded in commit `1518133`; the pending website policy/copy changes have not been committed or deployed.
+Publish validated, authorized website changes from the root of `main` using the existing GitHub Pages deployment. Official URL: https://taipopo.app/ . The previous URL, https://hongjonggeun-max.github.io/taipopo/ , redirects to it. Preserve the domain configuration established in commit `1518133`. Confirm the Pages build commit and public HTTPS content separately from a successful push. Website publication does not publish the Android app or submit Play declarations.
 
 The application source repository is separate and must not be copied here. Do not commit signing keys, account credentials, screenshots containing personal records, or test data.
 
 ## Privacy and release notes
 
-`privacy/` now contains the complete Korean app policy using the existing policy renderer, and retains the existing public policy link at https://hongjonggeun-max.github.io/taipopo-privacy/privacy/ . The original 16 app policy bodies remain unchanged. A separately dated website addendum explains the current advertising/purchase configuration and Google Sign-In account data in all 16 languages. `tools/sync-privacy.cjs` preserves that addendum when importing app text. No legal compliance or store approval is implied. Keep the in-app policy, the separate legacy policy site and Play disclosures aligned before submission. The site itself has no analytics, remote fonts, login or server form. Browser storage contains only the selected visual theme; hosting is provided by GitHub Pages.
+The 2026-11-07 local review uses the actual app working tree as its source. The policy effective date stays 2026-08-23; the body revision and new notice version are 2026-11-07. Neutral photo-record wording replaces evidence claims in the policy. The previous 2026-10-25 website release/account addendum is preserved separately. The new common notice explains GitHub Pages/IP processing, theme removal and refusal, received email versus website storage, conditional privacy rights and technical permissions versus legal grounds. Terms retain all 11 app clauses and the existing unconfirmed effective date, which the app also uses for its deletion guide. No legal compliance, final publication, SDK behavior change or store approval is implied.
+
+Import only public legal text, using the current app checkout explicitly:
+
+```powershell
+node tools/sync-privacy.cjs C:/TAIPOPO/development/app-current/lib/l10n
+node tools/build-legal.cjs
+node tools/build-seo.cjs
+node tools/check-privacy.cjs C:/TAIPOPO/development/app-current/lib/l10n
+node tools/check-legal.cjs C:/TAIPOPO/development/app-current/lib/l10n
+node tools/check-publication.cjs
+```
+
+If regenerating the general English/localized site, run `build-legal.cjs` followed by `build-seo.cjs` so common legal notices, footer links and crawl metadata remain authoritative. Preserve the previous public Korean policy link. Imported app bodies and dates remain unchanged; `tools/website-disclosures.json` supplies separately reviewed website-only corrections for authentication scope, version-qualified QR processing, Geocoder and deletion. Do not copy private app source or operator-decision drafts here. Actual recipient entities/countries, transfer grounds, received-mail retention and the terms effective date remain unconfirmed; do not turn them into definite promises. The site has no analytics, remote fonts, login or server form; browser storage contains only the theme choice.
+
+The 2026-11-08 web review distinguishes ML Kit-containing versions from local validation candidate 1.0.0+21. It does not claim completed device QR review or a confirmed Google Play track inventory. The app installation is frozen while manual review is pending. Google authentication also covers explicit connection and backup management; turning off address display alone does not necessarily stop address conversion when GPS recording is enabled. Withdrawing diagnostics, resetting local data, disconnecting Google and deleting Drive/external/server copies remain separate procedures.
+
+`build-seo.cjs` preserves routes and design, adds the Korean brand name `TAIPOPO(타이포포)`, WebSite aliases, canonical/hreflang metadata, `robots.txt` and a 65-URL sitemap. Korean aliases have preferred canonical routes. Unconfirmed terms drafts are excluded from the sitemap and marked noindex. A sitemap or indexing request does not guarantee inclusion or ranking. Search Console verification and indexing requests require an authenticated authorized session.
 
 The font is a subset of the app's Noto Sans KR. License: `assets/OFL.txt`. When adding new characters, regenerate the subset using the original font and fonttools, or use the system-font fallback. Domain ownership is confirmed; preserve the existing `CNAME` and DNS configuration.
 
@@ -69,3 +87,8 @@ The certificate covers both `taipopo.app` and `www.taipopo.app`, and Enforce HTT
 - Future Play listing URL: `https://play.google.com/store/apps/details?id=com.workshield.app`. Add a live store link only after its public availability is verified. Until then retain the existing launch-preparation notice.
 - Before submission, align the store's developer/contact information, Data safety and policy links with the actual release, including third-party SDK processing. A website update alone is not approval. See [Google Play User Data requirements](https://support.google.com/googleplay/android-developer/answer/10144311?hl=en).
 - Keep three approvals separate: (1) website commit/push and production deployment, (2) OAuth brand verification request and Branding publication, and (3) OAuth app transition to In production. None is authorized by this policy-review task. No Play submission or advertising/purchase activation is included.
+
+
+## 2026-11-07 privacy review draft
+
+The legal-only generator now prepares `/deletion/` and all 16 locale deletion routes from the same app deletion body and device-choice notice. Support pages include the received-email processing notice. Terms/deletion effective dates remain unconfirmed; the privacy policy effective date remains 2026-08-23. These files are local review candidates; no production deployment has been performed. Run `sync-privacy.cjs` with the actual release worktree ARB path, then `build-legal.cjs`, `check-privacy.cjs` and `check-legal.cjs`. Keep older audit evidence; see the app release processing/jurisdiction review for operator decisions and SDK blockers.
