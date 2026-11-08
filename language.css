@@ -9,6 +9,13 @@
 .storage-note{font-size:13px;line-height:1.8;color:var(--muted);margin-top:14px;max-width:460px}
 html[lang=en] body{word-break:normal;overflow-wrap:break-word}
 html[lang=en] .phone{overflow-wrap:anywhere}
+/* Keep legal links on their own row and the logo/tagline on one centre line. */
+.footer>.legal-links{grid-column:1/-1;overflow-wrap:anywhere}
+.footer>div{min-width:0}
+.footer>div:not(.footer-links){justify-self:start;max-width:100%;text-align:center}
+.footer-links{min-width:0;max-width:100%}
+.footer-links>a{min-width:0;max-width:100%;overflow-wrap:anywhere}
+footer a[href^="mailto:"]{direction:ltr;unicode-bidi:isolate;overflow-wrap:anywhere}
 @media(max-width:780px){
   .header{height:auto;min-height:84px;flex-wrap:wrap;padding-block:16px 20px;gap:16px 8px}
   .header .brand{margin-inline-start:0;margin-inline-end:auto}
