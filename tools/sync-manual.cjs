@@ -1,40 +1,72 @@
-// Export only the explicitly allowlisted public manual, never app source/data.
-const fs=require('node:fs');
-const path=require('node:path');
-const root=path.resolve(__dirname,'..');
-const arbDir=path.resolve(process.argv[2]||path.join(root,'../workshield/lib/l10n'));
-const names=['Start','Home','Attendance','Income','Claims','Sync','Photos','Memos','Settlement','Reports','Backup','Trash','Help'];
-const locales={ko:'한국어',en:'English',de:'Deutsch',es:'Español',fr:'Français',th:'ไทย',ar:'العربية',hi:'हिन्दी',id:'Bahasa Indonesia',it:'Italiano',ja:'日本語',pt:'Português',ru:'Русский',tr:'Türkçe',vi:'Tiếng Việt',zh:'中文'};
-const data={};
-for(const [code,name] of Object.entries(locales)){
-  const a=JSON.parse(fs.readFileSync(path.join(arbDir,`app_${code}.arb`),'utf8'));
-  const sections=names.map((n,i)=>({id:n.toLowerCase(),title:a[`manual${n}Title`],body:a[`manual${n}Body`]}));
-  const manual={name,title:a.userGuideTitle,intro:a.manualIntro,search:a.search,empty:a.noSearchResults,sections};
-  if(!manual.intro||sections.some(s=>!s.title||!s.body))throw Error(`Incomplete manual: ${code}`);
-  if(code==='ko')manual.intro="처음 시작하는 방법부터 금액 연결, 사진, 백업까지 단계별로 안내합니다. 제목을 눌러 펼치거나 검색해 보세요. 앱 안의 설명서는 인터넷 없이도 읽을 수 있습니다. 이 웹페이지의 접속과 언어 자료 불러오기에는 인터넷 연결이 필요합니다. 화면 이름은 앱 버전과 언어에 따라 조금 다를 수 있습니다.";
-  data[code]=manual;
+// Export ONLY the four images selected by the current app's overview catalog.
+// Input is read-only; never re-encode/crop/capture images or export archived captures.
+const fs = require('node:fs');
+const path = require('node:path');
+const crypto = require('node:crypto');
+const root = path.resolve(__dirname, '..');
+const input = path.resolve(process.argv[2] || path.join(root, '../app-current'));
+const app = fs.existsSync(path.join(input, 'pubspec.yaml')) ? input : path.resolve(input, '../..');
+const digest = value => crypto.createHash('sha256').update(value).digest('hex');
+const esc = value => value.replaceAll('&', '&amp;').replaceAll('<', '&lt;').replaceAll('>', '&gt;').replaceAll('"', '&quot;');
+const read = relative => fs.readFileSync(path.join(app, relative), 'utf8');
+const catalog = read('lib/screens/settings/pages/manual/manual_overview_catalog.dart');
+const overviews = [...catalog.matchAll(/ManualOverview\('([^']+)',\s*\(l\)\s*=>\s*l\.(\w+),\s*const\s*\[([\s\S]*?)\]\)/gu)]
+  .map(m => ({ id: m[1], titleKey: m[2], targets: [...m[3].matchAll(/ManualOverviewCue\('([^']+)'\)/gu)].map(c => c[1]) }));
+const order = overviews.map(o => o.id);
+if (JSON.stringify(order) !== JSON.stringify(['guide-main', 'guide-gallery', 'guide-settlement', 'guide-report'])) throw Error('App overview selection changed; review the export allowlist.');
+const languages = [...read('lib/settings/app_language_options.dart').matchAll(/AppLanguageOption\(code: '([a-z]+)', label: '([^']+)'\)/gu)]
+  .map(m => ({ code: m[1], name: m[2] }));
+if (languages.length !== 16 || new Set(languages.map(l => l.code)).size !== 16) throw Error('Unexpected app language list');
+const pubspec = read('pubspec.yaml');
+const webText = require('./manual-web-text.json');
+const locales = {};
+const ui = {};
+const copies = [];
+for (const { code, name } of languages) {
+  const manifestPath = `assets/manual/${code}/manifest.json`;
+  const rawManifest = read(manifestPath);
+  const manifest = JSON.parse(rawManifest);
+  const a = JSON.parse(read(`lib/l10n/app_${code}.arb`));
+  if (!webText[code] || !a.retry || !a.manualImageError || !a.manualIntro) throw Error(`Missing localized controls: ${code}`);
+  ui[code] = { ...webText[code], name, title: a.userGuideTitle, intro: a.manualIntro, retry: a.retry, error: a.manualImageError };
+  const images = overviews.map((overview, index) => {
+    const record = manifest[overview.id];
+    const asset = `assets/manual/${code}/${overview.id}.webp`;
+    if (!record || record.asset !== asset || !pubspec.includes(`- ${asset}`) || !record.demoDataOnly || record.displayRotation !== 0 || record.focusCrop !== null) throw Error(`Unexpected active image: ${code}/${overview.id}`);
+    const bytes = fs.readFileSync(path.join(app, asset));
+    const sha256 = digest(bytes);
+    if (sha256 !== record.assetSha256 || bytes.toString('ascii', 0, 4) !== 'RIFF' || bytes.toString('ascii', 8, 12) !== 'WEBP') throw Error(`Image integrity/format mismatch: ${asset}`);
+    const targets = overview.targets.map(id => {
+      const rect = record.targets[id];
+      if (!rect || !['x', 'y', 'width', 'height'].every(k => Number.isFinite(rect[k])) || rect.width <= 0 || rect.height <= 0) throw Error(`Missing target geometry: ${asset}/${id}`);
+      return { id, x: rect.x, y: rect.y, width: rect.width, height: rect.height };
+    });
+    const publicPath = `images/${code}/${overview.id}.webp`;
+    copies.push({ source: path.join(app, asset), target: path.join(root, 'guide', publicPath), sha256 });
+    return { id: overview.id, title: a[overview.titleKey], order: index + 1, src: publicPath, width: record.width, height: record.height, sha256, targets };
+  });
+  if (images.some(i => !i.title || !Number.isInteger(i.width) || !Number.isInteger(i.height))) throw Error(`Missing image labels/dimensions: ${code}`);
+  locales[code] = { name, direction: code === 'ar' ? 'rtl' : 'ltr', sourceManifest: manifestPath, sourceManifestSha256: digest(rawManifest), images };
 }
-const escape=s=>s.replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;');
-const ko=data.ko;
-const toc=ko.sections.map((s,i)=>`<a href="#${s.id}">${i+1}. ${escape(s.title)}</a>`).join('');
-const content=ko.sections.map((s,i)=>`<details class="glass manual-topic" id="${s.id}"><summary>${i+1}. ${escape(s.title)}</summary><div>${s.body.split('\n\n').map(p=>`<p>${escape(p)}</p>`).join('')}</div></details>`).join('\n');
-const template=fs.readFileSync(path.join(root,'tools/manual-template.html'),'utf8');
-const html=template.replace('<!--LANGUAGES-->',Object.entries(locales).map(([code,name])=>`<option value="${code}">${name}</option>`).join('')).replace('<!--INTRO-->',escape(ko.intro)).replace('<!--TOC-->',toc).replace('<!--TOPICS-->',content);
-fs.mkdirSync(path.join(root,'guide'),{recursive:true});
-fs.writeFileSync(path.join(root,'guide/manual.json'),JSON.stringify(data,null,2)+'\n');
-fs.writeFileSync(path.join(root,'guide/index.html'),html);
-for(const file of ['index.html','support/index.html','privacy/index.html']) {
-  const target=path.join(root,file);
-  const prefix=file==='index.html'?'':'../';
-  let page=fs.readFileSync(target,'utf8');
-  if(!page.includes(`href="${prefix}guide/"`)) {
-    page=page.replace('</nav>',`<a href="${prefix}guide/">사용 안내</a></nav>`);
-  }
-  page=page.replaceAll('href="support/#guide"','href="guide/"');
-  if(file==='support/index.html') {
-    page=page.replace('href="#guide"','href="../guide/"');
-    page=page.replace(/<section class="guide" id="guide">[\s\S]*?<\/section>/,'<section class="guide" id="guide"><h2>처음부터 차근차근, 상세 사용설명서</h2><p>출퇴근부터 수입·수당·별도 청구, 사진, 정산·리포트, 백업·복구와 휴지통까지 13개 주제를 살펴보세요. 검색과 16개 언어를 지원합니다.</p><a class="button primary" href="../guide/">사용설명서 열기 →</a></section>');
-  }
-  fs.writeFileSync(target,page);
+const data = { schemaVersion: 2, localeOrder: languages.map(l => l.code), imageOrder: order, overlay: { color: '#E53935', strokeWidth: 1.5, maxRadius: 12, radiusFactor: 0.20 }, locales };
+const version = digest(JSON.stringify({ data, ui, view: ['tools/manual-template.html', 'guide/manual.js', 'guide/manual.css'].map(relative => fs.readFileSync(path.join(root, relative), 'utf8').replaceAll('\r\n', '\n')) })).slice(0, 16);
+data.contentVersion = version;
+// All inputs are validated before any public output is written.
+for (const copy of copies) {
+  fs.mkdirSync(path.dirname(copy.target), { recursive: true });
+  fs.copyFileSync(copy.source, copy.target);
+  if (digest(fs.readFileSync(copy.target)) !== copy.sha256) throw Error('Copied image bytes changed');
 }
-console.log(`Exported ${Object.keys(data).length} languages × ${names.length} topics. Only public manual fields included.`);
+const options = languages.map(l => `<option value="${l.code}">${esc(l.name)}</option>`).join('');
+const picker = languages.map(l => `<a href="./?lang=${l.code}" lang="${l.code}">${esc(l.name)}</a>`).join('');
+const originals = languages.map(l => `<section lang="${l.code}" dir="${l.code === 'ar' ? 'rtl' : 'ltr'}"><h2>${esc(l.name)}</h2><ul>${locales[l.code].images.map(i => `<li><a href="${i.src}?v=${i.sha256.slice(0, 12)}" target="_blank" rel="noopener">${i.order}. ${esc(i.title)}</a></li>`).join('')}</ul></section>`).join('');
+let html = fs.readFileSync(path.join(root, 'tools/manual-template.html'), 'utf8')
+  .replaceAll('__MANUAL_VERSION__', version)
+  .replace('<!--LANGUAGES-->', options)
+  .replace('<!--PICKER-->', picker)
+  .replace('<!--MANUAL_UI-->', JSON.stringify(ui).replaceAll('<', '\\u003c'))
+  .replace('<!--ORIGINALS-->', originals);
+if (/<!--(?:LANGUAGES|PICKER|MANUAL_UI|ORIGINALS)-->/u.test(html)) throw Error('Unresolved manual template');
+fs.writeFileSync(path.join(root, 'guide/index.html'), html);
+fs.writeFileSync(path.join(root, 'guide/manual.json'), `${JSON.stringify(data, null, 2)}\n`);
+console.log(`Exported ${languages.length} languages × ${overviews.length} current app images (${copies.length} byte-identical WebPs), with existing target rectangles. No archived captures or app changes.`);

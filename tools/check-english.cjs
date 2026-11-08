@@ -25,7 +25,7 @@ for(const link of await page.locator('[data-mail]').all()){
 await page.locator('.support-card[href="../../guide/?lang=en"]').click();
 await page.waitForURL('**/guide/?lang=en');
 await page.waitForFunction(()=>document.documentElement.lang==='en');
-if(await page.locator('.manual-topic').count()!==13)throw Error('Manual');
+await page.waitForFunction(()=>document.querySelector('#manual-pages')?.dataset.state==='ready');if(await page.locator('.manual-image').count()!==4)throw Error('Image manual');
 await page.goto(base+'en/');
 for(const tab of await page.getByRole('tab').all()){await tab.click();if(await tab.getAttribute('aria-selected')!=='true')throw Error('Tabs');}
 await page.locator('.theme-button').click();await page.reload();

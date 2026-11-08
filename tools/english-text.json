@@ -105,7 +105,6 @@
   "보내주신 내용은 차근차근 확인하겠습니다. 오류는 재현과 수정, 테스트, 스토어 심사를 거쳐야 하므로 업데이트까지 걸리는 시간은 문제에 따라 달라질 수 있습니다. 확인된 내용과 진행 상황을 가능한 범위에서 안내드리겠습니다.": "We'll review your message carefully. Fixes may require reproducing the issue, making changes, testing and store review, so update times vary. We'll share what we can about our findings and progress.",
   "문의 버튼은 기기의 메일 앱을 엽니다. 앱이 열리지 않으면 아래 주소로 직접 보내주세요. 홈페이지에서는 앱 버전과 기기 정보를 자동으로 수집하지 않습니다.": "Contact buttons open your email app. If it doesn't open, email the address below directly. This website does not automatically collect your app version or device details.",
   "처음부터 차근차근, 상세 사용설명서": "A detailed guide, step by step",
-  "출퇴근부터 수입·수당·별도 청구, 사진, 정산·리포트, 백업·복구와 휴지통까지 13개 주제를 살펴보세요. 검색과 16개 언어를 지원합니다.": "Explore 13 topics covering attendance, earnings, allowances, reimbursements, photos, settlements, reports, backup, restore and trash. Search the guide in any of 16 languages.",
   "사용설명서 열기": "Open the user guide",
   "타이포포의 기존 공개 개인정보처리방침과 문의 경로를 안내합니다.": "Find TAIPOPO's published privacy policy and privacy contact details.",
   "기록과 개인정보": "Your records and privacy",
@@ -157,5 +156,6 @@
   "이 안내는 관계 법령에 따라 배제하거나 제한할 수 없는 이용자의 권리나 개발자의 책임을 배제하거나 제한하지 않습니다.": "This notice does not exclude or restrict any user rights or developer responsibilities that cannot be excluded or restricted under applicable law.",
   "TAIPOPO의 기록과 사진은 사용자 기기에 저장됩니다. 개발자는 기록을 별도 서버에 보관하지 않습니다. 중요한 데이터는 정기적으로 백업해 주세요.": "TAIPOPO records and photos are stored on your device. The developer does not keep records on a separate server. Back up important data regularly.",
   "이용약관": "Terms of Use",
-  "검토 중인 앱 후보는 광고와 신규 PRO 구매가 꺼진 설정입니다. 판매 조건·가격·실제 배포 상태는 확정 후 안내합니다.": "The app candidate under review has ads and new PRO purchases disabled. Sales terms, prices and distribution details will be announced once confirmed."
+  "검토 중인 앱 후보는 광고와 신규 PRO 구매가 꺼진 설정입니다. 판매 조건·가격·실제 배포 상태는 확정 후 안내합니다.": "The app candidate under review has ads and new PRO purchases disabled. Sales terms, prices and distribution details will be announced once confirmed.",
+  "앱과 같은 메인·갤러리·정산·리포트 이미지를 16개 언어로 확인하세요. 각 이미지의 원본을 열어 크게 볼 수 있습니다.": "View the same Home, Gallery, Settlement and Report images as the app in 16 languages. Open each original image for a larger view."
 }

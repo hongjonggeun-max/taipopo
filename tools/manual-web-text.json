@@ -1,0 +1,114 @@
+{
+  "ko": {
+    "original": "원본 보기 (새 창)",
+    "loading": "이미지를 불러오는 중…",
+    "chooseLanguage": "언어를 목록에서 선택해 주세요.",
+    "safety": "삭제·복원 전 중요한 기록을 별도로 백업하세요. 복원 시 현재 데이터가 바뀔 수 있습니다.",
+    "theme": "테마 변경"
+  },
+  "en": {
+    "original": "View original (new tab)",
+    "loading": "Loading images…",
+    "chooseLanguage": "Choose a language from the list.",
+    "safety": "Back up important records before deleting or restoring data. A restore may replace current data.",
+    "theme": "Change theme"
+  },
+  "zh": {
+    "original": "查看原图（新标签页）",
+    "loading": "正在加载图片…",
+    "chooseLanguage": "请从列表选择语言。",
+    "safety": "删除或恢复前，请单独备份重要记录。恢复可能替换当前数据。",
+    "theme": "切换主题"
+  },
+  "ja": {
+    "original": "原本を開く（新しいタブ）",
+    "loading": "画像を読み込み中…",
+    "chooseLanguage": "一覧から言語を選択してください。",
+    "safety": "削除・復元前に重要な記録を別途バックアップしてください。復元で現在のデータが置き換わる場合があります。",
+    "theme": "テーマを変更"
+  },
+  "hi": {
+    "original": "मूल चित्र देखें (नया टैब)",
+    "loading": "चित्र लोड हो रहे हैं…",
+    "chooseLanguage": "सूची से भाषा चुनें।",
+    "safety": "डेटा मिटाने या बहाल करने से पहले जरूरी रिकॉर्ड अलग से बैकअप करें। बहाली वर्तमान डेटा को बदल सकती है।",
+    "theme": "थीम बदलें"
+  },
+  "pt": {
+    "original": "Ver original (nova aba)",
+    "loading": "Carregando imagens…",
+    "chooseLanguage": "Escolha um idioma na lista.",
+    "safety": "Faça uma cópia dos registros importantes antes de excluir ou restaurar. A restauração pode substituir os dados atuais.",
+    "theme": "Mudar tema"
+  },
+  "es": {
+    "original": "Ver original (nueva pestaña)",
+    "loading": "Cargando imágenes…",
+    "chooseLanguage": "Elige un idioma de la lista.",
+    "safety": "Guarda una copia de los registros importantes antes de eliminar o restaurar. La restauración puede sustituir los datos actuales.",
+    "theme": "Cambiar tema"
+  },
+  "fr": {
+    "original": "Voir l’original (nouvel onglet)",
+    "loading": "Chargement des images…",
+    "chooseLanguage": "Choisissez une langue dans la liste.",
+    "safety": "Sauvegardez séparément les données importantes avant suppression ou restauration. La restauration peut remplacer les données actuelles.",
+    "theme": "Changer de thème"
+  },
+  "de": {
+    "original": "Original öffnen (neuer Tab)",
+    "loading": "Bilder werden geladen…",
+    "chooseLanguage": "Wählen Sie eine Sprache aus der Liste.",
+    "safety": "Sichern Sie wichtige Aufzeichnungen vor dem Löschen oder Wiederherstellen separat. Die Wiederherstellung kann aktuelle Daten ersetzen.",
+    "theme": "Design wechseln"
+  },
+  "id": {
+    "original": "Lihat asli (tab baru)",
+    "loading": "Memuat gambar…",
+    "chooseLanguage": "Pilih bahasa dari daftar.",
+    "safety": "Cadangkan catatan penting secara terpisah sebelum menghapus atau memulihkan. Pemulihan dapat mengganti data saat ini.",
+    "theme": "Ubah tema"
+  },
+  "vi": {
+    "original": "Xem bản gốc (thẻ mới)",
+    "loading": "Đang tải hình ảnh…",
+    "chooseLanguage": "Chọn ngôn ngữ từ danh sách.",
+    "safety": "Sao lưu riêng các ghi chép quan trọng trước khi xóa hoặc khôi phục. Khôi phục có thể thay thế dữ liệu hiện tại.",
+    "theme": "Đổi giao diện"
+  },
+  "ru": {
+    "original": "Открыть оригинал (новая вкладка)",
+    "loading": "Загрузка изображений…",
+    "chooseLanguage": "Выберите язык из списка.",
+    "safety": "Сохраните важные записи отдельно перед удалением или восстановлением. Восстановление может заменить текущие данные.",
+    "theme": "Сменить тему"
+  },
+  "tr": {
+    "original": "Orijinali aç (yeni sekme)",
+    "loading": "Görseller yükleniyor…",
+    "chooseLanguage": "Listeden bir dil seçin.",
+    "safety": "Silmeden veya geri yüklemeden önce önemli kayıtları ayrıca yedekleyin. Geri yükleme mevcut verileri değiştirebilir.",
+    "theme": "Temayı değiştir"
+  },
+  "ar": {
+    "original": "عرض الأصل (علامة تبويب جديدة)",
+    "loading": "جارٍ تحميل الصور…",
+    "chooseLanguage": "اختر لغة من القائمة.",
+    "safety": "احفظ نسخة منفصلة من السجلات المهمة قبل الحذف أو الاستعادة. قد تستبدل الاستعادة البيانات الحالية.",
+    "theme": "تغيير المظهر"
+  },
+  "it": {
+    "original": "Apri originale (nuova scheda)",
+    "loading": "Caricamento immagini…",
+    "chooseLanguage": "Scegli una lingua dall’elenco.",
+    "safety": "Salva separatamente i dati importanti prima di eliminare o ripristinare. Il ripristino può sostituire i dati attuali.",
+    "theme": "Cambia tema"
+  },
+  "th": {
+    "original": "ดูต้นฉบับ (แท็บใหม่)",
+    "loading": "กำลังโหลดรูปภาพ…",
+    "chooseLanguage": "เลือกภาษาจากรายการ",
+    "safety": "สำรองบันทึกสำคัญแยกไว้ก่อนลบหรือกู้คืน การกู้คืนอาจแทนที่ข้อมูลปัจจุบัน",
+    "theme": "เปลี่ยนธีม"
+  }
+}
