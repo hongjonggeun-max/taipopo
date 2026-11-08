@@ -36,7 +36,7 @@ for(const file of ['index.html','support/index.html','privacy/index.html']){
   en=en.replace(/<details class="language-picker">[\s\S]*?<\/details>/,picker('en',nested?'../../':'../',true,file==='privacy/index.html'?'privacy/':''));
   if(/[가-힣]/.test(en))throw Error('Untranslated text in '+file+': '+en.match(/[^<>]*[가-힣][^<>]*/g));
   // Content links stay within /en/. Shared assets and the 16-language manual live at the root.
-  en=en.replace(/((?:href|src)=")((?:\.\.\/)?(?:assets\/[^" ]+|styles\.css|language\.css|site\.js))"/g,'$1../$2"');
+  en=en.replace(/((?:href|src)=")((?:\.\.\/)?(?:assets\/[^" ]+|(?:styles\.css|language\.css)(?:\?[^" ]*)?|site\.js))"/g,'$1../$2"');
   en=en.replace(/href="(\.\.\/)?guide\/"/g,(_,prefix)=>`href="../${prefix||''}guide/?lang=en"`);
   en=en.replace(/<a href="https:\/\/hongjonggeun-max\.github\.io\/taipopo-privacy\/privacy\/">[^<]*<\/a>/,'');
   if(file==='privacy/index.html'){

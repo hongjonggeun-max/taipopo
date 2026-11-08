@@ -2,7 +2,7 @@ const http = require('node:http');
 const fs = require('node:fs');
 const path = require('node:path');
 const root = path.resolve(__dirname, '..');
-const types = {'.html':'text/html; charset=utf-8','.css':'text/css; charset=utf-8','.js':'text/javascript; charset=utf-8','.json':'application/json; charset=utf-8','.xml':'application/xml; charset=utf-8','.webp':'image/webp','.svg':'image/svg+xml','.woff2':'font/woff2','.txt':'text/plain; charset=utf-8'};
+const types = {'.html':'text/html; charset=utf-8','.css':'text/css; charset=utf-8','.js':'text/javascript; charset=utf-8','.json':'application/json; charset=utf-8','.xml':'application/xml; charset=utf-8','.webp':'image/webp','.svg':'image/svg+xml','.woff2':'font/woff2','.otf':'font/otf','.txt':'text/plain; charset=utf-8'};
 http.createServer((req,res)=>{
   let relative; try {relative=decodeURIComponent(new URL(req.url,'http://localhost').pathname).replace(/^\/taipopo(?=\/|$)/,'')}catch{res.writeHead(400);return res.end()}
   let file=path.resolve(root,'.'+relative); if(file!==root&&!file.startsWith(root+path.sep)){res.writeHead(403);return res.end()}

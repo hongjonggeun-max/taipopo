@@ -9,4 +9,13 @@
 .storage-note{font-size:13px;line-height:1.8;color:var(--muted);margin-top:14px;max-width:460px}
 html[lang=en] body{word-break:normal;overflow-wrap:break-word}
 html[lang=en] .phone{overflow-wrap:anywhere}
-@media(max-width:780px){.header{height:auto;min-height:84px;flex-wrap:wrap;padding-block:16px;gap:8px 12px}.header .brand{margin-right:auto}.header nav{order:2;width:100%;justify-content:center;margin:0;gap:16px;flex-wrap:wrap}.header nav a:first-child,.header nav a:last-child{display:inline}.header .theme-button{margin:0}.language-picker{margin-left:0}.storage-note{margin-inline:auto}}
+@media(max-width:780px){
+  .header{height:auto;min-height:84px;flex-wrap:wrap;padding-block:16px 20px;gap:16px 8px}
+  .header .brand{margin-inline-start:0;margin-inline-end:auto}
+  .header nav{order:2;width:100%;justify-content:center;margin:0;gap:8px;flex-wrap:wrap;font-size:12px}
+  .header nav a,.header nav a:first-child,.header nav a:last-child{display:inline-flex;align-items:center;justify-content:center;min-height:48px;min-width:48px;padding:10px 8px;text-align:center}
+  .header .theme-button{margin:0;width:48px;height:48px;flex-shrink:0}
+  .language-picker{margin-left:0}
+  .language-picker summary{min-height:48px}
+  .storage-note{margin-inline:auto}
+}

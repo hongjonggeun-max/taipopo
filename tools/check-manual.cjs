@@ -10,13 +10,23 @@ const digest = b => crypto.createHash('sha256').update(b).digest('hex');
 (async () => {
   fs.mkdirSync(output, { recursive: true });
   const browser = await chromium.launch({ channel: 'msedge', headless: true });
-  const results = { base, imageHttpChecks: [], languageChecks: [], representativeViews: [], faults: [], jsErrors: [] };
+  const results = { base, imageHttpChecks: [], languageChecks: [], contentChecks: [], representativeViews: [], faults: [], jsErrors: [] };
   async function ready(page, code) {
     await page.waitForFunction(code => document.documentElement.lang === code && document.querySelector('#manual-pages')?.dataset.state === 'ready', code);
     assert.equal(await page.locator('.manual-image').count(), 4);
     assert.equal(await page.locator('.manual-topic, #manual-search').count(), 0);
     assert.equal(await page.locator('#manual-pages').getAttribute('data-loaded'), '4');
     assert.equal(await page.locator('#manual-pages').getAttribute('data-failed'), '0');
+    assert.equal(await page.locator('#manual-pages .manual-chapter').count(), 6);
+    assert.equal(await page.locator('#manual-pages .manual-feature').count(), 113);
+    assert.equal(await page.locator('#manual-chapter option').count(), 7);
+  }
+  async function inspectIcons(page, code, theme) {
+    await page.evaluate(() => document.fonts.ready);
+    const actual = await page.locator('#manual-pages .manual-app-icon').evaluateAll(icons => icons.map(icon => { const style = getComputedStyle(icon); return { codePoint: icon.textContent.codePointAt(0), color: style.color, background: style.backgroundColor, transform: style.transform, font: style.fontFamily, size: style.fontSize }; }));
+    const rgb = hex => { const value = hex.replace('#', ''); return `rgb(${[0, 2, 4].map(at => parseInt(value.slice(at, at + 2), 16)).join(', ')})`; };
+    const icons = data.locales[code].chapters.flatMap(chapter => [chapter.icon, ...chapter.features.map(feature => feature.icon)]).filter(Boolean);
+    assert.deepEqual(actual, icons.map(icon => ({ codePoint: icon.codePoint, color: rgb(theme === 'dark' ? icon.colorDark : icon.color), background: icon.background === 'transparent' ? 'rgba(0, 0, 0, 0)' : rgb(icon.background), transform: code === 'ar' && icon.matchTextDirection ? 'matrix(-1, 0, 0, 1, 0, 0)' : 'none', font: 'TAIPOPOManualIcons', size: '22px' })));
   }
   async function inspect(page, code) {
     await page.evaluate(() => new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve))));
@@ -52,10 +62,20 @@ const digest = b => crypto.createHash('sha256').update(b).digest('hex');
     const context = await browser.newContext();
     const page = await context.newPage(); page.on('pageerror', e => results.jsErrors.push(e.message));
     await page.goto(base + 'guide/?lang=ko'); await ready(page, 'ko');
+    const fontResponse = await page.request.get(new URL(data.font.src, base + 'guide/').href);
+    assert.equal(fontResponse.status(), 200); assert.equal(digest(await fontResponse.body()), data.font.sha256);
     assert.deepEqual(await page.locator('#manual-language option').evaluateAll(options => options.map(o => o.value)), data.localeOrder);
     for (const code of data.localeOrder) {
       await page.locator('#manual-language').selectOption(code); await ready(page, code);
       await page.locator('.manual-image').evaluateAll(images => Promise.all(images.map(image => image.decode())));
+      await page.evaluate(() => document.fonts.ready);
+      const content = await page.locator('#manual-pages .manual-chapter').evaluateAll(chapters => chapters.map(chapter => ({ id: chapter.id, title: chapter.querySelector('.manual-chapter-title').lastChild.textContent, features: [...chapter.querySelectorAll('.manual-feature')].map(feature => ({ id: feature.id, title: feature.querySelector('h3').textContent, body: feature.querySelector('.manual-feature-body').textContent, notice: feature.querySelector('.manual-feature-notice')?.textContent || null, icon: feature.querySelector('.manual-app-icon') ? { codePoint: feature.querySelector('.manual-app-icon').textContent.codePointAt(0), font: getComputedStyle(feature.querySelector('.manual-app-icon')).fontFamily } : null })) })));
+      assert.deepEqual(content, data.locales[code].chapters.map((chapter, index) => ({ id: chapter.id, title: `${index + 1}. ${chapter.title}`, features: chapter.features.map(feature => ({ id: `manual-feature-${feature.id}`, title: feature.title, body: feature.body, notice: feature.notice, icon: feature.icon ? { codePoint: feature.icon.codePoint, font: 'TAIPOPOManualIcons' } : null })) })));
+      for (const chapter of data.locales[code].chapters) {
+        await page.locator('#manual-chapter').selectOption(chapter.id);
+        await page.waitForFunction(id => { const element = document.getElementById(id); const inset = parseFloat(getComputedStyle(document.documentElement).scrollPaddingTop) + parseFloat(getComputedStyle(element).scrollMarginTop); return Math.abs(element.getBoundingClientRect().top - inset) < 2; }, chapter.id);
+      }
+      results.contentChecks.push({ code, chapters: 6, features: 113, notices: 2, originalTextAndIcons: true, sixContentsDestinations: true });
       for (const record of data.locales[code].images) {
         const response = await page.request.get(base + 'guide/' + record.src);
         assert.equal(response.status(), 200); assert.match(response.headers()['content-type'], /^image\/webp/u);
@@ -93,12 +113,18 @@ const digest = b => crypto.createHash('sha256').update(b).digest('hex');
       await p.locator('.manual-image').evaluateAll(images => Promise.all(images.map(image => image.decode())));
       assert.equal(await p.locator('html').getAttribute('dir'), code === 'ar' ? 'rtl' : 'ltr');
       assert.equal(await p.locator('html').getAttribute('data-theme'), theme);
+      await inspectIcons(p, code, theme);
       await p.screenshot({ path: path.join(output, `${code}-${theme}-${width}-top.png`) });
       await p.locator('.manual-page').last().evaluate(element => element.scrollIntoView({ block: 'start' }));
       // Offscreen async image raster needs a paint opportunity after scrolling.
       await p.evaluate(() => new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve))));
       await p.waitForTimeout(250);
       await p.screenshot({ path: path.join(output, `${code}-${theme}-${width}-last.png`) });
+      await p.locator('#manual-feature-registration').evaluate(element => element.scrollIntoView({ block: 'start' }));
+      await p.screenshot({ path: path.join(output, `${code}-${theme}-${width}-body.png`) });
+      await p.locator('#manual-pages .manual-feature').last().evaluate(element => element.scrollIntoView({ block: 'center' }));
+      assert.equal(await p.locator('#manual-pages .manual-feature').last().isVisible(), true);
+      await p.screenshot({ path: path.join(output, `${code}-${theme}-${width}-end.png`) });
       results.representativeViews.push({ code, theme, width }); await c.close();
     }
     const faultContext = await browser.newContext(); const fault = await faultContext.newPage();
@@ -133,11 +159,15 @@ const digest = b => crypto.createHash('sha256').update(b).digest('hex');
     const nojs = await browser.newContext({ javaScriptEnabled: false }); const p = await nojs.newPage();
     await p.goto(base + 'guide/?lang=ar');
     assert.equal(await p.locator('.manual-image, .manual-topic').count(), 0);
-    assert.equal(await p.locator('.manual-nojs section[lang="ar"] a').count(), 4);
-    assert.equal(await p.locator('.manual-nojs section').count(), 16); await nojs.close(); results.faults.push('no-js-explicit-language-original-links');
+    assert.equal(await p.locator('.manual-nojs details[lang="ar"] .manual-nojs-original').count(), 4);
+    assert.equal(await p.locator('.manual-nojs details').count(), 16);
+    assert.equal(await p.locator('.manual-nojs details[lang="ar"] .manual-feature-body').count(), 113);
+    await p.locator('.manual-nojs details[lang="ar"] > summary').click();
+    assert.equal(await p.locator('.manual-nojs details[lang="ar"] .manual-feature-body').first().isVisible(), true);
+    await nojs.close(); results.faults.push('no-js-complete-localized-guide-and-original-links');
     assert.equal(results.imageHttpChecks.length, 64); assert.equal(results.jsErrors.length, 0, results.jsErrors.join('\n'));
     results.status = 'PASS';
     fs.writeFileSync(path.join(output, 'browser-result.json'), JSON.stringify(results, null, 2));
-    console.log(`PASS: 64 HTTP/hash/WebP/decode checks; 16 languages × 4 widths; 8 KO/AR theme views; original viewing; ${results.faults.length} failure/race/no-JS cases; no text or locale fallback.`);
+    console.log(`PASS: 16 languages × 6 chapters / 113 complete feature bodies / 2 notices / six contents destinations; 64 HTTP/hash/WebP/decode checks; 4 widths; 8 KO/AR theme views including body/end; original icons/viewing; ${results.faults.length} failure/race/no-JS cases; no legacy text or locale fallback.`);
   } finally { await browser.close(); }
 })().catch(e => { console.error(e); process.exitCode = 1; });

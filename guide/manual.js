@@ -24,6 +24,7 @@ const ui = JSON.parse(document.querySelector('#manual-ui').textContent);
 const language = document.querySelector('#manual-language');
 const pages = document.querySelector('#manual-pages');
 const toc = document.querySelector('#manual-toc');
+const contents = document.querySelector('#manual-chapter');
 const status = document.querySelector('#manual-status');
 const failure = document.querySelector('#manual-load-error');
 const retry = document.querySelector('#manual-retry');
@@ -55,6 +56,7 @@ function updateChrome(code) {
   document.querySelector('#language-picker-label').textContent = languageNames[code];
   document.querySelector('#language-picker-summary').setAttribute('aria-label', changeLanguage[code]);
   document.querySelector('#manual-language-label').textContent = c.language;
+  document.querySelector('#manual-chapter-label').textContent = text.contents;
   document.querySelector('#manual-contact-link').textContent = c.support;
   document.querySelector('#manual-contact-link').href = `../${code}/support/`;
   document.querySelector('#footer-support').textContent = c.support;
@@ -75,7 +77,7 @@ async function loadManifest() {
     const response = await fetch(`manual.json?v=${version}`, { signal: controller.signal, cache: 'no-cache' });
     if (!response.ok) throw Error('Manual manifest unavailable');
     const data = await response.json();
-    if (data.schemaVersion !== 2 || data.contentVersion !== version || JSON.stringify(data.imageOrder) !== JSON.stringify(expectedOrder)) throw Error('Manual version mismatch');
+    if (data.schemaVersion !== 3 || data.contentVersion !== version || JSON.stringify(data.imageOrder) !== JSON.stringify(expectedOrder)) throw Error('Manual version mismatch');
     return data;
   } finally { clearTimeout(timeout); }
 }
@@ -83,6 +85,7 @@ function clearView() {
   observers.forEach(observer => observer.disconnect()); observers = [];
   timers.forEach(timer => clearTimeout(timer)); timers = [];
   pages.replaceChildren(); toc.replaceChildren();
+  contents.replaceChildren(); contents.disabled = true;
   pages.dataset.loaded = '0'; pages.dataset.failed = '0';
   pages.dataset.state = 'loading'; pages.setAttribute('aria-busy', 'true');
   status.hidden = false; failure.hidden = true;
@@ -101,9 +104,51 @@ function validateLocale(data, code) {
     if (image.id !== expectedOrder[index] || image.order !== index + 1 || image.src !== `images/${code}/${image.id}.webp` || !/^[a-f0-9]{64}$/u.test(image.sha256) || image.width <= 0 || image.height <= 0 || !Array.isArray(image.targets)) throw Error('Invalid language image');
     if (!image.targets.length || image.targets.some(r => !['x', 'y', 'width', 'height'].every(k => Number.isFinite(r[k])) || r.width <= 0 || r.height <= 0)) throw Error('Invalid annotation geometry');
   }
+  const counts = [10, 27, 9, 6, 22, 39];
+  if (item.chapters?.length !== 6 || item.chapters.some((chapter, index) => !chapter.title || chapter.id !== `manual-category-${index}` || chapter.features?.length !== counts[index] || chapter.features.some(feature => !feature.id || !feature.title || !feature.body || feature.notice !== null && typeof feature.notice !== 'string'))) throw Error('Incomplete manual chapters');
+  if (JSON.stringify(item.chapters.flatMap(chapter => chapter.screen ? [chapter.screen] : [])) !== JSON.stringify(expectedOrder)) throw Error('Invalid chapter images');
   return item;
 }
-function renderImages(data, item, code, token) {
+function makeIcon(icon) {
+  if (!icon) return null;
+  const span = document.createElement('span'); span.className = 'manual-app-icon'; span.setAttribute('aria-hidden', 'true');
+  span.textContent = String.fromCodePoint(icon.codePoint);
+  span.style.setProperty('--manual-icon-light', icon.color);
+  span.style.setProperty('--manual-icon-dark', icon.colorDark);
+  if (icon.background === '#25282C') span.classList.add('manual-app-icon-contrast');
+  if (icon.matchTextDirection) span.classList.add('manual-app-icon-directional');
+  return span;
+}
+function renderManual(data, item, code, token) {
+  const mounts = new Map();
+  const hint = document.createElement('option'); hint.value = ''; hint.textContent = ui[code].contents;
+  contents.append(hint); contents.disabled = false;
+  for (const [index, chapter] of item.chapters.entries()) {
+    const section = document.createElement('section'); section.className = 'manual-chapter'; section.id = chapter.id;
+    const heading = document.createElement('h2'); heading.className = 'manual-chapter-title'; heading.id = `${chapter.id}-title`;
+    const icon = makeIcon(chapter.icon); if (icon) heading.append(icon);
+    const title = `${index + 1}. ${chapter.title}`; heading.append(document.createTextNode(title));
+    section.setAttribute('aria-labelledby', heading.id); section.append(heading); pages.append(section);
+    if (chapter.screen) mounts.set(chapter.screen, section);
+    const link = document.createElement('a'); link.href = `#${chapter.id}`; link.textContent = title; toc.append(link);
+    const option = document.createElement('option'); option.value = chapter.id; option.textContent = title; contents.append(option);
+  }
+  renderImages(data, item, code, token, mounts);
+  for (const chapter of item.chapters) {
+    const list = document.createElement('div'); list.className = 'manual-feature-list';
+    for (const feature of chapter.features) {
+      const article = document.createElement('article'); article.className = 'manual-feature'; article.id = `manual-feature-${feature.id}`;
+      const icon = makeIcon(feature.icon); if (icon) article.append(icon);
+      const copy = document.createElement('div'); copy.className = 'manual-feature-copy';
+      const heading = document.createElement('h3'); heading.textContent = feature.title;
+      const body = document.createElement('p'); body.className = 'manual-feature-body'; body.textContent = feature.body; copy.append(heading, body);
+      if (feature.notice) { const notice = document.createElement('p'); notice.className = 'manual-feature-notice'; notice.textContent = feature.notice; copy.append(notice); }
+      article.append(copy); list.append(article);
+    }
+    document.getElementById(chapter.id).append(list);
+  }
+}
+function renderImages(data, item, code, token, mounts) {
   const text = ui[code];
   const results = new Map();
   function updateProgress(id, value) {
@@ -125,7 +170,7 @@ function renderImages(data, item, code, token) {
   for (const record of item.images) {
     const figure = document.createElement('figure'); figure.className = 'manual-page'; figure.id = record.id;
     const caption = document.createElement('figcaption');
-    const heading = document.createElement('h2'); heading.className = 'manual-page-title'; heading.textContent = `${record.order}. ${record.title}`;
+    const heading = document.createElement('span'); heading.className = 'manual-page-title'; heading.textContent = record.title;
     const src = `${record.src}?v=${record.sha256.slice(0, 12)}`;
     const original = document.createElement('a'); original.className = 'manual-open-original'; original.href = src; original.target = '_blank'; original.rel = 'noopener'; original.textContent = text.original;
     original.setAttribute('aria-label', `${text.original}: ${record.title}`);
@@ -139,8 +184,7 @@ function renderImages(data, item, code, token) {
     const error = document.createElement('div'); error.className = 'manual-page-error'; error.hidden = true; error.setAttribute('role', 'alert');
     const message = document.createElement('p'); message.textContent = text.error;
     const button = document.createElement('button'); button.className = 'button'; button.type = 'button'; button.textContent = text.retry; error.append(message, button); figure.append(error);
-    pages.append(figure);
-    const entry = document.createElement('a'); entry.href = `#${record.id}`; entry.textContent = heading.textContent; toc.append(entry);
+    mounts.get(record.id).append(figure);
     function drawTargets() {
       if (token !== cycle || !image.isConnected) return;
       const width = image.clientWidth, height = image.clientHeight, stroke = data.overlay.strokeWidth;
@@ -180,7 +224,7 @@ function renderImages(data, item, code, token) {
   requestAnimationFrame(() => {
     if (token !== cycle) return;
     let id = ''; try { id = decodeURIComponent(location.hash.slice(1)); } catch (_) { /* Invalid anchors do not change the selected images. */ }
-    if (expectedOrder.includes(id)) document.getElementById(id)?.scrollIntoView({ block: 'start' });
+    if (expectedOrder.includes(id) || /^manual-(?:category-\d|feature-[\w-]+)$/u.test(id)) document.getElementById(id)?.scrollIntoView({ block: 'start' });
   });
 }
 async function chooseLanguage(code, updateUrl = true) {
@@ -196,10 +240,11 @@ async function chooseLanguage(code, updateUrl = true) {
     manifestPromise ||= loadManifest().catch(error => { manifestPromise = undefined; throw error; });
     const data = await manifestPromise;
     if (token !== cycle) return;
-    renderImages(data, validateLocale(data, code), code, token);
+    renderManual(data, validateLocale(data, code), code, token);
   } catch (_) { if (token === cycle) showFailure(code); }
 }
 language.addEventListener('change', () => chooseLanguage(language.value));
+contents.addEventListener('change', () => { if (contents.value) { document.getElementById(contents.value)?.scrollIntoView({ block: 'start' }); history.replaceState(null, '', `#${contents.value}`); } });
 document.querySelector('.language-options').addEventListener('click', event => {
   const link = event.target.closest('a[lang]');
   if (!link || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;

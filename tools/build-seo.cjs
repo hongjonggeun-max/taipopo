@@ -1,6 +1,7 @@
 // Preserve existing routes and layouts; add crawl metadata after content generation.
 const fs = require('node:fs');
 const path = require('node:path');
+const crypto = require('node:crypto');
 const root = path.resolve(__dirname, '..');
 const codes = Object.keys(require('./privacy-content.json'));
 const base = 'https://taipopo.app';
@@ -16,9 +17,11 @@ const site = {
   url: `${base}/`, inLanguage: codes,
 };
 const sitemapUrls = new Set();
+const headerVersion = crypto.createHash('sha256').update(fs.readFileSync(path.join(root, 'language.css'), 'utf8').replaceAll('\r\n', '\n')).digest('hex').slice(0, 12);
 
 function update(file, code, route) {
   let html = fs.readFileSync(file, 'utf8');
+  html = html.replace(/href="([^"]*language\.css)(?:\?[^"]*)?"/gu, `href="$1?v=${headerVersion}"`);
   html = html.replace(/\n?<!-- SEO:START -->[\s\S]*?<!-- SEO:END -->\n?/gu, '\n');
   html = html.replace(/<link\b[^>]*rel="(?:canonical|alternate)"[^>]*>/gu, '');
   html = html.replace(/<meta\b[^>]*(?:property="og:(?:url|site_name|locale)"|name="robots")[^>]*>/gu, '');

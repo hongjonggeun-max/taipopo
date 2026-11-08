@@ -1,8 +1,9 @@
-// Export ONLY the four images selected by the current app's overview catalog.
+// Export the complete current Production guide and ONLY its four selected images.
 // Input is read-only; never re-encode/crop/capture images or export archived captures.
 const fs = require('node:fs');
 const path = require('node:path');
 const crypto = require('node:crypto');
+const { resolveManual } = require('./manual-content-export.cjs');
 const root = path.resolve(__dirname, '..');
 const input = path.resolve(process.argv[2] || path.join(root, '../app-current'));
 const app = fs.existsSync(path.join(input, 'pubspec.yaml')) ? input : path.resolve(input, '../..');
@@ -18,6 +19,10 @@ const languages = [...read('lib/settings/app_language_options.dart').matchAll(/A
   .map(m => ({ code: m[1], name: m[2] }));
 if (languages.length !== 16 || new Set(languages.map(l => l.code)).size !== 16) throw Error('Unexpected app language list');
 const pubspec = read('pubspec.yaml');
+const resolvedManual = resolveManual(app);
+if (JSON.stringify(resolvedManual.localeOrder) !== JSON.stringify(languages.map(l => l.code))) throw Error('Manual locale order differs');
+const publicIcon = icon => icon && Object.fromEntries(['name', 'codePoint', 'color', 'colorDark', 'background', 'matchTextDirection'].map(key => [key, icon[key]]));
+const publicChapters = code => resolvedManual.locales[code].chapters.map(chapter => ({ id: chapter.id, title: chapter.title, screen: chapter.screen, icon: publicIcon(chapter.icon), features: chapter.features.map(feature => ({ id: feature.id, title: feature.title, body: feature.body, notice: feature.notice, icon: publicIcon(feature.icon) })) }));
 const webText = require('./manual-web-text.json');
 const locales = {};
 const ui = {};
@@ -28,7 +33,7 @@ for (const { code, name } of languages) {
   const manifest = JSON.parse(rawManifest);
   const a = JSON.parse(read(`lib/l10n/app_${code}.arb`));
   if (!webText[code] || !a.retry || !a.manualImageError || !a.manualIntro) throw Error(`Missing localized controls: ${code}`);
-  ui[code] = { ...webText[code], name, title: a.userGuideTitle, intro: a.manualIntro, retry: a.retry, error: a.manualImageError };
+  ui[code] = { ...webText[code], name, title: a.userGuideTitle, intro: a.manualIntro, contents: a.manualContentsHint, retry: a.retry, error: a.manualImageError };
   const images = overviews.map((overview, index) => {
     const record = manifest[overview.id];
     const asset = `assets/manual/${code}/${overview.id}.webp`;
@@ -46,10 +51,11 @@ for (const { code, name } of languages) {
     return { id: overview.id, title: a[overview.titleKey], order: index + 1, src: publicPath, width: record.width, height: record.height, sha256, targets };
   });
   if (images.some(i => !i.title || !Number.isInteger(i.width) || !Number.isInteger(i.height))) throw Error(`Missing image labels/dimensions: ${code}`);
-  locales[code] = { name, direction: code === 'ar' ? 'rtl' : 'ltr', sourceManifest: manifestPath, sourceManifestSha256: digest(rawManifest), images };
+  locales[code] = { name, direction: code === 'ar' ? 'rtl' : 'ltr', sourceManifest: manifestPath, sourceManifestSha256: digest(rawManifest), images, chapters: publicChapters(code) };
 }
-const data = { schemaVersion: 2, localeOrder: languages.map(l => l.code), imageOrder: order, overlay: { color: '#E53935', strokeWidth: 1.5, maxRadius: 12, radiusFactor: 0.20 }, locales };
-const version = digest(JSON.stringify({ data, ui, view: ['tools/manual-template.html', 'guide/manual.js', 'guide/manual.css'].map(relative => fs.readFileSync(path.join(root, relative), 'utf8').replaceAll('\r\n', '\n')) })).slice(0, 16);
+const font = { src: '../assets/manual/MaterialIcons-Regular.otf', sha256: digest(fs.readFileSync(path.join(root, 'assets/manual/MaterialIcons-Regular.otf'))) };
+const data = { schemaVersion: 3, localeOrder: languages.map(l => l.code), imageOrder: order, font, overlay: { color: '#E53935', strokeWidth: 1.5, maxRadius: 12, radiusFactor: 0.20 }, locales };
+const version = digest(JSON.stringify({ data, ui, view: ['tools/manual-template.html', 'guide/manual.js', 'guide/manual.css', 'language.css'].map(relative => fs.readFileSync(path.join(root, relative), 'utf8').replaceAll('\r\n', '\n')) })).slice(0, 16);
 data.contentVersion = version;
 // All inputs are validated before any public output is written.
 for (const copy of copies) {
@@ -59,9 +65,10 @@ for (const copy of copies) {
 }
 const options = languages.map(l => `<option value="${l.code}">${esc(l.name)}</option>`).join('');
 const picker = languages.map(l => `<a href="./?lang=${l.code}" lang="${l.code}">${esc(l.name)}</a>`).join('');
-const originals = languages.map(l => `<section lang="${l.code}" dir="${l.code === 'ar' ? 'rtl' : 'ltr'}"><h2>${esc(l.name)}</h2><ul>${locales[l.code].images.map(i => `<li><a href="${i.src}?v=${i.sha256.slice(0, 12)}" target="_blank" rel="noopener">${i.order}. ${esc(i.title)}</a></li>`).join('')}</ul></section>`).join('');
+const originals = languages.map(l => `<details class="manual-nojs-locale" lang="${l.code}" dir="${l.code === 'ar' ? 'rtl' : 'ltr'}"><summary>${esc(l.name)}</summary>${locales[l.code].chapters.map((chapter, index) => { const image = locales[l.code].images.find(i => i.id === chapter.screen); return `<section><h2>${index + 1}. ${esc(chapter.title)}</h2>${image ? `<p><a class="manual-nojs-original" href="${image.src}?v=${image.sha256.slice(0, 12)}" target="_blank" rel="noopener">${esc(ui[l.code].original)}: ${esc(image.title)}</a></p>` : ''}${chapter.features.map(feature => `<article class="manual-feature"><div class="manual-feature-copy"><h3>${esc(feature.title)}</h3><p class="manual-feature-body">${esc(feature.body)}</p>${feature.notice ? `<p class="manual-feature-notice">${esc(feature.notice)}</p>` : ''}</div></article>`).join('')}</section>`; }).join('')}</details>`).join('');
 let html = fs.readFileSync(path.join(root, 'tools/manual-template.html'), 'utf8')
   .replaceAll('__MANUAL_VERSION__', version)
+  .replaceAll('__HEADER_VERSION__', digest(fs.readFileSync(path.join(root, 'language.css'), 'utf8').replaceAll('\r\n', '\n')).slice(0, 12))
   .replace('<!--LANGUAGES-->', options)
   .replace('<!--PICKER-->', picker)
   .replace('<!--MANUAL_UI-->', JSON.stringify(ui).replaceAll('<', '\\u003c'))
@@ -69,4 +76,4 @@ let html = fs.readFileSync(path.join(root, 'tools/manual-template.html'), 'utf8'
 if (/<!--(?:LANGUAGES|PICKER|MANUAL_UI|ORIGINALS)-->/u.test(html)) throw Error('Unresolved manual template');
 fs.writeFileSync(path.join(root, 'guide/index.html'), html);
 fs.writeFileSync(path.join(root, 'guide/manual.json'), `${JSON.stringify(data, null, 2)}\n`);
-console.log(`Exported ${languages.length} languages × ${overviews.length} current app images (${copies.length} byte-identical WebPs), with existing target rectangles. No archived captures or app changes.`);
+console.log(`Exported ${languages.length} languages × 6 chapters / 113 features / 2 notices / ${overviews.length} current app images (${copies.length} byte-identical WebPs). Full Production manual; no archived captures or app changes.`);
