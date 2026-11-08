@@ -77,7 +77,7 @@ async function loadManifest() {
     const response = await fetch(`manual.json?v=${version}`, { signal: controller.signal, cache: 'no-cache' });
     if (!response.ok) throw Error('Manual manifest unavailable');
     const data = await response.json();
-    if (data.schemaVersion !== 3 || data.contentVersion !== version || JSON.stringify(data.imageOrder) !== JSON.stringify(expectedOrder)) throw Error('Manual version mismatch');
+    if (data.schemaVersion !== 4 || data.contentVersion !== version || JSON.stringify(data.imageOrder) !== JSON.stringify(expectedOrder)) throw Error('Manual version mismatch');
     return data;
   } finally { clearTimeout(timeout); }
 }
@@ -103,6 +103,8 @@ function validateLocale(data, code) {
   for (const [index, image] of item.images.entries()) {
     if (image.id !== expectedOrder[index] || image.order !== index + 1 || image.src !== `images/${code}/${image.id}.webp` || !/^[a-f0-9]{64}$/u.test(image.sha256) || image.width <= 0 || image.height <= 0 || !Array.isArray(image.targets)) throw Error('Invalid language image');
     if (!image.targets.length || image.targets.some(r => !['x', 'y', 'width', 'height'].every(k => Number.isFinite(r[k])) || r.width <= 0 || r.height <= 0)) throw Error('Invalid annotation geometry');
+    if (['guide-settlement', 'guide-report'].includes(image.id) && !image.preview) throw Error('Missing web preview');
+    if (image.preview && (!['guide-settlement', 'guide-report'].includes(image.id) || image.preview.src !== `previews/${code}/${image.id}.webp` || image.preview.sourceSha256 !== image.sha256 || !/^[a-f0-9]{64}$/u.test(image.preview.sha256) || image.preview.width !== image.width || !Number.isInteger(image.preview.height) || image.preview.height <= 0 || image.preview.height >= image.height || image.preview.targets?.length !== image.targets.length)) throw Error('Invalid web preview');
   }
   const counts = [10, 27, 9, 6, 22, 39];
   if (item.chapters?.length !== 6 || item.chapters.some((chapter, index) => !chapter.title || chapter.id !== `manual-category-${index}` || chapter.features?.length !== counts[index] || chapter.features.some(feature => !feature.id || !feature.title || !feature.body || feature.notice !== null && typeof feature.notice !== 'string'))) throw Error('Incomplete manual chapters');
@@ -172,14 +174,17 @@ function renderImages(data, item, code, token, mounts) {
     const caption = document.createElement('figcaption');
     const heading = document.createElement('span'); heading.className = 'manual-page-title'; heading.textContent = record.title;
     const src = `${record.src}?v=${record.sha256.slice(0, 12)}`;
+    const view = record.preview || record;
+    const displaySrc = `${view.src}?v=${view.sha256.slice(0, 12)}`;
     const original = document.createElement('a'); original.className = 'manual-open-original'; original.href = src; original.target = '_blank'; original.rel = 'noopener'; original.textContent = text.original;
     original.setAttribute('aria-label', `${text.original}: ${record.title}`);
     caption.append(heading, original); figure.append(caption);
     const frame = document.createElement('a'); frame.className = 'manual-original-link'; frame.href = src; frame.target = '_blank'; frame.rel = 'noopener'; frame.dir = 'ltr'; frame.setAttribute('aria-label', `${text.original}: ${record.title}`);
-    const image = document.createElement('img'); image.className = 'manual-image'; image.width = record.width; image.height = record.height; image.alt = `${record.order}. ${record.title} · ${item.name}`; image.decoding = 'async'; image.loading = 'eager';
+    frame.style.setProperty('--manual-image-ratio', view.width / view.height);
+    const image = document.createElement('img'); image.className = 'manual-image'; image.width = view.width; image.height = view.height; image.alt = `${record.order}. ${record.title} · ${item.name}`; image.decoding = 'async'; image.loading = 'eager';
     const svgNamespace = 'http://www.w3.org/2000/svg';
     const annotations = document.createElementNS(svgNamespace, 'svg'); annotations.classList.add('manual-annotations'); annotations.setAttribute('aria-hidden', 'true');
-    const marks = record.targets.map(target => { const span = document.createElementNS(svgNamespace, 'rect'); span.classList.add('manual-highlight'); span.dataset.target = target.id; annotations.append(span); return { target, span }; });
+    const marks = view.targets.map(target => { const span = document.createElementNS(svgNamespace, 'rect'); span.classList.add('manual-highlight'); span.dataset.target = target.id; annotations.append(span); return { target, span }; });
     frame.append(image, annotations); figure.append(frame);
     const error = document.createElement('div'); error.className = 'manual-page-error'; error.hidden = true; error.setAttribute('role', 'alert');
     const message = document.createElement('p'); message.textContent = text.error;
@@ -216,7 +221,7 @@ function renderImages(data, item, code, token, mounts) {
       image.hidden = false; error.hidden = true; delete frame.dataset.error;
       updateProgress(record.id, 'pending');
       clearTimeout(imageTimer); imageTimer = setTimeout(imageError, 20000); timers.push(imageTimer);
-      image.src = attempt++ ? `${src}&retry=${attempt}` : src;
+      image.src = attempt++ ? `${displaySrc}&retry=${attempt}` : displaySrc;
     }
     button.addEventListener('click', requestImage);
     requestImage();

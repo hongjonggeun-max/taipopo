@@ -7,15 +7,32 @@ Static, dependency-free introduction, privacy and support site in 16 languages f
 - Run `tools/check-english.cjs` with Playwright alongside the existing website/manual checks.
 
 - Home: `index.html`
-- Image manual: `guide/` keeps the existing language URLs, header/footer and theme. It displays the complete current Production guide in all 16 languages: six chapters (Main, Gallery, Settlement, Report, Camera, Settings), 113 feature instructions and two notices, plus the four current overview images. A contents selector navigates to each chapter. Continuous vertical scrolling preserves each image's proportions; original-image links open the unchanged WebP in a new tab. No offline availability is promised.
+- Image manual: `guide/` keeps the existing language URLs, header/footer and theme. It displays the complete published app guide in all 16 languages: six chapters (Main, Gallery, Settlement, Report, Camera, Settings), 113 feature instructions and two notices, plus the four current overview images. A contents selector navigates to each chapter. Continuous vertical scrolling preserves each image's proportions; original-image links open the unchanged WebP in a new tab. No offline availability is promised.
 - Full text is resolved without running the app by tools/manual-content-export.cjs from manual_feature_catalog.dart, manual_camera_settings_features.dart and ARBs; the Production-only Drive entries are included and every referenced string is checked against generated Dart. Only resolved public text and glyph/style data are published; source paths and parser metadata stay out of the guide manifest.
-- Manual export reads the current app's `manual_overview_catalog.dart`, `app_language_options.dart`, `pubspec.yaml`, per-language `assets/manual/*/manifest.json` and the explicit public UI strings. Run `node tools/sync-manual.cjs C:/TAIPOPO/development/app-current`, then `node tools/build-seo.cjs`. The exporter copies only 64 active WebPs byte-for-byte; 1,968 archived manifest entries are excluded. Existing app target rectangles are a separate presentation layer; image pixels are not redrawn, recompressed, cropped or mirrored. Never copy full ARBs, archived captures or private app source here. Edit `tools/manual-template.html`, `guide/manual.css` and `guide/manual.js` for layout; generated HTML/JSON and copied images must come from the exporter.
+- Manual export reads the current app's `manual_overview_catalog.dart`, `app_language_options.dart`, `pubspec.yaml`, per-language `assets/manual/*/manifest.json` and the explicit public UI strings. Run `node tools/sync-manual.cjs C:/TAIPOPO/development/app-current`, then `node tools/build-seo.cjs`. The exporter copies only 64 active WebPs byte-for-byte; 1,968 archived manifest entries are excluded. Existing app target rectangles remain a separate presentation layer; originals are never redrawn, recompressed, cropped or mirrored. Website-only previews remove verified blank rows and remap annotations as described below. Never copy full ARBs, archived captures or private app source here. Edit `tools/manual-template.html`, `guide/manual.css` and `guide/manual.js` for layout; generated HTML/JSON and copied images must come from the exporter.
 - Validate image provenance with `node tools/check-manual-assets.cjs C:/TAIPOPO/development/app-current` and isolated browser coverage with `node tools/check-manual.cjs` (`PLAYWRIGHT_MODULE` may point at an external installed Playwright package). `MANUAL_BASE_URL` switches the same browser checks to the deployed site. Missing/corrupt manifests or images show errors and retry controls, never older text or another language. With JavaScript disabled, all six chapters, 113 instructions, notices and original-image links remain available in explicitly selected language sections. Actual app icons use the unchanged Production +21 Material Icons font subset, credited in assets/manual/LICENSE-MaterialIcons.txt.
 - Support / four-question email templates: `support/index.html`, `site.js`
 - Privacy: `privacy/index.html` and `/{language}/privacy/`. The local review includes the full policy and common website/email/rights notices in 16 languages; production must be checked separately.
 - Terms drafts: `terms/index.html` and `/{language}/terms/`. These remain clearly labeled review copies with an unconfirmed effective date and `noindex,follow`; publication does not establish an effective date.
 - Theme, spacing, typography and responsive layout: `styles.css`
 - Brand: existing TAIPOPO SVG symbol and wordmark, used without redesign.
+
+Website layout changes use one centred 1,080px container for the main content, long notices and footer. The existing font, palette, card treatment, navigation targets and footer brand alignment remain in place.
+
+The manual keeps all 64 app-original WebPs unchanged for original viewing. It additionally displays 32 lossless web-only previews for Settlement and Report: only a verified uniform background band between the last card and bottom navigation is removed; every retained pixel and the RTL direction remain unchanged. These previews are 945×1220 and 945×1000 respectively. Desktop display fits within the viewport height (up to 720px); mobile follows the available width. Clicking either a preview or its original-view link opens the unchanged full-resolution original.
+
+For a layout-only refresh, preserve the already published guide text instead of importing an unverified app candidate:
+
+```powershell
+# Run using an external Python environment with Pillow available.
+python tools/compact-manual-images.py
+node tools/refresh-manual-layout.cjs
+node tools/build-seo.cjs
+node tools/check-manual-assets.cjs C:/TAIPOPO/development/app-current --images-only
+node tools/check-manual.cjs
+```
+
+The preview generator rejects non-uniform cuts or a content/annotation overlap. `render-manual.cjs` is shared by a normal app export and the published-content layout refresh; stale preview source hashes fail explicitly. The `--images-only` check verifies original provenance and preview metadata; exact preservation of published text is checked separately against the pre-change manifest. The default asset check still compares text against the selected app source and must be used when intentionally exporting an approved new app manual.
 
 ## Editing the design
 

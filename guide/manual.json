@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 3,
+  "schemaVersion": 4,
   "localeOrder": [
     "ko",
     "en",
@@ -128,7 +128,41 @@
               "width": 0.9222222222222223,
               "height": 0.090625
             }
-          ]
+          ],
+          "preview": {
+            "src": "previews/ko/guide-settlement.webp",
+            "sha256": "cedfa3ee41e00ff752091a274c6c6e956cd5b32231aed02c2961394ce4751cdf",
+            "width": 945,
+            "height": 1220,
+            "sourceSha256": "de52d4afa85899e0f11517c3112e52b7048199d9adffd50da6cf6fe44004daa1",
+            "keptBands": [
+              [
+                0,
+                900
+              ],
+              [
+                1360,
+                1680
+              ]
+            ],
+            "targets": [
+              {
+                "id": "toolbar",
+                "x": 0.03888888888888889,
+                "y": 0.09272540983606557,
+                "width": 0.9222222222222223,
+                "height": 0.15965163934426227
+              },
+              {
+                "id": "records",
+                "x": 0.03888888888888889,
+                "y": 0.42020491803278687,
+                "width": 0.9222222222222223,
+                "height": 0.12479508196721312
+              }
+            ],
+            "pixelOperation": "remove-uniform-background-rows-only"
+          }
         },
         {
           "id": "guide-report",
@@ -153,7 +187,41 @@
               "width": 0.9222222222222223,
               "height": 0.090625
             }
-          ]
+          ],
+          "preview": {
+            "src": "previews/ko/guide-report.webp",
+            "sha256": "3d8ac10239ef0075fcdaf89ffa500fd5075d94161f19c90be976948e89f0510e",
+            "width": 945,
+            "height": 1000,
+            "sourceSha256": "1a746c1b64b81ff3e5f718c434b525ca823941d8d97843380556cd90c825d562",
+            "keptBands": [
+              [
+                0,
+                680
+              ],
+              [
+                1360,
+                1680
+              ]
+            ],
+            "targets": [
+              {
+                "id": "toolbar",
+                "x": 0.03888888888888889,
+                "y": 0.113125,
+                "width": 0.9222222222222223,
+                "height": 0.19477499999999998
+              },
+              {
+                "id": "records",
+                "x": 0.03888888888888889,
+                "y": 0.34464999999999996,
+                "width": 0.9222222222222223,
+                "height": 0.15225
+              }
+            ],
+            "pixelOperation": "remove-uniform-background-rows-only"
+          }
         }
       ],
       "chapters": [
@@ -1742,7 +1810,41 @@
               "width": 0.9222222222222223,
               "height": 0.090625
             }
-          ]
+          ],
+          "preview": {
+            "src": "previews/en/guide-settlement.webp",
+            "sha256": "face625edcf96ec5c47e23d272a0ca2f75ebc9ac210adabfef0e190e8c9bd4d5",
+            "width": 945,
+            "height": 1220,
+            "sourceSha256": "1a7c280ec1e481341fa720a862f65eb384e71320f08e4f2288aa6024c000c76d",
+            "keptBands": [
+              [
+                0,
+                900
+              ],
+              [
+                1360,
+                1680
+              ]
+            ],
+            "targets": [
+              {
+                "id": "toolbar",
+                "x": 0.03888888888888889,
+                "y": 0.09272540983606557,
+                "width": 0.9222222222222223,
+                "height": 0.15965163934426227
+              },
+              {
+                "id": "records",
+                "x": 0.03888888888888889,
+                "y": 0.42020491803278687,
+                "width": 0.9222222222222223,
+                "height": 0.12479508196721312
+              }
+            ],
+            "pixelOperation": "remove-uniform-background-rows-only"
+          }
         },
         {
           "id": "guide-report",
@@ -1767,7 +1869,41 @@
               "width": 0.9222222222222223,
               "height": 0.090625
             }
-          ]
+          ],
+          "preview": {
+            "src": "previews/en/guide-report.webp",
+            "sha256": "25ea596e4ba2ad07da0c6c6c369e76701d8b80bcec4fc5502306b76e9c6cf996",
+            "width": 945,
+            "height": 1000,
+            "sourceSha256": "593cd0b921ff618679ff94722a3083a8d7b7d9fa42c8f5335bd55cac3d519473",
+            "keptBands": [
+              [
+                0,
+                680
+              ],
+              [
+                1360,
+                1680
+              ]
+            ],
+            "targets": [
+              {
+                "id": "toolbar",
+                "x": 0.03888888888888889,
+                "y": 0.113125,
+                "width": 0.9222222222222223,
+                "height": 0.19477499999999998
+              },
+              {
+                "id": "records",
+                "x": 0.03888888888888889,
+                "y": 0.34464999999999996,
+                "width": 0.9222222222222223,
+                "height": 0.15225
+              }
+            ],
+            "pixelOperation": "remove-uniform-background-rows-only"
+          }
         }
       ],
       "chapters": [
@@ -3356,7 +3492,41 @@
               "width": 0.9222222222222223,
               "height": 0.090625
             }
-          ]
+          ],
+          "preview": {
+            "src": "previews/zh/guide-settlement.webp",
+            "sha256": "3afdbfa5e0a8a10e88da8f8b4380dc4317cafa3a8eef51f976189fa5b0d5b504",
+            "width": 945,
+            "height": 1220,
+            "sourceSha256": "1574e6a999598b20f808879a52671959298f7a7d867cde12c42af6ae1bc1ac0f",
+            "keptBands": [
+              [
+                0,
+                900
+              ],
+              [
+                1360,
+                1680
+              ]
+            ],
+            "targets": [
+              {
+                "id": "toolbar",
+                "x": 0.03888888888888889,
+                "y": 0.09272540983606557,
+                "width": 0.9222222222222223,
+                "height": 0.15965163934426227
+              },
+              {
+                "id": "records",
+                "x": 0.03888888888888889,
+                "y": 0.42020491803278687,
+                "width": 0.9222222222222223,
+                "height": 0.12479508196721312
+              }
+            ],
+            "pixelOperation": "remove-uniform-background-rows-only"
+          }
         },
         {
           "id": "guide-report",
@@ -3381,7 +3551,41 @@
               "width": 0.9222222222222223,
               "height": 0.090625
             }
-          ]
+          ],
+          "preview": {
+            "src": "previews/zh/guide-report.webp",
+            "sha256": "c1ddf35e4389c9b68282b8e94df6b689b431d1dc35e07eb11776d951ad4a51f6",
+            "width": 945,
+            "height": 1000,
+            "sourceSha256": "b318533349060957b58405673de65cfd60522a6c4b0a1ad55af214198bb3b5d7",
+            "keptBands": [
+              [
+                0,
+                680
+              ],
+              [
+                1360,
+                1680
+              ]
+            ],
+            "targets": [
+              {
+                "id": "toolbar",
+                "x": 0.03888888888888889,
+                "y": 0.113125,
+                "width": 0.9222222222222223,
+                "height": 0.19477499999999998
+              },
+              {
+                "id": "records",
+                "x": 0.03888888888888889,
+                "y": 0.34464999999999996,
+                "width": 0.9222222222222223,
+                "height": 0.15225
+              }
+            ],
+            "pixelOperation": "remove-uniform-background-rows-only"
+          }
         }
       ],
       "chapters": [
@@ -4970,7 +5174,41 @@
               "width": 0.9222222222222223,
               "height": 0.090625
             }
-          ]
+          ],
+          "preview": {
+            "src": "previews/ja/guide-settlement.webp",
+            "sha256": "8d0b7ca5b11733a91ee08841c7d6ef927b370982d04aa3b01b50bc7f97d3cabc",
+            "width": 945,
+            "height": 1220,
+            "sourceSha256": "e6d7f7b07b210bc86e8803c5b67d84db5310ff4ef3b4711c5605ec1cb3cca1ae",
+            "keptBands": [
+              [
+                0,
+                900
+              ],
+              [
+                1360,
+                1680
+              ]
+            ],
+            "targets": [
+              {
+                "id": "toolbar",
+                "x": 0.03888888888888889,
+                "y": 0.09272540983606557,
+                "width": 0.9222222222222223,
+                "height": 0.15965163934426227
+              },
+              {
+                "id": "records",
+                "x": 0.03888888888888889,
+                "y": 0.42020491803278687,
+                "width": 0.9222222222222223,
+                "height": 0.12479508196721312
+              }
+            ],
+            "pixelOperation": "remove-uniform-background-rows-only"
+          }
         },
         {
           "id": "guide-report",
@@ -4995,7 +5233,41 @@
               "width": 0.9222222222222223,
               "height": 0.090625
             }
-          ]
+          ],
+          "preview": {
+            "src": "previews/ja/guide-report.webp",
+            "sha256": "0c6bba935cb7c53ba3dd25f438904d0913a71b4eb80d25c4a8ebed0273515ab2",
+            "width": 945,
+            "height": 1000,
+            "sourceSha256": "2033c4a6712fec59c631db86f8c7565af0c1aaf193617649f4a00680ecd79503",
+            "keptBands": [
+              [
+                0,
+                680
+              ],
+              [
+                1360,
+                1680
+              ]
+            ],
+            "targets": [
+              {
+                "id": "toolbar",
+                "x": 0.03888888888888889,
+                "y": 0.113125,
+                "width": 0.9222222222222223,
+                "height": 0.19477499999999998
+              },
+              {
+                "id": "records",
+                "x": 0.03888888888888889,
+                "y": 0.34464999999999996,
+                "width": 0.9222222222222223,
+                "height": 0.15225
+              }
+            ],
+            "pixelOperation": "remove-uniform-background-rows-only"
+          }
         }
       ],
       "chapters": [
@@ -6584,7 +6856,41 @@
               "width": 0.9222222222222223,
               "height": 0.090625
             }
-          ]
+          ],
+          "preview": {
+            "src": "previews/hi/guide-settlement.webp",
+            "sha256": "8d6e483a82b3f341b05873eb21e299a26aaca063bd585e80e277f0886494ab84",
+            "width": 945,
+            "height": 1220,
+            "sourceSha256": "33795881a77c3ae0decc795284ed7bc6a40843583d32089e0a0322ff04d46ea4",
+            "keptBands": [
+              [
+                0,
+                900
+              ],
+              [
+                1360,
+                1680
+              ]
+            ],
+            "targets": [
+              {
+                "id": "toolbar",
+                "x": 0.03888888888888889,
+                "y": 0.09272540983606557,
+                "width": 0.9222222222222223,
+                "height": 0.16352459016393442
+              },
+              {
+                "id": "records",
+                "x": 0.03888888888888889,
+                "y": 0.424077868852459,
+                "width": 0.9222222222222223,
+                "height": 0.12479508196721312
+              }
+            ],
+            "pixelOperation": "remove-uniform-background-rows-only"
+          }
         },
         {
           "id": "guide-report",
@@ -6609,7 +6915,41 @@
               "width": 0.9222222222222223,
               "height": 0.090625
             }
-          ]
+          ],
+          "preview": {
+            "src": "previews/hi/guide-report.webp",
+            "sha256": "6bce83b42cce3f26f35b91add34eb9e78ecc71178e09fa5c3fbd1ab3233b040e",
+            "width": 945,
+            "height": 1000,
+            "sourceSha256": "434b6d2f2ea04757b802b7154e2fa3021cc6350d80b52554d5a24acdc64f8128",
+            "keptBands": [
+              [
+                0,
+                680
+              ],
+              [
+                1360,
+                1680
+              ]
+            ],
+            "targets": [
+              {
+                "id": "toolbar",
+                "x": 0.03888888888888889,
+                "y": 0.113125,
+                "width": 0.9222222222222223,
+                "height": 0.1995
+              },
+              {
+                "id": "records",
+                "x": 0.03888888888888889,
+                "y": 0.349375,
+                "width": 0.9222222222222223,
+                "height": 0.15225
+              }
+            ],
+            "pixelOperation": "remove-uniform-background-rows-only"
+          }
         }
       ],
       "chapters": [
@@ -8198,7 +8538,41 @@
               "width": 0.9222222222222223,
               "height": 0.090625
             }
-          ]
+          ],
+          "preview": {
+            "src": "previews/pt/guide-settlement.webp",
+            "sha256": "64ab0411310326a00192cbfa46665fa32d0c5a7aafb02b5dad1cf1272f385b77",
+            "width": 945,
+            "height": 1220,
+            "sourceSha256": "d613774659b7e74ad1e078f5877bd065a3d5f55412044d8678cf8a3d23d0fd36",
+            "keptBands": [
+              [
+                0,
+                900
+              ],
+              [
+                1360,
+                1680
+              ]
+            ],
+            "targets": [
+              {
+                "id": "toolbar",
+                "x": 0.03888888888888889,
+                "y": 0.09272540983606557,
+                "width": 0.9222222222222223,
+                "height": 0.15965163934426227
+              },
+              {
+                "id": "records",
+                "x": 0.03888888888888889,
+                "y": 0.42020491803278687,
+                "width": 0.9222222222222223,
+                "height": 0.12479508196721312
+              }
+            ],
+            "pixelOperation": "remove-uniform-background-rows-only"
+          }
         },
         {
           "id": "guide-report",
@@ -8223,7 +8597,41 @@
               "width": 0.9222222222222223,
               "height": 0.090625
             }
-          ]
+          ],
+          "preview": {
+            "src": "previews/pt/guide-report.webp",
+            "sha256": "3960e5b21fd95f0d3b4ba5461e0394dd339d2a5b73ed5de007ae6db4bc58be95",
+            "width": 945,
+            "height": 1000,
+            "sourceSha256": "79d57589ccf13103a5a82f072d85e1fe7ae45afdf4a00e3ad0b880bab6aea281",
+            "keptBands": [
+              [
+                0,
+                680
+              ],
+              [
+                1360,
+                1680
+              ]
+            ],
+            "targets": [
+              {
+                "id": "toolbar",
+                "x": 0.03888888888888889,
+                "y": 0.113125,
+                "width": 0.9222222222222223,
+                "height": 0.19477499999999998
+              },
+              {
+                "id": "records",
+                "x": 0.03888888888888889,
+                "y": 0.34464999999999996,
+                "width": 0.9222222222222223,
+                "height": 0.15225
+              }
+            ],
+            "pixelOperation": "remove-uniform-background-rows-only"
+          }
         }
       ],
       "chapters": [
@@ -9812,7 +10220,41 @@
               "width": 0.9222222222222223,
               "height": 0.090625
             }
-          ]
+          ],
+          "preview": {
+            "src": "previews/es/guide-settlement.webp",
+            "sha256": "57683f886e9bde538e231e7232eb01440f2e06840589601559d2b2df33793cbb",
+            "width": 945,
+            "height": 1220,
+            "sourceSha256": "03c3115c2f7fd8df4c3895504e70f2f9932b60ad60f7f749bcbbfa483e77dfec",
+            "keptBands": [
+              [
+                0,
+                900
+              ],
+              [
+                1360,
+                1680
+              ]
+            ],
+            "targets": [
+              {
+                "id": "toolbar",
+                "x": 0.03888888888888889,
+                "y": 0.09272540983606557,
+                "width": 0.9222222222222223,
+                "height": 0.15965163934426227
+              },
+              {
+                "id": "records",
+                "x": 0.03888888888888889,
+                "y": 0.42020491803278687,
+                "width": 0.9222222222222223,
+                "height": 0.12479508196721312
+              }
+            ],
+            "pixelOperation": "remove-uniform-background-rows-only"
+          }
         },
         {
           "id": "guide-report",
@@ -9837,7 +10279,41 @@
               "width": 0.9222222222222223,
               "height": 0.090625
             }
-          ]
+          ],
+          "preview": {
+            "src": "previews/es/guide-report.webp",
+            "sha256": "66dd01aeae7006b236125c38e1bb1fe6a1e0be4e55dfe3c9a9133f94897ed032",
+            "width": 945,
+            "height": 1000,
+            "sourceSha256": "6a8a98f27cba4d1720613586736d3bb3b0c75488cdb0c4463a536deff71c89f6",
+            "keptBands": [
+              [
+                0,
+                680
+              ],
+              [
+                1360,
+                1680
+              ]
+            ],
+            "targets": [
+              {
+                "id": "toolbar",
+                "x": 0.03888888888888889,
+                "y": 0.113125,
+                "width": 0.9222222222222223,
+                "height": 0.19477499999999998
+              },
+              {
+                "id": "records",
+                "x": 0.03888888888888889,
+                "y": 0.34464999999999996,
+                "width": 0.9222222222222223,
+                "height": 0.15225
+              }
+            ],
+            "pixelOperation": "remove-uniform-background-rows-only"
+          }
         }
       ],
       "chapters": [
@@ -11426,7 +11902,41 @@
               "width": 0.9222222222222223,
               "height": 0.090625
             }
-          ]
+          ],
+          "preview": {
+            "src": "previews/fr/guide-settlement.webp",
+            "sha256": "8d6891fb44820b680e93f98f2ef5d890bd593ce31542798a2defaba291ac52f9",
+            "width": 945,
+            "height": 1220,
+            "sourceSha256": "898cfd864f507586fc64b457002c554b2ed4ee1d431f4dc72a37280ed0df5fea",
+            "keptBands": [
+              [
+                0,
+                900
+              ],
+              [
+                1360,
+                1680
+              ]
+            ],
+            "targets": [
+              {
+                "id": "toolbar",
+                "x": 0.03888888888888889,
+                "y": 0.09272540983606557,
+                "width": 0.9222222222222223,
+                "height": 0.15965163934426227
+              },
+              {
+                "id": "records",
+                "x": 0.03888888888888889,
+                "y": 0.42020491803278687,
+                "width": 0.9222222222222223,
+                "height": 0.12479508196721312
+              }
+            ],
+            "pixelOperation": "remove-uniform-background-rows-only"
+          }
         },
         {
           "id": "guide-report",
@@ -11451,7 +11961,41 @@
               "width": 0.9222222222222223,
               "height": 0.090625
             }
-          ]
+          ],
+          "preview": {
+            "src": "previews/fr/guide-report.webp",
+            "sha256": "c6249beab5de8af27d374f09990bfcc56567c4795f9bbd9432b6cc4f6abc6de3",
+            "width": 945,
+            "height": 1000,
+            "sourceSha256": "6e7a09056c09f9b23d4ff20c418cbec0fceb7ee661c810fd02ab64c1e05e6b5c",
+            "keptBands": [
+              [
+                0,
+                680
+              ],
+              [
+                1360,
+                1680
+              ]
+            ],
+            "targets": [
+              {
+                "id": "toolbar",
+                "x": 0.03888888888888889,
+                "y": 0.113125,
+                "width": 0.9222222222222223,
+                "height": 0.19477499999999998
+              },
+              {
+                "id": "records",
+                "x": 0.03888888888888889,
+                "y": 0.34464999999999996,
+                "width": 0.9222222222222223,
+                "height": 0.15225
+              }
+            ],
+            "pixelOperation": "remove-uniform-background-rows-only"
+          }
         }
       ],
       "chapters": [
@@ -13040,7 +13584,41 @@
               "width": 0.9222222222222223,
               "height": 0.090625
             }
-          ]
+          ],
+          "preview": {
+            "src": "previews/de/guide-settlement.webp",
+            "sha256": "2788a7928c9c298072a17d6e450f4213c9d2878714094f3e0117bdb404948171",
+            "width": 945,
+            "height": 1220,
+            "sourceSha256": "37655d5e8a270b2d84f957a62d5903a95d4a11151389d4da60b709c06cabe592",
+            "keptBands": [
+              [
+                0,
+                900
+              ],
+              [
+                1360,
+                1680
+              ]
+            ],
+            "targets": [
+              {
+                "id": "toolbar",
+                "x": 0.03888888888888889,
+                "y": 0.09272540983606557,
+                "width": 0.9222222222222223,
+                "height": 0.15965163934426227
+              },
+              {
+                "id": "records",
+                "x": 0.03888888888888889,
+                "y": 0.42020491803278687,
+                "width": 0.9222222222222223,
+                "height": 0.12479508196721312
+              }
+            ],
+            "pixelOperation": "remove-uniform-background-rows-only"
+          }
         },
         {
           "id": "guide-report",
@@ -13065,7 +13643,41 @@
               "width": 0.9222222222222223,
               "height": 0.090625
             }
-          ]
+          ],
+          "preview": {
+            "src": "previews/de/guide-report.webp",
+            "sha256": "132a3df854d5171611c5fa009861b3a9323e5b6aa61c77f157527bce42b68302",
+            "width": 945,
+            "height": 1000,
+            "sourceSha256": "f4c4c151cba0168b4e232c07572049b722d6381fd3f479843ddacbfdc463e8b8",
+            "keptBands": [
+              [
+                0,
+                680
+              ],
+              [
+                1360,
+                1680
+              ]
+            ],
+            "targets": [
+              {
+                "id": "toolbar",
+                "x": 0.03888888888888889,
+                "y": 0.113125,
+                "width": 0.9222222222222223,
+                "height": 0.19477499999999998
+              },
+              {
+                "id": "records",
+                "x": 0.03888888888888889,
+                "y": 0.34464999999999996,
+                "width": 0.9222222222222223,
+                "height": 0.15225
+              }
+            ],
+            "pixelOperation": "remove-uniform-background-rows-only"
+          }
         }
       ],
       "chapters": [
@@ -14654,7 +15266,41 @@
               "width": 0.9222222222222223,
               "height": 0.090625
             }
-          ]
+          ],
+          "preview": {
+            "src": "previews/id/guide-settlement.webp",
+            "sha256": "0e350cd971414b354dceabcf299bdbda98114f7a80652c5837e322e09eca1d3f",
+            "width": 945,
+            "height": 1220,
+            "sourceSha256": "d00dd3fba3b13fcb44e7ef5690eb68f123c2cfd9c777f0138ef28e425499debb",
+            "keptBands": [
+              [
+                0,
+                900
+              ],
+              [
+                1360,
+                1680
+              ]
+            ],
+            "targets": [
+              {
+                "id": "toolbar",
+                "x": 0.03888888888888889,
+                "y": 0.09272540983606557,
+                "width": 0.9222222222222223,
+                "height": 0.15965163934426227
+              },
+              {
+                "id": "records",
+                "x": 0.03888888888888889,
+                "y": 0.42020491803278687,
+                "width": 0.9222222222222223,
+                "height": 0.12479508196721312
+              }
+            ],
+            "pixelOperation": "remove-uniform-background-rows-only"
+          }
         },
         {
           "id": "guide-report",
@@ -14679,7 +15325,41 @@
               "width": 0.9222222222222223,
               "height": 0.090625
             }
-          ]
+          ],
+          "preview": {
+            "src": "previews/id/guide-report.webp",
+            "sha256": "86a60bd5915deac87626e37284172b987fcba73be20acd759b1b168f4079fc03",
+            "width": 945,
+            "height": 1000,
+            "sourceSha256": "0cb71ee7efb275b38f5919a424c7bc7f9e16e214b4e1d7422cefcd7b7f3ea417",
+            "keptBands": [
+              [
+                0,
+                680
+              ],
+              [
+                1360,
+                1680
+              ]
+            ],
+            "targets": [
+              {
+                "id": "toolbar",
+                "x": 0.03888888888888889,
+                "y": 0.113125,
+                "width": 0.9222222222222223,
+                "height": 0.19477499999999998
+              },
+              {
+                "id": "records",
+                "x": 0.03888888888888889,
+                "y": 0.34464999999999996,
+                "width": 0.9222222222222223,
+                "height": 0.15225
+              }
+            ],
+            "pixelOperation": "remove-uniform-background-rows-only"
+          }
         }
       ],
       "chapters": [
@@ -16268,7 +16948,41 @@
               "width": 0.9222222222222223,
               "height": 0.090625
             }
-          ]
+          ],
+          "preview": {
+            "src": "previews/vi/guide-settlement.webp",
+            "sha256": "e580e6ae623a7af46bf35c016e50008a5981a91f258749dbacd6039d82d441b9",
+            "width": 945,
+            "height": 1220,
+            "sourceSha256": "8178faea48af2f04ab5781b4b786a2fbe38d8ba57a24ff75d106e5834b615094",
+            "keptBands": [
+              [
+                0,
+                900
+              ],
+              [
+                1360,
+                1680
+              ]
+            ],
+            "targets": [
+              {
+                "id": "toolbar",
+                "x": 0.03888888888888889,
+                "y": 0.09272540983606557,
+                "width": 0.9222222222222223,
+                "height": 0.15965163934426227
+              },
+              {
+                "id": "records",
+                "x": 0.03888888888888889,
+                "y": 0.42020491803278687,
+                "width": 0.9222222222222223,
+                "height": 0.12479508196721312
+              }
+            ],
+            "pixelOperation": "remove-uniform-background-rows-only"
+          }
         },
         {
           "id": "guide-report",
@@ -16293,7 +17007,41 @@
               "width": 0.9222222222222223,
               "height": 0.090625
             }
-          ]
+          ],
+          "preview": {
+            "src": "previews/vi/guide-report.webp",
+            "sha256": "2febe4370b99a0c7fbc66afee543518227430a4faf794c3b3d5ea956584bb539",
+            "width": 945,
+            "height": 1000,
+            "sourceSha256": "d7324790dbe9b412fc8ae04f7a8bfd060b8a51527958d3b5561dfd32debeb210",
+            "keptBands": [
+              [
+                0,
+                680
+              ],
+              [
+                1360,
+                1680
+              ]
+            ],
+            "targets": [
+              {
+                "id": "toolbar",
+                "x": 0.03888888888888889,
+                "y": 0.113125,
+                "width": 0.9222222222222223,
+                "height": 0.19477499999999998
+              },
+              {
+                "id": "records",
+                "x": 0.03888888888888889,
+                "y": 0.34464999999999996,
+                "width": 0.9222222222222223,
+                "height": 0.15225
+              }
+            ],
+            "pixelOperation": "remove-uniform-background-rows-only"
+          }
         }
       ],
       "chapters": [
@@ -17882,7 +18630,41 @@
               "width": 0.9222222222222223,
               "height": 0.090625
             }
-          ]
+          ],
+          "preview": {
+            "src": "previews/ru/guide-settlement.webp",
+            "sha256": "f354afc7984dbd97217bf03da47e00249e24be1e702cc6830e1ec23bc4d736a9",
+            "width": 945,
+            "height": 1220,
+            "sourceSha256": "f8d5f3868e3d8bbeb3d5d289fc7be2cf8d7df314c988fdc8283b90a464d052f3",
+            "keptBands": [
+              [
+                0,
+                900
+              ],
+              [
+                1360,
+                1680
+              ]
+            ],
+            "targets": [
+              {
+                "id": "toolbar",
+                "x": 0.03888888888888889,
+                "y": 0.09272540983606557,
+                "width": 0.9222222222222223,
+                "height": 0.15965163934426227
+              },
+              {
+                "id": "records",
+                "x": 0.03888888888888889,
+                "y": 0.42020491803278687,
+                "width": 0.9222222222222223,
+                "height": 0.12479508196721312
+              }
+            ],
+            "pixelOperation": "remove-uniform-background-rows-only"
+          }
         },
         {
           "id": "guide-report",
@@ -17907,7 +18689,41 @@
               "width": 0.9222222222222223,
               "height": 0.090625
             }
-          ]
+          ],
+          "preview": {
+            "src": "previews/ru/guide-report.webp",
+            "sha256": "637584ffdee6a3060c3bb25bff4d985561140f1c2d41667a44b1137c2be94ca0",
+            "width": 945,
+            "height": 1000,
+            "sourceSha256": "97f189947adc46dffcb422e025e1cb2897614098fdfffc5c7d54d96c9c30e811",
+            "keptBands": [
+              [
+                0,
+                680
+              ],
+              [
+                1360,
+                1680
+              ]
+            ],
+            "targets": [
+              {
+                "id": "toolbar",
+                "x": 0.03888888888888889,
+                "y": 0.113125,
+                "width": 0.9222222222222223,
+                "height": 0.19477499999999998
+              },
+              {
+                "id": "records",
+                "x": 0.03888888888888889,
+                "y": 0.34464999999999996,
+                "width": 0.9222222222222223,
+                "height": 0.15225
+              }
+            ],
+            "pixelOperation": "remove-uniform-background-rows-only"
+          }
         }
       ],
       "chapters": [
@@ -19496,7 +20312,41 @@
               "width": 0.9222222222222223,
               "height": 0.090625
             }
-          ]
+          ],
+          "preview": {
+            "src": "previews/tr/guide-settlement.webp",
+            "sha256": "fcfe22d1b963d66cd00f7575f7402871eef22c1bc24f6897d61465916dcfd268",
+            "width": 945,
+            "height": 1220,
+            "sourceSha256": "5fa79905adb1e4d741b6be45d95e27c91765d6f93634c6ca14aaeebb74879731",
+            "keptBands": [
+              [
+                0,
+                900
+              ],
+              [
+                1360,
+                1680
+              ]
+            ],
+            "targets": [
+              {
+                "id": "toolbar",
+                "x": 0.03888888888888889,
+                "y": 0.09272540983606557,
+                "width": 0.9222222222222223,
+                "height": 0.16137295081967212
+              },
+              {
+                "id": "records",
+                "x": 0.03888888888888889,
+                "y": 0.42192622950819675,
+                "width": 0.9222222222222223,
+                "height": 0.12479508196721312
+              }
+            ],
+            "pixelOperation": "remove-uniform-background-rows-only"
+          }
         },
         {
           "id": "guide-report",
@@ -19521,7 +20371,41 @@
               "width": 0.9222222222222223,
               "height": 0.090625
             }
-          ]
+          ],
+          "preview": {
+            "src": "previews/tr/guide-report.webp",
+            "sha256": "68433755945b0a7d705978116220e9e5d3bc738addd5b76c8e5bdb658bf5f1d6",
+            "width": 945,
+            "height": 1000,
+            "sourceSha256": "4c93f716117e5f5ca281e7a04fc1a2db0cb47d3395f2ef93a1f35fd804299749",
+            "keptBands": [
+              [
+                0,
+                680
+              ],
+              [
+                1360,
+                1680
+              ]
+            ],
+            "targets": [
+              {
+                "id": "toolbar",
+                "x": 0.03888888888888889,
+                "y": 0.113125,
+                "width": 0.9222222222222223,
+                "height": 0.196875
+              },
+              {
+                "id": "records",
+                "x": 0.03888888888888889,
+                "y": 0.34675,
+                "width": 0.9222222222222223,
+                "height": 0.15225
+              }
+            ],
+            "pixelOperation": "remove-uniform-background-rows-only"
+          }
         }
       ],
       "chapters": [
@@ -21110,7 +21994,41 @@
               "width": 0.9222222222222223,
               "height": 0.09062499999999996
             }
-          ]
+          ],
+          "preview": {
+            "src": "previews/ar/guide-settlement.webp",
+            "sha256": "b1ba59275added72913cbcbbdaa331ffa0eb1571de22bf329e9463c66b9e5bed",
+            "width": 945,
+            "height": 1220,
+            "sourceSha256": "64b7dd7b5a50d8b46062ff91cb9d1ef5bc4bfa8ca049439a17b274150fba8c4f",
+            "keptBands": [
+              [
+                0,
+                900
+              ],
+              [
+                1360,
+                1680
+              ]
+            ],
+            "targets": [
+              {
+                "id": "toolbar",
+                "x": 0.03888888888888889,
+                "y": 0.09272540983606557,
+                "width": 0.9222222222222223,
+                "height": 0.16567622950819672
+              },
+              {
+                "id": "records",
+                "x": 0.03888888888888889,
+                "y": 0.4262295081967213,
+                "width": 0.9222222222222223,
+                "height": 0.12479508196721305
+              }
+            ],
+            "pixelOperation": "remove-uniform-background-rows-only"
+          }
         },
         {
           "id": "guide-report",
@@ -21135,7 +22053,41 @@
               "width": 0.9222222222222223,
               "height": 0.090625
             }
-          ]
+          ],
+          "preview": {
+            "src": "previews/ar/guide-report.webp",
+            "sha256": "c1ce2890ae6526047f8d1f67fce658a19063d32df9643496d383a8ff12a0b548",
+            "width": 945,
+            "height": 1000,
+            "sourceSha256": "3529e609f58d130a040543d98a25ac5ee4a02ad521fdda1514d38a17a1197f92",
+            "keptBands": [
+              [
+                0,
+                680
+              ],
+              [
+                1360,
+                1680
+              ]
+            ],
+            "targets": [
+              {
+                "id": "toolbar",
+                "x": 0.03888888888888889,
+                "y": 0.113125,
+                "width": 0.9222222222222223,
+                "height": 0.202125
+              },
+              {
+                "id": "records",
+                "x": 0.03888888888888889,
+                "y": 0.352,
+                "width": 0.9222222222222223,
+                "height": 0.15225
+              }
+            ],
+            "pixelOperation": "remove-uniform-background-rows-only"
+          }
         }
       ],
       "chapters": [
@@ -22724,7 +23676,41 @@
               "width": 0.9222222222222223,
               "height": 0.090625
             }
-          ]
+          ],
+          "preview": {
+            "src": "previews/it/guide-settlement.webp",
+            "sha256": "0d75cd69a83124d271491434ae63dff4f1a587895cc7d138f99e16a72342f780",
+            "width": 945,
+            "height": 1220,
+            "sourceSha256": "a7c51f6d508bd4505dde4aa7ed406bb60c26071a2a62f271531b05e18500baf9",
+            "keptBands": [
+              [
+                0,
+                900
+              ],
+              [
+                1360,
+                1680
+              ]
+            ],
+            "targets": [
+              {
+                "id": "toolbar",
+                "x": 0.03888888888888889,
+                "y": 0.09272540983606557,
+                "width": 0.9222222222222223,
+                "height": 0.15965163934426227
+              },
+              {
+                "id": "records",
+                "x": 0.03888888888888889,
+                "y": 0.42020491803278687,
+                "width": 0.9222222222222223,
+                "height": 0.12479508196721312
+              }
+            ],
+            "pixelOperation": "remove-uniform-background-rows-only"
+          }
         },
         {
           "id": "guide-report",
@@ -22749,7 +23735,41 @@
               "width": 0.9222222222222223,
               "height": 0.090625
             }
-          ]
+          ],
+          "preview": {
+            "src": "previews/it/guide-report.webp",
+            "sha256": "ede51e8dd4d5c15c1c6ce362c037a4ae20f3225de8802e9b574a157cd6a910fa",
+            "width": 945,
+            "height": 1000,
+            "sourceSha256": "c4416606986fa8a3c816f7e36db27a9691bc3831c0a804ff4a55992de71b0c66",
+            "keptBands": [
+              [
+                0,
+                680
+              ],
+              [
+                1360,
+                1680
+              ]
+            ],
+            "targets": [
+              {
+                "id": "toolbar",
+                "x": 0.03888888888888889,
+                "y": 0.113125,
+                "width": 0.9222222222222223,
+                "height": 0.19477499999999998
+              },
+              {
+                "id": "records",
+                "x": 0.03888888888888889,
+                "y": 0.34464999999999996,
+                "width": 0.9222222222222223,
+                "height": 0.15225
+              }
+            ],
+            "pixelOperation": "remove-uniform-background-rows-only"
+          }
         }
       ],
       "chapters": [
@@ -24338,7 +25358,41 @@
               "width": 0.9222222222222223,
               "height": 0.090625
             }
-          ]
+          ],
+          "preview": {
+            "src": "previews/th/guide-settlement.webp",
+            "sha256": "5bb026835aefc8936a687ebb87b65b51e52971ed71bf962f1d24d1619df42ceb",
+            "width": 945,
+            "height": 1220,
+            "sourceSha256": "f5592618f561b3deb3ddb81a10eaa98a329c3e0086e16a42b6de7dc94dde81f7",
+            "keptBands": [
+              [
+                0,
+                900
+              ],
+              [
+                1360,
+                1680
+              ]
+            ],
+            "targets": [
+              {
+                "id": "toolbar",
+                "x": 0.03888888888888889,
+                "y": 0.09272540983606557,
+                "width": 0.9222222222222223,
+                "height": 0.15965163934426227
+              },
+              {
+                "id": "records",
+                "x": 0.03888888888888889,
+                "y": 0.42020491803278687,
+                "width": 0.9222222222222223,
+                "height": 0.12479508196721312
+              }
+            ],
+            "pixelOperation": "remove-uniform-background-rows-only"
+          }
         },
         {
           "id": "guide-report",
@@ -24363,7 +25417,41 @@
               "width": 0.9222222222222223,
               "height": 0.090625
             }
-          ]
+          ],
+          "preview": {
+            "src": "previews/th/guide-report.webp",
+            "sha256": "83f9bb13d238c6ed6d1d11f70399f268964a7ddf5b7cc63e46aa95214be7140c",
+            "width": 945,
+            "height": 1000,
+            "sourceSha256": "4b92a5ad2b315d194e3544b4aceb55eb43e8879d62eabbdb28f86ad784532209",
+            "keptBands": [
+              [
+                0,
+                680
+              ],
+              [
+                1360,
+                1680
+              ]
+            ],
+            "targets": [
+              {
+                "id": "toolbar",
+                "x": 0.03888888888888889,
+                "y": 0.113125,
+                "width": 0.9222222222222223,
+                "height": 0.19477499999999998
+              },
+              {
+                "id": "records",
+                "x": 0.03888888888888889,
+                "y": 0.34464999999999996,
+                "width": 0.9222222222222223,
+                "height": 0.15225
+              }
+            ],
+            "pixelOperation": "remove-uniform-background-rows-only"
+          }
         }
       ],
       "chapters": [
@@ -25860,5 +26948,5 @@
       ]
     }
   },
-  "contentVersion": "86305663af1bfe84"
+  "contentVersion": "86fe972ff90f4b42"
 }

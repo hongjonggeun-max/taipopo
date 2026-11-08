@@ -37,14 +37,18 @@ const digest = b => crypto.createHash('sha256').update(b).digest('hex');
     }));
     assert.deepEqual(actual.map(i => i.id), data.imageOrder);
     for (const [index, item] of actual.entries()) {
-      const expected = data.locales[code].images[index];
+      const original = data.locales[code].images[index];
+      const expected = original.preview || original;
       assert.ok(new URL(item.src).pathname.endsWith('/guide/' + expected.src));
       assert.equal(item.naturalWidth, expected.width); assert.equal(item.naturalHeight, expected.height);
       assert.ok(item.width <= item.naturalWidth + 0.1 && item.width > 0);
       assert.ok(Math.abs(item.height / item.width - expected.height / expected.width) < 0.003);
       assert.ok(Math.abs(item.frameHeight - item.height) < 1);
       assert.equal(item.transform, 'none'); assert.equal(item.frameTransform, 'none'); assert.equal(item.direction, 'ltr');
-      assert.ok(item.alt.includes(expected.title));
+      assert.ok(item.alt.includes(original.title));
+      if (await page.evaluate(() => innerWidth > 780)) {
+        assert.ok(item.height <= Math.min(720, await page.evaluate(() => Math.max(120, innerHeight - 200))) + 1, 'Desktop image exceeds viewport-height limit');
+      }
       if (index) assert.ok(item.top > actual[index - 1].top);
       assert.deepEqual(item.marks.map(m => m.id), expected.targets.map(t => t.id));
       for (const [j, mark] of item.marks.entries()) {
@@ -76,7 +80,7 @@ const digest = b => crypto.createHash('sha256').update(b).digest('hex');
         await page.waitForFunction(id => { const element = document.getElementById(id); const inset = parseFloat(getComputedStyle(document.documentElement).scrollPaddingTop) + parseFloat(getComputedStyle(element).scrollMarginTop); return Math.abs(element.getBoundingClientRect().top - inset) < 2; }, chapter.id);
       }
       results.contentChecks.push({ code, chapters: 6, features: 113, notices: 2, originalTextAndIcons: true, sixContentsDestinations: true });
-      for (const record of data.locales[code].images) {
+      for (const record of data.locales[code].images.flatMap(record => record.preview ? [record, { ...record.preview, id: record.id + '-preview' }] : [record])) {
         const response = await page.request.get(base + 'guide/' + record.src);
         assert.equal(response.status(), 200); assert.match(response.headers()['content-type'], /^image\/webp/u);
         const bytes = await response.body(); assert.equal(digest(bytes), record.sha256);
@@ -136,13 +140,19 @@ const digest = b => crypto.createHash('sha256').update(b).digest('hex');
     await fault.route('**/guide/images/ar/guide-gallery.webp?*', route => route.fulfill({ status: 404, body: 'Not found' }));
     await fault.reload(); await fault.waitForFunction(() => document.querySelector('#manual-pages').dataset.state === 'partial-error');
     assert.equal(await fault.locator('#guide-gallery .manual-page-error').isVisible(), true); assert.equal(await fault.locator('.manual-image:visible').count(), 3);
-    assert.ok((await fault.locator('.manual-image').evaluateAll(images => images.map(i => i.src))).every(src => src.includes('/images/ar/')));
+    assert.ok((await fault.locator('.manual-image').evaluateAll(images => images.map(i => i.src))).every(src => /\/(?:images|previews)\/ar\//u.test(src)));
     await fault.unroute('**/guide/images/ar/guide-gallery.webp?*');
     await fault.route('**/guide/images/ar/guide-gallery.webp?*', async route => { await new Promise(resolve => setTimeout(resolve, 500)); await route.continue(); });
     await fault.locator('#guide-gallery button').click();
     assert.equal(await fault.locator('#manual-pages').getAttribute('data-state'), 'loading');
     assert.equal(await fault.locator('#manual-pages').getAttribute('data-failed'), '0');
     await ready(fault, 'ar'); await fault.unroute('**/guide/images/ar/guide-gallery.webp?*'); results.faults.push('image-404-no-language-fallback-and-retry');
+    await fault.route('**/guide/previews/ar/guide-report.webp?*', route => route.fulfill({ status: 404, body: 'Not found' }));
+    await fault.reload(); await fault.waitForFunction(() => document.querySelector('#manual-pages').dataset.state === 'partial-error');
+    assert.equal(await fault.locator('#guide-report .manual-page-error').isVisible(), true);
+    assert.ok((await fault.locator('#guide-report .manual-image').evaluate(image => image.src)).includes('/previews/ar/'));
+    await fault.unroute('**/guide/previews/ar/guide-report.webp?*');
+    await fault.locator('#guide-report button').click(); await ready(fault, 'ar'); results.faults.push('preview-404-explicit-error-no-silent-original-fallback');
     await fault.route('**/guide/images/ar/guide-gallery.webp?*', route => route.fulfill({ status: 200, contentType: 'image/webp', body: 'corrupt-webp' }));
     await fault.reload(); await fault.waitForFunction(() => document.querySelector('#manual-pages').dataset.state === 'partial-error');
     assert.equal(await fault.locator('#guide-gallery .manual-page-error').isVisible(), true); results.faults.push('corrupt-image-decoding-error');
@@ -165,9 +175,9 @@ const digest = b => crypto.createHash('sha256').update(b).digest('hex');
     await p.locator('.manual-nojs details[lang="ar"] > summary').click();
     assert.equal(await p.locator('.manual-nojs details[lang="ar"] .manual-feature-body').first().isVisible(), true);
     await nojs.close(); results.faults.push('no-js-complete-localized-guide-and-original-links');
-    assert.equal(results.imageHttpChecks.length, 64); assert.equal(results.jsErrors.length, 0, results.jsErrors.join('\n'));
+    assert.equal(results.imageHttpChecks.length, 96); assert.equal(results.jsErrors.length, 0, results.jsErrors.join('\n'));
     results.status = 'PASS';
     fs.writeFileSync(path.join(output, 'browser-result.json'), JSON.stringify(results, null, 2));
-    console.log(`PASS: 16 languages × 6 chapters / 113 complete feature bodies / 2 notices / six contents destinations; 64 HTTP/hash/WebP/decode checks; 4 widths; 8 KO/AR theme views including body/end; original icons/viewing; ${results.faults.length} failure/race/no-JS cases; no legacy text or locale fallback.`);
+    console.log(`PASS: 16 languages × 6 chapters / 113 complete feature bodies / 2 notices / six contents destinations; 96 HTTP/hash/WebP checks and all displayed images decoded; 4 widths; viewport-height limits; 8 KO/AR theme views; original icons/viewing; ${results.faults.length} failure/race/no-JS cases.`);
   } finally { await browser.close(); }
 })().catch(e => { console.error(e); process.exitCode = 1; });

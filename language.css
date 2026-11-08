@@ -16,6 +16,16 @@ html[lang=en] .phone{overflow-wrap:anywhere}
 .footer-links{min-width:0;max-width:100%}
 .footer-links>a{min-width:0;max-width:100%;overflow-wrap:anywhere}
 footer a[href^="mailto:"]{direction:ltr;unicode-bidi:isolate;overflow-wrap:anywhere}
+/* Use the same centred reading container for content, notices and footer. */
+.wrap{max-width:1080px}
+.wrap>.header.wrap{width:100%}
+.policy-content{max-width:1080px;margin-inline:auto}
+#record-tool-notice,.glass[data-support-processing],.glass[data-web-review]{width:calc(100% - 72px);max-width:1080px;margin-inline:auto}
+.wrap>#record-tool-notice,.wrap>.glass[data-support-processing],.wrap>.glass[data-web-review],.policy-content .glass[data-support-processing],.policy-content .glass[data-web-review]{width:100%}
+.glass[data-support-processing],.glass[data-web-review]{padding:28px 32px;margin-block-start:24px}
+.glass[data-support-processing] h2,.glass[data-web-review] h2{font-size:23px;line-height:1.5;margin:0 0 16px;overflow-wrap:anywhere}
+.glass[data-support-processing] p,.glass[data-web-review] p{font-size:14px;line-height:1.95;margin-block:0 12px}
+.glass[data-support-processing] p:last-child,.glass[data-web-review] p:last-child{margin-block-end:0}
 @media(max-width:780px){
   .header{height:auto;min-height:84px;flex-wrap:wrap;padding-block:16px 20px;gap:16px 8px}
   .header .brand{margin-inline-start:0;margin-inline-end:auto}
@@ -25,4 +35,6 @@ footer a[href^="mailto:"]{direction:ltr;unicode-bidi:isolate;overflow-wrap:anywh
   .language-picker{margin-left:0}
   .language-picker summary{min-height:48px}
   .storage-note{margin-inline:auto}
+  #record-tool-notice,.glass[data-support-processing],.glass[data-web-review]{width:calc(100% - 40px)}
+  .glass[data-support-processing],.glass[data-web-review]{padding:24px}
 }

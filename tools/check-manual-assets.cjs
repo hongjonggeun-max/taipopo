@@ -6,7 +6,8 @@ const { resolveManual } = require('./manual-content-export.cjs');
 const root = path.resolve(__dirname, '..');
 const app = path.resolve(process.argv[2] || path.join(root, '../app-current'));
 const data = require('../guide/manual.json');
-const resolved = resolveManual(app);
+const imagesOnly = process.argv.includes('--images-only');
+const resolved = imagesOnly ? null : resolveManual(app);
 const publicIcon = icon => icon && Object.fromEntries(['name', 'codePoint', 'color', 'colorDark', 'background', 'matchTextDirection'].map(key => [key, icon[key]]));
 const sha = bytes => crypto.createHash('sha256').update(bytes).digest('hex');
 const languageSource = fs.readFileSync(path.join(app, 'lib/settings/app_language_options.dart'), 'utf8');
@@ -17,11 +18,11 @@ const rows = [...catalog.matchAll(/ManualOverview\('([^']+)',\s*\(l\)\s*=>\s*l\.
 assert.deepEqual(data.imageOrder, rows.map(r => r[1])); assert.equal(rows.length, 4);
 const html = fs.readFileSync(path.join(root, 'guide/index.html'), 'utf8');
 const ui = JSON.parse(html.match(/<script type="application\/json" id="manual-ui">([\s\S]*?)<\/script>/u)[1]);
-assert.equal(data.schemaVersion, 3); assert.ok(html.includes(data.contentVersion));
+assert.equal(data.schemaVersion, 4); assert.ok(html.includes(data.contentVersion));
 assert.equal(sha(fs.readFileSync(path.join(root, 'guide', data.font.src))), data.font.sha256);
 assert.ok(!html.includes('manual-topic') && !html.includes('manual-search'));
 assert.ok(!/오프라인|offline|hors ligne|sin conexión|オフライン|离线|ऑफलाइन|ออฟไลน์|офлайн|çevrimdışı/iu.test(JSON.stringify(ui)));
-let checked = 0, bytes = 0, excluded = 0;
+let checked = 0, bytes = 0, excluded = 0, previews = 0;
 for (const code of codes) {
   const locale = data.locales[code];
   const manifestBytes = fs.readFileSync(path.join(app, locale.sourceManifest));
@@ -32,7 +33,7 @@ for (const code of codes) {
   assert.equal(ui[code].title, arb.userGuideTitle); assert.equal(ui[code].intro, arb.manualIntro);
   assert.equal(ui[code].error, arb.manualImageError); assert.equal(ui[code].retry, arb.retry);
   assert.equal(locale.images.length, 4);
-  assert.deepEqual(locale.chapters, resolved.locales[code].chapters.map(chapter => ({ id: chapter.id, title: chapter.title, screen: chapter.screen, icon: publicIcon(chapter.icon), features: chapter.features.map(feature => ({ id: feature.id, title: feature.title, body: feature.body, notice: feature.notice, icon: publicIcon(feature.icon) })) })));
+  if (!imagesOnly) assert.deepEqual(locale.chapters, resolved.locales[code].chapters.map(chapter => ({ id: chapter.id, title: chapter.title, screen: chapter.screen, icon: publicIcon(chapter.icon), features: chapter.features.map(feature => ({ id: feature.id, title: feature.title, body: feature.body, notice: feature.notice, icon: publicIcon(feature.icon) })) })));
   assert.equal(locale.chapters.length, 6); assert.equal(locale.chapters.flatMap(c => c.features).length, 113);
   assert.equal(locale.chapters.flatMap(c => c.features).filter(f => f.notice).length, 2);
   assert.equal(ui[code].contents, arb.manualContentsHint);
@@ -49,8 +50,18 @@ for (const code of codes) {
     assert.equal(web.toString('ascii', 0, 4), 'RIFF'); assert.equal(web.toString('ascii', 8, 12), 'WEBP');
     const targetIds = [...rows[index][3].matchAll(/ManualOverviewCue\('([^']+)'\)/gu)].map(m => m[1]);
     assert.deepEqual(image.targets, targetIds.map(id => ({ id, ...original.targets[id] })));
+    if (['guide-settlement', 'guide-report'].includes(image.id)) {
+      const preview = image.preview;
+      assert.equal(preview.sourceSha256, image.sha256);
+      assert.equal(preview.src, `previews/${code}/${image.id}.webp`);
+      assert.equal(preview.width, image.width);
+      assert.equal(preview.height, image.id === 'guide-settlement' ? 1220 : 1000);
+      assert.equal(sha(fs.readFileSync(path.join(root, 'guide', preview.src))), preview.sha256);
+      assert.deepEqual(preview.targets, image.targets.map(r => ({ ...r, y: r.y * image.height / preview.height, height: r.height * image.height / preview.height })));
+      previews++;
+    } else assert.equal(image.preview, undefined);
     bytes += web.length; checked++;
   }
 }
-assert.equal(checked, 64); assert.equal(excluded, 1968);
-console.log(`PASS: 16 locales × 6 chapters / 113 complete feature bodies / 2 notices, exact ARB/generated Dart text and actual icon metadata; ${checked} byte-identical app WebPs (${bytes} bytes), ${excluded} archive entries excluded; no legacy 13-topic body or offline promise.`);
+assert.equal(checked, 64); assert.equal(excluded, 1968); assert.equal(previews, 32);
+console.log(`PASS: 16 locales × 6 chapters / 113 feature bodies / 2 notices; ${imagesOnly ? 'published text preserved separately; no import of unreleased app changes' : 'exact current ARB/generated Dart text and icon metadata'}; ${checked} byte-identical app WebPs (${bytes} bytes), ${previews} web-only previews; ${excluded} archives excluded.`);
