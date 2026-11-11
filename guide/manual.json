@@ -987,7 +987,7 @@
             {
               "id": "camera-qr",
               "title": "QR 스캔",
-              "body": "QR 코드의 내용을 읽고 복사할 수 있습니다.",
+              "body": "QR 코드의 웹페이지를 열거나 일반 텍스트를 복사할 수 있습니다.",
               "notice": null,
               "icon": {
                 "name": "qr_code_scanner_rounded",
@@ -1015,7 +1015,7 @@
             {
               "id": "camera-gps-record",
               "title": "GPS 위치 기록",
-              "body": "권한과 위치 수신 상태에 따라 촬영 위치와 주소를 기록합니다.",
+              "body": "GPS 기록을 끄면 앱의 사진 기록에 좌표를 저장하지 않습니다. 주소 표시는 별도 설정입니다. 주소 표시를 켜고 위치 권한을 허용하면 현재 위치로 주소를 확인해 표시하고, 촬영 시 사진 기록에 저장할 수 있습니다. 원본 JPEG에 포함된 EXIF는 그대로 보존합니다.",
               "notice": null,
               "icon": {
                 "name": "location_on_rounded",
@@ -2669,7 +2669,7 @@
             {
               "id": "camera-qr",
               "title": "Scan QR code",
-              "body": "Read and copy the contents of a QR code.",
+              "body": "Open web pages from QR codes or copy plain text.",
               "notice": null,
               "icon": {
                 "name": "qr_code_scanner_rounded",
@@ -2697,7 +2697,7 @@
             {
               "id": "camera-gps-record",
               "title": "GPS Location Record",
-              "body": "Capture location and address are recorded depending on permissions and location reception.",
+              "body": "When GPS Location Record is off, the app does not save coordinates in the photo record. Show Address is a separate setting. With Show Address on and location permission granted, the app can look up and display the address for your current location and save it to the photo record when you take a photo. EXIF metadata in the original JPEG is preserved as is.",
               "notice": null,
               "icon": {
                 "name": "location_on_rounded",
@@ -4351,7 +4351,7 @@
             {
               "id": "camera-qr",
               "title": "扫描二维码",
-              "body": "可读取并复制二维码内容。",
+              "body": "打开二维码中的网页或复制普通文本。",
               "notice": null,
               "icon": {
                 "name": "qr_code_scanner_rounded",
@@ -4379,7 +4379,7 @@
             {
               "id": "camera-gps-record",
               "title": "GPS定位记录",
-              "body": "根据权限和定位接收情况记录拍摄位置与地址。",
+              "body": "关闭“GPS定位记录”后，应用不会在照片记录中保存坐标。“显示地址”是独立设置。开启此设置并授予定位权限后，应用可以根据当前位置查询并显示地址，并在拍摄时将地址保存到照片记录中。原始 JPEG 中已有的 EXIF 数据会原样保留。",
               "notice": null,
               "icon": {
                 "name": "location_on_rounded",
@@ -6033,7 +6033,7 @@
             {
               "id": "camera-qr",
               "title": "QRコードをスキャンします",
-              "body": "QRコードの内容を読み取り、コピーできます。",
+              "body": "QRコードのウェブページを開いたり、通常のテキストをコピーしたりできます。",
               "notice": null,
               "icon": {
                 "name": "qr_code_scanner_rounded",
@@ -6061,7 +6061,7 @@
             {
               "id": "camera-gps-record",
               "title": "GPS位置記録",
-              "body": "権限と位置情報の受信状況に応じて、撮影位置と住所を記録します。",
+              "body": "「GPS位置記録」をオフにすると、アプリ内の写真記録に座標は保存されません。「住所を表示」は別の設定です。この設定をオンにして位置情報の使用を許可すると、現在地から住所を取得して表示し、撮影時に写真記録へ保存できます。元のJPEGに含まれるEXIFはそのまま保持されます。",
               "notice": null,
               "icon": {
                 "name": "location_on_rounded",
@@ -7715,7 +7715,7 @@
             {
               "id": "camera-qr",
               "title": "QR कोड स्कैन करें",
-              "body": "QR कोड की सामग्री पढ़ें और कॉपी करें।",
+              "body": "QR कोड से वेब पेज खोलें या सामान्य टेक्स्ट कॉपी करें।",
               "notice": null,
               "icon": {
                 "name": "qr_code_scanner_rounded",
@@ -7743,7 +7743,7 @@
             {
               "id": "camera-gps-record",
               "title": "जीपीएस स्थान रिकार्ड",
-              "body": "अनुमतियों और स्थान संकेत की स्थिति के अनुसार फ़ोटो का स्थान और पता दर्ज होता है।",
+              "body": "“जीपीएस स्थान रिकार्ड” बंद होने पर ऐप फ़ोटो के रिकॉर्ड में निर्देशांक नहीं सहेजता। “पता दिखाएँ” एक अलग सेटिंग है। इसे चालू करने और स्थान की अनुमति देने पर ऐप मौजूदा स्थान का पता खोजकर दिखा सकता है और फ़ोटो लेते समय उसे फ़ोटो के रिकॉर्ड में सहेज सकता है। मूल JPEG में मौजूद EXIF डेटा ज्यों का त्यों रहता है।",
               "notice": null,
               "icon": {
                 "name": "location_on_rounded",
@@ -9397,7 +9397,7 @@
             {
               "id": "camera-qr",
               "title": "Digitalize o código QR",
-              "body": "Leia e copie o conteúdo de um código QR.",
+              "body": "Abra páginas web a partir de códigos QR ou copie texto simples.",
               "notice": null,
               "icon": {
                 "name": "qr_code_scanner_rounded",
@@ -9425,7 +9425,7 @@
             {
               "id": "camera-gps-record",
               "title": "Registro de localização GPS",
-              "body": "O local e o endereço da captura são registrados conforme as permissões e a recepção da localização.",
+              "body": "Com “Registro de localização GPS” desativado, o aplicativo não salva coordenadas no registro da foto. “Mostrar endereço” é uma configuração separada. Se ela estiver ativada e houver permissão de localização, o aplicativo pode consultar e exibir o endereço da localização atual e salvá-lo no registro da foto no momento da captura. Os dados EXIF do JPEG original são preservados sem alterações.",
               "notice": null,
               "icon": {
                 "name": "location_on_rounded",
@@ -11079,7 +11079,7 @@
             {
               "id": "camera-qr",
               "title": "Escanear código QR",
-              "body": "Lee y copia el contenido de un código QR.",
+              "body": "Abre páginas web desde códigos QR o copia texto sin formato.",
               "notice": null,
               "icon": {
                 "name": "qr_code_scanner_rounded",
@@ -11107,7 +11107,7 @@
             {
               "id": "camera-gps-record",
               "title": "Registro de ubicación GPS",
-              "body": "La ubicación y la dirección de la captura se registran según los permisos y la recepción de ubicación.",
+              "body": "Al desactivar «Registro de ubicación GPS», la aplicación no guarda coordenadas en el registro de la foto. «Mostrar dirección» es un ajuste independiente. Si lo activas y concedes el permiso de ubicación, la aplicación puede consultar y mostrar la dirección de tu ubicación actual y guardarla en el registro de la foto al tomarla. Los datos EXIF del JPEG original se conservan tal como están.",
               "notice": null,
               "icon": {
                 "name": "location_on_rounded",
@@ -12761,7 +12761,7 @@
             {
               "id": "camera-qr",
               "title": "Scanner le code QR",
-              "body": "Lisez et copiez le contenu d’un code QR.",
+              "body": "Ouvrez des pages web à partir de codes QR ou copiez du texte brut.",
               "notice": null,
               "icon": {
                 "name": "qr_code_scanner_rounded",
@@ -12789,7 +12789,7 @@
             {
               "id": "camera-gps-record",
               "title": "Enregistrement de localisation GPS",
-              "body": "Le lieu et l’adresse de prise de vue sont enregistrés selon les autorisations et la réception de la position.",
+              "body": "Lorsque « Enregistrement de localisation GPS » est désactivé, l’application n’enregistre pas de coordonnées dans la fiche de la photo. « Afficher l'adresse » est un réglage distinct. Si ce réglage est activé et que l’accès à la localisation est autorisé, l’application peut rechercher et afficher l’adresse correspondant à la position actuelle et l’enregistrer dans la fiche de la photo lors de la prise de vue. Les données EXIF présentes dans le JPEG d’origine sont conservées telles quelles.",
               "notice": null,
               "icon": {
                 "name": "location_on_rounded",
@@ -14443,7 +14443,7 @@
             {
               "id": "camera-qr",
               "title": "QR-Code scannen",
-              "body": "Lesen und kopieren Sie den Inhalt eines QR-Codes.",
+              "body": "Webseiten aus QR-Codes öffnen oder einfachen Text kopieren.",
               "notice": null,
               "icon": {
                 "name": "qr_code_scanner_rounded",
@@ -14471,7 +14471,7 @@
             {
               "id": "camera-gps-record",
               "title": "GPS-Standortaufzeichnung",
-              "body": "Aufnahmeort und Adresse werden abhängig von Berechtigungen und Standortempfang erfasst.",
+              "body": "Wenn „GPS-Standortaufzeichnung“ deaktiviert ist, speichert die App keine Koordinaten im Fotodatensatz. „Adresse anzeigen“ ist eine separate Einstellung. Wenn sie aktiviert ist und die Standortberechtigung erteilt wurde, kann die App die Adresse anhand des aktuellen Standorts ermitteln, anzeigen und bei der Aufnahme im Fotodatensatz speichern. Die im Original-JPEG enthaltenen EXIF-Daten bleiben unverändert.",
               "notice": null,
               "icon": {
                 "name": "location_on_rounded",
@@ -16125,7 +16125,7 @@
             {
               "id": "camera-qr",
               "title": "Pindai kode QR",
-              "body": "Baca dan salin isi kode QR.",
+              "body": "Buka halaman web dari kode QR atau salin teks biasa.",
               "notice": null,
               "icon": {
                 "name": "qr_code_scanner_rounded",
@@ -16153,7 +16153,7 @@
             {
               "id": "camera-gps-record",
               "title": "Catatan Lokasi GPS",
-              "body": "Lokasi dan alamat pengambilan foto dicatat sesuai izin dan penerimaan lokasi.",
+              "body": "Jika “Catatan Lokasi GPS” dimatikan, aplikasi tidak menyimpan koordinat dalam catatan foto. “Tampilkan Alamat” adalah pengaturan terpisah. Jika pengaturan ini diaktifkan dan izin lokasi diberikan, aplikasi dapat mencari dan menampilkan alamat berdasarkan lokasi saat ini, lalu menyimpannya dalam catatan foto saat foto diambil. Data EXIF yang ada pada JPEG asli dipertahankan apa adanya.",
               "notice": null,
               "icon": {
                 "name": "location_on_rounded",
@@ -17807,7 +17807,7 @@
             {
               "id": "camera-qr",
               "title": "Quét mã QR",
-              "body": "Đọc và sao chép nội dung mã QR.",
+              "body": "Mở trang web từ mã QR hoặc sao chép văn bản thuần.",
               "notice": null,
               "icon": {
                 "name": "qr_code_scanner_rounded",
@@ -17835,7 +17835,7 @@
             {
               "id": "camera-gps-record",
               "title": "Bản ghi vị trí GPS",
-              "body": "Vị trí và địa chỉ chụp được ghi lại tùy theo quyền và tình trạng nhận vị trí.",
+              "body": "Khi tắt “Bản ghi vị trí GPS”, ứng dụng không lưu tọa độ vào bản ghi ảnh. “Hiển thị địa chỉ” là một cài đặt riêng. Khi bật cài đặt này và cấp quyền vị trí, ứng dụng có thể tra và hiển thị địa chỉ theo vị trí hiện tại, rồi lưu địa chỉ vào bản ghi ảnh khi chụp. Dữ liệu EXIF trong JPEG gốc được giữ nguyên.",
               "notice": null,
               "icon": {
                 "name": "location_on_rounded",
@@ -19489,7 +19489,7 @@
             {
               "id": "camera-qr",
               "title": "Сканировать QR-код",
-              "body": "Считывайте и копируйте содержимое QR-кода.",
+              "body": "Открывайте веб-страницы из QR-кодов или копируйте обычный текст.",
               "notice": null,
               "icon": {
                 "name": "qr_code_scanner_rounded",
@@ -19517,7 +19517,7 @@
             {
               "id": "camera-gps-record",
               "title": "Запись местоположения GPS",
-              "body": "Место и адрес съёмки записываются в зависимости от разрешений и приёма данных о местоположении.",
+              "body": "Если настройка «Запись местоположения GPS» выключена, приложение не сохраняет координаты в записи о снимке. «Показать адрес» — отдельная настройка. Если она включена и доступ к местоположению разрешён, приложение может определить и показать адрес по текущему местоположению и сохранить его в записи о снимке при съёмке. Данные EXIF исходного JPEG сохраняются без изменений.",
               "notice": null,
               "icon": {
                 "name": "location_on_rounded",
@@ -21171,7 +21171,7 @@
             {
               "id": "camera-qr",
               "title": "QR kodunu tarayın",
-              "body": "QR kodunun içeriğini okuyup kopyalayın.",
+              "body": "QR kodlarından web sayfalarını açın veya düz metni kopyalayın.",
               "notice": null,
               "icon": {
                 "name": "qr_code_scanner_rounded",
@@ -21199,7 +21199,7 @@
             {
               "id": "camera-gps-record",
               "title": "GPS Konum Kaydı",
-              "body": "Çekim konumu ve adresi, izinlere ve konum alım durumuna göre kaydedilir.",
+              "body": "“GPS Konum Kaydı” kapalıyken uygulama, fotoğraf kaydına koordinat kaydetmez. “Adresi Göster” ayrı bir ayardır. Bu ayar açıksa ve konum izni verilmişse uygulama, mevcut konumdan adresi bulup gösterebilir ve çekim sırasında fotoğraf kaydına kaydedebilir. Orijinal JPEG dosyasındaki EXIF bilgileri olduğu gibi korunur.",
               "notice": null,
               "icon": {
                 "name": "location_on_rounded",
@@ -22853,7 +22853,7 @@
             {
               "id": "camera-qr",
               "title": "مسح رمز الاستجابة السريعة",
-              "body": "اقرأ محتوى رمز QR وانسخه.",
+              "body": "افتح صفحات الويب من رموز QR أو انسخ النص العادي.",
               "notice": null,
               "icon": {
                 "name": "qr_code_scanner_rounded",
@@ -22881,7 +22881,7 @@
             {
               "id": "camera-gps-record",
               "title": "سجل موقع GPS",
-              "body": "تُسجَّل إحداثيات مكان التصوير وعنوانه بحسب الأذونات وحالة استقبال الموقع.",
+              "body": "عند إيقاف «سجل موقع GPS»، لا تُحفَظ الإحداثيات في سجل الصورة داخل التطبيق. «إظهار العنوان» إعداد مستقل. عند تفعيله والسماح للتطبيق بالوصول إلى الموقع، يمكن تحديد العنوان من موقعك الحالي وعرضه وحفظه في سجل الصورة عند التقاطها. تُحفَظ بيانات EXIF الموجودة في ملف JPEG الأصلي كما هي.",
               "notice": null,
               "icon": {
                 "name": "location_on_rounded",
@@ -24535,7 +24535,7 @@
             {
               "id": "camera-qr",
               "title": "Scansiona il codice QR",
-              "body": "Leggi e copia il contenuto di un codice QR.",
+              "body": "Apri pagine web dai codici QR o copia testo semplice.",
               "notice": null,
               "icon": {
                 "name": "qr_code_scanner_rounded",
@@ -24563,7 +24563,7 @@
             {
               "id": "camera-gps-record",
               "title": "Registrazione della posizione GPS",
-              "body": "Luogo e indirizzo dello scatto vengono registrati in base alle autorizzazioni e alla ricezione della posizione.",
+              "body": "Con «Registrazione della posizione GPS» disattivata, l’app non salva le coordinate nella scheda della foto. «Mostra indirizzo» è un’impostazione separata. Se l’impostazione è attiva e l’accesso alla posizione è autorizzato, l’app può trovare e mostrare l’indirizzo della posizione attuale e salvarlo nella scheda della foto al momento dello scatto. I dati EXIF del JPEG originale vengono conservati senza modifiche.",
               "notice": null,
               "icon": {
                 "name": "location_on_rounded",
@@ -26217,7 +26217,7 @@
             {
               "id": "camera-qr",
               "title": "สแกนรหัส QR",
-              "body": "อ่านและคัดลอกเนื้อหาของรหัส QR ได้",
+              "body": "เปิดหน้าเว็บจากรหัส QR หรือคัดลอกข้อความทั่วไป",
               "notice": null,
               "icon": {
                 "name": "qr_code_scanner_rounded",
@@ -26245,7 +26245,7 @@
             {
               "id": "camera-gps-record",
               "title": "บันทึกตำแหน่ง GPS",
-              "body": "บันทึกตำแหน่งและที่อยู่ที่ถ่ายภาพตามสิทธิ์ที่อนุญาตและสภาพการรับข้อมูลตำแหน่ง",
+              "body": "เมื่อปิด “บันทึกตำแหน่ง GPS” แอปจะไม่บันทึกพิกัดลงในบันทึกข้อมูลรูปภาพของแอป “แสดงที่อยู่” เป็นการตั้งค่าแยกต่างหาก เมื่อเปิดการตั้งค่านี้และอนุญาตให้เข้าถึงตำแหน่ง แอปสามารถค้นหาและแสดงที่อยู่จากตำแหน่งปัจจุบัน และบันทึกที่อยู่ลงในบันทึกข้อมูลรูปภาพเมื่อถ่ายภาพได้ ข้อมูล EXIF ในไฟล์ JPEG ต้นฉบับจะคงเดิม",
               "notice": null,
               "icon": {
                 "name": "location_on_rounded",
@@ -26948,5 +26948,5 @@
       ]
     }
   },
-  "contentVersion": "86fe972ff90f4b42"
+  "contentVersion": "2acee784e385bdc1"
 }
