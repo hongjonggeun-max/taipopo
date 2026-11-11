@@ -6,7 +6,6 @@ const root = path.resolve(__dirname, '..');
 const policies = require('./privacy-content.json');
 const recordNotices = require('./record-tool-notices.json');
 const {
-  officialKoreanPolicyUrl,
   renderPolicy,
 } = require('./privacy-page.cjs');
 const locales = {
@@ -51,10 +50,7 @@ for (const [code, t] of Object.entries(locales)) {
   const home = `${shell()}<section class="page-intro"><span class="eyebrow">TAIPOPO</span><h1>${esc(t.title)}</h1><p>${esc(t.intro)}</p><p>${esc(t.storage)}</p><a class="button primary" href="../guide/?lang=${code}">${esc(t.openGuide)}</a></section><section id="features" class="feature-grid"><article class="glass"><h2>${esc(t.records)}</h2><p>${esc(t.recordsText)}</p></article><article class="glass"><h2>${esc(t.photos)}</h2><p>${esc(t.photosText)}</p></article><article class="glass"><h2>${esc(t.settlements)}</h2><p>${esc(t.settlementsText)}</p></article></section><section class="glass"><h2>${esc(t.help)}</h2><a href="support/">${esc(t.support)}</a> · <a href="mailto:taipopo.app@gmail.com">${esc(t.contact)}</a></section>${recordNotice}${footer}`;
   const support = `${shell(true,'support')}<section class="page-intro"><h1>${esc(t.support)}</h1><p>${esc(t.help)}</p><p><a href="mailto:taipopo.app@gmail.com">${esc(t.contact)}: taipopo.app@gmail.com</a></p><a class="button primary" href="../../guide/?lang=${code}">${esc(t.openGuide)}</a></section>${footer}`;
   const policy = renderPolicy(policies[code]);
-  const officialKoreanPolicy = code === 'ko'
-    ? `<section class="glass"><h2>공식 공개 정책</h2><p><a href="${officialKoreanPolicyUrl}">기존 공개 한국어 개인정보처리방침</a></p></section>`
-    : '';
-  const privacy = `${shell(true,'privacy')}<section class="page-intro"><h1>${esc(policy.title)}</h1></section><div class="policy-content">${policy.html}${officialKoreanPolicy}</div>${footer}`;
+  const privacy = `${shell(true,'privacy')}<section class="page-intro"><h1>${esc(policy.title)}</h1></section><div class="policy-content">${policy.html}</div>${footer}`;
   fs.mkdirSync(path.join(dir,'support'),{recursive:true}); fs.mkdirSync(path.join(dir,'privacy'),{recursive:true});
   fs.writeFileSync(path.join(dir,'index.html'),home+'\n'); fs.writeFileSync(path.join(dir,'support','index.html'),support+'\n'); fs.writeFileSync(path.join(dir,'privacy','index.html'),privacy+'\n');
 }

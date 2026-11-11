@@ -66,8 +66,9 @@ for (const code of codes) {
   for (const required of [
     `<html lang="${code}" dir="${expectedDirection}">`,
     `<title>${policyTitle} · TAIPOPO</title>`,
-    '2026-08-23',
-    '2026-11-07',
+    source.effectiveDate,
+    source.revisionDate,
+    source.noticeVersion,
     controller,
     'Google Drive',
     'Google Sign-In',
@@ -123,12 +124,16 @@ for (const code of codes) {
     throw new Error(`Missing website release/account disclosure: ${code}`);
   }
 }
-if (
-  !rootPrivacy.includes(
-    'https://hongjonggeun-max.github.io/taipopo-privacy/privacy/',
-  )
-) {
-  throw new Error('The existing public Korean policy URL was removed.');
+const currentKoreanPolicyLink = '<a href="https://taipopo.app/ko/privacy/">';
+const koreanSupport = fs.readFileSync(path.join(root, 'support/index.html'), 'utf8');
+const localizedKoreanPrivacy = fs.readFileSync(path.join(root, 'ko/privacy/index.html'), 'utf8');
+if (!rootPrivacy.includes(currentKoreanPolicyLink) || !koreanSupport.includes(currentKoreanPolicyLink)) {
+  throw new Error('Korean policy links must point to the current public policy.');
+}
+if ([rootPrivacy, koreanSupport, localizedKoreanPrivacy].some((page) =>
+  page.includes('https://hongjonggeun-max.github.io/taipopo-privacy/privacy/'),
+)) {
+  throw new Error('Korean pages still link to the older public policy.');
 }
 for (const target of codes) {
   if (!rootPrivacy.includes(`href="../${target}/privacy/"`)) {

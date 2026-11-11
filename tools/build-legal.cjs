@@ -45,10 +45,10 @@ function updateSet(code, prefix) {
     const file = path.join(root, prefix, relative);
     let html = fs.readFileSync(file, 'utf8');
     if (relative === 'privacy/index.html') {
-      const legacy = code === 'ko'
-        ? `<section class="glass"><h2>공식 공개 정책</h2><p><a href="${officialKoreanPolicyUrl}">기존 공개 한국어 개인정보처리방침</a></p></section>`
+      const currentPolicyLink = code === 'ko' && prefix === ''
+        ? `<section class="glass"><h2>공식 공개 정책</h2><p><a href="${officialKoreanPolicyUrl}">한국어 개인정보처리방침</a></p></section>`
         : '';
-      html = replacePolicyContent(html, renderPolicy(policy).html + legacy);
+      html = replacePolicyContent(html, renderPolicy(policy).html + currentPolicyLink);
     }
     if (relative === 'support/index.html') {
       html = html.replace(/<section class="glass" data-support-processing="[^"]*">[\s\S]*?<\/section>/gu, '');

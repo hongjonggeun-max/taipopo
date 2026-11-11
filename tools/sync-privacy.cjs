@@ -33,13 +33,14 @@ for (const code of codes) {
   );
   const body = source.privacyPolicyBody;
   const effectiveDate = source.privacyPolicyEffectiveDate;
+  const revisionDate = body?.split('\n').slice(0, 8).join('\n').match(/\d{4}-\d{2}-\d{2}/u)?.[0];
   const controller = code === 'ko' ? '홍종근' : 'Jonggeun Hong';
   const placeholders = body?.match(/\{effectiveDate\}/g) ?? [];
   if (
     typeof body !== 'string' ||
     effectiveDate !== '2026-08-23' ||
     placeholders.length !== 1 ||
-    !body.includes(source.privacyPolicyNoticeVersion) ||
+    !revisionDate ||
     source.privacyPolicyNoticeVersion !== '2026-11-07' ||
     !source.privacyPolicyProcessingNotice?.includes('taipopo-site-theme') ||
     !source.termsOfUseReviewNotice?.includes('2026-11-07') ||
@@ -54,6 +55,7 @@ for (const code of codes) {
   policies[code] = {
     locale: code,
     effectiveDate,
+    revisionDate,
     body,
     noticeVersion: source.privacyPolicyNoticeVersion,
     processingNotice: source.privacyPolicyProcessingNotice,

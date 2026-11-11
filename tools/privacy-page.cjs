@@ -1,5 +1,5 @@
 const officialKoreanPolicyUrl =
-  'https://hongjonggeun-max.github.io/taipopo-privacy/privacy/';
+  'https://taipopo.app/ko/privacy/';
 const webDisclosures = require('./website-disclosures.json');
 
 function reviewedDisclosure(policy) {
@@ -117,7 +117,7 @@ function renderPolicy(policy) {
           return `<section class="glass" data-notice-version="${escapeHtml(policy.noticeVersion)}"><h2>${escapeHtml(heading)}</h2>${renderLines(body)}</section>`;
         })
       : []),
-    renderWebDisclosure(policy, ['geocoder', 'international', 'otherInternational', 'deletion']),
+    renderWebDisclosure(policy, ['international', 'otherInternational', 'deletion']),
   ].join('');
   return { title, html };
 }
