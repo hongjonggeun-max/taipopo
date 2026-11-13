@@ -83,7 +83,6 @@
   "PDF 저장과 공유": "Save and share PDFs",
   "필요할 때 꺼내 쓰는 업무 기록": "Work records when you need them",
   "백업과 복구": "Backup and restore",
-  "기기 파일 또는 선택적 Google Drive 백업": "Device files, SD card or USB, and optional Google Drive backup",
   "함께 더 나은 타이포포로": "Help shape a better TAIPOPO",
   "사용 중 어려운 점부터 작은 개선 아이디어까지.": "From a problem you're having to a small idea for improvement,",
   "남겨주신 이야기를 차근차근 살펴보겠습니다.": "we'll take the time to read what you share.",
@@ -112,7 +111,7 @@
   "안심하고 관리하도록.": "Manage them with confidence.",
   "앱의 개인정보 처리 내용은 기존 공개 개인정보처리방침에서 확인할 수 있습니다. 이 페이지는 정책 원문과 문의 경로를 안내합니다.": "Read the app privacy policy below and find the privacy contact details.",
   "개인정보처리방침 원문": "Privacy policy",
-  "처리하는 정보, 이용 목적, 기기 내 저장, Google Drive·Firebase·ML Kit 등 외부 서비스, 보유·삭제와 문의 방법을 확인하세요.": "Review information handling, purposes, on-device storage, external services including Google Drive, Firebase and ML Kit, retention, deletion and contact details.",
+  "처리하는 정보, 이용 목적, 기기 내 저장, Firebase·ML Kit 등 외부 서비스, 보유·삭제와 문의 방법을 확인하세요.": "Review information handling, purposes, on-device storage, external services including Firebase and ML Kit, retention, deletion and contact details.",
   "개인정보처리방침 읽기": "Read the privacy policy",
   "개인정보 문의 및 삭제 요청": "Privacy questions and deletion requests",
   "개인정보처리자·개인정보 보호책임자: 개인 개발자 홍종근": "Data controller and privacy contact: independent developer Jonggeun Hong",
@@ -138,7 +137,6 @@
   "리포트": "Reports",
   "홈": "Home",
   "TAIPOPO 개인정보처리방침": "TAIPOPO Privacy Policy",
-  "Google Drive 백업은 Google 계정 연결과 권한 허용 후 사용자가 직접 실행합니다.": "You start Google Drive backups after connecting a Google Account and granting permission.",
   "출퇴근부터 근무 사진, 수입·수당·별도 청구와 리포트까지. 일하는 하루를 정리하는 타이포포. Android 출시 준비 중입니다.": "Track work hours, work photos, earnings, allowances and reimbursements with TAIPOPO. Coming to Android.",
   "근무 사진 기록 기능을 설명하는 일러스트": "Illustration of work photo recording",
   "촬영한 사진을 정산과 리포트에 연결하세요.": "Attach captured photos to settlements and reports.",
@@ -157,5 +155,7 @@
   "TAIPOPO의 기록과 사진은 사용자 기기에 저장됩니다. 개발자는 기록을 별도 서버에 보관하지 않습니다. 중요한 데이터는 정기적으로 백업해 주세요.": "TAIPOPO records and photos are stored on your device. The developer does not keep records on a separate server. Back up important data regularly.",
   "이용약관": "Terms of Use",
   "검토 중인 앱 후보는 광고와 신규 PRO 구매가 꺼진 설정입니다. 판매 조건·가격·실제 배포 상태는 확정 후 안내합니다.": "The app candidate under review has ads and new PRO purchases disabled. Sales terms, prices and distribution details will be announced once confirmed.",
-  "앱과 같은 6개 목차에서 기능별 사용법과 주의사항을 확인하세요. 16개 언어를 지원하며 화면 이미지의 원본도 크게 볼 수 있습니다.": "Browse the same six chapters, feature instructions and notices as the app in 16 languages. Open the original screen images for a larger view."
+  "앱과 같은 6개 목차에서 기능별 사용법과 주의사항을 확인하세요. 16개 언어를 지원하며 화면 이미지의 원본도 크게 볼 수 있습니다.": "Browse the same six chapters, feature instructions and notices as the app in 16 languages. Open the original screen images for a larger view.",
+  "TAIPOPO는 백업 ZIP을 기기에서 만듭니다. 외부로 내보내면 사용자가 공유창에서 선택한 앱에 파일이 전달됩니다. 외부에 저장한 사본은 해당 저장 위치에서 직접 관리하거나 삭제할 수 있습니다.": "TAIPOPO creates the backup ZIP on your device. When you export it, the files are passed to the app you select in the share sheet. Manage or delete copies stored outside TAIPOPO at the location where you saved them.",
+  "근무 기록, 설정, 사진 등을 백업 ZIP으로 기기에 보관합니다.": "Save work records, settings, photos, and other data on your device as a backup ZIP."
 }

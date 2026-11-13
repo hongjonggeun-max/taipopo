@@ -7,11 +7,10 @@
       "qrLegacy": "ML Kit가 포함된 버전은 QR 영상을 기기에서 처리하더라도 SDK 설치 식별자·기기·앱·이벤트 등의 기술 진단 정보를 외부에서 처리할 수 있습니다. Firebase 진단 선택이 ML Kit 처리를 제어하지는 않습니다.",
       "qrCandidate": "ZXing을 사용하는 버전은 기기에서 QR 이미지를 처리하며 QR 스캔에 ML Kit를 사용하지 않습니다. 앱 업데이트로 이전 진단 대기열이나 이미 전송된 서버 데이터가 자동으로 삭제되지는 않습니다. 남은 진단 정보는 별도로 전송될 수 있습니다.",
       "international": "주소 변환의 실제 제공자·수신 법인·처리국·보유기간·전송 보호 조건과 적용되는 국외 이전 근거는 기기와 서비스에 따라 확인이 필요합니다. 모든 처리의 국내 한정 또는 모든 경로의 암호화를 확정하여 안내하지 않습니다.",
-      "deletion": "진단 철회, 로컬 초기화, Google 연결 해제, Drive 백업 삭제, 외부 사본 삭제와 이미 전송된 진단 삭제는 서로 다른 절차입니다. 이미 전송된 자료나 수신 메일의 처리·삭제 문의는 taipopo.app@gmail.com으로 보내 주세요. 확인되지 않은 삭제 완료나 보관 일수를 약속하지 않습니다.",
-      "authScope": "Google 연결, Drive 백업·복원 및 백업 관리 등 인증이 필요한 기능에서 사용자가 선택한 Google 계정을 사용합니다. Drive 백업은 appDataFolder를 사용하며 전체 Drive 파일 접근 권한을 사용하지 않습니다.",
+      "deletion": "진단 철회, 로컬 초기화, 외부 사본 삭제와 이미 전송된 진단 삭제는 서로 다른 절차입니다. 이미 전송된 자료나 수신 메일의 처리·삭제 문의는 taipopo.app@gmail.com으로 보내 주세요. 확인되지 않은 삭제 완료나 보관 일수를 약속하지 않습니다.",
       "accountScope": "확인한 앱에는 별도의 TAIPOPO 회원가입 절차나 앱 비밀번호가 없습니다.",
       "localConfig": "확인한 로컬 후보 설정에서는 광고 표시와 신규 PRO 구매가 비활성화되어 있습니다. 기존 구매 권한 처리와 Google Play 배포 현황은 구분해야 합니다.",
-      "otherInternational": "Google Sign-In·Drive, Firebase, 문의 메일과 홈페이지 호스팅의 실제 수신 법인·처리국·보유 및 적용 이전 근거도 사용 중인 서비스·계약에 따라 별도 확인이 필요합니다."
+      "otherInternational": "Firebase, 문의 메일과 홈페이지 호스팅의 실제 수신 법인·처리국·보유 및 적용 이전 근거도 사용 중인 서비스·계약에 따라 별도 확인이 필요합니다."
     },
     "en": {
       "heading": "External processing, deletion and app versions",
@@ -19,11 +18,10 @@
       "qrLegacy": "Versions containing ML Kit may process technical diagnostics externally, including SDK installation identifiers, device, app and event information, even when QR images are decoded on the device. Firebase diagnostic choices do not control ML Kit processing.",
       "qrCandidate": "Versions that use ZXing process QR images on the device and do not use ML Kit for QR scanning. Updating the app does not automatically delete earlier diagnostic queues or data already sent to servers. Remaining diagnostic data may be transmitted separately.",
       "international": "The address service's actual provider, recipient entity, processing countries, retention, transport protection and applicable international-transfer basis require confirmation for the device and service. We do not assert domestic-only processing or encryption on every path.",
-      "deletion": "Withdrawing diagnostics, resetting local data, disconnecting Google, deleting Drive backups, deleting external copies and deleting transmitted diagnostics are different procedures. Contact taipopo.app@gmail.com about transmitted data or received email. Unverified deletion completion or retention periods are not promised.",
-      "authScope": "The selected Google account is used for Google connection, Drive backup, restore and backup management when authentication is needed. Drive backups use appDataFolder, not access to all Drive files.",
+      "deletion": "Withdrawing diagnostics, resetting local data, deleting external copies and deleting transmitted diagnostics are different procedures. Contact taipopo.app@gmail.com about transmitted data or received email. Unverified deletion completion or retention periods are not promised.",
       "accountScope": "The reviewed app has no separate TAIPOPO registration process or app password.",
       "localConfig": "In the reviewed local candidate configuration, ad display and new PRO purchases are disabled. Existing purchase entitlement handling and actual Google Play distribution must be distinguished.",
-      "otherInternational": "The actual recipient entities, processing countries, retention and applicable transfer grounds for Google Sign-In/Drive, Firebase, support email and website hosting also require separate confirmation against the services and contracts in use."
+      "otherInternational": "The actual recipient entities, processing countries, retention and applicable transfer grounds for Firebase, support email and website hosting also require separate confirmation against the services and contracts in use."
     },
     "ar": {
       "heading": "المعالجة الخارجية والحذف وإصدارات التطبيق",
@@ -31,11 +29,10 @@
       "qrLegacy": "قد تعالج الإصدارات التي تتضمن ML Kit معلومات تشخيص تقنية خارج الجهاز، مثل معرّفات تثبيت SDK ومعلومات الجهاز والتطبيق والأحداث، حتى مع فك صور QR محليا. لا تتحكم خيارات تشخيص Firebase في معالجة ML Kit.",
       "qrCandidate": "تعالج الإصدارات التي تستخدم ZXing صور رموز QR على الجهاز، ولا تستخدم ML Kit لمسحها. لا يؤدي تحديث التطبيق تلقائيًا إلى حذف قوائم انتظار التشخيص السابقة أو البيانات المرسلة بالفعل إلى الخوادم. قد تُرسل بيانات التشخيص المتبقية بشكل منفصل.",
       "international": "يلزم التحقق، بحسب الجهاز والخدمة، من مزود خدمة العنوان والجهة المستلمة وبلدان المعالجة والاحتفاظ وحماية النقل والأساس المنطبق للنقل الدولي. لا نؤكد اقتصار المعالجة على البلد أو تشفير جميع المسارات.",
-      "deletion": "سحب التشخيص وإعادة ضبط البيانات المحلية وفصل Google وحذف نسخ Drive والنسخ الخارجية والتشخيص المرسل إجراءات مختلفة. للاستفسار عن البيانات المرسلة أو البريد المستلم: taipopo.app@gmail.com. لا نَعِد باكتمال حذف أو مدة احتفاظ غير متحقق منها.",
-      "authScope": "يُستخدم حساب Google الذي يختاره المستخدم لربط Google ونسخ Drive الاحتياطية واستعادتها وإدارتها عند الحاجة إلى المصادقة. تستخدم النسخ appDataFolder وليس الوصول إلى جميع ملفات Drive.",
+      "deletion": "سحب التشخيص وإعادة ضبط البيانات المحلية وحذف النسخ الخارجية والتشخيص المرسل إجراءات مختلفة. للاستفسار عن البيانات المرسلة أو البريد المستلم: taipopo.app@gmail.com. لا نَعِد باكتمال حذف أو مدة احتفاظ غير متحقق منها.",
       "accountScope": "لا يحتوي التطبيق الذي تمت مراجعته على تسجيل منفصل في TAIPOPO أو كلمة مرور خاصة به.",
       "localConfig": "في إعداد النسخة المحلية المرشحة الذي تمت مراجعته، عرض الإعلانات ومشتريات PRO الجديدة معطلان. معالجة استحقاقات الشراء السابقة تختلف عن حالة التوزيع الفعلية على Google Play.",
-      "otherInternational": "تحتاج الجهات المستلمة وبلدان المعالجة والاحتفاظ وأسس النقل المنطبقة على Google Sign-In وDrive وFirebase وبريد الدعم واستضافة الموقع إلى تحقق منفصل وفقا للخدمات والعقود المستخدمة."
+      "otherInternational": "تحتاج الجهات المستلمة وبلدان المعالجة والاحتفاظ وأسس النقل المنطبقة على Firebase وبريد الدعم واستضافة الموقع إلى تحقق منفصل وفقا للخدمات والعقود المستخدمة."
     },
     "de": {
       "heading": "Externe Verarbeitung, Löschung und App-Versionen",
@@ -43,11 +40,10 @@
       "qrLegacy": "Versionen mit ML Kit können technische Diagnosedaten extern verarbeiten, etwa SDK-Installationskennungen sowie Geräte-, App- und Ereignisinformationen, auch bei lokaler QR-Decodierung. Firebase-Diagnoseeinstellungen steuern ML Kit nicht.",
       "qrCandidate": "Versionen mit ZXing verarbeiten QR-Bilder auf dem Gerät und verwenden beim Scannen von QR-Codes kein ML Kit. Eine Aktualisierung der App löscht weder frühere Diagnosewarteschlangen noch bereits an Server übertragene Daten automatisch. Verbleibende Diagnosedaten können separat übertragen werden.",
       "international": "Anbieter, empfangende Rechtsperson, Verarbeitungsländer, Aufbewahrung, Transportschutz und anwendbare Grundlage internationaler Übermittlungen des Adressdienstes sind je nach Gerät und Dienst zu klären. Wir bestätigen weder ausschließlich inländische Verarbeitung noch Verschlüsselung aller Wege.",
-      "deletion": "Diagnosewiderruf, lokales Zurücksetzen, Trennen von Google und Löschen von Drive-Sicherungen, externen Kopien oder übertragenen Diagnosen sind verschiedene Verfahren. Fragen zu übertragenen Daten oder empfangenen E-Mails: taipopo.app@gmail.com. Unbestätigte Löschungen oder Aufbewahrungsfristen werden nicht zugesichert.",
-      "authScope": "Das ausgewählte Google-Konto wird bei erforderlicher Authentifizierung für die Google-Verbindung, Drive-Sicherung, Wiederherstellung und Sicherungsverwaltung verwendet. Sicherungen nutzen appDataFolder, keinen Zugriff auf alle Drive-Dateien.",
+      "deletion": "Diagnosewiderruf, lokales Zurücksetzen, Löschen von externen Kopien oder übertragenen Diagnosen sind verschiedene Verfahren. Fragen zu übertragenen Daten oder empfangenen E-Mails: taipopo.app@gmail.com. Unbestätigte Löschungen oder Aufbewahrungsfristen werden nicht zugesichert.",
       "accountScope": "Die geprüfte App hat keine separate TAIPOPO-Registrierung oder eigenes App-Passwort.",
       "localConfig": "In der geprüften lokalen Kandidatenkonfiguration sind Werbung und neue PRO-Käufe deaktiviert. Bestehende Kaufberechtigungen und die tatsächliche Google-Play-Verteilung sind zu unterscheiden.",
-      "otherInternational": "Empfangende Rechtspersonen, Verarbeitungsländer, Aufbewahrung und anwendbare Übermittlungsgrundlagen für Google Sign-In/Drive, Firebase, Support-E-Mails und Website-Hosting sind ebenfalls anhand der genutzten Dienste und Verträge gesondert zu klären."
+      "otherInternational": "Empfangende Rechtspersonen, Verarbeitungsländer, Aufbewahrung und anwendbare Übermittlungsgrundlagen für Firebase, Support-E-Mails und Website-Hosting sind ebenfalls anhand der genutzten Dienste und Verträge gesondert zu klären."
     },
     "es": {
       "heading": "Tratamiento externo, eliminación y versiones",
@@ -55,11 +51,10 @@
       "qrLegacy": "Las versiones con ML Kit pueden tratar externamente diagnósticos técnicos, como identificadores de instalación del SDK e información del dispositivo, la app y eventos, aunque decodifiquen las imágenes QR localmente. La elección de diagnóstico de Firebase no controla ML Kit.",
       "qrCandidate": "Las versiones que usan ZXing procesan las imágenes QR en el dispositivo y no usan ML Kit para escanear códigos QR. Actualizar la aplicación no elimina automáticamente las colas de diagnóstico anteriores ni los datos ya enviados a servidores. Los datos de diagnóstico restantes podrían enviarse por separado.",
       "international": "Deben confirmarse según el dispositivo y servicio el proveedor de direcciones, entidad receptora, países, conservación, protección de transporte y base aplicable a transferencias internacionales. No afirmamos un tratamiento exclusivamente nacional ni cifrado en todas las rutas.",
-      "deletion": "Retirar diagnósticos, restablecer datos locales, desconectar Google y eliminar copias de Drive, copias externas o diagnósticos enviados son procedimientos distintos. Consultas sobre datos enviados o correo recibido: taipopo.app@gmail.com. No se prometen eliminaciones ni plazos de conservación sin verificar.",
-      "authScope": "La cuenta Google elegida se usa para conexión Google, copia Drive, restauración y gestión de copias cuando se requiere autenticación. Las copias usan appDataFolder, sin acceso a todos los archivos Drive.",
+      "deletion": "Retirar diagnósticos, restablecer datos locales y eliminar copias externas o diagnósticos enviados son procedimientos distintos. Consultas sobre datos enviados o correo recibido: taipopo.app@gmail.com. No se prometen eliminaciones ni plazos de conservación sin verificar.",
       "accountScope": "La app revisada no tiene registro TAIPOPO independiente ni contraseña propia.",
       "localConfig": "En la configuración local del candidato revisado están desactivados los anuncios y las nuevas compras PRO. El tratamiento de derechos de compras existentes es distinto de la distribución real en Google Play.",
-      "otherInternational": "También requieren confirmación separada las entidades receptoras, países, conservación y bases aplicables a transferencias de Google Sign-In/Drive, Firebase, correo de soporte y alojamiento, según los servicios y contratos utilizados."
+      "otherInternational": "También requieren confirmación separada las entidades receptoras, países, conservación y bases aplicables a transferencias de Firebase, correo de soporte y alojamiento, según los servicios y contratos utilizados."
     },
     "fr": {
       "heading": "Traitement externe, suppression et versions",
@@ -67,11 +62,10 @@
       "qrLegacy": "Les versions avec ML Kit peuvent traiter à l'extérieur des diagnostics techniques, dont des identifiants d'installation SDK et des informations sur l'appareil, l'application et les événements, même si les QR sont décodés localement. Le choix de diagnostic Firebase ne contrôle pas ML Kit.",
       "qrCandidate": "Les versions qui utilisent ZXing traitent les images de codes QR sur l’appareil et n’utilisent pas ML Kit pour les lire. La mise à jour de l’application ne supprime pas automatiquement les anciennes files d’attente de diagnostic ni les données déjà envoyées aux serveurs. Les données de diagnostic restantes peuvent être transmises séparément.",
       "international": "Le fournisseur d'adresses, l'entité destinataire, les pays, la conservation, la protection du transport et la base applicable aux transferts internationaux doivent être confirmés selon l'appareil et le service. Nous ne confirmons ni un traitement uniquement national ni le chiffrement de tous les chemins.",
-      "deletion": "Retrait du diagnostic, réinitialisation locale, déconnexion Google et suppression des sauvegardes Drive, copies externes ou diagnostics transmis sont distincts. Pour les données transmises ou courriels reçus : taipopo.app@gmail.com. Aucun délai ni achèvement de suppression non vérifié n'est promis.",
-      "authScope": "Le compte Google choisi sert à la connexion Google, à la sauvegarde Drive, à la restauration et à la gestion des sauvegardes quand une authentification est nécessaire. Les sauvegardes utilisent appDataFolder, sans accès à tous les fichiers Drive.",
+      "deletion": "Retrait du diagnostic, réinitialisation locale et suppression des copies externes ou diagnostics transmis sont distincts. Pour les données transmises ou courriels reçus : taipopo.app@gmail.com. Aucun délai ni achèvement de suppression non vérifié n'est promis.",
       "accountScope": "L’app examinée n’a ni inscription TAIPOPO distincte ni mot de passe propre.",
       "localConfig": "Dans la configuration locale du candidat examinée, les publicités et nouveaux achats PRO sont désactivés. Le traitement des droits d’achats existants se distingue de la distribution réelle sur Google Play.",
-      "otherInternational": "Les entités destinataires, pays de traitement, conservation et bases de transfert applicables à Google Sign-In/Drive, Firebase, aux courriels d’assistance et à l’hébergement doivent aussi être confirmés séparément selon les services et contrats utilisés."
+      "otherInternational": "Les entités destinataires, pays de traitement, conservation et bases de transfert applicables à Firebase, aux courriels d’assistance et à l’hébergement doivent aussi être confirmés séparément selon les services et contrats utilisés."
     },
     "hi": {
       "heading": "बाहरी प्रोसेसिंग, मिटाना और ऐप संस्करण",
@@ -79,11 +73,10 @@
       "qrLegacy": "ML Kit वाले संस्करण QR चित्र डिवाइस पर पढ़ने पर भी SDK इंस्टॉलेशन पहचानकर्ता, डिवाइस, ऐप और इवेंट जैसी तकनीकी निदान जानकारी बाहर प्रोसेस कर सकते हैं। Firebase निदान का चुनाव ML Kit को नियंत्रित नहीं करता।",
       "qrCandidate": "ZXing का इस्तेमाल करने वाले संस्करण QR इमेज को डिवाइस पर प्रोसेस करते हैं और QR स्कैनिंग के लिए ML Kit का इस्तेमाल नहीं करते। ऐप अपडेट करने से पुरानी निदान कतारें या सर्वर पर पहले भेजा गया डेटा अपने-आप नहीं मिटता। बचा हुआ निदान डेटा अलग से भेजा जा सकता है।",
       "international": "पता सेवा के वास्तविक प्रदाता, प्राप्तकर्ता संस्था, प्रोसेसिंग देश, डेटा रखने की अवधि, परिवहन सुरक्षा और लागू अंतरराष्ट्रीय हस्तांतरण आधार की डिवाइस और सेवा के अनुसार पुष्टि जरूरी है। केवल देश के भीतर प्रोसेसिंग या हर मार्ग पर एन्क्रिप्शन का दावा नहीं किया जाता।",
-      "deletion": "निदान वापस लेना, स्थानीय रीसेट, Google से अलग होना और Drive बैकअप, बाहरी प्रतियाँ या भेजे निदान मिटाना अलग प्रक्रियाएँ हैं। भेजे डेटा या मिले ईमेल के लिए taipopo.app@gmail.com से संपर्क करें। अपुष्ट मिटाने या रखने की अवधि का वादा नहीं है।",
-      "authScope": "चुना Google खाता Google कनेक्शन, Drive बैकअप, बहाली और बैकअप प्रबंधन में प्रमाणीकरण जरूरी होने पर इस्तेमाल होता है। बैकअप appDataFolder का उपयोग करते हैं, सभी Drive फ़ाइलों तक पहुँच का नहीं।",
+      "deletion": "निदान वापस लेना, स्थानीय रीसेट और बाहरी प्रतियाँ या भेजे निदान मिटाना अलग प्रक्रियाएँ हैं। भेजे डेटा या मिले ईमेल के लिए taipopo.app@gmail.com से संपर्क करें। अपुष्ट मिटाने या रखने की अवधि का वादा नहीं है।",
       "accountScope": "जाँचे ऐप में अलग TAIPOPO पंजीकरण प्रक्रिया या ऐप पासवर्ड नहीं है।",
       "localConfig": "जाँचे स्थानीय उम्मीदवार की सेटिंग में विज्ञापन और नई PRO खरीद बंद हैं। पुराने खरीद अधिकारों की व्यवस्था और वास्तविक Google Play वितरण अलग हैं।",
-      "otherInternational": "Google Sign-In/Drive, Firebase, सहायता ईमेल और वेबसाइट होस्टिंग की प्राप्तकर्ता संस्थाएँ, प्रोसेसिंग देश, डेटा रखने की अवधि और लागू हस्तांतरण आधार भी उपयोग की सेवाओं और अनुबंधों से अलग सत्यापन माँगते हैं।"
+      "otherInternational": "Firebase, सहायता ईमेल और वेबसाइट होस्टिंग की प्राप्तकर्ता संस्थाएँ, प्रोसेसिंग देश, डेटा रखने की अवधि और लागू हस्तांतरण आधार भी उपयोग की सेवाओं और अनुबंधों से अलग सत्यापन माँगते हैं।"
     },
     "id": {
       "heading": "Pemrosesan eksternal, penghapusan dan versi aplikasi",
@@ -91,11 +84,10 @@
       "qrLegacy": "Versi dengan ML Kit dapat memproses diagnostik teknis secara eksternal, termasuk pengenal instalasi SDK serta informasi perangkat, aplikasi dan peristiwa, meski gambar QR dibaca di perangkat. Pilihan diagnostik Firebase tidak mengendalikan ML Kit.",
       "qrCandidate": "Versi yang menggunakan ZXing memproses gambar kode QR di perangkat dan tidak menggunakan ML Kit untuk memindai kode QR. Memperbarui aplikasi tidak otomatis menghapus antrean diagnostik sebelumnya atau data yang sudah dikirim ke server. Data diagnostik yang tersisa dapat dikirim secara terpisah.",
       "international": "Penyedia alamat, badan penerima, negara pemrosesan, retensi, perlindungan transportasi dan dasar transfer internasional yang berlaku perlu dikonfirmasi sesuai perangkat dan layanan. Kami tidak menyatakan pemrosesan hanya di dalam negeri atau enkripsi pada semua jalur.",
-      "deletion": "Menarik diagnostik, mereset data lokal, memutus Google serta menghapus cadangan Drive, salinan eksternal atau diagnostik terkirim adalah prosedur berbeda. Pertanyaan tentang data terkirim atau email diterima: taipopo.app@gmail.com. Penghapusan atau masa retensi yang belum diverifikasi tidak dijanjikan.",
-      "authScope": "Akun Google pilihan digunakan untuk koneksi Google, cadangan Drive, pemulihan dan pengelolaan cadangan saat autentikasi diperlukan. Cadangan menggunakan appDataFolder, bukan akses ke semua file Drive.",
+      "deletion": "Menarik diagnostik, mereset data lokal serta menghapus salinan eksternal atau diagnostik terkirim adalah prosedur berbeda. Pertanyaan tentang data terkirim atau email diterima: taipopo.app@gmail.com. Penghapusan atau masa retensi yang belum diverifikasi tidak dijanjikan.",
       "accountScope": "Aplikasi yang ditinjau tidak memiliki pendaftaran TAIPOPO terpisah atau kata sandi aplikasi sendiri.",
       "localConfig": "Dalam konfigurasi kandidat lokal yang ditinjau, iklan dan pembelian PRO baru dinonaktifkan. Penanganan hak pembelian lama berbeda dari distribusi aktual di Google Play.",
-      "otherInternational": "Badan penerima, negara pemrosesan, retensi dan dasar transfer untuk Google Sign-In/Drive, Firebase, email dukungan serta hosting situs juga perlu dikonfirmasi terpisah berdasarkan layanan dan kontrak yang digunakan."
+      "otherInternational": "Badan penerima, negara pemrosesan, retensi dan dasar transfer untuk Firebase, email dukungan serta hosting situs juga perlu dikonfirmasi terpisah berdasarkan layanan dan kontrak yang digunakan."
     },
     "it": {
       "heading": "Trattamento esterno, eliminazione e versioni",
@@ -103,11 +95,10 @@
       "qrLegacy": "Le versioni con ML Kit possono trattare all'esterno diagnostica tecnica, inclusi identificatori di installazione SDK e informazioni su dispositivo, app ed eventi, anche decodificando le immagini QR localmente. La scelta diagnostica Firebase non controlla ML Kit.",
       "qrCandidate": "Le versioni che usano ZXing elaborano le immagini dei codici QR sul dispositivo e non usano ML Kit per la scansione. Aggiornare l’app non elimina automaticamente le code diagnostiche precedenti o i dati già inviati ai server. I dati diagnostici rimanenti possono essere trasmessi separatamente.",
       "international": "Fornitore degli indirizzi, entità destinataria, paesi, conservazione, protezione del trasporto e base applicabile ai trasferimenti internazionali richiedono conferma per dispositivo e servizio. Non attestiamo trattamento solo nazionale o cifratura di ogni percorso.",
-      "deletion": "Revoca della diagnostica, ripristino locale, disconnessione Google ed eliminazione di backup Drive, copie esterne o diagnostica trasmessa sono procedure diverse. Per dati trasmessi o email ricevute: taipopo.app@gmail.com. Non promettiamo eliminazioni o tempi di conservazione non verificati.",
-      "authScope": "L’account Google scelto viene usato per connessione Google, backup Drive, ripristino e gestione dei backup quando serve autenticazione. I backup usano appDataFolder, non l’accesso a tutti i file Drive.",
+      "deletion": "Revoca della diagnostica, ripristino locale ed eliminazione di copie esterne o diagnostica trasmessa sono procedure diverse. Per dati trasmessi o email ricevute: taipopo.app@gmail.com. Non promettiamo eliminazioni o tempi di conservazione non verificati.",
       "accountScope": "L’app esaminata non ha una registrazione TAIPOPO separata o una password propria.",
       "localConfig": "Nella configurazione locale del candidato esaminato, pubblicità e nuovi acquisti PRO sono disattivati. La gestione dei diritti di acquisto esistenti è distinta dalla distribuzione effettiva su Google Play.",
-      "otherInternational": "Entità destinatarie, paesi di trattamento, conservazione e basi di trasferimento applicabili a Google Sign-In/Drive, Firebase, email di assistenza e hosting richiedono anch’essi verifica separata secondo i servizi e contratti utilizzati."
+      "otherInternational": "Entità destinatarie, paesi di trattamento, conservazione e basi di trasferimento applicabili a Firebase, email di assistenza e hosting richiedono anch’essi verifica separata secondo i servizi e contratti utilizzati."
     },
     "ja": {
       "heading": "外部処理・削除とアプリのバージョン",
@@ -115,11 +106,10 @@
       "qrLegacy": "ML Kitを含む版では、QR画像を端末内で処理していても、SDKのインストール識別子、端末・アプリ・イベントなどの技術診断情報が外部で処理される場合があります。Firebase診断の選択はML Kitを制御しません。",
       "qrCandidate": "ZXingを使用するバージョンは、QRコードの画像を端末上で処理し、QRコードの読み取りにML Kitを使用しません。アプリを更新しても、以前の診断データの送信待ちキューやサーバーに送信済みのデータが自動で削除されることはありません。残っている診断データは別途送信される場合があります。",
       "international": "住所サービスの実際の提供者、受領法人、処理国、保持期間、転送保護および適用される国外移転の根拠は、端末とサービスに応じた確認が必要です。国内限定の処理や全経路の暗号化を確定して案内しません。",
-      "deletion": "診断の撤回、ローカル初期化、Google接続解除、Driveバックアップ・外部コピー・送信済み診断の削除は別の手続きです。送信済みデータや受信メールはtaipopo.app@gmail.comへお問い合わせください。未確認の削除完了や保持日数を約束しません。",
-      "authScope": "選択したGoogleアカウントを、Google接続、Driveバックアップ・復元・バックアップ管理など認証が必要な機能で使用します。バックアップはappDataFolderを使用し、Drive全ファイルへのアクセスは使用しません。",
+      "deletion": "診断の撤回、ローカル初期化、外部コピー・送信済み診断の削除は別の手続きです。送信済みデータや受信メールはtaipopo.app@gmail.comへお問い合わせください。未確認の削除完了や保持日数を約束しません。",
       "accountScope": "確認したアプリには別個のTAIPOPO会員登録手続きやアプリのパスワードはありません。",
       "localConfig": "確認したローカル候補の設定では広告表示と新規PRO購入は無効です。既存購入権限の処理と実際のGoogle Play配信状況は区別が必要です。",
-      "otherInternational": "Google Sign-In・Drive、Firebase、問い合わせメール、サイトホスティングの受領法人・処理国・保持・適用される移転根拠も、利用するサービスと契約に照らした個別確認が必要です。"
+      "otherInternational": "Firebase、問い合わせメール、サイトホスティングの受領法人・処理国・保持・適用される移転根拠も、利用するサービスと契約に照らした個別確認が必要です。"
     },
     "pt": {
       "heading": "Tratamento externo, exclusão e versões",
@@ -127,11 +117,10 @@
       "qrLegacy": "Versões com ML Kit podem tratar diagnósticos técnicos externamente, como identificadores de instalação do SDK e informações de dispositivo, aplicativo e eventos, mesmo decodificando imagens QR no dispositivo. A escolha de diagnóstico Firebase não controla o ML Kit.",
       "qrCandidate": "As versões que usam ZXing processam imagens de códigos QR no dispositivo e não usam ML Kit para ler esses códigos. Atualizar o app não exclui automaticamente as filas de diagnóstico anteriores nem os dados já enviados aos servidores. Os dados de diagnóstico restantes podem ser enviados separadamente.",
       "international": "Fornecedor de endereços, entidade destinatária, países, retenção, proteção do transporte e base aplicável a transferências internacionais precisam ser confirmados conforme dispositivo e serviço. Não afirmamos tratamento exclusivamente nacional ou criptografia em todas as rotas.",
-      "deletion": "Retirar diagnósticos, redefinir dados locais, desconectar Google e excluir backups Drive, cópias externas ou diagnósticos enviados são procedimentos diferentes. Dúvidas sobre dados enviados ou emails recebidos: taipopo.app@gmail.com. Não prometemos exclusões ou prazos de retenção não verificados.",
-      "authScope": "A conta Google escolhida é usada na conexão Google, backup Drive, restauração e gestão de backups quando a autenticação é necessária. Os backups usam appDataFolder, não acesso a todos os arquivos Drive.",
+      "deletion": "Retirar diagnósticos, redefinir dados locais e excluir cópias externas ou diagnósticos enviados são procedimentos diferentes. Dúvidas sobre dados enviados ou emails recebidos: taipopo.app@gmail.com. Não prometemos exclusões ou prazos de retenção não verificados.",
       "accountScope": "O aplicativo revisado não tem cadastro TAIPOPO separado nem senha própria.",
       "localConfig": "Na configuração local do candidato revisado, anúncios e novas compras PRO estão desativados. O tratamento de direitos de compras existentes difere da distribuição real no Google Play.",
-      "otherInternational": "Entidades destinatárias, países, retenção e bases de transferência aplicáveis a Google Sign-In/Drive, Firebase, email de suporte e hospedagem também precisam de confirmação separada conforme serviços e contratos utilizados."
+      "otherInternational": "Entidades destinatárias, países, retenção e bases de transferência aplicáveis a Firebase, email de suporte e hospedagem também precisam de confirmação separada conforme serviços e contratos utilizados."
     },
     "ru": {
       "heading": "Внешняя обработка, удаление и версии приложения",
@@ -139,11 +128,10 @@
       "qrLegacy": "Версии с ML Kit могут обрабатывать техническую диагностику вне устройства, включая идентификаторы установки SDK и сведения об устройстве, приложении и событиях, даже при локальном распознавании QR. Выбор диагностики Firebase не управляет ML Kit.",
       "qrCandidate": "Версии с ZXing обрабатывают изображения QR-кодов на устройстве и не используют ML Kit для сканирования. Обновление приложения не удаляет автоматически прежние очереди диагностических данных или данные, уже отправленные на серверы. Оставшиеся диагностические данные могут передаваться отдельно.",
       "international": "Фактический поставщик адресной службы, юридическое лицо получателя, страны обработки, сроки хранения, защита передачи и применимое основание международной передачи требуют проверки для устройства и службы. Мы не утверждаем обработку только внутри страны или шифрование всех путей.",
-      "deletion": "Отзыв диагностики, локальный сброс, отключение Google и удаление копий Drive, внешних копий или отправленной диагностики — разные процедуры. По отправленным данным и полученным письмам: taipopo.app@gmail.com. Непроверенные сроки хранения и завершение удаления не обещаются.",
-      "authScope": "Выбранный аккаунт Google используется для подключения Google, копирования Drive, восстановления и управления копиями, когда нужна аутентификация. Копии используют appDataFolder, а не доступ ко всем файлам Drive.",
+      "deletion": "Отзыв диагностики, локальный сброс и удаление внешних копий или отправленной диагностики — разные процедуры. По отправленным данным и полученным письмам: taipopo.app@gmail.com. Непроверенные сроки хранения и завершение удаления не обещаются.",
       "accountScope": "В проверенном приложении нет отдельной регистрации TAIPOPO или собственного пароля.",
       "localConfig": "В проверенной конфигурации локального кандидата реклама и новые покупки PRO отключены. Обработку прав прежних покупок следует отличать от фактического распространения в Google Play.",
-      "otherInternational": "Юридические лица получателей, страны обработки, хранение и применимые основания передачи для Google Sign-In/Drive, Firebase, писем поддержки и хостинга сайта также требуют отдельной проверки по используемым службам и договорам."
+      "otherInternational": "Юридические лица получателей, страны обработки, хранение и применимые основания передачи для Firebase, писем поддержки и хостинга сайта также требуют отдельной проверки по используемым службам и договорам."
     },
     "th": {
       "heading": "การประมวลผลภายนอก การลบ และรุ่นแอป",
@@ -151,11 +139,10 @@
       "qrLegacy": "รุ่นที่มี ML Kit อาจประมวลผลข้อมูลวินิจฉัยทางเทคนิคภายนอก เช่น รหัสการติดตั้ง SDK ข้อมูลอุปกรณ์ แอป และเหตุการณ์ แม้ถอดรหัสภาพ QR บนอุปกรณ์ ตัวเลือกวินิจฉัย Firebase ไม่ได้ควบคุม ML Kit",
       "qrCandidate": "เวอร์ชันที่ใช้ ZXing จะประมวลผลภาพรหัส QR บนอุปกรณ์และไม่ใช้ ML Kit ในการสแกนรหัส QR การอัปเดตแอปจะไม่ลบคิวข้อมูลการวินิจฉัยเดิมหรือข้อมูลที่ส่งไปยังเซิร์ฟเวอร์แล้วโดยอัตโนมัติ ข้อมูลการวินิจฉัยที่เหลืออาจถูกส่งแยกต่างหาก",
       "international": "ผู้ให้บริการที่อยู่ นิติบุคคลผู้รับ ประเทศประมวลผล ระยะเก็บรักษา การป้องกันการส่ง และฐานการโอนข้อมูลระหว่างประเทศที่ใช้ ต้องตรวจสอบตามอุปกรณ์และบริการ เราไม่ยืนยันว่าประมวลผลภายในประเทศเท่านั้นหรือเข้ารหัสทุกเส้นทาง",
-      "deletion": "การถอนวินิจฉัย รีเซ็ตข้อมูลในเครื่อง ตัดการเชื่อมต่อ Google และลบสำรอง Drive สำเนาภายนอก หรือวินิจฉัยที่ส่งแล้วเป็นคนละขั้นตอน สอบถามข้อมูลที่ส่งหรืออีเมลที่รับได้ที่ taipopo.app@gmail.com ไม่รับรองการลบหรือระยะเก็บที่ยังไม่ตรวจสอบ",
-      "authScope": "ใช้บัญชี Google ที่เลือกสำหรับการเชื่อมต่อ Google สำรอง Drive กู้คืน และจัดการสำรองเมื่อจำเป็นต้องยืนยันตัวตน สำรองใช้ appDataFolder ไม่ใช่สิทธิ์เข้าถึงไฟล์ Drive ทั้งหมด",
+      "deletion": "การถอนวินิจฉัย รีเซ็ตข้อมูลในเครื่อง และลบสำเนาภายนอก หรือวินิจฉัยที่ส่งแล้วเป็นคนละขั้นตอน สอบถามข้อมูลที่ส่งหรืออีเมลที่รับได้ที่ taipopo.app@gmail.com ไม่รับรองการลบหรือระยะเก็บที่ยังไม่ตรวจสอบ",
       "accountScope": "แอปที่ตรวจไม่มีขั้นตอนสมัคร TAIPOPO หรือรหัสผ่านแอปแยกต่างหาก",
       "localConfig": "ในการตั้งค่ารุ่นทดสอบภายในที่ตรวจ ปิดโฆษณาและการซื้อ PRO ใหม่ ต้องแยกการจัดการสิทธิ์ซื้อเดิมออกจากสถานะเผยแพร่จริงบน Google Play",
-      "otherInternational": "นิติบุคคลผู้รับ ประเทศประมวลผล การเก็บรักษา และฐานโอนข้อมูลที่ใช้กับ Google Sign-In/Drive, Firebase อีเมลสนับสนุน และโฮสต์เว็บไซต์ ยังต้องตรวจแยกตามบริการและสัญญาที่ใช้"
+      "otherInternational": "นิติบุคคลผู้รับ ประเทศประมวลผล การเก็บรักษา และฐานโอนข้อมูลที่ใช้กับ Firebase อีเมลสนับสนุน และโฮสต์เว็บไซต์ ยังต้องตรวจแยกตามบริการและสัญญาที่ใช้"
     },
     "tr": {
       "heading": "Harici işleme, silme ve uygulama sürümleri",
@@ -163,11 +150,10 @@
       "qrLegacy": "ML Kit içeren sürümler, QR görüntülerini cihazda çözse bile SDK kurulum kimlikleri ile cihaz, uygulama ve olay bilgileri gibi teknik tanı verilerini haricen işleyebilir. Firebase tanı seçimi ML Kit'i kontrol etmez.",
       "qrCandidate": "ZXing kullanan sürümler QR kod görüntülerini cihazda işler ve QR kod taraması için ML Kit kullanmaz. Uygulamanın güncellenmesi önceki tanılama kuyruklarını veya sunuculara daha önce gönderilen verileri otomatik olarak silmez. Kalan tanılama verileri ayrı olarak gönderilebilir.",
       "international": "Adres hizmetinin sağlayıcısı, alıcı tüzel kişi, işleme ülkeleri, saklama süresi, aktarım koruması ve geçerli uluslararası aktarım dayanağı cihaz ve hizmete göre doğrulanmalıdır. Yalnız ülke içi işleme veya tüm yollarda şifreleme iddia etmiyoruz.",
-      "deletion": "Tanıyı geri çekme, yerel sıfırlama, Google bağlantısını kesme ve Drive yedeklerini, harici kopyaları veya iletilmiş tanıyı silme farklı işlemlerdir. İletilen veriler veya alınan e-postalar için: taipopo.app@gmail.com. Doğrulanmamış silme veya saklama süreleri vaat edilmez.",
-      "authScope": "Seçilen Google hesabı, kimlik doğrulama gerektiğinde Google bağlantısı, Drive yedekleme, geri yükleme ve yedek yönetimi için kullanılır. Yedekler tüm Drive dosyalarına erişim yerine appDataFolder kullanır.",
+      "deletion": "Tanıyı geri çekme, yerel sıfırlama ve harici kopyaları veya iletilmiş tanıyı silme farklı işlemlerdir. İletilen veriler veya alınan e-postalar için: taipopo.app@gmail.com. Doğrulanmamış silme veya saklama süreleri vaat edilmez.",
       "accountScope": "İncelenen uygulamada ayrı TAIPOPO kaydı veya uygulama parolası yoktur.",
       "localConfig": "İncelenen yerel aday yapılandırmasında reklamlar ve yeni PRO alımları kapalıdır. Mevcut satın alma haklarının işlenmesi ile gerçek Google Play dağıtımı ayrılmalıdır.",
-      "otherInternational": "Google Sign-In/Drive, Firebase, destek e-postası ve site barındırmanın alıcı tüzel kişileri, işleme ülkeleri, saklama ve geçerli aktarım dayanakları da kullanılan hizmet ve sözleşmelere göre ayrıca doğrulanmalıdır."
+      "otherInternational": "Firebase, destek e-postası ve site barındırmanın alıcı tüzel kişileri, işleme ülkeleri, saklama ve geçerli aktarım dayanakları da kullanılan hizmet ve sözleşmelere göre ayrıca doğrulanmalıdır."
     },
     "vi": {
       "heading": "Xử lý bên ngoài, xóa và phiên bản ứng dụng",
@@ -175,11 +161,10 @@
       "qrLegacy": "Phiên bản có ML Kit có thể xử lý chẩn đoán kỹ thuật bên ngoài, gồm mã cài đặt SDK và thông tin thiết bị, ứng dụng, sự kiện, ngay cả khi giải mã ảnh QR trên thiết bị. Lựa chọn chẩn đoán Firebase không kiểm soát ML Kit.",
       "qrCandidate": "Các phiên bản dùng ZXing xử lý ảnh mã QR trên thiết bị và không dùng ML Kit để quét mã QR. Việc cập nhật ứng dụng không tự động xóa hàng đợi chẩn đoán trước đây hoặc dữ liệu đã gửi đến máy chủ. Dữ liệu chẩn đoán còn lại có thể được gửi riêng.",
       "international": "Nhà cung cấp địa chỉ, pháp nhân nhận, quốc gia xử lý, thời hạn lưu, bảo vệ truyền tải và căn cứ chuyển dữ liệu quốc tế áp dụng cần được xác minh theo thiết bị và dịch vụ. Không khẳng định chỉ xử lý trong nước hoặc mã hóa mọi đường truyền.",
-      "deletion": "Rút chẩn đoán, đặt lại dữ liệu cục bộ, ngắt Google và xóa bản sao Drive, bản sao bên ngoài hoặc chẩn đoán đã gửi là các thủ tục khác nhau. Liên hệ về dữ liệu đã gửi hoặc email đã nhận: taipopo.app@gmail.com. Không hứa việc xóa hay thời hạn lưu chưa xác minh.",
-      "authScope": "Tài khoản Google đã chọn được dùng cho kết nối Google, sao lưu Drive, khôi phục và quản lý bản sao khi cần xác thực. Bản sao dùng appDataFolder, không truy cập mọi tệp Drive.",
+      "deletion": "Rút chẩn đoán, đặt lại dữ liệu cục bộ và xóa bản sao bên ngoài hoặc chẩn đoán đã gửi là các thủ tục khác nhau. Liên hệ về dữ liệu đã gửi hoặc email đã nhận: taipopo.app@gmail.com. Không hứa việc xóa hay thời hạn lưu chưa xác minh.",
       "accountScope": "Ứng dụng được xem xét không có quy trình đăng ký TAIPOPO riêng hoặc mật khẩu riêng.",
       "localConfig": "Trong cấu hình bản thử cục bộ đã xem xét, quảng cáo và mua PRO mới bị tắt. Cần phân biệt xử lý quyền mua cũ với phân phối thực tế trên Google Play.",
-      "otherInternational": "Pháp nhân nhận, quốc gia xử lý, lưu giữ và căn cứ chuyển dữ liệu áp dụng cho Google Sign-In/Drive, Firebase, email hỗ trợ và lưu trữ website cũng cần xác minh riêng theo dịch vụ và hợp đồng đang dùng."
+      "otherInternational": "Pháp nhân nhận, quốc gia xử lý, lưu giữ và căn cứ chuyển dữ liệu áp dụng cho Firebase, email hỗ trợ và lưu trữ website cũng cần xác minh riêng theo dịch vụ và hợp đồng đang dùng."
     },
     "zh": {
       "heading": "外部处理、删除与应用版本说明",
@@ -187,11 +172,11 @@
       "qrLegacy": "含有 ML Kit 的版本即使在设备内解码 QR 图像，仍可能在外部处理 SDK 安装标识符、设备、应用及事件等技术诊断信息。Firebase 诊断选择并不控制 ML Kit。",
       "qrCandidate": "使用 ZXing 的版本在设备上处理二维码图像，并且不使用 ML Kit 扫描二维码。更新应用不会自动删除以前的诊断队列或已发送到服务器的数据。剩余的诊断数据仍可能单独发送。",
       "international": "地址服务的实际提供方、接收法人、处理国家、保留期限、传输保护和适用的跨境传输依据，需要根据设备与服务进一步确认。我们不确定宣称仅在国内处理或所有路径均已加密。",
-      "deletion": "撤回诊断、本地重置、断开 Google，以及删除 Drive 备份、外部副本或已传输诊断是不同流程。有关已发送数据或已收邮件，请联系 taipopo.app@gmail.com。不承诺未经核实的删除完成状态或保留天数。",
-      "authScope": "所选 Google 账号用于 Google 连接、Drive 备份、恢复和备份管理等需要身份验证的功能。备份使用 appDataFolder，不使用对全部 Drive 文件的访问权限。",
+      "deletion": "撤回诊断、本地重置以及删除外部副本或已传输诊断是不同流程。有关已发送数据或已收邮件，请联系 taipopo.app@gmail.com。不承诺未经核实的删除完成状态或保留天数。",
       "accountScope": "已审查的应用没有单独的 TAIPOPO 注册流程或应用密码。",
       "localConfig": "已审查的本地候选版配置关闭了广告展示和新购 PRO。现有购买权益处理与 Google Play 实际分发情况应分别看待。",
-      "otherInternational": "Google Sign-In/Drive、Firebase、支持邮件和网站托管的实际接收法人、处理国家、保留及适用传输依据，也须按所用服务与合同另行确认。"
+      "otherInternational": "Firebase、支持邮件和网站托管的实际接收法人、处理国家、保留及适用传输依据，也须按所用服务与合同另行确认。"
     }
-  }
+  },
+  "zipBackupVersion": "1.0.0 (13)"
 }

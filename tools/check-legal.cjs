@@ -29,7 +29,7 @@ for (const [code, policy] of Object.entries(policies)) {
     if (!terms.includes(`href="../../${other}/terms/"`)) throw new Error(`Terms language route missing: ${code} -> ${other}`);
   }
   const privacy = fs.readFileSync(path.join(root, code, 'privacy/index.html'), 'utf8');
-  for (const marker of ['GitHub Pages', 'taipopo-site-theme', 'Gmail', 'Google OAuth', 'data-notice-version="2026-11-07"']) {
+  for (const marker of ['GitHub Pages', 'taipopo-site-theme', 'Gmail', 'data-notice-version="2026-11-07"']) {
     if (!privacy.includes(marker)) throw new Error(`Missing shared disclosure ${marker}: ${code}`);
   }
   for (const relative of ['index.html', 'support/index.html', 'privacy/index.html', 'terms/index.html', 'deletion/index.html']) {

@@ -25,6 +25,7 @@ if (JSON.stringify(resolvedManual.localeOrder) !== JSON.stringify(languages.map(
 const publicIcon = icon => icon && Object.fromEntries(['name', 'codePoint', 'color', 'colorDark', 'background', 'matchTextDirection'].map(key => [key, icon[key]]));
 const publicChapters = code => resolvedManual.locales[code].chapters.map(chapter => ({ id: chapter.id, title: chapter.title, screen: chapter.screen, icon: publicIcon(chapter.icon), features: chapter.features.map(feature => ({ id: feature.id, title: feature.title, body: feature.body, notice: feature.notice, icon: publicIcon(feature.icon) })) }));
 const webText = require('./manual-web-text.json');
+const { zipBackupVersion } = require('./website-disclosures.json');
 const locales = {};
 const ui = {};
 const copies = [];
@@ -34,7 +35,7 @@ for (const { code, name } of languages) {
   const manifest = JSON.parse(rawManifest);
   const a = JSON.parse(read(`lib/l10n/app_${code}.arb`));
   if (!webText[code] || !a.retry || !a.manualImageError || !a.manualIntro) throw Error(`Missing localized controls: ${code}`);
-  ui[code] = { ...webText[code], name, title: a.userGuideTitle, intro: a.manualIntro, contents: a.manualContentsHint, retry: a.retry, error: a.manualImageError };
+  ui[code] = { ...webText[code], name, title: a.userGuideTitle, intro: `TAIPOPO ${zipBackupVersion} · ${a.manualIntro}`, contents: a.manualContentsHint, retry: a.retry, error: a.manualImageError };
   const images = overviews.map((overview, index) => {
     const record = manifest[overview.id];
     const asset = `assets/manual/${code}/${overview.id}.webp`;
@@ -63,4 +64,4 @@ for (const copy of copies) {
   if (digest(fs.readFileSync(copy.target)) !== copy.sha256) throw Error('Copied image bytes changed');
 }
 writeManual(root, rendered);
-console.log(`Exported ${languages.length} languages × 6 chapters / 113 features / 2 notices / ${overviews.length} current app originals; existing web-only previews validated separately.`);
+console.log(`Exported ${languages.length} languages × 6 chapters / 110 features / 2 notices / ${overviews.length} current app originals; existing web-only previews validated separately.`);

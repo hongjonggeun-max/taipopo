@@ -44,6 +44,14 @@ function updateSet(code, prefix) {
   for (const relative of ['index.html', 'support/index.html', 'privacy/index.html']) {
     const file = path.join(root, prefix, relative);
     let html = fs.readFileSync(file, 'utf8');
+    if (relative === 'index.html') {
+      const backup = policy.zipBackup;
+      const summary = `<section class="glass" id="backup-guidance"><h2>${escapeHtml(backup.heading)}</h2><p>TAIPOPO ${escapeHtml(backup.version)}</p>${[backup.device, backup.share, backup.restore].map((value) => `<p>${escapeHtml(value)}</p>`).join('')}</section>`;
+      html = html.replace(/<section class="glass" id="backup-guidance">[\s\S]*?<\/section>/gu, '');
+      const features = /(<section\b[^>]*id="features"[^>]*>[\s\S]*?<\/section>)/u;
+      if (!features.test(html)) throw new Error(`Missing features section: ${code}`);
+      html = html.replace(features, (section) => section + summary);
+    }
     if (relative === 'privacy/index.html') {
       const currentPolicyLink = code === 'ko' && prefix === ''
         ? `<section class="glass"><h2>공식 공개 정책</h2><p><a href="${officialKoreanPolicyUrl}">한국어 개인정보처리방침</a></p></section>`

@@ -70,9 +70,8 @@ for (const code of codes) {
     source.revisionDate,
     source.noticeVersion,
     controller,
-    'Google Drive',
-    'Google Sign-In',
-    'appDataFolder',
+    source.zipBackup.version,
+    source.zipBackup.privacy,
     'Firebase Crashlytics',
     'ML Kit',
     'Downloads',
@@ -117,9 +116,8 @@ for (const code of codes) {
   const notice = policies[code].websiteNotice;
   if (
     !notice?.heading ||
-    notice.paragraphs?.length !== 6 ||
-    !notice.paragraphs[2].includes('Google Sign-In') ||
-    notice.paragraphs[4] !== JSON.parse(fs.readFileSync(path.join(arbDir, `app_${code}.arb`), 'utf8')).backupLocalStorageNotice
+    notice.paragraphs?.length !== 5 ||
+    notice.paragraphs[3] !== JSON.parse(fs.readFileSync(path.join(arbDir, `app_${code}.arb`), 'utf8')).backupLocalStorageNotice
   ) {
     throw new Error(`Missing website release/account disclosure: ${code}`);
   }

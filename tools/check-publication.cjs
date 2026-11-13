@@ -4,25 +4,32 @@ const assert = require('node:assert/strict');
 const root = path.resolve(__dirname, '..');
 const data = require('./privacy-content.json');
 const review = require('./website-disclosures.json');
-const { renderPolicy, renderDeletion, renderSupportProcessing } = require('./privacy-page.cjs');
+const { escapeHtml, renderPolicy, renderDeletion, renderSupportProcessing } = require('./privacy-page.cjs');
 assert.deepEqual(Object.keys(review.locales).sort(), Object.keys(data).sort());
 let count = 0;
 for (const [code, policy] of Object.entries(data)) {
   assert.equal(policy.locale, code);
   const text = review.locales[code];
-  for (const key of ['heading', 'scope', 'qrLegacy', 'qrCandidate', 'international', 'otherInternational', 'deletion', 'authScope', 'accountScope', 'localConfig']) assert.ok(text[key]?.trim(), `${code}: ${key}`);
+  for (const key of ['heading', 'scope', 'qrLegacy', 'qrCandidate', 'international', 'otherInternational', 'deletion', 'accountScope', 'localConfig']) assert.ok(text[key]?.trim(), `${code}: ${key}`);
   assert.ok(!text.scope.includes('1.0.0+21') && !text.qrCandidate.includes('1.0.0+21'), code);
   assert.ok(text.qrLegacy.includes('ML Kit') && text.qrCandidate.includes('ZXing'), code);
   assert.ok(policy.body.includes(policy.revisionDate), code);
-  const resume = policy.body.split('\n\n').find((paragraph, index, paragraphs) => paragraphs[index - 2]?.startsWith('5.'));
-  assert.ok(resume?.includes('Google Drive') && policy.deletion.body.includes(resume) && policy.terms.body.includes(resume), code);
+  const backup = policy.zipBackup;
+  for (const value of [policy.body, policy.deletion.body, policy.terms.body]) {
+    assert.ok(value.includes(backup.privacy), code);
+    assert.ok(!value.includes('appDataFolder'), code);
+  }
+  const home = fs.readFileSync(path.join(root, code, 'index.html'), 'utf8');
+  for (const value of [backup.version, backup.device, backup.share, backup.restore]) {
+    assert.ok(home.includes(escapeHtml(value)), code + ': missing ZIP backup guidance');
+  }
   const resetRoute = policy.deletion.body.split('\n').find((line) => line.split(' > ').length === 3);
   assert.ok(resetRoute, code);
   assert.ok(!policy.deletion.body.split('\n').some((line) => line.split(' > ').length > 3), code);
   const privacy = fs.readFileSync(path.join(root, code, 'privacy/index.html'), 'utf8');
   assert.ok(privacy.includes(renderPolicy(policy).html), `Reviewed policy missing: ${code}`);
   const visibleText = privacy.replace(/<[^>]*>/gu, '');
-  for (const value of [text.scope, text.qrLegacy, text.qrCandidate, text.international, text.otherInternational, text.deletion, text.authScope, text.localConfig]) {
+  for (const value of [text.scope, text.qrLegacy, text.qrCandidate, text.international, text.otherInternational, text.deletion, text.localConfig]) {
     const escaped = value.replaceAll('&', '&amp;').replaceAll('<', '&lt;').replaceAll('>', '&gt;').replaceAll('"', '&quot;');
     assert.ok(visibleText.includes(escaped), `Published fact missing: ${code}`);
   }
@@ -32,6 +39,7 @@ for (const [code, policy] of Object.entries(data)) {
   assert.ok(fs.readFileSync(path.join(root, code, 'deletion/index.html'), 'utf8').includes(renderDeletion(policy).html));
   for (const route of ['', 'support/', 'privacy/', 'deletion/', 'terms/']) {
     const html = fs.readFileSync(path.join(root, code, route, 'index.html'), 'utf8');
+    assert.ok(!/Google Drive|Drive[- ](?:backup|Sicherung)|appDataFolder|Google[- ]OAuth/u.test(html), code + '/' + route + ': stale Drive backup text');
     assert.equal((html.match(/rel="canonical"/gu) || []).length, 1, `${code}/${route}: canonical`);
     assert.ok(html.includes(`content="${review.reviewDate}"`), `${code}/${route}: version`);
     if (route === 'terms/') assert.ok(html.includes('content="noindex,follow"'));

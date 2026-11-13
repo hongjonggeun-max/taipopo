@@ -74,9 +74,6 @@ function renderPolicy(policy) {
   if (!qrSection.test(resolvedBody)) throw new Error('Missing versioned QR policy section');
   resolvedBody = resolvedBody.replace(qrSection, (_, heading) =>
     `${heading}${review.qrLegacy}\n\n${review.qrCandidate}`);
-  const authSection = /(\n5\. [^\n]+\n)[^\n]+(?=\n\n)/u;
-  if (!authSection.test(resolvedBody)) throw new Error('Missing Google authentication section');
-  resolvedBody = resolvedBody.replace(authSection, (_, heading) => `${heading}${review.authScope}`);
   const lines = resolvedBody.split('\n');
   const title = lines.shift();
   while (lines[0] === '') lines.shift();
@@ -103,7 +100,7 @@ function renderPolicy(policy) {
   }
 
   const html = [
-    `<section class="glass policy-summary">${renderLines([...metadata, review.scope])}</section>`,
+    `<section class="glass policy-summary">${renderLines([...metadata, `TAIPOPO ${policy.zipBackup.version}`, review.scope])}</section>`,
     ...sections.map(
       (section) =>
         `<section class="glass"><h2>${escapeHtml(section.heading)}</h2>${renderLines(section.lines)}</section>`,
@@ -126,6 +123,7 @@ function renderTerms(policy) {
   const terms = policy.terms;
   const lines = terms.body.replaceAll('{effectiveDate}', terms.effectiveDate).split('\n');
   const title = lines.shift();
+  lines.unshift(`TAIPOPO ${policy.zipBackup.version}`);
   const sections = [];
   let current = { heading: null, lines: [] };
   for (const line of lines) {
@@ -144,13 +142,10 @@ function renderTerms(policy) {
 }
 
 function renderDeletion(policy) {
-  const review = reviewedDisclosure(policy);
-  let body = policy.deletion.body.replaceAll('{effectiveDate}', policy.deletion.effectiveDate);
-  const accountSection = /(\n1\. [^\n]+\n)[\s\S]*?(?=\n\n2\. )/u;
-  if (!accountSection.test(body)) throw new Error('Missing app account deletion section');
-  body = body.replace(accountSection, (_, heading) => `${heading}${review.accountScope}\n\n${review.authScope}`);
+  const body = policy.deletion.body.replaceAll('{effectiveDate}', policy.deletion.effectiveDate);
   const lines = body.split('\n');
   const title = lines.shift();
+  lines.unshift(`TAIPOPO ${policy.zipBackup.version}`);
   const sections = [];
   let current = { heading: null, lines: [] };
   for (const line of lines) {

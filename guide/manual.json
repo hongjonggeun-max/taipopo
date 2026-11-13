@@ -1471,7 +1471,7 @@
             {
               "id": "backup-device",
               "title": "기기에 백업",
-              "body": "이 기기의 내부 저장공간에 백업을 저장합니다.",
+              "body": "근무 기록, 설정, 사진 등을 백업 ZIP으로 기기에 보관합니다.",
               "notice": null,
               "icon": {
                 "name": "phone_android_outlined",
@@ -1499,7 +1499,7 @@
             {
               "id": "backup-share",
               "title": "외부 백업 만들기",
-              "body": "백업 사본을 다른 앱으로 전달합니다. 저장 완료는 선택한 앱에서 확인하세요.",
+              "body": "백업 ZIP을 만든 뒤 Android 공유창에서 보관할 앱을 선택하세요. 저장 상태는 선택한 앱에서 확인하세요. 분할 백업은 모든 파일을 함께 보관하세요.",
               "notice": null,
               "icon": {
                 "name": "folder_zip_outlined",
@@ -1511,51 +1511,9 @@
               }
             },
             {
-              "id": "backup-drive",
-              "title": "Google Drive 백업",
-              "body": "Google Drive에 백업을 저장합니다.",
-              "notice": null,
-              "icon": {
-                "name": "cloud_outlined",
-                "codePoint": 61282,
-                "color": "#8E5CF7",
-                "colorDark": "#8E5CF7",
-                "background": "transparent",
-                "matchTextDirection": false
-              }
-            },
-            {
-              "id": "drive-management",
-              "title": "Google Drive 백업 관리",
-              "body": "날짜별 백업을 확인하고 직접 삭제합니다",
-              "notice": null,
-              "icon": {
-                "name": "account_circle_outlined",
-                "codePoint": 60981,
-                "color": "#8E5CF7",
-                "colorDark": "#8E5CF7",
-                "background": "transparent",
-                "matchTextDirection": false
-              }
-            },
-            {
-              "id": "restore-drive",
-              "title": "Google Drive에서 복구",
-              "body": "Google Drive에 저장된 백업 목록에서 선택합니다.",
-              "notice": null,
-              "icon": {
-                "name": "cloud_outlined",
-                "codePoint": 61282,
-                "color": "#8E5CF7",
-                "colorDark": "#8E5CF7",
-                "background": "transparent",
-                "matchTextDirection": false
-              }
-            },
-            {
               "id": "restore",
               "title": "복원",
-              "body": "저장한 백업으로 현재 앱 데이터를 교체하므로 먼저 현재 데이터도 백업하세요.",
+              "body": "기기 또는 파일 선택기에 표시되는 저장소에서 백업 ZIP을 선택하세요. 분할 백업은 같은 백업의 모든 파일이 필요합니다.\n\n저장한 백업으로 현재 앱 데이터를 교체하므로 먼저 현재 데이터도 백업하세요.",
               "notice": null,
               "icon": {
                 "name": "restore_outlined",
@@ -3153,7 +3111,7 @@
             {
               "id": "backup-device",
               "title": "Back up to this device",
-              "body": "Save the backup to this device’s internal storage.",
+              "body": "Save work records, settings, photos, and other data on your device as a backup ZIP.",
               "notice": null,
               "icon": {
                 "name": "phone_android_outlined",
@@ -3181,7 +3139,7 @@
             {
               "id": "backup-share",
               "title": "Create external backup",
-              "body": "Send a backup copy to another app. Check in the app you choose that it has been saved.",
+              "body": "After creating the backup ZIP, choose an app in the Android share sheet to keep it. Check the save status in the app you chose. Keep all files of a split backup together.",
               "notice": null,
               "icon": {
                 "name": "folder_zip_outlined",
@@ -3193,51 +3151,9 @@
               }
             },
             {
-              "id": "backup-drive",
-              "title": "Google Drive backup",
-              "body": "Save backups to Google Drive.",
-              "notice": null,
-              "icon": {
-                "name": "cloud_outlined",
-                "codePoint": 61282,
-                "color": "#8E5CF7",
-                "colorDark": "#8E5CF7",
-                "background": "transparent",
-                "matchTextDirection": false
-              }
-            },
-            {
-              "id": "drive-management",
-              "title": "Manage Google Drive backups",
-              "body": "Review dated backups and delete them yourself",
-              "notice": null,
-              "icon": {
-                "name": "account_circle_outlined",
-                "codePoint": 60981,
-                "color": "#8E5CF7",
-                "colorDark": "#8E5CF7",
-                "background": "transparent",
-                "matchTextDirection": false
-              }
-            },
-            {
-              "id": "restore-drive",
-              "title": "Restore from Google Drive",
-              "body": "Choose from the backup list stored in Google Drive.",
-              "notice": null,
-              "icon": {
-                "name": "cloud_outlined",
-                "codePoint": 61282,
-                "color": "#8E5CF7",
-                "colorDark": "#8E5CF7",
-                "background": "transparent",
-                "matchTextDirection": false
-              }
-            },
-            {
               "id": "restore",
               "title": "Restore",
-              "body": "Restoring replaces current app data with the backup, so back up your current data first.",
+              "body": "Choose the backup ZIP on your device or in storage shown by the file picker. A split backup requires every file from the same backup.\n\nRestoring replaces current app data with the backup, so back up your current data first.",
               "notice": null,
               "icon": {
                 "name": "restore_outlined",
@@ -4835,7 +4751,7 @@
             {
               "id": "backup-device",
               "title": "备份到此设备",
-              "body": "将备份保存到此设备的内部存储空间。",
+              "body": "将工作记录、设置、照片等作为备份 ZIP 保存在设备上。",
               "notice": null,
               "icon": {
                 "name": "phone_android_outlined",
@@ -4863,7 +4779,7 @@
             {
               "id": "backup-share",
               "title": "创建外部备份",
-              "body": "将备份副本发送到其他应用。请在所选应用中确认是否保存完成。",
+              "body": "创建备份 ZIP 后，在 Android 分享面板中选择用于保存的应用。请在所选应用中确认保存状态。分卷备份的所有文件须一同保管。",
               "notice": null,
               "icon": {
                 "name": "folder_zip_outlined",
@@ -4875,51 +4791,9 @@
               }
             },
             {
-              "id": "backup-drive",
-              "title": "Google Drive 备份",
-              "body": "将备份保存到 Google Drive。",
-              "notice": null,
-              "icon": {
-                "name": "cloud_outlined",
-                "codePoint": 61282,
-                "color": "#8E5CF7",
-                "colorDark": "#8E5CF7",
-                "background": "transparent",
-                "matchTextDirection": false
-              }
-            },
-            {
-              "id": "drive-management",
-              "title": "管理 Google Drive 备份",
-              "body": "按日期查看备份并自行删除",
-              "notice": null,
-              "icon": {
-                "name": "account_circle_outlined",
-                "codePoint": 60981,
-                "color": "#8E5CF7",
-                "colorDark": "#8E5CF7",
-                "background": "transparent",
-                "matchTextDirection": false
-              }
-            },
-            {
-              "id": "restore-drive",
-              "title": "从 Google Drive 恢复",
-              "body": "从 Google Drive 中保存的备份列表中选择。",
-              "notice": null,
-              "icon": {
-                "name": "cloud_outlined",
-                "codePoint": 61282,
-                "color": "#8E5CF7",
-                "colorDark": "#8E5CF7",
-                "background": "transparent",
-                "matchTextDirection": false
-              }
-            },
-            {
               "id": "restore",
               "title": "恢复",
-              "body": "恢复会用备份替换当前应用数据，请先备份现有数据。",
+              "body": "在设备或文件选择器显示的存储位置中选择备份 ZIP。分卷备份需要同一备份的全部文件。\n\n恢复会用备份替换当前应用数据，请先备份现有数据。",
               "notice": null,
               "icon": {
                 "name": "restore_outlined",
@@ -6517,7 +6391,7 @@
             {
               "id": "backup-device",
               "title": "この端末にバックアップ",
-              "body": "この端末の内部ストレージにバックアップを保存します。",
+              "body": "勤務記録、設定、写真などをバックアップ ZIP として端末に保存します。",
               "notice": null,
               "icon": {
                 "name": "phone_android_outlined",
@@ -6545,7 +6419,7 @@
             {
               "id": "backup-share",
               "title": "外部バックアップを作成",
-              "body": "バックアップのコピーを他のアプリに渡します。保存が完了したかは、選択したアプリで確認してください。",
+              "body": "バックアップ ZIP を作成したら、Android の共有画面で保存先のアプリを選びます。保存状況は選んだアプリで確認してください。分割バックアップの全ファイルはまとめて保管してください。",
               "notice": null,
               "icon": {
                 "name": "folder_zip_outlined",
@@ -6557,51 +6431,9 @@
               }
             },
             {
-              "id": "backup-drive",
-              "title": "Google Driveバックアップ",
-              "body": "Google Driveにバックアップを保存します。",
-              "notice": null,
-              "icon": {
-                "name": "cloud_outlined",
-                "codePoint": 61282,
-                "color": "#8E5CF7",
-                "colorDark": "#8E5CF7",
-                "background": "transparent",
-                "matchTextDirection": false
-              }
-            },
-            {
-              "id": "drive-management",
-              "title": "Google Driveのバックアップを管理",
-              "body": "日付ごとのバックアップを確認し、必要に応じて削除できます",
-              "notice": null,
-              "icon": {
-                "name": "account_circle_outlined",
-                "codePoint": 60981,
-                "color": "#8E5CF7",
-                "colorDark": "#8E5CF7",
-                "background": "transparent",
-                "matchTextDirection": false
-              }
-            },
-            {
-              "id": "restore-drive",
-              "title": "Google Driveから復元",
-              "body": "Google Driveに保存されたバックアップ一覧から選択します。",
-              "notice": null,
-              "icon": {
-                "name": "cloud_outlined",
-                "codePoint": 61282,
-                "color": "#8E5CF7",
-                "colorDark": "#8E5CF7",
-                "background": "transparent",
-                "matchTextDirection": false
-              }
-            },
-            {
               "id": "restore",
               "title": "復元",
-              "body": "復元すると現在のアプリデータがバックアップ内容に置き換わるため、先に現在のデータも保存してください。",
+              "body": "端末またはファイル選択画面に表示される保存先からバックアップ ZIP を選びます。分割バックアップでは、同じバックアップの全ファイルが必要です。\n\n復元すると現在のアプリデータがバックアップ内容に置き換わるため、先に現在のデータも保存してください。",
               "notice": null,
               "icon": {
                 "name": "restore_outlined",
@@ -8199,7 +8031,7 @@
             {
               "id": "backup-device",
               "title": "इस डिवाइस पर बैकअप लें",
-              "body": "बैकअप को इस डिवाइस के आंतरिक स्टोरेज में सहेजें।",
+              "body": "कार्य रिकॉर्ड, सेटिंग, फ़ोटो और अन्य डेटा को अपने डिवाइस पर बैकअप ZIP के रूप में सहेजें।",
               "notice": null,
               "icon": {
                 "name": "phone_android_outlined",
@@ -8227,7 +8059,7 @@
             {
               "id": "backup-share",
               "title": "बाहरी बैकअप बनाएँ",
-              "body": "बैकअप की प्रति दूसरे ऐप में भेजें। चुने गए ऐप में जाँचें कि वह सहेजी गई है।",
+              "body": "बैकअप ZIP बनाने के बाद उसे सहेजने के लिए Android की शेयर शीट में ऐप चुनें। सहेजने की स्थिति उसी ऐप में देखें। कई हिस्सों वाले बैकअप की सभी फ़ाइलें साथ रखें।",
               "notice": null,
               "icon": {
                 "name": "folder_zip_outlined",
@@ -8239,51 +8071,9 @@
               }
             },
             {
-              "id": "backup-drive",
-              "title": "Google Drive बैकअप",
-              "body": "बैकअप Google Drive में सहेजें।",
-              "notice": null,
-              "icon": {
-                "name": "cloud_outlined",
-                "codePoint": 61282,
-                "color": "#8E5CF7",
-                "colorDark": "#8E5CF7",
-                "background": "transparent",
-                "matchTextDirection": false
-              }
-            },
-            {
-              "id": "drive-management",
-              "title": "Google Drive बैकअप प्रबंधित करें",
-              "body": "तारीख के अनुसार बैकअप देखें और स्वयं हटाएँ",
-              "notice": null,
-              "icon": {
-                "name": "account_circle_outlined",
-                "codePoint": 60981,
-                "color": "#8E5CF7",
-                "colorDark": "#8E5CF7",
-                "background": "transparent",
-                "matchTextDirection": false
-              }
-            },
-            {
-              "id": "restore-drive",
-              "title": "Google Drive से पुनर्स्थापित करें",
-              "body": "Google Drive में सहेजी गई बैकअप सूची से चुनें।",
-              "notice": null,
-              "icon": {
-                "name": "cloud_outlined",
-                "codePoint": 61282,
-                "color": "#8E5CF7",
-                "colorDark": "#8E5CF7",
-                "background": "transparent",
-                "matchTextDirection": false
-              }
-            },
-            {
               "id": "restore",
               "title": "पुनर्स्थापित करें",
-              "body": "पुनर्स्थापना मौजूदा डेटा को बैकअप से बदल देती है, इसलिए पहले मौजूदा डेटा का बैकअप लें।",
+              "body": "डिवाइस या फ़ाइल चयनकर्ता में दिखने वाले स्टोरेज से बैकअप ZIP चुनें। कई हिस्सों वाले बैकअप के लिए उसी बैकअप की सभी फ़ाइलें चाहिए।\n\nपुनर्स्थापना मौजूदा डेटा को बैकअप से बदल देती है, इसलिए पहले मौजूदा डेटा का बैकअप लें।",
               "notice": null,
               "icon": {
                 "name": "restore_outlined",
@@ -9881,7 +9671,7 @@
             {
               "id": "backup-device",
               "title": "Fazer backup neste dispositivo",
-              "body": "Salve o backup no armazenamento interno deste dispositivo.",
+              "body": "Guarde registros de trabalho, configurações, fotos e outros dados no dispositivo como um ZIP de backup.",
               "notice": null,
               "icon": {
                 "name": "phone_android_outlined",
@@ -9909,7 +9699,7 @@
             {
               "id": "backup-share",
               "title": "Criar backup externo",
-              "body": "Envie uma cópia do backup para outro aplicativo. Confirme no aplicativo escolhido se ela foi salva.",
+              "body": "Após criar o ZIP de backup, escolha um app no menu de compartilhamento do Android para guardá-lo. Confira o status do salvamento no app escolhido. Guarde juntos todos os arquivos de um backup dividido.",
               "notice": null,
               "icon": {
                 "name": "folder_zip_outlined",
@@ -9921,51 +9711,9 @@
               }
             },
             {
-              "id": "backup-drive",
-              "title": "Backup no Google Drive",
-              "body": "Salve backups no Google Drive.",
-              "notice": null,
-              "icon": {
-                "name": "cloud_outlined",
-                "codePoint": 61282,
-                "color": "#8E5CF7",
-                "colorDark": "#8E5CF7",
-                "background": "transparent",
-                "matchTextDirection": false
-              }
-            },
-            {
-              "id": "drive-management",
-              "title": "Gerenciar backups do Google Drive",
-              "body": "Confira os backups por data e exclua-os por conta própria",
-              "notice": null,
-              "icon": {
-                "name": "account_circle_outlined",
-                "codePoint": 60981,
-                "color": "#8E5CF7",
-                "colorDark": "#8E5CF7",
-                "background": "transparent",
-                "matchTextDirection": false
-              }
-            },
-            {
-              "id": "restore-drive",
-              "title": "Restaurar do Google Drive",
-              "body": "Escolha na lista de backups salvos no Google Drive.",
-              "notice": null,
-              "icon": {
-                "name": "cloud_outlined",
-                "codePoint": 61282,
-                "color": "#8E5CF7",
-                "colorDark": "#8E5CF7",
-                "background": "transparent",
-                "matchTextDirection": false
-              }
-            },
-            {
               "id": "restore",
               "title": "Restaurar",
-              "body": "A restauração substitui os dados atuais pelo backup; faça antes uma cópia dos dados atuais.",
+              "body": "Selecione o ZIP de backup no dispositivo ou em um armazenamento exibido no seletor de arquivos. Um backup dividido exige todos os arquivos do mesmo backup.\n\nA restauração substitui os dados atuais pelo backup; faça antes uma cópia dos dados atuais.",
               "notice": null,
               "icon": {
                 "name": "restore_outlined",
@@ -11563,7 +11311,7 @@
             {
               "id": "backup-device",
               "title": "Hacer copia en este dispositivo",
-              "body": "Guarda la copia de seguridad en el almacenamiento interno de este dispositivo.",
+              "body": "Guarda registros de trabajo, ajustes, fotos y otros datos en el dispositivo como un ZIP de copia de seguridad.",
               "notice": null,
               "icon": {
                 "name": "phone_android_outlined",
@@ -11591,7 +11339,7 @@
             {
               "id": "backup-share",
               "title": "Crear copia de seguridad externa",
-              "body": "Envía una copia de seguridad a otra aplicación. Comprueba en la aplicación elegida que se haya guardado.",
+              "body": "Después de crear el ZIP, elige una aplicación en el menú para compartir de Android para guardarlo. Comprueba el estado del guardado en la aplicación elegida. Conserva juntos todos los archivos de una copia dividida.",
               "notice": null,
               "icon": {
                 "name": "folder_zip_outlined",
@@ -11603,51 +11351,9 @@
               }
             },
             {
-              "id": "backup-drive",
-              "title": "Copia en Google Drive",
-              "body": "Guarda copias en Google Drive.",
-              "notice": null,
-              "icon": {
-                "name": "cloud_outlined",
-                "codePoint": 61282,
-                "color": "#8E5CF7",
-                "colorDark": "#8E5CF7",
-                "background": "transparent",
-                "matchTextDirection": false
-              }
-            },
-            {
-              "id": "drive-management",
-              "title": "Administrar copias de Google Drive",
-              "body": "Revisa copias por fecha y elimínalas tú mismo",
-              "notice": null,
-              "icon": {
-                "name": "account_circle_outlined",
-                "codePoint": 60981,
-                "color": "#8E5CF7",
-                "colorDark": "#8E5CF7",
-                "background": "transparent",
-                "matchTextDirection": false
-              }
-            },
-            {
-              "id": "restore-drive",
-              "title": "Restaurar desde Google Drive",
-              "body": "Elige de la lista de copias guardadas en Google Drive.",
-              "notice": null,
-              "icon": {
-                "name": "cloud_outlined",
-                "codePoint": 61282,
-                "color": "#8E5CF7",
-                "colorDark": "#8E5CF7",
-                "background": "transparent",
-                "matchTextDirection": false
-              }
-            },
-            {
               "id": "restore",
               "title": "Restaurar",
-              "body": "La restauración sustituye los datos actuales por la copia; guarda antes los datos actuales.",
+              "body": "Selecciona el ZIP en el dispositivo o en un almacenamiento que aparezca en el selector de archivos. Una copia dividida requiere todos los archivos de la misma copia.\n\nLa restauración sustituye los datos actuales por la copia; guarda antes los datos actuales.",
               "notice": null,
               "icon": {
                 "name": "restore_outlined",
@@ -13245,7 +12951,7 @@
             {
               "id": "backup-device",
               "title": "Sauvegarder sur cet appareil",
-              "body": "Enregistrez la sauvegarde dans le stockage interne de cet appareil.",
+              "body": "Enregistrez vos données de travail, réglages, photos et autres données dans un ZIP de sauvegarde sur l’appareil.",
               "notice": null,
               "icon": {
                 "name": "phone_android_outlined",
@@ -13273,7 +12979,7 @@
             {
               "id": "backup-share",
               "title": "Créer une sauvegarde externe",
-              "body": "Transmettez une copie de la sauvegarde à une autre application. Vérifiez dans l’application choisie que l’enregistrement est terminé.",
+              "body": "Après avoir créé le ZIP, choisissez une application dans le menu de partage Android pour le conserver. Vérifiez l’état de l’enregistrement dans l’application choisie. Conservez ensemble tous les fichiers d’une sauvegarde fractionnée.",
               "notice": null,
               "icon": {
                 "name": "folder_zip_outlined",
@@ -13285,51 +12991,9 @@
               }
             },
             {
-              "id": "backup-drive",
-              "title": "Sauvegarde Google Drive",
-              "body": "Enregistre les sauvegardes dans Google Drive.",
-              "notice": null,
-              "icon": {
-                "name": "cloud_outlined",
-                "codePoint": 61282,
-                "color": "#8E5CF7",
-                "colorDark": "#8E5CF7",
-                "background": "transparent",
-                "matchTextDirection": false
-              }
-            },
-            {
-              "id": "drive-management",
-              "title": "Gérer les sauvegardes Google Drive",
-              "body": "Consultez les sauvegardes datées et supprimez-les vous-même",
-              "notice": null,
-              "icon": {
-                "name": "account_circle_outlined",
-                "codePoint": 60981,
-                "color": "#8E5CF7",
-                "colorDark": "#8E5CF7",
-                "background": "transparent",
-                "matchTextDirection": false
-              }
-            },
-            {
-              "id": "restore-drive",
-              "title": "Restaurer depuis Google Drive",
-              "body": "Choisissez dans la liste des sauvegardes enregistrées dans Google Drive.",
-              "notice": null,
-              "icon": {
-                "name": "cloud_outlined",
-                "codePoint": 61282,
-                "color": "#8E5CF7",
-                "colorDark": "#8E5CF7",
-                "background": "transparent",
-                "matchTextDirection": false
-              }
-            },
-            {
               "id": "restore",
               "title": "Restaurer",
-              "body": "La restauration remplace les données actuelles par la sauvegarde ; sauvegardez d’abord vos données actuelles.",
+              "body": "Sélectionnez le ZIP sur l’appareil ou dans un espace de stockage affiché par le sélecteur de fichiers. Une sauvegarde fractionnée nécessite tous les fichiers de la même sauvegarde.\n\nLa restauration remplace les données actuelles par la sauvegarde ; sauvegardez d’abord vos données actuelles.",
               "notice": null,
               "icon": {
                 "name": "restore_outlined",
@@ -14927,7 +14591,7 @@
             {
               "id": "backup-device",
               "title": "Auf diesem Gerät sichern",
-              "body": "Speichern Sie die Sicherung im internen Speicher dieses Geräts.",
+              "body": "Speichern Sie Arbeitsaufzeichnungen, Einstellungen, Fotos und weitere Daten als Sicherungs-ZIP auf Ihrem Gerät.",
               "notice": null,
               "icon": {
                 "name": "phone_android_outlined",
@@ -14955,7 +14619,7 @@
             {
               "id": "backup-share",
               "title": "Externe Sicherung erstellen",
-              "body": "Übergeben Sie eine Kopie der Sicherung an eine andere App. Prüfen Sie in der ausgewählten App, ob sie gespeichert wurde.",
+              "body": "Wählen Sie nach dem Erstellen der Sicherungs-ZIP im Android-Teilen-Menü eine App zum Speichern aus. Prüfen Sie den Speicherstatus in der ausgewählten App. Bewahren Sie alle Dateien einer geteilten Sicherung zusammen auf.",
               "notice": null,
               "icon": {
                 "name": "folder_zip_outlined",
@@ -14967,51 +14631,9 @@
               }
             },
             {
-              "id": "backup-drive",
-              "title": "Google Drive-Sicherung",
-              "body": "Speichert Sicherungen in Google Drive.",
-              "notice": null,
-              "icon": {
-                "name": "cloud_outlined",
-                "codePoint": 61282,
-                "color": "#8E5CF7",
-                "colorDark": "#8E5CF7",
-                "background": "transparent",
-                "matchTextDirection": false
-              }
-            },
-            {
-              "id": "drive-management",
-              "title": "Google Drive-Sicherungen verwalten",
-              "body": "Datierte Sicherungen prüfen und selbst löschen",
-              "notice": null,
-              "icon": {
-                "name": "account_circle_outlined",
-                "codePoint": 60981,
-                "color": "#8E5CF7",
-                "colorDark": "#8E5CF7",
-                "background": "transparent",
-                "matchTextDirection": false
-              }
-            },
-            {
-              "id": "restore-drive",
-              "title": "Aus Google Drive wiederherstellen",
-              "body": "Wähle aus der in Google Drive gespeicherten Sicherungsliste.",
-              "notice": null,
-              "icon": {
-                "name": "cloud_outlined",
-                "codePoint": 61282,
-                "color": "#8E5CF7",
-                "colorDark": "#8E5CF7",
-                "background": "transparent",
-                "matchTextDirection": false
-              }
-            },
-            {
               "id": "restore",
               "title": "Wiederherstellen",
-              "body": "Die Wiederherstellung ersetzt aktuelle App-Daten durch die Sicherung; sichern Sie deshalb zuerst Ihre aktuellen Daten.",
+              "body": "Wählen Sie die Sicherungs-ZIP auf dem Gerät oder an einem in der Dateiauswahl angezeigten Speicherort aus. Für eine geteilte Sicherung werden alle Dateien derselben Sicherung benötigt.\n\nDie Wiederherstellung ersetzt aktuelle App-Daten durch die Sicherung; sichern Sie deshalb zuerst Ihre aktuellen Daten.",
               "notice": null,
               "icon": {
                 "name": "restore_outlined",
@@ -16609,7 +16231,7 @@
             {
               "id": "backup-device",
               "title": "Cadangkan ke perangkat ini",
-              "body": "Simpan cadangan di penyimpanan internal perangkat ini.",
+              "body": "Simpan catatan kerja, pengaturan, foto, dan data lain di perangkat sebagai ZIP cadangan.",
               "notice": null,
               "icon": {
                 "name": "phone_android_outlined",
@@ -16637,7 +16259,7 @@
             {
               "id": "backup-share",
               "title": "Buat cadangan eksternal",
-              "body": "Kirim salinan cadangan ke aplikasi lain. Periksa di aplikasi yang dipilih apakah penyimpanannya telah selesai.",
+              "body": "Setelah ZIP cadangan dibuat, pilih aplikasi untuk menyimpannya di menu berbagi Android. Periksa status penyimpanan di aplikasi pilihan Anda. Simpan semua file cadangan yang terbagi secara bersama-sama.",
               "notice": null,
               "icon": {
                 "name": "folder_zip_outlined",
@@ -16649,51 +16271,9 @@
               }
             },
             {
-              "id": "backup-drive",
-              "title": "Cadangan Google Drive",
-              "body": "Simpan cadangan ke Google Drive.",
-              "notice": null,
-              "icon": {
-                "name": "cloud_outlined",
-                "codePoint": 61282,
-                "color": "#8E5CF7",
-                "colorDark": "#8E5CF7",
-                "background": "transparent",
-                "matchTextDirection": false
-              }
-            },
-            {
-              "id": "drive-management",
-              "title": "Kelola cadangan Google Drive",
-              "body": "Tinjau cadangan berdasarkan tanggal dan hapus sendiri",
-              "notice": null,
-              "icon": {
-                "name": "account_circle_outlined",
-                "codePoint": 60981,
-                "color": "#8E5CF7",
-                "colorDark": "#8E5CF7",
-                "background": "transparent",
-                "matchTextDirection": false
-              }
-            },
-            {
-              "id": "restore-drive",
-              "title": "Pulihkan dari Google Drive",
-              "body": "Pilih dari daftar cadangan yang tersimpan di Google Drive.",
-              "notice": null,
-              "icon": {
-                "name": "cloud_outlined",
-                "codePoint": 61282,
-                "color": "#8E5CF7",
-                "colorDark": "#8E5CF7",
-                "background": "transparent",
-                "matchTextDirection": false
-              }
-            },
-            {
               "id": "restore",
               "title": "Pulihkan",
-              "body": "Pemulihan mengganti data aplikasi saat ini dengan cadangan, jadi cadangkan data saat ini terlebih dahulu.",
+              "body": "Pilih ZIP cadangan dari perangkat atau penyimpanan yang tampil di pemilih file. Cadangan yang terbagi memerlukan semua file dari cadangan yang sama.\n\nPemulihan mengganti data aplikasi saat ini dengan cadangan, jadi cadangkan data saat ini terlebih dahulu.",
               "notice": null,
               "icon": {
                 "name": "restore_outlined",
@@ -18291,7 +17871,7 @@
             {
               "id": "backup-device",
               "title": "Sao lưu vào thiết bị này",
-              "body": "Lưu bản sao lưu vào bộ nhớ trong của thiết bị này.",
+              "body": "Lưu hồ sơ công việc, cài đặt, ảnh và dữ liệu khác trên thiết bị dưới dạng tệp ZIP sao lưu.",
               "notice": null,
               "icon": {
                 "name": "phone_android_outlined",
@@ -18319,7 +17899,7 @@
             {
               "id": "backup-share",
               "title": "Tạo bản sao lưu bên ngoài",
-              "body": "Gửi bản sao lưu sang ứng dụng khác. Hãy kiểm tra trong ứng dụng đã chọn xem tệp đã được lưu xong chưa.",
+              "body": "Sau khi tạo tệp ZIP sao lưu, hãy chọn ứng dụng để lưu trong bảng chia sẻ Android. Kiểm tra trạng thái lưu trong ứng dụng đã chọn. Giữ tất cả các tệp của bản sao lưu chia nhiều phần cùng nhau.",
               "notice": null,
               "icon": {
                 "name": "folder_zip_outlined",
@@ -18331,51 +17911,9 @@
               }
             },
             {
-              "id": "backup-drive",
-              "title": "Sao lưu Google Drive",
-              "body": "Lưu bản sao lưu vào Google Drive.",
-              "notice": null,
-              "icon": {
-                "name": "cloud_outlined",
-                "codePoint": 61282,
-                "color": "#8E5CF7",
-                "colorDark": "#8E5CF7",
-                "background": "transparent",
-                "matchTextDirection": false
-              }
-            },
-            {
-              "id": "drive-management",
-              "title": "Quản lý bản sao lưu Google Drive",
-              "body": "Xem các bản sao lưu theo ngày và tự xóa",
-              "notice": null,
-              "icon": {
-                "name": "account_circle_outlined",
-                "codePoint": 60981,
-                "color": "#8E5CF7",
-                "colorDark": "#8E5CF7",
-                "background": "transparent",
-                "matchTextDirection": false
-              }
-            },
-            {
-              "id": "restore-drive",
-              "title": "Khôi phục từ Google Drive",
-              "body": "Chọn từ danh sách sao lưu đã lưu trong Google Drive.",
-              "notice": null,
-              "icon": {
-                "name": "cloud_outlined",
-                "codePoint": 61282,
-                "color": "#8E5CF7",
-                "colorDark": "#8E5CF7",
-                "background": "transparent",
-                "matchTextDirection": false
-              }
-            },
-            {
               "id": "restore",
               "title": "Khôi phục",
-              "body": "Khôi phục sẽ thay dữ liệu hiện tại bằng bản sao lưu, vì vậy hãy sao lưu dữ liệu hiện tại trước.",
+              "body": "Chọn tệp ZIP sao lưu trên thiết bị hoặc trong bộ nhớ được hiển thị trong trình chọn tệp. Bản sao lưu chia nhiều phần cần tất cả các tệp của cùng một bản sao lưu.\n\nKhôi phục sẽ thay dữ liệu hiện tại bằng bản sao lưu, vì vậy hãy sao lưu dữ liệu hiện tại trước.",
               "notice": null,
               "icon": {
                 "name": "restore_outlined",
@@ -19973,7 +19511,7 @@
             {
               "id": "backup-device",
               "title": "Создать резервную копию на этом устройстве",
-              "body": "Сохраните резервную копию во внутренней памяти этого устройства.",
+              "body": "Сохраните рабочие записи, настройки, фотографии и другие данные на устройстве в виде резервного ZIP-архива.",
               "notice": null,
               "icon": {
                 "name": "phone_android_outlined",
@@ -20001,7 +19539,7 @@
             {
               "id": "backup-share",
               "title": "Создать внешнюю резервную копию",
-              "body": "Передайте резервную копию в другое приложение. Проверьте в выбранном приложении, что файл сохранён.",
+              "body": "Создав резервный ZIP, выберите приложение для его хранения в меню «Поделиться» Android. Проверьте, что сохранение завершено, в выбранном приложении. Храните все файлы разделённой копии вместе.",
               "notice": null,
               "icon": {
                 "name": "folder_zip_outlined",
@@ -20013,51 +19551,9 @@
               }
             },
             {
-              "id": "backup-drive",
-              "title": "Резервная копия Google Drive",
-              "body": "Сохраняйте резервные копии в Google Drive.",
-              "notice": null,
-              "icon": {
-                "name": "cloud_outlined",
-                "codePoint": 61282,
-                "color": "#8E5CF7",
-                "colorDark": "#8E5CF7",
-                "background": "transparent",
-                "matchTextDirection": false
-              }
-            },
-            {
-              "id": "drive-management",
-              "title": "Управление резервными копиями Google Drive",
-              "body": "Просматривайте копии по датам и удаляйте их самостоятельно",
-              "notice": null,
-              "icon": {
-                "name": "account_circle_outlined",
-                "codePoint": 60981,
-                "color": "#8E5CF7",
-                "colorDark": "#8E5CF7",
-                "background": "transparent",
-                "matchTextDirection": false
-              }
-            },
-            {
-              "id": "restore-drive",
-              "title": "Восстановить из Google Drive",
-              "body": "Выберите из списка резервных копий, сохраненных в Google Drive.",
-              "notice": null,
-              "icon": {
-                "name": "cloud_outlined",
-                "codePoint": 61282,
-                "color": "#8E5CF7",
-                "colorDark": "#8E5CF7",
-                "background": "transparent",
-                "matchTextDirection": false
-              }
-            },
-            {
               "id": "restore",
               "title": "Восстановить",
-              "body": "Восстановление заменяет текущие данные приложения резервной копией, поэтому сначала сохраните и текущие данные.",
+              "body": "Выберите резервный ZIP на устройстве или в хранилище, которое отображается в окне выбора файлов. Для разделённой копии нужны все файлы одной и той же копии.\n\nВосстановление заменяет текущие данные приложения резервной копией, поэтому сначала сохраните и текущие данные.",
               "notice": null,
               "icon": {
                 "name": "restore_outlined",
@@ -21655,7 +21151,7 @@
             {
               "id": "backup-device",
               "title": "Bu cihaza yedekle",
-              "body": "Yedeği bu cihazın dahili depolama alanına kaydedin.",
+              "body": "İş kayıtlarını, ayarları, fotoğrafları ve diğer verileri cihazda yedek ZIP olarak saklayın.",
               "notice": null,
               "icon": {
                 "name": "phone_android_outlined",
@@ -21683,7 +21179,7 @@
             {
               "id": "backup-share",
               "title": "Harici yedek oluştur",
-              "body": "Yedeğin bir kopyasını başka bir uygulamaya gönderin. Kaydetme işleminin tamamlandığını seçtiğiniz uygulamada kontrol edin.",
+              "body": "Yedek ZIP'i oluşturduktan sonra saklamak için Android paylaşım menüsünden bir uygulama seçin. Kaydetme durumunu seçtiğiniz uygulamada kontrol edin. Bölünmüş bir yedeğin tüm dosyalarını birlikte saklayın.",
               "notice": null,
               "icon": {
                 "name": "folder_zip_outlined",
@@ -21695,51 +21191,9 @@
               }
             },
             {
-              "id": "backup-drive",
-              "title": "Google Drive yedeği",
-              "body": "Yedekleri Google Drive’a kaydet.",
-              "notice": null,
-              "icon": {
-                "name": "cloud_outlined",
-                "codePoint": 61282,
-                "color": "#8E5CF7",
-                "colorDark": "#8E5CF7",
-                "background": "transparent",
-                "matchTextDirection": false
-              }
-            },
-            {
-              "id": "drive-management",
-              "title": "Google Drive yedeklerini yönet",
-              "body": "Tarihli yedekleri inceleyin ve kendiniz silin",
-              "notice": null,
-              "icon": {
-                "name": "account_circle_outlined",
-                "codePoint": 60981,
-                "color": "#8E5CF7",
-                "colorDark": "#8E5CF7",
-                "background": "transparent",
-                "matchTextDirection": false
-              }
-            },
-            {
-              "id": "restore-drive",
-              "title": "Google Drive’dan geri yükle",
-              "body": "Google Drive’da kayıtlı yedek listesinden seç.",
-              "notice": null,
-              "icon": {
-                "name": "cloud_outlined",
-                "codePoint": 61282,
-                "color": "#8E5CF7",
-                "colorDark": "#8E5CF7",
-                "background": "transparent",
-                "matchTextDirection": false
-              }
-            },
-            {
               "id": "restore",
               "title": "Geri yükle",
-              "body": "Geri yükleme mevcut verileri yedekle değiştirir; önce mevcut verilerinizi de yedekleyin.",
+              "body": "Cihazdan veya dosya seçicide görünen depolama alanından yedek ZIP'i seçin. Bölünmüş yedek için aynı yedeğin tüm dosyaları gerekir.\n\nGeri yükleme mevcut verileri yedekle değiştirir; önce mevcut verilerinizi de yedekleyin.",
               "notice": null,
               "icon": {
                 "name": "restore_outlined",
@@ -23337,7 +22791,7 @@
             {
               "id": "backup-device",
               "title": "نسخ احتياطي إلى هذا الجهاز",
-              "body": "احفظ النسخة الاحتياطية في وحدة التخزين الداخلية لهذا الجهاز.",
+              "body": "احفظ سجلات العمل والإعدادات والصور وغيرها على الجهاز في ملف ZIP احتياطي.",
               "notice": null,
               "icon": {
                 "name": "phone_android_outlined",
@@ -23365,7 +22819,7 @@
             {
               "id": "backup-share",
               "title": "إنشاء نسخة احتياطية خارجية",
-              "body": "أرسل نسخة من النسخة الاحتياطية إلى تطبيق آخر. تحقّق من اكتمال الحفظ في التطبيق الذي تختاره.",
+              "body": "بعد إنشاء ملف ZIP الاحتياطي، اختر تطبيقًا لحفظه من قائمة المشاركة في Android. تحقق من حالة الحفظ في التطبيق الذي اخترته. احتفظ بجميع ملفات النسخة المقسّمة معًا.",
               "notice": null,
               "icon": {
                 "name": "folder_zip_outlined",
@@ -23377,51 +22831,9 @@
               }
             },
             {
-              "id": "backup-drive",
-              "title": "نسخ احتياطي إلى Google Drive",
-              "body": "احفظ النسخ الاحتياطية في Google Drive.",
-              "notice": null,
-              "icon": {
-                "name": "cloud_outlined",
-                "codePoint": 61282,
-                "color": "#8E5CF7",
-                "colorDark": "#8E5CF7",
-                "background": "transparent",
-                "matchTextDirection": false
-              }
-            },
-            {
-              "id": "drive-management",
-              "title": "إدارة نسخ Google Drive الاحتياطية",
-              "body": "راجع النسخ المؤرخة واحذفها بنفسك",
-              "notice": null,
-              "icon": {
-                "name": "account_circle_outlined",
-                "codePoint": 60981,
-                "color": "#8E5CF7",
-                "colorDark": "#8E5CF7",
-                "background": "transparent",
-                "matchTextDirection": false
-              }
-            },
-            {
-              "id": "restore-drive",
-              "title": "استعادة من Google Drive",
-              "body": "اختر من قائمة النسخ الاحتياطية المحفوظة في Google Drive.",
-              "notice": null,
-              "icon": {
-                "name": "cloud_outlined",
-                "codePoint": 61282,
-                "color": "#8E5CF7",
-                "colorDark": "#8E5CF7",
-                "background": "transparent",
-                "matchTextDirection": false
-              }
-            },
-            {
               "id": "restore",
               "title": "استعادة",
-              "body": "تستبدل الاستعادة بيانات التطبيق الحالية بالنسخة الاحتياطية، لذا انسخ البيانات الحالية أولًا.",
+              "body": "اختر ملف ZIP الاحتياطي من الجهاز أو من موقع التخزين الظاهر في أداة اختيار الملفات. تتطلب النسخة المقسّمة جميع ملفات النسخة نفسها.\n\nتستبدل الاستعادة بيانات التطبيق الحالية بالنسخة الاحتياطية، لذا انسخ البيانات الحالية أولًا.",
               "notice": null,
               "icon": {
                 "name": "restore_outlined",
@@ -25019,7 +24431,7 @@
             {
               "id": "backup-device",
               "title": "Esegui backup su questo dispositivo",
-              "body": "Salva il backup nella memoria interna di questo dispositivo.",
+              "body": "Salva registri di lavoro, impostazioni, foto e altri dati sul dispositivo come ZIP di backup.",
               "notice": null,
               "icon": {
                 "name": "phone_android_outlined",
@@ -25047,7 +24459,7 @@
             {
               "id": "backup-share",
               "title": "Crea backup esterno",
-              "body": "Invia una copia del backup a un’altra app. Verifica nell’app scelta che il salvataggio sia completato.",
+              "body": "Dopo aver creato lo ZIP, scegli un’app in cui conservarlo dal menu di condivisione di Android. Controlla lo stato del salvataggio nell’app selezionata. Conserva insieme tutti i file di un backup suddiviso.",
               "notice": null,
               "icon": {
                 "name": "folder_zip_outlined",
@@ -25059,51 +24471,9 @@
               }
             },
             {
-              "id": "backup-drive",
-              "title": "Backup Google Drive",
-              "body": "Salva i backup su Google Drive.",
-              "notice": null,
-              "icon": {
-                "name": "cloud_outlined",
-                "codePoint": 61282,
-                "color": "#8E5CF7",
-                "colorDark": "#8E5CF7",
-                "background": "transparent",
-                "matchTextDirection": false
-              }
-            },
-            {
-              "id": "drive-management",
-              "title": "Gestisci i backup di Google Drive",
-              "body": "Esamina i backup per data ed eliminali direttamente",
-              "notice": null,
-              "icon": {
-                "name": "account_circle_outlined",
-                "codePoint": 60981,
-                "color": "#8E5CF7",
-                "colorDark": "#8E5CF7",
-                "background": "transparent",
-                "matchTextDirection": false
-              }
-            },
-            {
-              "id": "restore-drive",
-              "title": "Ripristina da Google Drive",
-              "body": "Scegli dall’elenco dei backup salvati in Google Drive.",
-              "notice": null,
-              "icon": {
-                "name": "cloud_outlined",
-                "codePoint": 61282,
-                "color": "#8E5CF7",
-                "colorDark": "#8E5CF7",
-                "background": "transparent",
-                "matchTextDirection": false
-              }
-            },
-            {
               "id": "restore",
               "title": "Ripristina",
-              "body": "Il ripristino sostituisce i dati attuali con il backup, quindi salva prima anche i dati attuali.",
+              "body": "Scegli lo ZIP di backup sul dispositivo o da una posizione mostrata nel selettore file. Un backup suddiviso richiede tutti i file dello stesso backup.\n\nIl ripristino sostituisce i dati attuali con il backup, quindi salva prima anche i dati attuali.",
               "notice": null,
               "icon": {
                 "name": "restore_outlined",
@@ -26701,7 +26071,7 @@
             {
               "id": "backup-device",
               "title": "สำรองข้อมูลไปยังอุปกรณ์นี้",
-              "body": "บันทึกข้อมูลสำรองลงในพื้นที่จัดเก็บข้อมูลภายในอุปกรณ์นี้",
+              "body": "เก็บบันทึกงาน การตั้งค่า รูปภาพ และข้อมูลอื่น ๆ ไว้ในอุปกรณ์เป็นไฟล์ ZIP สำรอง",
               "notice": null,
               "icon": {
                 "name": "phone_android_outlined",
@@ -26729,7 +26099,7 @@
             {
               "id": "backup-share",
               "title": "สร้างข้อมูลสำรองภายนอก",
-              "body": "ส่งสำเนาข้อมูลสำรองไปยังแอปอื่น และตรวจสอบในแอปที่เลือกว่าบันทึกเสร็จแล้ว",
+              "body": "หลังจากสร้างไฟล์ ZIP สำรองแล้ว ให้เลือกแอปที่จะใช้เก็บไฟล์จากเมนูแชร์ของ Android ตรวจสอบสถานะการบันทึกในแอปที่เลือก และเก็บไฟล์ทุกส่วนของข้อมูลสำรองแบบแบ่งไฟล์ไว้ด้วยกัน",
               "notice": null,
               "icon": {
                 "name": "folder_zip_outlined",
@@ -26741,51 +26111,9 @@
               }
             },
             {
-              "id": "backup-drive",
-              "title": "สำรองข้อมูลไปยัง Google Drive",
-              "body": "บันทึกข้อมูลสำรองไว้ใน Google Drive",
-              "notice": null,
-              "icon": {
-                "name": "cloud_outlined",
-                "codePoint": 61282,
-                "color": "#8E5CF7",
-                "colorDark": "#8E5CF7",
-                "background": "transparent",
-                "matchTextDirection": false
-              }
-            },
-            {
-              "id": "drive-management",
-              "title": "จัดการข้อมูลสำรอง Google Drive",
-              "body": "ตรวจสอบข้อมูลสำรองตามวันที่และลบด้วยตนเอง",
-              "notice": null,
-              "icon": {
-                "name": "account_circle_outlined",
-                "codePoint": 60981,
-                "color": "#8E5CF7",
-                "colorDark": "#8E5CF7",
-                "background": "transparent",
-                "matchTextDirection": false
-              }
-            },
-            {
-              "id": "restore-drive",
-              "title": "กู้คืนจาก Google Drive",
-              "body": "เลือกจากรายการข้อมูลสำรองที่บันทึกไว้ใน Google Drive",
-              "notice": null,
-              "icon": {
-                "name": "cloud_outlined",
-                "codePoint": 61282,
-                "color": "#8E5CF7",
-                "colorDark": "#8E5CF7",
-                "background": "transparent",
-                "matchTextDirection": false
-              }
-            },
-            {
               "id": "restore",
               "title": "คืนค่า",
-              "body": "การกู้คืนจะแทนที่ข้อมูลปัจจุบันด้วยข้อมูลสำรอง จึงควรสำรองข้อมูลปัจจุบันก่อน",
+              "body": "เลือกไฟล์ ZIP สำรองจากอุปกรณ์หรือพื้นที่จัดเก็บที่แสดงในตัวเลือกไฟล์ ข้อมูลสำรองแบบแบ่งไฟล์ต้องใช้ไฟล์ทุกส่วนจากชุดเดียวกัน\n\nการกู้คืนจะแทนที่ข้อมูลปัจจุบันด้วยข้อมูลสำรอง จึงควรสำรองข้อมูลปัจจุบันก่อน",
               "notice": null,
               "icon": {
                 "name": "restore_outlined",
@@ -26948,5 +26276,5 @@
       ]
     }
   },
-  "contentVersion": "2acee784e385bdc1"
+  "contentVersion": "9a3d9c73bd03524e"
 }

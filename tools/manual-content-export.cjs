@@ -10,7 +10,7 @@ const assert = require('node:assert/strict');
 
 const sha = bytes => crypto.createHash('sha256').update(bytes).digest('hex');
 const BASE = 'lib/screens/settings/pages/manual/';
-const EXPECTED_COUNTS = [10, 27, 9, 6, 22, 39];
+const EXPECTED_COUNTS = [10, 27, 9, 6, 22, 36];
 const EXPECTED_KEYS = ['main', 'gallery', 'settlement', 'report', 'camera', 'settings'];
 const EXPECTED_SCREENS = ['guide-main', 'guide-gallery', 'guide-settlement', 'guide-report', null, null];
 
@@ -142,7 +142,7 @@ function resolveManual(appRoot) {
     manualSettingsFeatures: definition(BASE + 'manual_camera_settings_features.dart', 'manualSettingsFeatures'),
   };
   const configuration = read('lib/config/app_build_environment.dart');
-  if (!/static const bool cloudAndBackupEnabled\s*=\s*!isValidation\s*;/u.test(configuration)) throw Error('Review changed cloudAndBackupEnabled semantics');
+  if (!/static const bool directDriveEnabled\s*=\s*!isValidation\s*&&\s*appFlavor\s*!=\s*'production'\s*;/u.test(configuration)) throw Error('Review changed directDriveEnabled semantics');
   const validationDefinition = configuration.match(/static const bool isValidation\s*=([^;]+);/u)?.[1]?.replace(/\s+/gu, ' ').trim();
   assert.equal(validationDefinition, 'appFlavor == deviceValidationFlavor || appFlavor == restorePolicyValidationFlavor || appFlavor == crashlyticsValidationFlavor || appFlavor == atomicValidationFlavor', 'Review changed validation flavor gate');
   for (const flavor of ['deviceValidation', 'restorePolicyValidation', 'crashlyticsValidation', 'atomicValidation']) {
@@ -238,7 +238,7 @@ function resolveManual(appRoot) {
       if (names.length === 1 && names[0] === 'l') return env;
       if (names.length === 2 && names[0] === 'l') return localized(names[1], env, usedKeys);
       if (names.length === 2 && ['Icons', 'AppColors', 'Colors'].includes(names[0])) return names.join('.');
-      if (names.join('.') === 'AppBuildEnvironment.cloudAndBackupEnabled') return true;
+      if (names.join('.') === 'AppBuildEnvironment.directDriveEnabled') return false;
       if (names.length === 2 && env.tuples?.[names[0]] && /^\$[1-3]$/u.test(names[1])) return value(env.tuples[names[0]][Number(names[1].slice(1)) - 1], env, usedKeys);
       throw Error(`Unsupported member ${names.join('.')} at ${JSON.stringify(location(node))}`);
     }
@@ -249,8 +249,8 @@ function resolveManual(appRoot) {
           if (!item.iterable.tupleType || item.iterable.items.length !== 8 || item.iterable.items.some(n => n.type !== 'tuple')) throw Error('Review changed settings tuple loop');
           for (const tuple of item.iterable.items) result.push(value(item.body, { ...env, tuples: { ...env.tuples, [item.variable]: tuple.values }, iterationSource: location(tuple) }));
         } else if (item.type === 'ifSpread') {
-          if (item.condition.type !== 'member' || item.condition.names.join('.') !== 'AppBuildEnvironment.cloudAndBackupEnabled' || item.body.items.length !== 3) throw Error('Unsupported manual condition/spread');
-          const condition = { ...location(item.condition), productionValue: true };
+          if (item.condition.type !== 'member' || item.condition.names.join('.') !== 'AppBuildEnvironment.directDriveEnabled' || item.body.items.length !== 3) throw Error('Unsupported manual condition/spread');
+          const condition = { ...location(item.condition), productionValue: false };
           if (value(item.condition, env)) result.push(...value(item.body, { ...env, conditions: [...(env.conditions || []), condition] }));
         } else { result.push(value(item, env)); }
       }
@@ -298,14 +298,14 @@ function resolveManual(appRoot) {
     assert.deepEqual(chapters.map(c => c.titleKey), EXPECTED_KEYS, `${code}: chapter order drift`);
     assert.deepEqual(chapters.map(c => c.screen), EXPECTED_SCREENS, `${code}: image selection drift`);
     assert.deepEqual(chapters.map(c => c.features.length), EXPECTED_COUNTS, `${code}: feature count drift`);
-    const ids = chapters.flatMap(c => c.features.map(f => f.id)); assert.equal(ids.length, 113); assert.equal(new Set(ids).size, 113);
+    const ids = chapters.flatMap(c => c.features.map(f => f.id)); assert.equal(ids.length, 110); assert.equal(new Set(ids).size, 110);
     chapters.forEach((chapter, index) => {
       chapter.id = `manual-category-${index}`; chapter.order = index + 1;
       chapter.features.forEach((feature, featureIndex) => { feature.chapterId = chapter.id; feature.order = featureIndex + 1; });
     });
     const allFeatures = chapters.flatMap(c => c.features);
     assert.deepEqual(allFeatures.filter(f => f.notice !== null).map(f => f.id), ['workplace-gps-address', 'attendance']);
-    assert.deepEqual(allFeatures.filter(f => f.conditions.length).map(f => f.id), ['backup-drive', 'drive-management', 'restore-drive']);
+    assert.deepEqual(allFeatures.filter(f => f.conditions.length).map(f => f.id), []);
     assert.equal(allFeatures.filter(f => f.iterationSource).length, 8);
     locales[code] = { name, direction: code === 'ar' ? 'rtl' : 'ltr', title: localized('userGuideTitle', env), intro: localized('manualIntro', env), chapters };
     const generatedPath = `lib/l10n/generated/app_localizations_${code}.dart`, generated = read(generatedPath);
@@ -316,17 +316,17 @@ function resolveManual(appRoot) {
       if (node.type !== 'strings') throw Error(`Generated getter is not a literal: ${code}.${key}`);
       assert.equal(value(node, env), arb[key], `ARB/generated getter drift ${code}.${key}`);
     }
-    checks.push({ locale: code, chapters: 6, features: 113, images: 4, rows: 123, notices: 2, conditionalProductionFeatures: 3, tupleRows: 8, missingText: 0, duplicateFeatureIds: 0, arbAndGeneratedGettersMatch: true });
+    checks.push({ locale: code, chapters: 6, features: 110, images: 4, rows: 120, notices: 2, conditionalProductionFeatures: 0, tupleRows: 8, missingText: 0, duplicateFeatureIds: 0, arbAndGeneratedGettersMatch: true });
   }
   const firstIds = locales[languageOptions[0].code].chapters.flatMap(c => c.features.map(f => f.id));
   for (const locale of Object.values(locales)) assert.deepEqual(locale.chapters.flatMap(c => c.features.map(f => f.id)), firstIds);
   for (const source of sources.values()) assert.equal(sha(fs.readFileSync(source.absolutePath)), source.sha256, `Source changed during read-only export: ${source.path}`);
   return { schemaVersion: 1, localeOrder: languageOptions.map(l => l.code), locales, sources: [...sources.values()],
-    production: { appFlavor: 'production', isValidation: false, cloudAndBackupEnabled: true,
-      proof: { source: 'lib/config/app_build_environment.dart', expression: 'cloudAndBackupEnabled = !isValidation', validationDefinition } },
+    production: { appFlavor: 'production', isValidation: false, directDriveEnabled: false,
+      proof: { source: 'lib/config/app_build_environment.dart', expression: "directDriveEnabled = !isValidation && appFlavor != 'production'", validationDefinition } },
     validation: { status: 'PASS', meaning: 'Static parsing and exact source/locale metadata comparison only; no Flutter/app execution or runtime verification.',
-      localeCount: 16, chaptersPerLocale: 6, featuresPerLocale: 113, featureRowsTotal: 1808, imagesPerLocale: 4, resolvedRowCountPerLocale: 123,
-      chapterFeatureCounts: EXPECTED_COUNTS, sourceLocalizationKeys: referencedKeys.size, noticesPerLocale: 2, tupleRowsPerLocale: 8, productionConditionalRowsPerLocale: 3,
+      localeCount: 16, chaptersPerLocale: 6, featuresPerLocale: 110, featureRowsTotal: 1760, imagesPerLocale: 4, resolvedRowCountPerLocale: 120,
+      chapterFeatureCounts: EXPECTED_COUNTS, sourceLocalizationKeys: referencedKeys.size, noticesPerLocale: 2, tupleRowsPerLocale: 8, productionConditionalRowsPerLocale: 0,
       uniqueIcons: Object.keys(icons).length, directionalIcons: Object.values(icons).filter(i => i.matchTextDirection).map(i => i.name),
       unsupportedSyntax: [], missingText: [], sourceHashesUnchanged: true, appWrites: false, appTestsBuildsInstallsRun: false, locales: checks },
     renderingContract: { source: BASE + 'manual_continuous_content.dart', order: 'chapter heading, optional one overview image, all chapter feature rows',
@@ -346,5 +346,5 @@ if (require.main === module) {
   const result = resolveManual(root);
   fs.mkdirSync(path.dirname(destination), { recursive: true });
   fs.writeFileSync(destination, JSON.stringify(result, null, 2) + '\n');
-  console.log(JSON.stringify({ output: destination, status: result.validation.status, locales: 16, chaptersPerLocale: 6, featuresPerLocale: 113, rowsPerLocale: 123, icons: result.validation.uniqueIcons, sourceLocalizationKeys: result.validation.sourceLocalizationKeys, appExecution: false, sourceWrites: false }));
+  console.log(JSON.stringify({ output: destination, status: result.validation.status, locales: 16, chaptersPerLocale: 6, featuresPerLocale: 110, rowsPerLocale: 120, icons: result.validation.uniqueIcons, sourceLocalizationKeys: result.validation.sourceLocalizationKeys, appExecution: false, sourceWrites: false }));
 }
