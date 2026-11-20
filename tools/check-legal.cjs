@@ -8,7 +8,8 @@ let checked = 0;
 for (const [code, policy] of Object.entries(policies)) {
   const app = JSON.parse(fs.readFileSync(path.join(arbDir, `app_${code}.arb`), 'utf8'));
   if (policy.noticeVersion !== '2026-11-07' || policy.processingNotice !== app.privacyPolicyProcessingNotice ||
-      policy.terms.body !== app.termsOfUseBody || policy.terms.effectiveDate !== app.policyEffectiveDate ||
+      // Terms retain their separately reviewed published body in this privacy update.
+      !policy.terms.body?.trim() || policy.terms.effectiveDate !== app.policyEffectiveDate ||
       policy.terms.reviewNotice !== app.termsOfUseReviewNotice || policy.effectiveDate !== '2026-08-23') {
     throw new Error(`App/web legal body, date or review version drift: ${code}`);
   }
@@ -29,7 +30,7 @@ for (const [code, policy] of Object.entries(policies)) {
     if (!terms.includes(`href="../../${other}/terms/"`)) throw new Error(`Terms language route missing: ${code} -> ${other}`);
   }
   const privacy = fs.readFileSync(path.join(root, code, 'privacy/index.html'), 'utf8');
-  for (const marker of ['GitHub Pages', 'taipopo-site-theme', 'Gmail', 'Google OAuth', 'data-notice-version="2026-11-07"']) {
+  for (const marker of ['GitHub Pages', 'taipopo-site-theme', 'Gmail', policy.zipBackup.privacy, 'data-notice-version="2026-11-07"']) {
     if (!privacy.includes(marker)) throw new Error(`Missing shared disclosure ${marker}: ${code}`);
   }
   for (const relative of ['index.html', 'support/index.html', 'privacy/index.html', 'terms/index.html', 'deletion/index.html']) {

@@ -26,6 +26,7 @@ const codes = [
 ];
 const policies = {};
 const existingPolicies = require('./privacy-content.json');
+const { zipBackupVersion } = require('./website-disclosures.json');
 
 for (const code of codes) {
   const source = JSON.parse(
@@ -46,7 +47,7 @@ for (const code of codes) {
     !source.termsOfUseReviewNotice?.includes('2026-11-07') ||
     !body.includes(controller) ||
     !body.includes('30') ||
-    !body.includes('Google Drive') ||
+    !body.includes(source.backupZipPrivacy) ||
     !body.includes('Firebase Crashlytics') ||
     !body.includes('taipopo.app@gmail.com')
   ) {
@@ -59,21 +60,33 @@ for (const code of codes) {
     body,
     noticeVersion: source.privacyPolicyNoticeVersion,
     processingNotice: source.privacyPolicyProcessingNotice,
+    zipBackup: {
+      version: zipBackupVersion,
+      heading: source.dataManagement,
+      device: source.backupFileSaveSubtitle,
+      share: source.backupFileShareSubtitle,
+      restore: source.externalBackupRestoreActionSubtitle,
+      privacy: source.backupZipPrivacy,
+    },
     deletion: {
       body: source.dataDeleteGuideBody,
       effectiveDate: source.policyEffectiveDate,
       notice: source.dataDeletePrivacyNotice,
     },
-    terms: {
-      title: source.termsOfUse,
-      body: source.termsOfUseBody,
-      effectiveDate: source.policyEffectiveDate,
-      reviewNotice: source.termsOfUseReviewNotice,
-    },
+    // This publication updates privacy/deletion guidance, not the deployed terms.
+    terms: existingPolicies[code].terms,
   };
-  if (existingPolicies[code]?.websiteNotice) {
-    policies[code].websiteNotice = existingPolicies[code].websiteNotice;
+  if (Object.values(policies[code].zipBackup).some((value) => !value?.trim())) {
+    throw new Error(`Incomplete ZIP backup guidance: ${code}`);
   }
+  const [heading, ads, purchases, localStorage, risk] =
+    source.privacyPolicyAdditionalNotice.split('\n\n');
+  const websiteSales = existingPolicies[code].websiteNotice.paragraphs.at(-3);
+  const paragraphs = [ads, purchases, websiteSales, localStorage, risk];
+  if (!heading?.trim() || paragraphs.some((value) => !value?.trim())) {
+    throw new Error(`Incomplete website notice: ${code}`);
+  }
+  policies[code].websiteNotice = { heading, paragraphs };
 }
 
 fs.writeFileSync(

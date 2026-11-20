@@ -3,6 +3,7 @@ const fs = require('node:fs');
 const path = require('node:path');
 const root = path.resolve(__dirname, '..');
 const policies = require('./privacy-content.json');
+const { reviewDate } = require('./website-disclosures.json');
 const { escapeHtml, officialKoreanPolicyUrl, renderPolicy, renderTerms, renderDeletion, renderSupportProcessing } = require('./privacy-page.cjs');
 
 function replacePolicyContent(html, content) {
@@ -55,12 +56,18 @@ function updateSet(code, prefix) {
       html = html.replace(/<section class="glass" data-web-review="[^"]*">[\s\S]*?<\/section>/gu, '');
       html = html.replace('<footer', renderSupportProcessing(policy) + '<footer');
     }
+    if (relative !== 'index.html') {
+      html = html.replace(/(<meta name="taipopo-web-review" content=")[^"]+(">)/u, `$1${reviewDate}$2`);
+    }
     html = legalFooter(html, code, relative !== 'index.html');
     fs.writeFileSync(file, html.replace(/\s*$/u, '') + '\n');
   }
   const source = fs.readFileSync(path.join(root, prefix, 'privacy/index.html'), 'utf8');
   const terms = renderTerms(policy);
-  let html = replacePolicyContent(source, terms.html);
+  const target = path.join(root, prefix, 'terms/index.html');
+  // Preserve each published page's canonical URLs, SEO and existing shell.
+  const termsSource = fs.existsSync(target) ? fs.readFileSync(target, 'utf8') : source;
+  let html = replacePolicyContent(termsSource, terms.html);
   html = html.replace(/<title>[^<]*<\/title>/u, `<title>${escapeHtml(terms.title)} · TAIPOPO</title>`);
   html = html.replace(/<(div|section) class="page-intro">[\s\S]*?<\/\1>/u,
     `<section class="page-intro"><h1>${escapeHtml(terms.title)}</h1></section>`);
@@ -69,11 +76,13 @@ function updateSet(code, prefix) {
   html = html.replace(/<details class="language-picker">[\s\S]*?<\/details>/u,
     (picker) => picker.replaceAll('/privacy/', '/terms/'));
   html = legalFooter(html, code, true);
-  const target = path.join(root, prefix, 'terms/index.html');
   fs.mkdirSync(path.dirname(target), { recursive: true });
   fs.writeFileSync(target, html.replace(/\s*$/u, '') + '\n');
   const deletion = renderDeletion(policy);
-  let deletionHtml = replacePolicyContent(source, deletion.html);
+  const deletionTarget = path.join(root, prefix, 'deletion/index.html');
+  const deletionSource = fs.existsSync(deletionTarget) ? fs.readFileSync(deletionTarget, 'utf8') : source;
+  let deletionHtml = replacePolicyContent(deletionSource, deletion.html);
+  deletionHtml = deletionHtml.replace(/(<meta name="taipopo-web-review" content=")[^"]+(">)/u, `$1${reviewDate}$2`);
   deletionHtml = deletionHtml.replace(/<title>[^<]*<\/title>/u, `<title>${escapeHtml(deletion.title)} · TAIPOPO</title>`);
   deletionHtml = deletionHtml.replace(/<(div|section) class="page-intro">[\s\S]*?<\/\1>/u,
     `<section class="page-intro"><h1>${escapeHtml(deletion.title)}</h1></section>`);
@@ -82,7 +91,6 @@ function updateSet(code, prefix) {
   deletionHtml = deletionHtml.replace(/<details class="language-picker">[\s\S]*?<\/details>/u,
     (picker) => picker.replaceAll('/privacy/', '/deletion/'));
   deletionHtml = legalFooter(deletionHtml, code, true);
-  const deletionTarget = path.join(root, prefix, 'deletion/index.html');
   fs.mkdirSync(path.dirname(deletionTarget), { recursive: true });
   fs.writeFileSync(deletionTarget, deletionHtml.replace(/\s*$/u, '') + '\n');
 }

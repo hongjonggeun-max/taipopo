@@ -70,13 +70,11 @@ function renderPolicy(policy) {
     '{effectiveDate}',
     policy.effectiveDate,
   );
+  resolvedBody = resolvedBody.replace(policy.revisionDate, webDisclosures.reviewDate);
   const qrSection = /(\n7\. [^\n]+\n)[\s\S]*?(?=\n\n8\. )/u;
   if (!qrSection.test(resolvedBody)) throw new Error('Missing versioned QR policy section');
   resolvedBody = resolvedBody.replace(qrSection, (_, heading) =>
     `${heading}${review.qrLegacy}\n\n${review.qrCandidate}`);
-  const authSection = /(\n5\. [^\n]+\n)[^\n]+(?=\n\n)/u;
-  if (!authSection.test(resolvedBody)) throw new Error('Missing Google authentication section');
-  resolvedBody = resolvedBody.replace(authSection, (_, heading) => `${heading}${review.authScope}`);
   const lines = resolvedBody.split('\n');
   const title = lines.shift();
   while (lines[0] === '') lines.shift();
@@ -98,12 +96,20 @@ function renderPolicy(policy) {
   }
   if (current) sections.push(current);
 
+  for (const [number, fields] of [[2, ['gpsChoice', 'gpsCache']], [5, ['currentBackup']], [6, ['crashDeletion']]]) {
+    const section = sections.find((entry) => entry.heading.startsWith(`${number}. `));
+    if (!section || fields.some((field) => !review[field]?.trim())) {
+      throw new Error(`Missing reviewed privacy details: ${policy.locale}/${number}`);
+    }
+    section.lines.push('', ...fields.flatMap((field) => [review[field], '']));
+  }
+
   if (!title || metadata.length < 3 || sections.length < 8) {
     throw new Error('Privacy policy source is incomplete.');
   }
 
   const html = [
-    `<section class="glass policy-summary">${renderLines([...metadata, review.scope])}</section>`,
+    `<section class="glass policy-summary">${renderLines([...metadata, `TAIPOPO ${policy.zipBackup.version}`, review.scope])}</section>`,
     ...sections.map(
       (section) =>
         `<section class="glass"><h2>${escapeHtml(section.heading)}</h2>${renderLines(section.lines)}</section>`,
@@ -145,12 +151,14 @@ function renderTerms(policy) {
 
 function renderDeletion(policy) {
   const review = reviewedDisclosure(policy);
-  let body = policy.deletion.body.replaceAll('{effectiveDate}', policy.deletion.effectiveDate);
-  const accountSection = /(\n1\. [^\n]+\n)[\s\S]*?(?=\n\n2\. )/u;
-  if (!accountSection.test(body)) throw new Error('Missing app account deletion section');
-  body = body.replace(accountSection, (_, heading) => `${heading}${review.accountScope}\n\n${review.authScope}`);
+  // Publish the review date without inventing a new legal effective date.
+  const body = policy.deletion.body.split('\n')
+    .filter((line) => !line.includes('{effectiveDate}')).join('\n');
   const lines = body.split('\n');
   const title = lines.shift();
+  const revisionLine = policy.body.split('\n').find((line) => line.includes(policy.revisionDate));
+  if (!revisionLine) throw new Error('Missing localized revision date');
+  lines.unshift(`TAIPOPO ${policy.zipBackup.version}`, revisionLine.replace(policy.revisionDate, webDisclosures.reviewDate));
   const sections = [];
   let current = { heading: null, lines: [] };
   for (const line of lines) {
@@ -160,6 +168,11 @@ function renderDeletion(policy) {
     } else current.lines.push(line);
   }
   sections.push(current);
+  for (const [number, field] of [[5, 'currentBackup'], [7, 'crashDeletion']]) {
+    const section = sections.find((entry) => entry.heading?.startsWith(`${number}. `));
+    if (!section || !review[field]?.trim()) throw new Error(`Missing reviewed deletion details: ${policy.locale}/${number}`);
+    section.lines.push('', review[field]);
+  }
   if (sections.filter((s) => s.heading).length < 6) throw new Error('Deletion source is incomplete.');
   const html = sections.map((section) => `<section class="glass">${section.heading ? `<h2>${escapeHtml(section.heading)}</h2>` : ''}${renderLines(section.lines)}</section>`).join('') +
     `<section class="glass" data-review-version="${escapeHtml(policy.noticeVersion)}">${renderLines(policy.deletion.notice.split('\n'))}</section>` +

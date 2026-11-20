@@ -7,6 +7,7 @@ const arbDir = path.resolve(
 );
 const policies = require('./privacy-content.json');
 const { renderPolicy } = require('./privacy-page.cjs');
+const webDisclosures = require('./website-disclosures.json');
 const codes = [
   'ar',
   'de',
@@ -67,11 +68,11 @@ for (const code of codes) {
     `<html lang="${code}" dir="${expectedDirection}">`,
     `<title>${policyTitle} · TAIPOPO</title>`,
     source.effectiveDate,
-    source.revisionDate,
+    webDisclosures.reviewDate,
+    source.zipBackup.version,
     source.noticeVersion,
     controller,
-    'Google Drive',
-    'Google Sign-In',
+    'Drive API',
     'appDataFolder',
     'Firebase Crashlytics',
     'ML Kit',
@@ -79,6 +80,11 @@ for (const code of codes) {
     'ZIP/PDF',
     'taipopo.app@gmail.com',
     '<div class="policy-content">',
+    ...['gpsChoice', 'gpsCache', 'currentBackup', 'crashDeletion'].map(
+      (field) => webDisclosures.locales[code][field]
+        .replaceAll('&', '&amp;').replaceAll('<', '&lt;')
+        .replaceAll('>', '&gt;').replaceAll('"', '&quot;'),
+    ),
   ]) {
     if (!html.includes(required)) {
       throw new Error(`Missing ${JSON.stringify(required)} in ${code} privacy page.`);
@@ -117,9 +123,8 @@ for (const code of codes) {
   const notice = policies[code].websiteNotice;
   if (
     !notice?.heading ||
-    notice.paragraphs?.length !== 6 ||
-    !notice.paragraphs[2].includes('Google Sign-In') ||
-    notice.paragraphs[4] !== JSON.parse(fs.readFileSync(path.join(arbDir, `app_${code}.arb`), 'utf8')).backupLocalStorageNotice
+    notice.paragraphs?.length !== 5 ||
+    notice.paragraphs[3] !== JSON.parse(fs.readFileSync(path.join(arbDir, `app_${code}.arb`), 'utf8')).backupLocalStorageNotice
   ) {
     throw new Error(`Missing website release/account disclosure: ${code}`);
   }
