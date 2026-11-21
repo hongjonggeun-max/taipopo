@@ -5,6 +5,7 @@ const root = path.resolve(__dirname, '..');
 const data = require('./privacy-content.json');
 const review = require('./website-disclosures.json');
 const { renderPolicy, renderDeletion, renderSupportProcessing } = require('./privacy-page.cjs');
+const { copy } = require('./public-copy.cjs');
 assert.deepEqual(Object.keys(review.locales).sort(), Object.keys(data).sort());
 let count = 0;
 for (const [code, policy] of Object.entries(data)) {
@@ -23,7 +24,7 @@ for (const [code, policy] of Object.entries(data)) {
   const privacy = fs.readFileSync(path.join(root, code, 'privacy/index.html'), 'utf8');
   assert.ok(privacy.includes(renderPolicy(policy).html), `Reviewed policy missing: ${code}`);
   const visibleText = privacy.replace(/<[^>]*>/gu, '');
-  for (const value of [text.scope, text.qrLegacy, text.qrCandidate, text.international, text.otherInternational, text.deletion, text.localConfig, text.gpsChoice, text.gpsCache, text.currentBackup, text.crashDeletion]) {
+  for (const value of [text.scope, text.qrLegacy, text.qrCandidate, text.localConfig, text.gpsChoice, text.gpsCache, text.currentBackup, text.crashDeletion, ...copy[code].services]) {
     const escaped = value.replaceAll('&', '&amp;').replaceAll('<', '&lt;').replaceAll('>', '&gt;').replaceAll('"', '&quot;');
     assert.ok(visibleText.includes(escaped), `Published fact missing: ${code}`);
   }

@@ -18,7 +18,7 @@ const digest = b => crypto.createHash('sha256').update(b).digest('hex');
     assert.equal(await page.locator('#manual-pages').getAttribute('data-loaded'), '4');
     assert.equal(await page.locator('#manual-pages').getAttribute('data-failed'), '0');
     assert.equal(await page.locator('#manual-pages .manual-chapter').count(), 6);
-    assert.equal(await page.locator('#manual-pages .manual-feature').count(), 113);
+    assert.equal(await page.locator('#manual-pages .manual-feature').count(), 110);
     assert.equal(await page.locator('#manual-chapter option').count(), 7);
   }
   async function inspectIcons(page, code, theme) {
@@ -79,7 +79,7 @@ const digest = b => crypto.createHash('sha256').update(b).digest('hex');
         await page.locator('#manual-chapter').selectOption(chapter.id);
         await page.waitForFunction(id => { const element = document.getElementById(id); const inset = parseFloat(getComputedStyle(document.documentElement).scrollPaddingTop) + parseFloat(getComputedStyle(element).scrollMarginTop); return Math.abs(element.getBoundingClientRect().top - inset) < 2; }, chapter.id);
       }
-      results.contentChecks.push({ code, chapters: 6, features: 113, notices: 2, originalTextAndIcons: true, sixContentsDestinations: true });
+      results.contentChecks.push({ code, chapters: 6, features: 110, notices: 2, originalTextAndIcons: true, sixContentsDestinations: true });
       for (const record of data.locales[code].images.flatMap(record => record.preview ? [record, { ...record.preview, id: record.id + '-preview' }] : [record])) {
         const response = await page.request.get(base + 'guide/' + record.src);
         assert.equal(response.status(), 200); assert.match(response.headers()['content-type'], /^image\/webp/u);
@@ -171,13 +171,13 @@ const digest = b => crypto.createHash('sha256').update(b).digest('hex');
     assert.equal(await p.locator('.manual-image, .manual-topic').count(), 0);
     assert.equal(await p.locator('.manual-nojs details[lang="ar"] .manual-nojs-original').count(), 4);
     assert.equal(await p.locator('.manual-nojs details').count(), 16);
-    assert.equal(await p.locator('.manual-nojs details[lang="ar"] .manual-feature-body').count(), 113);
+    assert.equal(await p.locator('.manual-nojs details[lang="ar"] .manual-feature-body').count(), 110);
     await p.locator('.manual-nojs details[lang="ar"] > summary').click();
     assert.equal(await p.locator('.manual-nojs details[lang="ar"] .manual-feature-body').first().isVisible(), true);
     await nojs.close(); results.faults.push('no-js-complete-localized-guide-and-original-links');
     assert.equal(results.imageHttpChecks.length, 96); assert.equal(results.jsErrors.length, 0, results.jsErrors.join('\n'));
     results.status = 'PASS';
     fs.writeFileSync(path.join(output, 'browser-result.json'), JSON.stringify(results, null, 2));
-    console.log(`PASS: 16 languages × 6 chapters / 113 complete feature bodies / 2 notices / six contents destinations; 96 HTTP/hash/WebP checks and all displayed images decoded; 4 widths; viewport-height limits; 8 KO/AR theme views; original icons/viewing; ${results.faults.length} failure/race/no-JS cases.`);
+    console.log(`PASS: 16 languages × 6 chapters / 110 complete feature bodies / 2 notices / six contents destinations; 96 HTTP/hash/WebP checks and all displayed images decoded; 4 widths; viewport-height limits; 8 KO/AR theme views; original icons/viewing; ${results.faults.length} failure/race/no-JS cases.`);
   } finally { await browser.close(); }
 })().catch(e => { console.error(e); process.exitCode = 1; });

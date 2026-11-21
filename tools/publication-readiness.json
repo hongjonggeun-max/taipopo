@@ -1,0 +1,59 @@
+{
+  "scope": "TAIPOPO 1.0.0(17) website copy",
+  "status": "BLOCKED",
+  "blockers": [
+    {
+      "id": "terms_effective_date_and_assent",
+      "status": "BLOCKED",
+      "confirmed": "The separate validation candidate implements the approved concise terms-confirmation step before permissions/new users and before main/existing users, offline documents and local history. Internal document identifiers and review notices are not shown in the app consent UI. Current unfinalized documents can create only validationConfirmation records with accepted:false, never formalAcceptance; formal records require finalized documents and an actual effective date. The distributed Play+17 reader is unchanged.",
+      "required": "Complete user physical-device confirmation, actual notice/application and final document/effective-date procedure. Review-version acceptance must not silently count as final release acceptance. Mandatory external facts and any separately required personal-data consent remain unresolved.",
+      "responsible": "Operational rollout and legal applicability review; app changes are outside this website task."
+    },
+    {
+      "id": "external_processing_and_transfers",
+      "status": "BLOCKED",
+      "confirmed": "Crashlytics standard terms section 1.2 expressly incorporate the Firebase Data Processing and Security Terms; a separate DPA acceptance record is not a blanket prerequisite. Official Firebase privacy information updated 2026-11-16 classifies Crashlytics as global, with HTTPS/in-storage encryption and 90 days before deletion starts, not guaranteed completion on day 90. Google expressly offers no DPA and does not act as processor for consumer Gmail/Drive; do not keep searching for a consumer-Gmail DPA acceptance switch. This is a role/contract finding, not a conclusion that every business use of Gmail is unlawful. GitHub documents its own direct collection of visitor IPs for security; the current static site has no own intake form/analytics/ad scripts. This limited path is classified as provider-controlled direct security logging, not automatically as TAIPOPO customer-data outsourcing. The PIPC direct-collection explanation and actual site structure support this bounded classification. Historical Firebase deletion limitations and Android OS Geocoder uncertainty are unchanged.",
+      "required": "For the active release configuration, resolve app-requested geocoding and diagnostics and operator-received support-mail processing on their actual facts and applicable Korean-law grounds. No fixed-country/day individual supplier reply is required merely for GitHub-controlled direct security IP logging in the present static-site scope; reassess if site collection, proxying, analytics, forms, or other processing changes. Do not infer countries from headquarters or use generic Maps Platform API terms for Android OS Geocoder. A separate local-data contingency is under preparation and has not been selected for release; a feature-preserving EU-only geocoder is a researched alternative, not an accepted contract or tested production integration.",
+      "responsible": "Configuration-specific implementation and operator decisions; actual provider agreements where needed. Public standard contract incorporation is evidence; do not invent a need for a separate agreement without an applicable requirement."
+    },
+    {
+      "id": "support_mail_retention",
+      "status": "PASS",
+      "confirmed": "Operator instructions adopt deletion of general inquiries and attachments without delay once the inquiry and necessary follow-up are complete and the purpose is fulfilled; only actual statutory records are separated for legally required retention. Deletion requests use minimum identity/authority verification, with statutory exceptions. The approved operator policy is included in all 16 website language drafts; received/reply/download copies and provider backend copies remain distinct.",
+      "required": "Apply the documented manual closure, target-specific account permanent deletion and operator-copy cleanup procedure in actual support operations. No mailbox purge or rights-request execution was performed in this website task. Provider role/country/transfer issues remain in external_processing_and_transfers.",
+      "responsible": "Operator operational execution; policy choice resolved by the current user instruction, no repeat retention-choice approval needed."
+    },
+    {
+      "id": "operator_security_measures",
+      "status": "BLOCKED",
+      "confirmed": "Operator support-mail protection disclosure is incomplete (D01). A Google-authenticated notification dated 2026-09-28 confirms that two-step verification was enabled for the connected support account on that date; the available mailbox search found no corresponding disable notification. This is historical evidence, not live account-settings verification. Standard Gmail encryption documentation is verified as a provider measure and must not be mislabeled as independently verified operator device/disk controls. Browser URL verification blocked the attempted live settings inspection; no unsupported browser-control bypass was used.",
+      "required": "Inspect current support-account authentication/access and actual downloaded-copy locations/access controls using supported account/UI access or operator facts. Publish concise actual controls; do not copy nonexistent staff training, dedicated security organization, or unverified full-disk encryption. No request to choose retention periods again is necessary; purpose-completion deletion is already adopted.",
+      "responsible": "Operator factual confirmation and implementation of applicable security measures; policy disclosure must match actual practice."
+    }
+  ],
+  "note": "All blockers apply to all 16 language versions. Passing content checks does not authorize production publication while this record is BLOCKED.",
+  "approvedOperatingPrinciples": {
+    "source": "Explicit user instruction: TAIPOPO +17 legal-risk-minimizing operating policy application",
+    "support": "Delete general inquiries/attachments without delay after purpose completion; separate only actual statutory retention records",
+    "rights": "Minimum identity/authority verification; statutory retention exceptions explained",
+    "diagnostics": "Keep existing default OFF and explicit opt-in; not a blanket finding of legal consent adequacy",
+    "directDriveApi": "Keep disabled until written approval basis is secured; user-selected manual ZIP sharing is a separate path",
+    "terms": "Concise user-facing confirmation UI; metadata stays internal. Validation progress and formal acceptance are different record types. Final documents/effective date are not yet configured; no public-release consent PASS.",
+    "externalFacts": "Do not infer recipient/country/retention/transfer basis; unresolved mandatory facts continue to block publication",
+    "publication": "BLOCKED; operational policy adoption does not establish legal compliance"
+  },
+  "comparisonReview": {
+    "checkedDateKst": "2026-11-21",
+    "report": "C:/TAIPOPO/validation/20261121-policy-comparison/report.txt",
+    "scope": "Current app candidate text synchronized to the local website candidate; comparative policy review and confirmed website copy corrections. No deployment or app/device changes.",
+    "unresolved": "Activity-specific legal grounds; applicable provider/transfer facts; operator security disclosure; final terms/amendment/notice procedure and effective date. Proposed new operating promises are not automatically adopted."
+  },
+  "verificationReview": {
+    "checkedDateKst": "2026-11-21",
+    "report": "C:/TAIPOPO/validation/20261121-policy-verification/report.txt",
+    "facts": "C:/TAIPOPO/validation/20261121-policy-verification/provider-facts.json",
+    "noPublication": true,
+    "contingency": "C:/TAIPOPO/development/release-local-data-20261121",
+    "contingencySelectedForRelease": false
+  }
+}

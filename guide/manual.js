@@ -106,7 +106,7 @@ function validateLocale(data, code) {
     if (['guide-settlement', 'guide-report'].includes(image.id) && !image.preview) throw Error('Missing web preview');
     if (image.preview && (!['guide-settlement', 'guide-report'].includes(image.id) || image.preview.src !== `previews/${code}/${image.id}.webp` || image.preview.sourceSha256 !== image.sha256 || !/^[a-f0-9]{64}$/u.test(image.preview.sha256) || image.preview.width !== image.width || !Number.isInteger(image.preview.height) || image.preview.height <= 0 || image.preview.height >= image.height || image.preview.targets?.length !== image.targets.length)) throw Error('Invalid web preview');
   }
-  const counts = [10, 27, 9, 6, 22, 39];
+  const counts = [10, 27, 9, 6, 22, 36];
   if (item.chapters?.length !== 6 || item.chapters.some((chapter, index) => !chapter.title || chapter.id !== `manual-category-${index}` || chapter.features?.length !== counts[index] || chapter.features.some(feature => !feature.id || !feature.title || !feature.body || feature.notice !== null && typeof feature.notice !== 'string'))) throw Error('Incomplete manual chapters');
   if (JSON.stringify(item.chapters.flatMap(chapter => chapter.screen ? [chapter.screen] : [])) !== JSON.stringify(expectedOrder)) throw Error('Invalid chapter images');
   return item;

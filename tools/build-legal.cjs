@@ -39,7 +39,7 @@ function legalFooter(html, code, nested) {
 
 function updateSet(code, prefix) {
   const policy = policies[code];
-  if (policy.noticeVersion !== '2026-11-07' || !policy.terms?.reviewNotice) {
+  if (policy.noticeVersion !== '2026-11-20' || !policy.terms?.reviewNotice) {
     throw new Error(`Run sync-privacy.cjs with the current app source first: ${code}`);
   }
   for (const relative of ['index.html', 'support/index.html', 'privacy/index.html']) {
@@ -52,7 +52,7 @@ function updateSet(code, prefix) {
       html = replacePolicyContent(html, renderPolicy(policy).html + currentPolicyLink);
     }
     if (relative === 'support/index.html') {
-      html = html.replace(/<section class="glass" data-support-processing="[^"]*">[\s\S]*?<\/section>/gu, '');
+      html = html.replace(/<section class="glass"[^>]*data-support-processing="[^"]*"[^>]*>[\s\S]*?<\/section>/gu, '');
       html = html.replace(/<section class="glass" data-web-review="[^"]*">[\s\S]*?<\/section>/gu, '');
       html = html.replace('<footer', renderSupportProcessing(policy) + '<footer');
     }
@@ -72,7 +72,7 @@ function updateSet(code, prefix) {
   html = html.replace(/<(div|section) class="page-intro">[\s\S]*?<\/\1>/u,
     `<section class="page-intro"><h1>${escapeHtml(terms.title)}</h1></section>`);
   html = html.replace(/<meta name="description" content="[^"]*">/u,
-    `<meta name="description" content="${escapeHtml(policy.terms.reviewNotice)}">`);
+    `<meta name="description" content="${escapeHtml(terms.reviewNotice)}">`);
   html = html.replace(/<details class="language-picker">[\s\S]*?<\/details>/u,
     (picker) => picker.replaceAll('/privacy/', '/terms/'));
   html = legalFooter(html, code, true);

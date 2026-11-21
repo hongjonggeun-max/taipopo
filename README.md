@@ -7,13 +7,13 @@ Static, dependency-free introduction, privacy and support site in 16 languages f
 - Run `tools/check-english.cjs` with Playwright alongside the existing website/manual checks.
 
 - Home: `index.html`
-- Image manual: `guide/` keeps the existing language URLs, header/footer and theme. It displays the complete published app guide in all 16 languages: six chapters (Main, Gallery, Settlement, Report, Camera, Settings), 113 feature instructions and two notices, plus the four current overview images. A contents selector navigates to each chapter. Continuous vertical scrolling preserves each image's proportions; original-image links open the unchanged WebP in a new tab. No offline availability is promised.
-- Full text is resolved without running the app by tools/manual-content-export.cjs from manual_feature_catalog.dart, manual_camera_settings_features.dart and ARBs; the Production-only Drive entries are included and every referenced string is checked against generated Dart. Only resolved public text and glyph/style data are published; source paths and parser metadata stay out of the guide manifest.
-- Manual export reads the current app's `manual_overview_catalog.dart`, `app_language_options.dart`, `pubspec.yaml`, per-language `assets/manual/*/manifest.json` and the explicit public UI strings. Run `node tools/sync-manual.cjs C:/TAIPOPO/development/app-current`, then `node tools/build-seo.cjs`. The exporter copies only 64 active WebPs byte-for-byte; 1,968 archived manifest entries are excluded. Existing app target rectangles remain a separate presentation layer; originals are never redrawn, recompressed, cropped or mirrored. Website-only previews remove verified blank rows and remap annotations as described below. Never copy full ARBs, archived captures or private app source here. Edit `tools/manual-template.html`, `guide/manual.css` and `guide/manual.js` for layout; generated HTML/JSON and copied images must come from the exporter.
-- Validate image provenance with `node tools/check-manual-assets.cjs C:/TAIPOPO/development/app-current` and isolated browser coverage with `node tools/check-manual.cjs` (`PLAYWRIGHT_MODULE` may point at an external installed Playwright package). `MANUAL_BASE_URL` switches the same browser checks to the deployed site. Missing/corrupt manifests or images show errors and retry controls, never older text or another language. With JavaScript disabled, all six chapters, 113 instructions, notices and original-image links remain available in explicitly selected language sections. Actual app icons use the unchanged Production +21 Material Icons font subset, credited in assets/manual/LICENSE-MaterialIcons.txt.
+- Image manual: `guide/` keeps the existing language URLs, header/footer and theme. It displays the complete published app guide in all 16 languages: six chapters (Main, Gallery, Settlement, Report, Camera, Settings), 110 feature instructions and two notices, plus the four current overview images. A contents selector navigates to each chapter. Continuous vertical scrolling preserves each image's proportions; original-image links open the unchanged WebP in a new tab. No offline availability is promised.
+- Full text is resolved without running the app by tools/manual-content-export.cjs from manual_feature_catalog.dart, manual_camera_settings_features.dart and ARBs. Production +17 excludes the three gated direct Drive entries (110 active features). Menu names are checked against ARBs and generated Dart; tools/public-copy.json supplies explicit website-only wording for neutral photo descriptions, the inactive direct-upload preference and manual backup/restore paths. Only resolved public text and glyph/style data are published; source paths and parser metadata stay out of the guide manifest.
+- Manual export reads the current app's `manual_overview_catalog.dart`, `app_language_options.dart`, `pubspec.yaml`, per-language `assets/manual/*/manifest.json` and the explicit public UI strings. Run `node tools/sync-manual.cjs C:/TAIPOPO/development/gps-address-latency-20261119`, then `node tools/build-seo.cjs`. The exporter copies only 64 active WebPs byte-for-byte; 1,968 archived manifest entries are excluded. Existing app target rectangles remain a separate presentation layer; originals are never redrawn, recompressed, cropped or mirrored. Website-only previews remove verified blank rows and remap annotations as described below. Never copy full ARBs, archived captures or private app source here. Edit `tools/manual-template.html`, `guide/manual.css` and `guide/manual.js` for layout; generated HTML/JSON and copied images must come from the exporter.
+- Validate image provenance with `node tools/check-manual-assets.cjs C:/TAIPOPO/development/gps-address-latency-20261119` and isolated browser coverage with `node tools/check-manual.cjs` (`PLAYWRIGHT_MODULE` may point at an external installed Playwright package). `MANUAL_BASE_URL` switches the same browser checks to the deployed site. Missing/corrupt manifests or images show errors and retry controls, never older text or another language. With JavaScript disabled, all six chapters, 113 instructions, notices and original-image links remain available in explicitly selected language sections. Actual app icons use the unchanged Production +21 Material Icons font subset, credited in assets/manual/LICENSE-MaterialIcons.txt.
 - Support / four-question email templates: `support/index.html`, `site.js`
 - Privacy: `privacy/index.html` and `/{language}/privacy/`. The local review includes the full policy and common website/email/rights notices in 16 languages; production must be checked separately.
-- Terms drafts: `terms/index.html` and `/{language}/terms/`. These remain clearly labeled review copies with an unconfirmed effective date and `noindex,follow`; publication does not establish an effective date.
+- Terms: `terms/index.html` and `/{language}/terms/`. The effective date remains unconfirmed and `noindex,follow` is retained. Plain public wording replaces internal draft labels; this does not establish an effective date or verify assent. Publication is blocked pending the facts listed in tools/publication-readiness.json.
 - Theme, spacing, typography and responsive layout: `styles.css`
 - Brand: existing TAIPOPO SVG symbol and wordmark, used without redesign.
 
@@ -28,7 +28,7 @@ For a layout-only refresh, preserve the already published guide text instead of 
 python tools/compact-manual-images.py
 node tools/refresh-manual-layout.cjs
 node tools/build-seo.cjs
-node tools/check-manual-assets.cjs C:/TAIPOPO/development/app-current --images-only
+node tools/check-manual-assets.cjs C:/TAIPOPO/development/gps-address-latency-20261119 --images-only
 node tools/check-manual.cjs
 ```
 
@@ -57,17 +57,21 @@ The 2026-11-07 local review uses the actual app working tree as its source. The 
 Import only public legal text, using the current app checkout explicitly:
 
 ```powershell
-node tools/sync-privacy.cjs C:/TAIPOPO/development/app-current/lib/l10n
+node tools/sync-privacy.cjs C:/TAIPOPO/development/gps-address-latency-20261119/lib/l10n
+node tools/apply-public-copy.cjs C:/TAIPOPO/development/gps-address-latency-20261119
+node tools/sync-manual.cjs C:/TAIPOPO/development/gps-address-latency-20261119
 node tools/build-legal.cjs
 node tools/build-seo.cjs
-node tools/check-privacy.cjs C:/TAIPOPO/development/app-current/lib/l10n
-node tools/check-legal.cjs C:/TAIPOPO/development/app-current/lib/l10n
+node tools/check-privacy.cjs C:/TAIPOPO/development/gps-address-latency-20261119/lib/l10n
+node tools/check-legal.cjs C:/TAIPOPO/development/gps-address-latency-20261119/lib/l10n
 node tools/check-publication.cjs
+node tools/check-copy17.cjs C:/TAIPOPO/development/gps-address-latency-20261119
+node tools/check-copy17.cjs C:/TAIPOPO/development/gps-address-latency-20261119 --publication
 ```
 
-If regenerating the general English/localized site, run `build-legal.cjs` followed by `build-seo.cjs` so common legal notices, footer links and crawl metadata remain authoritative. Use the current public Korean policy URL for site navigation and keep the former policy URL available for earlier versions. Imported app bodies and dates remain unchanged; `tools/website-disclosures.json` supplies separately reviewed website-only corrections for authentication scope, version-qualified QR processing, Geocoder and deletion. Do not copy private app source or operator-decision drafts here. Actual recipient entities/countries, transfer grounds, received-mail retention and the terms effective date remain unconfirmed; do not turn them into definite promises. The site has no analytics, remote fonts, login or server form; browser storage contains only the theme choice.
+If regenerating the general English/localized site, run `apply-public-copy.cjs`, `sync-manual.cjs`, `build-legal.cjs` and `build-seo.cjs` in that order so common legal notices, footer links and crawl metadata remain authoritative. Use the current public Korean policy URL for site navigation and keep the former policy URL available for earlier versions. Imported app bodies and dates remain unchanged; `tools/website-disclosures.json` supplies separately reviewed website-only corrections for authentication scope, version-qualified QR processing, Geocoder and deletion. Do not copy private app source or operator-decision drafts here. Actual recipient entities/countries, transfer grounds, received-mail retention and the terms effective date remain unconfirmed; do not turn them into definite promises. The site has no analytics, remote fonts, login or server form; browser storage contains only the theme choice.
 
-The 2026-11-11 web review distinguishes versions that used ML Kit from those using on-device ZXing. The policy body describes the camera address-display condition and the potential automatic resumption of an eligible interrupted Drive upload. The deletion guide names the current Data Management route. The policy effective date and the separately versioned website and email notice are preserved.
+The 2026-11-20 website correction describes production +17 device ZIP backup and user-selected sharing, with no direct Drive API backup, restore or automatic upload resumption. Current website, email and sales disclosures are organized into policy sections. The policy effective date remains unchanged. Publication remains BLOCKED until the unconfirmed operator and service facts are supplied.
 
 `build-seo.cjs` preserves routes and design, adds the Korean brand name `TAIPOPO(타이포포)`, WebSite aliases, canonical/hreflang metadata, `robots.txt` and a 65-URL sitemap. Korean aliases have preferred canonical routes. Unconfirmed terms drafts are excluded from the sitemap and marked noindex. A sitemap or indexing request does not guarantee inclusion or ranking. Search Console verification and indexing requests require an authenticated authorized session.
 

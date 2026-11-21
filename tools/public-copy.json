@@ -1,0 +1,482 @@
+{
+  "ko": {
+    "backupDuty": "필요한 데이터는 사용자가 기기 백업, 외장 저장소 저장 또는 공유·내보내기 기능으로 별도 보관해야 합니다.",
+    "manualStart": "기기·외장 저장소 백업과 복원, 사진·파일·PDF 공유 및 내보내기는 사용자가 직접 실행한 경우에만 진행됩니다.",
+    "externalReset": "앱 내부 데이터 초기화나 앱 삭제가 앱 밖으로 복사된 파일까지 자동으로 삭제하지는 않습니다.",
+    "sharingResponsibility": "사용자는 선택한 저장 위치, 공유 대상 앱 및 수신자에게 전송되는 정보와 그 이후의 처리에 대해 책임을 집니다.",
+    "termsNotice": "시행일이 미확정인 검증용 문안입니다. 이 버전의 수락 기록을 최종 출시 약관 수락으로 자동 승계하지 않습니다.\n문서 버전: plus17-consent-review-v1",
+    "salesHeading": "18. 광고와 구매",
+    "dataUsage": "데이터 사용 설정을 저장합니다. 1.0.0(17)은 백업을 직접 업로드하지 않으며, 이 설정은 공유창에서 선택한 다른 앱의 Wi-Fi·모바일 데이터 사용을 제어하지 않습니다.",
+    "services": [
+      "Firebase Crashlytics: 오류 진단을 허용하면 오류 코드, 정제된 호출 기록, 설치 식별자와 기기·앱 진단 정보를 Google Firebase에서 처리할 수 있습니다. 동의 철회와 이미 전송된 정보의 삭제는 6조에서 구분해 안내합니다.",
+      "Android 주소 변환: 주소 조회를 허용하면 좌표를 주소로 바꾸기 위해 운영체제의 주소 변환 서비스를 이용합니다. 기기·운영체제 구성에 따라 좌표와 조회 요청이 네트워크를 통해 처리될 수 있습니다. GPS 기록만 켠 경우에는 주소를 조회하지 않습니다.",
+      "Google Play: 1.0.0(17)의 닫힌 테스트 PRO 설정에서는 앱의 상품 조회·구매·구매 복원 요청을 실행하지 않습니다. 기기에 저장된 기존 구매 권한을 읽는 것과 Google Play에 새로 요청하는 것은 다릅니다. Play 스토어 자체의 다운로드·업데이트·계정 정보 처리는 별도이며, TAIPOPO의 진단 동의로 제어되지 않습니다.",
+      "이메일 문의: 이메일을 보내면 문의 대응을 위해 발신 주소, 본문, 첨부파일과 사용자가 보낸 기기정보를 수신합니다. 받은 메일은 Gmail을 통해 처리하며 홈페이지 자체에는 문의 수신 양식이 없습니다. 자세한 내용은 14조를 확인하세요.",
+      "GitHub Pages: 홈페이지를 제공하는 과정에서 GitHub가 보안 목적으로 방문자의 IP 주소를 기록합니다. 홈페이지 방문정보와 브라우저의 테마 저장은 13조에서 안내합니다.",
+      "외부 공유: 사용자가 사진·PDF·백업 ZIP을 공유하면 선택한 수신 앱에 파일이 전달됩니다. 파일에는 사진 메타데이터와 근무 기록 등이 포함될 수 있습니다. 앱 밖의 사본은 해당 저장 위치나 수신 서비스에서 관리·삭제해야 합니다."
+    ],
+    "manualBodies": [
+      "업무 상황과 필요한 내용을 기록해 근무 기록과 함께 확인합니다.",
+      "일하는 순간을 사진으로 기록하고 촬영 결과를 갤러리에서 확인합니다.",
+      "어두운 곳에서 피사체가 잘 보이도록 플래시를 사용합니다.",
+      "업무 상황이나 필요한 내용을 사진에 함께 기록합니다.",
+      "촬영 밝기를 조절해 사진의 내용을 더 잘 담습니다.",
+      "기기를 가로로 돌려 더 넓은 장면을 사진에 담을 수 있습니다."
+    ],
+    "providerMailDeletion": "Gmail의 휴지통 자동 삭제 기간은 TAIPOPO의 문의 보유기간이 아닙니다. 계정에서 영구 삭제한 뒤 Google 서버와 백업에서 정보가 제거되는 데에는 별도의 시간이 걸릴 수 있습니다. 제공자의 삭제 기준: https://policies.google.com/technologies/retention · Gmail 삭제 방법: https://support.google.com/mail/answer/7401",
+    "supportMailPolicy": "운영자는 문의 처리에 필요한 정보만 사용합니다. 문의 답변과 필요한 후속 조치를 마쳐 처리 목적이 달성되면 문의 정보와 첨부파일을 지체 없이 삭제합니다. 수신·회신 메일은 계정에서 영구 삭제하고, 다운로드 등 운영자가 관리하는 사본도 삭제합니다. 실제 법정 보존 의무가 적용되는 기록만 해당 법정 기간 동안 다른 문의와 분리하여 보관합니다.\n\n삭제 요청은 taipopo.app@gmail.com으로 보내 주세요. 본인 또는 정당한 대리 권한을 확인하는 데 필요한 최소 정보로 확인한 뒤 처리합니다. 법령상 보존해야 하는 기록은 그 의무가 적용되는 범위에서 삭제 대상에서 제외하고, 근거와 보존기간을 안내합니다. Gmail 제공자의 서버와 백업에서 정보를 제거하는 절차는 운영자 관리 사본의 삭제와 구분됩니다.",
+    "termsIntroduction": "본 약관은 TAIPOPO(이하 “앱”)의 이용 조건과 사용자 및 TAIPOPO의 권리·의무·책임을 정합니다. 약관 동의 단계에서 필수 체크박스를 선택하고 ‘동의하고 계속’을 누른 경우에만 해당 버전의 수락을 기록합니다. 앱 실행이나 약관·개인정보처리방침 열람만으로 동의한 것으로 기록하지 않습니다. 개인정보 처리에 필요한 별도 선택은 약관 수락과 구분합니다. 정식 수락은 실제 적용 문서와 시행일이 확정된 경우에만 기록하며, 그 밖의 진행 확인은 정식 약관 동의로 처리하지 않습니다.",
+    "termsImplementationStatus": "현재 Play 내부 테스트 +17은 약관 열람만 제공합니다. 새 동의 단계와 로컬 기록은 별도 검증용 수정본에 추가됐으며 아직 배포되지 않았습니다.",
+    "externalIntroduction": "TAIPOPO는 사용자의 업무 기록과 사진을 자체 서버에 중앙 저장하거나 판매하지 않습니다. 오류 진단, 주소 변환, 이메일 문의와 홈페이지 제공 과정에서는 외부 서비스가 정보를 처리할 수 있습니다. 각 처리의 내용은 아래 해당 항목에서 안내합니다."
+  },
+  "en": {
+    "backupDuty": "You must keep a separate copy of necessary data using device backup, external storage, or sharing and export.",
+    "manualStart": "Device and external-storage backups and restores, and sharing or exporting photos, files and PDFs, take place only when directly started by the user.",
+    "externalReset": "Resetting app data or removing the app does not automatically delete files copied outside the app.",
+    "sharingResponsibility": "The user is responsible for the information sent to their chosen storage location, receiving app and recipient, and for its subsequent handling.",
+    "termsNotice": "This is a validation document with no confirmed effective date. Acceptance of this version will not automatically count as acceptance of the final release Terms.\nDocument version: plus17-consent-review-v1",
+    "salesHeading": "18. Advertising and purchases",
+    "dataUsage": "Save your data-use preference. Version 1.0.0(17) does not upload backups directly. This setting does not control Wi-Fi or mobile data used by another app you select in the share sheet.",
+    "services": [
+      "Firebase Crashlytics: If you allow error diagnostics, Google Firebase may process error codes, sanitized call traces, installation identifiers, and device and app diagnostics. Section 6 distinguishes withdrawing consent from deleting information already sent.",
+      "Android address lookup: If you allow address lookup, the app uses the operating system's geocoding service to convert coordinates to an address. Coordinates and lookup requests may be processed over a network, depending on the device and operating system. Enabling GPS recording alone does not request an address.",
+      "Google Play: The closed-test PRO configuration in 1.0.0(17) does not initiate in-app product queries, purchases or purchase restoration requests. Reading an existing entitlement stored on the device is separate from making a new request to Google Play. The Play Store's own downloads, updates and account processing are separate and are not controlled by TAIPOPO's diagnostics consent.",
+      "Email support: When you send an email, the developer receives your sender address, message, attachments, and any device details you include to handle your inquiry. Received mail is processed through Gmail; the website has no inquiry submission form. See section 14.",
+      "GitHub Pages: While hosting the website, GitHub records visitors' IP addresses for security. Section 13 explains website visit information and browser theme storage.",
+      "External sharing: Sharing a photo, PDF, or backup ZIP passes the file to the receiving app you select. Files may include photo metadata and work records. Manage or delete copies outside the app at their storage location or receiving service."
+    ],
+    "manualBodies": [
+      "Keep useful notes and work details alongside your work records.",
+      "Capture moments from your workday and review the photos in the gallery.",
+      "Use flash to make subjects visible in dark locations.",
+      "Add work details or useful notes to the photo.",
+      "Adjust exposure to capture details more clearly.",
+      "Turn the device sideways to capture a wider view."
+    ],
+    "providerMailDeletion": "Gmail’s automatic trash-deletion period is not TAIPOPO’s inquiry retention period. Removal from Google’s servers and backups may take additional time after messages are permanently deleted from the account. Provider retention information: https://policies.google.com/technologies/retention · Gmail deletion instructions: https://support.google.com/mail/answer/7401",
+    "supportMailPolicy": "The operator uses only information needed to handle the inquiry. Once the inquiry and necessary follow-up are complete and the processing purpose has been fulfilled, inquiry information and attachments are deleted without delay. Received and reply emails are permanently deleted from the account, and copies managed by the operator, including downloads, are also deleted. Only records actually subject to a statutory retention duty are stored separately from other inquiries for the legally required period.\n\nSend deletion requests to taipopo.app@gmail.com. Requests are handled after verifying your identity or an authorized representative's authority using the minimum information necessary. Records that must be retained by law are excluded from deletion only to the extent that the duty applies, and the legal basis and retention period are explained. The Gmail provider's removal of information from its servers and backups is separate from deletion of copies managed by the operator.",
+    "termsIntroduction": "These Terms describe the conditions for using TAIPOPO (the “App”) and the rights, obligations and responsibilities of users and TAIPOPO. Acceptance of a version is recorded only when you select the required checkbox in the Terms step and tap ‘Agree and continue’. Launching the app or reading the Terms or Privacy Policy is not recorded as consent. Separate choices required for personal information processing remain distinct from Terms acceptance. Formal acceptance is recorded only after the applicable document and effective date are finalized; other confirmations to proceed are not treated as formal acceptance of the Terms.",
+    "termsImplementationStatus": "The current Play internal-test +17 provides Terms viewing only. The new acceptance step and local records have been added to a separate validation build and have not been distributed.",
+    "externalIntroduction": "TAIPOPO does not centrally store work records or photos on its own server or sell them. External services may process information for error diagnostics, address lookup, support email and this website. Each activity is described below."
+  },
+  "zh": {
+    "backupDuty": "用户须通过设备备份、外部存储或分享、导出功能另行保存所需数据。",
+    "manualStart": "设备和外部存储备份、恢复，以及照片、文件和PDF的分享、导出，仅在用户直接启动时进行。",
+    "externalReset": "重置应用数据或卸载应用不会自动删除已复制到应用外的文件。",
+    "sharingResponsibility": "用户对发送至所选存储位置、分享应用及接收方的信息，以及该信息后续的处理承担责任。",
+    "termsNotice": "这是生效日期尚未确定的验证用文本。本版本的接受记录不会自动视为对正式发布条款的接受。\n文档版本：plus17-consent-review-v1",
+    "salesHeading": "18. 广告与购买",
+    "dataUsage": "保存数据使用偏好。1.0.0(17)版本不会直接上传备份，此设置也不控制您在分享面板中选择的其他应用使用Wi-Fi或移动数据。",
+    "services": [
+      "Firebase Crashlytics：允许错误诊断后，Google Firebase可能处理错误代码、经过过滤的调用记录、安装标识符以及设备和应用诊断信息。第6节区分撤回同意与删除已发送信息。",
+      "Android地址查询：允许地址查询后，应用通过操作系统的地理编码服务将坐标转换为地址。根据设备和操作系统配置，坐标和查询请求可能通过网络处理。仅开启GPS记录不会查询地址。",
+      "Google Play：1.0.0(17)的封闭测试PRO配置不会发起应用内商品查询、购买或恢复购买请求。读取设备上已保存的购买权限，与向Google Play发出新请求不同。Play商店自身的下载、更新和账号信息处理属于独立服务，不受TAIPOPO诊断同意设置控制。",
+      "邮件支持：发送邮件后，开发者会收到发件地址、正文、附件及您提供的设备信息，用于处理咨询。收到的邮件通过Gmail处理，网站本身没有咨询提交表单。详见第14节。",
+      "GitHub Pages：提供网站托管时，GitHub会出于安全目的记录访问者的IP地址。网站访问信息和浏览器主题存储见第13节。",
+      "外部分享：分享照片、PDF或备份ZIP时，文件会发送给您选择的接收应用，可能包含照片元数据和工作记录。应用外的副本须在其存储位置或接收服务中管理或删除。"
+    ],
+    "manualBodies": [
+      "记录工作情况和所需内容，并与工作记录一同查看。",
+      "用照片记录工作中的时刻，并在图库中查看拍摄结果。",
+      "在较暗的地方使用闪光灯，使拍摄对象清晰可见。",
+      "将工作情况或所需内容记录在照片上。",
+      "调整拍摄亮度，更清楚地记录画面细节。",
+      "将设备横置，可以拍摄更宽的画面。"
+    ],
+    "providerMailDeletion": "Gmail垃圾箱的自动删除期限不是TAIPOPO的咨询保存期限。从账号中永久删除邮件后，Google服务器和备份中的信息删除可能还需要额外时间。服务提供者的保留规则：https://policies.google.com/technologies/retention · Gmail删除方法：https://support.google.com/mail/answer/7401",
+    "supportMailPolicy": "运营者仅使用处理咨询所需的信息。咨询答复和必要的后续处理完成、处理目的达成后，将及时删除咨询信息和附件。收到的邮件和回复邮件将从账户中永久删除，下载文件等由运营者管理的副本也将删除。仅对实际适用法定保存义务的记录，在法定期限内与其他咨询分开保存。\n\n请将删除请求发送至 taipopo.app@gmail.com。运营者使用必要的最少信息核实本人身份或合法代理权限后处理请求。依法必须保存的记录，仅在该义务适用的范围内不予删除，并说明法律依据和保存期限。Gmail 提供方从其服务器和备份中移除信息的流程，与运营者删除其管理的副本不同。",
+    "termsIntroduction": "本条款规定 TAIPOPO（以下简称“应用”）的使用条件，以及用户与 TAIPOPO 的权利、义务和责任。仅当您在条款接受步骤中选中必选复选框并点击“同意并继续”时，才会记录对该版本的接受。仅启动应用或阅览条款、隐私政策不会被记录为同意。个人信息处理所需的单独选择与条款接受相互区分。 仅在适用文档及生效日期确定后记录正式接受；其他继续操作的确认不视为正式同意条款。",
+    "termsImplementationStatus": "当前 Play 内部测试 +17 仅提供条款阅览。新的接受步骤和本地记录已加入单独的验证修改版，尚未分发。",
+    "externalIntroduction": "TAIPOPO不会将工作记录和照片集中保存在自有服务器上，也不会出售这些数据。错误诊断、地址查询、支持邮件和本网站的提供可能涉及外部服务处理信息。各项处理将在下文说明。"
+  },
+  "ja": {
+    "backupDuty": "必要なデータは、ユーザーが端末バックアップ、外部ストレージへの保存、共有・書き出し機能で別途保管する必要があります。",
+    "manualStart": "端末・外部ストレージへのバックアップと復元、写真・ファイル・PDFの共有や書き出しは、ユーザーが直接実行した場合にのみ行われます。",
+    "externalReset": "アプリ内データの初期化やアプリの削除によって、アプリ外にコピーしたファイルが自動的に削除されることはありません。",
+    "sharingResponsibility": "ユーザーは、選択した保存先、共有先アプリおよび受信者に送信する情報と、その後の取り扱いに責任を負います。",
+    "termsNotice": "施行日未確定の検証用文面です。このバージョンの同意記録を正式リリース規約への同意として自動的に引き継ぎません。\n文書バージョン：plus17-consent-review-v1",
+    "salesHeading": "18. 広告と購入",
+    "dataUsage": "データ使用の設定を保存します。1.0.0(17)ではバックアップを直接アップロードしません。この設定は共有画面で選んだ別のアプリのWi-Fi・モバイルデータ使用を制御しません。",
+    "services": [
+      "Firebase Crashlytics：エラー診断を許可すると、Google Firebaseがエラーコード、不要な情報を除いた呼び出し記録、インストール識別子、端末・アプリの診断情報を処理する場合があります。同意の撤回と送信済み情報の削除の違いは第6項をご確認ください。",
+      "Androidの住所検索：住所検索を許可すると、OSのジオコーディングサービスで座標を住所に変換します。端末・OSの構成により、座標や検索要求がネットワーク経由で処理される場合があります。GPS記録だけをオンにしても住所は検索しません。",
+      "Google Play：1.0.0(17)のクローズドテスト用PRO設定では、アプリから商品照会・購入・購入復元をリクエストしません。端末に保存済みの購入権限を読む処理と、Google Playへの新たなリクエストは別です。Playストア自体のダウンロード・更新・アカウント情報処理は別のサービスであり、TAIPOPOの診断への同意では制御できません。",
+      "メールでのお問い合わせ：メールを送信すると、開発者は対応のために送信元アドレス、本文、添付ファイル、お客様が記載した端末情報を受け取ります。受信メールはGmailを通じて処理し、ウェブサイト自体には問い合わせ送信フォームがありません。第14項をご確認ください。",
+      "GitHub Pages：サイトのホスティングにあたり、GitHubはセキュリティのため訪問者のIPアドレスを記録します。訪問情報とブラウザーのテーマ保存は第13項で説明します。",
+      "外部共有：写真・PDF・バックアップZIPを共有すると、選択した受信アプリにファイルが渡されます。写真のメタデータや勤務記録が含まれる場合があります。アプリ外のコピーは保存先や受信サービスで管理・削除してください。"
+    ],
+    "manualBodies": [
+      "仕事の状況や必要な内容を、勤務記録と一緒に残せます。",
+      "仕事中の様子を写真に記録し、ギャラリーで確認できます。",
+      "暗い場所で被写体が見えるようにフラッシュを使います。",
+      "仕事の状況や必要なメモを写真に残します。",
+      "明るさを調整して写真の内容を写しやすくします。",
+      "端末を横にして、より広い範囲を撮影できます。"
+    ],
+    "providerMailDeletion": "Gmailのゴミ箱の自動削除期間は、TAIPOPOの問い合わせ情報の保有期間ではありません。アカウント内のメールを完全に削除した後も、Googleのサーバーやバックアップから情報が削除されるまでには別途時間がかかる場合があります。提供者の保有基準：https://policies.google.com/technologies/retention · Gmailの削除方法：https://support.google.com/mail/answer/7401",
+    "supportMailPolicy": "運営者はお問い合わせへの対応に必要な情報のみを使用します。回答と必要な後続対応が完了し、処理目的を達成した場合、お問い合わせ情報と添付ファイルを遅滞なく削除します。受信・返信メールはアカウントから完全に削除し、ダウンロードしたファイルなど運営者が管理するコピーも削除します。実際に法令上の保存義務が適用される記録のみ、法定期間中、他のお問い合わせと分けて保存します。\n\n削除依頼は taipopo.app@gmail.com へお送りください。必要最小限の情報で本人または正当な代理権を確認した後に対応します。法令上保存が必要な記録は、その義務が適用される範囲に限り削除対象から除外し、根拠と保存期間を案内します。Gmail 提供者のサーバーやバックアップからの情報削除手続きは、運営者が管理するコピーの削除とは別です。",
+    "termsIntroduction": "本規約は、TAIPOPO（以下「アプリ」）の利用条件ならびに利用者と TAIPOPO の権利、義務および責任を定めます。規約同意の段階で必須チェックボックスを選択し「同意して続ける」を押した場合にのみ、そのバージョンへの同意を記録します。アプリの起動や規約・プライバシーポリシーの閲覧だけでは同意として記録しません。個人情報処理に必要な別途の選択は規約同意と区別します。 正式な同意は、適用文書と施行日が確定した場合にのみ記録し、それ以外の続行確認は正式な規約同意として扱いません。",
+    "termsImplementationStatus": "現在の Play 内部テスト +17 は規約の閲覧のみを提供します。新しい同意段階と端末内記録は別の検証用修正版に追加されており、まだ配布されていません。",
+    "externalIntroduction": "TAIPOPOは業務記録や写真を独自サーバーに集中保存したり、販売したりしません。エラー診断、住所検索、問い合わせメールおよび本サイトの提供では、外部サービスが情報を処理する場合があります。それぞれの処理は以下で説明します。"
+  },
+  "hi": {
+    "backupDuty": "ज़रूरी डेटा की अलग प्रति डिवाइस बैकअप, बाहरी स्टोरेज या शेयर और निर्यात सुविधाओं से रखना उपयोगकर्ता की जिम्मेदारी है।",
+    "manualStart": "डिवाइस या बाहरी स्टोरेज पर बैकअप और बहाली तथा फ़ोटो, फ़ाइलें और PDF शेयर या निर्यात करना केवल उपयोगकर्ता के सीधे शुरू करने पर होता है।",
+    "externalReset": "ऐप डेटा रीसेट करने या ऐप हटाने से ऐप के बाहर कॉपी की गई फ़ाइलें अपने आप नहीं मिटतीं।",
+    "sharingResponsibility": "चुने हुए संग्रह स्थान, प्राप्तकर्ता ऐप और व्यक्ति को भेजी जानकारी तथा उसके बाद की प्रक्रिया की जिम्मेदारी उपयोगकर्ता की है।",
+    "termsNotice": "यह सत्यापन का मसौदा है, जिसकी प्रभावी तिथि तय नहीं है। इस संस्करण की स्वीकृति अंतिम रिलीज़ की शर्तों की स्वीकृति नहीं मानी जाएगी।\nदस्तावेज़ संस्करण: plus17-consent-review-v1",
+    "salesHeading": "18. विज्ञापन और खरीदारी",
+    "dataUsage": "डेटा उपयोग की पसंद सहेजें। संस्करण 1.0.0(17) बैकअप सीधे अपलोड नहीं करता। यह सेटिंग शेयर मेनू में चुने गए दूसरे ऐप के Wi-Fi या मोबाइल डेटा उपयोग को नियंत्रित नहीं करती।",
+    "services": [
+      "Firebase Crashlytics: त्रुटि निदान की अनुमति देने पर Google Firebase त्रुटि कोड, छँटे हुए कॉल रिकॉर्ड, इंस्टॉलेशन पहचानकर्ता और डिवाइस व ऐप की निदान जानकारी संसाधित कर सकता है। सहमति वापस लेने और पहले भेजी जानकारी मिटाने का अंतर खंड 6 में है।",
+      "Android पता खोज: अनुमति देने पर ऐप ऑपरेटिंग सिस्टम की जियोकोडिंग सेवा से निर्देशांक को पते में बदलता है। डिवाइस और सिस्टम के अनुसार निर्देशांक और खोज अनुरोध नेटवर्क से संसाधित हो सकते हैं। केवल GPS रिकॉर्ड चालू करने से पता नहीं खोजा जाता।",
+      "Google Play: 1.0.0(17) के बंद परीक्षण वाले PRO कॉन्फ़िगरेशन में ऐप उत्पाद खोज, खरीदारी या खरीद की बहाली का अनुरोध नहीं भेजता। डिवाइस में पहले से सहेजा खरीद अधिकार पढ़ना, Google Play को नया अनुरोध भेजने से अलग है। Play Store के अपने डाउनलोड, अपडेट और खाते की जानकारी का प्रबंधन अलग है और TAIPOPO की निदान सहमति से नियंत्रित नहीं होता।",
+      "ईमेल सहायता: ईमेल भेजने पर डेवलपर आपके प्रश्न का उत्तर देने के लिए प्रेषक पता, संदेश, संलग्न फ़ाइलें और आपके दिए डिवाइस विवरण प्राप्त करता है। मिले ईमेल Gmail से संसाधित होते हैं; वेबसाइट पर प्रश्न भेजने का फ़ॉर्म नहीं है। खंड 14 देखें।",
+      "GitHub Pages: वेबसाइट होस्ट करते समय GitHub सुरक्षा के लिए आगंतुकों के IP पते दर्ज करता है। वेबसाइट विज़िट की जानकारी और ब्राउज़र में थीम सहेजने का विवरण खंड 13 में है।",
+      "बाहरी शेयरिंग: फ़ोटो, PDF या बैकअप ZIP शेयर करने पर फ़ाइल आपके चुने प्राप्तकर्ता ऐप को मिलती है। इसमें फ़ोटो मेटाडेटा और कार्य रिकॉर्ड हो सकते हैं। ऐप के बाहर की प्रतियाँ उनके संग्रह स्थान या प्राप्तकर्ता सेवा में प्रबंधित या मिटाएँ।"
+    ],
+    "manualBodies": [
+      "काम की स्थिति और ज़रूरी विवरण कार्य रिकॉर्ड के साथ रखें।",
+      "काम के पलों की फ़ोटो लें और गैलरी में परिणाम देखें।",
+      "अँधेरी जगह में विषय साफ़ दिखाने के लिए फ़्लैश इस्तेमाल करें।",
+      "काम की स्थिति या ज़रूरी बातें फ़ोटो में दर्ज करें।",
+      "विवरण साफ़ लेने के लिए एक्सपोज़र बदलें।",
+      "व्यापक दृश्य लेने के लिए डिवाइस को आड़ा करें।"
+    ],
+    "providerMailDeletion": "Gmail के ट्रैश से अपने आप मिटाने की अवधि, TAIPOPO की पूछताछ रखने की अवधि नहीं है। खाते से संदेश स्थायी रूप से मिटाने के बाद Google के सर्वर और बैकअप से जानकारी हटने में अतिरिक्त समय लग सकता है। सेवा प्रदाता की जानकारी: https://policies.google.com/technologies/retention · Gmail में मिटाने के निर्देश: https://support.google.com/mail/answer/7401",
+    "supportMailPolicy": "संचालक केवल पूछताछ का समाधान करने के लिए आवश्यक जानकारी का उपयोग करता है। पूछताछ का उत्तर और आवश्यक आगे की कार्रवाई पूरी होने तथा प्रसंस्करण का उद्देश्य पूरा होने पर पूछताछ की जानकारी और संलग्नक बिना देरी के हटा दिए जाते हैं। प्राप्त ईमेल और भेजे गए उत्तर खाते से स्थायी रूप से हटाए जाते हैं। डाउनलोड की गई फ़ाइलों सहित संचालक द्वारा प्रबंधित प्रतियाँ भी हटा दी जाती हैं। केवल उन अभिलेखों को अन्य पूछताछों से अलग, कानून द्वारा निर्धारित अवधि तक रखा जाता है जिन पर वास्तव में वैधानिक संरक्षण दायित्व लागू होता है।\n\nहटाने के अनुरोध taipopo.app@gmail.com पर भेजें। न्यूनतम आवश्यक जानकारी से आपकी पहचान या अधिकृत प्रतिनिधि के अधिकार की पुष्टि करने के बाद अनुरोध पर कार्रवाई की जाती है। कानून के अनुसार सुरक्षित रखने वाले अभिलेखों को केवल लागू दायित्व की सीमा तक हटाने से बाहर रखा जाता है और कानूनी आधार तथा संरक्षण अवधि बताई जाती है। Gmail प्रदाता के सर्वर और बैकअप से जानकारी हटाने की प्रक्रिया, संचालक द्वारा प्रबंधित प्रतियाँ हटाने से अलग है।",
+    "termsIntroduction": "ये शर्तें TAIPOPO (“ऐप”) के उपयोग तथा उपयोगकर्ताओं और TAIPOPO के अधिकारों, दायित्वों और जिम्मेदारियों को निर्धारित करती हैं। किसी संस्करण की स्वीकृति केवल तब दर्ज होती है जब आप शर्तों वाले चरण में आवश्यक चेकबॉक्स चुनकर “सहमत होकर जारी रखें” दबाते हैं। ऐप खोलने या शर्तें अथवा गोपनीयता नीति पढ़ने को सहमति के रूप में दर्ज नहीं किया जाता। व्यक्तिगत जानकारी के प्रसंस्करण के लिए आवश्यक अलग विकल्प, शर्तों की स्वीकृति से अलग रहते हैं। औपचारिक स्वीकृति केवल लागू दस्तावेज़ और प्रभावी तिथि अंतिम होने पर दर्ज की जाती है; आगे बढ़ने की अन्य पुष्टियाँ शर्तों की औपचारिक स्वीकृति नहीं मानी जातीं।",
+    "termsImplementationStatus": "वर्तमान Play आंतरिक परीक्षण +17 में केवल शर्तें पढ़ी जा सकती हैं। नया स्वीकृति चरण और स्थानीय अभिलेख अलग सत्यापन बिल्ड में जोड़े गए हैं और अभी वितरित नहीं किए गए हैं।",
+    "externalIntroduction": "TAIPOPO काम के रिकॉर्ड और फ़ोटो को अपने सर्वर पर केंद्रीय रूप से संग्रहीत नहीं करता और न ही उन्हें बेचता है। त्रुटि निदान, पता खोज, सहायता ईमेल और इस वेबसाइट के लिए बाहरी सेवाएँ जानकारी संसाधित कर सकती हैं। हर प्रक्रिया का विवरण नीचे दिया गया है।"
+  },
+  "pt": {
+    "backupDuty": "Você deve manter uma cópia separada dos dados necessários usando backup no dispositivo, armazenamento externo ou compartilhamento e exportação.",
+    "manualStart": "Backups e restaurações no dispositivo ou em armazenamento externo, e o compartilhamento ou a exportação de fotos, arquivos e PDFs, só ocorrem quando iniciados diretamente pelo usuário.",
+    "externalReset": "Redefinir os dados do app ou remover o app não exclui automaticamente arquivos copiados para fora dele.",
+    "sharingResponsibility": "O usuário é responsável pelas informações enviadas ao local de armazenamento, app e destinatário escolhidos, bem como pelo tratamento posterior dessas informações.",
+    "termsNotice": "Este é um texto de validação sem data de vigência confirmada. Aceitar esta versão não contará automaticamente como aceitação dos Termos finais de lançamento.\nVersão do documento: plus17-consent-review-v1",
+    "salesHeading": "18. Publicidade e compras",
+    "dataUsage": "Salve sua preferência de uso de dados. A versão 1.0.0(17) não envia backups diretamente. Esta configuração não controla o uso de Wi-Fi ou dados móveis de outro app escolhido no menu de compartilhamento.",
+    "services": [
+      "Firebase Crashlytics: Se você permitir diagnósticos de erros, o Google Firebase poderá processar códigos de erro, rastros de chamadas filtrados, identificadores de instalação e diagnósticos do dispositivo e do app. A seção 6 distingue a retirada do consentimento da exclusão de informações já enviadas.",
+      "Consulta de endereço do Android: Com sua permissão, o app usa a geocodificação do sistema operacional para converter coordenadas em endereço. Conforme o dispositivo e o sistema, coordenadas e solicitações podem ser processadas pela rede. Ativar apenas o registro GPS não consulta endereços.",
+      "Google Play: A configuração PRO de teste fechado da versão 1.0.0(17) não inicia consultas de produtos, compras ou solicitações de restauração de compras no app. Ler um direito existente salvo no dispositivo é diferente de enviar uma nova solicitação ao Google Play. Downloads, atualizações e dados de conta da própria Play Store são tratados separadamente e não são controlados pelo consentimento de diagnóstico do TAIPOPO.",
+      "Suporte por e-mail: Ao enviar uma mensagem, o desenvolvedor recebe o endereço do remetente, texto, anexos e detalhes do dispositivo que você incluir para atender à solicitação. As mensagens recebidas são processadas pelo Gmail; o site não possui formulário de atendimento. Veja a seção 14.",
+      "GitHub Pages: Na hospedagem do site, o GitHub registra os endereços IP dos visitantes para segurança. A seção 13 explica as informações de visitas e o armazenamento do tema no navegador.",
+      "Compartilhamento externo: Ao compartilhar fotos, PDFs ou ZIPs de backup, o arquivo é entregue ao app destinatário escolhido. Ele pode conter metadados das fotos e registros de trabalho. Gerencie ou exclua cópias externas no local de armazenamento ou serviço destinatário."
+    ],
+    "manualBodies": [
+      "Guarde anotações úteis e detalhes do trabalho junto aos registros.",
+      "Registre momentos do trabalho em fotos e veja os resultados na galeria.",
+      "Use o flash para visualizar melhor o objeto em locais escuros.",
+      "Registre na foto detalhes do trabalho ou anotações necessárias.",
+      "Ajuste a exposição para registrar melhor os detalhes da imagem.",
+      "Gire o aparelho para capturar uma visão mais ampla."
+    ],
+    "providerMailDeletion": "O prazo de exclusão automática da lixeira do Gmail não é o prazo de retenção de consultas do TAIPOPO. A remoção das informações dos servidores e backups do Google pode exigir tempo adicional após a exclusão permanente das mensagens da conta. Informações do fornecedor: https://policies.google.com/technologies/retention · Instruções do Gmail: https://support.google.com/mail/answer/7401",
+    "supportMailPolicy": "O operador utiliza apenas as informações necessárias para tratar a consulta. Quando a resposta e o acompanhamento necessário estiverem concluídos e a finalidade do tratamento tiver sido atingida, as informações da consulta e os anexos serão excluídos sem demora. Os e-mails recebidos e de resposta serão excluídos permanentemente da conta, assim como as cópias gerenciadas pelo operador, incluindo os arquivos baixados. Somente os registros efetivamente sujeitos a uma obrigação legal de retenção serão mantidos separados das demais consultas pelo prazo exigido por lei.\n\nEnvie solicitações de exclusão para taipopo.app@gmail.com. As solicitações são tratadas após a verificação da sua identidade ou dos poderes de um representante autorizado, usando o mínimo de informações necessário. Os registros cuja retenção seja exigida por lei são excluídos do alcance da exclusão apenas na medida em que essa obrigação se aplique; a base legal e o prazo de retenção serão informados. A remoção de informações dos servidores e backups do provedor do Gmail é distinta da exclusão das cópias gerenciadas pelo operador.",
+    "termsIntroduction": "Estes Termos regulam o uso do TAIPOPO (o “Aplicativo”) e os direitos, obrigações e responsabilidades dos usuários e do TAIPOPO. A aceitação de uma versão só é registrada quando você marca a caixa obrigatória na etapa dos Termos e toca em “Concordar e continuar”. Abrir o aplicativo ou ler os Termos ou a Política de Privacidade não é registrado como consentimento. As escolhas separadas necessárias para tratar informações pessoais permanecem distintas da aceitação dos Termos. A aceitação formal só é registrada após a finalização do documento aplicável e da data de vigência; outras confirmações para continuar não são tratadas como aceitação formal dos Termos.",
+    "termsImplementationStatus": "O teste interno atual do Play +17 permite apenas ler os Termos. A nova etapa de aceitação e os registros locais foram adicionados a uma versão de validação separada, ainda não distribuída.",
+    "externalIntroduction": "O TAIPOPO não armazena centralmente registros de trabalho e fotos em servidor próprio nem os vende. Serviços externos podem tratar informações para diagnóstico de erros, consulta de endereços, emails de suporte e este site. Cada tratamento é explicado abaixo."
+  },
+  "es": {
+    "backupDuty": "Debes conservar una copia separada de los datos necesarios mediante copias en el dispositivo, almacenamiento externo o las funciones de compartir y exportar.",
+    "manualStart": "Las copias y restauraciones en el dispositivo o almacenamiento externo, y el envío o la exportación de fotos, archivos y PDF, solo se realizan cuando el usuario los inicia directamente.",
+    "externalReset": "Restablecer los datos de la aplicación o desinstalarla no elimina automáticamente los archivos copiados fuera de ella.",
+    "sharingResponsibility": "El usuario es responsable de la información enviada a la ubicación, aplicación y destinatario elegidos, así como de su tratamiento posterior.",
+    "termsNotice": "Este es un texto de validación sin fecha de entrada en vigor confirmada. Su aceptación no contará automáticamente como aceptación de las Condiciones finales de lanzamiento.\nVersión del documento: plus17-consent-review-v1",
+    "salesHeading": "18. Publicidad y compras",
+    "dataUsage": "Guarda tu preferencia de uso de datos. La versión 1.0.0(17) no sube copias de seguridad directamente. Este ajuste no controla el Wi-Fi ni los datos móviles de otra aplicación elegida en el menú para compartir.",
+    "services": [
+      "Firebase Crashlytics: Si permites los diagnósticos de errores, Google Firebase podrá tratar códigos de error, registros de llamadas filtrados, identificadores de instalación y diagnósticos del dispositivo y la aplicación. La sección 6 distingue retirar el consentimiento de eliminar información ya enviada.",
+      "Consulta de direcciones de Android: Con tu permiso, la aplicación usa el servicio de geocodificación del sistema para convertir coordenadas en direcciones. Según el dispositivo y el sistema, las coordenadas y solicitudes pueden tratarse a través de la red. Activar solo el registro GPS no consulta direcciones.",
+      "Google Play: La configuración PRO de prueba cerrada de 1.0.0(17) no inicia consultas de productos, compras ni solicitudes de restauración de compras desde la aplicación. Leer un derecho existente guardado en el dispositivo es distinto de enviar una nueva solicitud a Google Play. Las descargas, actualizaciones y datos de cuenta de Play Store se gestionan por separado y no dependen del consentimiento de diagnóstico de TAIPOPO.",
+      "Asistencia por correo: Al enviar un correo, el desarrollador recibe la dirección del remitente, el mensaje, los archivos adjuntos y los datos del dispositivo que incluyas para atender la consulta. El correo recibido se trata mediante Gmail; el sitio no tiene formulario de consultas. Consulta la sección 14.",
+      "GitHub Pages: Al alojar el sitio, GitHub registra las direcciones IP de los visitantes por seguridad. La sección 13 explica los datos de visitas y el almacenamiento del tema en el navegador.",
+      "Uso compartido externo: Al compartir fotos, PDF o ZIP de copia de seguridad, el archivo se entrega a la aplicación elegida. Puede incluir metadatos de fotos y registros de trabajo. Gestiona o elimina las copias externas en su ubicación o servicio receptor."
+    ],
+    "manualBodies": [
+      "Guarda notas útiles y detalles del trabajo junto a tus registros.",
+      "Fotografía momentos de tu trabajo y revisa las imágenes en la galería.",
+      "Usa el flash para ver mejor el sujeto en lugares oscuros.",
+      "Anota en la foto detalles del trabajo o información necesaria.",
+      "Ajusta la exposición para captar mejor los detalles de la imagen.",
+      "Gira el dispositivo para capturar una vista más amplia."
+    ],
+    "providerMailDeletion": "El plazo de eliminación automática de la papelera de Gmail no es el plazo de conservación de consultas de TAIPOPO. Eliminar la información de los servidores y las copias de seguridad de Google puede requerir tiempo adicional después de eliminar permanentemente los mensajes de la cuenta. Información del proveedor: https://policies.google.com/technologies/retention · Instrucciones de Gmail: https://support.google.com/mail/answer/7401",
+    "supportMailPolicy": "El responsable utiliza solo la información necesaria para atender la consulta. Una vez completadas la respuesta y las actuaciones de seguimiento necesarias y cumplida la finalidad del tratamiento, la información de la consulta y los archivos adjuntos se eliminan sin demora. Los correos recibidos y de respuesta se eliminan de forma permanente de la cuenta, al igual que las copias gestionadas por el responsable, incluidas las descargas. Solo los registros sujetos efectivamente a una obligación legal de conservación se guardan separados de las demás consultas durante el plazo legal exigido.\n\nEnvíe las solicitudes de eliminación a taipopo.app@gmail.com. Se tramitan tras verificar su identidad o la autorización de un representante con la información mínima necesaria. Los registros que deban conservarse por ley se excluyen de la eliminación únicamente en la medida en que se aplique esa obligación, y se explican la base legal y el plazo de conservación. La eliminación de información de los servidores y las copias de seguridad del proveedor de Gmail es independiente de la eliminación de las copias gestionadas por el responsable.",
+    "termsIntroduction": "Estas Condiciones regulan el uso de TAIPOPO (la «Aplicación») y los derechos, obligaciones y responsabilidades de los usuarios y de TAIPOPO. La aceptación de una versión solo se registra al marcar la casilla obligatoria en el paso correspondiente y pulsar «Aceptar y continuar». Iniciar la aplicación o leer las Condiciones o la Política de Privacidad no se registra como consentimiento. Las opciones separadas necesarias para tratar datos personales se distinguen de la aceptación de las Condiciones. La aceptación formal solo se registra cuando el documento aplicable y su fecha de entrada en vigor están confirmados; otras confirmaciones para continuar no se consideran aceptación formal de las Condiciones.",
+    "termsImplementationStatus": "La versión +17 actual de prueba interna de Play solo permite leer las Condiciones. El nuevo paso de aceptación y los registros locales se añadieron a una versión de validación separada y aún no se han distribuido.",
+    "externalIntroduction": "TAIPOPO no almacena de forma centralizada los registros de trabajo y las fotos en un servidor propio ni los vende. Los servicios externos pueden tratar información para el diagnóstico de errores, la consulta de direcciones, el correo de soporte y este sitio web. Cada tratamiento se explica a continuación."
+  },
+  "fr": {
+    "backupDuty": "Vous devez conserver une copie distincte des données nécessaires par sauvegarde sur l’appareil, stockage externe, partage ou exportation.",
+    "manualStart": "Les sauvegardes et restaurations sur l’appareil ou un stockage externe, ainsi que le partage et l’exportation de photos, fichiers et PDF, ne sont effectués que si l’utilisateur les lance directement.",
+    "externalReset": "La réinitialisation des données ou la désinstallation de l’application ne supprime pas automatiquement les fichiers copiés hors de l’application.",
+    "sharingResponsibility": "L’utilisateur est responsable des informations transmises à l’emplacement de stockage, à l’application et au destinataire choisis, ainsi que de leur traitement ultérieur.",
+    "termsNotice": "Ce texte de validation n'a pas de date d'entrée en vigueur confirmée. Son acceptation ne vaudra pas automatiquement acceptation des Conditions finales de lancement.\nVersion du document : plus17-consent-review-v1",
+    "salesHeading": "18. Publicité et achats",
+    "dataUsage": "Enregistrez votre préférence d’utilisation des données. La version 1.0.0(17) n’envoie pas directement de sauvegardes. Ce réglage ne contrôle pas le Wi-Fi ni les données mobiles d’une autre application choisie dans le menu de partage.",
+    "services": [
+      "Firebase Crashlytics : si vous autorisez les diagnostics d’erreurs, Google Firebase peut traiter les codes d’erreur, traces d’appels filtrées, identifiants d’installation et diagnostics de l’appareil et de l’application. La section 6 distingue le retrait du consentement de la suppression des informations déjà envoyées.",
+      "Recherche d’adresse Android : avec votre autorisation, l’application utilise le service de géocodage du système pour convertir des coordonnées en adresse. Selon l’appareil et le système, les coordonnées et demandes peuvent être traitées par le réseau. Activer uniquement l’enregistrement GPS ne lance pas de recherche d’adresse.",
+      "Google Play : la configuration PRO de test fermé de 1.0.0(17) ne lance pas de consultation de produits, d’achat ni de demande de restauration d’achats dans l’application. Lire un droit existant enregistré sur l’appareil est distinct d’une nouvelle demande à Google Play. Les téléchargements, mises à jour et données de compte du Play Store sont traités séparément et ne sont pas contrôlés par le consentement aux diagnostics de TAIPOPO.",
+      "Assistance par e-mail : lorsque vous envoyez un message, le développeur reçoit votre adresse d’expéditeur, le texte, les pièces jointes et les détails de l’appareil que vous incluez pour traiter la demande. Les messages reçus sont traités via Gmail ; le site ne propose pas de formulaire de contact. Voir la section 14.",
+      "GitHub Pages : pour héberger le site, GitHub enregistre l’adresse IP des visiteurs à des fins de sécurité. La section 13 décrit les informations de visite et le stockage du thème dans le navigateur.",
+      "Partage externe : partager une photo, un PDF ou une sauvegarde ZIP transmet le fichier à l’application choisie. Il peut contenir des métadonnées photo et des relevés de travail. Gérez ou supprimez les copies externes à leur emplacement ou auprès du service destinataire."
+    ],
+    "manualBodies": [
+      "Conservez les notes utiles et les détails du travail avec vos relevés.",
+      "Photographiez les moments de votre travail et consultez les images dans la galerie.",
+      "Utilisez le flash pour rendre le sujet visible dans les lieux sombres.",
+      "Ajoutez à la photo les détails du travail ou les notes utiles.",
+      "Réglez la luminosité pour mieux saisir les détails de l’image.",
+      "Tournez l’appareil pour photographier une vue plus large."
+    ],
+    "providerMailDeletion": "Le délai de suppression automatique de la corbeille Gmail n’est pas la durée de conservation des demandes par TAIPOPO. La suppression des informations stockées sur les serveurs de Google et dans ses sauvegardes peut prendre un délai supplémentaire après la suppression définitive des messages du compte. Informations du fournisseur : https://policies.google.com/technologies/retention · Instructions Gmail : https://support.google.com/mail/answer/7401",
+    "supportMailPolicy": "L'exploitant utilise uniquement les informations nécessaires au traitement de la demande. Lorsque la réponse et le suivi nécessaire sont terminés et que la finalité du traitement est atteinte, les informations de la demande et les pièces jointes sont supprimées sans délai. Les messages reçus et les réponses sont supprimés définitivement du compte, ainsi que les copies gérées par l'exploitant, notamment les fichiers téléchargés. Seuls les documents effectivement soumis à une obligation légale de conservation sont conservés séparément des autres demandes pendant la durée légale requise.\n\nEnvoyez vos demandes de suppression à taipopo.app@gmail.com. Elles sont traitées après vérification de votre identité ou du pouvoir d'un représentant autorisé, à l'aide du minimum d'informations nécessaire. Les documents devant être conservés en vertu de la loi ne sont exclus de la suppression que dans la mesure où cette obligation s'applique ; la base légale et la durée de conservation sont expliquées. La suppression des informations sur les serveurs et dans les sauvegardes du fournisseur de Gmail est distincte de la suppression des copies gérées par l'exploitant.",
+    "termsIntroduction": "Les présentes Conditions définissent les modalités d'utilisation de TAIPOPO (l'« Application ») ainsi que les droits, obligations et responsabilités des utilisateurs et de TAIPOPO. L'acceptation d'une version n'est enregistrée qu'après avoir coché la case obligatoire à l'étape correspondante et appuyé sur « Accepter et continuer ». Le lancement de l'application ou la lecture des Conditions ou de la Politique de confidentialité ne constitue pas un consentement enregistré. Les choix distincts requis pour le traitement des données personnelles restent séparés de l'acceptation des Conditions. L'acceptation formelle n'est enregistrée qu'une fois le document applicable et sa date d'entrée en vigueur finalisés ; les autres confirmations de poursuite ne constituent pas une acceptation formelle des Conditions.",
+    "termsImplementationStatus": "La version +17 actuelle du test interne Play permet seulement de lire les Conditions. La nouvelle étape d'acceptation et les traces locales ont été ajoutées à une version de validation distincte, non encore distribuée.",
+    "externalIntroduction": "TAIPOPO ne centralise pas les relevés de travail et les photos sur son propre serveur et ne les vend pas. Des services externes peuvent traiter des informations pour le diagnostic des erreurs, la recherche d’adresses, les courriels d’assistance et ce site. Chaque traitement est expliqué ci-dessous."
+  },
+  "de": {
+    "backupDuty": "Sie müssen benötigte Daten durch ein Gerätebackup, externen Speicher oder Teilen und Exportieren gesondert sichern.",
+    "manualStart": "Backups und Wiederherstellungen auf dem Gerät oder externen Speicher sowie das Teilen und Exportieren von Fotos, Dateien und PDFs werden nur ausgeführt, wenn der Nutzer sie direkt startet.",
+    "externalReset": "Das Zurücksetzen der App-Daten oder Entfernen der App löscht außerhalb der App kopierte Dateien nicht automatisch.",
+    "sharingResponsibility": "Der Nutzer ist für die an den gewählten Speicherort, die Empfänger-App und den Empfänger gesendeten Informationen sowie deren weitere Verarbeitung verantwortlich.",
+    "termsNotice": "Dies ist ein Prüftext ohne bestätigtes Gültigkeitsdatum. Die Annahme dieser Version gilt nicht automatisch als Annahme der endgültigen Veröffentlichungsbedingungen.\nDokumentversion: plus17-consent-review-v1",
+    "salesHeading": "18. Werbung und Käufe",
+    "dataUsage": "Speichern Sie Ihre Einstellung zur Datennutzung. Version 1.0.0(17) lädt keine Backups direkt hoch. Diese Einstellung steuert weder WLAN noch mobile Daten einer anderen App, die Sie im Teilen-Menü auswählen.",
+    "services": [
+      "Firebase Crashlytics: Wenn Sie der Fehlerdiagnose zustimmen, kann Google Firebase Fehlercodes, bereinigte Aufrufprotokolle, Installationskennungen sowie Geräte- und App-Diagnosen verarbeiten. Abschnitt 6 unterscheidet den Widerruf der Einwilligung von der Löschung bereits gesendeter Daten.",
+      "Android-Adresssuche: Wenn Sie zustimmen, wandelt der Geokodierungsdienst des Betriebssystems Koordinaten in eine Adresse um. Je nach Gerät und System können Koordinaten und Anfragen über ein Netzwerk verarbeitet werden. Allein die GPS-Aufzeichnung löst keine Adresssuche aus.",
+      "Google Play: Die PRO-Konfiguration für den geschlossenen Test in 1.0.0(17) startet keine Produktabfragen, Käufe oder Kaufwiederherstellungsanfragen aus der App. Das Lesen einer bereits auf dem Gerät gespeicherten Berechtigung ist von einer neuen Anfrage an Google Play zu unterscheiden. Downloads, Updates und Kontodaten des Play Store werden separat verarbeitet und nicht durch die Diagnoseeinwilligung in TAIPOPO gesteuert.",
+      "E-Mail-Support: Wenn Sie eine E-Mail senden, erhält der Entwickler zur Bearbeitung Ihre Absenderadresse, Nachricht, Anhänge und die von Ihnen angegebenen Gerätedaten. Empfangene Nachrichten werden über Gmail verarbeitet; die Website hat kein Anfrageformular. Siehe Abschnitt 14.",
+      "GitHub Pages: Beim Hosting der Website zeichnet GitHub die IP-Adressen der Besucher aus Sicherheitsgründen auf. Abschnitt 13 erläutert Besuchsdaten und die Speicherung der Designauswahl im Browser.",
+      "Externes Teilen: Fotos, PDFs und Backup-ZIPs werden an die von Ihnen ausgewählte Empfänger-App übergeben. Die Dateien können Foto-Metadaten und Arbeitseinträge enthalten. Externe Kopien verwalten und löschen Sie am Speicherort oder beim Empfängerdienst."
+    ],
+    "manualBodies": [
+      "Halten Sie hilfreiche Notizen und Arbeitsdetails zusammen mit Ihren Arbeitseinträgen fest.",
+      "Halten Sie Ihren Arbeitsalltag in Fotos fest und sehen Sie die Ergebnisse in der Galerie an.",
+      "Nutzen Sie den Blitz, damit Motive an dunklen Orten erkennbar sind.",
+      "Ergänzen Sie das Foto mit Arbeitsdetails oder wichtigen Notizen.",
+      "Passen Sie die Belichtung an, um Bilddetails besser aufzunehmen.",
+      "Drehen Sie das Gerät quer, um einen breiteren Ausschnitt aufzunehmen."
+    ],
+    "providerMailDeletion": "Die automatische Löschfrist des Gmail-Papierkorbs ist nicht die Aufbewahrungsfrist von TAIPOPO für Anfragen. Die Entfernung von Google-Servern und aus Sicherungen kann nach dem endgültigen Löschen der betreffenden Nachrichten aus dem Konto zusätzliche Zeit benötigen. Angaben des Anbieters: https://policies.google.com/technologies/retention · Gmail-Löschanleitung: https://support.google.com/mail/answer/7401",
+    "supportMailPolicy": "Der Betreiber verwendet nur Informationen, die zur Bearbeitung der Anfrage erforderlich sind. Sobald die Anfrage und notwendige Folgemaßnahmen abgeschlossen sind und der Verarbeitungszweck erfüllt ist, werden Anfrageinformationen und Anhänge unverzüglich gelöscht. Empfangene E-Mails und Antwort-E-Mails werden dauerhaft aus dem Konto gelöscht; auch vom Betreiber verwaltete Kopien, etwa heruntergeladene Dateien, werden gelöscht. Nur Unterlagen, für die tatsächlich eine gesetzliche Aufbewahrungspflicht gilt, werden für die vorgeschriebene Dauer getrennt von anderen Anfragen aufbewahrt.\n\nSenden Sie Löschanfragen an taipopo.app@gmail.com. Sie werden nach Prüfung Ihrer Identität oder der Vertretungsberechtigung anhand der dafür mindestens erforderlichen Informationen bearbeitet. Gesetzlich aufzubewahrende Unterlagen sind nur im Umfang dieser Pflicht von der Löschung ausgenommen; Rechtsgrundlage und Aufbewahrungsdauer werden erläutert. Die Entfernung von Informationen aus Servern und Sicherungskopien des Gmail-Anbieters ist von der Löschung der vom Betreiber verwalteten Kopien zu unterscheiden.",
+    "termsIntroduction": "Diese Bedingungen regeln die Nutzung von TAIPOPO (der „App“) sowie die Rechte, Pflichten und Verantwortlichkeiten der Nutzer und von TAIPOPO. Die Annahme einer Version wird erst erfasst, wenn Sie im Zustimmungsschritt das erforderliche Kontrollkästchen aktivieren und „Zustimmen und fortfahren“ wählen. Das Starten der App oder das Lesen der Bedingungen oder Datenschutzerklärung wird nicht als Einwilligung erfasst. Für die Verarbeitung personenbezogener Daten erforderliche gesonderte Entscheidungen bleiben von der Annahme der Bedingungen getrennt. Eine formelle Annahme wird erst erfasst, wenn das anwendbare Dokument und sein Gültigkeitsdatum feststehen; andere Bestätigungen zum Fortfahren gelten nicht als formelle Annahme der Bedingungen.",
+    "termsImplementationStatus": "Die aktuelle interne Play-Testversion +17 bietet nur die Ansicht der Bedingungen. Der neue Annahmeschritt und lokale Protokolle wurden einer separaten Prüfversion hinzugefügt und noch nicht verteilt.",
+    "externalIntroduction": "TAIPOPO speichert Arbeitsaufzeichnungen und Fotos nicht zentral auf einem eigenen Server und verkauft sie nicht. Externe Dienste können Informationen für Fehlerdiagnosen, Adressabfragen, Support-E-Mails und diese Website verarbeiten. Die einzelnen Vorgänge werden nachfolgend erläutert."
+  },
+  "id": {
+    "backupDuty": "Anda harus menyimpan salinan terpisah data yang diperlukan melalui cadangan perangkat, penyimpanan eksternal, atau fitur berbagi dan ekspor.",
+    "manualStart": "Pencadangan dan pemulihan di perangkat atau penyimpanan eksternal, serta berbagi atau mengekspor foto, file dan PDF, hanya berlangsung jika dimulai langsung oleh pengguna.",
+    "externalReset": "Mereset data aplikasi atau menghapus aplikasi tidak otomatis menghapus file yang disalin ke luar aplikasi.",
+    "sharingResponsibility": "Pengguna bertanggung jawab atas informasi yang dikirim ke lokasi penyimpanan, aplikasi, dan penerima yang dipilih, serta penanganannya selanjutnya.",
+    "termsNotice": "Ini adalah naskah validasi tanpa tanggal berlaku yang ditetapkan. Penerimaan versi ini tidak otomatis menjadi penerimaan Ketentuan rilis final.\nVersi dokumen: plus17-consent-review-v1",
+    "salesHeading": "18. Iklan dan pembelian",
+    "dataUsage": "Simpan preferensi penggunaan data. Versi 1.0.0(17) tidak mengunggah cadangan secara langsung. Pengaturan ini tidak mengontrol Wi-Fi atau data seluler aplikasi lain yang dipilih pada menu berbagi.",
+    "services": [
+      "Firebase Crashlytics: Jika Anda mengizinkan diagnosis kesalahan, Google Firebase dapat memproses kode kesalahan, jejak panggilan yang telah disaring, pengenal instalasi, serta diagnosis perangkat dan aplikasi. Bagian 6 membedakan pencabutan persetujuan dari penghapusan informasi yang sudah dikirim.",
+      "Pencarian alamat Android: Dengan izin Anda, aplikasi menggunakan layanan geocoding sistem operasi untuk mengubah koordinat menjadi alamat. Bergantung pada perangkat dan sistem, koordinat dan permintaan dapat diproses melalui jaringan. Mengaktifkan pencatatan GPS saja tidak mencari alamat.",
+      "Google Play: Konfigurasi PRO uji tertutup pada 1.0.0(17) tidak memulai permintaan produk, pembelian, atau pemulihan pembelian dari aplikasi. Membaca hak yang sudah tersimpan di perangkat berbeda dari mengirim permintaan baru ke Google Play. Unduhan, pembaruan, dan data akun Play Store sendiri diproses secara terpisah dan tidak dikontrol oleh persetujuan diagnosis TAIPOPO.",
+      "Dukungan email: Saat Anda mengirim email, pengembang menerima alamat pengirim, pesan, lampiran, dan detail perangkat yang Anda sertakan untuk menangani pertanyaan. Email yang diterima diproses melalui Gmail; situs tidak memiliki formulir pengiriman pertanyaan. Lihat bagian 14.",
+      "GitHub Pages: Saat menyediakan situs, GitHub mencatat alamat IP pengunjung untuk keamanan. Bagian 13 menjelaskan informasi kunjungan dan penyimpanan tema di browser.",
+      "Berbagi ke luar aplikasi: Foto, PDF, atau ZIP cadangan dikirim ke aplikasi penerima yang Anda pilih. File dapat berisi metadata foto dan catatan kerja. Kelola atau hapus salinan di luar aplikasi pada lokasi penyimpanan atau layanan penerima."
+    ],
+    "manualBodies": [
+      "Simpan catatan penting dan detail pekerjaan bersama catatan kerja.",
+      "Abadikan momen kerja dalam foto dan lihat hasilnya di galeri.",
+      "Gunakan lampu kilat agar objek terlihat di tempat gelap.",
+      "Tambahkan detail pekerjaan atau catatan penting pada foto.",
+      "Sesuaikan pencahayaan agar detail foto terlihat lebih jelas.",
+      "Putar perangkat mendatar untuk mengambil gambar yang lebih luas."
+    ],
+    "providerMailDeletion": "Periode penghapusan otomatis sampah Gmail bukan masa penyimpanan pertanyaan TAIPOPO. Penghapusan dari server dan cadangan Google dapat memerlukan waktu tambahan setelah pesan dihapus permanen dari akun. Informasi penyedia: https://policies.google.com/technologies/retention · Petunjuk penghapusan Gmail: https://support.google.com/mail/answer/7401",
+    "supportMailPolicy": "Pengelola hanya menggunakan informasi yang diperlukan untuk menangani pertanyaan. Setelah jawaban dan tindak lanjut yang diperlukan selesai serta tujuan pemrosesan tercapai, informasi pertanyaan dan lampiran dihapus tanpa penundaan. Email yang diterima dan balasannya dihapus secara permanen dari akun, dan salinan yang dikelola pengelola, termasuk unduhan, juga dihapus. Hanya catatan yang benar-benar tunduk pada kewajiban penyimpanan menurut hukum yang disimpan terpisah dari pertanyaan lain selama jangka waktu yang diwajibkan hukum.\n\nKirim permintaan penghapusan ke taipopo.app@gmail.com. Permintaan diproses setelah identitas Anda atau kewenangan perwakilan yang sah diverifikasi menggunakan informasi minimum yang diperlukan. Catatan yang wajib disimpan menurut hukum dikecualikan dari penghapusan hanya sejauh kewajiban tersebut berlaku, dan dasar hukum serta masa penyimpanannya dijelaskan. Penghapusan informasi dari server dan cadangan penyedia Gmail terpisah dari penghapusan salinan yang dikelola pengelola.",
+    "termsIntroduction": "Ketentuan ini mengatur penggunaan TAIPOPO (“Aplikasi”) serta hak, kewajiban, dan tanggung jawab pengguna dan TAIPOPO. Penerimaan suatu versi hanya dicatat setelah Anda memilih kotak wajib pada langkah Ketentuan dan mengetuk “Setuju dan lanjutkan”. Membuka aplikasi atau membaca Ketentuan maupun Kebijakan Privasi tidak dicatat sebagai persetujuan. Pilihan terpisah yang diperlukan untuk pemrosesan informasi pribadi tetap dibedakan dari penerimaan Ketentuan. Penerimaan resmi hanya dicatat setelah dokumen yang berlaku dan tanggal berlakunya ditetapkan; konfirmasi lain untuk melanjutkan tidak dianggap sebagai penerimaan resmi Ketentuan.",
+    "termsImplementationStatus": "Versi uji internal Play +17 saat ini hanya menyediakan pembacaan Ketentuan. Langkah penerimaan baru dan catatan lokal ditambahkan ke versi validasi terpisah yang belum didistribusikan.",
+    "externalIntroduction": "TAIPOPO tidak menyimpan catatan kerja dan foto secara terpusat di server sendiri atau menjualnya. Layanan eksternal dapat memproses informasi untuk diagnosis kesalahan, pencarian alamat, email dukungan, dan situs ini. Setiap pemrosesan dijelaskan di bawah."
+  },
+  "vi": {
+    "backupDuty": "Bạn phải giữ riêng bản sao dữ liệu cần thiết bằng cách sao lưu trên thiết bị, lưu trữ ngoài hoặc dùng chức năng chia sẻ và xuất.",
+    "manualStart": "Sao lưu và khôi phục trên thiết bị hoặc bộ nhớ ngoài, cùng việc chia sẻ hay xuất ảnh, tệp và PDF, chỉ diễn ra khi người dùng trực tiếp thực hiện.",
+    "externalReset": "Đặt lại dữ liệu hoặc gỡ ứng dụng không tự động xóa các tệp đã sao chép ra ngoài ứng dụng.",
+    "sharingResponsibility": "Người dùng chịu trách nhiệm về thông tin gửi đến nơi lưu trữ, ứng dụng và người nhận đã chọn, cũng như việc xử lý thông tin sau đó.",
+    "termsNotice": "Đây là văn bản kiểm chứng chưa có ngày hiệu lực xác định. Việc chấp nhận bản này không tự động được tính là chấp nhận Điều khoản phát hành cuối cùng.\nPhiên bản tài liệu: plus17-consent-review-v1",
+    "salesHeading": "18. Quảng cáo và giao dịch mua",
+    "dataUsage": "Lưu tùy chọn sử dụng dữ liệu. Phiên bản 1.0.0(17) không trực tiếp tải bản sao lưu lên. Cài đặt này không kiểm soát Wi-Fi hay dữ liệu di động của ứng dụng khác được chọn trong trình đơn chia sẻ.",
+    "services": [
+      "Firebase Crashlytics: Khi bạn cho phép chẩn đoán lỗi, Google Firebase có thể xử lý mã lỗi, dấu vết lời gọi đã lọc, mã định danh cài đặt và thông tin chẩn đoán thiết bị, ứng dụng. Mục 6 phân biệt việc rút lại sự đồng ý với xóa thông tin đã gửi.",
+      "Tra cứu địa chỉ Android: Khi được cho phép, ứng dụng dùng dịch vụ mã hóa địa lý của hệ điều hành để đổi tọa độ thành địa chỉ. Tùy thiết bị và hệ điều hành, tọa độ cùng yêu cầu tra cứu có thể được xử lý qua mạng. Chỉ bật ghi GPS không làm phát sinh tra cứu địa chỉ.",
+      "Google Play: Cấu hình PRO thử nghiệm kín của 1.0.0(17) không gửi yêu cầu tra cứu sản phẩm, mua hay khôi phục giao dịch mua từ ứng dụng. Đọc quyền mua đã lưu trên thiết bị khác với gửi yêu cầu mới đến Google Play. Việc tải xuống, cập nhật và xử lý tài khoản của Play Store là riêng biệt, không do lựa chọn đồng ý chẩn đoán của TAIPOPO kiểm soát.",
+      "Hỗ trợ qua email: Khi bạn gửi email, nhà phát triển nhận địa chỉ người gửi, nội dung, tệp đính kèm và thông tin thiết bị bạn cung cấp để giải quyết yêu cầu. Thư nhận được xử lý qua Gmail; trang web không có biểu mẫu gửi yêu cầu. Xem mục 14.",
+      "GitHub Pages: Khi lưu trữ trang web, GitHub ghi địa chỉ IP của khách truy cập để bảo đảm an ninh. Mục 13 giải thích thông tin lượt truy cập và lưu giao diện trong trình duyệt.",
+      "Chia sẻ ra ngoài: Khi chia sẻ ảnh, PDF hoặc ZIP sao lưu, tệp được chuyển đến ứng dụng nhận do bạn chọn. Tệp có thể chứa siêu dữ liệu ảnh và bản ghi công việc. Quản lý hoặc xóa bản sao bên ngoài tại nơi lưu trữ hay dịch vụ nhận."
+    ],
+    "manualBodies": [
+      "Lưu tình hình công việc và nội dung cần thiết cùng bản ghi làm việc.",
+      "Chụp lại những khoảnh khắc làm việc và xem ảnh trong thư viện.",
+      "Dùng đèn flash để thấy rõ đối tượng ở nơi tối.",
+      "Ghi chi tiết công việc hoặc nội dung cần thiết lên ảnh.",
+      "Điều chỉnh độ sáng để ghi rõ chi tiết trong ảnh.",
+      "Xoay ngang thiết bị để chụp góc nhìn rộng hơn."
+    ],
+    "providerMailDeletion": "Thời hạn tự động xóa trong thùng rác Gmail không phải thời hạn TAIPOPO lưu yêu cầu. Việc xóa khỏi máy chủ và bản sao lưu của Google có thể cần thêm thời gian sau khi email đã bị xóa vĩnh viễn khỏi tài khoản. Thông tin của nhà cung cấp: https://policies.google.com/technologies/retention · Hướng dẫn xóa trong Gmail: https://support.google.com/mail/answer/7401",
+    "supportMailPolicy": "Bên vận hành chỉ sử dụng thông tin cần thiết để xử lý yêu cầu hỗ trợ. Khi đã trả lời, hoàn tất các bước xử lý tiếp theo cần thiết và đạt được mục đích xử lý, thông tin yêu cầu và tệp đính kèm sẽ được xóa không chậm trễ. Email nhận được và email trả lời được xóa vĩnh viễn khỏi tài khoản; các bản sao do bên vận hành quản lý, kể cả tệp đã tải xuống, cũng được xóa. Chỉ những hồ sơ thực sự thuộc nghĩa vụ lưu giữ theo pháp luật mới được lưu riêng với các yêu cầu khác trong thời hạn luật định.\n\nGửi yêu cầu xóa đến taipopo.app@gmail.com. Yêu cầu được xử lý sau khi xác minh danh tính của bạn hoặc thẩm quyền của người đại diện hợp pháp bằng lượng thông tin tối thiểu cần thiết. Hồ sơ phải lưu theo pháp luật chỉ được loại khỏi phạm vi xóa trong giới hạn nghĩa vụ áp dụng; căn cứ pháp lý và thời hạn lưu giữ sẽ được giải thích. Quy trình nhà cung cấp Gmail loại bỏ thông tin khỏi máy chủ và bản sao lưu tách biệt với việc xóa các bản sao do bên vận hành quản lý.",
+    "termsIntroduction": "Các Điều khoản này quy định việc sử dụng TAIPOPO (“Ứng dụng”) cùng quyền, nghĩa vụ và trách nhiệm của người dùng và TAIPOPO. Chỉ ghi nhận chấp nhận một phiên bản khi bạn đánh dấu ô bắt buộc ở bước Điều khoản và bấm “Đồng ý và tiếp tục”. Mở ứng dụng hay đọc Điều khoản hoặc Chính sách quyền riêng tư không được ghi nhận là đồng ý. Các lựa chọn riêng cần thiết cho xử lý thông tin cá nhân tách biệt với việc chấp nhận Điều khoản. Chỉ ghi nhận chấp nhận chính thức khi tài liệu áp dụng và ngày hiệu lực đã được chốt; các xác nhận tiếp tục khác không được coi là chấp nhận Điều khoản chính thức.",
+    "termsImplementationStatus": "Bản thử nghiệm nội bộ Play +17 hiện tại chỉ cho đọc Điều khoản. Bước chấp nhận mới và bản ghi cục bộ được thêm vào bản kiểm chứng riêng và chưa được phân phối.",
+    "externalIntroduction": "TAIPOPO không lưu tập trung bản ghi công việc và ảnh trên máy chủ riêng hoặc bán những dữ liệu này. Dịch vụ bên ngoài có thể xử lý thông tin để chẩn đoán lỗi, tra cứu địa chỉ, xử lý email hỗ trợ và cung cấp trang web này. Từng hoạt động được giải thích bên dưới."
+  },
+  "ru": {
+    "backupDuty": "Пользователь должен отдельно сохранить необходимые данные с помощью резервной копии на устройстве, внешнего носителя, отправки или экспорта.",
+    "manualStart": "Резервное копирование и восстановление на устройстве или внешнем носителе, а также отправка и экспорт фото, файлов и PDF выполняются только по прямому действию пользователя.",
+    "externalReset": "Сброс данных или удаление приложения не удаляет автоматически файлы, скопированные за его пределы.",
+    "sharingResponsibility": "Пользователь несёт ответственность за информацию, переданную в выбранное хранилище, приложение и получателю, а также за её последующую обработку.",
+    "termsNotice": "Это проверочный текст без утверждённой даты вступления в силу. Принятие этой версии не будет автоматически означать принятие окончательных Условий выпуска.\nВерсия документа: plus17-consent-review-v1",
+    "salesHeading": "18. Реклама и покупки",
+    "dataUsage": "Сохраните настройку использования сети. Версия 1.0.0(17) не загружает резервные копии напрямую. Эта настройка не управляет Wi-Fi или мобильными данными другого приложения, выбранного в меню отправки.",
+    "services": [
+      "Firebase Crashlytics: Если разрешить диагностику ошибок, Google Firebase может обрабатывать коды ошибок, очищенные трассировки вызовов, идентификаторы установки и диагностические данные устройства и приложения. В разделе 6 разграничены отзыв согласия и удаление уже отправленных данных.",
+      "Поиск адреса Android: С вашего разрешения приложение использует геокодирование операционной системы для преобразования координат в адрес. В зависимости от устройства и системы координаты и запросы могут обрабатываться по сети. Включение только записи GPS не запускает поиск адреса.",
+      "Google Play: Конфигурация PRO для закрытого тестирования в 1.0.0(17) не отправляет из приложения запросы товаров, покупок или восстановления покупок. Чтение уже сохранённого на устройстве права доступа отличается от нового запроса к Google Play. Загрузки, обновления и обработка аккаунта самим Play Store выполняются отдельно и не управляются согласием на диагностику TAIPOPO.",
+      "Поддержка по электронной почте: Отправляя письмо, вы передаёте разработчику адрес отправителя, текст, вложения и указанные вами сведения об устройстве для обработки обращения. Полученные письма обрабатываются через Gmail; на сайте нет формы отправки обращений. См. раздел 14.",
+      "GitHub Pages: При размещении сайта GitHub регистрирует IP-адреса посетителей для обеспечения безопасности. Раздел 13 описывает данные о посещениях и сохранение темы в браузере.",
+      "Внешняя отправка: При отправке фото, PDF или резервного ZIP файл передаётся выбранному приложению. Он может содержать метаданные фото и рабочие записи. Управляйте внешними копиями и удаляйте их в месте хранения либо в принимающем сервисе."
+    ],
+    "manualBodies": [
+      "Сохраняйте полезные заметки и сведения о работе вместе с рабочими записями.",
+      "Фотографируйте рабочие моменты и просматривайте снимки в галерее.",
+      "Используйте вспышку для съёмки в тёмных местах.",
+      "Добавляйте на фотографию сведения о работе или нужные заметки.",
+      "Настройте экспозицию, чтобы лучше передать детали снимка.",
+      "Поверните устройство горизонтально для более широкого обзора."
+    ],
+    "providerMailDeletion": "Срок автоматического удаления из корзины Gmail не является сроком хранения обращений в TAIPOPO. Удаление с серверов и из резервных копий Google может занять дополнительное время после безвозвратного удаления писем из аккаунта. Информация поставщика: https://policies.google.com/technologies/retention · Инструкции Gmail: https://support.google.com/mail/answer/7401",
+    "supportMailPolicy": "Оператор использует только сведения, необходимые для обработки обращения. После завершения ответа и необходимых последующих действий, когда цель обработки достигнута, сведения обращения и вложения удаляются без промедления. Полученные письма и ответы окончательно удаляются из аккаунта; копии, которыми управляет оператор, включая загруженные файлы, также удаляются. Только записи, на которые действительно распространяется установленная законом обязанность хранения, хранятся отдельно от других обращений в течение предусмотренного законом срока.\n\nОтправляйте запросы на удаление на taipopo.app@gmail.com. Запросы обрабатываются после проверки вашей личности или полномочий уполномоченного представителя с использованием минимально необходимых сведений. Записи, подлежащие хранению по закону, исключаются из удаления только в пределах применимой обязанности; сообщаются правовое основание и срок хранения. Удаление информации с серверов и из резервных копий поставщика Gmail отличается от удаления копий, которыми управляет оператор.",
+    "termsIntroduction": "Настоящие Условия регулируют использование TAIPOPO («Приложение»), права, обязанности и ответственность пользователей и TAIPOPO. Принятие версии регистрируется только после установки обязательного флажка на соответствующем этапе и нажатия «Принять и продолжить». Запуск приложения или чтение Условий либо Политики конфиденциальности не регистрируется как согласие. Отдельные решения, необходимые для обработки персональных данных, не объединяются с принятием Условий. Формальное принятие регистрируется только после утверждения применимого документа и даты его вступления в силу; прочие подтверждения продолжения не считаются формальным принятием Условий.",
+    "termsImplementationStatus": "Текущая версия +17 внутреннего тестирования Play позволяет только читать Условия. Новый этап принятия и локальные записи добавлены в отдельную проверочную сборку, которая ещё не распространялась.",
+    "externalIntroduction": "TAIPOPO не хранит рабочие записи и фотографии централизованно на собственном сервере и не продаёт их. Внешние сервисы могут обрабатывать сведения для диагностики ошибок, поиска адресов, переписки с поддержкой и работы этого сайта. Каждый вид обработки описан ниже."
+  },
+  "tr": {
+    "backupDuty": "Gerekli verilerin ayrı bir kopyasını cihaz yedeği, harici depolama veya paylaşım ve dışa aktarma özellikleriyle saklamalısınız.",
+    "manualStart": "Cihaz veya harici depolama yedekleme ve geri yüklemeleri ile fotoğraf, dosya ve PDF paylaşımı ya da dışa aktarımı yalnızca kullanıcı doğrudan başlattığında yapılır.",
+    "externalReset": "Uygulama verilerini sıfırlamak veya uygulamayı kaldırmak, uygulama dışına kopyalanan dosyaları otomatik olarak silmez.",
+    "sharingResponsibility": "Kullanıcı, seçtiği depolama konumuna, alıcı uygulamaya ve kişiye gönderilen bilgilerden ve bunların sonraki işlenmesinden sorumludur.",
+    "termsNotice": "Bu, yürürlük tarihi kesinleşmemiş bir doğrulama metnidir. Bu sürümün kabulü, nihai yayın Koşullarının kabulü olarak otomatik devredilmez.\nBelge sürümü: plus17-consent-review-v1",
+    "salesHeading": "18. Reklamlar ve satın almalar",
+    "dataUsage": "Veri kullanımı tercihinizi kaydedin. 1.0.0(17) sürümü yedekleri doğrudan yüklemez. Bu ayar paylaşım menüsünde seçtiğiniz başka bir uygulamanın Wi-Fi veya mobil veri kullanımını kontrol etmez.",
+    "services": [
+      "Firebase Crashlytics: Hata tanılamasına izin verirseniz Google Firebase hata kodlarını, filtrelenmiş çağrı kayıtlarını, kurulum tanımlayıcılarını ve cihaz ile uygulama tanılama bilgilerini işleyebilir. 6. bölüm onayı geri çekmekle önceden gönderilen bilgileri silmek arasındaki farkı açıklar.",
+      "Android adres sorgulama: İzin verdiğinizde uygulama koordinatları adrese çevirmek için işletim sisteminin coğrafi kodlama hizmetini kullanır. Cihaz ve sisteme bağlı olarak koordinatlar ve sorgular ağ üzerinden işlenebilir. Yalnızca GPS kaydını açmak adres sorgulamaz.",
+      "Google Play: 1.0.0(17) kapalı test PRO yapılandırması uygulamadan ürün sorgusu, satın alma veya satın almayı geri yükleme isteği başlatmaz. Cihazda kayıtlı mevcut hakkı okumak, Google Play'e yeni istek göndermekten ayrıdır. Play Store'un kendi indirme, güncelleme ve hesap işlemleri ayrıdır ve TAIPOPO tanılama onayıyla kontrol edilmez.",
+      "E-posta desteği: E-posta gönderdiğinizde geliştirici talebinizi yanıtlamak için gönderen adresinizi, mesajı, ekleri ve paylaştığınız cihaz bilgilerini alır. Alınan postalar Gmail üzerinden işlenir; sitede talep gönderme formu yoktur. 14. bölüme bakın.",
+      "GitHub Pages: Siteyi barındırırken GitHub güvenlik amacıyla ziyaretçilerin IP adreslerini kaydeder. 13. bölüm ziyaret bilgilerini ve tarayıcıdaki tema kaydını açıklar.",
+      "Harici paylaşım: Fotoğraf, PDF veya yedek ZIP paylaştığınızda dosya seçtiğiniz alıcı uygulamaya aktarılır. Dosyada fotoğraf meta verileri ve çalışma kayıtları bulunabilir. Harici kopyaları kaydedildikleri konumda veya alıcı hizmette yönetin ya da silin."
+    ],
+    "manualBodies": [
+      "Yararlı notları ve iş ayrıntılarını çalışma kayıtlarıyla birlikte saklayın.",
+      "Çalışma anlarını fotoğraflayın ve sonuçları galeride inceleyin.",
+      "Karanlık alanlarda konunun görünmesi için flaşı kullanın.",
+      "İş ayrıntılarını veya gereken notları fotoğrafa ekleyin.",
+      "Fotoğrafın ayrıntılarını daha net yakalamak için pozlamayı ayarlayın.",
+      "Daha geniş bir görüntü için cihazı yatay çevirin."
+    ],
+    "providerMailDeletion": "Gmail çöp kutusunun otomatik silme süresi, TAIPOPO’nun talep saklama süresi değildir. İletiler hesaptan kalıcı olarak silindikten sonra Google sunucularından ve yedeklerinden kaldırılmaları ek süre gerektirebilir. Sağlayıcının bilgileri: https://policies.google.com/technologies/retention · Gmail silme talimatları: https://support.google.com/mail/answer/7401",
+    "supportMailPolicy": "İşletmeci yalnızca başvuruyu ele almak için gerekli bilgileri kullanır. Yanıt ve gerekli takip işlemleri tamamlanıp işleme amacı gerçekleştiğinde başvuru bilgileri ve ekler gecikmeden silinir. Alınan ve yanıt olarak gönderilen e-postalar hesaptan kalıcı olarak silinir; indirilen dosyalar dâhil işletmecinin yönettiği kopyalar da silinir. Yalnızca gerçekten yasal saklama yükümlülüğüne tabi olan kayıtlar, yasal süre boyunca diğer başvurulardan ayrı saklanır.\n\nSilme taleplerini taipopo.app@gmail.com adresine gönderin. Kimliğiniz veya yetkili temsilcinin temsil yetkisi, gerekli asgari bilgilerle doğrulandıktan sonra talepler işleme alınır. Kanunen saklanması gereken kayıtlar, yalnızca ilgili yükümlülüğün kapsamı ölçüsünde silme dışında tutulur; hukuki dayanak ve saklama süresi açıklanır. Gmail sağlayıcısının sunucularından ve yedeklerinden bilgi kaldırma süreci, işletmecinin yönettiği kopyaların silinmesinden ayrıdır.",
+    "termsIntroduction": "Bu Koşullar TAIPOPO'nun (“Uygulama”) kullanımını, kullanıcıların ve TAIPOPO'nun hak, yükümlülük ve sorumluluklarını düzenler. Bir sürümün kabulü yalnızca Koşullar adımında zorunlu kutuyu işaretleyip “Kabul et ve devam et” düğmesine bastığınızda kaydedilir. Uygulamayı açmak veya Koşulları ya da Gizlilik Politikasını okumak rıza olarak kaydedilmez. Kişisel bilgi işleme için gerekli ayrı tercihler Koşulların kabulünden ayrı tutulur. Resmî kabul yalnızca uygulanacak belge ve yürürlük tarihi kesinleştikten sonra kaydedilir; diğer devam onayları Koşulların resmî kabulü sayılmaz.",
+    "termsImplementationStatus": "Mevcut Play iç test +17 yalnızca Koşulları okuma olanağı sunar. Yeni kabul adımı ve yerel kayıtlar ayrı bir doğrulama sürümüne eklendi ve henüz dağıtılmadı.",
+    "externalIntroduction": "TAIPOPO, iş kayıtlarını ve fotoğrafları kendi sunucusunda merkezi olarak saklamaz ve satmaz. Hata tanılama, adres sorgulama, destek e-postaları ve bu web sitesinin sunulması için harici hizmetler bilgi işleyebilir. Her işlem aşağıda açıklanmıştır."
+  },
+  "ar": {
+    "backupDuty": "يجب على المستخدم حفظ نسخة منفصلة من البيانات اللازمة باستخدام النسخ على الجهاز أو التخزين الخارجي أو ميزات المشاركة والتصدير.",
+    "manualStart": "لا تتم عمليات النسخ والاستعادة على الجهاز أو التخزين الخارجي، ولا مشاركة الصور والملفات وPDF أو تصديرها، إلا عندما يبدأها المستخدم مباشرة.",
+    "externalReset": "إعادة ضبط بيانات التطبيق أو حذف التطبيق لا تحذف تلقائيًا الملفات المنسوخة إلى خارجه.",
+    "sharingResponsibility": "يتحمل المستخدم مسؤولية المعلومات المرسلة إلى مكان الحفظ والتطبيق والمستلم الذين يختارهم، وما يجري عليها من معالجة لاحقة.",
+    "termsNotice": "هذا نص للتحقق ولم يُحدد تاريخ سريانه. لن يُعتبر قبول هذا الإصدار تلقائيًا قبولًا لشروط الإصدار النهائي.\nإصدار المستند: plus17-consent-review-v1",
+    "salesHeading": "18. الإعلانات والمشتريات",
+    "dataUsage": "احفظ تفضيل استخدام البيانات. لا يرفع الإصدار 1.0.0(17) النسخ الاحتياطية مباشرة. لا يتحكم هذا الإعداد في استخدام Wi-Fi أو بيانات الهاتف في تطبيق آخر تختاره من قائمة المشاركة.",
+    "services": [
+      "Firebase Crashlytics: إذا سمحت بتشخيص الأخطاء، فقد يعالج Google Firebase رموز الأخطاء وسجلات الاستدعاء المنقّحة ومعرّفات التثبيت ومعلومات تشخيص الجهاز والتطبيق. يوضح القسم 6 الفرق بين سحب الموافقة وحذف المعلومات التي أُرسلت بالفعل.",
+      "البحث عن عنوان في Android: بعد السماح بالبحث، يستخدم التطبيق خدمة الترميز الجغرافي في نظام التشغيل لتحويل الإحداثيات إلى عنوان. قد تُعالج الإحداثيات وطلبات البحث عبر الشبكة بحسب الجهاز والنظام. تشغيل تسجيل GPS وحده لا يطلب عنوانًا.",
+      "Google Play: لا يبدأ إعداد PRO للاختبار المغلق في 1.0.0(17) طلبات الاستعلام عن المنتجات أو الشراء أو استعادة المشتريات من التطبيق. قراءة استحقاق سابق محفوظ على الجهاز تختلف عن إرسال طلب جديد إلى Google Play. عمليات التنزيل والتحديث ومعالجة الحساب الخاصة بمتجر Play منفصلة ولا تتحكم فيها موافقة تشخيص TAIPOPO.",
+      "الدعم بالبريد الإلكتروني: عند إرسال رسالة، يتلقى المطور عنوان المرسل والنص والمرفقات وتفاصيل الجهاز التي تدرجها لمعالجة استفسارك. تُعالج الرسائل الواردة عبر Gmail، ولا يحتوي الموقع على نموذج لإرسال الاستفسارات. راجع القسم 14.",
+      "GitHub Pages: أثناء استضافة الموقع، يسجل GitHub عناوين IP للزوار لأغراض الأمان. يشرح القسم 13 معلومات الزيارة وحفظ المظهر في المتصفح.",
+      "المشاركة الخارجية: عند مشاركة صورة أو PDF أو ملف ZIP احتياطي، يُمرّر الملف إلى التطبيق المستلم الذي تختاره. قد يتضمن بيانات الصور الوصفية وسجلات العمل. تُدار النسخ الخارجية وتُحذف في مكان حفظها أو لدى الخدمة المستلمة."
+    ],
+    "manualBodies": [
+      "احتفظ بالملاحظات المفيدة وتفاصيل العمل مع سجلات العمل.",
+      "التقط لحظات العمل بالصور وراجع النتائج في المعرض.",
+      "استخدم الفلاش لإظهار الهدف في الأماكن المظلمة.",
+      "أضف تفاصيل العمل أو الملاحظات اللازمة إلى الصورة.",
+      "اضبط التعريض لإظهار تفاصيل الصورة بوضوح أكبر.",
+      "أدِر الجهاز أفقيًا لالتقاط منظر أوسع."
+    ],
+    "providerMailDeletion": "مدة الحذف التلقائي من مهملات Gmail ليست مدة احتفاظ TAIPOPO بالاستفسارات. قد تستغرق إزالة المعلومات من خوادم Google ونسخها الاحتياطية وقتًا إضافيًا بعد الحذف النهائي من الحساب. معلومات الاحتفاظ لدى المزوّد: https://policies.google.com/technologies/retention · إرشادات الحذف في Gmail: https://support.google.com/mail/answer/7401",
+    "supportMailPolicy": "لا يستخدم المشغّل إلا المعلومات اللازمة لمعالجة الاستفسار. بعد اكتمال الرد وإجراءات المتابعة اللازمة وتحقق غرض المعالجة، تُحذف معلومات الاستفسار ومرفقاته دون تأخير. تُحذف الرسائل الواردة ورسائل الرد نهائيًا من الحساب، وتُحذف أيضًا النسخ التي يديرها المشغّل، بما فيها الملفات المنزّلة. ولا تُحفظ منفصلةً عن الاستفسارات الأخرى خلال المدة القانونية إلا السجلات التي تخضع فعلًا لالتزام قانوني بالاحتفاظ.\n\nأرسل طلبات الحذف إلى taipopo.app@gmail.com. تُعالج الطلبات بعد التحقق من هويتك أو صلاحية ممثلك المفوّض باستخدام الحد الأدنى من المعلومات اللازمة. تُستثنى السجلات الواجب الاحتفاظ بها قانونًا من الحذف في حدود ذلك الالتزام فقط، مع توضيح الأساس القانوني ومدة الاحتفاظ. تختلف إجراءات إزالة المعلومات من خوادم مزوّد Gmail ونسخه الاحتياطية عن حذف النسخ التي يديرها المشغّل.",
+    "termsIntroduction": "تحدد هذه الشروط استخدام TAIPOPO («التطبيق») وحقوق المستخدمين وTAIPOPO والتزاماتهم ومسؤولياتهم. لا يُسجل قبول إصدار إلا عند تحديد مربع الاختيار الإلزامي في خطوة الشروط والضغط على «الموافقة والمتابعة». لا يُسجل تشغيل التطبيق أو قراءة الشروط أو سياسة الخصوصية بوصفه موافقة. تبقى الخيارات المنفصلة اللازمة لمعالجة المعلومات الشخصية مستقلة عن قبول الشروط. لا يُسجل القبول الرسمي إلا بعد اعتماد المستند المطبق وتاريخ سريانه، ولا تُعامل تأكيدات المتابعة الأخرى كقبول رسمي للشروط.",
+    "termsImplementationStatus": "تتيح نسخة الاختبار الداخلي الحالية +17 على Play قراءة الشروط فقط. أضيفت خطوة القبول والسجلات المحلية إلى نسخة تحقق منفصلة لم تُوزّع بعد.",
+    "externalIntroduction": "لا تخزن TAIPOPO سجلات العمل والصور مركزيًا على خادم خاص بها ولا تبيعها. قد تعالج خدمات خارجية معلومات لتشخيص الأخطاء والبحث عن العناوين وبريد الدعم وتوفير هذا الموقع. تُوضح كل عملية أدناه."
+  },
+  "it": {
+    "backupDuty": "Devi conservare una copia separata dei dati necessari tramite backup sul dispositivo, memoria esterna oppure condivisione ed esportazione.",
+    "manualStart": "Backup e ripristini sul dispositivo o su memoria esterna, nonché condivisione ed esportazione di foto, file e PDF, avvengono solo quando l’utente li avvia direttamente.",
+    "externalReset": "Reimpostare i dati dell’app o rimuovere l’app non elimina automaticamente i file copiati al suo esterno.",
+    "sharingResponsibility": "L’utente è responsabile delle informazioni inviate al luogo di archiviazione, all’app e al destinatario scelti, nonché del loro successivo trattamento.",
+    "termsNotice": "Questo è un testo di validazione senza data di entrata in vigore confermata. La sua accettazione non varrà automaticamente per le Condizioni definitive del rilascio.\nVersione del documento: plus17-consent-review-v1",
+    "salesHeading": "18. Pubblicità e acquisti",
+    "dataUsage": "Salva la preferenza sull’uso dei dati. La versione 1.0.0(17) non carica direttamente i backup. Questa impostazione non controlla il Wi-Fi o i dati mobili di un’altra app scelta nel menu di condivisione.",
+    "services": [
+      "Firebase Crashlytics: Se autorizzi la diagnostica degli errori, Google Firebase può trattare codici di errore, tracce delle chiamate filtrate, identificatori di installazione e dati diagnostici del dispositivo e dell’app. La sezione 6 distingue la revoca del consenso dall’eliminazione delle informazioni già inviate.",
+      "Ricerca indirizzi Android: Con il tuo permesso, l’app usa il servizio di geocodifica del sistema per convertire le coordinate in un indirizzo. A seconda del dispositivo e del sistema, coordinate e richieste possono essere trattate tramite rete. Attivare solo la registrazione GPS non avvia la ricerca di indirizzi.",
+      "Google Play: La configurazione PRO per il test chiuso di 1.0.0(17) non avvia dall’app richieste di prodotti, acquisti o ripristino degli acquisti. Leggere un diritto esistente salvato sul dispositivo è diverso da inviare una nuova richiesta a Google Play. Download, aggiornamenti e gestione dell’account da parte del Play Store sono separati e non sono controllati dal consenso alla diagnostica di TAIPOPO.",
+      "Assistenza via e-mail: Quando invii un messaggio, lo sviluppatore riceve l’indirizzo del mittente, il testo, gli allegati e i dettagli del dispositivo che includi per gestire la richiesta. La posta ricevuta viene trattata tramite Gmail; il sito non ha un modulo per inviare richieste. Vedi la sezione 14.",
+      "GitHub Pages: Durante l’hosting del sito, GitHub registra gli indirizzi IP dei visitatori per sicurezza. La sezione 13 illustra i dati delle visite e il salvataggio del tema nel browser.",
+      "Condivisione esterna: Foto, PDF o ZIP di backup vengono consegnati all’app destinataria scelta. Possono includere metadati delle foto e registri di lavoro. Gestisci o elimina le copie esterne nel luogo di archiviazione o nel servizio destinatario."
+    ],
+    "manualBodies": [
+      "Conserva note utili e dettagli dell’attività insieme ai registri di lavoro.",
+      "Fotografa i momenti di lavoro e controlla i risultati nella galleria.",
+      "Usa il flash per rendere visibili i soggetti in luoghi bui.",
+      "Aggiungi alla foto dettagli dell’attività o note utili.",
+      "Regola l’esposizione per riprendere meglio i dettagli della foto.",
+      "Ruota il dispositivo per riprendere una vista più ampia."
+    ],
+    "providerMailDeletion": "Il periodo di eliminazione automatica del cestino Gmail non è il periodo di conservazione delle richieste di TAIPOPO. La rimozione dai server e dai backup di Google può richiedere ulteriore tempo dopo l’eliminazione definitiva dei messaggi dall’account. Informazioni del fornitore: https://policies.google.com/technologies/retention · Istruzioni Gmail: https://support.google.com/mail/answer/7401",
+    "supportMailPolicy": "Il gestore utilizza solo le informazioni necessarie per trattare la richiesta. Una volta completata la risposta e le attività successive necessarie e raggiunta la finalità del trattamento, le informazioni della richiesta e gli allegati vengono eliminati senza ritardo. Le email ricevute e quelle di risposta vengono eliminate definitivamente dall'account, così come le copie gestite dal gestore, inclusi i file scaricati. Solo i documenti effettivamente soggetti a un obbligo legale di conservazione vengono conservati separatamente dalle altre richieste per il periodo previsto dalla legge.\n\nInviare le richieste di eliminazione a taipopo.app@gmail.com. Le richieste vengono trattate dopo aver verificato l'identità dell'interessato o i poteri del rappresentante autorizzato con le informazioni minime necessarie. I documenti da conservare per legge sono esclusi dall'eliminazione solo nella misura in cui si applica tale obbligo; vengono comunicati la base legale e il periodo di conservazione. La rimozione delle informazioni dai server e dai backup del fornitore di Gmail è distinta dall'eliminazione delle copie gestite dal gestore.",
+    "termsIntroduction": "Queste Condizioni regolano l'uso di TAIPOPO (l'“App”) e i diritti, gli obblighi e le responsabilità degli utenti e di TAIPOPO. L'accettazione di una versione è registrata solo selezionando la casella obbligatoria nella relativa fase e premendo “Accetta e continua”. Avviare l'app o leggere le Condizioni o l'Informativa sulla privacy non viene registrato come consenso. Le scelte separate necessarie per il trattamento dei dati personali restano distinte dall'accettazione delle Condizioni. L'accettazione formale è registrata solo dopo la definizione del documento applicabile e della data di entrata in vigore; le altre conferme per proseguire non costituiscono accettazione formale delle Condizioni.",
+    "termsImplementationStatus": "L'attuale test interno Play +17 permette solo di leggere le Condizioni. La nuova fase di accettazione e i registri locali sono stati aggiunti a una versione di validazione separata, non ancora distribuita.",
+    "externalIntroduction": "TAIPOPO non conserva centralmente i registri di lavoro e le foto su un proprio server e non li vende. Servizi esterni possono trattare informazioni per la diagnostica degli errori, la ricerca di indirizzi, le email di assistenza e questo sito. Ogni trattamento è descritto di seguito."
+  },
+  "th": {
+    "backupDuty": "ผู้ใช้ต้องเก็บข้อมูลที่จำเป็นแยกไว้ด้วยการสำรองในอุปกรณ์ ที่จัดเก็บภายนอก หรือฟังก์ชันแชร์และส่งออก",
+    "manualStart": "การสำรองและกู้คืนในอุปกรณ์หรือที่จัดเก็บภายนอก รวมถึงการแชร์หรือส่งออกภาพ ไฟล์ และ PDF จะทำเมื่อผู้ใช้เริ่มโดยตรงเท่านั้น",
+    "externalReset": "การรีเซ็ตข้อมูลหรือลบแอปไม่ลบไฟล์ที่คัดลอกออกไปนอกแอปโดยอัตโนมัติ",
+    "sharingResponsibility": "ผู้ใช้รับผิดชอบข้อมูลที่ส่งไปยังตำแหน่งบันทึก แอป และผู้รับที่เลือก รวมถึงการประมวลผลข้อมูลนั้นในภายหลัง",
+    "termsNotice": "นี่คือข้อความสำหรับตรวจสอบซึ่งยังไม่กำหนดวันมีผลใช้บังคับ การยอมรับเวอร์ชันนี้จะไม่ถือเป็นการยอมรับข้อกำหนดฉบับเปิดตัวจริงโดยอัตโนมัติ\nเวอร์ชันเอกสาร: plus17-consent-review-v1",
+    "salesHeading": "18. โฆษณาและการซื้อ",
+    "dataUsage": "บันทึกการตั้งค่าการใช้ข้อมูล เวอร์ชัน 1.0.0(17) ไม่อัปโหลดข้อมูลสำรองโดยตรง การตั้งค่านี้ไม่ควบคุม Wi-Fi หรือข้อมูลมือถือของแอปอื่นที่เลือกในเมนูแชร์",
+    "services": [
+      "Firebase Crashlytics: หากอนุญาตการวินิจฉัยข้อผิดพลาด Google Firebase อาจประมวลผลรหัสข้อผิดพลาด บันทึกการเรียกที่คัดกรองแล้ว ตัวระบุการติดตั้ง และข้อมูลวินิจฉัยอุปกรณ์กับแอป ข้อ 6 อธิบายความแตกต่างระหว่างถอนความยินยอมกับลบข้อมูลที่ส่งไปแล้ว",
+      "การค้นหาที่อยู่ของ Android: เมื่ออนุญาต แอปจะใช้บริการแปลงพิกัดของระบบปฏิบัติการเพื่อแปลงพิกัดเป็นที่อยู่ พิกัดและคำขออาจประมวลผลผ่านเครือข่ายตามอุปกรณ์และระบบ การเปิดบันทึก GPS เพียงอย่างเดียวไม่ค้นหาที่อยู่",
+      "Google Play: การตั้งค่า PRO สำหรับการทดสอบแบบปิดใน 1.0.0(17) ไม่เริ่มคำขอข้อมูลผลิตภัณฑ์ การซื้อ หรือการกู้คืนการซื้อจากแอป การอ่านสิทธิ์เดิมที่บันทึกในอุปกรณ์ต่างจากการส่งคำขอใหม่ไปยัง Google Play การดาวน์โหลด อัปเดต และจัดการบัญชีของ Play Store เป็นบริการแยก และไม่ถูกควบคุมด้วยความยินยอมการวินิจฉัยของ TAIPOPO",
+      "การสนับสนุนทางอีเมล: เมื่อส่งอีเมล ผู้พัฒนาจะได้รับที่อยู่ผู้ส่ง เนื้อหา ไฟล์แนบ และข้อมูลอุปกรณ์ที่คุณให้เพื่อดำเนินการตามคำถาม อีเมลที่ได้รับประมวลผลผ่าน Gmail เว็บไซต์ไม่มีแบบฟอร์มส่งคำถาม ดูข้อ 14",
+      "GitHub Pages: เมื่อให้บริการเว็บไซต์ GitHub จะบันทึกที่อยู่ IP ของผู้เข้าชมเพื่อความปลอดภัย ข้อ 13 อธิบายข้อมูลการเข้าชมและการบันทึกธีมในเบราว์เซอร์",
+      "การแชร์ภายนอก: เมื่อแชร์ภาพ PDF หรือ ZIP สำรอง ไฟล์จะถูกส่งให้แอปรับที่คุณเลือก และอาจมีข้อมูลกำกับภาพกับบันทึกงาน ต้องจัดการหรือลบสำเนาภายนอกที่ตำแหน่งบันทึกหรือบริการผู้รับ"
+    ],
+    "manualBodies": [
+      "จดรายละเอียดงานและข้อมูลที่จำเป็นไว้ดูร่วมกับบันทึกงาน",
+      "บันทึกช่วงเวลาทำงานเป็นภาพและดูผลในแกลเลอรี",
+      "ใช้แฟลชเพื่อให้เห็นวัตถุชัดเจนในที่มืด",
+      "เพิ่มรายละเอียดงานหรือข้อมูลที่จำเป็นไว้บนภาพ",
+      "ปรับความสว่างเพื่อเก็บรายละเอียดภาพให้ชัดขึ้น",
+      "หมุนอุปกรณ์เป็นแนวนอนเพื่อถ่ายภาพมุมกว้างขึ้น"
+    ],
+    "providerMailDeletion": "ระยะเวลาลบอัตโนมัติในถังขยะ Gmail ไม่ใช่ระยะเวลาเก็บข้อซักถามของ TAIPOPO หลังลบอีเมลจากบัญชีอย่างถาวรแล้ว การลบออกจากเซิร์ฟเวอร์และข้อมูลสำรองของ Google อาจต้องใช้เวลาเพิ่มเติม ข้อมูลของผู้ให้บริการ: https://policies.google.com/technologies/retention · วิธีลบใน Gmail: https://support.google.com/mail/answer/7401",
+    "supportMailPolicy": "ผู้ดำเนินการใช้เฉพาะข้อมูลที่จำเป็นต่อการจัดการข้อสอบถาม เมื่อให้คำตอบและดำเนินการติดตามที่จำเป็นเสร็จสิ้นจนบรรลุวัตถุประสงค์ในการประมวลผลแล้ว จะลบข้อมูลข้อสอบถามและไฟล์แนบโดยไม่ชักช้า อีเมลที่ได้รับและอีเมลตอบกลับจะถูกลบออกจากบัญชีอย่างถาวร รวมถึงสำเนาที่ผู้ดำเนินการจัดการ เช่น ไฟล์ที่ดาวน์โหลดด้วย เฉพาะบันทึกที่มีหน้าที่ต้องเก็บรักษาตามกฎหมายจริงเท่านั้นที่จะเก็บแยกจากข้อสอบถามอื่นตามระยะเวลาที่กฎหมายกำหนด\n\nส่งคำขอลบข้อมูลไปที่ taipopo.app@gmail.com คำขอจะได้รับการดำเนินการหลังจากยืนยันตัวตนหรืออำนาจของผู้แทนที่มีสิทธิ โดยใช้ข้อมูลเท่าที่จำเป็นขั้นต่ำ บันทึกที่กฎหมายกำหนดให้เก็บรักษาจะได้รับยกเว้นจากการลบเฉพาะขอบเขตที่หน้าที่นั้นมีผลใช้บังคับ พร้อมแจ้งฐานกฎหมายและระยะเวลาเก็บรักษา กระบวนการนำข้อมูลออกจากเซิร์ฟเวอร์และข้อมูลสำรองของผู้ให้บริการ Gmail แยกจากการลบสำเนาที่ผู้ดำเนินการจัดการ",
+    "termsIntroduction": "ข้อกำหนดนี้กำหนดการใช้ TAIPOPO (“แอป”) รวมถึงสิทธิ หน้าที่ และความรับผิดของผู้ใช้และ TAIPOPO จะบันทึกการยอมรับเวอร์ชันเมื่อคุณเลือกช่องจำเป็นในขั้นตอนข้อกำหนดแล้วกด “ยอมรับและดำเนินการต่อ” เท่านั้น การเปิดแอปหรืออ่านข้อกำหนดหรือนโยบายความเป็นส่วนตัวไม่ถือเป็นการบันทึกความยินยอม ทางเลือกเฉพาะที่จำเป็นสำหรับการประมวลผลข้อมูลส่วนบุคคลแยกจากการยอมรับข้อกำหนด จะบันทึกการยอมรับอย่างเป็นทางการเมื่อเอกสารที่ใช้บังคับและวันที่มีผลได้รับการกำหนดแล้วเท่านั้น การยืนยันอื่นเพื่อดำเนินการต่อไม่ถือเป็นการยอมรับข้อกำหนดอย่างเป็นทางการ",
+    "termsImplementationStatus": "Play รุ่นทดสอบภายใน +17 ปัจจุบันให้อ่านข้อกำหนดได้เท่านั้น ขั้นตอนยอมรับใหม่และบันทึกในเครื่องเพิ่มในรุ่นแก้ไขสำหรับตรวจสอบแยกต่างหากและยังไม่ได้เผยแพร่",
+    "externalIntroduction": "TAIPOPO ไม่จัดเก็บบันทึกงานและรูปภาพแบบรวมศูนย์บนเซิร์ฟเวอร์ของตนเองและไม่ขายข้อมูลเหล่านี้ บริการภายนอกอาจประมวลผลข้อมูลเพื่อวินิจฉัยข้อผิดพลาด ค้นหาที่อยู่ รับอีเมลฝ่ายสนับสนุน และให้บริการเว็บไซต์นี้ รายละเอียดของแต่ละกรณีอยู่ด้านล่าง"
+  }
+}

@@ -26,7 +26,8 @@ const codes = [
 ];
 const policies = {};
 const existingPolicies = require('./privacy-content.json');
-const { zipBackupVersion } = require('./website-disclosures.json');
+const { zipBackupVersion, reviewDate } = require('./website-disclosures.json');
+const { copy } = require('./public-copy.cjs');
 
 for (const code of codes) {
   const source = JSON.parse(
@@ -42,9 +43,10 @@ for (const code of codes) {
     effectiveDate !== '2026-08-23' ||
     placeholders.length !== 1 ||
     !revisionDate ||
-    source.privacyPolicyNoticeVersion !== '2026-11-07' ||
+    source.privacyPolicyNoticeVersion !== reviewDate ||
     !source.privacyPolicyProcessingNotice?.includes('taipopo-site-theme') ||
-    !source.termsOfUseReviewNotice?.includes('2026-11-07') ||
+    !source.termsOfUseReviewNotice?.trim() ||
+    !source.termsOfUseBody?.trim() ||
     !body.includes(controller) ||
     !body.includes('30') ||
     !body.includes(source.backupZipPrivacy) ||
@@ -73,8 +75,16 @@ for (const code of codes) {
       effectiveDate: source.policyEffectiveDate,
       notice: source.dataDeletePrivacyNotice,
     },
-    // This publication updates privacy/deletion guidance, not the deployed terms.
-    terms: existingPolicies[code].terms,
+    // Synchronize the reviewed candidate; the published Play reader is described
+    // separately by termsImplementationStatus and is not changed by this export.
+    terms: {
+      title: source.termsOfUse,
+      body: source.termsOfUseBody
+        .replace(/(\n\n5\. )/u, `\n\n${copy[code].backupDuty}$1`)
+        .replace(/(\n\n6\. )/u, `\n\n${copy[code].manualStart}\n\n${copy[code].externalReset}$1`),
+      effectiveDate: source.policyEffectiveDate,
+      reviewNotice: source.termsOfUseReviewNotice,
+    },
   };
   if (Object.values(policies[code].zipBackup).some((value) => !value?.trim())) {
     throw new Error(`Incomplete ZIP backup guidance: ${code}`);

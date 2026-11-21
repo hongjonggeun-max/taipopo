@@ -332,7 +332,7 @@
             {
               "id": "memo",
               "title": "업무 메모",
-              "body": "현장 상황과 업무 내용을 기록해 근무 기록과 함께 확인합니다.",
+              "body": "업무 상황과 필요한 내용을 기록해 근무 기록과 함께 확인합니다.",
               "notice": null,
               "icon": {
                 "name": "notes_rounded",
@@ -346,7 +346,7 @@
             {
               "id": "work-photos",
               "title": "촬영하기",
-              "body": "현장을 사진으로 기록하고 촬영 결과를 갤러리에서 확인합니다.",
+              "body": "일하는 순간을 사진으로 기록하고 촬영 결과를 갤러리에서 확인합니다.",
               "notice": null,
               "icon": {
                 "name": "photo_camera_outlined",
@@ -1001,7 +1001,7 @@
             {
               "id": "camera-flash",
               "title": "플래시",
-              "body": "어두운 현장에서 피사체가 잘 보이도록 플래시를 사용합니다.",
+              "body": "어두운 곳에서 피사체가 잘 보이도록 플래시를 사용합니다.",
               "notice": null,
               "icon": {
                 "name": "flash_auto_rounded",
@@ -1113,7 +1113,7 @@
             {
               "id": "camera-memo",
               "title": "메모",
-              "body": "현장 상황이나 필요한 내용을 사진에 함께 기록합니다.",
+              "body": "업무 상황이나 필요한 내용을 사진에 함께 기록합니다.",
               "notice": null,
               "icon": {
                 "name": "notes_rounded",
@@ -1169,7 +1169,7 @@
             {
               "id": "camera-exposure",
               "title": "밝기",
-              "body": "촬영 밝기를 조절해 현장 내용을 더 잘 담습니다.",
+              "body": "촬영 밝기를 조절해 사진의 내용을 더 잘 담습니다.",
               "notice": null,
               "icon": {
                 "name": "wb_sunny_outlined",
@@ -1218,7 +1218,7 @@
             {
               "id": "camera-capture",
               "title": "촬영하기",
-              "body": "현장을 사진으로 기록하고 촬영 결과를 갤러리에서 확인합니다.",
+              "body": "일하는 순간을 사진으로 기록하고 촬영 결과를 갤러리에서 확인합니다.",
               "notice": null,
               "icon": null
             },
@@ -1232,7 +1232,7 @@
             {
               "id": "camera-landscape",
               "title": "양쪽 가로 촬영",
-              "body": "기기를 가로로 돌려 넓은 현장도 사진에 담을 수 있습니다.",
+              "body": "기기를 가로로 돌려 더 넓은 장면을 사진에 담을 수 있습니다.",
               "notice": null,
               "icon": null
             }
@@ -1471,7 +1471,7 @@
             {
               "id": "backup-device",
               "title": "기기에 백업",
-              "body": "이 기기의 내부 저장공간에 백업을 저장합니다.",
+              "body": "설정 > 백업 및 복구 > 기기에 백업\n근무 기록, 설정, 사진 등을 백업 ZIP으로 기기에 보관합니다.",
               "notice": null,
               "icon": {
                 "name": "phone_android_outlined",
@@ -1485,7 +1485,7 @@
             {
               "id": "backup-external",
               "title": "SD 카드·USB에 백업",
-              "body": "연결된 SD 카드나 USB 저장장치에 백업을 저장합니다.",
+              "body": "설정 > 백업 및 복구 > SD 카드·USB에 백업\n연결된 SD 카드나 USB 저장장치에 백업을 저장합니다.",
               "notice": null,
               "icon": {
                 "name": "usb",
@@ -1499,7 +1499,7 @@
             {
               "id": "backup-share",
               "title": "외부 백업 만들기",
-              "body": "백업 사본을 다른 앱으로 전달합니다. 저장 완료는 선택한 앱에서 확인하세요.",
+              "body": "설정 > 백업 및 복구 > 외부 백업 만들기\n백업 ZIP을 만든 뒤 Android 공유창에서 보관할 앱을 선택하세요. 저장 상태는 선택한 앱에서 확인하세요. 분할 백업은 모든 파일을 함께 보관하세요.",
               "notice": null,
               "icon": {
                 "name": "folder_zip_outlined",
@@ -1511,51 +1511,9 @@
               }
             },
             {
-              "id": "backup-drive",
-              "title": "Google Drive 백업",
-              "body": "Google Drive에 백업을 저장합니다.",
-              "notice": null,
-              "icon": {
-                "name": "cloud_outlined",
-                "codePoint": 61282,
-                "color": "#8E5CF7",
-                "colorDark": "#8E5CF7",
-                "background": "transparent",
-                "matchTextDirection": false
-              }
-            },
-            {
-              "id": "drive-management",
-              "title": "Google Drive 백업 관리",
-              "body": "날짜별 백업을 확인하고 직접 삭제합니다",
-              "notice": null,
-              "icon": {
-                "name": "account_circle_outlined",
-                "codePoint": 60981,
-                "color": "#8E5CF7",
-                "colorDark": "#8E5CF7",
-                "background": "transparent",
-                "matchTextDirection": false
-              }
-            },
-            {
-              "id": "restore-drive",
-              "title": "Google Drive에서 복구",
-              "body": "Google Drive에 저장된 백업 목록에서 선택합니다.",
-              "notice": null,
-              "icon": {
-                "name": "cloud_outlined",
-                "codePoint": 61282,
-                "color": "#8E5CF7",
-                "colorDark": "#8E5CF7",
-                "background": "transparent",
-                "matchTextDirection": false
-              }
-            },
-            {
               "id": "restore",
               "title": "복원",
-              "body": "저장한 백업으로 현재 앱 데이터를 교체하므로 먼저 현재 데이터도 백업하세요.",
+              "body": "설정 > 백업 및 복구\n\n기기에서 복구: 이 기기에 저장된 백업 목록에서 선택합니다.\n\nSD 카드·USB에서 복구: 연결된 SD 카드나 USB에서 백업 폴더를 선택합니다.\n\n백업 파일 불러오기: 기기 또는 파일 선택기에 표시되는 저장소에서 백업 ZIP을 선택하세요. 분할 백업은 같은 백업의 모든 파일이 필요합니다.\n\n저장한 백업으로 현재 앱 데이터를 교체하므로 먼저 현재 데이터도 백업하세요.",
               "notice": null,
               "icon": {
                 "name": "restore_outlined",
@@ -1646,7 +1604,7 @@
             {
               "id": "data-usage",
               "title": "데이터 사용",
-              "body": "백업 업로드를 Wi-Fi로만 할지 모바일 데이터도 사용할지 정합니다.",
+              "body": "데이터 사용 설정을 저장합니다. 1.0.0(17)은 백업을 직접 업로드하지 않으며, 이 설정은 공유창에서 선택한 다른 앱의 Wi-Fi·모바일 데이터 사용을 제어하지 않습니다.",
               "notice": null,
               "icon": {
                 "name": "wifi",
@@ -2014,7 +1972,7 @@
             {
               "id": "memo",
               "title": "Work Memo",
-              "body": "Keep site notes and work details alongside your work records.",
+              "body": "Keep useful notes and work details alongside your work records.",
               "notice": null,
               "icon": {
                 "name": "notes_rounded",
@@ -2028,7 +1986,7 @@
             {
               "id": "work-photos",
               "title": "Take Photo",
-              "body": "Record the site in photos and review them in the gallery.",
+              "body": "Capture moments from your workday and review the photos in the gallery.",
               "notice": null,
               "icon": {
                 "name": "photo_camera_outlined",
@@ -2795,7 +2753,7 @@
             {
               "id": "camera-memo",
               "title": "Memo",
-              "body": "Record site conditions or useful notes on the photo.",
+              "body": "Add work details or useful notes to the photo.",
               "notice": null,
               "icon": {
                 "name": "notes_rounded",
@@ -2851,7 +2809,7 @@
             {
               "id": "camera-exposure",
               "title": "Brightness",
-              "body": "Adjust exposure to show site details more clearly.",
+              "body": "Adjust exposure to capture details more clearly.",
               "notice": null,
               "icon": {
                 "name": "wb_sunny_outlined",
@@ -2900,7 +2858,7 @@
             {
               "id": "camera-capture",
               "title": "Take Photo",
-              "body": "Record the site in photos and review them in the gallery.",
+              "body": "Capture moments from your workday and review the photos in the gallery.",
               "notice": null,
               "icon": null
             },
@@ -2914,7 +2872,7 @@
             {
               "id": "camera-landscape",
               "title": "Landscape capture in both directions",
-              "body": "Turn the device sideways to capture a wider view of the site.",
+              "body": "Turn the device sideways to capture a wider view.",
               "notice": null,
               "icon": null
             }
@@ -3153,7 +3111,7 @@
             {
               "id": "backup-device",
               "title": "Back up to this device",
-              "body": "Save the backup to this device’s internal storage.",
+              "body": "Settings > Backup & Restore > Back up to this device\nSave work records, settings, photos, and other data on your device as a backup ZIP.",
               "notice": null,
               "icon": {
                 "name": "phone_android_outlined",
@@ -3167,7 +3125,7 @@
             {
               "id": "backup-external",
               "title": "Back up to SD card or USB",
-              "body": "Save the backup to a connected SD card or USB storage device.",
+              "body": "Settings > Backup & Restore > Back up to SD card or USB\nSave the backup to a connected SD card or USB storage device.",
               "notice": null,
               "icon": {
                 "name": "usb",
@@ -3181,7 +3139,7 @@
             {
               "id": "backup-share",
               "title": "Create external backup",
-              "body": "Send a backup copy to another app. Check in the app you choose that it has been saved.",
+              "body": "Settings > Backup & Restore > Create external backup\nAfter creating the backup ZIP, choose an app in the Android share sheet to keep it. Check the save status in the app you chose. Keep all files of a split backup together.",
               "notice": null,
               "icon": {
                 "name": "folder_zip_outlined",
@@ -3193,51 +3151,9 @@
               }
             },
             {
-              "id": "backup-drive",
-              "title": "Google Drive backup",
-              "body": "Save backups to Google Drive.",
-              "notice": null,
-              "icon": {
-                "name": "cloud_outlined",
-                "codePoint": 61282,
-                "color": "#8E5CF7",
-                "colorDark": "#8E5CF7",
-                "background": "transparent",
-                "matchTextDirection": false
-              }
-            },
-            {
-              "id": "drive-management",
-              "title": "Manage Google Drive backups",
-              "body": "Review dated backups and delete them yourself",
-              "notice": null,
-              "icon": {
-                "name": "account_circle_outlined",
-                "codePoint": 60981,
-                "color": "#8E5CF7",
-                "colorDark": "#8E5CF7",
-                "background": "transparent",
-                "matchTextDirection": false
-              }
-            },
-            {
-              "id": "restore-drive",
-              "title": "Restore from Google Drive",
-              "body": "Choose from the backup list stored in Google Drive.",
-              "notice": null,
-              "icon": {
-                "name": "cloud_outlined",
-                "codePoint": 61282,
-                "color": "#8E5CF7",
-                "colorDark": "#8E5CF7",
-                "background": "transparent",
-                "matchTextDirection": false
-              }
-            },
-            {
               "id": "restore",
               "title": "Restore",
-              "body": "Restoring replaces current app data with the backup, so back up your current data first.",
+              "body": "Settings > Backup & Restore\n\nRestore from device backup list: Choose from the backup list saved on this device.\n\nRestore from SD card or USB: Choose a backup folder from a connected SD card or USB storage device.\n\nImport backup files: Choose the backup ZIP on your device or in storage shown by the file picker. A split backup requires every file from the same backup.\n\nRestoring replaces current app data with the backup, so back up your current data first.",
               "notice": null,
               "icon": {
                 "name": "restore_outlined",
@@ -3328,7 +3244,7 @@
             {
               "id": "data-usage",
               "title": "Data Usage",
-              "body": "Choose whether backup uploads use Wi-Fi only or also mobile data.",
+              "body": "Save your data-use preference. Version 1.0.0(17) does not upload backups directly. This setting does not control Wi-Fi or mobile data used by another app you select in the share sheet.",
               "notice": null,
               "icon": {
                 "name": "wifi",
@@ -3696,7 +3612,7 @@
             {
               "id": "memo",
               "title": "工作备忘录",
-              "body": "记录现场情况和工作内容，并与工作记录一同查看。",
+              "body": "记录工作情况和所需内容，并与工作记录一同查看。",
               "notice": null,
               "icon": {
                 "name": "notes_rounded",
@@ -3710,7 +3626,7 @@
             {
               "id": "work-photos",
               "title": "拍照",
-              "body": "拍摄现场照片，并在图库中查看拍摄结果。",
+              "body": "用照片记录工作中的时刻，并在图库中查看拍摄结果。",
               "notice": null,
               "icon": {
                 "name": "photo_camera_outlined",
@@ -4365,7 +4281,7 @@
             {
               "id": "camera-flash",
               "title": "闪光灯",
-              "body": "在较暗现场使用闪光灯，使拍摄对象清晰可见。",
+              "body": "在较暗的地方使用闪光灯，使拍摄对象清晰可见。",
               "notice": null,
               "icon": {
                 "name": "flash_auto_rounded",
@@ -4477,7 +4393,7 @@
             {
               "id": "camera-memo",
               "title": "备忘录",
-              "body": "将现场情况或所需内容记录在照片上。",
+              "body": "将工作情况或所需内容记录在照片上。",
               "notice": null,
               "icon": {
                 "name": "notes_rounded",
@@ -4533,7 +4449,7 @@
             {
               "id": "camera-exposure",
               "title": "亮度",
-              "body": "调整拍摄亮度，更清楚地记录现场。",
+              "body": "调整拍摄亮度，更清楚地记录画面细节。",
               "notice": null,
               "icon": {
                 "name": "wb_sunny_outlined",
@@ -4582,7 +4498,7 @@
             {
               "id": "camera-capture",
               "title": "拍照",
-              "body": "拍摄现场照片，并在图库中查看拍摄结果。",
+              "body": "用照片记录工作中的时刻，并在图库中查看拍摄结果。",
               "notice": null,
               "icon": null
             },
@@ -4596,7 +4512,7 @@
             {
               "id": "camera-landscape",
               "title": "向左右两个方向横屏拍摄",
-              "body": "将设备横置，可拍摄更宽的现场画面。",
+              "body": "将设备横置，可以拍摄更宽的画面。",
               "notice": null,
               "icon": null
             }
@@ -4835,7 +4751,7 @@
             {
               "id": "backup-device",
               "title": "备份到此设备",
-              "body": "将备份保存到此设备的内部存储空间。",
+              "body": "设置 > 备份与恢复 > 备份到此设备\n将工作记录、设置、照片等作为备份 ZIP 保存在设备上。",
               "notice": null,
               "icon": {
                 "name": "phone_android_outlined",
@@ -4849,7 +4765,7 @@
             {
               "id": "backup-external",
               "title": "备份到 SD 卡或 USB",
-              "body": "将备份保存到已连接的 SD 卡或 USB 存储设备。",
+              "body": "设置 > 备份与恢复 > 备份到 SD 卡或 USB\n将备份保存到已连接的 SD 卡或 USB 存储设备。",
               "notice": null,
               "icon": {
                 "name": "usb",
@@ -4863,7 +4779,7 @@
             {
               "id": "backup-share",
               "title": "创建外部备份",
-              "body": "将备份副本发送到其他应用。请在所选应用中确认是否保存完成。",
+              "body": "设置 > 备份与恢复 > 创建外部备份\n创建备份 ZIP 后，在 Android 分享面板中选择用于保存的应用。请在所选应用中确认保存状态。分卷备份的所有文件须一同保管。",
               "notice": null,
               "icon": {
                 "name": "folder_zip_outlined",
@@ -4875,51 +4791,9 @@
               }
             },
             {
-              "id": "backup-drive",
-              "title": "Google Drive 备份",
-              "body": "将备份保存到 Google Drive。",
-              "notice": null,
-              "icon": {
-                "name": "cloud_outlined",
-                "codePoint": 61282,
-                "color": "#8E5CF7",
-                "colorDark": "#8E5CF7",
-                "background": "transparent",
-                "matchTextDirection": false
-              }
-            },
-            {
-              "id": "drive-management",
-              "title": "管理 Google Drive 备份",
-              "body": "按日期查看备份并自行删除",
-              "notice": null,
-              "icon": {
-                "name": "account_circle_outlined",
-                "codePoint": 60981,
-                "color": "#8E5CF7",
-                "colorDark": "#8E5CF7",
-                "background": "transparent",
-                "matchTextDirection": false
-              }
-            },
-            {
-              "id": "restore-drive",
-              "title": "从 Google Drive 恢复",
-              "body": "从 Google Drive 中保存的备份列表中选择。",
-              "notice": null,
-              "icon": {
-                "name": "cloud_outlined",
-                "codePoint": 61282,
-                "color": "#8E5CF7",
-                "colorDark": "#8E5CF7",
-                "background": "transparent",
-                "matchTextDirection": false
-              }
-            },
-            {
               "id": "restore",
               "title": "恢复",
-              "body": "恢复会用备份替换当前应用数据，请先备份现有数据。",
+              "body": "设置 > 备份与恢复\n\n从设备备份列表恢复: 从此设备上保存的备份列表中选择。\n\n从 SD 卡或 USB 恢复: 从已连接的 SD 卡或 USB 存储设备中选择备份文件夹。\n\n导入备份文件: 在设备或文件选择器显示的存储位置中选择备份 ZIP。分卷备份需要同一备份的全部文件。\n\n恢复会用备份替换当前应用数据，请先备份现有数据。",
               "notice": null,
               "icon": {
                 "name": "restore_outlined",
@@ -5010,7 +4884,7 @@
             {
               "id": "data-usage",
               "title": "数据使用情况",
-              "body": "选择仅通过Wi-Fi上传备份，或同时允许移动数据。",
+              "body": "保存数据使用偏好。1.0.0(17)版本不会直接上传备份，此设置也不控制您在分享面板中选择的其他应用使用Wi-Fi或移动数据。",
               "notice": null,
               "icon": {
                 "name": "wifi",
@@ -5378,7 +5252,7 @@
             {
               "id": "memo",
               "title": "作業メモ",
-              "body": "現場の状況や作業内容を、勤務記録と一緒に残せます。",
+              "body": "仕事の状況や必要な内容を、勤務記録と一緒に残せます。",
               "notice": null,
               "icon": {
                 "name": "notes_rounded",
@@ -5392,7 +5266,7 @@
             {
               "id": "work-photos",
               "title": "写真を撮る",
-              "body": "現場を写真に記録し、ギャラリーで確認できます。",
+              "body": "仕事中の様子を写真に記録し、ギャラリーで確認できます。",
               "notice": null,
               "icon": {
                 "name": "photo_camera_outlined",
@@ -6159,7 +6033,7 @@
             {
               "id": "camera-memo",
               "title": "メモ",
-              "body": "現場の状況や必要なメモを写真に残します。",
+              "body": "仕事の状況や必要なメモを写真に残します。",
               "notice": null,
               "icon": {
                 "name": "notes_rounded",
@@ -6215,7 +6089,7 @@
             {
               "id": "camera-exposure",
               "title": "明るさ",
-              "body": "明るさを調整して現場の様子を写しやすくします。",
+              "body": "明るさを調整して写真の内容を写しやすくします。",
               "notice": null,
               "icon": {
                 "name": "wb_sunny_outlined",
@@ -6264,7 +6138,7 @@
             {
               "id": "camera-capture",
               "title": "写真を撮る",
-              "body": "現場を写真に記録し、ギャラリーで確認できます。",
+              "body": "仕事中の様子を写真に記録し、ギャラリーで確認できます。",
               "notice": null,
               "icon": null
             },
@@ -6278,7 +6152,7 @@
             {
               "id": "camera-landscape",
               "title": "左右両方向の横向き撮影",
-              "body": "端末を横にして、広い現場も撮影できます。",
+              "body": "端末を横にして、より広い範囲を撮影できます。",
               "notice": null,
               "icon": null
             }
@@ -6517,7 +6391,7 @@
             {
               "id": "backup-device",
               "title": "この端末にバックアップ",
-              "body": "この端末の内部ストレージにバックアップを保存します。",
+              "body": "設定 > バックアップと復元 > この端末にバックアップ\n勤務記録、設定、写真などをバックアップ ZIP として端末に保存します。",
               "notice": null,
               "icon": {
                 "name": "phone_android_outlined",
@@ -6531,7 +6405,7 @@
             {
               "id": "backup-external",
               "title": "SDカード・USBにバックアップ",
-              "body": "接続されたSDカードまたはUSBストレージにバックアップを保存します。",
+              "body": "設定 > バックアップと復元 > SDカード・USBにバックアップ\n接続されたSDカードまたはUSBストレージにバックアップを保存します。",
               "notice": null,
               "icon": {
                 "name": "usb",
@@ -6545,7 +6419,7 @@
             {
               "id": "backup-share",
               "title": "外部バックアップを作成",
-              "body": "バックアップのコピーを他のアプリに渡します。保存が完了したかは、選択したアプリで確認してください。",
+              "body": "設定 > バックアップと復元 > 外部バックアップを作成\nバックアップ ZIP を作成したら、Android の共有画面で保存先のアプリを選びます。保存状況は選んだアプリで確認してください。分割バックアップの全ファイルはまとめて保管してください。",
               "notice": null,
               "icon": {
                 "name": "folder_zip_outlined",
@@ -6557,51 +6431,9 @@
               }
             },
             {
-              "id": "backup-drive",
-              "title": "Google Driveバックアップ",
-              "body": "Google Driveにバックアップを保存します。",
-              "notice": null,
-              "icon": {
-                "name": "cloud_outlined",
-                "codePoint": 61282,
-                "color": "#8E5CF7",
-                "colorDark": "#8E5CF7",
-                "background": "transparent",
-                "matchTextDirection": false
-              }
-            },
-            {
-              "id": "drive-management",
-              "title": "Google Driveのバックアップを管理",
-              "body": "日付ごとのバックアップを確認し、必要に応じて削除できます",
-              "notice": null,
-              "icon": {
-                "name": "account_circle_outlined",
-                "codePoint": 60981,
-                "color": "#8E5CF7",
-                "colorDark": "#8E5CF7",
-                "background": "transparent",
-                "matchTextDirection": false
-              }
-            },
-            {
-              "id": "restore-drive",
-              "title": "Google Driveから復元",
-              "body": "Google Driveに保存されたバックアップ一覧から選択します。",
-              "notice": null,
-              "icon": {
-                "name": "cloud_outlined",
-                "codePoint": 61282,
-                "color": "#8E5CF7",
-                "colorDark": "#8E5CF7",
-                "background": "transparent",
-                "matchTextDirection": false
-              }
-            },
-            {
               "id": "restore",
               "title": "復元",
-              "body": "復元すると現在のアプリデータがバックアップ内容に置き換わるため、先に現在のデータも保存してください。",
+              "body": "設定 > バックアップと復元\n\nデバイスのバックアップ一覧から復元: この端末に保存されたバックアップ一覧から選択します。\n\nSDカード・USBから復元: 接続されたSDカードまたはUSBストレージからバックアップフォルダを選択します。\n\nバックアップファイルを読み込む: 端末またはファイル選択画面に表示される保存先からバックアップ ZIP を選びます。分割バックアップでは、同じバックアップの全ファイルが必要です。\n\n復元すると現在のアプリデータがバックアップ内容に置き換わるため、先に現在のデータも保存してください。",
               "notice": null,
               "icon": {
                 "name": "restore_outlined",
@@ -6692,7 +6524,7 @@
             {
               "id": "data-usage",
               "title": "データ使用量",
-              "body": "バックアップのアップロードにWi-Fiのみを使うか、モバイルデータも使うかを選びます。",
+              "body": "データ使用の設定を保存します。1.0.0(17)ではバックアップを直接アップロードしません。この設定は共有画面で選んだ別のアプリのWi-Fi・モバイルデータ使用を制御しません。",
               "notice": null,
               "icon": {
                 "name": "wifi",
@@ -7060,7 +6892,7 @@
             {
               "id": "memo",
               "title": "कार्य ज्ञापन",
-              "body": "कार्यस्थल की स्थिति और काम का विवरण कार्य रिकॉर्ड के साथ रखें।",
+              "body": "काम की स्थिति और ज़रूरी विवरण कार्य रिकॉर्ड के साथ रखें।",
               "notice": null,
               "icon": {
                 "name": "notes_rounded",
@@ -7074,7 +6906,7 @@
             {
               "id": "work-photos",
               "title": "फ़ोटो लें",
-              "body": "कार्यस्थल की फ़ोटो लें और गैलरी में परिणाम देखें।",
+              "body": "काम के पलों की फ़ोटो लें और गैलरी में परिणाम देखें।",
               "notice": null,
               "icon": {
                 "name": "photo_camera_outlined",
@@ -7841,7 +7673,7 @@
             {
               "id": "camera-memo",
               "title": "मेमो",
-              "body": "कार्यस्थल की स्थिति या ज़रूरी बातें फ़ोटो में दर्ज करें।",
+              "body": "काम की स्थिति या ज़रूरी बातें फ़ोटो में दर्ज करें।",
               "notice": null,
               "icon": {
                 "name": "notes_rounded",
@@ -7897,7 +7729,7 @@
             {
               "id": "camera-exposure",
               "title": "चमक",
-              "body": "कार्यस्थल के विवरण साफ़ लेने के लिए एक्सपोज़र बदलें।",
+              "body": "विवरण साफ़ लेने के लिए एक्सपोज़र बदलें।",
               "notice": null,
               "icon": {
                 "name": "wb_sunny_outlined",
@@ -7946,7 +7778,7 @@
             {
               "id": "camera-capture",
               "title": "फ़ोटो लें",
-              "body": "कार्यस्थल की फ़ोटो लें और गैलरी में परिणाम देखें।",
+              "body": "काम के पलों की फ़ोटो लें और गैलरी में परिणाम देखें।",
               "notice": null,
               "icon": null
             },
@@ -8199,7 +8031,7 @@
             {
               "id": "backup-device",
               "title": "इस डिवाइस पर बैकअप लें",
-              "body": "बैकअप को इस डिवाइस के आंतरिक स्टोरेज में सहेजें।",
+              "body": "सेटिंग्स > बैकअप और पुनर्स्थापना > इस डिवाइस पर बैकअप लें\nकार्य रिकॉर्ड, सेटिंग, फ़ोटो और अन्य डेटा को अपने डिवाइस पर बैकअप ZIP के रूप में सहेजें।",
               "notice": null,
               "icon": {
                 "name": "phone_android_outlined",
@@ -8213,7 +8045,7 @@
             {
               "id": "backup-external",
               "title": "SD कार्ड या USB पर बैकअप",
-              "body": "कनेक्ट किए गए SD कार्ड या USB स्टोरेज डिवाइस पर बैकअप सहेजें।",
+              "body": "सेटिंग्स > बैकअप और पुनर्स्थापना > SD कार्ड या USB पर बैकअप\nकनेक्ट किए गए SD कार्ड या USB स्टोरेज डिवाइस पर बैकअप सहेजें।",
               "notice": null,
               "icon": {
                 "name": "usb",
@@ -8227,7 +8059,7 @@
             {
               "id": "backup-share",
               "title": "बाहरी बैकअप बनाएँ",
-              "body": "बैकअप की प्रति दूसरे ऐप में भेजें। चुने गए ऐप में जाँचें कि वह सहेजी गई है।",
+              "body": "सेटिंग्स > बैकअप और पुनर्स्थापना > बाहरी बैकअप बनाएँ\nबैकअप ZIP बनाने के बाद उसे सहेजने के लिए Android की शेयर शीट में ऐप चुनें। सहेजने की स्थिति उसी ऐप में देखें। कई हिस्सों वाले बैकअप की सभी फ़ाइलें साथ रखें।",
               "notice": null,
               "icon": {
                 "name": "folder_zip_outlined",
@@ -8239,51 +8071,9 @@
               }
             },
             {
-              "id": "backup-drive",
-              "title": "Google Drive बैकअप",
-              "body": "बैकअप Google Drive में सहेजें।",
-              "notice": null,
-              "icon": {
-                "name": "cloud_outlined",
-                "codePoint": 61282,
-                "color": "#8E5CF7",
-                "colorDark": "#8E5CF7",
-                "background": "transparent",
-                "matchTextDirection": false
-              }
-            },
-            {
-              "id": "drive-management",
-              "title": "Google Drive बैकअप प्रबंधित करें",
-              "body": "तारीख के अनुसार बैकअप देखें और स्वयं हटाएँ",
-              "notice": null,
-              "icon": {
-                "name": "account_circle_outlined",
-                "codePoint": 60981,
-                "color": "#8E5CF7",
-                "colorDark": "#8E5CF7",
-                "background": "transparent",
-                "matchTextDirection": false
-              }
-            },
-            {
-              "id": "restore-drive",
-              "title": "Google Drive से पुनर्स्थापित करें",
-              "body": "Google Drive में सहेजी गई बैकअप सूची से चुनें।",
-              "notice": null,
-              "icon": {
-                "name": "cloud_outlined",
-                "codePoint": 61282,
-                "color": "#8E5CF7",
-                "colorDark": "#8E5CF7",
-                "background": "transparent",
-                "matchTextDirection": false
-              }
-            },
-            {
               "id": "restore",
               "title": "पुनर्स्थापित करें",
-              "body": "पुनर्स्थापना मौजूदा डेटा को बैकअप से बदल देती है, इसलिए पहले मौजूदा डेटा का बैकअप लें।",
+              "body": "सेटिंग्स > बैकअप और पुनर्स्थापना\n\nडिवाइस बैकअप सूची से पुनर्स्थापित करें: इस डिवाइस पर सहेजी गई बैकअप सूची से चुनें।\n\nSD कार्ड या USB से पुनर्स्थापित करें: कनेक्ट किए गए SD कार्ड या USB स्टोरेज डिवाइस से बैकअप फ़ोल्डर चुनें।\n\nबैकअप फ़ाइलें आयात करें: डिवाइस या फ़ाइल चयनकर्ता में दिखने वाले स्टोरेज से बैकअप ZIP चुनें। कई हिस्सों वाले बैकअप के लिए उसी बैकअप की सभी फ़ाइलें चाहिए।\n\nपुनर्स्थापना मौजूदा डेटा को बैकअप से बदल देती है, इसलिए पहले मौजूदा डेटा का बैकअप लें।",
               "notice": null,
               "icon": {
                 "name": "restore_outlined",
@@ -8374,7 +8164,7 @@
             {
               "id": "data-usage",
               "title": "डेटा उपयोग",
-              "body": "चुनें कि बैकअप केवल Wi-Fi से अपलोड हों या मोबाइल डेटा से भी।",
+              "body": "डेटा उपयोग की पसंद सहेजें। संस्करण 1.0.0(17) बैकअप सीधे अपलोड नहीं करता। यह सेटिंग शेयर मेनू में चुने गए दूसरे ऐप के Wi-Fi या मोबाइल डेटा उपयोग को नियंत्रित नहीं करती।",
               "notice": null,
               "icon": {
                 "name": "wifi",
@@ -8742,7 +8532,7 @@
             {
               "id": "memo",
               "title": "Memorando de trabalho",
-              "body": "Registre condições do local e detalhes do trabalho junto aos registros.",
+              "body": "Guarde anotações úteis e detalhes do trabalho junto aos registros.",
               "notice": null,
               "icon": {
                 "name": "notes_rounded",
@@ -8756,7 +8546,7 @@
             {
               "id": "work-photos",
               "title": "Tirar foto",
-              "body": "Registre o local em fotos e veja os resultados na galeria.",
+              "body": "Registre momentos do trabalho em fotos e veja os resultados na galeria.",
               "notice": null,
               "icon": {
                 "name": "photo_camera_outlined",
@@ -9523,7 +9313,7 @@
             {
               "id": "camera-memo",
               "title": "Memorando",
-              "body": "Registre na foto as condições do local ou anotações necessárias.",
+              "body": "Registre na foto detalhes do trabalho ou anotações necessárias.",
               "notice": null,
               "icon": {
                 "name": "notes_rounded",
@@ -9579,7 +9369,7 @@
             {
               "id": "camera-exposure",
               "title": "Brilho",
-              "body": "Ajuste a exposição para registrar melhor os detalhes do local.",
+              "body": "Ajuste a exposição para registrar melhor os detalhes da imagem.",
               "notice": null,
               "icon": {
                 "name": "wb_sunny_outlined",
@@ -9628,7 +9418,7 @@
             {
               "id": "camera-capture",
               "title": "Tirar foto",
-              "body": "Registre o local em fotos e veja os resultados na galeria.",
+              "body": "Registre momentos do trabalho em fotos e veja os resultados na galeria.",
               "notice": null,
               "icon": null
             },
@@ -9642,7 +9432,7 @@
             {
               "id": "camera-landscape",
               "title": "Fotos na horizontal nas duas direções",
-              "body": "Gire o aparelho para capturar uma visão mais ampla do local.",
+              "body": "Gire o aparelho para capturar uma visão mais ampla.",
               "notice": null,
               "icon": null
             }
@@ -9881,7 +9671,7 @@
             {
               "id": "backup-device",
               "title": "Fazer backup neste dispositivo",
-              "body": "Salve o backup no armazenamento interno deste dispositivo.",
+              "body": "Configurações > Backup e restauração > Fazer backup neste dispositivo\nGuarde registros de trabalho, configurações, fotos e outros dados no dispositivo como um ZIP de backup.",
               "notice": null,
               "icon": {
                 "name": "phone_android_outlined",
@@ -9895,7 +9685,7 @@
             {
               "id": "backup-external",
               "title": "Backup em cartão SD ou USB",
-              "body": "Salve o backup em um cartão SD ou dispositivo USB conectado.",
+              "body": "Configurações > Backup e restauração > Backup em cartão SD ou USB\nSalve o backup em um cartão SD ou dispositivo USB conectado.",
               "notice": null,
               "icon": {
                 "name": "usb",
@@ -9909,7 +9699,7 @@
             {
               "id": "backup-share",
               "title": "Criar backup externo",
-              "body": "Envie uma cópia do backup para outro aplicativo. Confirme no aplicativo escolhido se ela foi salva.",
+              "body": "Configurações > Backup e restauração > Criar backup externo\nApós criar o ZIP de backup, escolha um app no menu de compartilhamento do Android para guardá-lo. Confira o status do salvamento no app escolhido. Guarde juntos todos os arquivos de um backup dividido.",
               "notice": null,
               "icon": {
                 "name": "folder_zip_outlined",
@@ -9921,51 +9711,9 @@
               }
             },
             {
-              "id": "backup-drive",
-              "title": "Backup no Google Drive",
-              "body": "Salve backups no Google Drive.",
-              "notice": null,
-              "icon": {
-                "name": "cloud_outlined",
-                "codePoint": 61282,
-                "color": "#8E5CF7",
-                "colorDark": "#8E5CF7",
-                "background": "transparent",
-                "matchTextDirection": false
-              }
-            },
-            {
-              "id": "drive-management",
-              "title": "Gerenciar backups do Google Drive",
-              "body": "Confira os backups por data e exclua-os por conta própria",
-              "notice": null,
-              "icon": {
-                "name": "account_circle_outlined",
-                "codePoint": 60981,
-                "color": "#8E5CF7",
-                "colorDark": "#8E5CF7",
-                "background": "transparent",
-                "matchTextDirection": false
-              }
-            },
-            {
-              "id": "restore-drive",
-              "title": "Restaurar do Google Drive",
-              "body": "Escolha na lista de backups salvos no Google Drive.",
-              "notice": null,
-              "icon": {
-                "name": "cloud_outlined",
-                "codePoint": 61282,
-                "color": "#8E5CF7",
-                "colorDark": "#8E5CF7",
-                "background": "transparent",
-                "matchTextDirection": false
-              }
-            },
-            {
               "id": "restore",
               "title": "Restaurar",
-              "body": "A restauração substitui os dados atuais pelo backup; faça antes uma cópia dos dados atuais.",
+              "body": "Configurações > Backup e restauração\n\nRestaurar da lista de backups do dispositivo: Escolha na lista de backups salvos neste dispositivo.\n\nRestaurar de SD ou USB: Escolha uma pasta de backup em um cartão SD ou dispositivo USB conectado.\n\nImportar arquivos de backup: Selecione o ZIP de backup no dispositivo ou em um armazenamento exibido no seletor de arquivos. Um backup dividido exige todos os arquivos do mesmo backup.\n\nA restauração substitui os dados atuais pelo backup; faça antes uma cópia dos dados atuais.",
               "notice": null,
               "icon": {
                 "name": "restore_outlined",
@@ -10056,7 +9804,7 @@
             {
               "id": "data-usage",
               "title": "Uso de dados",
-              "body": "Escolha se os backups serão enviados apenas por Wi-Fi ou também por dados móveis.",
+              "body": "Salve sua preferência de uso de dados. A versão 1.0.0(17) não envia backups diretamente. Esta configuração não controla o uso de Wi-Fi ou dados móveis de outro app escolhido no menu de compartilhamento.",
               "notice": null,
               "icon": {
                 "name": "wifi",
@@ -10424,7 +10172,7 @@
             {
               "id": "memo",
               "title": "Nota de trabajo",
-              "body": "Guarda notas del lugar y detalles del trabajo junto a tus registros.",
+              "body": "Guarda notas útiles y detalles del trabajo junto a tus registros.",
               "notice": null,
               "icon": {
                 "name": "notes_rounded",
@@ -10438,7 +10186,7 @@
             {
               "id": "work-photos",
               "title": "tomar foto",
-              "body": "Documenta el lugar con fotos y revísalas en la galería.",
+              "body": "Fotografía momentos de tu trabajo y revisa las imágenes en la galería.",
               "notice": null,
               "icon": {
                 "name": "photo_camera_outlined",
@@ -11205,7 +10953,7 @@
             {
               "id": "camera-memo",
               "title": "Nota",
-              "body": "Registra en la foto las condiciones del lugar o notas necesarias.",
+              "body": "Anota en la foto detalles del trabajo o información necesaria.",
               "notice": null,
               "icon": {
                 "name": "notes_rounded",
@@ -11261,7 +11009,7 @@
             {
               "id": "camera-exposure",
               "title": "Brillo",
-              "body": "Ajusta la exposición para captar mejor los detalles del lugar.",
+              "body": "Ajusta la exposición para captar mejor los detalles de la imagen.",
               "notice": null,
               "icon": {
                 "name": "wb_sunny_outlined",
@@ -11310,7 +11058,7 @@
             {
               "id": "camera-capture",
               "title": "tomar foto",
-              "body": "Documenta el lugar con fotos y revísalas en la galería.",
+              "body": "Fotografía momentos de tu trabajo y revisa las imágenes en la galería.",
               "notice": null,
               "icon": null
             },
@@ -11324,7 +11072,7 @@
             {
               "id": "camera-landscape",
               "title": "Fotos horizontales en ambas direcciones",
-              "body": "Gira el dispositivo para capturar una vista más amplia del lugar.",
+              "body": "Gira el dispositivo para capturar una vista más amplia.",
               "notice": null,
               "icon": null
             }
@@ -11563,7 +11311,7 @@
             {
               "id": "backup-device",
               "title": "Hacer copia en este dispositivo",
-              "body": "Guarda la copia de seguridad en el almacenamiento interno de este dispositivo.",
+              "body": "Configuración > Copia de seguridad y restauración > Hacer copia en este dispositivo\nGuarda registros de trabajo, ajustes, fotos y otros datos en el dispositivo como un ZIP de copia de seguridad.",
               "notice": null,
               "icon": {
                 "name": "phone_android_outlined",
@@ -11577,7 +11325,7 @@
             {
               "id": "backup-external",
               "title": "Copia en tarjeta SD o USB",
-              "body": "Guarda la copia en una tarjeta SD o dispositivo USB conectado.",
+              "body": "Configuración > Copia de seguridad y restauración > Copia en tarjeta SD o USB\nGuarda la copia en una tarjeta SD o dispositivo USB conectado.",
               "notice": null,
               "icon": {
                 "name": "usb",
@@ -11591,7 +11339,7 @@
             {
               "id": "backup-share",
               "title": "Crear copia de seguridad externa",
-              "body": "Envía una copia de seguridad a otra aplicación. Comprueba en la aplicación elegida que se haya guardado.",
+              "body": "Configuración > Copia de seguridad y restauración > Crear copia de seguridad externa\nDespués de crear el ZIP, elige una aplicación en el menú para compartir de Android para guardarlo. Comprueba el estado del guardado en la aplicación elegida. Conserva juntos todos los archivos de una copia dividida.",
               "notice": null,
               "icon": {
                 "name": "folder_zip_outlined",
@@ -11603,51 +11351,9 @@
               }
             },
             {
-              "id": "backup-drive",
-              "title": "Copia en Google Drive",
-              "body": "Guarda copias en Google Drive.",
-              "notice": null,
-              "icon": {
-                "name": "cloud_outlined",
-                "codePoint": 61282,
-                "color": "#8E5CF7",
-                "colorDark": "#8E5CF7",
-                "background": "transparent",
-                "matchTextDirection": false
-              }
-            },
-            {
-              "id": "drive-management",
-              "title": "Administrar copias de Google Drive",
-              "body": "Revisa copias por fecha y elimínalas tú mismo",
-              "notice": null,
-              "icon": {
-                "name": "account_circle_outlined",
-                "codePoint": 60981,
-                "color": "#8E5CF7",
-                "colorDark": "#8E5CF7",
-                "background": "transparent",
-                "matchTextDirection": false
-              }
-            },
-            {
-              "id": "restore-drive",
-              "title": "Restaurar desde Google Drive",
-              "body": "Elige de la lista de copias guardadas en Google Drive.",
-              "notice": null,
-              "icon": {
-                "name": "cloud_outlined",
-                "codePoint": 61282,
-                "color": "#8E5CF7",
-                "colorDark": "#8E5CF7",
-                "background": "transparent",
-                "matchTextDirection": false
-              }
-            },
-            {
               "id": "restore",
               "title": "Restaurar",
-              "body": "La restauración sustituye los datos actuales por la copia; guarda antes los datos actuales.",
+              "body": "Configuración > Copia de seguridad y restauración\n\nRestaurar desde la lista de copias del dispositivo: Elige de la lista de copias guardadas en este dispositivo.\n\nRestaurar desde SD o USB: Elige una carpeta de copia desde una tarjeta SD o dispositivo USB conectado.\n\nImportar archivos de copia de seguridad: Selecciona el ZIP en el dispositivo o en un almacenamiento que aparezca en el selector de archivos. Una copia dividida requiere todos los archivos de la misma copia.\n\nLa restauración sustituye los datos actuales por la copia; guarda antes los datos actuales.",
               "notice": null,
               "icon": {
                 "name": "restore_outlined",
@@ -11738,7 +11444,7 @@
             {
               "id": "data-usage",
               "title": "Uso de datos",
-              "body": "Elige si las copias de seguridad se suben solo por Wi-Fi o también con datos móviles.",
+              "body": "Guarda tu preferencia de uso de datos. La versión 1.0.0(17) no sube copias de seguridad directamente. Este ajuste no controla el Wi-Fi ni los datos móviles de otra aplicación elegida en el menú para compartir.",
               "notice": null,
               "icon": {
                 "name": "wifi",
@@ -12106,7 +11812,7 @@
             {
               "id": "memo",
               "title": "Mémo de travail",
-              "body": "Conservez les notes de terrain et les détails du travail avec vos relevés.",
+              "body": "Conservez les notes utiles et les détails du travail avec vos relevés.",
               "notice": null,
               "icon": {
                 "name": "notes_rounded",
@@ -12120,7 +11826,7 @@
             {
               "id": "work-photos",
               "title": "Prendre une photo",
-              "body": "Photographiez le site et consultez les images dans la galerie.",
+              "body": "Photographiez les moments de votre travail et consultez les images dans la galerie.",
               "notice": null,
               "icon": {
                 "name": "photo_camera_outlined",
@@ -12887,7 +12593,7 @@
             {
               "id": "camera-memo",
               "title": "Mémo",
-              "body": "Inscrivez sur la photo les conditions sur place ou les notes utiles.",
+              "body": "Ajoutez à la photo les détails du travail ou les notes utiles.",
               "notice": null,
               "icon": {
                 "name": "notes_rounded",
@@ -12943,7 +12649,7 @@
             {
               "id": "camera-exposure",
               "title": "Luminosité",
-              "body": "Réglez la luminosité pour mieux saisir les détails sur place.",
+              "body": "Réglez la luminosité pour mieux saisir les détails de l’image.",
               "notice": null,
               "icon": {
                 "name": "wb_sunny_outlined",
@@ -12992,7 +12698,7 @@
             {
               "id": "camera-capture",
               "title": "Prendre une photo",
-              "body": "Photographiez le site et consultez les images dans la galerie.",
+              "body": "Photographiez les moments de votre travail et consultez les images dans la galerie.",
               "notice": null,
               "icon": null
             },
@@ -13006,7 +12712,7 @@
             {
               "id": "camera-landscape",
               "title": "Photos en paysage dans les deux sens",
-              "body": "Tournez l’appareil pour photographier une vue plus large du site.",
+              "body": "Tournez l’appareil pour photographier une vue plus large.",
               "notice": null,
               "icon": null
             }
@@ -13245,7 +12951,7 @@
             {
               "id": "backup-device",
               "title": "Sauvegarder sur cet appareil",
-              "body": "Enregistrez la sauvegarde dans le stockage interne de cet appareil.",
+              "body": "Paramètres > Sauvegarde et restauration > Sauvegarder sur cet appareil\nEnregistrez vos données de travail, réglages, photos et autres données dans un ZIP de sauvegarde sur l’appareil.",
               "notice": null,
               "icon": {
                 "name": "phone_android_outlined",
@@ -13259,7 +12965,7 @@
             {
               "id": "backup-external",
               "title": "Sauvegarde sur carte SD ou USB",
-              "body": "Enregistre la sauvegarde sur une carte SD ou un périphérique USB connecté.",
+              "body": "Paramètres > Sauvegarde et restauration > Sauvegarde sur carte SD ou USB\nEnregistre la sauvegarde sur une carte SD ou un périphérique USB connecté.",
               "notice": null,
               "icon": {
                 "name": "usb",
@@ -13273,7 +12979,7 @@
             {
               "id": "backup-share",
               "title": "Créer une sauvegarde externe",
-              "body": "Transmettez une copie de la sauvegarde à une autre application. Vérifiez dans l’application choisie que l’enregistrement est terminé.",
+              "body": "Paramètres > Sauvegarde et restauration > Créer une sauvegarde externe\nAprès avoir créé le ZIP, choisissez une application dans le menu de partage Android pour le conserver. Vérifiez l’état de l’enregistrement dans l’application choisie. Conservez ensemble tous les fichiers d’une sauvegarde fractionnée.",
               "notice": null,
               "icon": {
                 "name": "folder_zip_outlined",
@@ -13285,51 +12991,9 @@
               }
             },
             {
-              "id": "backup-drive",
-              "title": "Sauvegarde Google Drive",
-              "body": "Enregistre les sauvegardes dans Google Drive.",
-              "notice": null,
-              "icon": {
-                "name": "cloud_outlined",
-                "codePoint": 61282,
-                "color": "#8E5CF7",
-                "colorDark": "#8E5CF7",
-                "background": "transparent",
-                "matchTextDirection": false
-              }
-            },
-            {
-              "id": "drive-management",
-              "title": "Gérer les sauvegardes Google Drive",
-              "body": "Consultez les sauvegardes datées et supprimez-les vous-même",
-              "notice": null,
-              "icon": {
-                "name": "account_circle_outlined",
-                "codePoint": 60981,
-                "color": "#8E5CF7",
-                "colorDark": "#8E5CF7",
-                "background": "transparent",
-                "matchTextDirection": false
-              }
-            },
-            {
-              "id": "restore-drive",
-              "title": "Restaurer depuis Google Drive",
-              "body": "Choisissez dans la liste des sauvegardes enregistrées dans Google Drive.",
-              "notice": null,
-              "icon": {
-                "name": "cloud_outlined",
-                "codePoint": 61282,
-                "color": "#8E5CF7",
-                "colorDark": "#8E5CF7",
-                "background": "transparent",
-                "matchTextDirection": false
-              }
-            },
-            {
               "id": "restore",
               "title": "Restaurer",
-              "body": "La restauration remplace les données actuelles par la sauvegarde ; sauvegardez d’abord vos données actuelles.",
+              "body": "Paramètres > Sauvegarde et restauration\n\nRestaurer depuis la liste de sauvegardes de l’appareil: Choisissez dans la liste des sauvegardes enregistrées sur cet appareil.\n\nRestaurer depuis SD ou USB: Choisissez un dossier de sauvegarde depuis une carte SD ou un périphérique USB connecté.\n\nImporter les fichiers de sauvegarde: Sélectionnez le ZIP sur l’appareil ou dans un espace de stockage affiché par le sélecteur de fichiers. Une sauvegarde fractionnée nécessite tous les fichiers de la même sauvegarde.\n\nLa restauration remplace les données actuelles par la sauvegarde ; sauvegardez d’abord vos données actuelles.",
               "notice": null,
               "icon": {
                 "name": "restore_outlined",
@@ -13420,7 +13084,7 @@
             {
               "id": "data-usage",
               "title": "Utilisation des données",
-              "body": "Choisissez si les sauvegardes sont envoyées uniquement en Wi-Fi ou aussi via les données mobiles.",
+              "body": "Enregistrez votre préférence d’utilisation des données. La version 1.0.0(17) n’envoie pas directement de sauvegardes. Ce réglage ne contrôle pas le Wi-Fi ni les données mobiles d’une autre application choisie dans le menu de partage.",
               "notice": null,
               "icon": {
                 "name": "wifi",
@@ -13788,7 +13452,7 @@
             {
               "id": "memo",
               "title": "Arbeitsnotiz",
-              "body": "Halten Sie Baustellennotizen und Arbeitsdetails zusammen mit Ihren Arbeitseinträgen fest.",
+              "body": "Halten Sie hilfreiche Notizen und Arbeitsdetails zusammen mit Ihren Arbeitseinträgen fest.",
               "notice": null,
               "icon": {
                 "name": "notes_rounded",
@@ -13802,7 +13466,7 @@
             {
               "id": "work-photos",
               "title": "Machen Sie ein Foto",
-              "body": "Dokumentieren Sie den Arbeitsort mit Fotos und prüfen Sie sie in der Galerie.",
+              "body": "Halten Sie Ihren Arbeitsalltag in Fotos fest und sehen Sie die Ergebnisse in der Galerie an.",
               "notice": null,
               "icon": {
                 "name": "photo_camera_outlined",
@@ -14569,7 +14233,7 @@
             {
               "id": "camera-memo",
               "title": "Notiz",
-              "body": "Halten Sie den Zustand vor Ort oder wichtige Notizen auf dem Foto fest.",
+              "body": "Ergänzen Sie das Foto mit Arbeitsdetails oder wichtigen Notizen.",
               "notice": null,
               "icon": {
                 "name": "notes_rounded",
@@ -14625,7 +14289,7 @@
             {
               "id": "camera-exposure",
               "title": "Helligkeit",
-              "body": "Passen Sie die Belichtung an, um Details vor Ort besser aufzunehmen.",
+              "body": "Passen Sie die Belichtung an, um Bilddetails besser aufzunehmen.",
               "notice": null,
               "icon": {
                 "name": "wb_sunny_outlined",
@@ -14674,7 +14338,7 @@
             {
               "id": "camera-capture",
               "title": "Machen Sie ein Foto",
-              "body": "Dokumentieren Sie den Arbeitsort mit Fotos und prüfen Sie sie in der Galerie.",
+              "body": "Halten Sie Ihren Arbeitsalltag in Fotos fest und sehen Sie die Ergebnisse in der Galerie an.",
               "notice": null,
               "icon": null
             },
@@ -14927,7 +14591,7 @@
             {
               "id": "backup-device",
               "title": "Auf diesem Gerät sichern",
-              "body": "Speichern Sie die Sicherung im internen Speicher dieses Geräts.",
+              "body": "Einstellungen > Sichern und Wiederherstellen > Auf diesem Gerät sichern\nSpeichern Sie Arbeitsaufzeichnungen, Einstellungen, Fotos und weitere Daten als Sicherungs-ZIP auf Ihrem Gerät.",
               "notice": null,
               "icon": {
                 "name": "phone_android_outlined",
@@ -14941,7 +14605,7 @@
             {
               "id": "backup-external",
               "title": "Auf SD-Karte oder USB sichern",
-              "body": "Speichert die Sicherung auf einer verbundenen SD-Karte oder einem USB-Speichergerät.",
+              "body": "Einstellungen > Sichern und Wiederherstellen > Auf SD-Karte oder USB sichern\nSpeichert die Sicherung auf einer verbundenen SD-Karte oder einem USB-Speichergerät.",
               "notice": null,
               "icon": {
                 "name": "usb",
@@ -14955,7 +14619,7 @@
             {
               "id": "backup-share",
               "title": "Externe Sicherung erstellen",
-              "body": "Übergeben Sie eine Kopie der Sicherung an eine andere App. Prüfen Sie in der ausgewählten App, ob sie gespeichert wurde.",
+              "body": "Einstellungen > Sichern und Wiederherstellen > Externe Sicherung erstellen\nWählen Sie nach dem Erstellen der Sicherungs-ZIP im Android-Teilen-Menü eine App zum Speichern aus. Prüfen Sie den Speicherstatus in der ausgewählten App. Bewahren Sie alle Dateien einer geteilten Sicherung zusammen auf.",
               "notice": null,
               "icon": {
                 "name": "folder_zip_outlined",
@@ -14967,51 +14631,9 @@
               }
             },
             {
-              "id": "backup-drive",
-              "title": "Google Drive-Sicherung",
-              "body": "Speichert Sicherungen in Google Drive.",
-              "notice": null,
-              "icon": {
-                "name": "cloud_outlined",
-                "codePoint": 61282,
-                "color": "#8E5CF7",
-                "colorDark": "#8E5CF7",
-                "background": "transparent",
-                "matchTextDirection": false
-              }
-            },
-            {
-              "id": "drive-management",
-              "title": "Google Drive-Sicherungen verwalten",
-              "body": "Datierte Sicherungen prüfen und selbst löschen",
-              "notice": null,
-              "icon": {
-                "name": "account_circle_outlined",
-                "codePoint": 60981,
-                "color": "#8E5CF7",
-                "colorDark": "#8E5CF7",
-                "background": "transparent",
-                "matchTextDirection": false
-              }
-            },
-            {
-              "id": "restore-drive",
-              "title": "Aus Google Drive wiederherstellen",
-              "body": "Wähle aus der in Google Drive gespeicherten Sicherungsliste.",
-              "notice": null,
-              "icon": {
-                "name": "cloud_outlined",
-                "codePoint": 61282,
-                "color": "#8E5CF7",
-                "colorDark": "#8E5CF7",
-                "background": "transparent",
-                "matchTextDirection": false
-              }
-            },
-            {
               "id": "restore",
               "title": "Wiederherstellen",
-              "body": "Die Wiederherstellung ersetzt aktuelle App-Daten durch die Sicherung; sichern Sie deshalb zuerst Ihre aktuellen Daten.",
+              "body": "Einstellungen > Sichern und Wiederherstellen\n\nAus Geräte-Backupliste wiederherstellen: Wähle aus der auf diesem Gerät gespeicherten Sicherungsliste.\n\nVon SD-Karte oder USB wiederherstellen: Wähle einen Sicherungsordner von einer verbundenen SD-Karte oder einem USB-Speichergerät.\n\nSicherungsdateien importieren: Wählen Sie die Sicherungs-ZIP auf dem Gerät oder an einem in der Dateiauswahl angezeigten Speicherort aus. Für eine geteilte Sicherung werden alle Dateien derselben Sicherung benötigt.\n\nDie Wiederherstellung ersetzt aktuelle App-Daten durch die Sicherung; sichern Sie deshalb zuerst Ihre aktuellen Daten.",
               "notice": null,
               "icon": {
                 "name": "restore_outlined",
@@ -15102,7 +14724,7 @@
             {
               "id": "data-usage",
               "title": "Datennutzung",
-              "body": "Legen Sie fest, ob Sicherungen nur über WLAN oder auch über mobile Daten hochgeladen werden.",
+              "body": "Speichern Sie Ihre Einstellung zur Datennutzung. Version 1.0.0(17) lädt keine Backups direkt hoch. Diese Einstellung steuert weder WLAN noch mobile Daten einer anderen App, die Sie im Teilen-Menü auswählen.",
               "notice": null,
               "icon": {
                 "name": "wifi",
@@ -15470,7 +15092,7 @@
             {
               "id": "memo",
               "title": "Memo Kerja",
-              "body": "Simpan catatan kondisi lokasi dan detail pekerjaan bersama catatan kerja.",
+              "body": "Simpan catatan penting dan detail pekerjaan bersama catatan kerja.",
               "notice": null,
               "icon": {
                 "name": "notes_rounded",
@@ -15484,7 +15106,7 @@
             {
               "id": "work-photos",
               "title": "Ambil Foto",
-              "body": "Dokumentasikan lokasi dalam foto dan lihat hasilnya di galeri.",
+              "body": "Abadikan momen kerja dalam foto dan lihat hasilnya di galeri.",
               "notice": null,
               "icon": {
                 "name": "photo_camera_outlined",
@@ -16251,7 +15873,7 @@
             {
               "id": "camera-memo",
               "title": "Memo",
-              "body": "Catat kondisi lokasi atau informasi penting pada foto.",
+              "body": "Tambahkan detail pekerjaan atau catatan penting pada foto.",
               "notice": null,
               "icon": {
                 "name": "notes_rounded",
@@ -16307,7 +15929,7 @@
             {
               "id": "camera-exposure",
               "title": "Kecerahan",
-              "body": "Sesuaikan pencahayaan agar detail lokasi terlihat lebih jelas.",
+              "body": "Sesuaikan pencahayaan agar detail foto terlihat lebih jelas.",
               "notice": null,
               "icon": {
                 "name": "wb_sunny_outlined",
@@ -16356,7 +15978,7 @@
             {
               "id": "camera-capture",
               "title": "Ambil Foto",
-              "body": "Dokumentasikan lokasi dalam foto dan lihat hasilnya di galeri.",
+              "body": "Abadikan momen kerja dalam foto dan lihat hasilnya di galeri.",
               "notice": null,
               "icon": null
             },
@@ -16370,7 +15992,7 @@
             {
               "id": "camera-landscape",
               "title": "Foto lanskap ke kedua arah",
-              "body": "Putar perangkat mendatar untuk memotret area lokasi yang lebih luas.",
+              "body": "Putar perangkat mendatar untuk mengambil gambar yang lebih luas.",
               "notice": null,
               "icon": null
             }
@@ -16609,7 +16231,7 @@
             {
               "id": "backup-device",
               "title": "Cadangkan ke perangkat ini",
-              "body": "Simpan cadangan di penyimpanan internal perangkat ini.",
+              "body": "Pengaturan > Cadangkan & Pulihkan > Cadangkan ke perangkat ini\nSimpan catatan kerja, pengaturan, foto, dan data lain di perangkat sebagai ZIP cadangan.",
               "notice": null,
               "icon": {
                 "name": "phone_android_outlined",
@@ -16623,7 +16245,7 @@
             {
               "id": "backup-external",
               "title": "Cadangkan ke kartu SD atau USB",
-              "body": "Simpan cadangan ke kartu SD atau perangkat penyimpanan USB yang terhubung.",
+              "body": "Pengaturan > Cadangkan & Pulihkan > Cadangkan ke kartu SD atau USB\nSimpan cadangan ke kartu SD atau perangkat penyimpanan USB yang terhubung.",
               "notice": null,
               "icon": {
                 "name": "usb",
@@ -16637,7 +16259,7 @@
             {
               "id": "backup-share",
               "title": "Buat cadangan eksternal",
-              "body": "Kirim salinan cadangan ke aplikasi lain. Periksa di aplikasi yang dipilih apakah penyimpanannya telah selesai.",
+              "body": "Pengaturan > Cadangkan & Pulihkan > Buat cadangan eksternal\nSetelah ZIP cadangan dibuat, pilih aplikasi untuk menyimpannya di menu berbagi Android. Periksa status penyimpanan di aplikasi pilihan Anda. Simpan semua file cadangan yang terbagi secara bersama-sama.",
               "notice": null,
               "icon": {
                 "name": "folder_zip_outlined",
@@ -16649,51 +16271,9 @@
               }
             },
             {
-              "id": "backup-drive",
-              "title": "Cadangan Google Drive",
-              "body": "Simpan cadangan ke Google Drive.",
-              "notice": null,
-              "icon": {
-                "name": "cloud_outlined",
-                "codePoint": 61282,
-                "color": "#8E5CF7",
-                "colorDark": "#8E5CF7",
-                "background": "transparent",
-                "matchTextDirection": false
-              }
-            },
-            {
-              "id": "drive-management",
-              "title": "Kelola cadangan Google Drive",
-              "body": "Tinjau cadangan berdasarkan tanggal dan hapus sendiri",
-              "notice": null,
-              "icon": {
-                "name": "account_circle_outlined",
-                "codePoint": 60981,
-                "color": "#8E5CF7",
-                "colorDark": "#8E5CF7",
-                "background": "transparent",
-                "matchTextDirection": false
-              }
-            },
-            {
-              "id": "restore-drive",
-              "title": "Pulihkan dari Google Drive",
-              "body": "Pilih dari daftar cadangan yang tersimpan di Google Drive.",
-              "notice": null,
-              "icon": {
-                "name": "cloud_outlined",
-                "codePoint": 61282,
-                "color": "#8E5CF7",
-                "colorDark": "#8E5CF7",
-                "background": "transparent",
-                "matchTextDirection": false
-              }
-            },
-            {
               "id": "restore",
               "title": "Pulihkan",
-              "body": "Pemulihan mengganti data aplikasi saat ini dengan cadangan, jadi cadangkan data saat ini terlebih dahulu.",
+              "body": "Pengaturan > Cadangkan & Pulihkan\n\nPulihkan dari daftar cadangan perangkat: Pilih dari daftar cadangan yang tersimpan di perangkat ini.\n\nPulihkan dari kartu SD atau USB: Pilih folder cadangan dari kartu SD atau perangkat penyimpanan USB yang terhubung.\n\nImpor file cadangan: Pilih ZIP cadangan dari perangkat atau penyimpanan yang tampil di pemilih file. Cadangan yang terbagi memerlukan semua file dari cadangan yang sama.\n\nPemulihan mengganti data aplikasi saat ini dengan cadangan, jadi cadangkan data saat ini terlebih dahulu.",
               "notice": null,
               "icon": {
                 "name": "restore_outlined",
@@ -16784,7 +16364,7 @@
             {
               "id": "data-usage",
               "title": "Penggunaan Data",
-              "body": "Pilih apakah unggahan cadangan hanya menggunakan Wi-Fi atau juga data seluler.",
+              "body": "Simpan preferensi penggunaan data. Versi 1.0.0(17) tidak mengunggah cadangan secara langsung. Pengaturan ini tidak mengontrol Wi-Fi atau data seluler aplikasi lain yang dipilih pada menu berbagi.",
               "notice": null,
               "icon": {
                 "name": "wifi",
@@ -17152,7 +16732,7 @@
             {
               "id": "memo",
               "title": "Bản ghi nhớ công việc",
-              "body": "Lưu tình hình hiện trường và nội dung công việc cùng bản ghi làm việc.",
+              "body": "Lưu tình hình công việc và nội dung cần thiết cùng bản ghi làm việc.",
               "notice": null,
               "icon": {
                 "name": "notes_rounded",
@@ -17166,7 +16746,7 @@
             {
               "id": "work-photos",
               "title": "Chụp ảnh",
-              "body": "Chụp lại hiện trường và xem kết quả trong thư viện.",
+              "body": "Chụp lại những khoảnh khắc làm việc và xem ảnh trong thư viện.",
               "notice": null,
               "icon": {
                 "name": "photo_camera_outlined",
@@ -17933,7 +17513,7 @@
             {
               "id": "camera-memo",
               "title": "Bản ghi nhớ",
-              "body": "Ghi tình hình hiện trường hoặc nội dung cần thiết lên ảnh.",
+              "body": "Ghi chi tiết công việc hoặc nội dung cần thiết lên ảnh.",
               "notice": null,
               "icon": {
                 "name": "notes_rounded",
@@ -17989,7 +17569,7 @@
             {
               "id": "camera-exposure",
               "title": "Độ sáng",
-              "body": "Điều chỉnh độ sáng để ghi rõ chi tiết hiện trường.",
+              "body": "Điều chỉnh độ sáng để ghi rõ chi tiết trong ảnh.",
               "notice": null,
               "icon": {
                 "name": "wb_sunny_outlined",
@@ -18038,7 +17618,7 @@
             {
               "id": "camera-capture",
               "title": "Chụp ảnh",
-              "body": "Chụp lại hiện trường và xem kết quả trong thư viện.",
+              "body": "Chụp lại những khoảnh khắc làm việc và xem ảnh trong thư viện.",
               "notice": null,
               "icon": null
             },
@@ -18052,7 +17632,7 @@
             {
               "id": "camera-landscape",
               "title": "Chụp ngang theo cả hai hướng",
-              "body": "Xoay ngang thiết bị để chụp góc hiện trường rộng hơn.",
+              "body": "Xoay ngang thiết bị để chụp góc nhìn rộng hơn.",
               "notice": null,
               "icon": null
             }
@@ -18291,7 +17871,7 @@
             {
               "id": "backup-device",
               "title": "Sao lưu vào thiết bị này",
-              "body": "Lưu bản sao lưu vào bộ nhớ trong của thiết bị này.",
+              "body": "Cài đặt > Sao lưu & Khôi phục > Sao lưu vào thiết bị này\nLưu hồ sơ công việc, cài đặt, ảnh và dữ liệu khác trên thiết bị dưới dạng tệp ZIP sao lưu.",
               "notice": null,
               "icon": {
                 "name": "phone_android_outlined",
@@ -18305,7 +17885,7 @@
             {
               "id": "backup-external",
               "title": "Sao lưu vào thẻ SD hoặc USB",
-              "body": "Lưu bản sao lưu vào thẻ SD hoặc thiết bị lưu trữ USB đã kết nối.",
+              "body": "Cài đặt > Sao lưu & Khôi phục > Sao lưu vào thẻ SD hoặc USB\nLưu bản sao lưu vào thẻ SD hoặc thiết bị lưu trữ USB đã kết nối.",
               "notice": null,
               "icon": {
                 "name": "usb",
@@ -18319,7 +17899,7 @@
             {
               "id": "backup-share",
               "title": "Tạo bản sao lưu bên ngoài",
-              "body": "Gửi bản sao lưu sang ứng dụng khác. Hãy kiểm tra trong ứng dụng đã chọn xem tệp đã được lưu xong chưa.",
+              "body": "Cài đặt > Sao lưu & Khôi phục > Tạo bản sao lưu bên ngoài\nSau khi tạo tệp ZIP sao lưu, hãy chọn ứng dụng để lưu trong bảng chia sẻ Android. Kiểm tra trạng thái lưu trong ứng dụng đã chọn. Giữ tất cả các tệp của bản sao lưu chia nhiều phần cùng nhau.",
               "notice": null,
               "icon": {
                 "name": "folder_zip_outlined",
@@ -18331,51 +17911,9 @@
               }
             },
             {
-              "id": "backup-drive",
-              "title": "Sao lưu Google Drive",
-              "body": "Lưu bản sao lưu vào Google Drive.",
-              "notice": null,
-              "icon": {
-                "name": "cloud_outlined",
-                "codePoint": 61282,
-                "color": "#8E5CF7",
-                "colorDark": "#8E5CF7",
-                "background": "transparent",
-                "matchTextDirection": false
-              }
-            },
-            {
-              "id": "drive-management",
-              "title": "Quản lý bản sao lưu Google Drive",
-              "body": "Xem các bản sao lưu theo ngày và tự xóa",
-              "notice": null,
-              "icon": {
-                "name": "account_circle_outlined",
-                "codePoint": 60981,
-                "color": "#8E5CF7",
-                "colorDark": "#8E5CF7",
-                "background": "transparent",
-                "matchTextDirection": false
-              }
-            },
-            {
-              "id": "restore-drive",
-              "title": "Khôi phục từ Google Drive",
-              "body": "Chọn từ danh sách sao lưu đã lưu trong Google Drive.",
-              "notice": null,
-              "icon": {
-                "name": "cloud_outlined",
-                "codePoint": 61282,
-                "color": "#8E5CF7",
-                "colorDark": "#8E5CF7",
-                "background": "transparent",
-                "matchTextDirection": false
-              }
-            },
-            {
               "id": "restore",
               "title": "Khôi phục",
-              "body": "Khôi phục sẽ thay dữ liệu hiện tại bằng bản sao lưu, vì vậy hãy sao lưu dữ liệu hiện tại trước.",
+              "body": "Cài đặt > Sao lưu & Khôi phục\n\nKhôi phục từ danh sách bản sao lưu trên thiết bị: Chọn từ danh sách sao lưu đã lưu trên thiết bị này.\n\nKhôi phục từ thẻ SD hoặc USB: Chọn thư mục sao lưu từ thẻ SD hoặc thiết bị lưu trữ USB đã kết nối.\n\nNhập tệp sao lưu: Chọn tệp ZIP sao lưu trên thiết bị hoặc trong bộ nhớ được hiển thị trong trình chọn tệp. Bản sao lưu chia nhiều phần cần tất cả các tệp của cùng một bản sao lưu.\n\nKhôi phục sẽ thay dữ liệu hiện tại bằng bản sao lưu, vì vậy hãy sao lưu dữ liệu hiện tại trước.",
               "notice": null,
               "icon": {
                 "name": "restore_outlined",
@@ -18466,7 +18004,7 @@
             {
               "id": "data-usage",
               "title": "Sử dụng dữ liệu",
-              "body": "Chọn chỉ tải bản sao lưu qua Wi-Fi hay cho phép cả dữ liệu di động.",
+              "body": "Lưu tùy chọn sử dụng dữ liệu. Phiên bản 1.0.0(17) không trực tiếp tải bản sao lưu lên. Cài đặt này không kiểm soát Wi-Fi hay dữ liệu di động của ứng dụng khác được chọn trong trình đơn chia sẻ.",
               "notice": null,
               "icon": {
                 "name": "wifi",
@@ -18834,7 +18372,7 @@
             {
               "id": "memo",
               "title": "Рабочая памятка",
-              "body": "Сохраняйте заметки об объекте и работе вместе с рабочими записями.",
+              "body": "Сохраняйте полезные заметки и сведения о работе вместе с рабочими записями.",
               "notice": null,
               "icon": {
                 "name": "notes_rounded",
@@ -18848,7 +18386,7 @@
             {
               "id": "work-photos",
               "title": "Сделать фото",
-              "body": "Фотографируйте объект и просматривайте снимки в галерее.",
+              "body": "Фотографируйте рабочие моменты и просматривайте снимки в галерее.",
               "notice": null,
               "icon": {
                 "name": "photo_camera_outlined",
@@ -19615,7 +19153,7 @@
             {
               "id": "camera-memo",
               "title": "Памятка",
-              "body": "Добавьте на фотографию сведения об объекте или нужные заметки.",
+              "body": "Добавляйте на фотографию сведения о работе или нужные заметки.",
               "notice": null,
               "icon": {
                 "name": "notes_rounded",
@@ -19671,7 +19209,7 @@
             {
               "id": "camera-exposure",
               "title": "Яркость",
-              "body": "Настройте экспозицию, чтобы лучше передать детали объекта.",
+              "body": "Настройте экспозицию, чтобы лучше передать детали снимка.",
               "notice": null,
               "icon": {
                 "name": "wb_sunny_outlined",
@@ -19720,7 +19258,7 @@
             {
               "id": "camera-capture",
               "title": "Сделать фото",
-              "body": "Фотографируйте объект и просматривайте снимки в галерее.",
+              "body": "Фотографируйте рабочие моменты и просматривайте снимки в галерее.",
               "notice": null,
               "icon": null
             },
@@ -19734,7 +19272,7 @@
             {
               "id": "camera-landscape",
               "title": "Горизонтальная съёмка в обе стороны",
-              "body": "Поверните устройство горизонтально для более широкого обзора объекта.",
+              "body": "Поверните устройство горизонтально для более широкого обзора.",
               "notice": null,
               "icon": null
             }
@@ -19973,7 +19511,7 @@
             {
               "id": "backup-device",
               "title": "Создать резервную копию на этом устройстве",
-              "body": "Сохраните резервную копию во внутренней памяти этого устройства.",
+              "body": "Настройки > Резервное копирование и восстановление > Создать резервную копию на этом устройстве\nСохраните рабочие записи, настройки, фотографии и другие данные на устройстве в виде резервного ZIP-архива.",
               "notice": null,
               "icon": {
                 "name": "phone_android_outlined",
@@ -19987,7 +19525,7 @@
             {
               "id": "backup-external",
               "title": "Резервная копия на SD-карту или USB",
-              "body": "Сохранить резервную копию на подключенную SD-карту или USB-накопитель.",
+              "body": "Настройки > Резервное копирование и восстановление > Резервная копия на SD-карту или USB\nСохранить резервную копию на подключенную SD-карту или USB-накопитель.",
               "notice": null,
               "icon": {
                 "name": "usb",
@@ -20001,7 +19539,7 @@
             {
               "id": "backup-share",
               "title": "Создать внешнюю резервную копию",
-              "body": "Передайте резервную копию в другое приложение. Проверьте в выбранном приложении, что файл сохранён.",
+              "body": "Настройки > Резервное копирование и восстановление > Создать внешнюю резервную копию\nСоздав резервный ZIP, выберите приложение для его хранения в меню «Поделиться» Android. Проверьте, что сохранение завершено, в выбранном приложении. Храните все файлы разделённой копии вместе.",
               "notice": null,
               "icon": {
                 "name": "folder_zip_outlined",
@@ -20013,51 +19551,9 @@
               }
             },
             {
-              "id": "backup-drive",
-              "title": "Резервная копия Google Drive",
-              "body": "Сохраняйте резервные копии в Google Drive.",
-              "notice": null,
-              "icon": {
-                "name": "cloud_outlined",
-                "codePoint": 61282,
-                "color": "#8E5CF7",
-                "colorDark": "#8E5CF7",
-                "background": "transparent",
-                "matchTextDirection": false
-              }
-            },
-            {
-              "id": "drive-management",
-              "title": "Управление резервными копиями Google Drive",
-              "body": "Просматривайте копии по датам и удаляйте их самостоятельно",
-              "notice": null,
-              "icon": {
-                "name": "account_circle_outlined",
-                "codePoint": 60981,
-                "color": "#8E5CF7",
-                "colorDark": "#8E5CF7",
-                "background": "transparent",
-                "matchTextDirection": false
-              }
-            },
-            {
-              "id": "restore-drive",
-              "title": "Восстановить из Google Drive",
-              "body": "Выберите из списка резервных копий, сохраненных в Google Drive.",
-              "notice": null,
-              "icon": {
-                "name": "cloud_outlined",
-                "codePoint": 61282,
-                "color": "#8E5CF7",
-                "colorDark": "#8E5CF7",
-                "background": "transparent",
-                "matchTextDirection": false
-              }
-            },
-            {
               "id": "restore",
               "title": "Восстановить",
-              "body": "Восстановление заменяет текущие данные приложения резервной копией, поэтому сначала сохраните и текущие данные.",
+              "body": "Настройки > Резервное копирование и восстановление\n\nВосстановить из списка резервных копий устройства: Выберите из списка резервных копий, сохраненных на этом устройстве.\n\nВосстановить с SD или USB: Выберите папку резервной копии на подключенной SD-карте или USB-накопителе.\n\nИмпортировать файлы резервной копии: Выберите резервный ZIP на устройстве или в хранилище, которое отображается в окне выбора файлов. Для разделённой копии нужны все файлы одной и той же копии.\n\nВосстановление заменяет текущие данные приложения резервной копией, поэтому сначала сохраните и текущие данные.",
               "notice": null,
               "icon": {
                 "name": "restore_outlined",
@@ -20148,7 +19644,7 @@
             {
               "id": "data-usage",
               "title": "Использование данных",
-              "body": "Выберите, загружать резервные копии только по Wi-Fi или также через мобильную сеть.",
+              "body": "Сохраните настройку использования сети. Версия 1.0.0(17) не загружает резервные копии напрямую. Эта настройка не управляет Wi-Fi или мобильными данными другого приложения, выбранного в меню отправки.",
               "notice": null,
               "icon": {
                 "name": "wifi",
@@ -20516,7 +20012,7 @@
             {
               "id": "memo",
               "title": "Çalışma Notu",
-              "body": "Saha durumunu ve iş ayrıntılarını çalışma kayıtlarıyla birlikte saklayın.",
+              "body": "Yararlı notları ve iş ayrıntılarını çalışma kayıtlarıyla birlikte saklayın.",
               "notice": null,
               "icon": {
                 "name": "notes_rounded",
@@ -20530,7 +20026,7 @@
             {
               "id": "work-photos",
               "title": "Fotoğraf Çek",
-              "body": "Sahayı fotoğraflarla kaydedip sonuçları galeride inceleyin.",
+              "body": "Çalışma anlarını fotoğraflayın ve sonuçları galeride inceleyin.",
               "notice": null,
               "icon": {
                 "name": "photo_camera_outlined",
@@ -21297,7 +20793,7 @@
             {
               "id": "camera-memo",
               "title": "Not",
-              "body": "Saha durumunu veya gereken notları fotoğrafa kaydedin.",
+              "body": "İş ayrıntılarını veya gereken notları fotoğrafa ekleyin.",
               "notice": null,
               "icon": {
                 "name": "notes_rounded",
@@ -21353,7 +20849,7 @@
             {
               "id": "camera-exposure",
               "title": "Parlaklık",
-              "body": "Saha ayrıntılarını daha net yakalamak için pozlamayı ayarlayın.",
+              "body": "Fotoğrafın ayrıntılarını daha net yakalamak için pozlamayı ayarlayın.",
               "notice": null,
               "icon": {
                 "name": "wb_sunny_outlined",
@@ -21402,7 +20898,7 @@
             {
               "id": "camera-capture",
               "title": "Fotoğraf Çek",
-              "body": "Sahayı fotoğraflarla kaydedip sonuçları galeride inceleyin.",
+              "body": "Çalışma anlarını fotoğraflayın ve sonuçları galeride inceleyin.",
               "notice": null,
               "icon": null
             },
@@ -21416,7 +20912,7 @@
             {
               "id": "camera-landscape",
               "title": "Her iki yönde yatay çekim",
-              "body": "Sahayı daha geniş görüntülemek için cihazı yatay çevirin.",
+              "body": "Daha geniş bir görüntü için cihazı yatay çevirin.",
               "notice": null,
               "icon": null
             }
@@ -21655,7 +21151,7 @@
             {
               "id": "backup-device",
               "title": "Bu cihaza yedekle",
-              "body": "Yedeği bu cihazın dahili depolama alanına kaydedin.",
+              "body": "Ayarlar > Yedekleme ve Geri Yükleme > Bu cihaza yedekle\nİş kayıtlarını, ayarları, fotoğrafları ve diğer verileri cihazda yedek ZIP olarak saklayın.",
               "notice": null,
               "icon": {
                 "name": "phone_android_outlined",
@@ -21669,7 +21165,7 @@
             {
               "id": "backup-external",
               "title": "SD karta veya USB’ye yedekle",
-              "body": "Yedeği bağlı bir SD karta veya USB depolama cihazına kaydet.",
+              "body": "Ayarlar > Yedekleme ve Geri Yükleme > SD karta veya USB’ye yedekle\nYedeği bağlı bir SD karta veya USB depolama cihazına kaydet.",
               "notice": null,
               "icon": {
                 "name": "usb",
@@ -21683,7 +21179,7 @@
             {
               "id": "backup-share",
               "title": "Harici yedek oluştur",
-              "body": "Yedeğin bir kopyasını başka bir uygulamaya gönderin. Kaydetme işleminin tamamlandığını seçtiğiniz uygulamada kontrol edin.",
+              "body": "Ayarlar > Yedekleme ve Geri Yükleme > Harici yedek oluştur\nYedek ZIP'i oluşturduktan sonra saklamak için Android paylaşım menüsünden bir uygulama seçin. Kaydetme durumunu seçtiğiniz uygulamada kontrol edin. Bölünmüş bir yedeğin tüm dosyalarını birlikte saklayın.",
               "notice": null,
               "icon": {
                 "name": "folder_zip_outlined",
@@ -21695,51 +21191,9 @@
               }
             },
             {
-              "id": "backup-drive",
-              "title": "Google Drive yedeği",
-              "body": "Yedekleri Google Drive’a kaydet.",
-              "notice": null,
-              "icon": {
-                "name": "cloud_outlined",
-                "codePoint": 61282,
-                "color": "#8E5CF7",
-                "colorDark": "#8E5CF7",
-                "background": "transparent",
-                "matchTextDirection": false
-              }
-            },
-            {
-              "id": "drive-management",
-              "title": "Google Drive yedeklerini yönet",
-              "body": "Tarihli yedekleri inceleyin ve kendiniz silin",
-              "notice": null,
-              "icon": {
-                "name": "account_circle_outlined",
-                "codePoint": 60981,
-                "color": "#8E5CF7",
-                "colorDark": "#8E5CF7",
-                "background": "transparent",
-                "matchTextDirection": false
-              }
-            },
-            {
-              "id": "restore-drive",
-              "title": "Google Drive’dan geri yükle",
-              "body": "Google Drive’da kayıtlı yedek listesinden seç.",
-              "notice": null,
-              "icon": {
-                "name": "cloud_outlined",
-                "codePoint": 61282,
-                "color": "#8E5CF7",
-                "colorDark": "#8E5CF7",
-                "background": "transparent",
-                "matchTextDirection": false
-              }
-            },
-            {
               "id": "restore",
               "title": "Geri yükle",
-              "body": "Geri yükleme mevcut verileri yedekle değiştirir; önce mevcut verilerinizi de yedekleyin.",
+              "body": "Ayarlar > Yedekleme ve Geri Yükleme\n\nCihaz yedek listeden geri yükle: Bu cihazda kayıtlı yedek listesinden seç.\n\nSD kart veya USB’den geri yükle: Bağlı bir SD karttan veya USB depolama cihazından yedek klasörü seç.\n\nYedekleme dosyalarını içe aktar: Cihazdan veya dosya seçicide görünen depolama alanından yedek ZIP'i seçin. Bölünmüş yedek için aynı yedeğin tüm dosyaları gerekir.\n\nGeri yükleme mevcut verileri yedekle değiştirir; önce mevcut verilerinizi de yedekleyin.",
               "notice": null,
               "icon": {
                 "name": "restore_outlined",
@@ -21830,7 +21284,7 @@
             {
               "id": "data-usage",
               "title": "Veri Kullanımı",
-              "body": "Yedeklerin yalnızca Wi-Fi ile mi, mobil veriyle de mi yükleneceğini seçin.",
+              "body": "Veri kullanımı tercihinizi kaydedin. 1.0.0(17) sürümü yedekleri doğrudan yüklemez. Bu ayar paylaşım menüsünde seçtiğiniz başka bir uygulamanın Wi-Fi veya mobil veri kullanımını kontrol etmez.",
               "notice": null,
               "icon": {
                 "name": "wifi",
@@ -22198,7 +21652,7 @@
             {
               "id": "memo",
               "title": "مذكرة العمل",
-              "body": "سجّل حالة الموقع وتفاصيل العمل للاطلاع عليها مع سجلات العمل.",
+              "body": "احتفظ بالملاحظات المفيدة وتفاصيل العمل مع سجلات العمل.",
               "notice": null,
               "icon": {
                 "name": "notes_rounded",
@@ -22212,7 +21666,7 @@
             {
               "id": "work-photos",
               "title": "التقط صورة",
-              "body": "وثّق الموقع بالصور وراجعها في المعرض.",
+              "body": "التقط لحظات العمل بالصور وراجع النتائج في المعرض.",
               "notice": null,
               "icon": {
                 "name": "photo_camera_outlined",
@@ -22979,7 +22433,7 @@
             {
               "id": "camera-memo",
               "title": "مذكرة",
-              "body": "دوّن حالة الموقع أو الملاحظات اللازمة على الصورة.",
+              "body": "أضف تفاصيل العمل أو الملاحظات اللازمة إلى الصورة.",
               "notice": null,
               "icon": {
                 "name": "notes_rounded",
@@ -23035,7 +22489,7 @@
             {
               "id": "camera-exposure",
               "title": "السطوع",
-              "body": "اضبط التعريض لإظهار تفاصيل الموقع بوضوح أكبر.",
+              "body": "اضبط التعريض لإظهار تفاصيل الصورة بوضوح أكبر.",
               "notice": null,
               "icon": {
                 "name": "wb_sunny_outlined",
@@ -23084,7 +22538,7 @@
             {
               "id": "camera-capture",
               "title": "التقط صورة",
-              "body": "وثّق الموقع بالصور وراجعها في المعرض.",
+              "body": "التقط لحظات العمل بالصور وراجع النتائج في المعرض.",
               "notice": null,
               "icon": null
             },
@@ -23098,7 +22552,7 @@
             {
               "id": "camera-landscape",
               "title": "التصوير الأفقي في الاتجاهين",
-              "body": "أدِر الجهاز أفقيًا لالتقاط منظر أوسع للموقع.",
+              "body": "أدِر الجهاز أفقيًا لالتقاط منظر أوسع.",
               "notice": null,
               "icon": null
             }
@@ -23337,7 +22791,7 @@
             {
               "id": "backup-device",
               "title": "نسخ احتياطي إلى هذا الجهاز",
-              "body": "احفظ النسخة الاحتياطية في وحدة التخزين الداخلية لهذا الجهاز.",
+              "body": "الإعدادات > النسخ الاحتياطي والاستعادة > نسخ احتياطي إلى هذا الجهاز\nاحفظ سجلات العمل والإعدادات والصور وغيرها على الجهاز في ملف ZIP احتياطي.",
               "notice": null,
               "icon": {
                 "name": "phone_android_outlined",
@@ -23351,7 +22805,7 @@
             {
               "id": "backup-external",
               "title": "نسخ احتياطي إلى بطاقة SD أو USB",
-              "body": "احفظ النسخة الاحتياطية على بطاقة SD أو جهاز تخزين USB متصل.",
+              "body": "الإعدادات > النسخ الاحتياطي والاستعادة > نسخ احتياطي إلى بطاقة SD أو USB\nاحفظ النسخة الاحتياطية على بطاقة SD أو جهاز تخزين USB متصل.",
               "notice": null,
               "icon": {
                 "name": "usb",
@@ -23365,7 +22819,7 @@
             {
               "id": "backup-share",
               "title": "إنشاء نسخة احتياطية خارجية",
-              "body": "أرسل نسخة من النسخة الاحتياطية إلى تطبيق آخر. تحقّق من اكتمال الحفظ في التطبيق الذي تختاره.",
+              "body": "الإعدادات > النسخ الاحتياطي والاستعادة > إنشاء نسخة احتياطية خارجية\nبعد إنشاء ملف ZIP الاحتياطي، اختر تطبيقًا لحفظه من قائمة المشاركة في Android. تحقق من حالة الحفظ في التطبيق الذي اخترته. احتفظ بجميع ملفات النسخة المقسّمة معًا.",
               "notice": null,
               "icon": {
                 "name": "folder_zip_outlined",
@@ -23377,51 +22831,9 @@
               }
             },
             {
-              "id": "backup-drive",
-              "title": "نسخ احتياطي إلى Google Drive",
-              "body": "احفظ النسخ الاحتياطية في Google Drive.",
-              "notice": null,
-              "icon": {
-                "name": "cloud_outlined",
-                "codePoint": 61282,
-                "color": "#8E5CF7",
-                "colorDark": "#8E5CF7",
-                "background": "transparent",
-                "matchTextDirection": false
-              }
-            },
-            {
-              "id": "drive-management",
-              "title": "إدارة نسخ Google Drive الاحتياطية",
-              "body": "راجع النسخ المؤرخة واحذفها بنفسك",
-              "notice": null,
-              "icon": {
-                "name": "account_circle_outlined",
-                "codePoint": 60981,
-                "color": "#8E5CF7",
-                "colorDark": "#8E5CF7",
-                "background": "transparent",
-                "matchTextDirection": false
-              }
-            },
-            {
-              "id": "restore-drive",
-              "title": "استعادة من Google Drive",
-              "body": "اختر من قائمة النسخ الاحتياطية المحفوظة في Google Drive.",
-              "notice": null,
-              "icon": {
-                "name": "cloud_outlined",
-                "codePoint": 61282,
-                "color": "#8E5CF7",
-                "colorDark": "#8E5CF7",
-                "background": "transparent",
-                "matchTextDirection": false
-              }
-            },
-            {
               "id": "restore",
               "title": "استعادة",
-              "body": "تستبدل الاستعادة بيانات التطبيق الحالية بالنسخة الاحتياطية، لذا انسخ البيانات الحالية أولًا.",
+              "body": "الإعدادات > النسخ الاحتياطي والاستعادة\n\nاستعادة من قائمة نُسخ الجهاز الاحتياطية: اختر من قائمة النسخ الاحتياطية المحفوظة على هذا الجهاز.\n\nاستعادة من SD أو USB: اختر مجلد نسخة احتياطية من بطاقة SD أو جهاز تخزين USB متصل.\n\nاستيراد ملفات النسخة الاحتياطية: اختر ملف ZIP الاحتياطي من الجهاز أو من موقع التخزين الظاهر في أداة اختيار الملفات. تتطلب النسخة المقسّمة جميع ملفات النسخة نفسها.\n\nتستبدل الاستعادة بيانات التطبيق الحالية بالنسخة الاحتياطية، لذا انسخ البيانات الحالية أولًا.",
               "notice": null,
               "icon": {
                 "name": "restore_outlined",
@@ -23512,7 +22924,7 @@
             {
               "id": "data-usage",
               "title": "استخدام البيانات",
-              "body": "اختر رفع النسخ الاحتياطية عبر Wi-Fi فقط أو عبر بيانات الهاتف أيضًا.",
+              "body": "احفظ تفضيل استخدام البيانات. لا يرفع الإصدار 1.0.0(17) النسخ الاحتياطية مباشرة. لا يتحكم هذا الإعداد في استخدام Wi-Fi أو بيانات الهاتف في تطبيق آخر تختاره من قائمة المشاركة.",
               "notice": null,
               "icon": {
                 "name": "wifi",
@@ -23880,7 +23292,7 @@
             {
               "id": "memo",
               "title": "Promemoria di lavoro",
-              "body": "Conserva note sul luogo e dettagli dell’attività insieme ai registri di lavoro.",
+              "body": "Conserva note utili e dettagli dell’attività insieme ai registri di lavoro.",
               "notice": null,
               "icon": {
                 "name": "notes_rounded",
@@ -23894,7 +23306,7 @@
             {
               "id": "work-photos",
               "title": "Scatta foto",
-              "body": "Documenta il luogo con foto e controllale nella galleria.",
+              "body": "Fotografa i momenti di lavoro e controlla i risultati nella galleria.",
               "notice": null,
               "icon": {
                 "name": "photo_camera_outlined",
@@ -24661,7 +24073,7 @@
             {
               "id": "camera-memo",
               "title": "Promemoria",
-              "body": "Registra sulla foto le condizioni del luogo o le note utili.",
+              "body": "Aggiungi alla foto dettagli dell’attività o note utili.",
               "notice": null,
               "icon": {
                 "name": "notes_rounded",
@@ -24717,7 +24129,7 @@
             {
               "id": "camera-exposure",
               "title": "Luminosità",
-              "body": "Regola l’esposizione per riprendere meglio i dettagli del luogo.",
+              "body": "Regola l’esposizione per riprendere meglio i dettagli della foto.",
               "notice": null,
               "icon": {
                 "name": "wb_sunny_outlined",
@@ -24766,7 +24178,7 @@
             {
               "id": "camera-capture",
               "title": "Scatta foto",
-              "body": "Documenta il luogo con foto e controllale nella galleria.",
+              "body": "Fotografa i momenti di lavoro e controlla i risultati nella galleria.",
               "notice": null,
               "icon": null
             },
@@ -24780,7 +24192,7 @@
             {
               "id": "camera-landscape",
               "title": "Foto orizzontali in entrambe le direzioni",
-              "body": "Ruota il dispositivo per riprendere una vista più ampia del luogo.",
+              "body": "Ruota il dispositivo per riprendere una vista più ampia.",
               "notice": null,
               "icon": null
             }
@@ -25019,7 +24431,7 @@
             {
               "id": "backup-device",
               "title": "Esegui backup su questo dispositivo",
-              "body": "Salva il backup nella memoria interna di questo dispositivo.",
+              "body": "Impostazioni > Backup e ripristino > Esegui backup su questo dispositivo\nSalva registri di lavoro, impostazioni, foto e altri dati sul dispositivo come ZIP di backup.",
               "notice": null,
               "icon": {
                 "name": "phone_android_outlined",
@@ -25033,7 +24445,7 @@
             {
               "id": "backup-external",
               "title": "Backup su scheda SD o USB",
-              "body": "Salva il backup su una scheda SD o dispositivo USB collegato.",
+              "body": "Impostazioni > Backup e ripristino > Backup su scheda SD o USB\nSalva il backup su una scheda SD o dispositivo USB collegato.",
               "notice": null,
               "icon": {
                 "name": "usb",
@@ -25047,7 +24459,7 @@
             {
               "id": "backup-share",
               "title": "Crea backup esterno",
-              "body": "Invia una copia del backup a un’altra app. Verifica nell’app scelta che il salvataggio sia completato.",
+              "body": "Impostazioni > Backup e ripristino > Crea backup esterno\nDopo aver creato lo ZIP, scegli un’app in cui conservarlo dal menu di condivisione di Android. Controlla lo stato del salvataggio nell’app selezionata. Conserva insieme tutti i file di un backup suddiviso.",
               "notice": null,
               "icon": {
                 "name": "folder_zip_outlined",
@@ -25059,51 +24471,9 @@
               }
             },
             {
-              "id": "backup-drive",
-              "title": "Backup Google Drive",
-              "body": "Salva i backup su Google Drive.",
-              "notice": null,
-              "icon": {
-                "name": "cloud_outlined",
-                "codePoint": 61282,
-                "color": "#8E5CF7",
-                "colorDark": "#8E5CF7",
-                "background": "transparent",
-                "matchTextDirection": false
-              }
-            },
-            {
-              "id": "drive-management",
-              "title": "Gestisci i backup di Google Drive",
-              "body": "Esamina i backup per data ed eliminali direttamente",
-              "notice": null,
-              "icon": {
-                "name": "account_circle_outlined",
-                "codePoint": 60981,
-                "color": "#8E5CF7",
-                "colorDark": "#8E5CF7",
-                "background": "transparent",
-                "matchTextDirection": false
-              }
-            },
-            {
-              "id": "restore-drive",
-              "title": "Ripristina da Google Drive",
-              "body": "Scegli dall’elenco dei backup salvati in Google Drive.",
-              "notice": null,
-              "icon": {
-                "name": "cloud_outlined",
-                "codePoint": 61282,
-                "color": "#8E5CF7",
-                "colorDark": "#8E5CF7",
-                "background": "transparent",
-                "matchTextDirection": false
-              }
-            },
-            {
               "id": "restore",
               "title": "Ripristina",
-              "body": "Il ripristino sostituisce i dati attuali con il backup, quindi salva prima anche i dati attuali.",
+              "body": "Impostazioni > Backup e ripristino\n\nRipristina dall’elenco backup del dispositivo: Scegli dall’elenco dei backup salvati su questo dispositivo.\n\nRipristina da scheda SD o USB: Scegli una cartella di backup da una scheda SD o dispositivo USB collegato.\n\nImporta file di backup: Scegli lo ZIP di backup sul dispositivo o da una posizione mostrata nel selettore file. Un backup suddiviso richiede tutti i file dello stesso backup.\n\nIl ripristino sostituisce i dati attuali con il backup, quindi salva prima anche i dati attuali.",
               "notice": null,
               "icon": {
                 "name": "restore_outlined",
@@ -25194,7 +24564,7 @@
             {
               "id": "data-usage",
               "title": "Utilizzo dei dati",
-              "body": "Scegli se caricare i backup solo tramite Wi-Fi o anche con i dati mobili.",
+              "body": "Salva la preferenza sull’uso dei dati. La versione 1.0.0(17) non carica direttamente i backup. Questa impostazione non controlla il Wi-Fi o i dati mobili di un’altra app scelta nel menu di condivisione.",
               "notice": null,
               "icon": {
                 "name": "wifi",
@@ -25562,7 +24932,7 @@
             {
               "id": "memo",
               "title": "บันทึกการทำงาน",
-              "body": "จดสถานการณ์หน้างานและรายละเอียดงานไว้ดูร่วมกับบันทึกงาน",
+              "body": "จดรายละเอียดงานและข้อมูลที่จำเป็นไว้ดูร่วมกับบันทึกงาน",
               "notice": null,
               "icon": {
                 "name": "notes_rounded",
@@ -25576,7 +24946,7 @@
             {
               "id": "work-photos",
               "title": "ถ่ายภาพ",
-              "body": "บันทึกหน้างานเป็นภาพและดูผลการถ่ายในแกลเลอรี",
+              "body": "บันทึกช่วงเวลาทำงานเป็นภาพและดูผลในแกลเลอรี",
               "notice": null,
               "icon": {
                 "name": "photo_camera_outlined",
@@ -26343,7 +25713,7 @@
             {
               "id": "camera-memo",
               "title": "บันทึก",
-              "body": "บันทึกสภาพหน้างานหรือข้อมูลที่จำเป็นไว้บนภาพ",
+              "body": "เพิ่มรายละเอียดงานหรือข้อมูลที่จำเป็นไว้บนภาพ",
               "notice": null,
               "icon": {
                 "name": "notes_rounded",
@@ -26399,7 +25769,7 @@
             {
               "id": "camera-exposure",
               "title": "ความสว่าง",
-              "body": "ปรับความสว่างเพื่อเก็บรายละเอียดหน้างานให้ชัดขึ้น",
+              "body": "ปรับความสว่างเพื่อเก็บรายละเอียดภาพให้ชัดขึ้น",
               "notice": null,
               "icon": {
                 "name": "wb_sunny_outlined",
@@ -26448,7 +25818,7 @@
             {
               "id": "camera-capture",
               "title": "ถ่ายภาพ",
-              "body": "บันทึกหน้างานเป็นภาพและดูผลการถ่ายในแกลเลอรี",
+              "body": "บันทึกช่วงเวลาทำงานเป็นภาพและดูผลในแกลเลอรี",
               "notice": null,
               "icon": null
             },
@@ -26462,7 +25832,7 @@
             {
               "id": "camera-landscape",
               "title": "ถ่ายแนวนอนทั้งสองทิศทาง",
-              "body": "หมุนอุปกรณ์เป็นแนวนอนเพื่อถ่ายพื้นที่หน้างานได้กว้างขึ้น",
+              "body": "หมุนอุปกรณ์เป็นแนวนอนเพื่อถ่ายภาพมุมกว้างขึ้น",
               "notice": null,
               "icon": null
             }
@@ -26701,7 +26071,7 @@
             {
               "id": "backup-device",
               "title": "สำรองข้อมูลไปยังอุปกรณ์นี้",
-              "body": "บันทึกข้อมูลสำรองลงในพื้นที่จัดเก็บข้อมูลภายในอุปกรณ์นี้",
+              "body": "การตั้งค่า > สำรองและกู้คืน > สำรองข้อมูลไปยังอุปกรณ์นี้\nเก็บบันทึกงาน การตั้งค่า รูปภาพ และข้อมูลอื่น ๆ ไว้ในอุปกรณ์เป็นไฟล์ ZIP สำรอง",
               "notice": null,
               "icon": {
                 "name": "phone_android_outlined",
@@ -26715,7 +26085,7 @@
             {
               "id": "backup-external",
               "title": "สำรองข้อมูลไปยังการ์ด SD หรือ USB",
-              "body": "บันทึกข้อมูลสำรองไปยังการ์ด SD หรืออุปกรณ์เก็บข้อมูล USB ที่เชื่อมต่ออยู่",
+              "body": "การตั้งค่า > สำรองและกู้คืน > สำรองข้อมูลไปยังการ์ด SD หรือ USB\nบันทึกข้อมูลสำรองไปยังการ์ด SD หรืออุปกรณ์เก็บข้อมูล USB ที่เชื่อมต่ออยู่",
               "notice": null,
               "icon": {
                 "name": "usb",
@@ -26729,7 +26099,7 @@
             {
               "id": "backup-share",
               "title": "สร้างข้อมูลสำรองภายนอก",
-              "body": "ส่งสำเนาข้อมูลสำรองไปยังแอปอื่น และตรวจสอบในแอปที่เลือกว่าบันทึกเสร็จแล้ว",
+              "body": "การตั้งค่า > สำรองและกู้คืน > สร้างข้อมูลสำรองภายนอก\nหลังจากสร้างไฟล์ ZIP สำรองแล้ว ให้เลือกแอปที่จะใช้เก็บไฟล์จากเมนูแชร์ของ Android ตรวจสอบสถานะการบันทึกในแอปที่เลือก และเก็บไฟล์ทุกส่วนของข้อมูลสำรองแบบแบ่งไฟล์ไว้ด้วยกัน",
               "notice": null,
               "icon": {
                 "name": "folder_zip_outlined",
@@ -26741,51 +26111,9 @@
               }
             },
             {
-              "id": "backup-drive",
-              "title": "สำรองข้อมูลไปยัง Google Drive",
-              "body": "บันทึกข้อมูลสำรองไว้ใน Google Drive",
-              "notice": null,
-              "icon": {
-                "name": "cloud_outlined",
-                "codePoint": 61282,
-                "color": "#8E5CF7",
-                "colorDark": "#8E5CF7",
-                "background": "transparent",
-                "matchTextDirection": false
-              }
-            },
-            {
-              "id": "drive-management",
-              "title": "จัดการข้อมูลสำรอง Google Drive",
-              "body": "ตรวจสอบข้อมูลสำรองตามวันที่และลบด้วยตนเอง",
-              "notice": null,
-              "icon": {
-                "name": "account_circle_outlined",
-                "codePoint": 60981,
-                "color": "#8E5CF7",
-                "colorDark": "#8E5CF7",
-                "background": "transparent",
-                "matchTextDirection": false
-              }
-            },
-            {
-              "id": "restore-drive",
-              "title": "กู้คืนจาก Google Drive",
-              "body": "เลือกจากรายการข้อมูลสำรองที่บันทึกไว้ใน Google Drive",
-              "notice": null,
-              "icon": {
-                "name": "cloud_outlined",
-                "codePoint": 61282,
-                "color": "#8E5CF7",
-                "colorDark": "#8E5CF7",
-                "background": "transparent",
-                "matchTextDirection": false
-              }
-            },
-            {
               "id": "restore",
               "title": "คืนค่า",
-              "body": "การกู้คืนจะแทนที่ข้อมูลปัจจุบันด้วยข้อมูลสำรอง จึงควรสำรองข้อมูลปัจจุบันก่อน",
+              "body": "การตั้งค่า > สำรองและกู้คืน\n\nกู้คืนจากรายการข้อมูลสำรองในอุปกรณ์: เลือกจากรายการข้อมูลสำรองที่บันทึกไว้บนอุปกรณ์นี้\n\nกู้คืนจาก SD หรือ USB: เลือกโฟลเดอร์ข้อมูลสำรองจากการ์ด SD หรืออุปกรณ์เก็บข้อมูล USB ที่เชื่อมต่ออยู่\n\nนำเข้าไฟล์สำรอง: เลือกไฟล์ ZIP สำรองจากอุปกรณ์หรือพื้นที่จัดเก็บที่แสดงในตัวเลือกไฟล์ ข้อมูลสำรองแบบแบ่งไฟล์ต้องใช้ไฟล์ทุกส่วนจากชุดเดียวกัน\n\nการกู้คืนจะแทนที่ข้อมูลปัจจุบันด้วยข้อมูลสำรอง จึงควรสำรองข้อมูลปัจจุบันก่อน",
               "notice": null,
               "icon": {
                 "name": "restore_outlined",
@@ -26876,7 +26204,7 @@
             {
               "id": "data-usage",
               "title": "การใช้ข้อมูล",
-              "body": "เลือกให้อัปโหลดข้อมูลสำรองผ่าน Wi-Fi เท่านั้นหรือใช้ข้อมูลมือถือได้ด้วย",
+              "body": "บันทึกการตั้งค่าการใช้ข้อมูล เวอร์ชัน 1.0.0(17) ไม่อัปโหลดข้อมูลสำรองโดยตรง การตั้งค่านี้ไม่ควบคุม Wi-Fi หรือข้อมูลมือถือของแอปอื่นที่เลือกในเมนูแชร์",
               "notice": null,
               "icon": {
                 "name": "wifi",
@@ -26948,5 +26276,5 @@
       ]
     }
   },
-  "contentVersion": "2acee784e385bdc1"
+  "contentVersion": "b3df4ff3af567bd2"
 }

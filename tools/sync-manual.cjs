@@ -5,6 +5,7 @@ const path = require('node:path');
 const crypto = require('node:crypto');
 const { resolveManual } = require('./manual-content-export.cjs');
 const { renderManual, writeManual } = require('./render-manual.cjs');
+const { publicManualChapters } = require('./public-copy.cjs');
 const root = path.resolve(__dirname, '..');
 const input = path.resolve(process.argv[2] || path.join(root, '../app-current'));
 const app = fs.existsSync(path.join(input, 'pubspec.yaml')) ? input : path.resolve(input, '../..');
@@ -23,7 +24,7 @@ const pubspec = read('pubspec.yaml');
 const resolvedManual = resolveManual(app);
 if (JSON.stringify(resolvedManual.localeOrder) !== JSON.stringify(languages.map(l => l.code))) throw Error('Manual locale order differs');
 const publicIcon = icon => icon && Object.fromEntries(['name', 'codePoint', 'color', 'colorDark', 'background', 'matchTextDirection'].map(key => [key, icon[key]]));
-const publicChapters = code => resolvedManual.locales[code].chapters.map(chapter => ({ id: chapter.id, title: chapter.title, screen: chapter.screen, icon: publicIcon(chapter.icon), features: chapter.features.map(feature => ({ id: feature.id, title: feature.title, body: feature.body, notice: feature.notice, icon: publicIcon(feature.icon) })) }));
+const publicChapters = code => publicManualChapters(resolvedManual.locales[code].chapters.map(chapter => ({ id: chapter.id, title: chapter.title, screen: chapter.screen, icon: publicIcon(chapter.icon), features: chapter.features.map(feature => ({ id: feature.id, title: feature.title, body: feature.body, notice: feature.notice, icon: publicIcon(feature.icon) })) })), code, JSON.parse(read(`lib/l10n/app_${code}.arb`)));
 const webText = require('./manual-web-text.json');
 const locales = {};
 const ui = {};
@@ -34,7 +35,7 @@ for (const { code, name } of languages) {
   const manifest = JSON.parse(rawManifest);
   const a = JSON.parse(read(`lib/l10n/app_${code}.arb`));
   if (!webText[code] || !a.retry || !a.manualImageError || !a.manualIntro) throw Error(`Missing localized controls: ${code}`);
-  ui[code] = { ...webText[code], name, title: a.userGuideTitle, intro: a.manualIntro, contents: a.manualContentsHint, retry: a.retry, error: a.manualImageError };
+  ui[code] = { ...webText[code], name, title: a.userGuideTitle, intro: `TAIPOPO 1.0.0(17) · ${a.manualIntro}`, contents: a.manualContentsHint, retry: a.retry, error: a.manualImageError };
   const images = overviews.map((overview, index) => {
     const record = manifest[overview.id];
     const asset = `assets/manual/${code}/${overview.id}.webp`;
@@ -63,4 +64,4 @@ for (const copy of copies) {
   if (digest(fs.readFileSync(copy.target)) !== copy.sha256) throw Error('Copied image bytes changed');
 }
 writeManual(root, rendered);
-console.log(`Exported ${languages.length} languages × 6 chapters / 113 features / 2 notices / ${overviews.length} current app originals; existing web-only previews validated separately.`);
+console.log(`Exported ${languages.length} languages × 6 chapters / 110 production features / 2 notices; public wording overrides applied; ${overviews.length} unchanged app originals per locale.`);

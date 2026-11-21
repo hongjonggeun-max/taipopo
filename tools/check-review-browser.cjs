@@ -6,6 +6,7 @@ const path = require('node:path');
 const codes = Object.keys(require('./privacy-content.json'));
 const base = 'http://127.0.0.1:4173/taipopo/';
 const output = process.env.TAIPOPO_QA_OUTPUT || path.resolve('test-results');
+const routes = process.env.TAIPOPO_QA_ROUTES?.split(',') || ['', 'privacy/', 'support/', 'deletion/', 'terms/'];
 (async () => {
   fs.mkdirSync(output, { recursive: true });
   const browser = await chromium.launch({ channel: 'msedge', headless: true });
@@ -20,7 +21,7 @@ const output = process.env.TAIPOPO_QA_OUTPUT || path.resolve('test-results');
       const locales = theme === 'light' ? codes : ['ko', 'ar'];
       for (const code of locales) for (const width of (['ko', 'ar'].includes(code) ? [320, 1440] : [320])) {
         await page.setViewportSize({ width, height: 900 });
-        for (const route of ['', 'privacy/', 'support/', 'deletion/']) {
+        for (const route of routes) {
           await page.goto(`${base}${code}/${route}`);
           await page.evaluate(() => document.fonts.ready);
           assert.equal(await page.locator('html').getAttribute('dir'), code === 'ar' ? 'rtl' : 'ltr');
@@ -28,7 +29,7 @@ const output = process.env.TAIPOPO_QA_OUTPUT || path.resolve('test-results');
           assert.equal(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth), false, `${code}/${route} ${width} ${theme}`);
           assert.equal(await page.locator('img').evaluateAll(imgs => imgs.some(i => !i.complete || !i.naturalWidth)), false);
           if (route) {
-            const review = page.locator('[data-web-review]');
+            const review = page.locator(route === 'terms/' ? '.policy-summary' : '[data-web-review]');
             assert.equal(await review.count(), 1);
             await review.scrollIntoViewIfNeeded();
             assert.equal(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth), false);
