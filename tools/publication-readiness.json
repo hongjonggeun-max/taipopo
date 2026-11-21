@@ -12,9 +12,9 @@
     {
       "id": "external_processing_and_transfers",
       "status": "BLOCKED",
-      "confirmed": "Crashlytics standard terms section 1.2 expressly incorporate the Firebase Data Processing and Security Terms; a separate DPA acceptance record is not a blanket prerequisite. Official Firebase privacy information updated 2026-11-16 classifies Crashlytics as global, with HTTPS/in-storage encryption and 90 days before deletion starts, not guaranteed completion on day 90. Google expressly offers no DPA and does not act as processor for consumer Gmail/Drive; do not keep searching for a consumer-Gmail DPA acceptance switch. This is a role/contract finding, not a conclusion that every business use of Gmail is unlawful. GitHub documents its own direct collection of visitor IPs for security; the current static site has no own intake form/analytics/ad scripts. This limited path is classified as provider-controlled direct security logging, not automatically as TAIPOPO customer-data outsourcing. The PIPC direct-collection explanation and actual site structure support this bounded classification. Historical Firebase deletion limitations and Android OS Geocoder uncertainty are unchanged. The existing free geocoding integration was reclassified after examining the actual OS API path and official Korean guidance: there is no operator geocoding account/key, coordinate proxy or recipient server in this implementation. An OS API call must not be equated automatically with operator-run international outsourcing. The former blanket condition of an individual provider country/retention reply or paid replacement is withdrawn. This is not a universal PIPA exemption or a claim that no device-external processing occurs.",
-      "required": "Keep the existing free platform integration and verify its actual consent/refusal/withdrawal and transmission boundaries. Finalize the lawful-ground/processing-role disclosures for data actually received or administered by the operator, including support inquiries and optional diagnostics. Assess any international-transfer duties on the actual relationship; do not make paid provider changes, new DPA purchases, or an individual vendor reply universal prerequisites. Preserve the separate formal-document, physical-device and Play-release checks.",
-      "responsible": "Configuration-specific implementation and operator decisions; actual provider agreements where needed. Public standard contract incorporation is evidence; do not invent a need for a separate agreement without an applicable requirement."
+      "confirmed": "Crashlytics standard terms 1.2 incorporate the Firebase DPA. Six outsourcing-document subjects are mapped to the public DPA; a separate paid contract or acceptance screen is not universally required. The terms select Google Asia Pacific Pte. Ltd., Google Ireland Limited or Google LLC by actual individual residence/entity principal place of business; do not use Google LLC for every operator or infer processing country from that address. Firebase expressly includes Crashlytics among global services and links official Cloud/data-center locations and Google Group processing-country information. Current official evidence was extracted and reconciled: 43 available Cloud regions/130 zones, relevant Google Group rows and current listed data-center countries support 40 possible country/region values including South Korea, with 39 overseas values disclosed in all 16 app/site privacy drafts. The Uruguay development site is excluded after checking its official detail page despite an inconsistent map flag. No claim is made that every report reaches every listed place or that processing places are fixed forever. A supplier-specific completeness guarantee or per-request server trace is not a universal prerequisite. Conditional customer-support subprocessors are assessed only when relevant diagnostic/support material is actually processed. Consumer Gmail GDPR-DPA absence alone does not establish a PIPA violation/exemption or require paid migration; operator mailbox storage/search/replies are separated from independent account/security processing and sender-selected mail services. Current static Pages own-security logging, OS Geocoder and user-selected manual ZIP paths retain their bounded processing-path distinctions.",
+      "required": "Complete the actually applicable Gmail support-message outsourcing document topics (purpose restriction, subcontracting conditions and supervision) and service-specific overseas storage particulars; do not invent a consumer DPA acceptance switch. Internally confirm the Crashlytics contracting capacity/residence or principal place of business, then finish the actual recipient/contact, applicable transfer ground, required notice and separately informed choice where needed. Existing diagnostic enablement is not automatically complete statutory transfer consent. Official-source country evidence is available; do not reintroduce generic supplier-completeness-reply, paid-provider replacement, unrelated support-subprocessor, or Geocoder-country-reply prerequisites. Formal terms/effective-date procedure, selected-candidate build/physical/Play checks remain separate.",
+      "responsible": "Actual operator processing and applicable documented provider commitments; current official public source scope can support country disclosures without a bespoke supplier guarantee."
     },
     {
       "id": "support_mail_retention",
@@ -47,7 +47,7 @@
     "checkedDateKst": "2026-11-21",
     "report": "C:/TAIPOPO/validation/20261121-policy-comparison/report.txt",
     "scope": "Current app candidate text synchronized to the local website candidate; comparative policy review and confirmed website copy corrections. No deployment or app/device changes.",
-    "unresolved": "Activity-specific legal grounds; applicable provider/transfer facts; operator security disclosure; final terms/amendment/notice procedure and effective date. Proposed new operating promises are not automatically adopted."
+    "unresolved": "Applicable support-message outsourcing/overseas-storage obligations, final diagnostic recipient/ground/notice/choice and formal terms/amendment/effective-date procedure. D01 disclosure and scoped inquiry collection/use grounds are already corrected; not reopened."
   },
   "verificationReview": {
     "checkedDateKst": "2026-11-21",
@@ -74,5 +74,26 @@
       "https://support.google.com/googleplay/android-developer/answer/10787469?hl=en"
     ],
     "securityEvidence": "C:/TAIPOPO/validation/20261121-free-policy-git-handoff/support-security-observed.json"
+  },
+  "processingTransferReview": {
+    "dateKst": "2026-11-21",
+    "additionalServiceCost": 0,
+    "featureReduction": false,
+    "countryDisclosureLocales": 16,
+    "possibleGlobalCountryOrRegionValues": 40,
+    "overseasCountryOrRegionValues": 39,
+    "domesticCountryExcludedFromOverseasList": "South Korea",
+    "publicReleaseReady": false,
+    "privacyCountryBasis": "Official Firebase service-specific links and country columns; current scope, not guaranteed actual transmission everywhere",
+    "sources": [
+      "https://firebase.google.com/support/privacy",
+      "https://firebase.google.com/terms/crashlytics",
+      "https://firebase.google.com/terms/data-processing-terms",
+      "https://firebase.google.com/terms/subprocessors",
+      "https://cloud.google.com/terms/subprocessors",
+      "https://cloud.google.com/about/locations/",
+      "https://docs.cloud.google.com/compute/docs/regions-zones",
+      "https://datacenters.google/locations/"
+    ]
   }
 }
