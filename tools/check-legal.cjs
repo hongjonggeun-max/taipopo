@@ -3,6 +3,7 @@ const path = require('node:path');
 const root = path.resolve(__dirname, '..');
 const arbDir = path.resolve(process.argv[2] || path.join(root, '../workshield/lib/l10n'));
 const policies = require('./privacy-content.json');
+const { reviewDate } = require('./website-disclosures.json');
 const { renderTerms, renderDeletion, renderSupportProcessing } = require('./privacy-page.cjs');
 const { copy } = require('./public-copy.cjs');
 function section(body, number) {
@@ -11,7 +12,7 @@ function section(body, number) {
 let checked = 0;
 for (const [code, policy] of Object.entries(policies)) {
   const app = JSON.parse(fs.readFileSync(path.join(arbDir, `app_${code}.arb`), 'utf8'));
-  if (policy.noticeVersion !== '2026-11-20' || policy.noticeVersion !== app.privacyPolicyNoticeVersion || policy.processingNotice !== app.privacyPolicyProcessingNotice ||
+  if (policy.noticeVersion !== reviewDate || policy.noticeVersion !== app.privacyPolicyNoticeVersion || policy.processingNotice !== app.privacyPolicyProcessingNotice ||
       !policy.terms.body?.trim() || policy.terms.effectiveDate !== app.policyEffectiveDate ||
       policy.terms.reviewNotice !== app.termsOfUseReviewNotice || policy.effectiveDate !== '2026-08-23') {
     throw new Error(`App/web legal body, date or review version drift: ${code}`);

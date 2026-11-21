@@ -12,8 +12,8 @@
     {
       "id": "external_processing_and_transfers",
       "status": "BLOCKED",
-      "confirmed": "Crashlytics standard terms section 1.2 expressly incorporate the Firebase Data Processing and Security Terms; a separate DPA acceptance record is not a blanket prerequisite. Official Firebase privacy information updated 2026-11-16 classifies Crashlytics as global, with HTTPS/in-storage encryption and 90 days before deletion starts, not guaranteed completion on day 90. Google expressly offers no DPA and does not act as processor for consumer Gmail/Drive; do not keep searching for a consumer-Gmail DPA acceptance switch. This is a role/contract finding, not a conclusion that every business use of Gmail is unlawful. GitHub documents its own direct collection of visitor IPs for security; the current static site has no own intake form/analytics/ad scripts. This limited path is classified as provider-controlled direct security logging, not automatically as TAIPOPO customer-data outsourcing. The PIPC direct-collection explanation and actual site structure support this bounded classification. Historical Firebase deletion limitations and Android OS Geocoder uncertainty are unchanged.",
-      "required": "For the active release configuration, resolve app-requested geocoding and diagnostics and operator-received support-mail processing on their actual facts and applicable Korean-law grounds. No fixed-country/day individual supplier reply is required merely for GitHub-controlled direct security IP logging in the present static-site scope; reassess if site collection, proxying, analytics, forms, or other processing changes. Do not infer countries from headquarters or use generic Maps Platform API terms for Android OS Geocoder. A separate local-data contingency is under preparation and has not been selected for release; a feature-preserving EU-only geocoder is a researched alternative, not an accepted contract or tested production integration.",
+      "confirmed": "Crashlytics standard terms section 1.2 expressly incorporate the Firebase Data Processing and Security Terms; a separate DPA acceptance record is not a blanket prerequisite. Official Firebase privacy information updated 2026-11-16 classifies Crashlytics as global, with HTTPS/in-storage encryption and 90 days before deletion starts, not guaranteed completion on day 90. Google expressly offers no DPA and does not act as processor for consumer Gmail/Drive; do not keep searching for a consumer-Gmail DPA acceptance switch. This is a role/contract finding, not a conclusion that every business use of Gmail is unlawful. GitHub documents its own direct collection of visitor IPs for security; the current static site has no own intake form/analytics/ad scripts. This limited path is classified as provider-controlled direct security logging, not automatically as TAIPOPO customer-data outsourcing. The PIPC direct-collection explanation and actual site structure support this bounded classification. Historical Firebase deletion limitations and Android OS Geocoder uncertainty are unchanged. The existing free geocoding integration was reclassified after examining the actual OS API path and official Korean guidance: there is no operator geocoding account/key, coordinate proxy or recipient server in this implementation. An OS API call must not be equated automatically with operator-run international outsourcing. The former blanket condition of an individual provider country/retention reply or paid replacement is withdrawn. This is not a universal PIPA exemption or a claim that no device-external processing occurs.",
+      "required": "Keep the existing free platform integration and verify its actual consent/refusal/withdrawal and transmission boundaries. Finalize the lawful-ground/processing-role disclosures for data actually received or administered by the operator, including support inquiries and optional diagnostics. Assess any international-transfer duties on the actual relationship; do not make paid provider changes, new DPA purchases, or an individual vendor reply universal prerequisites. Preserve the separate formal-document, physical-device and Play-release checks.",
       "responsible": "Configuration-specific implementation and operator decisions; actual provider agreements where needed. Public standard contract incorporation is evidence; do not invent a need for a separate agreement without an applicable requirement."
     },
     {
@@ -25,13 +25,13 @@
     },
     {
       "id": "operator_security_measures",
-      "status": "BLOCKED",
-      "confirmed": "Operator support-mail protection disclosure is incomplete (D01). A Google-authenticated notification dated 2026-09-28 confirms that two-step verification was enabled for the connected support account on that date; the available mailbox search found no corresponding disable notification. This is historical evidence, not live account-settings verification. Standard Gmail encryption documentation is verified as a provider measure and must not be mislabeled as independently verified operator device/disk controls. Browser URL verification blocked the attempted live settings inspection; no unsupported browser-control bypass was used.",
-      "required": "Inspect current support-account authentication/access and actual downloaded-copy locations/access controls using supported account/UI access or operator facts. Publish concise actual controls; do not copy nonexistent staff training, dedicated security organization, or unverified full-disk encryption. No request to choose retention periods again is necessary; purpose-completion deletion is already adopted.",
+      "status": "PASS",
+      "confirmed": "D01 missing security disclosure corrected in all 16 app/site draft locales. On 2026-11-21 the authenticated support-account security and Gmail settings pages showed two-step verification enabled, no registered delegated mail users or forwarding address, POP download disabled and Gmail Offline disabled. The text expressly excludes automatic protection/deletion of manually downloaded or separately stored files. No setting was changed; IMAP was not asserted to be disabled. This closes the identified disclosure omission, not an entire operator/device security audit.",
+      "required": "Keep the disclosed configuration accurate and operate the already adopted purpose-completion deletion procedure. Manual copies and other device access must be managed separately; no unverified encryption, security team or employee-training claim is published.",
       "responsible": "Operator factual confirmation and implementation of applicable security measures; policy disclosure must match actual practice."
     }
   ],
-  "note": "All blockers apply to all 16 language versions. Passing content checks does not authorize production publication while this record is BLOCKED.",
+  "note": "These draft checks apply to all 16 languages. Git checkpoint/push does not publish the Pages main branch or authorize production release while readiness remains BLOCKED.",
   "approvedOperatingPrinciples": {
     "source": "Explicit user instruction: TAIPOPO +17 legal-risk-minimizing operating policy application",
     "support": "Delete general inquiries/attachments without delay after purpose completion; separate only actual statutory retention records",
@@ -40,7 +40,8 @@
     "directDriveApi": "Keep disabled until written approval basis is secured; user-selected manual ZIP sharing is a separate path",
     "terms": "Concise user-facing confirmation UI; metadata stays internal. Validation progress and formal acceptance are different record types. Final documents/effective date are not yet configured; no public-release consent PASS.",
     "externalFacts": "Do not infer recipient/country/retention/transfer basis; unresolved mandatory facts continue to block publication",
-    "publication": "BLOCKED; operational policy adoption does not establish legal compliance"
+    "publication": "BLOCKED; operational policy adoption does not establish legal compliance",
+    "additionalServiceCost": "Zero additional service cost and existing functionality are the baseline. Geoapify/mailbox replacement is not adopted or a release prerequisite; the signup request was withdrawn and the unsubmitted form closed."
   },
   "comparisonReview": {
     "checkedDateKst": "2026-11-21",
@@ -55,5 +56,23 @@
     "noPublication": true,
     "contingency": "C:/TAIPOPO/development/release-local-data-20261121",
     "contingencySelectedForRelease": false
+  },
+  "freePlatformReview": {
+    "dateKst": "2026-11-21",
+    "appSource": "C:/TAIPOPO/development/gps-address-latency-20261119",
+    "appPrivacyNoticeVersion": "2026-11-21",
+    "unchangedFormalEffectiveDate": "2026-08-23",
+    "geocodingProviderReplacementRequired": false,
+    "providerIndividualReplyUniversalPrerequisite": false,
+    "legalScope": "Scoped source/official-guidance assessment; not a blanket statutory exemption or a final release verdict.",
+    "sources": [
+      "https://pub.dev/packages/geocoding/versions/4.0.0",
+      "https://developer.android.com/reference/android/location/Geocoder",
+      "https://pipc.go.kr/np/cop/bbs/selectBoardArticle.do?bbsId=BS074&nttId=12021",
+      "https://www.lbsc.kr/front/content/contentViewer.do?contentId=CONTENT_0000081",
+      "https://pipc.go.kr/np/cop/bbs/selectBoardArticle.do?bbsId=BS292&mCode=C050010000&nttId=10972",
+      "https://support.google.com/googleplay/android-developer/answer/10787469?hl=en"
+    ],
+    "securityEvidence": "C:/TAIPOPO/validation/20261121-free-policy-git-handoff/support-security-observed.json"
   }
 }

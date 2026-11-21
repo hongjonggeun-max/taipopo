@@ -39,7 +39,7 @@ function legalFooter(html, code, nested) {
 
 function updateSet(code, prefix) {
   const policy = policies[code];
-  if (policy.noticeVersion !== '2026-11-20' || !policy.terms?.reviewNotice) {
+  if (policy.noticeVersion !== reviewDate || !policy.terms?.reviewNotice) {
     throw new Error(`Run sync-privacy.cjs with the current app source first: ${code}`);
   }
   for (const relative of ['index.html', 'support/index.html', 'privacy/index.html']) {
