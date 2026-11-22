@@ -138,8 +138,8 @@
     "dateKst": "2026-11-22",
     "status": "BLOCKED",
     "report": "C:\\TAIPOPO\\validation\\20261122-gps-workplace-followup\\report.txt",
-    "apkVersionCode": 14,
-    "apkSha256": "9f69ddfc2c4a84d1848173f3b9a58352544d6de6d0ef4a3c1e59cbe829f71e06",
+    "apkVersionCode": 15,
+    "apkSha256": "a57bd26a3ece73012b2bc87887806ce59ab592bae7c064719bf6f12b42efb047",
     "externalAutomaticAddressEnabled": false,
     "gpsRecordingAndDisplaySeparate": true,
     "foregroundGpsWaitSeconds": 60,
@@ -153,6 +153,8 @@
     "productionReleaseStatus": "BLOCKED",
     "published": false,
     "playSubmitted": false,
-    "scope": "v13 baseline retained separately. Current follow-up fixes GPS response feedback and local prior-workplace import; Gmail/Firebase-production/formal terms/market/production-Play gates remain."
+    "scope": "v13 baseline retained separately. Prior-workplace import and pending-GPS capture were physically checked on v14; v15 adds expiry-only preview feedback, with synthetic Android fix/expiry/capture checked separately. Gmail/Firebase-production/formal terms/market/production-Play gates remain.",
+    "expiredFixPreview": "PASS",
+    "expiryDoesNotStartLookup": "PASS"
   }
 }
