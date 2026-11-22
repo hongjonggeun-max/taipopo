@@ -27,12 +27,17 @@ for (const [code, locale] of Object.entries(data.locales)) {
   assert.deepEqual(features.map(f => f.id), oldFeatures.filter(f => !removed.includes(f.id)).map(f => f.id), `${code}: unrelated feature addition/removal/reordering`);
   for (const feature of features) {
     const previous = oldFeatures.find(f => f.id === feature.id);
-    for (const field of ['title', 'notice', 'icon']) assert.deepEqual(feature[field], previous[field], `${code}/${feature.id}/${field}: unrequested change`);
+    for (const field of ['title', 'notice', 'icon']) {
+      if (field === 'title' && ['camera-address','workplace-gps-address','camera-options'].includes(feature.id)) continue;
+      if (field === 'notice' && feature.id === 'workplace-gps-address') continue;
+      assert.deepEqual(feature[field], previous[field], `${code}/${feature.id}/${field}: unrequested change`);
+    }
     if (!allowedBodies.has(feature.id)) { assert.equal(feature.body, previous.body, `${code}/${feature.id}: normal copy changed`); preserved++; }
   }
   assert.deepEqual(locale.images, baseline.locales[code].images, `${code}: image metadata changed`);
   assert.deepEqual(locale.chapters.map(c => [c.id, c.title, c.screen, c.icon]), baseline.locales[code].chapters.map(c => [c.id, c.title, c.screen, c.icon]));
   const body = id => features.find(f => f.id === id).body;
+  assert.equal(features.find(f => f.id === 'camera-options').title, arb.cameraOptions, `${code}: camera options title`);
   for (const [id, key] of [['backup-device','backupFileSave'], ['backup-external','externalStorageBackupAction'], ['backup-share','backupFileShare']]) {
     assert.ok(body(id).includes(`${arb.settings} > ${arb.dataManagement} > ${arb[key]}`), `${code}/${id}: wrong menu path`); menus++;
   }
@@ -40,9 +45,12 @@ for (const [code, locale] of Object.entries(data.locales)) {
     assert.ok(body('restore').includes(arb[key]), `${code}: restore path/step missing ${key}`); menus++;
   }
   assert.ok(body('restore').includes(arb.manualPurposeRestore.split('\n\n').at(-1)), `${code}: replacement warning missing`);
-  for (const id of ['camera-gps-record', 'camera-address', 'workplace-gps-address']) {
-    assert.ok(body(id).includes(arb.manualAddressLookupChoice), `${code}/${id}: separate address choice missing`);
-    assert.ok(body(id).includes(id === 'workplace-gps-address' ? arb.workplaceGpsLookupDisclosure : arb.cameraAddressLookupNotice), `${code}/${id}: actual disclosure/fallback missing`);
+  assert.ok(body('camera-gps-record').includes(arb.gpsLocationRecordSubtitle), `${code}: local GPS purpose missing`);
+  assert.ok(body('camera-gps-record').includes(arb.cameraGpsUsageNotice), `${code}: camera-first default-OFF choice missing`);
+  assert.ok(body('camera-gps-record').includes(arb.locationPreservationNotice), `${code}: existing EXIF/share scope missing`);
+  for (const [id,key] of [['camera-address','showAddressSubtitle'],['workplace-gps-address','manualPurposeWorkplaceGpsAddress']]) {
+    assert.equal(body(id),arb[key],`${code}/${id}: blocked address notice differs`);
+    assert.ok(!body(id).includes(arb.cameraAddressLookupNotice)&&!body(id).includes(arb.workplaceGpsLookupDisclosure),`${code}/${id}: obsolete opt-in address promise`);
   }
   assert.ok(body('backup-share').includes(arb.backupFileDisclosure), `${code}: unencrypted backup scope missing`);
   assert.ok(body('restore').includes(arb.legacyDriveBackupNotice), `${code}: older Drive copy distinction missing`);

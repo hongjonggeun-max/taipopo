@@ -254,9 +254,9 @@
             },
             {
               "id": "workplace-gps-address",
-              "title": "GPS 현재 위치로 주소 입력",
-              "body": "현재 위치의 주소를 가져와 근무지 주소에 입력합니다. 실제 주소를 확인하고 필요한 부분을 수정하세요.\n\n주소 조회는 운영체제의 위치 권한과 별도로 선택합니다. 앱의 주소 조회 안내에서 허용한 경우에만 조회를 시작합니다.\n\n근무지 주소를 찾기 위해 기기의 주소 변환 서비스가 위치 좌표를 기기 밖의 서비스에 보낼 수 있습니다. 조회를 허용하지 않아도 주소를 직접 입력할 수 있습니다.",
-              "notice": "GPS로 가져온 주소는 실제 근무지 주소와 다를 수 있습니다. 저장 전에 실제 주소를 다시 확인해 주세요.",
+              "title": "자동 주소 조회 중단",
+              "body": "이 버전은 근무지와 카메라의 자동 주소 조회를 제공하지 않으며, 주소 변환을 위해 좌표를 외부 주소 서비스로 보내지 않습니다. 주소는 직접 입력할 수 있고 기존 저장 주소는 유지됩니다.",
+              "notice": "자동 주소 조회가 차단된 버전에 적용되는 안내입니다. 이전 설치본에서는 주소 조회가 동작할 수 있으므로 해당 버전의 안내와 설정이 적용됩니다. 업데이트만으로 기존 기록이나 이미 외부에 전달된 정보가 삭제되지는 않습니다.",
               "icon": {
                 "name": "my_location_rounded",
                 "codePoint": 63728,
@@ -1015,7 +1015,7 @@
             {
               "id": "camera-gps-record",
               "title": "GPS 위치 기록",
-              "body": "GPS 기록을 끄면 앱의 사진 기록에 좌표를 저장하지 않습니다. 주소 표시는 별도 설정입니다. 주소 표시를 켜고 위치 권한을 허용하면 현재 위치로 주소를 확인해 표시하고, 촬영 시 사진 기록에 저장할 수 있습니다. 원본 JPEG에 포함된 EXIF는 그대로 보존합니다.\n\n주소 조회는 운영체제의 위치 권한과 별도로 선택합니다. 앱의 주소 조회 안내에서 허용한 경우에만 조회를 시작합니다.\n\n카메라에 주소를 표시하기 위해 TAIPOPO가 위도와 경도를 Android 주소 변환 서비스에 전달합니다. 좌표는 기기 밖에서 처리될 수 있습니다. 주소를 조회하지 않아도 사진을 찍고 저장할 수 있습니다. 새 조회를 중단하려면 카메라 설정에서 주소 표시를 끄세요.",
+              "body": "카메라 → 카메라 옵션 → GPS 위치 기록\n\n신규 설치 시 GPS 기록은 기본 OFF입니다. 카메라에서 GPS 켜기를 선택할 때 위치 권한을 요청하며, 거부하거나 안내를 닫아도 OFF 상태로 촬영을 계속할 수 있습니다. 카메라 옵션에서 언제든 변경할 수 있습니다.\n\nGPS 기록을 켜고 위치 권한을 허용하면 유효한 촬영 좌표를 기기 내부 사진 기록에 저장합니다. GPS를 끄거나 권한을 거부하거나 위치를 얻지 못해도 사진을 찍고 저장할 수 있습니다.\n\n기존 좌표·주소·사진과 원본 사진의 EXIF는 보존됩니다. 사용자가 직접 사진을 공유하거나 ZIP을 내보내면 좌표와 EXIF가 파일에 포함되어 선택한 수신 앱에 전달될 수 있으므로 공유 전에 포함 정보를 확인하세요.",
               "notice": null,
               "icon": {
                 "name": "location_on_rounded",
@@ -1056,7 +1056,7 @@
             },
             {
               "id": "camera-options",
-              "title": "촬영 정보",
+              "title": "카메라 옵션",
               "body": "사진에 남길 근무지·위치·메모와 정보 표시 방식을 선택합니다.",
               "notice": null,
               "icon": {
@@ -1126,8 +1126,8 @@
             },
             {
               "id": "camera-address",
-              "title": "주소",
-              "body": "카메라 촬영 정보에 GPS 주소를 표시합니다.\n\n주소 조회는 운영체제의 위치 권한과 별도로 선택합니다. 앱의 주소 조회 안내에서 허용한 경우에만 조회를 시작합니다.\n\n카메라에 주소를 표시하기 위해 TAIPOPO가 위도와 경도를 Android 주소 변환 서비스에 전달합니다. 좌표는 기기 밖에서 처리될 수 있습니다. 주소를 조회하지 않아도 사진을 찍고 저장할 수 있습니다. 새 조회를 중단하려면 카메라 설정에서 주소 표시를 끄세요.",
+              "title": "근무지 주소",
+              "body": "선택한 근무지에 저장된 주소를 촬영 정보에 기본으로 표시합니다. GPS나 자동 주소 조회를 사용하지 않습니다. 카메라 옵션에서 끌 수 있으며, 저장된 주소가 없으면 표시하지 않습니다.",
               "notice": null,
               "icon": {
                 "name": "map_outlined",
@@ -1894,9 +1894,9 @@
             },
             {
               "id": "workplace-gps-address",
-              "title": "Use current GPS location for address",
-              "body": "Fill the workplace address from your current location. Check the actual address and edit it as needed.\n\nAddress lookup is a separate choice from the operating system's location permission. A lookup starts only after you allow it in the app's address lookup notice.\n\nTo find the workplace address, your device’s address lookup service may send your location coordinates to a service outside your device. If you don’t allow the lookup, you can enter the address manually.",
-              "notice": "The GPS address may differ from the actual workplace address. Check the actual address before saving.",
+              "title": "Automatic address lookup unavailable",
+              "body": "This version does not provide automatic workplace or camera address lookup and does not send coordinates to an external address service for geocoding. You can enter addresses manually, and existing saved addresses are retained.",
+              "notice": "This notice applies to versions with automatic address lookup blocked. Earlier installations may still perform address lookups and remain subject to their version's notices and settings. Updating alone does not delete existing records or information already sent outside the device.",
               "icon": {
                 "name": "my_location_rounded",
                 "codePoint": 63728,
@@ -2655,7 +2655,7 @@
             {
               "id": "camera-gps-record",
               "title": "GPS Location Record",
-              "body": "When GPS Location Record is off, the app does not save coordinates in the photo record. Show Address is a separate setting. With Show Address on and location permission granted, the app can look up and display the address for your current location and save it to the photo record when you take a photo. EXIF metadata in the original JPEG is preserved as is.\n\nAddress lookup is a separate choice from the operating system's location permission. A lookup starts only after you allow it in the app's address lookup notice.\n\nTo show an address in the camera, TAIPOPO sends latitude and longitude to Android’s geocoding service. The service may process the coordinates outside your device. You can take and save photos without looking up an address. Turn off Show Address in Camera Settings to stop future lookups.",
+              "body": "Camera → Camera options → GPS Location Record\n\nGPS recording is OFF by default on a new installation. Location permission is requested when you choose to turn GPS on in the camera. You can refuse or dismiss the notice and continue taking photos with GPS off. You can change this anytime in camera options.\n\nWhen you enable GPS recording and allow location permission, valid capture coordinates are saved in photo records on your device. You can still take and save photos with GPS off, permission denied or location unavailable.\n\nExisting coordinates, addresses, photos and original photo EXIF are preserved. When you choose to share photos or export a ZIP, coordinates and EXIF may be included in the files sent to your selected recipient app. Check the included information before sharing.",
               "notice": null,
               "icon": {
                 "name": "location_on_rounded",
@@ -2696,7 +2696,7 @@
             },
             {
               "id": "camera-options",
-              "title": "Capture Info",
+              "title": "Camera options",
               "body": "Choose the workplace, location, notes and information style to show on the photo.",
               "notice": null,
               "icon": {
@@ -2766,8 +2766,8 @@
             },
             {
               "id": "camera-address",
-              "title": "Address",
-              "body": "Display the GPS address in the camera overlay.\n\nAddress lookup is a separate choice from the operating system's location permission. A lookup starts only after you allow it in the app's address lookup notice.\n\nTo show an address in the camera, TAIPOPO sends latitude and longitude to Android’s geocoding service. The service may process the coordinates outside your device. You can take and save photos without looking up an address. Turn off Show Address in Camera Settings to stop future lookups.",
+              "title": "Workplace address",
+              "body": "The selected workplace's saved address is shown in capture information by default. This uses neither GPS nor automatic address lookup. You can turn it off in camera options; no address is shown if none is saved.",
               "notice": null,
               "icon": {
                 "name": "map_outlined",
@@ -3534,9 +3534,9 @@
             },
             {
               "id": "workplace-gps-address",
-              "title": "用 GPS 当前位置填写地址",
-              "body": "将当前位置的地址填入工作地点地址。请核对实际地址并按需修改。\n\n地址查询是独立于操作系统位置权限的选择。只有在应用的地址查询说明中允许后，才会开始查询。\n\n为查询工作地点的地址，设备上的地址查询服务可能会将您的位置坐标发送到设备之外的服务。如果您不允许查询，仍可手动输入地址。",
-              "notice": "GPS获取的地址可能与实际工作地点地址不同。保存前请再次核对实际地址。",
+              "title": "自动地址查询不可用",
+              "body": "此版本不提供工作地点或相机的自动地址查询，也不会为了地址转换而向外部地址服务发送坐标。您可以手动输入地址，已保存的地址会保留。",
+              "notice": "本说明适用于已阻止自动地址查询的版本。先前安装的旧版本可能仍会查询地址，并适用该版本的说明和设置。仅更新应用不会删除现有记录或已发送到设备外的信息。",
               "icon": {
                 "name": "my_location_rounded",
                 "codePoint": 63728,
@@ -4295,7 +4295,7 @@
             {
               "id": "camera-gps-record",
               "title": "GPS定位记录",
-              "body": "关闭“GPS定位记录”后，应用不会在照片记录中保存坐标。“显示地址”是独立设置。开启此设置并授予定位权限后，应用可以根据当前位置查询并显示地址，并在拍摄时将地址保存到照片记录中。原始 JPEG 中已有的 EXIF 数据会原样保留。\n\n地址查询是独立于操作系统位置权限的选择。只有在应用的地址查询说明中允许后，才会开始查询。\n\n为了在相机中显示地址，TAIPOPO 会将经纬度传给 Android 地址转换服务。该服务可能在设备之外处理坐标。无需查询地址也能拍照和保存照片。若要停止后续查询，请在相机设置中关闭地址显示。",
+              "body": "相机 → 相机选项 → GPS定位记录\n\n新安装时，GPS 记录默认关闭。只有在相机中选择开启 GPS 时才会请求位置权限。拒绝或关闭说明后，仍可在 GPS 关闭的状态下继续拍摄，并可随时在相机选项中更改。\n\n开启 GPS 记录并允许位置权限后，有效的拍摄坐标会保存在设备内的照片记录中。即使 GPS 关闭、权限被拒绝或无法获取位置，也可以拍摄并保存照片。\n\n现有坐标、地址、照片及原始照片的 EXIF 会保留。当您主动选择分享照片或导出 ZIP 时，发送给所选接收应用的文件可能包含坐标和 EXIF。分享前请检查其中的信息。",
               "notice": null,
               "icon": {
                 "name": "location_on_rounded",
@@ -4336,7 +4336,7 @@
             },
             {
               "id": "camera-options",
-              "title": "拍摄信息",
+              "title": "相机选项",
               "body": "选择要显示在照片上的工作地点、位置、备注及信息样式。",
               "notice": null,
               "icon": {
@@ -4406,8 +4406,8 @@
             },
             {
               "id": "camera-address",
-              "title": "地址",
-              "body": "在相机叠加层中显示 GPS 地址。\n\n地址查询是独立于操作系统位置权限的选择。只有在应用的地址查询说明中允许后，才会开始查询。\n\n为了在相机中显示地址，TAIPOPO 会将经纬度传给 Android 地址转换服务。该服务可能在设备之外处理坐标。无需查询地址也能拍照和保存照片。若要停止后续查询，请在相机设置中关闭地址显示。",
+              "title": "工作地点地址",
+              "body": "默认在拍摄信息中显示所选工作地点已保存的地址，不使用 GPS 或自动地址查询。您可以在相机选项中关闭；如果未保存地址，则不显示。",
               "notice": null,
               "icon": {
                 "name": "map_outlined",
@@ -5174,9 +5174,9 @@
             },
             {
               "id": "workplace-gps-address",
-              "title": "GPSの現在地から住所を入力",
-              "body": "現在地の住所を勤務先住所に入力します。実際の住所を確認し、必要に応じて修正してください。\n\n住所検索は、OSの位置情報へのアクセス許可とは別に選択します。アプリの住所検索の案内で許可した場合にのみ検索を開始します。\n\n勤務先の住所を調べるために、端末の住所検索サービスが位置座標を端末外のサービスに送信することがあります。検索を許可しなくても、住所を手入力できます。",
-              "notice": "GPSで取得した住所は実際の勤務先住所と異なる場合があります。保存前に実際の住所を確認してください。",
+              "title": "住所自動検索は利用できません",
+              "body": "このバージョンは勤務先とカメラの住所自動検索を提供せず、住所変換のために外部の住所サービスへ座標を送信しません。住所は手動で入力でき、保存済みの住所は保持されます。",
+              "notice": "この案内は住所自動検索がブロックされたバージョンに適用されます。以前のインストール済みバージョンでは住所検索が動作する場合があり、そのバージョンの案内と設定が適用されます。更新だけでは既存の記録やすでに端末外へ送信された情報は削除されません。",
               "icon": {
                 "name": "my_location_rounded",
                 "codePoint": 63728,
@@ -5935,7 +5935,7 @@
             {
               "id": "camera-gps-record",
               "title": "GPS位置記録",
-              "body": "「GPS位置記録」をオフにすると、アプリ内の写真記録に座標は保存されません。「住所を表示」は別の設定です。この設定をオンにして位置情報の使用を許可すると、現在地から住所を取得して表示し、撮影時に写真記録へ保存できます。元のJPEGに含まれるEXIFはそのまま保持されます。\n\n住所検索は、OSの位置情報へのアクセス許可とは別に選択します。アプリの住所検索の案内で許可した場合にのみ検索を開始します。\n\nカメラに住所を表示するため、TAIPOPO は緯度・経度を Android の住所変換サービスに送ります。座標が端末の外で処理される場合があります。住所を検索しなくても撮影と保存ができます。今後の検索を止めるには、カメラ設定で住所表示をオフにしてください。",
+              "body": "カメラ → カメラのオプション → GPS位置記録\n\n新規インストール時のGPS記録は初期設定でオフです。カメラでGPSをオンにすることを選んだ場合に位置情報の権限を求めます。拒否したり案内を閉じたりしても、GPSをオフにしたまま撮影を続けられます。カメラのオプションでいつでも変更できます。\n\nGPS記録をオンにして位置情報へのアクセスを許可すると、有効な撮影座標を端末内の写真記録に保存します。GPSがオフ、権限が拒否された場合や位置を取得できない場合も、写真を撮影・保存できます。\n\n既存の座標・住所・写真と元の写真のEXIFは保持されます。写真の共有やZIPの書き出しを自分で選択すると、座標やEXIFを含むファイルが選択した受信アプリに渡されることがあります。共有前に含まれる情報をご確認ください。",
               "notice": null,
               "icon": {
                 "name": "location_on_rounded",
@@ -5976,7 +5976,7 @@
             },
             {
               "id": "camera-options",
-              "title": "キャプチャ情報",
+              "title": "カメラのオプション",
               "body": "写真に残す勤務先・位置・メモと情報の表示方法を選びます。",
               "notice": null,
               "icon": {
@@ -6046,8 +6046,8 @@
             },
             {
               "id": "camera-address",
-              "title": "住所",
-              "body": "カメラオーバーレイに GPS アドレスを表示します。\n\n住所検索は、OSの位置情報へのアクセス許可とは別に選択します。アプリの住所検索の案内で許可した場合にのみ検索を開始します。\n\nカメラに住所を表示するため、TAIPOPO は緯度・経度を Android の住所変換サービスに送ります。座標が端末の外で処理される場合があります。住所を検索しなくても撮影と保存ができます。今後の検索を止めるには、カメラ設定で住所表示をオフにしてください。",
+              "title": "勤務先の住所",
+              "body": "選択した勤務先に保存されている住所を、初期設定で撮影情報に表示します。GPSや住所自動検索は使用しません。カメラのオプションでオフにでき、保存済みの住所がなければ表示しません。",
               "notice": null,
               "icon": {
                 "name": "map_outlined",
@@ -6814,9 +6814,9 @@
             },
             {
               "id": "workplace-gps-address",
-              "title": "मौजूदा GPS स्थान से पता भरें",
-              "body": "मौजूदा स्थान से कार्यस्थल का पता भरें। वास्तविक पता जाँचें और ज़रूरत हो तो सुधारें।\n\nपता खोजने की अनुमति ऑपरेटिंग सिस्टम की स्थान अनुमति से अलग चुनी जाती है। खोज तभी शुरू होती है जब आप ऐप के पता खोज संबंधी नोटिस में इसकी अनुमति देते हैं।\n\nकार्यस्थल का पता ढूँढ़ने के लिए, आपके डिवाइस की पता खोज सेवा आपके स्थान के निर्देशांक डिवाइस के बाहर किसी सेवा को भेज सकती है। अगर आप इसकी अनुमति नहीं देते हैं, तो पता खुद दर्ज कर सकते हैं।",
-              "notice": "GPS से मिला पता कार्यस्थल के वास्तविक पते से अलग हो सकता है। सहेजने से पहले वास्तविक पता जाँचें।",
+              "title": "स्वतः पता खोज उपलब्ध नहीं",
+              "body": "यह संस्करण कार्यस्थल या कैमरे के लिए स्वतः पता खोज नहीं करता और निर्देशांकों को पते में बदलने के लिए किसी बाहरी पता सेवा को नहीं भेजता। आप पते स्वयं दर्ज कर सकते हैं और पहले से सहेजे गए पते बने रहते हैं।",
+              "notice": "यह नोटिस उन संस्करणों पर लागू है जिनमें स्वतः पता खोज अवरुद्ध है। पहले से इंस्टॉल पुराने संस्करण अब भी पता खोज सकते हैं और उनके अपने संस्करण के नोटिस और सेटिंग लागू रहते हैं। केवल अपडेट करने से मौजूदा रिकॉर्ड या डिवाइस से बाहर पहले भेजी गई जानकारी नहीं मिटती।",
               "icon": {
                 "name": "my_location_rounded",
                 "codePoint": 63728,
@@ -7575,7 +7575,7 @@
             {
               "id": "camera-gps-record",
               "title": "जीपीएस स्थान रिकार्ड",
-              "body": "“जीपीएस स्थान रिकार्ड” बंद होने पर ऐप फ़ोटो के रिकॉर्ड में निर्देशांक नहीं सहेजता। “पता दिखाएँ” एक अलग सेटिंग है। इसे चालू करने और स्थान की अनुमति देने पर ऐप मौजूदा स्थान का पता खोजकर दिखा सकता है और फ़ोटो लेते समय उसे फ़ोटो के रिकॉर्ड में सहेज सकता है। मूल JPEG में मौजूद EXIF डेटा ज्यों का त्यों रहता है।\n\nपता खोजने की अनुमति ऑपरेटिंग सिस्टम की स्थान अनुमति से अलग चुनी जाती है। खोज तभी शुरू होती है जब आप ऐप के पता खोज संबंधी नोटिस में इसकी अनुमति देते हैं।\n\nकैमरे में पता दिखाने के लिए TAIPOPO अक्षांश और देशांतर Android की जियोकोडिंग सेवा को भेजता है। सेवा इन निर्देशांकों को आपके डिवाइस के बाहर प्रोसेस कर सकती है। पता खोजे बिना भी आप फ़ोटो ले और सेव कर सकते हैं। आगे पता खोजना बंद करने के लिए कैमरा सेटिंग में पता दिखाना बंद करें।",
+              "body": "कैमरा → कैमरा विकल्प → जीपीएस स्थान रिकार्ड\n\nनए इंस्टॉल में GPS रिकॉर्डिंग डिफ़ॉल्ट रूप से बंद रहती है। कैमरे में GPS चालू करने का विकल्प चुनने पर स्थान की अनुमति माँगी जाती है। अनुमति न देकर या नोटिस बंद करके भी GPS बंद रखते हुए फ़ोटो ले सकते हैं। इसे कैमरा विकल्पों में कभी भी बदल सकते हैं।\n\nGPS रिकॉर्डिंग चालू करने और स्थान की अनुमति देने पर, मान्य कैप्चर निर्देशांक आपके डिवाइस के फ़ोटो रिकॉर्ड में सहेजे जाते हैं। GPS बंद होने, अनुमति न देने या स्थान न मिलने पर भी आप फ़ोटो ले और सहेज सकते हैं।\n\nमौजूदा निर्देशांक, पते, फ़ोटो और मूल फ़ोटो का EXIF सुरक्षित रखा जाता है। फ़ोटो साझा करने या ZIP निर्यात करने का विकल्प चुनने पर, चुने गए प्राप्तकर्ता ऐप को भेजी गई फ़ाइलों में निर्देशांक और EXIF शामिल हो सकते हैं। साझा करने से पहले शामिल जानकारी जाँचें।",
               "notice": null,
               "icon": {
                 "name": "location_on_rounded",
@@ -7616,7 +7616,7 @@
             },
             {
               "id": "camera-options",
-              "title": "फ़ोटो की जानकारी",
+              "title": "कैमरा विकल्प",
               "body": "तस्वीर पर दिखाने के लिए कार्यस्थल, स्थान, नोट और जानकारी की शैली चुनें।",
               "notice": null,
               "icon": {
@@ -7686,8 +7686,8 @@
             },
             {
               "id": "camera-address",
-              "title": "पता",
-              "body": "कैमरा ओवरले में जीपीएस पता प्रदर्शित करें।\n\nपता खोजने की अनुमति ऑपरेटिंग सिस्टम की स्थान अनुमति से अलग चुनी जाती है। खोज तभी शुरू होती है जब आप ऐप के पता खोज संबंधी नोटिस में इसकी अनुमति देते हैं।\n\nकैमरे में पता दिखाने के लिए TAIPOPO अक्षांश और देशांतर Android की जियोकोडिंग सेवा को भेजता है। सेवा इन निर्देशांकों को आपके डिवाइस के बाहर प्रोसेस कर सकती है। पता खोजे बिना भी आप फ़ोटो ले और सेव कर सकते हैं। आगे पता खोजना बंद करने के लिए कैमरा सेटिंग में पता दिखाना बंद करें।",
+              "title": "कार्यस्थल का पता",
+              "body": "चुने गए कार्यस्थल का सहेजा हुआ पता कैप्चर जानकारी में डिफ़ॉल्ट रूप से दिखता है। इसके लिए GPS या स्वतः पता खोज का उपयोग नहीं होता। इसे कैमरा विकल्पों में बंद कर सकते हैं; पता सहेजा न हो तो कोई पता नहीं दिखता।",
               "notice": null,
               "icon": {
                 "name": "map_outlined",
@@ -8454,9 +8454,9 @@
             },
             {
               "id": "workplace-gps-address",
-              "title": "Usar localização GPS atual para o endereço",
-              "body": "Preencha o endereço do local de trabalho com a localização atual. Confira o endereço real e corrija se necessário.\n\nA consulta de endereço é uma escolha separada da permissão de localização do sistema operacional. A consulta só começa depois de você permiti-la no aviso de consulta de endereço do aplicativo.\n\nPara encontrar o endereço do local de trabalho, o serviço de busca de endereços do seu dispositivo pode enviar as coordenadas da sua localização a um serviço externo ao dispositivo. Se você não permitir a busca, pode inserir o endereço manualmente.",
-              "notice": "O endereço do GPS pode ser diferente do endereço real do local de trabalho. Confira antes de salvar.",
+              "title": "Consulta automática de endereço indisponível",
+              "body": "Esta versão não oferece consulta automática de endereço para locais de trabalho ou câmera e não envia coordenadas a um serviço externo para geocodificação. Você pode inserir endereços manualmente, e os endereços já salvos são mantidos.",
+              "notice": "Este aviso aplica-se às versões com consulta automática de endereço bloqueada. Instalações anteriores ainda podem realizar consultas e seguem os avisos e configurações da respectiva versão. Atualizar, por si só, não exclui registros existentes nem informações já enviadas para fora do dispositivo.",
               "icon": {
                 "name": "my_location_rounded",
                 "codePoint": 63728,
@@ -9215,7 +9215,7 @@
             {
               "id": "camera-gps-record",
               "title": "Registro de localização GPS",
-              "body": "Com “Registro de localização GPS” desativado, o aplicativo não salva coordenadas no registro da foto. “Mostrar endereço” é uma configuração separada. Se ela estiver ativada e houver permissão de localização, o aplicativo pode consultar e exibir o endereço da localização atual e salvá-lo no registro da foto no momento da captura. Os dados EXIF do JPEG original são preservados sem alterações.\n\nA consulta de endereço é uma escolha separada da permissão de localização do sistema operacional. A consulta só começa depois de você permiti-la no aviso de consulta de endereço do aplicativo.\n\nPara exibir um endereço na câmera, o TAIPOPO envia a latitude e a longitude ao serviço de geocodificação do Android. O serviço pode processar as coordenadas fora do dispositivo. Você pode tirar e salvar fotos sem consultar um endereço. Para parar novas consultas, desative a exibição do endereço nos ajustes da câmera.",
+              "body": "Câmera → Opções da câmera → Registro de localização GPS\n\nEm uma nova instalação, o registro GPS fica desligado por padrão. A permissão de localização é solicitada quando você escolhe ativar o GPS na câmera. Você pode recusar ou fechar o aviso e continuar fotografando com o GPS desligado. A escolha pode ser alterada nas opções da câmera.\n\nAo ativar o registro GPS e permitir o acesso à localização, as coordenadas válidas da captura são salvas nos registros de fotos do dispositivo. Você pode tirar e salvar fotos com o GPS desligado, a permissão negada ou a localização indisponível.\n\nAs coordenadas, os endereços, as fotos existentes e os dados EXIF das fotos originais são preservados. Ao escolher compartilhar fotos ou exportar um ZIP, os arquivos enviados ao aplicativo destinatário selecionado podem incluir coordenadas e EXIF. Confira as informações incluídas antes de compartilhar.",
               "notice": null,
               "icon": {
                 "name": "location_on_rounded",
@@ -9256,7 +9256,7 @@
             },
             {
               "id": "camera-options",
-              "title": "Informações da foto",
+              "title": "Opções da câmera",
               "body": "Escolha o local de trabalho, a localização, as notas e o estilo das informações na foto.",
               "notice": null,
               "icon": {
@@ -9326,8 +9326,8 @@
             },
             {
               "id": "camera-address",
-              "title": "Endereço",
-              "body": "Exiba o endereço GPS na sobreposição da câmera.\n\nA consulta de endereço é uma escolha separada da permissão de localização do sistema operacional. A consulta só começa depois de você permiti-la no aviso de consulta de endereço do aplicativo.\n\nPara exibir um endereço na câmera, o TAIPOPO envia a latitude e a longitude ao serviço de geocodificação do Android. O serviço pode processar as coordenadas fora do dispositivo. Você pode tirar e salvar fotos sem consultar um endereço. Para parar novas consultas, desative a exibição do endereço nos ajustes da câmera.",
+              "title": "Endereço do local de trabalho",
+              "body": "O endereço salvo do local de trabalho selecionado aparece por padrão nas informações da captura. Isso não usa GPS nem consulta automática de endereço. Você pode desativá-lo nas opções da câmera; se não houver endereço salvo, nenhum é exibido.",
               "notice": null,
               "icon": {
                 "name": "map_outlined",
@@ -10094,9 +10094,9 @@
             },
             {
               "id": "workplace-gps-address",
-              "title": "Usar ubicación GPS actual para la dirección",
-              "body": "Rellena la dirección del lugar de trabajo con la ubicación actual. Compruebe la dirección real y corríjala si es necesario.\n\nLa consulta de direcciones se elige por separado del permiso de ubicación del sistema operativo. La consulta solo comienza después de que la permita en el aviso de consulta de direcciones de la aplicación.\n\nPara buscar la dirección del lugar de trabajo, el servicio de búsqueda de direcciones de tu dispositivo puede enviar las coordenadas de tu ubicación a un servicio externo al dispositivo. Si no permites la búsqueda, puedes introducir la dirección manualmente.",
-              "notice": "La dirección del GPS puede diferir de la dirección real del lugar de trabajo. Compruébela antes de guardar.",
+              "title": "Consulta automática de direcciones no disponible",
+              "body": "Esta versión no ofrece consultas automáticas de direcciones del lugar de trabajo ni de la cámara, y no envía coordenadas a un servicio externo para convertirlas en direcciones. Puede introducir direcciones manualmente y se conservan las ya guardadas.",
+              "notice": "Este aviso se aplica a las versiones con la consulta automática de direcciones bloqueada. Las instalaciones anteriores pueden seguir realizando consultas y se rigen por los avisos y ajustes de su versión. Actualizar no elimina por sí solo los registros existentes ni la información ya enviada fuera del dispositivo.",
               "icon": {
                 "name": "my_location_rounded",
                 "codePoint": 63728,
@@ -10855,7 +10855,7 @@
             {
               "id": "camera-gps-record",
               "title": "Registro de ubicación GPS",
-              "body": "Al desactivar «Registro de ubicación GPS», la aplicación no guarda coordenadas en el registro de la foto. «Mostrar dirección» es un ajuste independiente. Si lo activas y concedes el permiso de ubicación, la aplicación puede consultar y mostrar la dirección de tu ubicación actual y guardarla en el registro de la foto al tomarla. Los datos EXIF del JPEG original se conservan tal como están.\n\nLa consulta de direcciones se elige por separado del permiso de ubicación del sistema operativo. La consulta solo comienza después de que la permita en el aviso de consulta de direcciones de la aplicación.\n\nPara mostrar una dirección en la cámara, TAIPOPO envía la latitud y la longitud al servicio de geocodificación de Android. El servicio puede procesar las coordenadas fuera del dispositivo. Puedes tomar y guardar fotos sin consultar la dirección. Desactiva la visualización de la dirección en los ajustes de la cámara para detener futuras consultas.",
+              "body": "cámara → Opciones de cámara → Registro de ubicación GPS\n\nEl registro GPS está desactivado por defecto en una instalación nueva. El permiso de ubicación se solicita cuando elige activar el GPS en la cámara. Puede rechazarlo o cerrar el aviso y seguir tomando fotos con el GPS desactivado. Puede cambiarlo cuando quiera en las opciones de la cámara.\n\nSi activa el registro GPS y concede el permiso de ubicación, las coordenadas válidas de captura se guardan en los registros de fotos del dispositivo. Puede tomar y guardar fotos con el GPS desactivado, el permiso denegado o la ubicación no disponible.\n\nSe conservan las coordenadas, direcciones, fotos y datos EXIF de las fotos originales existentes. Si decide compartir fotos o exportar un ZIP, los archivos enviados a la aplicación elegida pueden incluir coordenadas y datos EXIF. Revise la información incluida antes de compartir.",
               "notice": null,
               "icon": {
                 "name": "location_on_rounded",
@@ -10896,7 +10896,7 @@
             },
             {
               "id": "camera-options",
-              "title": "Información de captura",
+              "title": "Opciones de cámara",
               "body": "Elige el lugar de trabajo, la ubicación, las notas y el estilo de información que aparecerán en la foto.",
               "notice": null,
               "icon": {
@@ -10966,8 +10966,8 @@
             },
             {
               "id": "camera-address",
-              "title": "Dirección",
-              "body": "Muestra la dirección GPS en la superposición de la cámara.\n\nLa consulta de direcciones se elige por separado del permiso de ubicación del sistema operativo. La consulta solo comienza después de que la permita en el aviso de consulta de direcciones de la aplicación.\n\nPara mostrar una dirección en la cámara, TAIPOPO envía la latitud y la longitud al servicio de geocodificación de Android. El servicio puede procesar las coordenadas fuera del dispositivo. Puedes tomar y guardar fotos sin consultar la dirección. Desactiva la visualización de la dirección en los ajustes de la cámara para detener futuras consultas.",
+              "title": "Dirección del lugar de trabajo",
+              "body": "La dirección guardada del lugar de trabajo seleccionado se muestra de forma predeterminada en la información de captura. No utiliza GPS ni consulta automática de direcciones. Puede desactivarla en las opciones de la cámara; si no hay una dirección guardada, no se muestra ninguna.",
               "notice": null,
               "icon": {
                 "name": "map_outlined",
@@ -11734,9 +11734,9 @@
             },
             {
               "id": "workplace-gps-address",
-              "title": "Utiliser l’adresse de la position GPS actuelle",
-              "body": "Renseignez l’adresse du lieu de travail à partir de votre position actuelle. Vérifiez l’adresse réelle et corrigez-la si nécessaire.\n\nLa recherche d’adresse est un choix distinct de l’autorisation de localisation du système d’exploitation. Une recherche ne commence qu’après votre autorisation dans l’avis de recherche d’adresse de l’application.\n\nPour trouver l’adresse du lieu de travail, le service de recherche d’adresses de votre appareil peut envoyer vos coordonnées de localisation à un service externe à l’appareil. Si vous refusez la recherche, vous pouvez saisir l’adresse manuellement.",
-              "notice": "L’adresse GPS peut différer de l’adresse réelle du lieu de travail. Vérifiez-la avant d’enregistrer.",
+              "title": "Recherche automatique d’adresse indisponible",
+              "body": "Cette version ne propose pas de recherche automatique d’adresse pour les lieux de travail ou l’appareil photo et n’envoie pas de coordonnées à un service d’adresses externe pour le géocodage. Vous pouvez saisir les adresses manuellement ; les adresses déjà enregistrées sont conservées.",
+              "notice": "Cet avis concerne les versions où la recherche automatique d’adresse est bloquée. Les installations antérieures peuvent encore effectuer des recherches et restent régies par les avis et réglages de leur version. Une mise à jour seule ne supprime ni les fiches existantes ni les informations déjà transmises hors de l’appareil.",
               "icon": {
                 "name": "my_location_rounded",
                 "codePoint": 63728,
@@ -12495,7 +12495,7 @@
             {
               "id": "camera-gps-record",
               "title": "Enregistrement de localisation GPS",
-              "body": "Lorsque « Enregistrement de localisation GPS » est désactivé, l’application n’enregistre pas de coordonnées dans la fiche de la photo. « Afficher l'adresse » est un réglage distinct. Si ce réglage est activé et que l’accès à la localisation est autorisé, l’application peut rechercher et afficher l’adresse correspondant à la position actuelle et l’enregistrer dans la fiche de la photo lors de la prise de vue. Les données EXIF présentes dans le JPEG d’origine sont conservées telles quelles.\n\nLa recherche d’adresse est un choix distinct de l’autorisation de localisation du système d’exploitation. Une recherche ne commence qu’après votre autorisation dans l’avis de recherche d’adresse de l’application.\n\nPour afficher une adresse dans l’appareil photo, TAIPOPO transmet la latitude et la longitude au service de géocodage Android. Ce service peut traiter les coordonnées en dehors de votre appareil. Vous pouvez prendre et enregistrer des photos sans rechercher d’adresse. Désactivez l’affichage de l’adresse dans les réglages de l’appareil photo pour arrêter les recherches.",
+              "body": "Appareil photo → Options de l’appareil photo → Enregistrement de localisation GPS\n\nL’enregistrement GPS est désactivé par défaut lors d’une nouvelle installation. L’autorisation de localisation est demandée lorsque vous choisissez d’activer le GPS dans l’appareil photo. Vous pouvez refuser ou fermer l’avis et continuer à photographier sans GPS. Ce choix reste modifiable dans les options de l’appareil photo.\n\nSi vous activez l’enregistrement GPS et autorisez la localisation, les coordonnées de prise de vue valides sont enregistrées dans les fiches photo de votre appareil. Vous pouvez prendre et enregistrer des photos même avec le GPS désactivé, l’autorisation refusée ou la localisation indisponible.\n\nLes coordonnées, adresses, photos existantes et données EXIF des photos originales sont conservées. Lorsque vous choisissez de partager des photos ou d’exporter un ZIP, les fichiers transmis à l’application destinataire choisie peuvent contenir des coordonnées et des données EXIF. Vérifiez leur contenu avant le partage.",
               "notice": null,
               "icon": {
                 "name": "location_on_rounded",
@@ -12536,7 +12536,7 @@
             },
             {
               "id": "camera-options",
-              "title": "Informations de prise de vue",
+              "title": "Options de l’appareil photo",
               "body": "Choisissez le lieu de travail, la position, les notes et la présentation des informations sur la photo.",
               "notice": null,
               "icon": {
@@ -12606,8 +12606,8 @@
             },
             {
               "id": "camera-address",
-              "title": "Adresse",
-              "body": "Affichez l'adresse GPS dans la superposition de la caméra.\n\nLa recherche d’adresse est un choix distinct de l’autorisation de localisation du système d’exploitation. Une recherche ne commence qu’après votre autorisation dans l’avis de recherche d’adresse de l’application.\n\nPour afficher une adresse dans l’appareil photo, TAIPOPO transmet la latitude et la longitude au service de géocodage Android. Ce service peut traiter les coordonnées en dehors de votre appareil. Vous pouvez prendre et enregistrer des photos sans rechercher d’adresse. Désactivez l’affichage de l’adresse dans les réglages de l’appareil photo pour arrêter les recherches.",
+              "title": "Adresse du lieu de travail",
+              "body": "L’adresse enregistrée du lieu de travail sélectionné apparaît par défaut dans les informations de prise de vue. Cela n’utilise ni le GPS ni une recherche automatique d’adresse. Vous pouvez désactiver cet affichage dans les options ; aucune adresse n’apparaît si aucune n’est enregistrée.",
               "notice": null,
               "icon": {
                 "name": "map_outlined",
@@ -13374,9 +13374,9 @@
             },
             {
               "id": "workplace-gps-address",
-              "title": "Adresse aus aktuellem GPS-Standort",
-              "body": "Übernehmen Sie die Adresse Ihres aktuellen Standorts als Arbeitsstättenadresse. Prüfen und korrigieren Sie sie bei Bedarf.\n\nDie Adressabfrage wird getrennt von der Standortberechtigung des Betriebssystems gewählt. Eine Abfrage beginnt erst, nachdem Sie ihr im Hinweis zur Adressabfrage in der App zugestimmt haben.\n\nDer Adressdienst deines Geräts kann deine Standortkoordinaten an einen Dienst außerhalb des Geräts senden, um die Adresse des Arbeitsplatzes zu ermitteln. Wenn du das nicht erlaubst, kannst du die Adresse von Hand eingeben.",
-              "notice": "Die GPS-Adresse kann von der tatsächlichen Arbeitsstättenadresse abweichen. Prüfen Sie die Adresse vor dem Speichern.",
+              "title": "Automatische Adressabfrage nicht verfügbar",
+              "body": "Diese Version bietet keine automatische Adressabfrage für Arbeitsstätten oder die Kamera und sendet keine Koordinaten zur Geokodierung an einen externen Adressdienst. Adressen können Sie manuell eingeben; bereits gespeicherte Adressen bleiben erhalten.",
+              "notice": "Dieser Hinweis gilt für Versionen mit gesperrter automatischer Adressabfrage. Frühere Installationen können weiterhin Adressen abfragen; für sie gelten die Hinweise und Einstellungen ihrer Version. Ein Update allein löscht weder vorhandene Datensätze noch bereits außerhalb des Geräts übermittelte Informationen.",
               "icon": {
                 "name": "my_location_rounded",
                 "codePoint": 63728,
@@ -14135,7 +14135,7 @@
             {
               "id": "camera-gps-record",
               "title": "GPS-Standortaufzeichnung",
-              "body": "Wenn „GPS-Standortaufzeichnung“ deaktiviert ist, speichert die App keine Koordinaten im Fotodatensatz. „Adresse anzeigen“ ist eine separate Einstellung. Wenn sie aktiviert ist und die Standortberechtigung erteilt wurde, kann die App die Adresse anhand des aktuellen Standorts ermitteln, anzeigen und bei der Aufnahme im Fotodatensatz speichern. Die im Original-JPEG enthaltenen EXIF-Daten bleiben unverändert.\n\nDie Adressabfrage wird getrennt von der Standortberechtigung des Betriebssystems gewählt. Eine Abfrage beginnt erst, nachdem Sie ihr im Hinweis zur Adressabfrage in der App zugestimmt haben.\n\nUm in der Kamera eine Adresse anzuzeigen, übermittelt TAIPOPO Breiten- und Längengrad an den Geokodierungsdienst von Android. Die Koordinaten können außerhalb Ihres Geräts verarbeitet werden. Sie können auch ohne Adressabfrage Fotos aufnehmen und speichern. Zum Beenden der Abfragen schalten Sie die Adressanzeige in den Kameraeinstellungen aus.",
+              "body": "Kamera → Kameraoptionen → GPS-Standortaufzeichnung\n\nBei einer Neuinstallation ist die GPS-Aufzeichnung standardmäßig AUS. Die Standortberechtigung wird angefragt, wenn Sie GPS in der Kamera einschalten. Sie können ablehnen oder den Hinweis schließen und mit ausgeschaltetem GPS weiter fotografieren. Die Auswahl lässt sich jederzeit in den Kameraoptionen ändern.\n\nWenn Sie die GPS-Aufzeichnung aktivieren und den Standortzugriff erlauben, werden gültige Aufnahmekoordinaten in den Fotodatensätzen auf Ihrem Gerät gespeichert. Auch bei ausgeschaltetem GPS, verweigerter Berechtigung oder nicht verfügbarem Standort können Sie Fotos aufnehmen und speichern.\n\nVorhandene Koordinaten, Adressen, Fotos und EXIF-Daten der Originalfotos bleiben erhalten. Wenn Sie Fotos teilen oder eine ZIP-Datei exportieren, können Koordinaten und EXIF-Daten in den Dateien an die gewählte Empfänger-App enthalten sein. Prüfen Sie die enthaltenen Informationen vor dem Teilen.",
               "notice": null,
               "icon": {
                 "name": "location_on_rounded",
@@ -14176,7 +14176,7 @@
             },
             {
               "id": "camera-options",
-              "title": "Aufnahmeinformationen",
+              "title": "Kameraoptionen",
               "body": "Wählen Sie Arbeitsort, Standort, Notizen und Darstellungsweise für die Informationen auf dem Foto.",
               "notice": null,
               "icon": {
@@ -14246,8 +14246,8 @@
             },
             {
               "id": "camera-address",
-              "title": "Adresse",
-              "body": "Zeigen Sie die GPS-Adresse im Kamera-Overlay an.\n\nDie Adressabfrage wird getrennt von der Standortberechtigung des Betriebssystems gewählt. Eine Abfrage beginnt erst, nachdem Sie ihr im Hinweis zur Adressabfrage in der App zugestimmt haben.\n\nUm in der Kamera eine Adresse anzuzeigen, übermittelt TAIPOPO Breiten- und Längengrad an den Geokodierungsdienst von Android. Die Koordinaten können außerhalb Ihres Geräts verarbeitet werden. Sie können auch ohne Adressabfrage Fotos aufnehmen und speichern. Zum Beenden der Abfragen schalten Sie die Adressanzeige in den Kameraeinstellungen aus.",
+              "title": "Adresse der Arbeitsstätte",
+              "body": "Die gespeicherte Adresse der gewählten Arbeitsstätte wird standardmäßig in den Aufnahmeinformationen angezeigt. Dafür werden weder GPS noch eine automatische Adressabfrage verwendet. Sie können dies in den Kameraoptionen ausschalten; ohne gespeicherte Adresse wird keine angezeigt.",
               "notice": null,
               "icon": {
                 "name": "map_outlined",
@@ -15014,9 +15014,9 @@
             },
             {
               "id": "workplace-gps-address",
-              "title": "Isi alamat dari lokasi GPS saat ini",
-              "body": "Isi alamat tempat kerja dari lokasi saat ini. Periksa alamat sebenarnya dan ubah jika perlu.\n\nPencarian alamat dipilih secara terpisah dari izin lokasi sistem operasi. Pencarian baru dimulai setelah Anda mengizinkannya dalam pemberitahuan pencarian alamat di aplikasi.\n\nUntuk mencari alamat tempat kerja, layanan pencarian alamat di perangkat Anda dapat mengirim koordinat lokasi Anda ke layanan di luar perangkat. Jika Anda tidak mengizinkan pencarian, Anda dapat memasukkan alamat secara manual.",
-              "notice": "Alamat GPS mungkin berbeda dari alamat tempat kerja yang sebenarnya. Periksa alamat sebelum menyimpan.",
+              "title": "Pencarian alamat otomatis tidak tersedia",
+              "body": "Versi ini tidak menyediakan pencarian alamat otomatis untuk tempat kerja atau kamera dan tidak mengirim koordinat ke layanan alamat eksternal untuk geocoding. Anda dapat memasukkan alamat secara manual, dan alamat yang sudah disimpan tetap dipertahankan.",
+              "notice": "Pemberitahuan ini berlaku untuk versi yang memblokir pencarian alamat otomatis. Instalasi versi sebelumnya mungkin masih melakukan pencarian dan tetap mengikuti pemberitahuan serta pengaturan versinya. Pembaruan saja tidak menghapus catatan yang ada atau informasi yang sudah dikirim ke luar perangkat.",
               "icon": {
                 "name": "my_location_rounded",
                 "codePoint": 63728,
@@ -15775,7 +15775,7 @@
             {
               "id": "camera-gps-record",
               "title": "Catatan Lokasi GPS",
-              "body": "Jika “Catatan Lokasi GPS” dimatikan, aplikasi tidak menyimpan koordinat dalam catatan foto. “Tampilkan Alamat” adalah pengaturan terpisah. Jika pengaturan ini diaktifkan dan izin lokasi diberikan, aplikasi dapat mencari dan menampilkan alamat berdasarkan lokasi saat ini, lalu menyimpannya dalam catatan foto saat foto diambil. Data EXIF yang ada pada JPEG asli dipertahankan apa adanya.\n\nPencarian alamat dipilih secara terpisah dari izin lokasi sistem operasi. Pencarian baru dimulai setelah Anda mengizinkannya dalam pemberitahuan pencarian alamat di aplikasi.\n\nUntuk menampilkan alamat di kamera, TAIPOPO mengirim lintang dan bujur ke layanan geokode Android. Layanan dapat memproses koordinat di luar perangkat. Anda dapat mengambil dan menyimpan foto tanpa mencari alamat. Nonaktifkan tampilan alamat di setelan kamera untuk menghentikan pencarian berikutnya.",
+              "body": "Kamera → Opsi kamera → Catatan Lokasi GPS\n\nPada instalasi baru, pencatatan GPS mati secara default. Izin lokasi diminta saat Anda memilih mengaktifkan GPS di kamera. Anda dapat menolak atau menutup pemberitahuan dan tetap memotret dengan GPS mati. Pilihan ini dapat diubah kapan saja di opsi kamera.\n\nJika Anda mengaktifkan pencatatan GPS dan mengizinkan akses lokasi, koordinat pemotretan yang valid disimpan dalam catatan foto di perangkat. Anda tetap dapat mengambil dan menyimpan foto saat GPS mati, izin ditolak, atau lokasi tidak tersedia.\n\nKoordinat, alamat, foto yang ada, serta EXIF foto asli dipertahankan. Saat Anda memilih berbagi foto atau mengekspor ZIP, koordinat dan EXIF dapat disertakan dalam berkas yang dikirim ke aplikasi penerima pilihan Anda. Periksa informasi yang disertakan sebelum berbagi.",
               "notice": null,
               "icon": {
                 "name": "location_on_rounded",
@@ -15816,7 +15816,7 @@
             },
             {
               "id": "camera-options",
-              "title": "Informasi pemotretan",
+              "title": "Opsi kamera",
               "body": "Pilih tempat kerja, lokasi, catatan, dan tampilan informasi yang akan ditampilkan pada foto.",
               "notice": null,
               "icon": {
@@ -15886,8 +15886,8 @@
             },
             {
               "id": "camera-address",
-              "title": "Alamat",
-              "body": "Tampilkan alamat GPS di overlay kamera.\n\nPencarian alamat dipilih secara terpisah dari izin lokasi sistem operasi. Pencarian baru dimulai setelah Anda mengizinkannya dalam pemberitahuan pencarian alamat di aplikasi.\n\nUntuk menampilkan alamat di kamera, TAIPOPO mengirim lintang dan bujur ke layanan geokode Android. Layanan dapat memproses koordinat di luar perangkat. Anda dapat mengambil dan menyimpan foto tanpa mencari alamat. Nonaktifkan tampilan alamat di setelan kamera untuk menghentikan pencarian berikutnya.",
+              "title": "Alamat tempat kerja",
+              "body": "Alamat tersimpan dari tempat kerja yang dipilih ditampilkan secara default dalam informasi pemotretan. Ini tidak menggunakan GPS atau pencarian alamat otomatis. Anda dapat mematikannya di opsi kamera; alamat tidak ditampilkan jika belum ada yang disimpan.",
               "notice": null,
               "icon": {
                 "name": "map_outlined",
@@ -16654,9 +16654,9 @@
             },
             {
               "id": "workplace-gps-address",
-              "title": "Điền địa chỉ từ vị trí GPS hiện tại",
-              "body": "Điền địa chỉ nơi làm việc từ vị trí hiện tại. Kiểm tra địa chỉ thực tế và sửa nếu cần.\n\nTra cứu địa chỉ là lựa chọn riêng với quyền vị trí của hệ điều hành. Việc tra cứu chỉ bắt đầu sau khi bạn cho phép trong thông báo tra cứu địa chỉ của ứng dụng.\n\nĐể tìm địa chỉ nơi làm việc, dịch vụ tra cứu địa chỉ trên thiết bị có thể gửi tọa độ vị trí của bạn đến một dịch vụ bên ngoài thiết bị. Nếu không cho phép tra cứu, bạn vẫn có thể nhập địa chỉ thủ công.",
-              "notice": "Địa chỉ GPS có thể khác địa chỉ nơi làm việc thực tế. Hãy kiểm tra địa chỉ trước khi lưu.",
+              "title": "Không có tra cứu địa chỉ tự động",
+              "body": "Phiên bản này không cung cấp tra cứu địa chỉ tự động cho nơi làm việc hoặc máy ảnh và không gửi tọa độ đến dịch vụ địa chỉ bên ngoài để chuyển đổi. Bạn có thể nhập địa chỉ thủ công; địa chỉ đã lưu vẫn được giữ lại.",
+              "notice": "Thông báo này áp dụng cho phiên bản đã chặn tra cứu địa chỉ tự động. Các bản cài đặt cũ có thể vẫn tra cứu và áp dụng thông báo, cài đặt của phiên bản đó. Chỉ cập nhật không xóa bản ghi hiện có hoặc thông tin đã gửi ra ngoài thiết bị.",
               "icon": {
                 "name": "my_location_rounded",
                 "codePoint": 63728,
@@ -17415,7 +17415,7 @@
             {
               "id": "camera-gps-record",
               "title": "Bản ghi vị trí GPS",
-              "body": "Khi tắt “Bản ghi vị trí GPS”, ứng dụng không lưu tọa độ vào bản ghi ảnh. “Hiển thị địa chỉ” là một cài đặt riêng. Khi bật cài đặt này và cấp quyền vị trí, ứng dụng có thể tra và hiển thị địa chỉ theo vị trí hiện tại, rồi lưu địa chỉ vào bản ghi ảnh khi chụp. Dữ liệu EXIF trong JPEG gốc được giữ nguyên.\n\nTra cứu địa chỉ là lựa chọn riêng với quyền vị trí của hệ điều hành. Việc tra cứu chỉ bắt đầu sau khi bạn cho phép trong thông báo tra cứu địa chỉ của ứng dụng.\n\nĐể hiển thị địa chỉ trong máy ảnh, TAIPOPO gửi vĩ độ và kinh độ tới dịch vụ tra địa chỉ của Android. Dịch vụ có thể xử lý tọa độ bên ngoài thiết bị. Bạn vẫn có thể chụp và lưu ảnh khi không tra địa chỉ. Để dừng các lượt tra cứu sau, hãy tắt hiển thị địa chỉ trong cài đặt máy ảnh.",
+              "body": "Máy ảnh → Tùy chọn máy ảnh → Bản ghi vị trí GPS\n\nKhi cài mới, ghi GPS mặc định TẮT. Quyền vị trí được yêu cầu khi bạn chọn bật GPS trong máy ảnh. Bạn có thể từ chối hoặc đóng thông báo rồi tiếp tục chụp khi GPS tắt. Có thể thay đổi lựa chọn trong tùy chọn máy ảnh.\n\nKhi bật ghi GPS và cho phép vị trí, tọa độ chụp hợp lệ được lưu trong bản ghi ảnh trên thiết bị. Bạn vẫn có thể chụp và lưu ảnh khi tắt GPS, từ chối quyền hoặc không lấy được vị trí.\n\nTọa độ, địa chỉ, ảnh hiện có và EXIF của ảnh gốc được giữ nguyên. Khi bạn chọn chia sẻ ảnh hoặc xuất ZIP, tệp gửi đến ứng dụng nhận đã chọn có thể chứa tọa độ và EXIF. Hãy kiểm tra thông tin có trong tệp trước khi chia sẻ.",
               "notice": null,
               "icon": {
                 "name": "location_on_rounded",
@@ -17456,7 +17456,7 @@
             },
             {
               "id": "camera-options",
-              "title": "Thông tin chụp ảnh",
+              "title": "Tùy chọn máy ảnh",
               "body": "Chọn nơi làm việc, vị trí, ghi chú và cách hiển thị thông tin trên ảnh.",
               "notice": null,
               "icon": {
@@ -17526,8 +17526,8 @@
             },
             {
               "id": "camera-address",
-              "title": "Địa chỉ",
-              "body": "Hiển thị địa chỉ GPS trong lớp phủ camera.\n\nTra cứu địa chỉ là lựa chọn riêng với quyền vị trí của hệ điều hành. Việc tra cứu chỉ bắt đầu sau khi bạn cho phép trong thông báo tra cứu địa chỉ của ứng dụng.\n\nĐể hiển thị địa chỉ trong máy ảnh, TAIPOPO gửi vĩ độ và kinh độ tới dịch vụ tra địa chỉ của Android. Dịch vụ có thể xử lý tọa độ bên ngoài thiết bị. Bạn vẫn có thể chụp và lưu ảnh khi không tra địa chỉ. Để dừng các lượt tra cứu sau, hãy tắt hiển thị địa chỉ trong cài đặt máy ảnh.",
+              "title": "Địa chỉ nơi làm việc",
+              "body": "Địa chỉ đã lưu của nơi làm việc được chọn hiển thị mặc định trong thông tin chụp. Việc này không dùng GPS hay tra cứu địa chỉ tự động. Bạn có thể tắt trong tùy chọn máy ảnh; nếu chưa lưu địa chỉ thì không hiển thị.",
               "notice": null,
               "icon": {
                 "name": "map_outlined",
@@ -18294,9 +18294,9 @@
             },
             {
               "id": "workplace-gps-address",
-              "title": "Ввести адрес по текущему местоположению GPS",
-              "body": "Заполните адрес места работы по текущему местоположению. Проверьте фактический адрес и при необходимости исправьте его.\n\nПоиск адреса выбирается отдельно от разрешения операционной системы на доступ к местоположению. Поиск начинается только после вашего разрешения в уведомлении о поиске адреса в приложении.\n\nЧтобы найти адрес места работы, служба поиска адресов на вашем устройстве может отправить координаты вашего местоположения в сервис за пределами устройства. Если вы не разрешите поиск, адрес можно ввести вручную.",
-              "notice": "Адрес GPS может отличаться от фактического адреса места работы. Проверьте его перед сохранением.",
+              "title": "Автоматический поиск адреса недоступен",
+              "body": "Эта версия не предоставляет автоматический поиск адресов для рабочих мест и камеры и не отправляет координаты во внешнюю адресную службу для геокодирования. Адреса можно вводить вручную; ранее сохранённые адреса остаются.",
+              "notice": "Это уведомление относится к версиям с заблокированным автоматическим поиском адресов. Ранее установленные версии могут продолжать поиск и регулируются уведомлениями и настройками своей версии. Одно обновление не удаляет существующие записи или сведения, уже переданные за пределы устройства.",
               "icon": {
                 "name": "my_location_rounded",
                 "codePoint": 63728,
@@ -19055,7 +19055,7 @@
             {
               "id": "camera-gps-record",
               "title": "Запись местоположения GPS",
-              "body": "Если настройка «Запись местоположения GPS» выключена, приложение не сохраняет координаты в записи о снимке. «Показать адрес» — отдельная настройка. Если она включена и доступ к местоположению разрешён, приложение может определить и показать адрес по текущему местоположению и сохранить его в записи о снимке при съёмке. Данные EXIF исходного JPEG сохраняются без изменений.\n\nПоиск адреса выбирается отдельно от разрешения операционной системы на доступ к местоположению. Поиск начинается только после вашего разрешения в уведомлении о поиске адреса в приложении.\n\nЧтобы показать адрес в камере, TAIPOPO передаёт широту и долготу службе геокодирования Android. Служба может обработать координаты за пределами устройства. Можно снимать и сохранять фото без определения адреса. Чтобы прекратить новые запросы, отключите показ адреса в настройках камеры.",
+              "body": "Камера → Параметры камеры → Запись местоположения GPS\n\nПри новой установке запись GPS по умолчанию выключена. Разрешение на местоположение запрашивается, когда вы выбираете включение GPS в камере. Можно отказаться или закрыть уведомление и продолжить съёмку без GPS. Выбор можно изменить в параметрах камеры.\n\nЕсли включить запись GPS и разрешить доступ к местоположению, допустимые координаты съёмки сохраняются в записях фотографий на устройстве. Можно снимать и сохранять фотографии и при выключенном GPS, отказе в разрешении или недоступном местоположении.\n\nСуществующие координаты, адреса, фотографии и EXIF оригинальных фотографий сохраняются. Если вы выбираете отправку фотографий или экспорт ZIP, файлы, передаваемые выбранному приложению-получателю, могут содержать координаты и EXIF. Перед отправкой проверьте включённую информацию.",
               "notice": null,
               "icon": {
                 "name": "location_on_rounded",
@@ -19096,7 +19096,7 @@
             },
             {
               "id": "camera-options",
-              "title": "Информация о съёмке",
+              "title": "Параметры камеры",
               "body": "Выберите место работы, местоположение, заметки и способ отображения информации на фотографии.",
               "notice": null,
               "icon": {
@@ -19166,8 +19166,8 @@
             },
             {
               "id": "camera-address",
-              "title": "Адрес",
-              "body": "Отобразите адрес GPS в наложении камеры.\n\nПоиск адреса выбирается отдельно от разрешения операционной системы на доступ к местоположению. Поиск начинается только после вашего разрешения в уведомлении о поиске адреса в приложении.\n\nЧтобы показать адрес в камере, TAIPOPO передаёт широту и долготу службе геокодирования Android. Служба может обработать координаты за пределами устройства. Можно снимать и сохранять фото без определения адреса. Чтобы прекратить новые запросы, отключите показ адреса в настройках камеры.",
+              "title": "Адрес рабочего места",
+              "body": "Сохранённый адрес выбранного рабочего места по умолчанию отображается в информации о съёмке. Для этого не используются GPS или автоматический поиск адреса. Отображение можно отключить в параметрах камеры; если адрес не сохранён, он не показывается.",
               "notice": null,
               "icon": {
                 "name": "map_outlined",
@@ -19934,9 +19934,9 @@
             },
             {
               "id": "workplace-gps-address",
-              "title": "Adresi mevcut GPS konumundan doldur",
-              "body": "Mevcut konumunuzdan işyeri adresini doldurun. Gerçek adresi kontrol edip gerektiğinde düzeltin.\n\nAdres araması, işletim sisteminin konum izninden ayrı bir seçimdir. Arama yalnızca uygulamadaki adres arama bildiriminde izin vermenizden sonra başlar.\n\nCihazınızdaki adres arama hizmeti, iş yeri adresini bulmak için konum koordinatlarınızı cihaz dışındaki bir hizmete gönderebilir. Aramaya izin vermezseniz adresi elle girebilirsiniz.",
-              "notice": "GPS adresi gerçek işyeri adresinden farklı olabilir. Kaydetmeden önce gerçek adresi kontrol edin.",
+              "title": "Otomatik adres araması kullanılamıyor",
+              "body": "Bu sürüm, iş yeri veya kamera için otomatik adres araması sunmaz ve adres dönüşümü için koordinatları haricî bir adres hizmetine göndermez. Adresleri elle girebilirsiniz; kayıtlı adresler korunur.",
+              "notice": "Bu bildirim, otomatik adres araması engellenmiş sürümler için geçerlidir. Önceden yüklenmiş sürümler adres aramaya devam edebilir ve kendi sürümlerinin bildirim ve ayarlarına tabidir. Güncelleme tek başına mevcut kayıtları veya cihaz dışına daha önce gönderilen bilgileri silmez.",
               "icon": {
                 "name": "my_location_rounded",
                 "codePoint": 63728,
@@ -20695,7 +20695,7 @@
             {
               "id": "camera-gps-record",
               "title": "GPS Konum Kaydı",
-              "body": "“GPS Konum Kaydı” kapalıyken uygulama, fotoğraf kaydına koordinat kaydetmez. “Adresi Göster” ayrı bir ayardır. Bu ayar açıksa ve konum izni verilmişse uygulama, mevcut konumdan adresi bulup gösterebilir ve çekim sırasında fotoğraf kaydına kaydedebilir. Orijinal JPEG dosyasındaki EXIF bilgileri olduğu gibi korunur.\n\nAdres araması, işletim sisteminin konum izninden ayrı bir seçimdir. Arama yalnızca uygulamadaki adres arama bildiriminde izin vermenizden sonra başlar.\n\nKamerada adres göstermek için TAIPOPO, enlem ve boylamı Android adres bulma hizmetine gönderir. Hizmet koordinatları cihazınızın dışında işleyebilir. Adres aramadan da fotoğraf çekip kaydedebilirsiniz. Yeni sorguları durdurmak için kamera ayarlarında adres gösterimini kapatın.",
+              "body": "Kamera → Kamera seçenekleri → GPS Konum Kaydı\n\nYeni kurulumda GPS kaydı varsayılan olarak KAPALIDIR. Konum izni, kamerada GPS'yi açmayı seçtiğinizde istenir. İzni reddedip veya bildirimi kapatıp GPS kapalıyken çekime devam edebilirsiniz. Seçiminizi kamera seçeneklerinden değiştirebilirsiniz.\n\nGPS kaydını açıp konum izni verdiğinizde, geçerli çekim koordinatları cihazınızdaki fotoğraf kayıtlarına kaydedilir. GPS kapalıyken, izin reddedildiğinde veya konum alınamadığında da fotoğraf çekip kaydedebilirsiniz.\n\nMevcut koordinatlar, adresler, fotoğraflar ve orijinal fotoğrafların EXIF verileri korunur. Fotoğraf paylaşmayı veya ZIP dışa aktarmayı seçtiğinizde, seçilen alıcı uygulamaya gönderilen dosyalarda koordinatlar ve EXIF bulunabilir. Paylaşmadan önce içerilen bilgileri kontrol edin.",
               "notice": null,
               "icon": {
                 "name": "location_on_rounded",
@@ -20736,7 +20736,7 @@
             },
             {
               "id": "camera-options",
-              "title": "Çekim bilgileri",
+              "title": "Kamera seçenekleri",
               "body": "Fotoğrafta gösterilecek iş yerini, konumu, notları ve bilgi görünümünü seçin.",
               "notice": null,
               "icon": {
@@ -20806,8 +20806,8 @@
             },
             {
               "id": "camera-address",
-              "title": "Adres",
-              "body": "GPS adresini kamera arayüzünde görüntüleyin.\n\nAdres araması, işletim sisteminin konum izninden ayrı bir seçimdir. Arama yalnızca uygulamadaki adres arama bildiriminde izin vermenizden sonra başlar.\n\nKamerada adres göstermek için TAIPOPO, enlem ve boylamı Android adres bulma hizmetine gönderir. Hizmet koordinatları cihazınızın dışında işleyebilir. Adres aramadan da fotoğraf çekip kaydedebilirsiniz. Yeni sorguları durdurmak için kamera ayarlarında adres gösterimini kapatın.",
+              "title": "İş yeri adresi",
+              "body": "Seçilen iş yerinin kayıtlı adresi, çekim bilgilerinde varsayılan olarak gösterilir. Bunun için GPS veya otomatik adres araması kullanılmaz. Kamera seçeneklerinden kapatabilirsiniz; kayıtlı adres yoksa adres gösterilmez.",
               "notice": null,
               "icon": {
                 "name": "map_outlined",
@@ -21574,9 +21574,9 @@
             },
             {
               "id": "workplace-gps-address",
-              "title": "إدخال العنوان من موقع GPS الحالي",
-              "body": "املأ عنوان مكان العمل من موقعك الحالي. تحقق من العنوان الفعلي وعدّله عند الحاجة.\n\nالبحث عن العنوان خيار منفصل عن إذن الموقع في نظام التشغيل. لا يبدأ البحث إلا بعد السماح به في إشعار البحث عن العنوان داخل التطبيق.\n\nقد ترسل خدمة تحويل الإحداثيات إلى عناوين على جهازك إحداثيات موقعك إلى خدمة خارج الجهاز للعثور على عنوان مكان العمل. إذا لم تسمح بذلك، يمكنك إدخال العنوان يدويًا.",
-              "notice": "قد يختلف عنوان GPS عن عنوان مكان العمل الفعلي. تحقق من العنوان الفعلي قبل الحفظ.",
+              "title": "البحث التلقائي عن العنوان غير متاح",
+              "body": "لا يوفر هذا الإصدار البحث التلقائي عن عنوان مكان العمل أو الكاميرا، ولا يرسل الإحداثيات إلى خدمة عناوين خارجية لتحويلها إلى عنوان. يمكنك إدخال العناوين يدويًا، وتبقى العناوين المحفوظة سابقًا محفوظة.",
+              "notice": "ينطبق هذا الإشعار على الإصدارات التي حُظر فيها البحث التلقائي عن العنوان. قد تظل الإصدارات المثبتة سابقًا تجري عمليات بحث، وتخضع لإشعارات إصدارها وإعداداته. لا يؤدي التحديث وحده إلى حذف السجلات الحالية أو المعلومات التي سبق إرسالها خارج الجهاز.",
               "icon": {
                 "name": "my_location_rounded",
                 "codePoint": 63728,
@@ -22335,7 +22335,7 @@
             {
               "id": "camera-gps-record",
               "title": "سجل موقع GPS",
-              "body": "عند إيقاف «سجل موقع GPS»، لا تُحفَظ الإحداثيات في سجل الصورة داخل التطبيق. «إظهار العنوان» إعداد مستقل. عند تفعيله والسماح للتطبيق بالوصول إلى الموقع، يمكن تحديد العنوان من موقعك الحالي وعرضه وحفظه في سجل الصورة عند التقاطها. تُحفَظ بيانات EXIF الموجودة في ملف JPEG الأصلي كما هي.\n\nالبحث عن العنوان خيار منفصل عن إذن الموقع في نظام التشغيل. لا يبدأ البحث إلا بعد السماح به في إشعار البحث عن العنوان داخل التطبيق.\n\nلعرض عنوان في الكاميرا، يرسل TAIPOPO خط العرض وخط الطول إلى خدمة Android لتحويل الموقع إلى عنوان. قد تعالج الخدمة الإحداثيات خارج جهازك. يمكنك التصوير وحفظ الصور من دون البحث عن عنوان. لإيقاف البحث، عطّل عرض العنوان في إعدادات الكاميرا.",
+              "body": "الكاميرا → خيارات الكاميرا → سجل موقع GPS\n\nيكون تسجيل GPS متوقفًا افتراضيًا عند التثبيت الجديد. يُطلب إذن الموقع عندما تختار تشغيل GPS في الكاميرا. يمكنك رفض الإذن أو إغلاق الإشعار ومواصلة التصوير مع إيقاف GPS. يمكنك تغيير ذلك في أي وقت من خيارات الكاميرا.\n\nعند تفعيل تسجيل GPS والسماح بإذن الموقع، تُحفظ إحداثيات التصوير الصالحة في سجلات الصور على جهازك. يمكنك التقاط الصور وحفظها حتى عند إيقاف GPS أو رفض الإذن أو تعذر تحديد الموقع.\n\nتُحفظ الإحداثيات والعناوين والصور السابقة وبيانات EXIF للصور الأصلية. عند اختيار مشاركة الصور أو تصدير ملف ZIP، قد تتضمن الملفات الإحداثيات وبيانات EXIF وتُنقل إلى التطبيق المستلِم الذي تختاره. تحقق من المعلومات المضمنة قبل المشاركة.",
               "notice": null,
               "icon": {
                 "name": "location_on_rounded",
@@ -22376,7 +22376,7 @@
             },
             {
               "id": "camera-options",
-              "title": "معلومات التصوير",
+              "title": "خيارات الكاميرا",
               "body": "اختر مكان العمل والموقع والملاحظات وطريقة عرض المعلومات على الصورة.",
               "notice": null,
               "icon": {
@@ -22446,8 +22446,8 @@
             },
             {
               "id": "camera-address",
-              "title": "العنوان",
-              "body": "عرض عنوان GPS في تراكب الكاميرا.\n\nالبحث عن العنوان خيار منفصل عن إذن الموقع في نظام التشغيل. لا يبدأ البحث إلا بعد السماح به في إشعار البحث عن العنوان داخل التطبيق.\n\nلعرض عنوان في الكاميرا، يرسل TAIPOPO خط العرض وخط الطول إلى خدمة Android لتحويل الموقع إلى عنوان. قد تعالج الخدمة الإحداثيات خارج جهازك. يمكنك التصوير وحفظ الصور من دون البحث عن عنوان. لإيقاف البحث، عطّل عرض العنوان في إعدادات الكاميرا.",
+              "title": "عنوان مكان العمل",
+              "body": "يظهر عنوان مكان العمل المحدد والمحفوظ في معلومات التصوير افتراضيًا. لا يستخدم ذلك GPS أو البحث التلقائي عن العنوان. يمكنك إيقافه من خيارات الكاميرا، ولا يظهر عنوان إذا لم يكن هناك عنوان محفوظ.",
               "notice": null,
               "icon": {
                 "name": "map_outlined",
@@ -23214,9 +23214,9 @@
             },
             {
               "id": "workplace-gps-address",
-              "title": "Usa la posizione GPS attuale per l’indirizzo",
-              "body": "Compila l’indirizzo del luogo di lavoro dalla posizione attuale. Verifica quello effettivo e correggilo se necessario.\n\nLa ricerca dell’indirizzo è una scelta distinta dall’autorizzazione alla posizione del sistema operativo. La ricerca inizia solo dopo averla consentita nell’avviso di ricerca dell’indirizzo dell’app.\n\nPer trovare l’indirizzo del luogo di lavoro, il servizio di ricerca indirizzi del dispositivo può inviare le coordinate della tua posizione a un servizio esterno al dispositivo. Se non consenti la ricerca, puoi inserire l’indirizzo manualmente.",
-              "notice": "L’indirizzo GPS può essere diverso da quello effettivo del luogo di lavoro. Verificalo prima di salvare.",
+              "title": "Ricerca automatica dell’indirizzo non disponibile",
+              "body": "Questa versione non offre la ricerca automatica degli indirizzi per luoghi di lavoro o fotocamera e non invia coordinate a un servizio esterno per il geocoding. È possibile inserire gli indirizzi manualmente e quelli già salvati vengono conservati.",
+              "notice": "Questo avviso si applica alle versioni con ricerca automatica degli indirizzi bloccata. Le installazioni precedenti possono ancora effettuare ricerche e restano soggette agli avvisi e alle impostazioni della loro versione. Il solo aggiornamento non elimina i record esistenti né le informazioni già trasmesse fuori dal dispositivo.",
               "icon": {
                 "name": "my_location_rounded",
                 "codePoint": 63728,
@@ -23975,7 +23975,7 @@
             {
               "id": "camera-gps-record",
               "title": "Registrazione della posizione GPS",
-              "body": "Con «Registrazione della posizione GPS» disattivata, l’app non salva le coordinate nella scheda della foto. «Mostra indirizzo» è un’impostazione separata. Se l’impostazione è attiva e l’accesso alla posizione è autorizzato, l’app può trovare e mostrare l’indirizzo della posizione attuale e salvarlo nella scheda della foto al momento dello scatto. I dati EXIF del JPEG originale vengono conservati senza modifiche.\n\nLa ricerca dell’indirizzo è una scelta distinta dall’autorizzazione alla posizione del sistema operativo. La ricerca inizia solo dopo averla consentita nell’avviso di ricerca dell’indirizzo dell’app.\n\nPer mostrare un indirizzo nella fotocamera, TAIPOPO invia latitudine e longitudine al servizio di geocodifica di Android. Il servizio può elaborare le coordinate al di fuori del dispositivo. Puoi scattare e salvare foto senza cercare l’indirizzo. Per interrompere le ricerche future, disattiva la visualizzazione dell’indirizzo nelle impostazioni della fotocamera.",
+              "body": "Fotocamera → Opzioni fotocamera → Registrazione della posizione GPS\n\nAlla nuova installazione, la registrazione GPS è disattivata per impostazione predefinita. L’autorizzazione alla posizione viene richiesta quando scegli di attivare il GPS nella fotocamera. Puoi rifiutare o chiudere l’avviso e continuare a scattare senza GPS. Puoi cambiare la scelta nelle opzioni della fotocamera.\n\nAttivando la registrazione GPS e consentendo l’accesso alla posizione, le coordinate di scatto valide vengono salvate nei record delle foto sul dispositivo. È possibile scattare e salvare foto anche con GPS disattivato, permesso negato o posizione non disponibile.\n\nLe coordinate, gli indirizzi, le foto esistenti e i dati EXIF delle foto originali vengono conservati. Scegliendo di condividere foto o esportare uno ZIP, i file inviati all’app destinataria selezionata possono includere coordinate e dati EXIF. Verificare le informazioni incluse prima della condivisione.",
               "notice": null,
               "icon": {
                 "name": "location_on_rounded",
@@ -24016,7 +24016,7 @@
             },
             {
               "id": "camera-options",
-              "title": "Informazioni di scatto",
+              "title": "Opzioni fotocamera",
               "body": "Scegli luogo di lavoro, posizione, note e stile delle informazioni da mostrare sulla foto.",
               "notice": null,
               "icon": {
@@ -24086,8 +24086,8 @@
             },
             {
               "id": "camera-address",
-              "title": "Indirizzo",
-              "body": "Visualizza l'indirizzo GPS nella sovrapposizione della fotocamera.\n\nLa ricerca dell’indirizzo è una scelta distinta dall’autorizzazione alla posizione del sistema operativo. La ricerca inizia solo dopo averla consentita nell’avviso di ricerca dell’indirizzo dell’app.\n\nPer mostrare un indirizzo nella fotocamera, TAIPOPO invia latitudine e longitudine al servizio di geocodifica di Android. Il servizio può elaborare le coordinate al di fuori del dispositivo. Puoi scattare e salvare foto senza cercare l’indirizzo. Per interrompere le ricerche future, disattiva la visualizzazione dell’indirizzo nelle impostazioni della fotocamera.",
+              "title": "Indirizzo del luogo di lavoro",
+              "body": "L’indirizzo salvato del luogo di lavoro selezionato viene mostrato per impostazione predefinita nelle informazioni di scatto. Non utilizza GPS né ricerca automatica dell’indirizzo. Puoi disattivarlo nelle opzioni della fotocamera; se non è salvato alcun indirizzo, non viene mostrato.",
               "notice": null,
               "icon": {
                 "name": "map_outlined",
@@ -24854,9 +24854,9 @@
             },
             {
               "id": "workplace-gps-address",
-              "title": "กรอกที่อยู่จากตำแหน่ง GPS ปัจจุบัน",
-              "body": "กรอกที่อยู่สถานที่ทำงานจากตำแหน่งปัจจุบัน ตรวจสอบที่อยู่จริงและแก้ไขตามต้องการ\n\nการค้นหาที่อยู่เป็นตัวเลือกแยกจากสิทธิ์เข้าถึงตำแหน่งของระบบปฏิบัติการ การค้นหาจะเริ่มเมื่อคุณอนุญาตในคำชี้แจงการค้นหาที่อยู่ของแอปแล้วเท่านั้น\n\nบริการค้นหาที่อยู่ในอุปกรณ์อาจส่งพิกัดตำแหน่งของคุณไปยังบริการภายนอกอุปกรณ์เพื่อค้นหาที่อยู่ของสถานที่ทำงาน หากไม่อนุญาตให้ค้นหา คุณยังป้อนที่อยู่ด้วยตนเองได้",
-              "notice": "ที่อยู่จาก GPS อาจต่างจากที่อยู่สถานที่ทำงานจริง โปรดตรวจสอบที่อยู่จริงก่อนบันทึก",
+              "title": "ไม่มีการค้นหาที่อยู่อัตโนมัติ",
+              "body": "เวอร์ชันนี้ไม่มีการค้นหาที่อยู่อัตโนมัติสำหรับสถานที่ทำงานหรือกล้อง และไม่ส่งพิกัดไปยังบริการที่อยู่ภายนอกเพื่อแปลงเป็นที่อยู่ คุณกรอกที่อยู่เองได้ และที่อยู่ที่บันทึกไว้ยังคงอยู่",
+              "notice": "คำชี้แจงนี้ใช้กับเวอร์ชันที่บล็อกการค้นหาที่อยู่อัตโนมัติ เวอร์ชันเก่าที่ติดตั้งอยู่อาจยังค้นหาที่อยู่ได้ และใช้คำชี้แจงและการตั้งค่าของเวอร์ชันนั้น การอัปเดตเพียงอย่างเดียวไม่ลบข้อมูลเดิมหรือข้อมูลที่ส่งออกจากอุปกรณ์ไปแล้ว",
               "icon": {
                 "name": "my_location_rounded",
                 "codePoint": 63728,
@@ -25615,7 +25615,7 @@
             {
               "id": "camera-gps-record",
               "title": "บันทึกตำแหน่ง GPS",
-              "body": "เมื่อปิด “บันทึกตำแหน่ง GPS” แอปจะไม่บันทึกพิกัดลงในบันทึกข้อมูลรูปภาพของแอป “แสดงที่อยู่” เป็นการตั้งค่าแยกต่างหาก เมื่อเปิดการตั้งค่านี้และอนุญาตให้เข้าถึงตำแหน่ง แอปสามารถค้นหาและแสดงที่อยู่จากตำแหน่งปัจจุบัน และบันทึกที่อยู่ลงในบันทึกข้อมูลรูปภาพเมื่อถ่ายภาพได้ ข้อมูล EXIF ในไฟล์ JPEG ต้นฉบับจะคงเดิม\n\nการค้นหาที่อยู่เป็นตัวเลือกแยกจากสิทธิ์เข้าถึงตำแหน่งของระบบปฏิบัติการ การค้นหาจะเริ่มเมื่อคุณอนุญาตในคำชี้แจงการค้นหาที่อยู่ของแอปแล้วเท่านั้น\n\nเพื่อแสดงที่อยู่ในกล้อง TAIPOPO จะส่งละติจูดและลองจิจูดไปยังบริการแปลงพิกัดเป็นที่อยู่ของ Android บริการอาจประมวลผลพิกัดนอกอุปกรณ์ของคุณ คุณถ่ายและบันทึกรูปได้โดยไม่ต้องค้นหาที่อยู่ หากต้องการหยุดการค้นหาครั้งต่อไป ให้ปิดการแสดงที่อยู่ในการตั้งค่ากล้อง",
+              "body": "กล้อง → ตัวเลือกกล้อง → บันทึกตำแหน่ง GPS\n\nเมื่อติดตั้งใหม่ การบันทึก GPS จะปิดอยู่ตามค่าเริ่มต้น แอปจะขอสิทธิ์ตำแหน่งเมื่อคุณเลือกเปิด GPS ในกล้อง คุณปฏิเสธหรือปิดคำชี้แจงแล้วถ่ายรูปต่อโดยปิด GPS ได้ และเปลี่ยนตัวเลือกได้ทุกเมื่อในตัวเลือกกล้อง\n\nเมื่อเปิดการบันทึก GPS และอนุญาตตำแหน่ง พิกัดขณะถ่ายที่ผ่านเกณฑ์จะถูกบันทึกในข้อมูลรูปภาพบนอุปกรณ์ แม้ปิด GPS ปฏิเสธสิทธิ์ หรือรับตำแหน่งไม่ได้ ก็ยังถ่ายและบันทึกรูปภาพได้\n\nพิกัด ที่อยู่ รูปภาพเดิม และ EXIF ของรูปต้นฉบับจะถูกเก็บไว้ เมื่อคุณเลือกแชร์รูปภาพหรือส่งออก ZIP ไฟล์ที่ส่งไปยังแอปผู้รับที่เลือกอาจมีพิกัดและ EXIF โปรดตรวจสอบข้อมูลที่รวมอยู่ก่อนแชร์",
               "notice": null,
               "icon": {
                 "name": "location_on_rounded",
@@ -25656,7 +25656,7 @@
             },
             {
               "id": "camera-options",
-              "title": "ข้อมูลการถ่ายภาพ",
+              "title": "ตัวเลือกกล้อง",
               "body": "เลือกสถานที่ทำงาน ตำแหน่ง บันทึก และรูปแบบข้อมูลที่จะแสดงบนรูปภาพ",
               "notice": null,
               "icon": {
@@ -25726,8 +25726,8 @@
             },
             {
               "id": "camera-address",
-              "title": "ที่อยู่",
-              "body": "แสดงที่อยู่ GPS ในการซ้อนทับของกล้อง\n\nการค้นหาที่อยู่เป็นตัวเลือกแยกจากสิทธิ์เข้าถึงตำแหน่งของระบบปฏิบัติการ การค้นหาจะเริ่มเมื่อคุณอนุญาตในคำชี้แจงการค้นหาที่อยู่ของแอปแล้วเท่านั้น\n\nเพื่อแสดงที่อยู่ในกล้อง TAIPOPO จะส่งละติจูดและลองจิจูดไปยังบริการแปลงพิกัดเป็นที่อยู่ของ Android บริการอาจประมวลผลพิกัดนอกอุปกรณ์ของคุณ คุณถ่ายและบันทึกรูปได้โดยไม่ต้องค้นหาที่อยู่ หากต้องการหยุดการค้นหาครั้งต่อไป ให้ปิดการแสดงที่อยู่ในการตั้งค่ากล้อง",
+              "title": "ที่อยู่สถานที่ทำงาน",
+              "body": "ที่อยู่ที่บันทึกไว้ของสถานที่ทำงานที่เลือกจะแสดงในข้อมูลการถ่ายโดยค่าเริ่มต้น โดยไม่ใช้ GPS หรือการค้นหาที่อยู่อัตโนมัติ คุณปิดได้ในตัวเลือกกล้อง และจะไม่แสดงที่อยู่หากยังไม่ได้บันทึกไว้",
               "notice": null,
               "icon": {
                 "name": "map_outlined",
@@ -26276,5 +26276,5 @@
       ]
     }
   },
-  "contentVersion": "c495e674dc064d77"
+  "contentVersion": "64355a937fc7f93d"
 }

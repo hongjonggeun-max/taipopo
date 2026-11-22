@@ -17,7 +17,13 @@ for (const [code, policy] of Object.entries(data)) {
   assert.ok(policy.body.includes(policy.revisionDate), code);
   assert.equal(policy.zipBackup.version, '1.0.0 (17)', code);
   assert.ok(policy.body.includes(policy.zipBackup.privacy) && policy.deletion.body.includes(policy.zipBackup.privacy), code);
-  assert.ok(text.gpsCache.includes('30') && text.currentBackup.includes('appDataFolder') && text.crashDeletion.includes('FID'), code);
+  // The inactive geocoder cache is not the current candidate's GPS policy.
+  // Its preservation/share warning must match the localized app notice.
+  const appLocale = JSON.parse(fs.readFileSync(path.resolve(root, '..', 'gps-address-latency-20261119', 'lib/l10n', `app_${code}.arb`), 'utf8'));
+  assert.equal(text.gpsCache, appLocale.locationPreservationNotice, `${code}: GPS preservation/share scope`);
+  assert.ok(text.gpsChoice.includes(appLocale.cameraGpsUsageNotice), `${code}: camera GPS choice`);
+  assert.ok(text.gpsChoice.includes(appLocale.showAddressSubtitle), `${code}: saved workplace address`);
+  assert.ok(text.currentBackup.includes('appDataFolder') && text.crashDeletion.includes('FID'), code);
   const resetRoute = policy.deletion.body.split('\n').find((line) => line.split(' > ').length === 3);
   assert.ok(resetRoute, code);
   assert.ok(!policy.deletion.body.split('\n').some((line) => line.split(' > ').length > 3), code);

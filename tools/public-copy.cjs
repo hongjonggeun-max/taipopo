@@ -19,12 +19,18 @@ function publicManualChapters(chapters, code, arb) {
       feature.body = `${arb.settings} > ${arb.dataManagement} > ${arb[title]}\n${arb[subtitle]}`;
     }
     if (feature.id === 'backup-share') feature.body += `\n\n${arb.backupFileDisclosure}`;
-    if (['camera-gps-record', 'camera-address'].includes(feature.id)) {
-      const key = feature.id === 'camera-gps-record' ? 'gpsLocationRecordSubtitle' : 'showAddressSubtitle';
-      feature.body = [arb[key], arb.manualAddressLookupChoice, arb.cameraAddressLookupNotice].join('\n\n');
+    if (feature.id === 'camera-gps-record') {
+      feature.body = [`${arb.camera} → ${arb.cameraOptions} → ${arb.gpsLocationRecord}`, arb.cameraGpsUsageNotice, arb.gpsLocationRecordSubtitle, arb.locationPreservationNotice].join('\n\n');
+    }
+    if (feature.id === 'camera-options') feature.title = arb.cameraOptions;
+    if (feature.id === 'camera-address') {
+      feature.title = arb.showAddress;
+      feature.body = arb.showAddressSubtitle;
     }
     if (feature.id === 'workplace-gps-address') {
-      feature.body = [arb.manualPurposeWorkplaceGpsAddress, arb.manualAddressLookupChoice, arb.workplaceGpsLookupDisclosure].join('\n\n');
+      feature.title = arb.automaticAddressUnavailable;
+      feature.body = arb.manualPurposeWorkplaceGpsAddress;
+      feature.notice = arb.localGpsVersionScope;
     }
     if (feature.id === 'restore') {
       feature.body = [

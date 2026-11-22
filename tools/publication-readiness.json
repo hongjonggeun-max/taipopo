@@ -1,5 +1,5 @@
 {
-  "scope": "TAIPOPO 1.0.0(17) website copy",
+  "scope": "First-release review candidate: on-device GPS retained, external automatic address lookup blocked; not deployed",
   "status": "BLOCKED",
   "blockers": [
     {
@@ -12,8 +12,8 @@
     {
       "id": "external_processing_and_transfers",
       "status": "BLOCKED",
-      "confirmed": "Crashlytics standard terms 1.2 incorporate the Firebase DPA. Six outsourcing-document subjects are mapped to the public DPA; a separate paid contract or acceptance screen is not universally required. The user has confirmed individual operator Jonggeun Hong actually resides in South Korea. Firebase standard terms therefore select Google Asia Pacific Pte. Ltd.; its official privacy contact is https://firebase.google.com/support/privacy/dpo. This Firebase contracting determination is not copied to Geocoder or Gmail, and the entity address does not establish processing countries. Firebase expressly includes Crashlytics among global services and links official Cloud/data-center locations and Google Group processing-country information. Current official evidence was extracted and reconciled: 43 available Cloud regions/130 zones, relevant Google Group rows and current listed data-center countries support 40 possible country/region values including South Korea, with 39 overseas values disclosed in all 16 app/site privacy drafts. The Uruguay development site is excluded after checking its official detail page despite an inconsistent map flag. No claim is made that every report reaches every listed place or that processing places are fixed forever. A supplier-specific completeness guarantee or per-request server trace is not a universal prerequisite. Conditional customer-support subprocessors are assessed only when relevant diagnostic/support material is actually processed. Consumer Gmail GDPR-DPA absence alone does not establish a PIPA violation/exemption or require paid migration; operator mailbox storage/search/replies are separated from independent account/security processing and sender-selected mail services. Current static Pages own-security logging, OS Geocoder and user-selected manual ZIP paths retain their bounded processing-path distinctions. The current review source now requires separate unchecked collection/use and overseas-transfer choices, current transfer-consent version and an explicit acceptance timestamp before Firebase error diagnostics can initialize or activate. Legacy diagnostic allows are not migrated into transfer consent; records remain device-only and excluded from ZIP/diagnostic data. The app and site review copy disclose the recipient, contact, actual transfer basis and existing39-country/90-day scope in16 languages. This describes the review source and is not evidence that these controls are deployed to Play or physically verified.",
-      "required": "Complete the actually applicable Gmail support-message purpose/subcontracting documentary mapping and relevant overseas-storage particulars. Preserve the verified security-disclosure scope and do not require a consumer DPA acceptance switch or paid replacement. For the new Firebase review candidate, complete the outstanding final-binary/device evidence for consent, withdrawal, cleanup and startup boundaries; public notice and unit/JVM/source compilation do not prove physical behavior or overall legal compliance. Resolve the Geocoder framework-to-service terms/role connection only to the extent required by the actual processing relationship. Formal terms/effective-date procedure, actual target-market determination and final production/Play checks remain separate. Do not reopen the confirmed operator/entity or official39-country evidence, or make individual supplier replies/custom contracts universal prerequisites.",
+      "confirmed": "Crashlytics standard terms 1.2 incorporate the Firebase DPA. Six outsourcing-document subjects are mapped to the public DPA; a separate paid contract or acceptance screen is not universally required. The user has confirmed individual operator Jonggeun Hong actually resides in South Korea. Firebase standard terms therefore select Google Asia Pacific Pte. Ltd.; its official privacy contact is https://firebase.google.com/support/privacy/dpo. This Firebase contracting determination is not copied to Geocoder or Gmail, and the entity address does not establish processing countries. Firebase expressly includes Crashlytics among global services and links official Cloud/data-center locations and Google Group processing-country information. Current official evidence was extracted and reconciled: 43 available Cloud regions/130 zones, relevant Google Group rows and current listed data-center countries support 40 possible country/region values including South Korea, with 39 overseas values disclosed in all 16 app/site privacy drafts. The Uruguay development site is excluded after checking its official detail page despite an inconsistent map flag. No claim is made that every report reaches every listed place or that processing places are fixed forever. A supplier-specific completeness guarantee or per-request server trace is not a universal prerequisite. Conditional customer-support subprocessors are assessed only when relevant diagnostic/support material is actually processed. Consumer Gmail GDPR-DPA absence alone does not establish a PIPA violation/exemption or require paid migration; operator mailbox storage/search/replies are separated from independent account/security processing and sender-selected mail services. Current static Pages own-security logging, OS Geocoder and user-selected manual ZIP paths retain their bounded processing-path distinctions. The current review source now requires separate unchecked collection/use and overseas-transfer choices, current transfer-consent version and an explicit acceptance timestamp before Firebase error diagnostics can initialize or activate. Legacy diagnostic allows are not migrated into transfer consent; records remain device-only and excluded from ZIP/diagnostic data. The app and site review copy disclose the recipient, contact, actual transfer basis and existing39-country/90-day scope in16 languages. This describes the review source and is not evidence that these controls are deployed to Play or physically verified. The newer first-release source retains optional on-device GPS, defaults it OFF for new installations, moves permission choice to the camera, and blocks external automatic address lookup at its service boundary. The camera address option displays only a saved workplace address by default and does not enable geocoding. It uses an explicit Android GPS_PROVIDER capture path rather than assuming that disabling Geocoder eliminates all operating-system communications. Existing data and explicit stored settings are preserved. Current local-GPS/no-geocoder candidate v13 is built and installed in the isolated Note9 package. Normal measured Geocoder calls were zero; the v13 direct native positive control returned empty and incremented only the blocked-call counter. The inactive address-service contract is preserved as a restoration prerequisite, not an active processing path.",
+      "required": "Retain Gmail limited supplier-document/overseas-storage obligations, Firebase current production-binary consent/withdrawal/startup evidence, actual public-market scope, formal terms/effective-date process and authorized final production/Play checks. The separate local-GPS runtime review records physical GNSS positive NOT_TESTED and the resolved v13 default-renderer AVD graphics reproduction (PASS within its measured scope). Do not infer all OS/SDK network silence from the validation flavor.",
       "responsible": "Actual operator processing and applicable documented provider commitments; current official public source scope can support country disclosures without a bespoke supplier guarantee."
     },
     {
@@ -39,7 +39,7 @@
     "diagnostics": "Keep existing default OFF and explicit opt-in; not a blanket finding of legal consent adequacy",
     "directDriveApi": "Keep disabled until written approval basis is secured; user-selected manual ZIP sharing is a separate path",
     "terms": "Concise user-facing confirmation UI; metadata stays internal. Validation progress and formal acceptance are different record types. Final documents/effective date are not yet configured; no public-release consent PASS.",
-    "externalFacts": "Do not infer recipient/country/retention/transfer basis; unresolved mandatory facts continue to block publication",
+    "externalFacts": "Apply requirements to active processing paths. Verify Geocoder is inactive in the final candidate before closing its launch impact. Retain separate Gmail/Firebase obligations and bounded OS-provider distinctions; no invented recipient/country/retention facts.",
     "publication": "BLOCKED; operational policy adoption does not establish legal compliance",
     "additionalServiceCost": "Zero additional service cost and existing functionality are the baseline. Geoapify/mailbox replacement is not adopted or a release prerequisite; the signup request was withdrawn and the unsubmitted form closed."
   },
@@ -105,5 +105,32 @@
     "published": false,
     "scope": "Existing free ZIP flow/reader review preserved; added unencrypted backup scope and conditional older Drive copy guidance, explicit address choice in guide, and applicable mandatory consumer rights reservation in16 languages. Existing privacy/Firebase notice body and all unresolved external-processing release blockers preserved.",
     "formalTermsFinalized": false
+  },
+  "localGpsNoGeocoderReview": {
+    "dateKst": "2026-11-22",
+    "status": "BLOCKED",
+    "report": "C:/TAIPOPO/validation/20261122-local-gps-no-geocoder/report.txt",
+    "localGpsRetained": true,
+    "externalAddressEnabled": false,
+    "additionalServiceCost": 0,
+    "apkVersionCode": 13,
+    "apkSha256": "c545e131ef585d5043ea897ed155f9ab54efe2664617a3a767c0b805dfaf1893",
+    "finalBinaryStatus": "BLOCKED",
+    "build": "PASS",
+    "samePackageSignatureUpdate": "PASS",
+    "note9OsLocationOffCaptureAndZeroRequests": "NOT_TESTED",
+    "existingDataPreservation": "PASS",
+    "manualZipRestore": "PASS",
+    "newInstallOffChoiceAndDenial": "PASS",
+    "syntheticAvdGpsCaptureSkia": "PASS",
+    "defaultImpellerAvdGraphics": "PASS",
+    "physicalGnssPositive": "NOT_TESTED",
+    "productionFirebaseBinaryConsent": "NOT_TESTED",
+    "published": false,
+    "playSubmitted": false,
+    "finalAvdOsLocationOffCaptureAndZeroRequests": "PASS",
+    "finalCandidateEvidence": "C:\\TAIPOPO\\validation\\20261122-local-gps-no-geocoder\\final-candidate-verification.json",
+    "note9OsLocationOffScope": "v11 physical evidence retained as historical; v13 current OS-OFF execution is AVD, not relabelled physical execution.",
+    "syntheticAvdGpsCaptureSkiaScope": "v10 historical control only; v13 default Impeller positive evidence is recorded separately."
   }
 }
