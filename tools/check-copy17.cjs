@@ -17,7 +17,7 @@ const { escapeHtml } = require('./privacy-page.cjs');
 const baseline = JSON.parse(execFileSync('git', ['show', '6939c57671c1efdcca69ea1ce6f7e9d38e41b299:guide/manual.json'], { cwd: root, encoding: 'utf8', maxBuffer: 8 * 1024 * 1024 }));
 const oldPolicies = JSON.parse(execFileSync('git', ['show', '6939c57671c1efdcca69ea1ce6f7e9d38e41b299:tools/privacy-content.json'], { cwd: root, encoding: 'utf8', maxBuffer: 8 * 1024 * 1024 }));
 const removed = ['backup-drive', 'drive-management', 'restore-drive'];
-const allowedBodies = new Set(['memo', 'work-photos', 'camera-flash', 'camera-memo', 'camera-exposure', 'camera-capture', 'camera-landscape', 'data-usage', 'backup-device', 'backup-external', 'backup-share', 'restore', 'camera-gps-record', 'camera-address', 'workplace-gps-address']);
+const allowedBodies = new Set(['memo', 'work-photos', 'camera-flash', 'camera-memo', 'camera-exposure', 'camera-capture', 'camera-landscape', 'data-usage', 'backup-device', 'backup-external', 'backup-share', 'restore', 'camera-gps-record', 'camera-coordinates', 'camera-address', 'workplace-gps-address']);
 const section = (body, n) => body.match(new RegExp(`(?:^|\\n\\n)${n}\\. [\\s\\S]*?(?=\\n\\n${n + 1}\\. |$)`, 'u'))?.[0].trim();
 let preserved = 0, menus = 0;
 for (const [code, locale] of Object.entries(data.locales)) {
@@ -28,7 +28,7 @@ for (const [code, locale] of Object.entries(data.locales)) {
   for (const feature of features) {
     const previous = oldFeatures.find(f => f.id === feature.id);
     for (const field of ['title', 'notice', 'icon']) {
-      if (field === 'title' && ['camera-address','workplace-gps-address','camera-options'].includes(feature.id)) continue;
+      if (field === 'title' && ['camera-address','workplace-gps-address','camera-options','camera-coordinates'].includes(feature.id)) continue;
       if (field === 'notice' && feature.id === 'workplace-gps-address') continue;
       assert.deepEqual(feature[field], previous[field], `${code}/${feature.id}/${field}: unrequested change`);
     }
@@ -38,6 +38,8 @@ for (const [code, locale] of Object.entries(data.locales)) {
   assert.deepEqual(locale.chapters.map(c => [c.id, c.title, c.screen, c.icon]), baseline.locales[code].chapters.map(c => [c.id, c.title, c.screen, c.icon]));
   const body = id => features.find(f => f.id === id).body;
   assert.equal(features.find(f => f.id === 'camera-options').title, arb.cameraOptions, `${code}: camera options title`);
+  assert.equal(features.find(f => f.id === 'camera-coordinates').title, arb.cameraGpsCoordinatesDisplay, `${code}: GPS display title`);
+  assert.equal(body('camera-coordinates'), arb.manualPurposeCoordinates, `${code}: GPS display requires recording and valid fix`);
   for (const [id, key] of [['backup-device','backupFileSave'], ['backup-external','externalStorageBackupAction'], ['backup-share','backupFileShare']]) {
     assert.ok(body(id).includes(`${arb.settings} > ${arb.dataManagement} > ${arb[key]}`), `${code}/${id}: wrong menu path`); menus++;
   }

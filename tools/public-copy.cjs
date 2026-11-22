@@ -23,6 +23,10 @@ function publicManualChapters(chapters, code, arb) {
       feature.body = [`${arb.camera} → ${arb.cameraOptions} → ${arb.gpsLocationRecord}`, arb.cameraGpsUsageNotice, arb.gpsLocationRecordSubtitle, arb.locationPreservationNotice].join('\n\n');
     }
     if (feature.id === 'camera-options') feature.title = arb.cameraOptions;
+    if (feature.id === 'camera-coordinates') {
+      feature.title = arb.cameraGpsCoordinatesDisplay;
+      feature.body = arb.manualPurposeCoordinates;
+    }
     if (feature.id === 'camera-address') {
       feature.title = arb.showAddress;
       feature.body = arb.showAddressSubtitle;

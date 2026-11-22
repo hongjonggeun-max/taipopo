@@ -1098,8 +1098,8 @@
             },
             {
               "id": "camera-coordinates",
-              "title": "GPS",
-              "body": "촬영 위치를 정확한 좌표로 남깁니다.",
+              "title": "GPS 좌표 표시",
+              "body": "GPS 위치 기록을 켜고 유효한 좌표를 받은 경우, 사진에 GPS 좌표를 표시할지 선택합니다. GPS 기록과 좌표 표시는 별도 옵션입니다.",
               "notice": null,
               "icon": {
                 "name": "my_location_rounded",
@@ -2738,8 +2738,8 @@
             },
             {
               "id": "camera-coordinates",
-              "title": "GPS",
-              "body": "Keep precise coordinates of the capture location.",
+              "title": "Show GPS coordinates",
+              "body": "When GPS recording is enabled and a valid fix is available, choose whether to show the coordinates on the photo. Recording and coordinate display are separate options.",
               "notice": null,
               "icon": {
                 "name": "my_location_rounded",
@@ -4378,8 +4378,8 @@
             },
             {
               "id": "camera-coordinates",
-              "title": "全球定位系统",
-              "body": "用精确坐标记录拍摄位置。",
+              "title": "显示 GPS 坐标",
+              "body": "开启 GPS 位置记录并获得有效坐标后，您可以选择是否在照片上显示 GPS 坐标。GPS 记录和坐标显示是两个独立选项。",
               "notice": null,
               "icon": {
                 "name": "my_location_rounded",
@@ -6018,8 +6018,8 @@
             },
             {
               "id": "camera-coordinates",
-              "title": "GPS",
-              "body": "撮影位置を正確な座標で残します。",
+              "title": "GPS座標を表示",
+              "body": "GPS位置情報の記録がオンで、有効な座標を取得できた場合に、写真にGPS座標を表示するかを選択します。GPSの記録と座標の表示は別々の設定です。",
               "notice": null,
               "icon": {
                 "name": "my_location_rounded",
@@ -7658,8 +7658,8 @@
             },
             {
               "id": "camera-coordinates",
-              "title": "जीपीएस",
-              "body": "शूटिंग के स्थान के सटीक निर्देशांक रखें।",
+              "title": "GPS निर्देशांक दिखाएँ",
+              "body": "GPS स्थान रिकॉर्डिंग चालू होने और मान्य निर्देशांक मिलने पर, चुनें कि फ़ोटो पर निर्देशांक दिखाने हैं या नहीं। GPS रिकॉर्डिंग और निर्देशांक दिखाना अलग-अलग विकल्प हैं।",
               "notice": null,
               "icon": {
                 "name": "my_location_rounded",
@@ -9298,8 +9298,8 @@
             },
             {
               "id": "camera-coordinates",
-              "title": "GPS",
-              "body": "Registre as coordenadas exatas do local da captura.",
+              "title": "Mostrar coordenadas GPS",
+              "body": "Quando o registro de localização GPS estiver ativado e houver coordenadas válidas disponíveis, escolha se deseja exibi-las na foto. O registro GPS e a exibição de coordenadas são opções separadas.",
               "notice": null,
               "icon": {
                 "name": "my_location_rounded",
@@ -10938,8 +10938,8 @@
             },
             {
               "id": "camera-coordinates",
-              "title": "GPS",
-              "body": "Registra el lugar de captura con coordenadas precisas.",
+              "title": "Mostrar coordenadas GPS",
+              "body": "Cuando el registro de ubicación GPS está activado y hay coordenadas válidas disponibles, elige si quieres mostrarlas en la foto. El registro GPS y la visualización de coordenadas son opciones independientes.",
               "notice": null,
               "icon": {
                 "name": "my_location_rounded",
@@ -12578,8 +12578,8 @@
             },
             {
               "id": "camera-coordinates",
-              "title": "GPS",
-              "body": "Conservez les coordonnées précises du lieu de prise de vue.",
+              "title": "Afficher les coordonnées GPS",
+              "body": "Lorsque l’enregistrement GPS est activé et que des coordonnées valides sont disponibles, choisissez si elles doivent apparaître sur la photo. L’enregistrement GPS et l’affichage des coordonnées sont deux options distinctes.",
               "notice": null,
               "icon": {
                 "name": "my_location_rounded",
@@ -14218,8 +14218,8 @@
             },
             {
               "id": "camera-coordinates",
-              "title": "GPS",
-              "body": "Halten Sie den Aufnahmeort mit genauen Koordinaten fest.",
+              "title": "GPS-Koordinaten anzeigen",
+              "body": "Wenn die GPS-Aufzeichnung aktiviert ist und gültige Koordinaten vorliegen, wählen Sie, ob die Koordinaten auf dem Foto angezeigt werden sollen. GPS-Aufzeichnung und Koordinatenanzeige sind getrennte Optionen.",
               "notice": null,
               "icon": {
                 "name": "my_location_rounded",
@@ -15858,8 +15858,8 @@
             },
             {
               "id": "camera-coordinates",
-              "title": "GPS",
-              "body": "Simpan koordinat lokasi pemotretan yang tepat.",
+              "title": "Tampilkan koordinat GPS",
+              "body": "Saat perekaman lokasi GPS diaktifkan dan koordinat yang valid tersedia, pilih apakah koordinat ditampilkan pada foto. Perekaman GPS dan tampilan koordinat adalah opsi yang terpisah.",
               "notice": null,
               "icon": {
                 "name": "my_location_rounded",
@@ -17498,8 +17498,8 @@
             },
             {
               "id": "camera-coordinates",
-              "title": "GPS",
-              "body": "Lưu vị trí chụp bằng tọa độ chính xác.",
+              "title": "Hiện tọa độ GPS",
+              "body": "Khi tính năng ghi vị trí GPS được bật và có tọa độ hợp lệ, hãy chọn có hiển thị tọa độ trên ảnh hay không. Ghi GPS và hiển thị tọa độ là hai tùy chọn riêng biệt.",
               "notice": null,
               "icon": {
                 "name": "my_location_rounded",
@@ -19138,8 +19138,8 @@
             },
             {
               "id": "camera-coordinates",
-              "title": "GPS",
-              "body": "Сохраняйте точные координаты места съёмки.",
+              "title": "Показывать GPS-координаты",
+              "body": "Если запись местоположения GPS включена и получены действительные координаты, выберите, показывать ли их на фотографии. Запись GPS и отображение координат — отдельные настройки.",
               "notice": null,
               "icon": {
                 "name": "my_location_rounded",
@@ -20778,8 +20778,8 @@
             },
             {
               "id": "camera-coordinates",
-              "title": "GPS",
-              "body": "Çekim konumunu kesin koordinatlarla kaydedin.",
+              "title": "GPS koordinatlarını göster",
+              "body": "GPS konum kaydı açıkken ve geçerli koordinatlar alındığında, koordinatların fotoğrafta gösterilip gösterilmeyeceğini seçin. GPS kaydı ve koordinat gösterimi ayrı seçeneklerdir.",
               "notice": null,
               "icon": {
                 "name": "my_location_rounded",
@@ -22418,8 +22418,8 @@
             },
             {
               "id": "camera-coordinates",
-              "title": "نظام تحديد المواقع",
-              "body": "احتفظ بإحداثيات دقيقة لمكان التصوير.",
+              "title": "عرض إحداثيات GPS",
+              "body": "عند تفعيل تسجيل موقع GPS وتوفّر إحداثيات صالحة، يمكنك اختيار إظهار الإحداثيات على الصورة أو عدم إظهارها. تسجيل GPS وعرض الإحداثيات خياران منفصلان.",
               "notice": null,
               "icon": {
                 "name": "my_location_rounded",
@@ -24058,8 +24058,8 @@
             },
             {
               "id": "camera-coordinates",
-              "title": "GPS",
-              "body": "Conserva le coordinate precise del luogo di scatto.",
+              "title": "Mostra coordinate GPS",
+              "body": "Quando la registrazione GPS è attiva e sono disponibili coordinate valide, scegli se mostrarle sulla foto. La registrazione GPS e la visualizzazione delle coordinate sono opzioni separate.",
               "notice": null,
               "icon": {
                 "name": "my_location_rounded",
@@ -25698,8 +25698,8 @@
             },
             {
               "id": "camera-coordinates",
-              "title": "จีพีเอส",
-              "body": "บันทึกสถานที่ถ่ายเป็นพิกัดที่แม่นยำ",
+              "title": "แสดงพิกัด GPS",
+              "body": "เมื่อเปิดการบันทึกตำแหน่ง GPS และได้รับพิกัดที่ใช้ได้แล้ว คุณสามารถเลือกว่าจะแสดงพิกัดบนภาพถ่ายหรือไม่ การบันทึก GPS และการแสดงพิกัดเป็นตัวเลือกแยกกัน",
               "notice": null,
               "icon": {
                 "name": "my_location_rounded",
@@ -26276,5 +26276,5 @@
       ]
     }
   },
-  "contentVersion": "64355a937fc7f93d"
+  "contentVersion": "cdbc9dbee3d4f383"
 }
