@@ -255,7 +255,7 @@
             {
               "id": "workplace-gps-address",
               "title": "GPS 현재 위치로 주소 입력",
-              "body": "현재 위치의 주소를 가져와 근무지 주소에 입력합니다. 실제 주소를 확인하고 필요한 부분을 수정하세요.",
+              "body": "현재 위치의 주소를 가져와 근무지 주소에 입력합니다. 실제 주소를 확인하고 필요한 부분을 수정하세요.\n\n주소 조회는 운영체제의 위치 권한과 별도로 선택합니다. 앱의 주소 조회 안내에서 허용한 경우에만 조회를 시작합니다.\n\n근무지 주소를 찾기 위해 기기의 주소 변환 서비스가 위치 좌표를 기기 밖의 서비스에 보낼 수 있습니다. 조회를 허용하지 않아도 주소를 직접 입력할 수 있습니다.",
               "notice": "GPS로 가져온 주소는 실제 근무지 주소와 다를 수 있습니다. 저장 전에 실제 주소를 다시 확인해 주세요.",
               "icon": {
                 "name": "my_location_rounded",
@@ -1015,7 +1015,7 @@
             {
               "id": "camera-gps-record",
               "title": "GPS 위치 기록",
-              "body": "GPS 기록을 끄면 앱의 사진 기록에 좌표를 저장하지 않습니다. 주소 표시는 별도 설정입니다. 주소 표시를 켜고 위치 권한을 허용하면 현재 위치로 주소를 확인해 표시하고, 촬영 시 사진 기록에 저장할 수 있습니다. 원본 JPEG에 포함된 EXIF는 그대로 보존합니다.",
+              "body": "GPS 기록을 끄면 앱의 사진 기록에 좌표를 저장하지 않습니다. 주소 표시는 별도 설정입니다. 주소 표시를 켜고 위치 권한을 허용하면 현재 위치로 주소를 확인해 표시하고, 촬영 시 사진 기록에 저장할 수 있습니다. 원본 JPEG에 포함된 EXIF는 그대로 보존합니다.\n\n주소 조회는 운영체제의 위치 권한과 별도로 선택합니다. 앱의 주소 조회 안내에서 허용한 경우에만 조회를 시작합니다.\n\n카메라에 주소를 표시하기 위해 TAIPOPO가 위도와 경도를 Android 주소 변환 서비스에 전달합니다. 좌표는 기기 밖에서 처리될 수 있습니다. 주소를 조회하지 않아도 사진을 찍고 저장할 수 있습니다. 새 조회를 중단하려면 카메라 설정에서 주소 표시를 끄세요.",
               "notice": null,
               "icon": {
                 "name": "location_on_rounded",
@@ -1127,7 +1127,7 @@
             {
               "id": "camera-address",
               "title": "주소",
-              "body": "카메라 촬영 정보에 GPS 주소를 표시합니다.",
+              "body": "카메라 촬영 정보에 GPS 주소를 표시합니다.\n\n주소 조회는 운영체제의 위치 권한과 별도로 선택합니다. 앱의 주소 조회 안내에서 허용한 경우에만 조회를 시작합니다.\n\n카메라에 주소를 표시하기 위해 TAIPOPO가 위도와 경도를 Android 주소 변환 서비스에 전달합니다. 좌표는 기기 밖에서 처리될 수 있습니다. 주소를 조회하지 않아도 사진을 찍고 저장할 수 있습니다. 새 조회를 중단하려면 카메라 설정에서 주소 표시를 끄세요.",
               "notice": null,
               "icon": {
                 "name": "map_outlined",
@@ -1499,7 +1499,7 @@
             {
               "id": "backup-share",
               "title": "외부 백업 만들기",
-              "body": "설정 > 백업 및 복구 > 외부 백업 만들기\n백업 ZIP을 만든 뒤 Android 공유창에서 보관할 앱을 선택하세요. 저장 상태는 선택한 앱에서 확인하세요. 분할 백업은 모든 파일을 함께 보관하세요.",
+              "body": "설정 > 백업 및 복구 > 외부 백업 만들기\n백업 ZIP을 만든 뒤 Android 공유창에서 보관할 앱을 선택하세요. 저장 상태는 선택한 앱에서 확인하세요. 분할 백업은 모든 파일을 함께 보관하세요.\n\n이 표준 ZIP은 백업 대상 업무 데이터, 설정, 사진 등의 암호화되지 않은 사본이며, 약관 확인·동의 기록은 포함하지 않습니다. 위치·촬영시각·기기정보 metadata가 포함될 수 있는 사진 원본과 근무지, 주소, 근무기록, 급여, 메모가 포함될 수 있습니다. 저장하거나 공유하면 선택한 사람 또는 앱이 열 수 있는 앱 외부 사본이 생성됩니다.",
               "notice": null,
               "icon": {
                 "name": "folder_zip_outlined",
@@ -1513,7 +1513,7 @@
             {
               "id": "restore",
               "title": "복원",
-              "body": "설정 > 백업 및 복구\n\n기기에서 복구: 이 기기에 저장된 백업 목록에서 선택합니다.\n\nSD 카드·USB에서 복구: 연결된 SD 카드나 USB에서 백업 폴더를 선택합니다.\n\n백업 파일 불러오기: 기기 또는 파일 선택기에 표시되는 저장소에서 백업 ZIP을 선택하세요. 분할 백업은 같은 백업의 모든 파일이 필요합니다.\n\n저장한 백업으로 현재 앱 데이터를 교체하므로 먼저 현재 데이터도 백업하세요.",
+              "body": "설정 > 백업 및 복구\n\n기기에서 복구: 이 기기에 저장된 백업 목록에서 선택합니다.\n\nSD 카드·USB에서 복구: 연결된 SD 카드나 USB에서 백업 폴더를 선택합니다.\n\n백업 파일 불러오기: 기기 또는 파일 선택기에 표시되는 저장소에서 백업 ZIP을 선택하세요. 분할 백업은 같은 백업의 모든 파일이 필요합니다.\n\n저장한 백업으로 현재 앱 데이터를 교체하므로 먼저 현재 데이터도 백업하세요.\n\n구버전 Google Drive 사본: 이전 버전에서 만든 appDataFolder 백업이 있다면 현재 버전의 ZIP과 별개인 외부 사본입니다. 앱 초기화나 삭제만으로 그 사본이 삭제되지는 않습니다. 1.0.0(17)은 해당 사본의 직접 백업·복원·관리 기능을 제공하지 않습니다. 해당 Google 계정에서 관리·삭제하는 방법은 Google 공식 안내를 확인하세요. https://support.google.com/drive/answer/6374270",
               "notice": null,
               "icon": {
                 "name": "restore_outlined",
@@ -1895,7 +1895,7 @@
             {
               "id": "workplace-gps-address",
               "title": "Use current GPS location for address",
-              "body": "Fill the workplace address from your current location. Check the actual address and edit it as needed.",
+              "body": "Fill the workplace address from your current location. Check the actual address and edit it as needed.\n\nAddress lookup is a separate choice from the operating system's location permission. A lookup starts only after you allow it in the app's address lookup notice.\n\nTo find the workplace address, your device’s address lookup service may send your location coordinates to a service outside your device. If you don’t allow the lookup, you can enter the address manually.",
               "notice": "The GPS address may differ from the actual workplace address. Check the actual address before saving.",
               "icon": {
                 "name": "my_location_rounded",
@@ -2655,7 +2655,7 @@
             {
               "id": "camera-gps-record",
               "title": "GPS Location Record",
-              "body": "When GPS Location Record is off, the app does not save coordinates in the photo record. Show Address is a separate setting. With Show Address on and location permission granted, the app can look up and display the address for your current location and save it to the photo record when you take a photo. EXIF metadata in the original JPEG is preserved as is.",
+              "body": "When GPS Location Record is off, the app does not save coordinates in the photo record. Show Address is a separate setting. With Show Address on and location permission granted, the app can look up and display the address for your current location and save it to the photo record when you take a photo. EXIF metadata in the original JPEG is preserved as is.\n\nAddress lookup is a separate choice from the operating system's location permission. A lookup starts only after you allow it in the app's address lookup notice.\n\nTo show an address in the camera, TAIPOPO sends latitude and longitude to Android’s geocoding service. The service may process the coordinates outside your device. You can take and save photos without looking up an address. Turn off Show Address in Camera Settings to stop future lookups.",
               "notice": null,
               "icon": {
                 "name": "location_on_rounded",
@@ -2767,7 +2767,7 @@
             {
               "id": "camera-address",
               "title": "Address",
-              "body": "Display the GPS address in the camera overlay.",
+              "body": "Display the GPS address in the camera overlay.\n\nAddress lookup is a separate choice from the operating system's location permission. A lookup starts only after you allow it in the app's address lookup notice.\n\nTo show an address in the camera, TAIPOPO sends latitude and longitude to Android’s geocoding service. The service may process the coordinates outside your device. You can take and save photos without looking up an address. Turn off Show Address in Camera Settings to stop future lookups.",
               "notice": null,
               "icon": {
                 "name": "map_outlined",
@@ -3139,7 +3139,7 @@
             {
               "id": "backup-share",
               "title": "Create external backup",
-              "body": "Settings > Backup & Restore > Create external backup\nAfter creating the backup ZIP, choose an app in the Android share sheet to keep it. Check the save status in the app you chose. Keep all files of a split backup together.",
+              "body": "Settings > Backup & Restore > Create external backup\nAfter creating the backup ZIP, choose an app in the Android share sheet to keep it. Check the save status in the app you chose. Keep all files of a split backup together.\n\nThis standard ZIP is an unencrypted copy of the work data, settings, photos and other data included in the backup; it does not include Terms confirmation or acceptance records. It can include original photos and their location, capture-time, and device metadata, along with workplaces, addresses, work records, pay, and notes. Saving or sharing creates a copy outside the app that the selected person or app can open.",
               "notice": null,
               "icon": {
                 "name": "folder_zip_outlined",
@@ -3153,7 +3153,7 @@
             {
               "id": "restore",
               "title": "Restore",
-              "body": "Settings > Backup & Restore\n\nRestore from device backup list: Choose from the backup list saved on this device.\n\nRestore from SD card or USB: Choose a backup folder from a connected SD card or USB storage device.\n\nImport backup files: Choose the backup ZIP on your device or in storage shown by the file picker. A split backup requires every file from the same backup.\n\nRestoring replaces current app data with the backup, so back up your current data first.",
+              "body": "Settings > Backup & Restore\n\nRestore from device backup list: Choose from the backup list saved on this device.\n\nRestore from SD card or USB: Choose a backup folder from a connected SD card or USB storage device.\n\nImport backup files: Choose the backup ZIP on your device or in storage shown by the file picker. A split backup requires every file from the same backup.\n\nRestoring replaces current app data with the backup, so back up your current data first.\n\nOlder Google Drive copies: if an earlier version created an appDataFolder backup, it is an external copy separate from the current version's ZIP. Resetting or uninstalling the app does not delete that copy. Version 1.0.0(17) does not directly back up, restore or manage it. See Google's official instructions for managing or deleting it in the Google account that owns it. https://support.google.com/drive/answer/6374270",
               "notice": null,
               "icon": {
                 "name": "restore_outlined",
@@ -3535,7 +3535,7 @@
             {
               "id": "workplace-gps-address",
               "title": "用 GPS 当前位置填写地址",
-              "body": "将当前位置的地址填入工作地点地址。请核对实际地址并按需修改。",
+              "body": "将当前位置的地址填入工作地点地址。请核对实际地址并按需修改。\n\n地址查询是独立于操作系统位置权限的选择。只有在应用的地址查询说明中允许后，才会开始查询。\n\n为查询工作地点的地址，设备上的地址查询服务可能会将您的位置坐标发送到设备之外的服务。如果您不允许查询，仍可手动输入地址。",
               "notice": "GPS获取的地址可能与实际工作地点地址不同。保存前请再次核对实际地址。",
               "icon": {
                 "name": "my_location_rounded",
@@ -4295,7 +4295,7 @@
             {
               "id": "camera-gps-record",
               "title": "GPS定位记录",
-              "body": "关闭“GPS定位记录”后，应用不会在照片记录中保存坐标。“显示地址”是独立设置。开启此设置并授予定位权限后，应用可以根据当前位置查询并显示地址，并在拍摄时将地址保存到照片记录中。原始 JPEG 中已有的 EXIF 数据会原样保留。",
+              "body": "关闭“GPS定位记录”后，应用不会在照片记录中保存坐标。“显示地址”是独立设置。开启此设置并授予定位权限后，应用可以根据当前位置查询并显示地址，并在拍摄时将地址保存到照片记录中。原始 JPEG 中已有的 EXIF 数据会原样保留。\n\n地址查询是独立于操作系统位置权限的选择。只有在应用的地址查询说明中允许后，才会开始查询。\n\n为了在相机中显示地址，TAIPOPO 会将经纬度传给 Android 地址转换服务。该服务可能在设备之外处理坐标。无需查询地址也能拍照和保存照片。若要停止后续查询，请在相机设置中关闭地址显示。",
               "notice": null,
               "icon": {
                 "name": "location_on_rounded",
@@ -4407,7 +4407,7 @@
             {
               "id": "camera-address",
               "title": "地址",
-              "body": "在相机叠加层中显示 GPS 地址。",
+              "body": "在相机叠加层中显示 GPS 地址。\n\n地址查询是独立于操作系统位置权限的选择。只有在应用的地址查询说明中允许后，才会开始查询。\n\n为了在相机中显示地址，TAIPOPO 会将经纬度传给 Android 地址转换服务。该服务可能在设备之外处理坐标。无需查询地址也能拍照和保存照片。若要停止后续查询，请在相机设置中关闭地址显示。",
               "notice": null,
               "icon": {
                 "name": "map_outlined",
@@ -4779,7 +4779,7 @@
             {
               "id": "backup-share",
               "title": "创建外部备份",
-              "body": "设置 > 备份与恢复 > 创建外部备份\n创建备份 ZIP 后，在 Android 分享面板中选择用于保存的应用。请在所选应用中确认保存状态。分卷备份的所有文件须一同保管。",
+              "body": "设置 > 备份与恢复 > 创建外部备份\n创建备份 ZIP 后，在 Android 分享面板中选择用于保存的应用。请在所选应用中确认保存状态。分卷备份的所有文件须一同保管。\n\n此标准 ZIP 是备份范围内的工作数据、设置、照片等数据的未加密副本，不包含条款确认或接受记录。它可能包含原始照片及其位置、拍摄时间和设备元数据，以及工作地点、地址、工作记录、工资和备注。保存或分享会在应用外创建一份副本，所选人员或应用可以打开。",
               "notice": null,
               "icon": {
                 "name": "folder_zip_outlined",
@@ -4793,7 +4793,7 @@
             {
               "id": "restore",
               "title": "恢复",
-              "body": "设置 > 备份与恢复\n\n从设备备份列表恢复: 从此设备上保存的备份列表中选择。\n\n从 SD 卡或 USB 恢复: 从已连接的 SD 卡或 USB 存储设备中选择备份文件夹。\n\n导入备份文件: 在设备或文件选择器显示的存储位置中选择备份 ZIP。分卷备份需要同一备份的全部文件。\n\n恢复会用备份替换当前应用数据，请先备份现有数据。",
+              "body": "设置 > 备份与恢复\n\n从设备备份列表恢复: 从此设备上保存的备份列表中选择。\n\n从 SD 卡或 USB 恢复: 从已连接的 SD 卡或 USB 存储设备中选择备份文件夹。\n\n导入备份文件: 在设备或文件选择器显示的存储位置中选择备份 ZIP。分卷备份需要同一备份的全部文件。\n\n恢复会用备份替换当前应用数据，请先备份现有数据。\n\n旧版本的 Google Drive 副本：如果先前版本曾创建 appDataFolder 备份，它是独立于当前版本 ZIP 的外部副本。重置或卸载应用不会删除该副本。1.0.0(17) 不提供对该副本的直接备份、恢复或管理功能。请参阅 Google 官方说明，在拥有该副本的 Google 账号中管理或删除。 https://support.google.com/drive/answer/6374270",
               "notice": null,
               "icon": {
                 "name": "restore_outlined",
@@ -5175,7 +5175,7 @@
             {
               "id": "workplace-gps-address",
               "title": "GPSの現在地から住所を入力",
-              "body": "現在地の住所を勤務先住所に入力します。実際の住所を確認し、必要に応じて修正してください。",
+              "body": "現在地の住所を勤務先住所に入力します。実際の住所を確認し、必要に応じて修正してください。\n\n住所検索は、OSの位置情報へのアクセス許可とは別に選択します。アプリの住所検索の案内で許可した場合にのみ検索を開始します。\n\n勤務先の住所を調べるために、端末の住所検索サービスが位置座標を端末外のサービスに送信することがあります。検索を許可しなくても、住所を手入力できます。",
               "notice": "GPSで取得した住所は実際の勤務先住所と異なる場合があります。保存前に実際の住所を確認してください。",
               "icon": {
                 "name": "my_location_rounded",
@@ -5935,7 +5935,7 @@
             {
               "id": "camera-gps-record",
               "title": "GPS位置記録",
-              "body": "「GPS位置記録」をオフにすると、アプリ内の写真記録に座標は保存されません。「住所を表示」は別の設定です。この設定をオンにして位置情報の使用を許可すると、現在地から住所を取得して表示し、撮影時に写真記録へ保存できます。元のJPEGに含まれるEXIFはそのまま保持されます。",
+              "body": "「GPS位置記録」をオフにすると、アプリ内の写真記録に座標は保存されません。「住所を表示」は別の設定です。この設定をオンにして位置情報の使用を許可すると、現在地から住所を取得して表示し、撮影時に写真記録へ保存できます。元のJPEGに含まれるEXIFはそのまま保持されます。\n\n住所検索は、OSの位置情報へのアクセス許可とは別に選択します。アプリの住所検索の案内で許可した場合にのみ検索を開始します。\n\nカメラに住所を表示するため、TAIPOPO は緯度・経度を Android の住所変換サービスに送ります。座標が端末の外で処理される場合があります。住所を検索しなくても撮影と保存ができます。今後の検索を止めるには、カメラ設定で住所表示をオフにしてください。",
               "notice": null,
               "icon": {
                 "name": "location_on_rounded",
@@ -6047,7 +6047,7 @@
             {
               "id": "camera-address",
               "title": "住所",
-              "body": "カメラオーバーレイに GPS アドレスを表示します。",
+              "body": "カメラオーバーレイに GPS アドレスを表示します。\n\n住所検索は、OSの位置情報へのアクセス許可とは別に選択します。アプリの住所検索の案内で許可した場合にのみ検索を開始します。\n\nカメラに住所を表示するため、TAIPOPO は緯度・経度を Android の住所変換サービスに送ります。座標が端末の外で処理される場合があります。住所を検索しなくても撮影と保存ができます。今後の検索を止めるには、カメラ設定で住所表示をオフにしてください。",
               "notice": null,
               "icon": {
                 "name": "map_outlined",
@@ -6419,7 +6419,7 @@
             {
               "id": "backup-share",
               "title": "外部バックアップを作成",
-              "body": "設定 > バックアップと復元 > 外部バックアップを作成\nバックアップ ZIP を作成したら、Android の共有画面で保存先のアプリを選びます。保存状況は選んだアプリで確認してください。分割バックアップの全ファイルはまとめて保管してください。",
+              "body": "設定 > バックアップと復元 > 外部バックアップを作成\nバックアップ ZIP を作成したら、Android の共有画面で保存先のアプリを選びます。保存状況は選んだアプリで確認してください。分割バックアップの全ファイルはまとめて保管してください。\n\nこの標準ZIPは、バックアップ対象の業務データ、設定、写真などの暗号化されていないコピーであり、規約の確認・同意記録は含みません。元の写真とその位置情報、撮影時刻、端末メタデータのほか、勤務先、住所、勤務記録、給与、メモが含まれる場合があります。保存または共有すると、選択した相手またはアプリが開けるアプリ外のコピーが作成されます。",
               "notice": null,
               "icon": {
                 "name": "folder_zip_outlined",
@@ -6433,7 +6433,7 @@
             {
               "id": "restore",
               "title": "復元",
-              "body": "設定 > バックアップと復元\n\nデバイスのバックアップ一覧から復元: この端末に保存されたバックアップ一覧から選択します。\n\nSDカード・USBから復元: 接続されたSDカードまたはUSBストレージからバックアップフォルダを選択します。\n\nバックアップファイルを読み込む: 端末またはファイル選択画面に表示される保存先からバックアップ ZIP を選びます。分割バックアップでは、同じバックアップの全ファイルが必要です。\n\n復元すると現在のアプリデータがバックアップ内容に置き換わるため、先に現在のデータも保存してください。",
+              "body": "設定 > バックアップと復元\n\nデバイスのバックアップ一覧から復元: この端末に保存されたバックアップ一覧から選択します。\n\nSDカード・USBから復元: 接続されたSDカードまたはUSBストレージからバックアップフォルダを選択します。\n\nバックアップファイルを読み込む: 端末またはファイル選択画面に表示される保存先からバックアップ ZIP を選びます。分割バックアップでは、同じバックアップの全ファイルが必要です。\n\n復元すると現在のアプリデータがバックアップ内容に置き換わるため、先に現在のデータも保存してください。\n\n旧バージョンのGoogle Driveコピー：以前のバージョンで作成したappDataFolderバックアップがある場合、現在のバージョンのZIPとは別の外部コピーです。アプリの初期化やアンインストールだけでは削除されません。1.0.0(17)では、そのコピーの直接バックアップ・復元・管理機能を提供していません。所有するGoogleアカウントでの管理・削除方法はGoogleの公式案内をご確認ください。 https://support.google.com/drive/answer/6374270",
               "notice": null,
               "icon": {
                 "name": "restore_outlined",
@@ -6815,7 +6815,7 @@
             {
               "id": "workplace-gps-address",
               "title": "मौजूदा GPS स्थान से पता भरें",
-              "body": "मौजूदा स्थान से कार्यस्थल का पता भरें। वास्तविक पता जाँचें और ज़रूरत हो तो सुधारें।",
+              "body": "मौजूदा स्थान से कार्यस्थल का पता भरें। वास्तविक पता जाँचें और ज़रूरत हो तो सुधारें।\n\nपता खोजने की अनुमति ऑपरेटिंग सिस्टम की स्थान अनुमति से अलग चुनी जाती है। खोज तभी शुरू होती है जब आप ऐप के पता खोज संबंधी नोटिस में इसकी अनुमति देते हैं।\n\nकार्यस्थल का पता ढूँढ़ने के लिए, आपके डिवाइस की पता खोज सेवा आपके स्थान के निर्देशांक डिवाइस के बाहर किसी सेवा को भेज सकती है। अगर आप इसकी अनुमति नहीं देते हैं, तो पता खुद दर्ज कर सकते हैं।",
               "notice": "GPS से मिला पता कार्यस्थल के वास्तविक पते से अलग हो सकता है। सहेजने से पहले वास्तविक पता जाँचें।",
               "icon": {
                 "name": "my_location_rounded",
@@ -7575,7 +7575,7 @@
             {
               "id": "camera-gps-record",
               "title": "जीपीएस स्थान रिकार्ड",
-              "body": "“जीपीएस स्थान रिकार्ड” बंद होने पर ऐप फ़ोटो के रिकॉर्ड में निर्देशांक नहीं सहेजता। “पता दिखाएँ” एक अलग सेटिंग है। इसे चालू करने और स्थान की अनुमति देने पर ऐप मौजूदा स्थान का पता खोजकर दिखा सकता है और फ़ोटो लेते समय उसे फ़ोटो के रिकॉर्ड में सहेज सकता है। मूल JPEG में मौजूद EXIF डेटा ज्यों का त्यों रहता है।",
+              "body": "“जीपीएस स्थान रिकार्ड” बंद होने पर ऐप फ़ोटो के रिकॉर्ड में निर्देशांक नहीं सहेजता। “पता दिखाएँ” एक अलग सेटिंग है। इसे चालू करने और स्थान की अनुमति देने पर ऐप मौजूदा स्थान का पता खोजकर दिखा सकता है और फ़ोटो लेते समय उसे फ़ोटो के रिकॉर्ड में सहेज सकता है। मूल JPEG में मौजूद EXIF डेटा ज्यों का त्यों रहता है।\n\nपता खोजने की अनुमति ऑपरेटिंग सिस्टम की स्थान अनुमति से अलग चुनी जाती है। खोज तभी शुरू होती है जब आप ऐप के पता खोज संबंधी नोटिस में इसकी अनुमति देते हैं।\n\nकैमरे में पता दिखाने के लिए TAIPOPO अक्षांश और देशांतर Android की जियोकोडिंग सेवा को भेजता है। सेवा इन निर्देशांकों को आपके डिवाइस के बाहर प्रोसेस कर सकती है। पता खोजे बिना भी आप फ़ोटो ले और सेव कर सकते हैं। आगे पता खोजना बंद करने के लिए कैमरा सेटिंग में पता दिखाना बंद करें।",
               "notice": null,
               "icon": {
                 "name": "location_on_rounded",
@@ -7687,7 +7687,7 @@
             {
               "id": "camera-address",
               "title": "पता",
-              "body": "कैमरा ओवरले में जीपीएस पता प्रदर्शित करें।",
+              "body": "कैमरा ओवरले में जीपीएस पता प्रदर्शित करें।\n\nपता खोजने की अनुमति ऑपरेटिंग सिस्टम की स्थान अनुमति से अलग चुनी जाती है। खोज तभी शुरू होती है जब आप ऐप के पता खोज संबंधी नोटिस में इसकी अनुमति देते हैं।\n\nकैमरे में पता दिखाने के लिए TAIPOPO अक्षांश और देशांतर Android की जियोकोडिंग सेवा को भेजता है। सेवा इन निर्देशांकों को आपके डिवाइस के बाहर प्रोसेस कर सकती है। पता खोजे बिना भी आप फ़ोटो ले और सेव कर सकते हैं। आगे पता खोजना बंद करने के लिए कैमरा सेटिंग में पता दिखाना बंद करें।",
               "notice": null,
               "icon": {
                 "name": "map_outlined",
@@ -8059,7 +8059,7 @@
             {
               "id": "backup-share",
               "title": "बाहरी बैकअप बनाएँ",
-              "body": "सेटिंग्स > बैकअप और पुनर्स्थापना > बाहरी बैकअप बनाएँ\nबैकअप ZIP बनाने के बाद उसे सहेजने के लिए Android की शेयर शीट में ऐप चुनें। सहेजने की स्थिति उसी ऐप में देखें। कई हिस्सों वाले बैकअप की सभी फ़ाइलें साथ रखें।",
+              "body": "सेटिंग्स > बैकअप और पुनर्स्थापना > बाहरी बैकअप बनाएँ\nबैकअप ZIP बनाने के बाद उसे सहेजने के लिए Android की शेयर शीट में ऐप चुनें। सहेजने की स्थिति उसी ऐप में देखें। कई हिस्सों वाले बैकअप की सभी फ़ाइलें साथ रखें।\n\nयह मानक ZIP बैकअप में शामिल कार्य डेटा, सेटिंग, फ़ोटो और अन्य डेटा की बिना एन्क्रिप्ट की गई प्रति है; इसमें शर्तों की पुष्टि या स्वीकृति के अभिलेख शामिल नहीं होते। इसमें मूल फ़ोटो और उनके स्थान, कैप्चर समय और डिवाइस मेटाडेटा के साथ कार्यस्थल, पते, कार्य रिकॉर्ड, वेतन और नोट शामिल हो सकते हैं। सहेजने या साझा करने पर ऐप के बाहर एक प्रति बनती है जिसे चुना गया व्यक्ति या ऐप खोल सकता है।",
               "notice": null,
               "icon": {
                 "name": "folder_zip_outlined",
@@ -8073,7 +8073,7 @@
             {
               "id": "restore",
               "title": "पुनर्स्थापित करें",
-              "body": "सेटिंग्स > बैकअप और पुनर्स्थापना\n\nडिवाइस बैकअप सूची से पुनर्स्थापित करें: इस डिवाइस पर सहेजी गई बैकअप सूची से चुनें।\n\nSD कार्ड या USB से पुनर्स्थापित करें: कनेक्ट किए गए SD कार्ड या USB स्टोरेज डिवाइस से बैकअप फ़ोल्डर चुनें।\n\nबैकअप फ़ाइलें आयात करें: डिवाइस या फ़ाइल चयनकर्ता में दिखने वाले स्टोरेज से बैकअप ZIP चुनें। कई हिस्सों वाले बैकअप के लिए उसी बैकअप की सभी फ़ाइलें चाहिए।\n\nपुनर्स्थापना मौजूदा डेटा को बैकअप से बदल देती है, इसलिए पहले मौजूदा डेटा का बैकअप लें।",
+              "body": "सेटिंग्स > बैकअप और पुनर्स्थापना\n\nडिवाइस बैकअप सूची से पुनर्स्थापित करें: इस डिवाइस पर सहेजी गई बैकअप सूची से चुनें।\n\nSD कार्ड या USB से पुनर्स्थापित करें: कनेक्ट किए गए SD कार्ड या USB स्टोरेज डिवाइस से बैकअप फ़ोल्डर चुनें।\n\nबैकअप फ़ाइलें आयात करें: डिवाइस या फ़ाइल चयनकर्ता में दिखने वाले स्टोरेज से बैकअप ZIP चुनें। कई हिस्सों वाले बैकअप के लिए उसी बैकअप की सभी फ़ाइलें चाहिए।\n\nपुनर्स्थापना मौजूदा डेटा को बैकअप से बदल देती है, इसलिए पहले मौजूदा डेटा का बैकअप लें।\n\nपुराने Google Drive प्रतिरूप: यदि किसी पुराने संस्करण ने appDataFolder में बैकअप बनाया था, तो वह वर्तमान संस्करण की ZIP से अलग एक बाहरी प्रतिरूप है। ऐप को रीसेट या अनइंस्टॉल करने से वह प्रतिरूप नहीं मिटता। संस्करण 1.0.0(17) उसका सीधे बैकअप बनाने, उसे पुनर्स्थापित करने या उसका प्रबंधन करने की सुविधा नहीं देता। उसके स्वामी Google खाते में उसका प्रबंधन करने या उसे मिटाने के लिए Google के आधिकारिक निर्देश देखें। https://support.google.com/drive/answer/6374270",
               "notice": null,
               "icon": {
                 "name": "restore_outlined",
@@ -8455,7 +8455,7 @@
             {
               "id": "workplace-gps-address",
               "title": "Usar localização GPS atual para o endereço",
-              "body": "Preencha o endereço do local de trabalho com a localização atual. Confira o endereço real e corrija se necessário.",
+              "body": "Preencha o endereço do local de trabalho com a localização atual. Confira o endereço real e corrija se necessário.\n\nA consulta de endereço é uma escolha separada da permissão de localização do sistema operacional. A consulta só começa depois de você permiti-la no aviso de consulta de endereço do aplicativo.\n\nPara encontrar o endereço do local de trabalho, o serviço de busca de endereços do seu dispositivo pode enviar as coordenadas da sua localização a um serviço externo ao dispositivo. Se você não permitir a busca, pode inserir o endereço manualmente.",
               "notice": "O endereço do GPS pode ser diferente do endereço real do local de trabalho. Confira antes de salvar.",
               "icon": {
                 "name": "my_location_rounded",
@@ -9215,7 +9215,7 @@
             {
               "id": "camera-gps-record",
               "title": "Registro de localização GPS",
-              "body": "Com “Registro de localização GPS” desativado, o aplicativo não salva coordenadas no registro da foto. “Mostrar endereço” é uma configuração separada. Se ela estiver ativada e houver permissão de localização, o aplicativo pode consultar e exibir o endereço da localização atual e salvá-lo no registro da foto no momento da captura. Os dados EXIF do JPEG original são preservados sem alterações.",
+              "body": "Com “Registro de localização GPS” desativado, o aplicativo não salva coordenadas no registro da foto. “Mostrar endereço” é uma configuração separada. Se ela estiver ativada e houver permissão de localização, o aplicativo pode consultar e exibir o endereço da localização atual e salvá-lo no registro da foto no momento da captura. Os dados EXIF do JPEG original são preservados sem alterações.\n\nA consulta de endereço é uma escolha separada da permissão de localização do sistema operacional. A consulta só começa depois de você permiti-la no aviso de consulta de endereço do aplicativo.\n\nPara exibir um endereço na câmera, o TAIPOPO envia a latitude e a longitude ao serviço de geocodificação do Android. O serviço pode processar as coordenadas fora do dispositivo. Você pode tirar e salvar fotos sem consultar um endereço. Para parar novas consultas, desative a exibição do endereço nos ajustes da câmera.",
               "notice": null,
               "icon": {
                 "name": "location_on_rounded",
@@ -9327,7 +9327,7 @@
             {
               "id": "camera-address",
               "title": "Endereço",
-              "body": "Exiba o endereço GPS na sobreposição da câmera.",
+              "body": "Exiba o endereço GPS na sobreposição da câmera.\n\nA consulta de endereço é uma escolha separada da permissão de localização do sistema operacional. A consulta só começa depois de você permiti-la no aviso de consulta de endereço do aplicativo.\n\nPara exibir um endereço na câmera, o TAIPOPO envia a latitude e a longitude ao serviço de geocodificação do Android. O serviço pode processar as coordenadas fora do dispositivo. Você pode tirar e salvar fotos sem consultar um endereço. Para parar novas consultas, desative a exibição do endereço nos ajustes da câmera.",
               "notice": null,
               "icon": {
                 "name": "map_outlined",
@@ -9699,7 +9699,7 @@
             {
               "id": "backup-share",
               "title": "Criar backup externo",
-              "body": "Configurações > Backup e restauração > Criar backup externo\nApós criar o ZIP de backup, escolha um app no menu de compartilhamento do Android para guardá-lo. Confira o status do salvamento no app escolhido. Guarde juntos todos os arquivos de um backup dividido.",
+              "body": "Configurações > Backup e restauração > Criar backup externo\nApós criar o ZIP de backup, escolha um app no menu de compartilhamento do Android para guardá-lo. Confira o status do salvamento no app escolhido. Guarde juntos todos os arquivos de um backup dividido.\n\nEste ZIP padrão é uma cópia não criptografada dos dados de trabalho, configurações, fotos e outros dados incluídos no backup; não inclui registros de confirmação ou aceitação dos Termos. Ele pode incluir fotos originais e metadados de localização, hora de captura e dispositivo, além de locais de trabalho, endereços, registros de trabalho, pagamento e notas. Ao salvar ou compartilhar, é criada uma cópia fora do app que a pessoa ou app selecionado pode abrir.",
               "notice": null,
               "icon": {
                 "name": "folder_zip_outlined",
@@ -9713,7 +9713,7 @@
             {
               "id": "restore",
               "title": "Restaurar",
-              "body": "Configurações > Backup e restauração\n\nRestaurar da lista de backups do dispositivo: Escolha na lista de backups salvos neste dispositivo.\n\nRestaurar de SD ou USB: Escolha uma pasta de backup em um cartão SD ou dispositivo USB conectado.\n\nImportar arquivos de backup: Selecione o ZIP de backup no dispositivo ou em um armazenamento exibido no seletor de arquivos. Um backup dividido exige todos os arquivos do mesmo backup.\n\nA restauração substitui os dados atuais pelo backup; faça antes uma cópia dos dados atuais.",
+              "body": "Configurações > Backup e restauração\n\nRestaurar da lista de backups do dispositivo: Escolha na lista de backups salvos neste dispositivo.\n\nRestaurar de SD ou USB: Escolha uma pasta de backup em um cartão SD ou dispositivo USB conectado.\n\nImportar arquivos de backup: Selecione o ZIP de backup no dispositivo ou em um armazenamento exibido no seletor de arquivos. Um backup dividido exige todos os arquivos do mesmo backup.\n\nA restauração substitui os dados atuais pelo backup; faça antes uma cópia dos dados atuais.\n\nCópias antigas do Google Drive: se uma versão anterior criou um backup em appDataFolder, ele é uma cópia externa separada do ZIP da versão atual. Redefinir ou desinstalar o aplicativo não exclui essa cópia. A versão 1.0.0(17) não oferece backup, restauração ou gerenciamento direto dessa cópia. Consulte as instruções oficiais do Google para gerenciá-la ou excluí-la na conta do Google à qual ela pertence. https://support.google.com/drive/answer/6374270",
               "notice": null,
               "icon": {
                 "name": "restore_outlined",
@@ -10095,7 +10095,7 @@
             {
               "id": "workplace-gps-address",
               "title": "Usar ubicación GPS actual para la dirección",
-              "body": "Rellena la dirección del lugar de trabajo con la ubicación actual. Compruebe la dirección real y corríjala si es necesario.",
+              "body": "Rellena la dirección del lugar de trabajo con la ubicación actual. Compruebe la dirección real y corríjala si es necesario.\n\nLa consulta de direcciones se elige por separado del permiso de ubicación del sistema operativo. La consulta solo comienza después de que la permita en el aviso de consulta de direcciones de la aplicación.\n\nPara buscar la dirección del lugar de trabajo, el servicio de búsqueda de direcciones de tu dispositivo puede enviar las coordenadas de tu ubicación a un servicio externo al dispositivo. Si no permites la búsqueda, puedes introducir la dirección manualmente.",
               "notice": "La dirección del GPS puede diferir de la dirección real del lugar de trabajo. Compruébela antes de guardar.",
               "icon": {
                 "name": "my_location_rounded",
@@ -10855,7 +10855,7 @@
             {
               "id": "camera-gps-record",
               "title": "Registro de ubicación GPS",
-              "body": "Al desactivar «Registro de ubicación GPS», la aplicación no guarda coordenadas en el registro de la foto. «Mostrar dirección» es un ajuste independiente. Si lo activas y concedes el permiso de ubicación, la aplicación puede consultar y mostrar la dirección de tu ubicación actual y guardarla en el registro de la foto al tomarla. Los datos EXIF del JPEG original se conservan tal como están.",
+              "body": "Al desactivar «Registro de ubicación GPS», la aplicación no guarda coordenadas en el registro de la foto. «Mostrar dirección» es un ajuste independiente. Si lo activas y concedes el permiso de ubicación, la aplicación puede consultar y mostrar la dirección de tu ubicación actual y guardarla en el registro de la foto al tomarla. Los datos EXIF del JPEG original se conservan tal como están.\n\nLa consulta de direcciones se elige por separado del permiso de ubicación del sistema operativo. La consulta solo comienza después de que la permita en el aviso de consulta de direcciones de la aplicación.\n\nPara mostrar una dirección en la cámara, TAIPOPO envía la latitud y la longitud al servicio de geocodificación de Android. El servicio puede procesar las coordenadas fuera del dispositivo. Puedes tomar y guardar fotos sin consultar la dirección. Desactiva la visualización de la dirección en los ajustes de la cámara para detener futuras consultas.",
               "notice": null,
               "icon": {
                 "name": "location_on_rounded",
@@ -10967,7 +10967,7 @@
             {
               "id": "camera-address",
               "title": "Dirección",
-              "body": "Muestra la dirección GPS en la superposición de la cámara.",
+              "body": "Muestra la dirección GPS en la superposición de la cámara.\n\nLa consulta de direcciones se elige por separado del permiso de ubicación del sistema operativo. La consulta solo comienza después de que la permita en el aviso de consulta de direcciones de la aplicación.\n\nPara mostrar una dirección en la cámara, TAIPOPO envía la latitud y la longitud al servicio de geocodificación de Android. El servicio puede procesar las coordenadas fuera del dispositivo. Puedes tomar y guardar fotos sin consultar la dirección. Desactiva la visualización de la dirección en los ajustes de la cámara para detener futuras consultas.",
               "notice": null,
               "icon": {
                 "name": "map_outlined",
@@ -11339,7 +11339,7 @@
             {
               "id": "backup-share",
               "title": "Crear copia de seguridad externa",
-              "body": "Configuración > Copia de seguridad y restauración > Crear copia de seguridad externa\nDespués de crear el ZIP, elige una aplicación en el menú para compartir de Android para guardarlo. Comprueba el estado del guardado en la aplicación elegida. Conserva juntos todos los archivos de una copia dividida.",
+              "body": "Configuración > Copia de seguridad y restauración > Crear copia de seguridad externa\nDespués de crear el ZIP, elige una aplicación en el menú para compartir de Android para guardarlo. Comprueba el estado del guardado en la aplicación elegida. Conserva juntos todos los archivos de una copia dividida.\n\nEste ZIP estándar es una copia sin cifrar de los datos de trabajo, ajustes, fotos y demás datos incluidos en la copia de seguridad; no incluye registros de confirmación o aceptación de las Condiciones. Puede incluir fotos originales y sus metadatos de ubicación, hora de captura y dispositivo, junto con lugares de trabajo, direcciones, registros de trabajo, pagos y notas. Al guardar o compartir, se crea una copia fuera de la app que la persona o app seleccionada puede abrir.",
               "notice": null,
               "icon": {
                 "name": "folder_zip_outlined",
@@ -11353,7 +11353,7 @@
             {
               "id": "restore",
               "title": "Restaurar",
-              "body": "Configuración > Copia de seguridad y restauración\n\nRestaurar desde la lista de copias del dispositivo: Elige de la lista de copias guardadas en este dispositivo.\n\nRestaurar desde SD o USB: Elige una carpeta de copia desde una tarjeta SD o dispositivo USB conectado.\n\nImportar archivos de copia de seguridad: Selecciona el ZIP en el dispositivo o en un almacenamiento que aparezca en el selector de archivos. Una copia dividida requiere todos los archivos de la misma copia.\n\nLa restauración sustituye los datos actuales por la copia; guarda antes los datos actuales.",
+              "body": "Configuración > Copia de seguridad y restauración\n\nRestaurar desde la lista de copias del dispositivo: Elige de la lista de copias guardadas en este dispositivo.\n\nRestaurar desde SD o USB: Elige una carpeta de copia desde una tarjeta SD o dispositivo USB conectado.\n\nImportar archivos de copia de seguridad: Selecciona el ZIP en el dispositivo o en un almacenamiento que aparezca en el selector de archivos. Una copia dividida requiere todos los archivos de la misma copia.\n\nLa restauración sustituye los datos actuales por la copia; guarda antes los datos actuales.\n\nCopias antiguas de Google Drive: si una versión anterior creó una copia de seguridad en appDataFolder, es una copia externa distinta del ZIP de la versión actual. Restablecer o desinstalar la aplicación no elimina esa copia. La versión 1.0.0(17) no permite realizar, restaurar ni administrar directamente esas copias. Consulte las instrucciones oficiales de Google para administrarlas o eliminarlas en la cuenta de Google a la que pertenecen. https://support.google.com/drive/answer/6374270",
               "notice": null,
               "icon": {
                 "name": "restore_outlined",
@@ -11735,7 +11735,7 @@
             {
               "id": "workplace-gps-address",
               "title": "Utiliser l’adresse de la position GPS actuelle",
-              "body": "Renseignez l’adresse du lieu de travail à partir de votre position actuelle. Vérifiez l’adresse réelle et corrigez-la si nécessaire.",
+              "body": "Renseignez l’adresse du lieu de travail à partir de votre position actuelle. Vérifiez l’adresse réelle et corrigez-la si nécessaire.\n\nLa recherche d’adresse est un choix distinct de l’autorisation de localisation du système d’exploitation. Une recherche ne commence qu’après votre autorisation dans l’avis de recherche d’adresse de l’application.\n\nPour trouver l’adresse du lieu de travail, le service de recherche d’adresses de votre appareil peut envoyer vos coordonnées de localisation à un service externe à l’appareil. Si vous refusez la recherche, vous pouvez saisir l’adresse manuellement.",
               "notice": "L’adresse GPS peut différer de l’adresse réelle du lieu de travail. Vérifiez-la avant d’enregistrer.",
               "icon": {
                 "name": "my_location_rounded",
@@ -12495,7 +12495,7 @@
             {
               "id": "camera-gps-record",
               "title": "Enregistrement de localisation GPS",
-              "body": "Lorsque « Enregistrement de localisation GPS » est désactivé, l’application n’enregistre pas de coordonnées dans la fiche de la photo. « Afficher l'adresse » est un réglage distinct. Si ce réglage est activé et que l’accès à la localisation est autorisé, l’application peut rechercher et afficher l’adresse correspondant à la position actuelle et l’enregistrer dans la fiche de la photo lors de la prise de vue. Les données EXIF présentes dans le JPEG d’origine sont conservées telles quelles.",
+              "body": "Lorsque « Enregistrement de localisation GPS » est désactivé, l’application n’enregistre pas de coordonnées dans la fiche de la photo. « Afficher l'adresse » est un réglage distinct. Si ce réglage est activé et que l’accès à la localisation est autorisé, l’application peut rechercher et afficher l’adresse correspondant à la position actuelle et l’enregistrer dans la fiche de la photo lors de la prise de vue. Les données EXIF présentes dans le JPEG d’origine sont conservées telles quelles.\n\nLa recherche d’adresse est un choix distinct de l’autorisation de localisation du système d’exploitation. Une recherche ne commence qu’après votre autorisation dans l’avis de recherche d’adresse de l’application.\n\nPour afficher une adresse dans l’appareil photo, TAIPOPO transmet la latitude et la longitude au service de géocodage Android. Ce service peut traiter les coordonnées en dehors de votre appareil. Vous pouvez prendre et enregistrer des photos sans rechercher d’adresse. Désactivez l’affichage de l’adresse dans les réglages de l’appareil photo pour arrêter les recherches.",
               "notice": null,
               "icon": {
                 "name": "location_on_rounded",
@@ -12607,7 +12607,7 @@
             {
               "id": "camera-address",
               "title": "Adresse",
-              "body": "Affichez l'adresse GPS dans la superposition de la caméra.",
+              "body": "Affichez l'adresse GPS dans la superposition de la caméra.\n\nLa recherche d’adresse est un choix distinct de l’autorisation de localisation du système d’exploitation. Une recherche ne commence qu’après votre autorisation dans l’avis de recherche d’adresse de l’application.\n\nPour afficher une adresse dans l’appareil photo, TAIPOPO transmet la latitude et la longitude au service de géocodage Android. Ce service peut traiter les coordonnées en dehors de votre appareil. Vous pouvez prendre et enregistrer des photos sans rechercher d’adresse. Désactivez l’affichage de l’adresse dans les réglages de l’appareil photo pour arrêter les recherches.",
               "notice": null,
               "icon": {
                 "name": "map_outlined",
@@ -12979,7 +12979,7 @@
             {
               "id": "backup-share",
               "title": "Créer une sauvegarde externe",
-              "body": "Paramètres > Sauvegarde et restauration > Créer une sauvegarde externe\nAprès avoir créé le ZIP, choisissez une application dans le menu de partage Android pour le conserver. Vérifiez l’état de l’enregistrement dans l’application choisie. Conservez ensemble tous les fichiers d’une sauvegarde fractionnée.",
+              "body": "Paramètres > Sauvegarde et restauration > Créer une sauvegarde externe\nAprès avoir créé le ZIP, choisissez une application dans le menu de partage Android pour le conserver. Vérifiez l’état de l’enregistrement dans l’application choisie. Conservez ensemble tous les fichiers d’une sauvegarde fractionnée.\n\nCe ZIP standard est une copie non chiffrée des données de travail, réglages, photos et autres données incluses dans la sauvegarde ; il ne contient pas les traces de confirmation ou d'acceptation des Conditions. Il peut inclure les photos originales et leurs métadonnées de lieu, d’heure de prise de vue et d’appareil, ainsi que les lieux de travail, adresses, relevés de travail, salaires et notes. L’enregistrement ou le partage crée une copie hors de l’application que la personne ou l’app sélectionnée peut ouvrir.",
               "notice": null,
               "icon": {
                 "name": "folder_zip_outlined",
@@ -12993,7 +12993,7 @@
             {
               "id": "restore",
               "title": "Restaurer",
-              "body": "Paramètres > Sauvegarde et restauration\n\nRestaurer depuis la liste de sauvegardes de l’appareil: Choisissez dans la liste des sauvegardes enregistrées sur cet appareil.\n\nRestaurer depuis SD ou USB: Choisissez un dossier de sauvegarde depuis une carte SD ou un périphérique USB connecté.\n\nImporter les fichiers de sauvegarde: Sélectionnez le ZIP sur l’appareil ou dans un espace de stockage affiché par le sélecteur de fichiers. Une sauvegarde fractionnée nécessite tous les fichiers de la même sauvegarde.\n\nLa restauration remplace les données actuelles par la sauvegarde ; sauvegardez d’abord vos données actuelles.",
+              "body": "Paramètres > Sauvegarde et restauration\n\nRestaurer depuis la liste de sauvegardes de l’appareil: Choisissez dans la liste des sauvegardes enregistrées sur cet appareil.\n\nRestaurer depuis SD ou USB: Choisissez un dossier de sauvegarde depuis une carte SD ou un périphérique USB connecté.\n\nImporter les fichiers de sauvegarde: Sélectionnez le ZIP sur l’appareil ou dans un espace de stockage affiché par le sélecteur de fichiers. Une sauvegarde fractionnée nécessite tous les fichiers de la même sauvegarde.\n\nLa restauration remplace les données actuelles par la sauvegarde ; sauvegardez d’abord vos données actuelles.\n\nAnciennes copies Google Drive : si une version antérieure a créé une sauvegarde dans appDataFolder, il s’agit d’une copie externe distincte du ZIP de la version actuelle. Réinitialiser ou désinstaller l’application ne supprime pas cette copie. La version 1.0.0(17) ne permet pas de la sauvegarder, restaurer ou gérer directement. Consultez les instructions officielles de Google pour la gérer ou la supprimer dans le compte Google auquel elle appartient. https://support.google.com/drive/answer/6374270",
               "notice": null,
               "icon": {
                 "name": "restore_outlined",
@@ -13375,7 +13375,7 @@
             {
               "id": "workplace-gps-address",
               "title": "Adresse aus aktuellem GPS-Standort",
-              "body": "Übernehmen Sie die Adresse Ihres aktuellen Standorts als Arbeitsstättenadresse. Prüfen und korrigieren Sie sie bei Bedarf.",
+              "body": "Übernehmen Sie die Adresse Ihres aktuellen Standorts als Arbeitsstättenadresse. Prüfen und korrigieren Sie sie bei Bedarf.\n\nDie Adressabfrage wird getrennt von der Standortberechtigung des Betriebssystems gewählt. Eine Abfrage beginnt erst, nachdem Sie ihr im Hinweis zur Adressabfrage in der App zugestimmt haben.\n\nDer Adressdienst deines Geräts kann deine Standortkoordinaten an einen Dienst außerhalb des Geräts senden, um die Adresse des Arbeitsplatzes zu ermitteln. Wenn du das nicht erlaubst, kannst du die Adresse von Hand eingeben.",
               "notice": "Die GPS-Adresse kann von der tatsächlichen Arbeitsstättenadresse abweichen. Prüfen Sie die Adresse vor dem Speichern.",
               "icon": {
                 "name": "my_location_rounded",
@@ -14135,7 +14135,7 @@
             {
               "id": "camera-gps-record",
               "title": "GPS-Standortaufzeichnung",
-              "body": "Wenn „GPS-Standortaufzeichnung“ deaktiviert ist, speichert die App keine Koordinaten im Fotodatensatz. „Adresse anzeigen“ ist eine separate Einstellung. Wenn sie aktiviert ist und die Standortberechtigung erteilt wurde, kann die App die Adresse anhand des aktuellen Standorts ermitteln, anzeigen und bei der Aufnahme im Fotodatensatz speichern. Die im Original-JPEG enthaltenen EXIF-Daten bleiben unverändert.",
+              "body": "Wenn „GPS-Standortaufzeichnung“ deaktiviert ist, speichert die App keine Koordinaten im Fotodatensatz. „Adresse anzeigen“ ist eine separate Einstellung. Wenn sie aktiviert ist und die Standortberechtigung erteilt wurde, kann die App die Adresse anhand des aktuellen Standorts ermitteln, anzeigen und bei der Aufnahme im Fotodatensatz speichern. Die im Original-JPEG enthaltenen EXIF-Daten bleiben unverändert.\n\nDie Adressabfrage wird getrennt von der Standortberechtigung des Betriebssystems gewählt. Eine Abfrage beginnt erst, nachdem Sie ihr im Hinweis zur Adressabfrage in der App zugestimmt haben.\n\nUm in der Kamera eine Adresse anzuzeigen, übermittelt TAIPOPO Breiten- und Längengrad an den Geokodierungsdienst von Android. Die Koordinaten können außerhalb Ihres Geräts verarbeitet werden. Sie können auch ohne Adressabfrage Fotos aufnehmen und speichern. Zum Beenden der Abfragen schalten Sie die Adressanzeige in den Kameraeinstellungen aus.",
               "notice": null,
               "icon": {
                 "name": "location_on_rounded",
@@ -14247,7 +14247,7 @@
             {
               "id": "camera-address",
               "title": "Adresse",
-              "body": "Zeigen Sie die GPS-Adresse im Kamera-Overlay an.",
+              "body": "Zeigen Sie die GPS-Adresse im Kamera-Overlay an.\n\nDie Adressabfrage wird getrennt von der Standortberechtigung des Betriebssystems gewählt. Eine Abfrage beginnt erst, nachdem Sie ihr im Hinweis zur Adressabfrage in der App zugestimmt haben.\n\nUm in der Kamera eine Adresse anzuzeigen, übermittelt TAIPOPO Breiten- und Längengrad an den Geokodierungsdienst von Android. Die Koordinaten können außerhalb Ihres Geräts verarbeitet werden. Sie können auch ohne Adressabfrage Fotos aufnehmen und speichern. Zum Beenden der Abfragen schalten Sie die Adressanzeige in den Kameraeinstellungen aus.",
               "notice": null,
               "icon": {
                 "name": "map_outlined",
@@ -14619,7 +14619,7 @@
             {
               "id": "backup-share",
               "title": "Externe Sicherung erstellen",
-              "body": "Einstellungen > Sichern und Wiederherstellen > Externe Sicherung erstellen\nWählen Sie nach dem Erstellen der Sicherungs-ZIP im Android-Teilen-Menü eine App zum Speichern aus. Prüfen Sie den Speicherstatus in der ausgewählten App. Bewahren Sie alle Dateien einer geteilten Sicherung zusammen auf.",
+              "body": "Einstellungen > Sichern und Wiederherstellen > Externe Sicherung erstellen\nWählen Sie nach dem Erstellen der Sicherungs-ZIP im Android-Teilen-Menü eine App zum Speichern aus. Prüfen Sie den Speicherstatus in der ausgewählten App. Bewahren Sie alle Dateien einer geteilten Sicherung zusammen auf.\n\nDiese Standard-ZIP-Datei ist eine unverschlüsselte Kopie der für das Backup vorgesehenen Arbeitsdaten, Einstellungen, Fotos und weiterer gesicherter Daten; Bestätigungs- und Annahmeprotokolle zu den Bedingungen sind nicht enthalten. Sie kann Originalfotos mit Standort-, Aufnahmezeit- und Gerätemetadaten sowie Arbeitsorte, Adressen, Arbeitsaufzeichnungen, Lohnangaben und Notizen enthalten. Beim Speichern oder Teilen wird außerhalb der App eine Kopie erstellt, die die ausgewählte Person oder App öffnen kann.",
               "notice": null,
               "icon": {
                 "name": "folder_zip_outlined",
@@ -14633,7 +14633,7 @@
             {
               "id": "restore",
               "title": "Wiederherstellen",
-              "body": "Einstellungen > Sichern und Wiederherstellen\n\nAus Geräte-Backupliste wiederherstellen: Wähle aus der auf diesem Gerät gespeicherten Sicherungsliste.\n\nVon SD-Karte oder USB wiederherstellen: Wähle einen Sicherungsordner von einer verbundenen SD-Karte oder einem USB-Speichergerät.\n\nSicherungsdateien importieren: Wählen Sie die Sicherungs-ZIP auf dem Gerät oder an einem in der Dateiauswahl angezeigten Speicherort aus. Für eine geteilte Sicherung werden alle Dateien derselben Sicherung benötigt.\n\nDie Wiederherstellung ersetzt aktuelle App-Daten durch die Sicherung; sichern Sie deshalb zuerst Ihre aktuellen Daten.",
+              "body": "Einstellungen > Sichern und Wiederherstellen\n\nAus Geräte-Backupliste wiederherstellen: Wähle aus der auf diesem Gerät gespeicherten Sicherungsliste.\n\nVon SD-Karte oder USB wiederherstellen: Wähle einen Sicherungsordner von einer verbundenen SD-Karte oder einem USB-Speichergerät.\n\nSicherungsdateien importieren: Wählen Sie die Sicherungs-ZIP auf dem Gerät oder an einem in der Dateiauswahl angezeigten Speicherort aus. Für eine geteilte Sicherung werden alle Dateien derselben Sicherung benötigt.\n\nDie Wiederherstellung ersetzt aktuelle App-Daten durch die Sicherung; sichern Sie deshalb zuerst Ihre aktuellen Daten.\n\nÄltere Google-Drive-Kopien: Hat eine frühere Version ein Backup in appDataFolder erstellt, ist dies eine externe Kopie, getrennt von der ZIP-Datei der aktuellen Version. Zurücksetzen oder Deinstallieren der App löscht diese Kopie nicht. Version 1.0.0(17) bietet dafür keine direkte Sicherung, Wiederherstellung oder Verwaltung. Hinweise zur Verwaltung oder Löschung im zugehörigen Google-Konto finden Sie in der offiziellen Google-Anleitung. https://support.google.com/drive/answer/6374270",
               "notice": null,
               "icon": {
                 "name": "restore_outlined",
@@ -15015,7 +15015,7 @@
             {
               "id": "workplace-gps-address",
               "title": "Isi alamat dari lokasi GPS saat ini",
-              "body": "Isi alamat tempat kerja dari lokasi saat ini. Periksa alamat sebenarnya dan ubah jika perlu.",
+              "body": "Isi alamat tempat kerja dari lokasi saat ini. Periksa alamat sebenarnya dan ubah jika perlu.\n\nPencarian alamat dipilih secara terpisah dari izin lokasi sistem operasi. Pencarian baru dimulai setelah Anda mengizinkannya dalam pemberitahuan pencarian alamat di aplikasi.\n\nUntuk mencari alamat tempat kerja, layanan pencarian alamat di perangkat Anda dapat mengirim koordinat lokasi Anda ke layanan di luar perangkat. Jika Anda tidak mengizinkan pencarian, Anda dapat memasukkan alamat secara manual.",
               "notice": "Alamat GPS mungkin berbeda dari alamat tempat kerja yang sebenarnya. Periksa alamat sebelum menyimpan.",
               "icon": {
                 "name": "my_location_rounded",
@@ -15775,7 +15775,7 @@
             {
               "id": "camera-gps-record",
               "title": "Catatan Lokasi GPS",
-              "body": "Jika “Catatan Lokasi GPS” dimatikan, aplikasi tidak menyimpan koordinat dalam catatan foto. “Tampilkan Alamat” adalah pengaturan terpisah. Jika pengaturan ini diaktifkan dan izin lokasi diberikan, aplikasi dapat mencari dan menampilkan alamat berdasarkan lokasi saat ini, lalu menyimpannya dalam catatan foto saat foto diambil. Data EXIF yang ada pada JPEG asli dipertahankan apa adanya.",
+              "body": "Jika “Catatan Lokasi GPS” dimatikan, aplikasi tidak menyimpan koordinat dalam catatan foto. “Tampilkan Alamat” adalah pengaturan terpisah. Jika pengaturan ini diaktifkan dan izin lokasi diberikan, aplikasi dapat mencari dan menampilkan alamat berdasarkan lokasi saat ini, lalu menyimpannya dalam catatan foto saat foto diambil. Data EXIF yang ada pada JPEG asli dipertahankan apa adanya.\n\nPencarian alamat dipilih secara terpisah dari izin lokasi sistem operasi. Pencarian baru dimulai setelah Anda mengizinkannya dalam pemberitahuan pencarian alamat di aplikasi.\n\nUntuk menampilkan alamat di kamera, TAIPOPO mengirim lintang dan bujur ke layanan geokode Android. Layanan dapat memproses koordinat di luar perangkat. Anda dapat mengambil dan menyimpan foto tanpa mencari alamat. Nonaktifkan tampilan alamat di setelan kamera untuk menghentikan pencarian berikutnya.",
               "notice": null,
               "icon": {
                 "name": "location_on_rounded",
@@ -15887,7 +15887,7 @@
             {
               "id": "camera-address",
               "title": "Alamat",
-              "body": "Tampilkan alamat GPS di overlay kamera.",
+              "body": "Tampilkan alamat GPS di overlay kamera.\n\nPencarian alamat dipilih secara terpisah dari izin lokasi sistem operasi. Pencarian baru dimulai setelah Anda mengizinkannya dalam pemberitahuan pencarian alamat di aplikasi.\n\nUntuk menampilkan alamat di kamera, TAIPOPO mengirim lintang dan bujur ke layanan geokode Android. Layanan dapat memproses koordinat di luar perangkat. Anda dapat mengambil dan menyimpan foto tanpa mencari alamat. Nonaktifkan tampilan alamat di setelan kamera untuk menghentikan pencarian berikutnya.",
               "notice": null,
               "icon": {
                 "name": "map_outlined",
@@ -16259,7 +16259,7 @@
             {
               "id": "backup-share",
               "title": "Buat cadangan eksternal",
-              "body": "Pengaturan > Cadangkan & Pulihkan > Buat cadangan eksternal\nSetelah ZIP cadangan dibuat, pilih aplikasi untuk menyimpannya di menu berbagi Android. Periksa status penyimpanan di aplikasi pilihan Anda. Simpan semua file cadangan yang terbagi secara bersama-sama.",
+              "body": "Pengaturan > Cadangkan & Pulihkan > Buat cadangan eksternal\nSetelah ZIP cadangan dibuat, pilih aplikasi untuk menyimpannya di menu berbagi Android. Periksa status penyimpanan di aplikasi pilihan Anda. Simpan semua file cadangan yang terbagi secara bersama-sama.\n\nZIP standar ini adalah salinan tanpa enkripsi dari data kerja, pengaturan, foto, dan data lain yang termasuk dalam cadangan; catatan konfirmasi atau penerimaan Ketentuan tidak disertakan. File ini dapat berisi foto asli beserta metadata lokasi, waktu pengambilan, dan perangkat, serta tempat kerja, alamat, catatan kerja, gaji, dan memo. Menyimpan atau membagikannya membuat salinan di luar aplikasi yang dapat dibuka oleh orang atau aplikasi yang dipilih.",
               "notice": null,
               "icon": {
                 "name": "folder_zip_outlined",
@@ -16273,7 +16273,7 @@
             {
               "id": "restore",
               "title": "Pulihkan",
-              "body": "Pengaturan > Cadangkan & Pulihkan\n\nPulihkan dari daftar cadangan perangkat: Pilih dari daftar cadangan yang tersimpan di perangkat ini.\n\nPulihkan dari kartu SD atau USB: Pilih folder cadangan dari kartu SD atau perangkat penyimpanan USB yang terhubung.\n\nImpor file cadangan: Pilih ZIP cadangan dari perangkat atau penyimpanan yang tampil di pemilih file. Cadangan yang terbagi memerlukan semua file dari cadangan yang sama.\n\nPemulihan mengganti data aplikasi saat ini dengan cadangan, jadi cadangkan data saat ini terlebih dahulu.",
+              "body": "Pengaturan > Cadangkan & Pulihkan\n\nPulihkan dari daftar cadangan perangkat: Pilih dari daftar cadangan yang tersimpan di perangkat ini.\n\nPulihkan dari kartu SD atau USB: Pilih folder cadangan dari kartu SD atau perangkat penyimpanan USB yang terhubung.\n\nImpor file cadangan: Pilih ZIP cadangan dari perangkat atau penyimpanan yang tampil di pemilih file. Cadangan yang terbagi memerlukan semua file dari cadangan yang sama.\n\nPemulihan mengganti data aplikasi saat ini dengan cadangan, jadi cadangkan data saat ini terlebih dahulu.\n\nSalinan Google Drive versi lama: jika versi sebelumnya membuat cadangan di appDataFolder, salinan eksternal tersebut terpisah dari ZIP versi saat ini. Mereset atau menghapus aplikasi tidak menghapus salinan itu. Versi 1.0.0(17) tidak menyediakan pencadangan, pemulihan, atau pengelolaan langsung untuk salinan tersebut. Lihat petunjuk resmi Google untuk mengelola atau menghapusnya di akun Google pemiliknya. https://support.google.com/drive/answer/6374270",
               "notice": null,
               "icon": {
                 "name": "restore_outlined",
@@ -16655,7 +16655,7 @@
             {
               "id": "workplace-gps-address",
               "title": "Điền địa chỉ từ vị trí GPS hiện tại",
-              "body": "Điền địa chỉ nơi làm việc từ vị trí hiện tại. Kiểm tra địa chỉ thực tế và sửa nếu cần.",
+              "body": "Điền địa chỉ nơi làm việc từ vị trí hiện tại. Kiểm tra địa chỉ thực tế và sửa nếu cần.\n\nTra cứu địa chỉ là lựa chọn riêng với quyền vị trí của hệ điều hành. Việc tra cứu chỉ bắt đầu sau khi bạn cho phép trong thông báo tra cứu địa chỉ của ứng dụng.\n\nĐể tìm địa chỉ nơi làm việc, dịch vụ tra cứu địa chỉ trên thiết bị có thể gửi tọa độ vị trí của bạn đến một dịch vụ bên ngoài thiết bị. Nếu không cho phép tra cứu, bạn vẫn có thể nhập địa chỉ thủ công.",
               "notice": "Địa chỉ GPS có thể khác địa chỉ nơi làm việc thực tế. Hãy kiểm tra địa chỉ trước khi lưu.",
               "icon": {
                 "name": "my_location_rounded",
@@ -17415,7 +17415,7 @@
             {
               "id": "camera-gps-record",
               "title": "Bản ghi vị trí GPS",
-              "body": "Khi tắt “Bản ghi vị trí GPS”, ứng dụng không lưu tọa độ vào bản ghi ảnh. “Hiển thị địa chỉ” là một cài đặt riêng. Khi bật cài đặt này và cấp quyền vị trí, ứng dụng có thể tra và hiển thị địa chỉ theo vị trí hiện tại, rồi lưu địa chỉ vào bản ghi ảnh khi chụp. Dữ liệu EXIF trong JPEG gốc được giữ nguyên.",
+              "body": "Khi tắt “Bản ghi vị trí GPS”, ứng dụng không lưu tọa độ vào bản ghi ảnh. “Hiển thị địa chỉ” là một cài đặt riêng. Khi bật cài đặt này và cấp quyền vị trí, ứng dụng có thể tra và hiển thị địa chỉ theo vị trí hiện tại, rồi lưu địa chỉ vào bản ghi ảnh khi chụp. Dữ liệu EXIF trong JPEG gốc được giữ nguyên.\n\nTra cứu địa chỉ là lựa chọn riêng với quyền vị trí của hệ điều hành. Việc tra cứu chỉ bắt đầu sau khi bạn cho phép trong thông báo tra cứu địa chỉ của ứng dụng.\n\nĐể hiển thị địa chỉ trong máy ảnh, TAIPOPO gửi vĩ độ và kinh độ tới dịch vụ tra địa chỉ của Android. Dịch vụ có thể xử lý tọa độ bên ngoài thiết bị. Bạn vẫn có thể chụp và lưu ảnh khi không tra địa chỉ. Để dừng các lượt tra cứu sau, hãy tắt hiển thị địa chỉ trong cài đặt máy ảnh.",
               "notice": null,
               "icon": {
                 "name": "location_on_rounded",
@@ -17527,7 +17527,7 @@
             {
               "id": "camera-address",
               "title": "Địa chỉ",
-              "body": "Hiển thị địa chỉ GPS trong lớp phủ camera.",
+              "body": "Hiển thị địa chỉ GPS trong lớp phủ camera.\n\nTra cứu địa chỉ là lựa chọn riêng với quyền vị trí của hệ điều hành. Việc tra cứu chỉ bắt đầu sau khi bạn cho phép trong thông báo tra cứu địa chỉ của ứng dụng.\n\nĐể hiển thị địa chỉ trong máy ảnh, TAIPOPO gửi vĩ độ và kinh độ tới dịch vụ tra địa chỉ của Android. Dịch vụ có thể xử lý tọa độ bên ngoài thiết bị. Bạn vẫn có thể chụp và lưu ảnh khi không tra địa chỉ. Để dừng các lượt tra cứu sau, hãy tắt hiển thị địa chỉ trong cài đặt máy ảnh.",
               "notice": null,
               "icon": {
                 "name": "map_outlined",
@@ -17899,7 +17899,7 @@
             {
               "id": "backup-share",
               "title": "Tạo bản sao lưu bên ngoài",
-              "body": "Cài đặt > Sao lưu & Khôi phục > Tạo bản sao lưu bên ngoài\nSau khi tạo tệp ZIP sao lưu, hãy chọn ứng dụng để lưu trong bảng chia sẻ Android. Kiểm tra trạng thái lưu trong ứng dụng đã chọn. Giữ tất cả các tệp của bản sao lưu chia nhiều phần cùng nhau.",
+              "body": "Cài đặt > Sao lưu & Khôi phục > Tạo bản sao lưu bên ngoài\nSau khi tạo tệp ZIP sao lưu, hãy chọn ứng dụng để lưu trong bảng chia sẻ Android. Kiểm tra trạng thái lưu trong ứng dụng đã chọn. Giữ tất cả các tệp của bản sao lưu chia nhiều phần cùng nhau.\n\nTệp ZIP tiêu chuẩn này là bản sao không được mã hóa của dữ liệu công việc, cài đặt, ảnh và dữ liệu khác thuộc phạm vi sao lưu; không bao gồm bản ghi xác nhận hoặc chấp nhận Điều khoản. Tệp có thể bao gồm ảnh gốc và siêu dữ liệu vị trí, thời gian chụp, thiết bị, cùng với nơi làm việc, địa chỉ, hồ sơ làm việc, tiền lương và ghi chú. Khi lưu hoặc chia sẻ, một bản sao bên ngoài ứng dụng sẽ được tạo và người hoặc ứng dụng được chọn có thể mở.",
               "notice": null,
               "icon": {
                 "name": "folder_zip_outlined",
@@ -17913,7 +17913,7 @@
             {
               "id": "restore",
               "title": "Khôi phục",
-              "body": "Cài đặt > Sao lưu & Khôi phục\n\nKhôi phục từ danh sách bản sao lưu trên thiết bị: Chọn từ danh sách sao lưu đã lưu trên thiết bị này.\n\nKhôi phục từ thẻ SD hoặc USB: Chọn thư mục sao lưu từ thẻ SD hoặc thiết bị lưu trữ USB đã kết nối.\n\nNhập tệp sao lưu: Chọn tệp ZIP sao lưu trên thiết bị hoặc trong bộ nhớ được hiển thị trong trình chọn tệp. Bản sao lưu chia nhiều phần cần tất cả các tệp của cùng một bản sao lưu.\n\nKhôi phục sẽ thay dữ liệu hiện tại bằng bản sao lưu, vì vậy hãy sao lưu dữ liệu hiện tại trước.",
+              "body": "Cài đặt > Sao lưu & Khôi phục\n\nKhôi phục từ danh sách bản sao lưu trên thiết bị: Chọn từ danh sách sao lưu đã lưu trên thiết bị này.\n\nKhôi phục từ thẻ SD hoặc USB: Chọn thư mục sao lưu từ thẻ SD hoặc thiết bị lưu trữ USB đã kết nối.\n\nNhập tệp sao lưu: Chọn tệp ZIP sao lưu trên thiết bị hoặc trong bộ nhớ được hiển thị trong trình chọn tệp. Bản sao lưu chia nhiều phần cần tất cả các tệp của cùng một bản sao lưu.\n\nKhôi phục sẽ thay dữ liệu hiện tại bằng bản sao lưu, vì vậy hãy sao lưu dữ liệu hiện tại trước.\n\nBản sao Google Drive từ phiên bản cũ: nếu phiên bản trước đã tạo bản sao lưu trong appDataFolder, đó là bản sao bên ngoài riêng biệt với ZIP của phiên bản hiện tại. Đặt lại hoặc gỡ cài đặt ứng dụng không xóa bản sao đó. Phiên bản 1.0.0(17) không cung cấp chức năng trực tiếp sao lưu, khôi phục hoặc quản lý bản sao này. Xem hướng dẫn chính thức của Google để quản lý hoặc xóa trong tài khoản Google sở hữu bản sao. https://support.google.com/drive/answer/6374270",
               "notice": null,
               "icon": {
                 "name": "restore_outlined",
@@ -18295,7 +18295,7 @@
             {
               "id": "workplace-gps-address",
               "title": "Ввести адрес по текущему местоположению GPS",
-              "body": "Заполните адрес места работы по текущему местоположению. Проверьте фактический адрес и при необходимости исправьте его.",
+              "body": "Заполните адрес места работы по текущему местоположению. Проверьте фактический адрес и при необходимости исправьте его.\n\nПоиск адреса выбирается отдельно от разрешения операционной системы на доступ к местоположению. Поиск начинается только после вашего разрешения в уведомлении о поиске адреса в приложении.\n\nЧтобы найти адрес места работы, служба поиска адресов на вашем устройстве может отправить координаты вашего местоположения в сервис за пределами устройства. Если вы не разрешите поиск, адрес можно ввести вручную.",
               "notice": "Адрес GPS может отличаться от фактического адреса места работы. Проверьте его перед сохранением.",
               "icon": {
                 "name": "my_location_rounded",
@@ -19055,7 +19055,7 @@
             {
               "id": "camera-gps-record",
               "title": "Запись местоположения GPS",
-              "body": "Если настройка «Запись местоположения GPS» выключена, приложение не сохраняет координаты в записи о снимке. «Показать адрес» — отдельная настройка. Если она включена и доступ к местоположению разрешён, приложение может определить и показать адрес по текущему местоположению и сохранить его в записи о снимке при съёмке. Данные EXIF исходного JPEG сохраняются без изменений.",
+              "body": "Если настройка «Запись местоположения GPS» выключена, приложение не сохраняет координаты в записи о снимке. «Показать адрес» — отдельная настройка. Если она включена и доступ к местоположению разрешён, приложение может определить и показать адрес по текущему местоположению и сохранить его в записи о снимке при съёмке. Данные EXIF исходного JPEG сохраняются без изменений.\n\nПоиск адреса выбирается отдельно от разрешения операционной системы на доступ к местоположению. Поиск начинается только после вашего разрешения в уведомлении о поиске адреса в приложении.\n\nЧтобы показать адрес в камере, TAIPOPO передаёт широту и долготу службе геокодирования Android. Служба может обработать координаты за пределами устройства. Можно снимать и сохранять фото без определения адреса. Чтобы прекратить новые запросы, отключите показ адреса в настройках камеры.",
               "notice": null,
               "icon": {
                 "name": "location_on_rounded",
@@ -19167,7 +19167,7 @@
             {
               "id": "camera-address",
               "title": "Адрес",
-              "body": "Отобразите адрес GPS в наложении камеры.",
+              "body": "Отобразите адрес GPS в наложении камеры.\n\nПоиск адреса выбирается отдельно от разрешения операционной системы на доступ к местоположению. Поиск начинается только после вашего разрешения в уведомлении о поиске адреса в приложении.\n\nЧтобы показать адрес в камере, TAIPOPO передаёт широту и долготу службе геокодирования Android. Служба может обработать координаты за пределами устройства. Можно снимать и сохранять фото без определения адреса. Чтобы прекратить новые запросы, отключите показ адреса в настройках камеры.",
               "notice": null,
               "icon": {
                 "name": "map_outlined",
@@ -19539,7 +19539,7 @@
             {
               "id": "backup-share",
               "title": "Создать внешнюю резервную копию",
-              "body": "Настройки > Резервное копирование и восстановление > Создать внешнюю резервную копию\nСоздав резервный ZIP, выберите приложение для его хранения в меню «Поделиться» Android. Проверьте, что сохранение завершено, в выбранном приложении. Храните все файлы разделённой копии вместе.",
+              "body": "Настройки > Резервное копирование и восстановление > Создать внешнюю резервную копию\nСоздав резервный ZIP, выберите приложение для его хранения в меню «Поделиться» Android. Проверьте, что сохранение завершено, в выбранном приложении. Храните все файлы разделённой копии вместе.\n\nЭтот стандартный ZIP-файл — незашифрованная копия рабочих данных, настроек, фотографий и других данных, включённых в резервную копию; записи о подтверждении или принятии Условий в него не входят. Он может содержать исходные фотографии и метаданные о местоположении, времени съемки и устройстве, а также места работы, адреса, записи о работе, оплату и заметки. При сохранении или отправке создается копия вне приложения, которую сможет открыть выбранный человек или приложение.",
               "notice": null,
               "icon": {
                 "name": "folder_zip_outlined",
@@ -19553,7 +19553,7 @@
             {
               "id": "restore",
               "title": "Восстановить",
-              "body": "Настройки > Резервное копирование и восстановление\n\nВосстановить из списка резервных копий устройства: Выберите из списка резервных копий, сохраненных на этом устройстве.\n\nВосстановить с SD или USB: Выберите папку резервной копии на подключенной SD-карте или USB-накопителе.\n\nИмпортировать файлы резервной копии: Выберите резервный ZIP на устройстве или в хранилище, которое отображается в окне выбора файлов. Для разделённой копии нужны все файлы одной и той же копии.\n\nВосстановление заменяет текущие данные приложения резервной копией, поэтому сначала сохраните и текущие данные.",
+              "body": "Настройки > Резервное копирование и восстановление\n\nВосстановить из списка резервных копий устройства: Выберите из списка резервных копий, сохраненных на этом устройстве.\n\nВосстановить с SD или USB: Выберите папку резервной копии на подключенной SD-карте или USB-накопителе.\n\nИмпортировать файлы резервной копии: Выберите резервный ZIP на устройстве или в хранилище, которое отображается в окне выбора файлов. Для разделённой копии нужны все файлы одной и той же копии.\n\nВосстановление заменяет текущие данные приложения резервной копией, поэтому сначала сохраните и текущие данные.\n\nСтарые копии Google Диска: если предыдущая версия создала резервную копию в appDataFolder, это внешняя копия, отдельная от ZIP текущей версии. Сброс или удаление приложения не удаляет эту копию. Версия 1.0.0(17) не предоставляет её прямое резервное копирование, восстановление или управление. Инструкции по управлению или удалению в аккаунте Google, которому она принадлежит, доступны в официальной справке Google. https://support.google.com/drive/answer/6374270",
               "notice": null,
               "icon": {
                 "name": "restore_outlined",
@@ -19935,7 +19935,7 @@
             {
               "id": "workplace-gps-address",
               "title": "Adresi mevcut GPS konumundan doldur",
-              "body": "Mevcut konumunuzdan işyeri adresini doldurun. Gerçek adresi kontrol edip gerektiğinde düzeltin.",
+              "body": "Mevcut konumunuzdan işyeri adresini doldurun. Gerçek adresi kontrol edip gerektiğinde düzeltin.\n\nAdres araması, işletim sisteminin konum izninden ayrı bir seçimdir. Arama yalnızca uygulamadaki adres arama bildiriminde izin vermenizden sonra başlar.\n\nCihazınızdaki adres arama hizmeti, iş yeri adresini bulmak için konum koordinatlarınızı cihaz dışındaki bir hizmete gönderebilir. Aramaya izin vermezseniz adresi elle girebilirsiniz.",
               "notice": "GPS adresi gerçek işyeri adresinden farklı olabilir. Kaydetmeden önce gerçek adresi kontrol edin.",
               "icon": {
                 "name": "my_location_rounded",
@@ -20695,7 +20695,7 @@
             {
               "id": "camera-gps-record",
               "title": "GPS Konum Kaydı",
-              "body": "“GPS Konum Kaydı” kapalıyken uygulama, fotoğraf kaydına koordinat kaydetmez. “Adresi Göster” ayrı bir ayardır. Bu ayar açıksa ve konum izni verilmişse uygulama, mevcut konumdan adresi bulup gösterebilir ve çekim sırasında fotoğraf kaydına kaydedebilir. Orijinal JPEG dosyasındaki EXIF bilgileri olduğu gibi korunur.",
+              "body": "“GPS Konum Kaydı” kapalıyken uygulama, fotoğraf kaydına koordinat kaydetmez. “Adresi Göster” ayrı bir ayardır. Bu ayar açıksa ve konum izni verilmişse uygulama, mevcut konumdan adresi bulup gösterebilir ve çekim sırasında fotoğraf kaydına kaydedebilir. Orijinal JPEG dosyasındaki EXIF bilgileri olduğu gibi korunur.\n\nAdres araması, işletim sisteminin konum izninden ayrı bir seçimdir. Arama yalnızca uygulamadaki adres arama bildiriminde izin vermenizden sonra başlar.\n\nKamerada adres göstermek için TAIPOPO, enlem ve boylamı Android adres bulma hizmetine gönderir. Hizmet koordinatları cihazınızın dışında işleyebilir. Adres aramadan da fotoğraf çekip kaydedebilirsiniz. Yeni sorguları durdurmak için kamera ayarlarında adres gösterimini kapatın.",
               "notice": null,
               "icon": {
                 "name": "location_on_rounded",
@@ -20807,7 +20807,7 @@
             {
               "id": "camera-address",
               "title": "Adres",
-              "body": "GPS adresini kamera arayüzünde görüntüleyin.",
+              "body": "GPS adresini kamera arayüzünde görüntüleyin.\n\nAdres araması, işletim sisteminin konum izninden ayrı bir seçimdir. Arama yalnızca uygulamadaki adres arama bildiriminde izin vermenizden sonra başlar.\n\nKamerada adres göstermek için TAIPOPO, enlem ve boylamı Android adres bulma hizmetine gönderir. Hizmet koordinatları cihazınızın dışında işleyebilir. Adres aramadan da fotoğraf çekip kaydedebilirsiniz. Yeni sorguları durdurmak için kamera ayarlarında adres gösterimini kapatın.",
               "notice": null,
               "icon": {
                 "name": "map_outlined",
@@ -21179,7 +21179,7 @@
             {
               "id": "backup-share",
               "title": "Harici yedek oluştur",
-              "body": "Ayarlar > Yedekleme ve Geri Yükleme > Harici yedek oluştur\nYedek ZIP'i oluşturduktan sonra saklamak için Android paylaşım menüsünden bir uygulama seçin. Kaydetme durumunu seçtiğiniz uygulamada kontrol edin. Bölünmüş bir yedeğin tüm dosyalarını birlikte saklayın.",
+              "body": "Ayarlar > Yedekleme ve Geri Yükleme > Harici yedek oluştur\nYedek ZIP'i oluşturduktan sonra saklamak için Android paylaşım menüsünden bir uygulama seçin. Kaydetme durumunu seçtiğiniz uygulamada kontrol edin. Bölünmüş bir yedeğin tüm dosyalarını birlikte saklayın.\n\nBu standart ZIP, yedeğe dâhil edilen iş verileri, ayarlar, fotoğraflar ve diğer verilerin şifrelenmemiş bir kopyasıdır; Koşulları onaylama veya kabul kayıtlarını içermez. Orijinal fotoğraflar ve bunların konum, çekim zamanı ve cihaz meta verilerinin yanı sıra iş yerleri, adresler, çalışma kayıtları, ücret ve notları içerebilir. Kaydetmek veya paylaşmak, seçilen kişi ya da uygulamanın açabileceği uygulama dışında bir kopya oluşturur.",
               "notice": null,
               "icon": {
                 "name": "folder_zip_outlined",
@@ -21193,7 +21193,7 @@
             {
               "id": "restore",
               "title": "Geri yükle",
-              "body": "Ayarlar > Yedekleme ve Geri Yükleme\n\nCihaz yedek listeden geri yükle: Bu cihazda kayıtlı yedek listesinden seç.\n\nSD kart veya USB’den geri yükle: Bağlı bir SD karttan veya USB depolama cihazından yedek klasörü seç.\n\nYedekleme dosyalarını içe aktar: Cihazdan veya dosya seçicide görünen depolama alanından yedek ZIP'i seçin. Bölünmüş yedek için aynı yedeğin tüm dosyaları gerekir.\n\nGeri yükleme mevcut verileri yedekle değiştirir; önce mevcut verilerinizi de yedekleyin.",
+              "body": "Ayarlar > Yedekleme ve Geri Yükleme\n\nCihaz yedek listeden geri yükle: Bu cihazda kayıtlı yedek listesinden seç.\n\nSD kart veya USB’den geri yükle: Bağlı bir SD karttan veya USB depolama cihazından yedek klasörü seç.\n\nYedekleme dosyalarını içe aktar: Cihazdan veya dosya seçicide görünen depolama alanından yedek ZIP'i seçin. Bölünmüş yedek için aynı yedeğin tüm dosyaları gerekir.\n\nGeri yükleme mevcut verileri yedekle değiştirir; önce mevcut verilerinizi de yedekleyin.\n\nEski Google Drive kopyaları: Önceki bir sürüm appDataFolder içinde yedek oluşturduysa bu, mevcut sürümün ZIP dosyasından ayrı bir haricî kopyadır. Uygulamayı sıfırlamak veya kaldırmak bu kopyayı silmez. 1.0.0(17) sürümü bu kopya için doğrudan yedekleme, geri yükleme veya yönetim sunmaz. Kopyanın sahibi olan Google hesabında yönetme veya silme işlemleri için Google'ın resmî talimatlarına bakın. https://support.google.com/drive/answer/6374270",
               "notice": null,
               "icon": {
                 "name": "restore_outlined",
@@ -21575,7 +21575,7 @@
             {
               "id": "workplace-gps-address",
               "title": "إدخال العنوان من موقع GPS الحالي",
-              "body": "املأ عنوان مكان العمل من موقعك الحالي. تحقق من العنوان الفعلي وعدّله عند الحاجة.",
+              "body": "املأ عنوان مكان العمل من موقعك الحالي. تحقق من العنوان الفعلي وعدّله عند الحاجة.\n\nالبحث عن العنوان خيار منفصل عن إذن الموقع في نظام التشغيل. لا يبدأ البحث إلا بعد السماح به في إشعار البحث عن العنوان داخل التطبيق.\n\nقد ترسل خدمة تحويل الإحداثيات إلى عناوين على جهازك إحداثيات موقعك إلى خدمة خارج الجهاز للعثور على عنوان مكان العمل. إذا لم تسمح بذلك، يمكنك إدخال العنوان يدويًا.",
               "notice": "قد يختلف عنوان GPS عن عنوان مكان العمل الفعلي. تحقق من العنوان الفعلي قبل الحفظ.",
               "icon": {
                 "name": "my_location_rounded",
@@ -22335,7 +22335,7 @@
             {
               "id": "camera-gps-record",
               "title": "سجل موقع GPS",
-              "body": "عند إيقاف «سجل موقع GPS»، لا تُحفَظ الإحداثيات في سجل الصورة داخل التطبيق. «إظهار العنوان» إعداد مستقل. عند تفعيله والسماح للتطبيق بالوصول إلى الموقع، يمكن تحديد العنوان من موقعك الحالي وعرضه وحفظه في سجل الصورة عند التقاطها. تُحفَظ بيانات EXIF الموجودة في ملف JPEG الأصلي كما هي.",
+              "body": "عند إيقاف «سجل موقع GPS»، لا تُحفَظ الإحداثيات في سجل الصورة داخل التطبيق. «إظهار العنوان» إعداد مستقل. عند تفعيله والسماح للتطبيق بالوصول إلى الموقع، يمكن تحديد العنوان من موقعك الحالي وعرضه وحفظه في سجل الصورة عند التقاطها. تُحفَظ بيانات EXIF الموجودة في ملف JPEG الأصلي كما هي.\n\nالبحث عن العنوان خيار منفصل عن إذن الموقع في نظام التشغيل. لا يبدأ البحث إلا بعد السماح به في إشعار البحث عن العنوان داخل التطبيق.\n\nلعرض عنوان في الكاميرا، يرسل TAIPOPO خط العرض وخط الطول إلى خدمة Android لتحويل الموقع إلى عنوان. قد تعالج الخدمة الإحداثيات خارج جهازك. يمكنك التصوير وحفظ الصور من دون البحث عن عنوان. لإيقاف البحث، عطّل عرض العنوان في إعدادات الكاميرا.",
               "notice": null,
               "icon": {
                 "name": "location_on_rounded",
@@ -22447,7 +22447,7 @@
             {
               "id": "camera-address",
               "title": "العنوان",
-              "body": "عرض عنوان GPS في تراكب الكاميرا.",
+              "body": "عرض عنوان GPS في تراكب الكاميرا.\n\nالبحث عن العنوان خيار منفصل عن إذن الموقع في نظام التشغيل. لا يبدأ البحث إلا بعد السماح به في إشعار البحث عن العنوان داخل التطبيق.\n\nلعرض عنوان في الكاميرا، يرسل TAIPOPO خط العرض وخط الطول إلى خدمة Android لتحويل الموقع إلى عنوان. قد تعالج الخدمة الإحداثيات خارج جهازك. يمكنك التصوير وحفظ الصور من دون البحث عن عنوان. لإيقاف البحث، عطّل عرض العنوان في إعدادات الكاميرا.",
               "notice": null,
               "icon": {
                 "name": "map_outlined",
@@ -22819,7 +22819,7 @@
             {
               "id": "backup-share",
               "title": "إنشاء نسخة احتياطية خارجية",
-              "body": "الإعدادات > النسخ الاحتياطي والاستعادة > إنشاء نسخة احتياطية خارجية\nبعد إنشاء ملف ZIP الاحتياطي، اختر تطبيقًا لحفظه من قائمة المشاركة في Android. تحقق من حالة الحفظ في التطبيق الذي اخترته. احتفظ بجميع ملفات النسخة المقسّمة معًا.",
+              "body": "الإعدادات > النسخ الاحتياطي والاستعادة > إنشاء نسخة احتياطية خارجية\nبعد إنشاء ملف ZIP الاحتياطي، اختر تطبيقًا لحفظه من قائمة المشاركة في Android. تحقق من حالة الحفظ في التطبيق الذي اخترته. احتفظ بجميع ملفات النسخة المقسّمة معًا.\n\nملف ZIP القياسي هذا نسخة غير مشفرة من بيانات العمل والإعدادات والصور وغيرها من البيانات المشمولة بالنسخ الاحتياطي، ولا يتضمن سجلات تأكيد الشروط أو قبولها. قد يتضمن الصور الأصلية وبيانات الموقع ووقت الالتقاط والجهاز، إلى جانب مواقع العمل والعناوين وسجلات العمل والأجور والملاحظات. عند الحفظ أو المشاركة يتم إنشاء نسخة خارج التطبيق يمكن للشخص أو التطبيق المحدد فتحها.",
               "notice": null,
               "icon": {
                 "name": "folder_zip_outlined",
@@ -22833,7 +22833,7 @@
             {
               "id": "restore",
               "title": "استعادة",
-              "body": "الإعدادات > النسخ الاحتياطي والاستعادة\n\nاستعادة من قائمة نُسخ الجهاز الاحتياطية: اختر من قائمة النسخ الاحتياطية المحفوظة على هذا الجهاز.\n\nاستعادة من SD أو USB: اختر مجلد نسخة احتياطية من بطاقة SD أو جهاز تخزين USB متصل.\n\nاستيراد ملفات النسخة الاحتياطية: اختر ملف ZIP الاحتياطي من الجهاز أو من موقع التخزين الظاهر في أداة اختيار الملفات. تتطلب النسخة المقسّمة جميع ملفات النسخة نفسها.\n\nتستبدل الاستعادة بيانات التطبيق الحالية بالنسخة الاحتياطية، لذا انسخ البيانات الحالية أولًا.",
+              "body": "الإعدادات > النسخ الاحتياطي والاستعادة\n\nاستعادة من قائمة نُسخ الجهاز الاحتياطية: اختر من قائمة النسخ الاحتياطية المحفوظة على هذا الجهاز.\n\nاستعادة من SD أو USB: اختر مجلد نسخة احتياطية من بطاقة SD أو جهاز تخزين USB متصل.\n\nاستيراد ملفات النسخة الاحتياطية: اختر ملف ZIP الاحتياطي من الجهاز أو من موقع التخزين الظاهر في أداة اختيار الملفات. تتطلب النسخة المقسّمة جميع ملفات النسخة نفسها.\n\nتستبدل الاستعادة بيانات التطبيق الحالية بالنسخة الاحتياطية، لذا انسخ البيانات الحالية أولًا.\n\nنسخ Google Drive من إصدارات سابقة: إذا أنشأ إصدار سابق نسخة احتياطية في appDataFolder، فهي نسخة خارجية منفصلة عن ملف ZIP في الإصدار الحالي. لا تؤدي إعادة ضبط التطبيق أو إزالته إلى حذف تلك النسخة. لا يوفر الإصدار 1.0.0(17) نسخها احتياطيًا أو استعادتها أو إدارتها مباشرة. راجع تعليمات Google الرسمية لإدارتها أو حذفها في حساب Google الذي يملكها. https://support.google.com/drive/answer/6374270",
               "notice": null,
               "icon": {
                 "name": "restore_outlined",
@@ -23215,7 +23215,7 @@
             {
               "id": "workplace-gps-address",
               "title": "Usa la posizione GPS attuale per l’indirizzo",
-              "body": "Compila l’indirizzo del luogo di lavoro dalla posizione attuale. Verifica quello effettivo e correggilo se necessario.",
+              "body": "Compila l’indirizzo del luogo di lavoro dalla posizione attuale. Verifica quello effettivo e correggilo se necessario.\n\nLa ricerca dell’indirizzo è una scelta distinta dall’autorizzazione alla posizione del sistema operativo. La ricerca inizia solo dopo averla consentita nell’avviso di ricerca dell’indirizzo dell’app.\n\nPer trovare l’indirizzo del luogo di lavoro, il servizio di ricerca indirizzi del dispositivo può inviare le coordinate della tua posizione a un servizio esterno al dispositivo. Se non consenti la ricerca, puoi inserire l’indirizzo manualmente.",
               "notice": "L’indirizzo GPS può essere diverso da quello effettivo del luogo di lavoro. Verificalo prima di salvare.",
               "icon": {
                 "name": "my_location_rounded",
@@ -23975,7 +23975,7 @@
             {
               "id": "camera-gps-record",
               "title": "Registrazione della posizione GPS",
-              "body": "Con «Registrazione della posizione GPS» disattivata, l’app non salva le coordinate nella scheda della foto. «Mostra indirizzo» è un’impostazione separata. Se l’impostazione è attiva e l’accesso alla posizione è autorizzato, l’app può trovare e mostrare l’indirizzo della posizione attuale e salvarlo nella scheda della foto al momento dello scatto. I dati EXIF del JPEG originale vengono conservati senza modifiche.",
+              "body": "Con «Registrazione della posizione GPS» disattivata, l’app non salva le coordinate nella scheda della foto. «Mostra indirizzo» è un’impostazione separata. Se l’impostazione è attiva e l’accesso alla posizione è autorizzato, l’app può trovare e mostrare l’indirizzo della posizione attuale e salvarlo nella scheda della foto al momento dello scatto. I dati EXIF del JPEG originale vengono conservati senza modifiche.\n\nLa ricerca dell’indirizzo è una scelta distinta dall’autorizzazione alla posizione del sistema operativo. La ricerca inizia solo dopo averla consentita nell’avviso di ricerca dell’indirizzo dell’app.\n\nPer mostrare un indirizzo nella fotocamera, TAIPOPO invia latitudine e longitudine al servizio di geocodifica di Android. Il servizio può elaborare le coordinate al di fuori del dispositivo. Puoi scattare e salvare foto senza cercare l’indirizzo. Per interrompere le ricerche future, disattiva la visualizzazione dell’indirizzo nelle impostazioni della fotocamera.",
               "notice": null,
               "icon": {
                 "name": "location_on_rounded",
@@ -24087,7 +24087,7 @@
             {
               "id": "camera-address",
               "title": "Indirizzo",
-              "body": "Visualizza l'indirizzo GPS nella sovrapposizione della fotocamera.",
+              "body": "Visualizza l'indirizzo GPS nella sovrapposizione della fotocamera.\n\nLa ricerca dell’indirizzo è una scelta distinta dall’autorizzazione alla posizione del sistema operativo. La ricerca inizia solo dopo averla consentita nell’avviso di ricerca dell’indirizzo dell’app.\n\nPer mostrare un indirizzo nella fotocamera, TAIPOPO invia latitudine e longitudine al servizio di geocodifica di Android. Il servizio può elaborare le coordinate al di fuori del dispositivo. Puoi scattare e salvare foto senza cercare l’indirizzo. Per interrompere le ricerche future, disattiva la visualizzazione dell’indirizzo nelle impostazioni della fotocamera.",
               "notice": null,
               "icon": {
                 "name": "map_outlined",
@@ -24459,7 +24459,7 @@
             {
               "id": "backup-share",
               "title": "Crea backup esterno",
-              "body": "Impostazioni > Backup e ripristino > Crea backup esterno\nDopo aver creato lo ZIP, scegli un’app in cui conservarlo dal menu di condivisione di Android. Controlla lo stato del salvataggio nell’app selezionata. Conserva insieme tutti i file di un backup suddiviso.",
+              "body": "Impostazioni > Backup e ripristino > Crea backup esterno\nDopo aver creato lo ZIP, scegli un’app in cui conservarlo dal menu di condivisione di Android. Controlla lo stato del salvataggio nell’app selezionata. Conserva insieme tutti i file di un backup suddiviso.\n\nQuesto ZIP standard è una copia non crittografata dei dati di lavoro, delle impostazioni, delle foto e degli altri dati inclusi nel backup; non contiene i registri di conferma o accettazione delle Condizioni. Può includere le foto originali e i relativi metadati di posizione, ora di scatto e dispositivo, insieme a luoghi di lavoro, indirizzi, registri di lavoro, paghe e note. Salvando o condividendo viene creata una copia fuori dall’app che la persona o l’app selezionata può aprire.",
               "notice": null,
               "icon": {
                 "name": "folder_zip_outlined",
@@ -24473,7 +24473,7 @@
             {
               "id": "restore",
               "title": "Ripristina",
-              "body": "Impostazioni > Backup e ripristino\n\nRipristina dall’elenco backup del dispositivo: Scegli dall’elenco dei backup salvati su questo dispositivo.\n\nRipristina da scheda SD o USB: Scegli una cartella di backup da una scheda SD o dispositivo USB collegato.\n\nImporta file di backup: Scegli lo ZIP di backup sul dispositivo o da una posizione mostrata nel selettore file. Un backup suddiviso richiede tutti i file dello stesso backup.\n\nIl ripristino sostituisce i dati attuali con il backup, quindi salva prima anche i dati attuali.",
+              "body": "Impostazioni > Backup e ripristino\n\nRipristina dall’elenco backup del dispositivo: Scegli dall’elenco dei backup salvati su questo dispositivo.\n\nRipristina da scheda SD o USB: Scegli una cartella di backup da una scheda SD o dispositivo USB collegato.\n\nImporta file di backup: Scegli lo ZIP di backup sul dispositivo o da una posizione mostrata nel selettore file. Un backup suddiviso richiede tutti i file dello stesso backup.\n\nIl ripristino sostituisce i dati attuali con il backup, quindi salva prima anche i dati attuali.\n\nVecchie copie Google Drive: se una versione precedente ha creato un backup in appDataFolder, si tratta di una copia esterna distinta dallo ZIP della versione attuale. Reimpostare o disinstallare l’app non elimina tale copia. La versione 1.0.0(17) non ne consente il backup, il ripristino o la gestione diretta. Consultare le istruzioni ufficiali di Google per gestirla o eliminarla nell’account Google a cui appartiene. https://support.google.com/drive/answer/6374270",
               "notice": null,
               "icon": {
                 "name": "restore_outlined",
@@ -24855,7 +24855,7 @@
             {
               "id": "workplace-gps-address",
               "title": "กรอกที่อยู่จากตำแหน่ง GPS ปัจจุบัน",
-              "body": "กรอกที่อยู่สถานที่ทำงานจากตำแหน่งปัจจุบัน ตรวจสอบที่อยู่จริงและแก้ไขตามต้องการ",
+              "body": "กรอกที่อยู่สถานที่ทำงานจากตำแหน่งปัจจุบัน ตรวจสอบที่อยู่จริงและแก้ไขตามต้องการ\n\nการค้นหาที่อยู่เป็นตัวเลือกแยกจากสิทธิ์เข้าถึงตำแหน่งของระบบปฏิบัติการ การค้นหาจะเริ่มเมื่อคุณอนุญาตในคำชี้แจงการค้นหาที่อยู่ของแอปแล้วเท่านั้น\n\nบริการค้นหาที่อยู่ในอุปกรณ์อาจส่งพิกัดตำแหน่งของคุณไปยังบริการภายนอกอุปกรณ์เพื่อค้นหาที่อยู่ของสถานที่ทำงาน หากไม่อนุญาตให้ค้นหา คุณยังป้อนที่อยู่ด้วยตนเองได้",
               "notice": "ที่อยู่จาก GPS อาจต่างจากที่อยู่สถานที่ทำงานจริง โปรดตรวจสอบที่อยู่จริงก่อนบันทึก",
               "icon": {
                 "name": "my_location_rounded",
@@ -25615,7 +25615,7 @@
             {
               "id": "camera-gps-record",
               "title": "บันทึกตำแหน่ง GPS",
-              "body": "เมื่อปิด “บันทึกตำแหน่ง GPS” แอปจะไม่บันทึกพิกัดลงในบันทึกข้อมูลรูปภาพของแอป “แสดงที่อยู่” เป็นการตั้งค่าแยกต่างหาก เมื่อเปิดการตั้งค่านี้และอนุญาตให้เข้าถึงตำแหน่ง แอปสามารถค้นหาและแสดงที่อยู่จากตำแหน่งปัจจุบัน และบันทึกที่อยู่ลงในบันทึกข้อมูลรูปภาพเมื่อถ่ายภาพได้ ข้อมูล EXIF ในไฟล์ JPEG ต้นฉบับจะคงเดิม",
+              "body": "เมื่อปิด “บันทึกตำแหน่ง GPS” แอปจะไม่บันทึกพิกัดลงในบันทึกข้อมูลรูปภาพของแอป “แสดงที่อยู่” เป็นการตั้งค่าแยกต่างหาก เมื่อเปิดการตั้งค่านี้และอนุญาตให้เข้าถึงตำแหน่ง แอปสามารถค้นหาและแสดงที่อยู่จากตำแหน่งปัจจุบัน และบันทึกที่อยู่ลงในบันทึกข้อมูลรูปภาพเมื่อถ่ายภาพได้ ข้อมูล EXIF ในไฟล์ JPEG ต้นฉบับจะคงเดิม\n\nการค้นหาที่อยู่เป็นตัวเลือกแยกจากสิทธิ์เข้าถึงตำแหน่งของระบบปฏิบัติการ การค้นหาจะเริ่มเมื่อคุณอนุญาตในคำชี้แจงการค้นหาที่อยู่ของแอปแล้วเท่านั้น\n\nเพื่อแสดงที่อยู่ในกล้อง TAIPOPO จะส่งละติจูดและลองจิจูดไปยังบริการแปลงพิกัดเป็นที่อยู่ของ Android บริการอาจประมวลผลพิกัดนอกอุปกรณ์ของคุณ คุณถ่ายและบันทึกรูปได้โดยไม่ต้องค้นหาที่อยู่ หากต้องการหยุดการค้นหาครั้งต่อไป ให้ปิดการแสดงที่อยู่ในการตั้งค่ากล้อง",
               "notice": null,
               "icon": {
                 "name": "location_on_rounded",
@@ -25727,7 +25727,7 @@
             {
               "id": "camera-address",
               "title": "ที่อยู่",
-              "body": "แสดงที่อยู่ GPS ในการซ้อนทับของกล้อง",
+              "body": "แสดงที่อยู่ GPS ในการซ้อนทับของกล้อง\n\nการค้นหาที่อยู่เป็นตัวเลือกแยกจากสิทธิ์เข้าถึงตำแหน่งของระบบปฏิบัติการ การค้นหาจะเริ่มเมื่อคุณอนุญาตในคำชี้แจงการค้นหาที่อยู่ของแอปแล้วเท่านั้น\n\nเพื่อแสดงที่อยู่ในกล้อง TAIPOPO จะส่งละติจูดและลองจิจูดไปยังบริการแปลงพิกัดเป็นที่อยู่ของ Android บริการอาจประมวลผลพิกัดนอกอุปกรณ์ของคุณ คุณถ่ายและบันทึกรูปได้โดยไม่ต้องค้นหาที่อยู่ หากต้องการหยุดการค้นหาครั้งต่อไป ให้ปิดการแสดงที่อยู่ในการตั้งค่ากล้อง",
               "notice": null,
               "icon": {
                 "name": "map_outlined",
@@ -26099,7 +26099,7 @@
             {
               "id": "backup-share",
               "title": "สร้างข้อมูลสำรองภายนอก",
-              "body": "การตั้งค่า > สำรองและกู้คืน > สร้างข้อมูลสำรองภายนอก\nหลังจากสร้างไฟล์ ZIP สำรองแล้ว ให้เลือกแอปที่จะใช้เก็บไฟล์จากเมนูแชร์ของ Android ตรวจสอบสถานะการบันทึกในแอปที่เลือก และเก็บไฟล์ทุกส่วนของข้อมูลสำรองแบบแบ่งไฟล์ไว้ด้วยกัน",
+              "body": "การตั้งค่า > สำรองและกู้คืน > สร้างข้อมูลสำรองภายนอก\nหลังจากสร้างไฟล์ ZIP สำรองแล้ว ให้เลือกแอปที่จะใช้เก็บไฟล์จากเมนูแชร์ของ Android ตรวจสอบสถานะการบันทึกในแอปที่เลือก และเก็บไฟล์ทุกส่วนของข้อมูลสำรองแบบแบ่งไฟล์ไว้ด้วยกัน\n\nไฟล์ ZIP มาตรฐานนี้เป็นสำเนาที่ไม่ได้เข้ารหัสของข้อมูลที่อยู่ในขอบเขตการสำรอง เช่น ข้อมูลงาน การตั้งค่า และรูปภาพ โดยไม่รวมบันทึกการยืนยันหรือยอมรับข้อกำหนด อาจมีรูปภาพต้นฉบับและข้อมูลเมตาตำแหน่ง เวลาในการถ่าย และอุปกรณ์ รวมถึงสถานที่ทำงาน ที่อยู่ บันทึกการทำงาน ค่าจ้าง และบันทึกย่อ การบันทึกหรือแชร์จะสร้างสำเนานอกแอปที่บุคคลหรือแอปที่เลือกสามารถเปิดได้",
               "notice": null,
               "icon": {
                 "name": "folder_zip_outlined",
@@ -26113,7 +26113,7 @@
             {
               "id": "restore",
               "title": "คืนค่า",
-              "body": "การตั้งค่า > สำรองและกู้คืน\n\nกู้คืนจากรายการข้อมูลสำรองในอุปกรณ์: เลือกจากรายการข้อมูลสำรองที่บันทึกไว้บนอุปกรณ์นี้\n\nกู้คืนจาก SD หรือ USB: เลือกโฟลเดอร์ข้อมูลสำรองจากการ์ด SD หรืออุปกรณ์เก็บข้อมูล USB ที่เชื่อมต่ออยู่\n\nนำเข้าไฟล์สำรอง: เลือกไฟล์ ZIP สำรองจากอุปกรณ์หรือพื้นที่จัดเก็บที่แสดงในตัวเลือกไฟล์ ข้อมูลสำรองแบบแบ่งไฟล์ต้องใช้ไฟล์ทุกส่วนจากชุดเดียวกัน\n\nการกู้คืนจะแทนที่ข้อมูลปัจจุบันด้วยข้อมูลสำรอง จึงควรสำรองข้อมูลปัจจุบันก่อน",
+              "body": "การตั้งค่า > สำรองและกู้คืน\n\nกู้คืนจากรายการข้อมูลสำรองในอุปกรณ์: เลือกจากรายการข้อมูลสำรองที่บันทึกไว้บนอุปกรณ์นี้\n\nกู้คืนจาก SD หรือ USB: เลือกโฟลเดอร์ข้อมูลสำรองจากการ์ด SD หรืออุปกรณ์เก็บข้อมูล USB ที่เชื่อมต่ออยู่\n\nนำเข้าไฟล์สำรอง: เลือกไฟล์ ZIP สำรองจากอุปกรณ์หรือพื้นที่จัดเก็บที่แสดงในตัวเลือกไฟล์ ข้อมูลสำรองแบบแบ่งไฟล์ต้องใช้ไฟล์ทุกส่วนจากชุดเดียวกัน\n\nการกู้คืนจะแทนที่ข้อมูลปัจจุบันด้วยข้อมูลสำรอง จึงควรสำรองข้อมูลปัจจุบันก่อน\n\nสำเนา Google Drive จากเวอร์ชันเก่า: หากเวอร์ชันก่อนหน้าสร้างข้อมูลสำรองใน appDataFolder ไว้ สำเนาภายนอกนั้นแยกจาก ZIP ของเวอร์ชันปัจจุบัน การรีเซ็ตหรือถอนการติดตั้งแอปไม่ลบสำเนานั้น เวอร์ชัน 1.0.0(17) ไม่มีฟังก์ชันสำรอง กู้คืน หรือจัดการสำเนานั้นโดยตรง โปรดดูคำแนะนำอย่างเป็นทางการของ Google สำหรับการจัดการหรือลบสำเนาในบัญชี Google ที่เป็นเจ้าของ https://support.google.com/drive/answer/6374270",
               "notice": null,
               "icon": {
                 "name": "restore_outlined",
@@ -26276,5 +26276,5 @@
       ]
     }
   },
-  "contentVersion": "b3df4ff3af567bd2"
+  "contentVersion": "c495e674dc064d77"
 }

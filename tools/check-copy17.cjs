@@ -17,7 +17,7 @@ const { escapeHtml } = require('./privacy-page.cjs');
 const baseline = JSON.parse(execFileSync('git', ['show', '6939c57671c1efdcca69ea1ce6f7e9d38e41b299:guide/manual.json'], { cwd: root, encoding: 'utf8', maxBuffer: 8 * 1024 * 1024 }));
 const oldPolicies = JSON.parse(execFileSync('git', ['show', '6939c57671c1efdcca69ea1ce6f7e9d38e41b299:tools/privacy-content.json'], { cwd: root, encoding: 'utf8', maxBuffer: 8 * 1024 * 1024 }));
 const removed = ['backup-drive', 'drive-management', 'restore-drive'];
-const allowedBodies = new Set(['memo', 'work-photos', 'camera-flash', 'camera-memo', 'camera-exposure', 'camera-capture', 'camera-landscape', 'data-usage', 'backup-device', 'backup-external', 'backup-share', 'restore']);
+const allowedBodies = new Set(['memo', 'work-photos', 'camera-flash', 'camera-memo', 'camera-exposure', 'camera-capture', 'camera-landscape', 'data-usage', 'backup-device', 'backup-external', 'backup-share', 'restore', 'camera-gps-record', 'camera-address', 'workplace-gps-address']);
 const section = (body, n) => body.match(new RegExp(`(?:^|\\n\\n)${n}\\. [\\s\\S]*?(?=\\n\\n${n + 1}\\. |$)`, 'u'))?.[0].trim();
 let preserved = 0, menus = 0;
 for (const [code, locale] of Object.entries(data.locales)) {
@@ -40,6 +40,12 @@ for (const [code, locale] of Object.entries(data.locales)) {
     assert.ok(body('restore').includes(arb[key]), `${code}: restore path/step missing ${key}`); menus++;
   }
   assert.ok(body('restore').includes(arb.manualPurposeRestore.split('\n\n').at(-1)), `${code}: replacement warning missing`);
+  for (const id of ['camera-gps-record', 'camera-address', 'workplace-gps-address']) {
+    assert.ok(body(id).includes(arb.manualAddressLookupChoice), `${code}/${id}: separate address choice missing`);
+    assert.ok(body(id).includes(id === 'workplace-gps-address' ? arb.workplaceGpsLookupDisclosure : arb.cameraAddressLookupNotice), `${code}/${id}: actual disclosure/fallback missing`);
+  }
+  assert.ok(body('backup-share').includes(arb.backupFileDisclosure), `${code}: unencrypted backup scope missing`);
+  assert.ok(body('restore').includes(arb.legacyDriveBackupNotice), `${code}: older Drive copy distinction missing`);
   assert.equal(body('data-usage'), copy[code].dataUsage);
   assert.ok(body('data-usage').includes('1.0.0(17)'));
   assert.equal(copy[code].services.length, 6);
@@ -51,6 +57,7 @@ for (const [code, locale] of Object.entries(data.locales)) {
   for (const n of [1,2,3,6,7,8,10,11]) assert.equal(section(newTerms,n), section(arb.termsOfUseBody,n), `${code}: legal clause ${n} differs from current app`);
   assert.equal(section(newTerms,9), section(arb.termsOfUseBody,9), `${code}: statutory liability clause differs from current bundled terms`);
   assert.ok(section(newTerms,4).includes(copy[code].backupDuty), `${code}: separate backup duty missing`);
+  assert.ok(section(newTerms,5).includes(arb.backupFileDisclosure), `${code}: terms backup scope missing`);
   for (const field of ['manualStart','externalReset']) assert.ok(section(newTerms,5).includes(copy[code][field]), `${code}: verified ${field} condition missing`);
   assert.ok(!newTerms.includes(copy[code].sharingResponsibility), `${code}: blanket external-processing responsibility retained`);
   assert.equal(policies[code].body, arb.privacyPolicyBody, `${code}: current app privacy text not synchronized`);
