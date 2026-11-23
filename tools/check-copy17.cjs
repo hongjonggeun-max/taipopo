@@ -13,6 +13,7 @@ const policies = JSON.parse(read('tools/privacy-content.json'));
 const data = JSON.parse(read('guide/manual.json'));
 const copy = JSON.parse(read('tools/public-copy.json'));
 const readiness = JSON.parse(read('tools/publication-readiness.json'));
+const disclosures = JSON.parse(read('tools/website-disclosures.json'));
 const { escapeHtml } = require('./privacy-page.cjs');
 const baseline = JSON.parse(execFileSync('git', ['show', '6939c57671c1efdcca69ea1ce6f7e9d38e41b299:guide/manual.json'], { cwd: root, encoding: 'utf8', maxBuffer: 8 * 1024 * 1024 }));
 const oldPolicies = JSON.parse(execFileSync('git', ['show', '6939c57671c1efdcca69ea1ce6f7e9d38e41b299:tools/privacy-content.json'], { cwd: root, encoding: 'utf8', maxBuffer: 8 * 1024 * 1024 }));
@@ -21,6 +22,13 @@ const allowedBodies = new Set(['memo', 'work-photos', 'camera-flash', 'camera-me
 const section = (body, n) => body.match(new RegExp(`(?:^|\\n\\n)${n}\\. [\\s\\S]*?(?=\\n\\n${n + 1}\\. |$)`, 'u'))?.[0].trim();
 let preserved = 0, menus = 0;
 for (const [code, locale] of Object.entries(data.locales)) {
+  // A localized homepage must describe the same ZIP flow as the reviewed
+  // notices; a working language switch alone does not establish copy parity.
+  for (const home of [`${code}/index.html`, ...(code === 'ko' ? ['index.html'] : [])]) {
+    const html = read(home);
+    assert.equal((html.match(/data-current-backup=/gu) || []).length, 1, home);
+    assert.ok(html.includes(escapeHtml(disclosures.locales[code].currentBackup)), `${home}: manual ZIP and legacy Drive distinction`);
+  }
   const arb = JSON.parse(fs.readFileSync(path.join(app, `lib/l10n/app_${code}.arb`), 'utf8'));
   const features = locale.chapters.flatMap(c => c.features);
   const oldFeatures = baseline.locales[code].chapters.flatMap(c => c.features);
@@ -30,9 +38,15 @@ for (const [code, locale] of Object.entries(data.locales)) {
     for (const field of ['title', 'notice', 'icon']) {
       if (field === 'title' && ['camera-address','workplace-gps-address','camera-options','camera-coordinates'].includes(feature.id)) continue;
       if (field === 'notice' && feature.id === 'workplace-gps-address') continue;
+      if (field === 'notice' && feature.id === 'camera-gps-record') {
+        assert.equal(feature.notice, arb.localGpsProviderNotice, `${code}: current location provider notice differs from app`);
+        continue;
+      }
       assert.deepEqual(feature[field], previous[field], `${code}/${feature.id}/${field}: unrequested change`);
     }
-    if (!allowedBodies.has(feature.id)) { assert.equal(feature.body, previous.body, `${code}/${feature.id}: normal copy changed`); preserved++; }
+    if (feature.id === 'report-picker') {
+      assert.equal(feature.body, arb.reportPhotoPickerSubtitle, `${code}: report picker must describe current unrestricted gallery selection`);
+    } else if (!allowedBodies.has(feature.id)) { assert.equal(feature.body, previous.body, `${code}/${feature.id}: normal copy changed`); preserved++; }
   }
   assert.deepEqual(locale.images, baseline.locales[code].images, `${code}: image metadata changed`);
   assert.deepEqual(locale.chapters.map(c => [c.id, c.title, c.screen, c.icon]), baseline.locales[code].chapters.map(c => [c.id, c.title, c.screen, c.icon]));

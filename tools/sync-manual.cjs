@@ -64,4 +64,4 @@ for (const copy of copies) {
   if (digest(fs.readFileSync(copy.target)) !== copy.sha256) throw Error('Copied image bytes changed');
 }
 writeManual(root, rendered);
-console.log(`Exported ${languages.length} languages × 6 chapters / 110 production features / 2 notices; public wording overrides applied; ${overviews.length} unchanged app originals per locale.`);
+console.log(`Exported ${languages.length} languages × 6 chapters / 110 production features / 3 notices; public wording overrides applied; ${overviews.length} unchanged app originals per locale.`);

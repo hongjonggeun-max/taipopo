@@ -1015,8 +1015,8 @@
             {
               "id": "camera-gps-record",
               "title": "GPS 위치 기록",
-              "body": "카메라 → 카메라 옵션 → GPS 위치 기록\n\n신규 설치 시 GPS 기록은 기본 OFF입니다. 카메라에서 GPS 켜기를 선택할 때 위치 권한을 요청하며, 거부하거나 안내를 닫아도 OFF 상태로 촬영을 계속할 수 있습니다. 카메라 옵션에서 언제든 변경할 수 있습니다.\n\nGPS 기록을 켜고 위치 권한을 허용하면 유효한 촬영 좌표를 기기 내부 사진 기록에 저장합니다. GPS를 끄거나 권한을 거부하거나 위치를 얻지 못해도 사진을 찍고 저장할 수 있습니다.\n\n기존 좌표·주소·사진과 원본 사진의 EXIF는 보존됩니다. 사용자가 직접 사진을 공유하거나 ZIP을 내보내면 좌표와 EXIF가 파일에 포함되어 선택한 수신 앱에 전달될 수 있으므로 공유 전에 포함 정보를 확인하세요.",
-              "notice": null,
+              "body": "카메라 → 카메라 옵션 → GPS 위치 기록\n\n신규 설치 시 GPS 기록은 기본 OFF입니다. 카메라에서 GPS 켜기를 선택할 때 위치 권한을 요청하며, 거부하거나 안내를 닫아도 OFF 상태로 촬영을 계속할 수 있습니다. 카메라 옵션에서 언제든 변경할 수 있습니다.\n\nGPS 기록을 켜고 위치 권한을 허용하면 유효한 촬영 좌표를 기기 내부 사진 기록에 저장합니다. GPS를 끄거나 권한을 거부하거나 위치를 얻지 못해도 사진을 찍고 저장할 수 있습니다.\n\n기존 좌표·주소·사진과 사진 원본의 EXIF는 기기에 보존됩니다. 갤러리에서 사진을 공유하거나 사진 ZIP을 만들면 공유 사본의 EXIF는 제거되지만, 사진에 보이는 위치·주소는 남을 수 있습니다. 사진 원본을 포함하는 백업 ZIP에는 EXIF와 사진 기록의 좌표가 포함될 수 있습니다. 공유 전에 내용과 수신 앱을 확인하세요.",
+              "notice": "촬영 좌표는 Android 위치 서비스로 얻습니다. Google Play 서비스가 있는 기기에서는 GPS·Wi-Fi·이동통신망·센서 신호를 함께 사용할 수 있습니다. 앱이 받은 좌표는 기기 내 사진 기록에 저장합니다. Google 위치 정확도는 앱의 GPS 기록 설정과 별개이며, 켜면 Google이 무선 신호·센서 등의 위치 정확도 데이터를 주기적으로 수집·처리합니다. 앱의 GPS 기록을 꺼도 이 기기 설정은 바뀌지 않습니다. 자동 주소 조회는 계속 차단됩니다.",
               "icon": {
                 "name": "location_on_rounded",
                 "codePoint": 63620,
@@ -1387,7 +1387,7 @@
             {
               "id": "report-picker",
               "title": "리포트 사진 첨부",
-              "body": "리포트 날짜에 해당하는 갤러리 사진을 선택해 첨부합니다.",
+              "body": "갤러리에서 선택한 사진을 리포트에 첨부합니다.",
               "notice": null,
               "icon": null
             },
@@ -2655,8 +2655,8 @@
             {
               "id": "camera-gps-record",
               "title": "GPS Location Record",
-              "body": "Camera → Camera options → GPS Location Record\n\nGPS recording is OFF by default on a new installation. Location permission is requested when you choose to turn GPS on in the camera. You can refuse or dismiss the notice and continue taking photos with GPS off. You can change this anytime in camera options.\n\nWhen you enable GPS recording and allow location permission, valid capture coordinates are saved in photo records on your device. You can still take and save photos with GPS off, permission denied or location unavailable.\n\nExisting coordinates, addresses, photos and original photo EXIF are preserved. When you choose to share photos or export a ZIP, coordinates and EXIF may be included in the files sent to your selected recipient app. Check the included information before sharing.",
-              "notice": null,
+              "body": "Camera → Camera options → GPS Location Record\n\nGPS recording is OFF by default on a new installation. Location permission is requested when you choose to turn GPS on in the camera. You can refuse or dismiss the notice and continue taking photos with GPS off. You can change this anytime in camera options.\n\nWhen you enable GPS recording and allow location permission, valid capture coordinates are saved in photo records on your device. You can still take and save photos with GPS off, permission denied or location unavailable.\n\nExisting coordinates, addresses, photos and original photo EXIF are preserved on your device. Gallery photo sharing and photo ZIP export remove EXIF from shared copies, but location or addresses visible on the photos may remain. Backup ZIPs that include original photos may contain EXIF and coordinates from photo records. Check the content and receiving app before sharing.",
+              "notice": "Capture coordinates come from Android location services. On devices with Google Play services, GPS, Wi-Fi, mobile-network and sensor signals may be combined. Coordinates received by the app are saved in photo records on your device. Google Location Accuracy is separate from the app's GPS recording setting. When enabled, Google periodically collects and processes location-accuracy data such as wireless-signal and sensor information. Turning off GPS recording in the app does not change that device setting. Automatic address lookup remains blocked.",
               "icon": {
                 "name": "location_on_rounded",
                 "codePoint": 63620,
@@ -3027,7 +3027,7 @@
             {
               "id": "report-picker",
               "title": "Report Photo Attachment",
-              "body": "Attach gallery photos captured on the report date.",
+              "body": "Attach photos you select from the gallery to the report.",
               "notice": null,
               "icon": null
             },
@@ -4295,8 +4295,8 @@
             {
               "id": "camera-gps-record",
               "title": "GPS定位记录",
-              "body": "相机 → 相机选项 → GPS定位记录\n\n新安装时，GPS 记录默认关闭。只有在相机中选择开启 GPS 时才会请求位置权限。拒绝或关闭说明后，仍可在 GPS 关闭的状态下继续拍摄，并可随时在相机选项中更改。\n\n开启 GPS 记录并允许位置权限后，有效的拍摄坐标会保存在设备内的照片记录中。即使 GPS 关闭、权限被拒绝或无法获取位置，也可以拍摄并保存照片。\n\n现有坐标、地址、照片及原始照片的 EXIF 会保留。当您主动选择分享照片或导出 ZIP 时，发送给所选接收应用的文件可能包含坐标和 EXIF。分享前请检查其中的信息。",
-              "notice": null,
+              "body": "相机 → 相机选项 → GPS定位记录\n\n新安装时，GPS 记录默认关闭。只有在相机中选择开启 GPS 时才会请求位置权限。拒绝或关闭说明后，仍可在 GPS 关闭的状态下继续拍摄，并可随时在相机选项中更改。\n\n开启 GPS 记录并允许位置权限后，有效的拍摄坐标会保存在设备内的照片记录中。即使 GPS 关闭、权限被拒绝或无法获取位置，也可以拍摄并保存照片。\n\n现有坐标、地址、照片和原始照片的 EXIF 会保留在设备上。从图库分享照片或导出照片 ZIP 时，会移除分享副本中的 EXIF，但照片画面中可见的位置或地址可能仍会保留。包含原始照片的备份 ZIP 可能包含 EXIF 和照片记录中的坐标。分享前请确认内容和接收应用。",
+              "notice": "拍摄坐标来自 Android 位置信息服务。在安装了 Google Play 服务的设备上，可能会结合使用 GPS、Wi-Fi、移动网络和传感器信号。应用收到的坐标保存在设备上的照片记录中。Google 位置信息精确度是独立于应用 GPS 记录选项的设备设置。开启后，Google 会定期收集和处理无线信号、传感器信息等位置精确度数据。在应用中关闭 GPS 记录不会更改这项设备设置。自动地址查询仍被禁用。",
               "icon": {
                 "name": "location_on_rounded",
                 "codePoint": 63620,
@@ -4667,7 +4667,7 @@
             {
               "id": "report-picker",
               "title": "报告照片附件",
-              "body": "附上报告日期拍摄的图库照片。",
+              "body": "将从图库选择的照片附加到报告。",
               "notice": null,
               "icon": null
             },
@@ -5935,8 +5935,8 @@
             {
               "id": "camera-gps-record",
               "title": "GPS位置記録",
-              "body": "カメラ → カメラのオプション → GPS位置記録\n\n新規インストール時のGPS記録は初期設定でオフです。カメラでGPSをオンにすることを選んだ場合に位置情報の権限を求めます。拒否したり案内を閉じたりしても、GPSをオフにしたまま撮影を続けられます。カメラのオプションでいつでも変更できます。\n\nGPS記録をオンにして位置情報へのアクセスを許可すると、有効な撮影座標を端末内の写真記録に保存します。GPSがオフ、権限が拒否された場合や位置を取得できない場合も、写真を撮影・保存できます。\n\n既存の座標・住所・写真と元の写真のEXIFは保持されます。写真の共有やZIPの書き出しを自分で選択すると、座標やEXIFを含むファイルが選択した受信アプリに渡されることがあります。共有前に含まれる情報をご確認ください。",
-              "notice": null,
+              "body": "カメラ → カメラのオプション → GPS位置記録\n\n新規インストール時のGPS記録は初期設定でオフです。カメラでGPSをオンにすることを選んだ場合に位置情報の権限を求めます。拒否したり案内を閉じたりしても、GPSをオフにしたまま撮影を続けられます。カメラのオプションでいつでも変更できます。\n\nGPS記録をオンにして位置情報へのアクセスを許可すると、有効な撮影座標を端末内の写真記録に保存します。GPSがオフ、権限が拒否された場合や位置を取得できない場合も、写真を撮影・保存できます。\n\n既存の座標・住所・写真と元の写真のEXIFは端末内に保持されます。ギャラリーからの写真共有や写真ZIPの出力では、共有用コピーのEXIFを削除しますが、写真に写っている位置・住所は残る場合があります。元の写真を含むバックアップZIPには、EXIFや写真記録の座標が含まれる場合があります。共有前に内容と受信先アプリを確認してください。",
+              "notice": "撮影座標は Android の位置情報サービスから取得します。Google Play 開発者サービスがある端末では、GPS、Wi-Fi、携帯電話網、センサーの信号が組み合わされる場合があります。アプリが受け取った座標は、端末内の写真記録に保存します。「Google 位置情報の精度」は、アプリの GPS 記録設定とは別の端末設定です。有効にすると、Google は無線信号やセンサー情報などの位置精度データを定期的に収集・処理します。アプリで GPS 記録をオフにしても、この端末設定は変わりません。住所の自動検索は引き続き無効です。",
               "icon": {
                 "name": "location_on_rounded",
                 "codePoint": 63620,
@@ -6307,7 +6307,7 @@
             {
               "id": "report-picker",
               "title": "レポート写真添付",
-              "body": "レポートの日付に撮影したギャラリーの写真を選んで添付します。",
+              "body": "ギャラリーで選択した写真をレポートに添付します。",
               "notice": null,
               "icon": null
             },
@@ -7575,8 +7575,8 @@
             {
               "id": "camera-gps-record",
               "title": "जीपीएस स्थान रिकार्ड",
-              "body": "कैमरा → कैमरा विकल्प → जीपीएस स्थान रिकार्ड\n\nनए इंस्टॉल में GPS रिकॉर्डिंग डिफ़ॉल्ट रूप से बंद रहती है। कैमरे में GPS चालू करने का विकल्प चुनने पर स्थान की अनुमति माँगी जाती है। अनुमति न देकर या नोटिस बंद करके भी GPS बंद रखते हुए फ़ोटो ले सकते हैं। इसे कैमरा विकल्पों में कभी भी बदल सकते हैं।\n\nGPS रिकॉर्डिंग चालू करने और स्थान की अनुमति देने पर, मान्य कैप्चर निर्देशांक आपके डिवाइस के फ़ोटो रिकॉर्ड में सहेजे जाते हैं। GPS बंद होने, अनुमति न देने या स्थान न मिलने पर भी आप फ़ोटो ले और सहेज सकते हैं।\n\nमौजूदा निर्देशांक, पते, फ़ोटो और मूल फ़ोटो का EXIF सुरक्षित रखा जाता है। फ़ोटो साझा करने या ZIP निर्यात करने का विकल्प चुनने पर, चुने गए प्राप्तकर्ता ऐप को भेजी गई फ़ाइलों में निर्देशांक और EXIF शामिल हो सकते हैं। साझा करने से पहले शामिल जानकारी जाँचें।",
-              "notice": null,
+              "body": "कैमरा → कैमरा विकल्प → जीपीएस स्थान रिकार्ड\n\nनए इंस्टॉल में GPS रिकॉर्डिंग डिफ़ॉल्ट रूप से बंद रहती है। कैमरे में GPS चालू करने का विकल्प चुनने पर स्थान की अनुमति माँगी जाती है। अनुमति न देकर या नोटिस बंद करके भी GPS बंद रखते हुए फ़ोटो ले सकते हैं। इसे कैमरा विकल्पों में कभी भी बदल सकते हैं।\n\nGPS रिकॉर्डिंग चालू करने और स्थान की अनुमति देने पर, मान्य कैप्चर निर्देशांक आपके डिवाइस के फ़ोटो रिकॉर्ड में सहेजे जाते हैं। GPS बंद होने, अनुमति न देने या स्थान न मिलने पर भी आप फ़ोटो ले और सहेज सकते हैं।\n\nमौजूदा निर्देशांक, पते, फ़ोटो और मूल फ़ोटो का EXIF आपके डिवाइस पर सुरक्षित रहता है। गैलरी से फ़ोटो साझा करने या फ़ोटो ZIP निर्यात करने पर साझा प्रतियों से EXIF हटाया जाता है, लेकिन फ़ोटो में दिखाई देने वाला स्थान या पता रह सकता है। मूल फ़ोटो वाले बैकअप ZIP में EXIF और फ़ोटो रिकॉर्ड के निर्देशांक शामिल हो सकते हैं। साझा करने से पहले सामग्री और प्राप्त करने वाले ऐप की जाँच करें।",
+              "notice": "फ़ोटो के स्थान निर्देशांक Android की स्थान सेवाओं से मिलते हैं। Google Play सेवाओं वाले डिवाइस पर GPS, वाई-फ़ाई, मोबाइल नेटवर्क और सेंसर के सिग्नल एक साथ इस्तेमाल हो सकते हैं। ऐप को मिले निर्देशांक आपके डिवाइस के फ़ोटो रिकॉर्ड में सहेजे जाते हैं। Google की जगह की सटीक जानकारी की सेटिंग, ऐप की GPS रिकॉर्डिंग सेटिंग से अलग है। इसे चालू करने पर Google वायरलेस सिग्नल और सेंसर की जानकारी जैसे स्थान की सटीकता से जुड़े डेटा को समय-समय पर इकट्ठा और प्रोसेस करता है। ऐप में GPS रिकॉर्डिंग बंद करने से डिवाइस की यह सेटिंग नहीं बदलती। पते की अपने-आप खोज बंद रहती है।",
               "icon": {
                 "name": "location_on_rounded",
                 "codePoint": 63620,
@@ -7947,7 +7947,7 @@
             {
               "id": "report-picker",
               "title": "रिपोर्ट फोटो अनुलग्नक",
-              "body": "रिपोर्ट दिनांक पर ली गई गैलरी फ़ोटो संलग्न करें।",
+              "body": "गैलरी से चुनी गई फ़ोटो रिपोर्ट में संलग्न करें।",
               "notice": null,
               "icon": null
             },
@@ -9215,8 +9215,8 @@
             {
               "id": "camera-gps-record",
               "title": "Registro de localização GPS",
-              "body": "Câmera → Opções da câmera → Registro de localização GPS\n\nEm uma nova instalação, o registro GPS fica desligado por padrão. A permissão de localização é solicitada quando você escolhe ativar o GPS na câmera. Você pode recusar ou fechar o aviso e continuar fotografando com o GPS desligado. A escolha pode ser alterada nas opções da câmera.\n\nAo ativar o registro GPS e permitir o acesso à localização, as coordenadas válidas da captura são salvas nos registros de fotos do dispositivo. Você pode tirar e salvar fotos com o GPS desligado, a permissão negada ou a localização indisponível.\n\nAs coordenadas, os endereços, as fotos existentes e os dados EXIF das fotos originais são preservados. Ao escolher compartilhar fotos ou exportar um ZIP, os arquivos enviados ao aplicativo destinatário selecionado podem incluir coordenadas e EXIF. Confira as informações incluídas antes de compartilhar.",
-              "notice": null,
+              "body": "Câmera → Opções da câmera → Registro de localização GPS\n\nEm uma nova instalação, o registro GPS fica desligado por padrão. A permissão de localização é solicitada quando você escolhe ativar o GPS na câmera. Você pode recusar ou fechar o aviso e continuar fotografando com o GPS desligado. A escolha pode ser alterada nas opções da câmera.\n\nAo ativar o registro GPS e permitir o acesso à localização, as coordenadas válidas da captura são salvas nos registros de fotos do dispositivo. Você pode tirar e salvar fotos com o GPS desligado, a permissão negada ou a localização indisponível.\n\nAs coordenadas, os endereços, as fotos existentes e o EXIF das fotos originais são preservados no dispositivo. O compartilhamento de fotos da galeria e a exportação de ZIPs de fotos removem o EXIF das cópias compartilhadas, mas locais ou endereços visíveis nas fotos podem permanecer. ZIPs de backup que incluem fotos originais podem conter EXIF e coordenadas dos registros das fotos. Confira o conteúdo e o aplicativo destinatário antes de compartilhar.",
+              "notice": "As coordenadas da captura vêm dos serviços de localização do Android. Em dispositivos com os Serviços do Google Play, podem ser combinados sinais de GPS, Wi-Fi, redes móveis e sensores. As coordenadas recebidas pelo app são salvas nos registros de fotos do dispositivo. A Precisão de local do Google é independente da configuração de registro GPS do app. Quando ativada, o Google coleta e processa periodicamente dados de precisão de localização, como informações de sinais sem fio e sensores. Desativar o registro GPS no app não altera essa configuração do dispositivo. A consulta automática de endereços continua bloqueada.",
               "icon": {
                 "name": "location_on_rounded",
                 "codePoint": 63620,
@@ -9587,7 +9587,7 @@
             {
               "id": "report-picker",
               "title": "Anexo de foto do relatório",
-              "body": "Anexe fotos da galeria capturadas na data do relatório.",
+              "body": "Anexe ao relatório as fotos selecionadas na galeria.",
               "notice": null,
               "icon": null
             },
@@ -10855,8 +10855,8 @@
             {
               "id": "camera-gps-record",
               "title": "Registro de ubicación GPS",
-              "body": "cámara → Opciones de cámara → Registro de ubicación GPS\n\nEl registro GPS está desactivado por defecto en una instalación nueva. El permiso de ubicación se solicita cuando elige activar el GPS en la cámara. Puede rechazarlo o cerrar el aviso y seguir tomando fotos con el GPS desactivado. Puede cambiarlo cuando quiera en las opciones de la cámara.\n\nSi activa el registro GPS y concede el permiso de ubicación, las coordenadas válidas de captura se guardan en los registros de fotos del dispositivo. Puede tomar y guardar fotos con el GPS desactivado, el permiso denegado o la ubicación no disponible.\n\nSe conservan las coordenadas, direcciones, fotos y datos EXIF de las fotos originales existentes. Si decide compartir fotos o exportar un ZIP, los archivos enviados a la aplicación elegida pueden incluir coordenadas y datos EXIF. Revise la información incluida antes de compartir.",
-              "notice": null,
+              "body": "cámara → Opciones de cámara → Registro de ubicación GPS\n\nEl registro GPS está desactivado por defecto en una instalación nueva. El permiso de ubicación se solicita cuando elige activar el GPS en la cámara. Puede rechazarlo o cerrar el aviso y seguir tomando fotos con el GPS desactivado. Puede cambiarlo cuando quiera en las opciones de la cámara.\n\nSi activa el registro GPS y concede el permiso de ubicación, las coordenadas válidas de captura se guardan en los registros de fotos del dispositivo. Puede tomar y guardar fotos con el GPS desactivado, el permiso denegado o la ubicación no disponible.\n\nLas coordenadas, direcciones y fotos existentes, así como el EXIF de las fotos originales, se conservan en el dispositivo. Al compartir fotos de la galería o exportar un ZIP de fotos, se elimina el EXIF de las copias compartidas, pero pueden permanecer las ubicaciones o direcciones visibles en las fotos. Los ZIP de copia de seguridad que incluyen fotos originales pueden contener EXIF y coordenadas de los registros de fotos. Comprueba el contenido y la aplicación receptora antes de compartir.",
+              "notice": "Las coordenadas de captura proceden de los servicios de ubicación de Android. En dispositivos con Servicios de Google Play, pueden combinarse señales de GPS, Wi-Fi, redes móviles y sensores. Las coordenadas recibidas por la aplicación se guardan en los registros de fotos del dispositivo. La Precisión de la ubicación de Google es independiente del registro GPS de la aplicación. Si está activada, Google recopila y procesa periódicamente datos de precisión de ubicación, como información de señales inalámbricas y sensores. Desactivar el registro GPS en la aplicación no cambia ese ajuste del dispositivo. La consulta automática de direcciones sigue bloqueada.",
               "icon": {
                 "name": "location_on_rounded",
                 "codePoint": 63620,
@@ -11227,7 +11227,7 @@
             {
               "id": "report-picker",
               "title": "Adjuntar fotos al informe",
-              "body": "Adjunte fotografías de la galería capturadas en la fecha del informe.",
+              "body": "Adjunta al informe las fotos que selecciones en la galería.",
               "notice": null,
               "icon": null
             },
@@ -12495,8 +12495,8 @@
             {
               "id": "camera-gps-record",
               "title": "Enregistrement de localisation GPS",
-              "body": "Appareil photo → Options de l’appareil photo → Enregistrement de localisation GPS\n\nL’enregistrement GPS est désactivé par défaut lors d’une nouvelle installation. L’autorisation de localisation est demandée lorsque vous choisissez d’activer le GPS dans l’appareil photo. Vous pouvez refuser ou fermer l’avis et continuer à photographier sans GPS. Ce choix reste modifiable dans les options de l’appareil photo.\n\nSi vous activez l’enregistrement GPS et autorisez la localisation, les coordonnées de prise de vue valides sont enregistrées dans les fiches photo de votre appareil. Vous pouvez prendre et enregistrer des photos même avec le GPS désactivé, l’autorisation refusée ou la localisation indisponible.\n\nLes coordonnées, adresses, photos existantes et données EXIF des photos originales sont conservées. Lorsque vous choisissez de partager des photos ou d’exporter un ZIP, les fichiers transmis à l’application destinataire choisie peuvent contenir des coordonnées et des données EXIF. Vérifiez leur contenu avant le partage.",
-              "notice": null,
+              "body": "Appareil photo → Options de l’appareil photo → Enregistrement de localisation GPS\n\nL’enregistrement GPS est désactivé par défaut lors d’une nouvelle installation. L’autorisation de localisation est demandée lorsque vous choisissez d’activer le GPS dans l’appareil photo. Vous pouvez refuser ou fermer l’avis et continuer à photographier sans GPS. Ce choix reste modifiable dans les options de l’appareil photo.\n\nSi vous activez l’enregistrement GPS et autorisez la localisation, les coordonnées de prise de vue valides sont enregistrées dans les fiches photo de votre appareil. Vous pouvez prendre et enregistrer des photos même avec le GPS désactivé, l’autorisation refusée ou la localisation indisponible.\n\nLes coordonnées, adresses et photos existantes, ainsi que les données EXIF des photos originales, sont conservées sur votre appareil. Le partage de photos depuis la galerie et l’exportation de ZIP de photos suppriment les données EXIF des copies partagées, mais les lieux ou adresses visibles sur les photos peuvent rester présents. Les ZIP de sauvegarde contenant les photos originales peuvent inclure des données EXIF et les coordonnées des fiches photo. Vérifiez le contenu et l’application destinataire avant de partager.",
+              "notice": "Les coordonnées de prise de vue proviennent des services de localisation Android. Sur les appareils dotés des services Google Play, les signaux GPS, Wi-Fi, de réseau mobile et des capteurs peuvent être combinés. Les coordonnées reçues par l’application sont enregistrées dans les fiches photo sur votre appareil. La Précision de la localisation Google est indépendante de l’enregistrement GPS de l’application. Lorsqu’elle est activée, Google collecte et traite périodiquement des données de précision de localisation, notamment des informations de signaux sans fil et de capteurs. Désactiver l’enregistrement GPS dans l’application ne modifie pas ce réglage de l’appareil. La recherche automatique d’adresses reste bloquée.",
               "icon": {
                 "name": "location_on_rounded",
                 "codePoint": 63620,
@@ -12867,7 +12867,7 @@
             {
               "id": "report-picker",
               "title": "Joindre des photos au rapport",
-              "body": "Joignez les photos de la galerie capturées à la date du rapport.",
+              "body": "Joignez au rapport les photos sélectionnées dans la galerie.",
               "notice": null,
               "icon": null
             },
@@ -14135,8 +14135,8 @@
             {
               "id": "camera-gps-record",
               "title": "GPS-Standortaufzeichnung",
-              "body": "Kamera → Kameraoptionen → GPS-Standortaufzeichnung\n\nBei einer Neuinstallation ist die GPS-Aufzeichnung standardmäßig AUS. Die Standortberechtigung wird angefragt, wenn Sie GPS in der Kamera einschalten. Sie können ablehnen oder den Hinweis schließen und mit ausgeschaltetem GPS weiter fotografieren. Die Auswahl lässt sich jederzeit in den Kameraoptionen ändern.\n\nWenn Sie die GPS-Aufzeichnung aktivieren und den Standortzugriff erlauben, werden gültige Aufnahmekoordinaten in den Fotodatensätzen auf Ihrem Gerät gespeichert. Auch bei ausgeschaltetem GPS, verweigerter Berechtigung oder nicht verfügbarem Standort können Sie Fotos aufnehmen und speichern.\n\nVorhandene Koordinaten, Adressen, Fotos und EXIF-Daten der Originalfotos bleiben erhalten. Wenn Sie Fotos teilen oder eine ZIP-Datei exportieren, können Koordinaten und EXIF-Daten in den Dateien an die gewählte Empfänger-App enthalten sein. Prüfen Sie die enthaltenen Informationen vor dem Teilen.",
-              "notice": null,
+              "body": "Kamera → Kameraoptionen → GPS-Standortaufzeichnung\n\nBei einer Neuinstallation ist die GPS-Aufzeichnung standardmäßig AUS. Die Standortberechtigung wird angefragt, wenn Sie GPS in der Kamera einschalten. Sie können ablehnen oder den Hinweis schließen und mit ausgeschaltetem GPS weiter fotografieren. Die Auswahl lässt sich jederzeit in den Kameraoptionen ändern.\n\nWenn Sie die GPS-Aufzeichnung aktivieren und den Standortzugriff erlauben, werden gültige Aufnahmekoordinaten in den Fotodatensätzen auf Ihrem Gerät gespeichert. Auch bei ausgeschaltetem GPS, verweigerter Berechtigung oder nicht verfügbarem Standort können Sie Fotos aufnehmen und speichern.\n\nVorhandene Koordinaten, Adressen und Fotos sowie die EXIF-Daten der Originalfotos bleiben auf Ihrem Gerät erhalten. Beim Teilen von Galeriefotos und beim Export eines Foto-ZIPs werden EXIF-Daten aus den geteilten Kopien entfernt. Auf den Fotos sichtbare Orte oder Adressen können jedoch erhalten bleiben. ZIP-Sicherungen mit Originalfotos können EXIF-Daten und Koordinaten aus den Fotodatensätzen enthalten. Prüfen Sie vor dem Teilen den Inhalt und die empfangende App.",
+              "notice": "Aufnahmekoordinaten stammen von den Android-Standortdiensten. Auf Geräten mit Google Play-Diensten können GPS-, WLAN-, Mobilfunk- und Sensorsignale kombiniert werden. Die von der App empfangenen Koordinaten werden in Fotodatensätzen auf Ihrem Gerät gespeichert. Die Google-Standortgenauigkeit ist von der GPS-Aufzeichnung der App getrennt. Ist sie aktiviert, erhebt und verarbeitet Google regelmäßig Daten zur Standortgenauigkeit, etwa Funk- und Sensorinformationen. Das Ausschalten der GPS-Aufzeichnung in der App ändert diese Geräteeinstellung nicht. Die automatische Adressabfrage bleibt gesperrt.",
               "icon": {
                 "name": "location_on_rounded",
                 "codePoint": 63620,
@@ -14507,7 +14507,7 @@
             {
               "id": "report-picker",
               "title": "Fotos zum Bericht hinzufügen",
-              "body": "Hängen Sie Galeriefotos an, die am Berichtsdatum aufgenommen wurden.",
+              "body": "Fügen Sie dem Bericht die in der Galerie ausgewählten Fotos hinzu.",
               "notice": null,
               "icon": null
             },
@@ -15775,8 +15775,8 @@
             {
               "id": "camera-gps-record",
               "title": "Catatan Lokasi GPS",
-              "body": "Kamera → Opsi kamera → Catatan Lokasi GPS\n\nPada instalasi baru, pencatatan GPS mati secara default. Izin lokasi diminta saat Anda memilih mengaktifkan GPS di kamera. Anda dapat menolak atau menutup pemberitahuan dan tetap memotret dengan GPS mati. Pilihan ini dapat diubah kapan saja di opsi kamera.\n\nJika Anda mengaktifkan pencatatan GPS dan mengizinkan akses lokasi, koordinat pemotretan yang valid disimpan dalam catatan foto di perangkat. Anda tetap dapat mengambil dan menyimpan foto saat GPS mati, izin ditolak, atau lokasi tidak tersedia.\n\nKoordinat, alamat, foto yang ada, serta EXIF foto asli dipertahankan. Saat Anda memilih berbagi foto atau mengekspor ZIP, koordinat dan EXIF dapat disertakan dalam berkas yang dikirim ke aplikasi penerima pilihan Anda. Periksa informasi yang disertakan sebelum berbagi.",
-              "notice": null,
+              "body": "Kamera → Opsi kamera → Catatan Lokasi GPS\n\nPada instalasi baru, pencatatan GPS mati secara default. Izin lokasi diminta saat Anda memilih mengaktifkan GPS di kamera. Anda dapat menolak atau menutup pemberitahuan dan tetap memotret dengan GPS mati. Pilihan ini dapat diubah kapan saja di opsi kamera.\n\nJika Anda mengaktifkan pencatatan GPS dan mengizinkan akses lokasi, koordinat pemotretan yang valid disimpan dalam catatan foto di perangkat. Anda tetap dapat mengambil dan menyimpan foto saat GPS mati, izin ditolak, atau lokasi tidak tersedia.\n\nKoordinat, alamat, foto yang sudah ada, dan EXIF foto asli tetap tersimpan di perangkat. Berbagi foto dari galeri dan mengekspor ZIP foto menghapus EXIF dari salinan yang dibagikan, tetapi lokasi atau alamat yang terlihat pada foto mungkin tetap ada. ZIP cadangan yang menyertakan foto asli dapat berisi EXIF dan koordinat dari catatan foto. Periksa isi dan aplikasi penerima sebelum berbagi.",
+              "notice": "Koordinat pemotretan diperoleh dari layanan lokasi Android. Pada perangkat dengan layanan Google Play, sinyal GPS, Wi-Fi, jaringan seluler, dan sensor dapat digabungkan. Koordinat yang diterima aplikasi disimpan dalam catatan foto di perangkat Anda. Akurasi Lokasi Google terpisah dari pengaturan perekaman GPS aplikasi. Jika diaktifkan, Google secara berkala mengumpulkan dan memproses data akurasi lokasi, seperti informasi sinyal nirkabel dan sensor. Menonaktifkan perekaman GPS di aplikasi tidak mengubah pengaturan perangkat tersebut. Pencarian alamat otomatis tetap diblokir.",
               "icon": {
                 "name": "location_on_rounded",
                 "codePoint": 63620,
@@ -16147,7 +16147,7 @@
             {
               "id": "report-picker",
               "title": "Lampirkan foto ke laporan",
-              "body": "Lampirkan foto galeri yang diambil pada tanggal laporan.",
+              "body": "Lampirkan foto yang dipilih dari galeri ke laporan.",
               "notice": null,
               "icon": null
             },
@@ -17415,8 +17415,8 @@
             {
               "id": "camera-gps-record",
               "title": "Bản ghi vị trí GPS",
-              "body": "Máy ảnh → Tùy chọn máy ảnh → Bản ghi vị trí GPS\n\nKhi cài mới, ghi GPS mặc định TẮT. Quyền vị trí được yêu cầu khi bạn chọn bật GPS trong máy ảnh. Bạn có thể từ chối hoặc đóng thông báo rồi tiếp tục chụp khi GPS tắt. Có thể thay đổi lựa chọn trong tùy chọn máy ảnh.\n\nKhi bật ghi GPS và cho phép vị trí, tọa độ chụp hợp lệ được lưu trong bản ghi ảnh trên thiết bị. Bạn vẫn có thể chụp và lưu ảnh khi tắt GPS, từ chối quyền hoặc không lấy được vị trí.\n\nTọa độ, địa chỉ, ảnh hiện có và EXIF của ảnh gốc được giữ nguyên. Khi bạn chọn chia sẻ ảnh hoặc xuất ZIP, tệp gửi đến ứng dụng nhận đã chọn có thể chứa tọa độ và EXIF. Hãy kiểm tra thông tin có trong tệp trước khi chia sẻ.",
-              "notice": null,
+              "body": "Máy ảnh → Tùy chọn máy ảnh → Bản ghi vị trí GPS\n\nKhi cài mới, ghi GPS mặc định TẮT. Quyền vị trí được yêu cầu khi bạn chọn bật GPS trong máy ảnh. Bạn có thể từ chối hoặc đóng thông báo rồi tiếp tục chụp khi GPS tắt. Có thể thay đổi lựa chọn trong tùy chọn máy ảnh.\n\nKhi bật ghi GPS và cho phép vị trí, tọa độ chụp hợp lệ được lưu trong bản ghi ảnh trên thiết bị. Bạn vẫn có thể chụp và lưu ảnh khi tắt GPS, từ chối quyền hoặc không lấy được vị trí.\n\nTọa độ, địa chỉ, ảnh hiện có và EXIF của ảnh gốc được giữ lại trên thiết bị. Khi chia sẻ ảnh từ thư viện hoặc xuất ZIP ảnh, EXIF được xóa khỏi các bản sao chia sẻ, nhưng vị trí hoặc địa chỉ hiển thị trên ảnh có thể vẫn còn. ZIP sao lưu có ảnh gốc có thể chứa EXIF và tọa độ trong bản ghi ảnh. Hãy kiểm tra nội dung và ứng dụng nhận trước khi chia sẻ.",
+              "notice": "Tọa độ chụp ảnh được lấy từ dịch vụ vị trí của Android. Trên thiết bị có Dịch vụ Google Play, các tín hiệu GPS, Wi-Fi, mạng di động và cảm biến có thể được kết hợp. Tọa độ ứng dụng nhận được được lưu trong bản ghi ảnh trên thiết bị của bạn. Độ chính xác của vị trí trên Google là chế độ cài đặt riêng của thiết bị, tách biệt với cài đặt ghi GPS của ứng dụng. Khi bật, Google định kỳ thu thập và xử lý dữ liệu về độ chính xác của vị trí, như thông tin tín hiệu không dây và cảm biến. Tắt ghi GPS trong ứng dụng không thay đổi chế độ cài đặt này của thiết bị. Tính năng tra cứu địa chỉ tự động vẫn bị chặn.",
               "icon": {
                 "name": "location_on_rounded",
                 "codePoint": 63620,
@@ -17787,7 +17787,7 @@
             {
               "id": "report-picker",
               "title": "Đính kèm ảnh vào báo cáo",
-              "body": "Đính kèm ảnh thư viện được chụp vào ngày báo cáo.",
+              "body": "Đính kèm ảnh đã chọn từ thư viện vào báo cáo.",
               "notice": null,
               "icon": null
             },
@@ -19055,8 +19055,8 @@
             {
               "id": "camera-gps-record",
               "title": "Запись местоположения GPS",
-              "body": "Камера → Параметры камеры → Запись местоположения GPS\n\nПри новой установке запись GPS по умолчанию выключена. Разрешение на местоположение запрашивается, когда вы выбираете включение GPS в камере. Можно отказаться или закрыть уведомление и продолжить съёмку без GPS. Выбор можно изменить в параметрах камеры.\n\nЕсли включить запись GPS и разрешить доступ к местоположению, допустимые координаты съёмки сохраняются в записях фотографий на устройстве. Можно снимать и сохранять фотографии и при выключенном GPS, отказе в разрешении или недоступном местоположении.\n\nСуществующие координаты, адреса, фотографии и EXIF оригинальных фотографий сохраняются. Если вы выбираете отправку фотографий или экспорт ZIP, файлы, передаваемые выбранному приложению-получателю, могут содержать координаты и EXIF. Перед отправкой проверьте включённую информацию.",
-              "notice": null,
+              "body": "Камера → Параметры камеры → Запись местоположения GPS\n\nПри новой установке запись GPS по умолчанию выключена. Разрешение на местоположение запрашивается, когда вы выбираете включение GPS в камере. Можно отказаться или закрыть уведомление и продолжить съёмку без GPS. Выбор можно изменить в параметрах камеры.\n\nЕсли включить запись GPS и разрешить доступ к местоположению, допустимые координаты съёмки сохраняются в записях фотографий на устройстве. Можно снимать и сохранять фотографии и при выключенном GPS, отказе в разрешении или недоступном местоположении.\n\nИмеющиеся координаты, адреса, фотографии и EXIF исходных фотографий сохраняются на устройстве. При отправке фотографий из галереи и экспорте ZIP с фотографиями EXIF удаляется из передаваемых копий, но видимые на фотографиях местоположение или адреса могут остаться. Резервные ZIP-копии с исходными фотографиями могут содержать EXIF и координаты из записей о фотографиях. Перед отправкой проверьте содержимое и приложение-получатель.",
+              "notice": "Координаты съёмки поступают от служб геолокации Android. На устройствах с сервисами Google Play могут совместно использоваться сигналы GPS, Wi-Fi, мобильных сетей и датчиков. Полученные приложением координаты сохраняются в записях фотографий на устройстве. «Точность геолокации Google» — отдельная настройка устройства, не связанная с настройкой записи GPS в приложении. Когда она включена, Google периодически собирает и обрабатывает данные о точности местоположения, в том числе сведения о беспроводных сигналах и датчиках. Отключение записи GPS в приложении не изменяет эту настройку устройства. Автоматический поиск адресов остаётся заблокированным.",
               "icon": {
                 "name": "location_on_rounded",
                 "codePoint": 63620,
@@ -19427,7 +19427,7 @@
             {
               "id": "report-picker",
               "title": "Прикрепите фото отчета",
-              "body": "Прикрепите фотографии галереи, сделанные на дату отчета.",
+              "body": "Прикрепляйте к отчёту фотографии, выбранные в галерее.",
               "notice": null,
               "icon": null
             },
@@ -20695,8 +20695,8 @@
             {
               "id": "camera-gps-record",
               "title": "GPS Konum Kaydı",
-              "body": "Kamera → Kamera seçenekleri → GPS Konum Kaydı\n\nYeni kurulumda GPS kaydı varsayılan olarak KAPALIDIR. Konum izni, kamerada GPS'yi açmayı seçtiğinizde istenir. İzni reddedip veya bildirimi kapatıp GPS kapalıyken çekime devam edebilirsiniz. Seçiminizi kamera seçeneklerinden değiştirebilirsiniz.\n\nGPS kaydını açıp konum izni verdiğinizde, geçerli çekim koordinatları cihazınızdaki fotoğraf kayıtlarına kaydedilir. GPS kapalıyken, izin reddedildiğinde veya konum alınamadığında da fotoğraf çekip kaydedebilirsiniz.\n\nMevcut koordinatlar, adresler, fotoğraflar ve orijinal fotoğrafların EXIF verileri korunur. Fotoğraf paylaşmayı veya ZIP dışa aktarmayı seçtiğinizde, seçilen alıcı uygulamaya gönderilen dosyalarda koordinatlar ve EXIF bulunabilir. Paylaşmadan önce içerilen bilgileri kontrol edin.",
-              "notice": null,
+              "body": "Kamera → Kamera seçenekleri → GPS Konum Kaydı\n\nYeni kurulumda GPS kaydı varsayılan olarak KAPALIDIR. Konum izni, kamerada GPS'yi açmayı seçtiğinizde istenir. İzni reddedip veya bildirimi kapatıp GPS kapalıyken çekime devam edebilirsiniz. Seçiminizi kamera seçeneklerinden değiştirebilirsiniz.\n\nGPS kaydını açıp konum izni verdiğinizde, geçerli çekim koordinatları cihazınızdaki fotoğraf kayıtlarına kaydedilir. GPS kapalıyken, izin reddedildiğinde veya konum alınamadığında da fotoğraf çekip kaydedebilirsiniz.\n\nMevcut koordinatlar, adresler, fotoğraflar ve orijinal fotoğrafların EXIF bilgileri cihazda korunur. Galeriden fotoğraf paylaşırken veya fotoğraf ZIP'i dışa aktarırken paylaşılan kopyalardan EXIF kaldırılır; ancak fotoğraflarda görünen konum veya adresler kalabilir. Orijinal fotoğrafları içeren yedek ZIP dosyalarında EXIF ve fotoğraf kayıtlarındaki koordinatlar bulunabilir. Paylaşmadan önce içeriği ve alıcı uygulamayı kontrol edin.",
+              "notice": "Çekim koordinatları Android konum hizmetlerinden alınır. Google Play hizmetleri bulunan cihazlarda GPS, Wi-Fi, mobil ağ ve sensör sinyalleri birleştirilebilir. Uygulamanın aldığı koordinatlar cihazınızdaki fotoğraf kayıtlarına kaydedilir. Google Konum Doğruluğu, uygulamanın GPS kayıt ayarından ayrı bir cihaz ayarıdır. Etkinleştirildiğinde Google, kablosuz sinyal ve sensör bilgileri gibi konum doğruluğu verilerini düzenli olarak toplar ve işler. Uygulamada GPS kaydını kapatmak bu cihaz ayarını değiştirmez. Otomatik adres sorgulama engellenmeye devam eder.",
               "icon": {
                 "name": "location_on_rounded",
                 "codePoint": 63620,
@@ -21067,7 +21067,7 @@
             {
               "id": "report-picker",
               "title": "Rapora fotoğraf ekleme",
-              "body": "Rapor tarihinde çekilen galeri fotoğraflarını ekleyin.",
+              "body": "Galeriden seçtiğiniz fotoğrafları rapora ekleyin.",
               "notice": null,
               "icon": null
             },
@@ -22335,8 +22335,8 @@
             {
               "id": "camera-gps-record",
               "title": "سجل موقع GPS",
-              "body": "الكاميرا → خيارات الكاميرا → سجل موقع GPS\n\nيكون تسجيل GPS متوقفًا افتراضيًا عند التثبيت الجديد. يُطلب إذن الموقع عندما تختار تشغيل GPS في الكاميرا. يمكنك رفض الإذن أو إغلاق الإشعار ومواصلة التصوير مع إيقاف GPS. يمكنك تغيير ذلك في أي وقت من خيارات الكاميرا.\n\nعند تفعيل تسجيل GPS والسماح بإذن الموقع، تُحفظ إحداثيات التصوير الصالحة في سجلات الصور على جهازك. يمكنك التقاط الصور وحفظها حتى عند إيقاف GPS أو رفض الإذن أو تعذر تحديد الموقع.\n\nتُحفظ الإحداثيات والعناوين والصور السابقة وبيانات EXIF للصور الأصلية. عند اختيار مشاركة الصور أو تصدير ملف ZIP، قد تتضمن الملفات الإحداثيات وبيانات EXIF وتُنقل إلى التطبيق المستلِم الذي تختاره. تحقق من المعلومات المضمنة قبل المشاركة.",
-              "notice": null,
+              "body": "الكاميرا → خيارات الكاميرا → سجل موقع GPS\n\nيكون تسجيل GPS متوقفًا افتراضيًا عند التثبيت الجديد. يُطلب إذن الموقع عندما تختار تشغيل GPS في الكاميرا. يمكنك رفض الإذن أو إغلاق الإشعار ومواصلة التصوير مع إيقاف GPS. يمكنك تغيير ذلك في أي وقت من خيارات الكاميرا.\n\nعند تفعيل تسجيل GPS والسماح بإذن الموقع، تُحفظ إحداثيات التصوير الصالحة في سجلات الصور على جهازك. يمكنك التقاط الصور وحفظها حتى عند إيقاف GPS أو رفض الإذن أو تعذر تحديد الموقع.\n\nتُحفظ الإحداثيات والعناوين والصور الموجودة وبيانات EXIF للصور الأصلية على جهازك. عند مشاركة الصور من المعرض أو تصدير ملف ZIP للصور، تُزال بيانات EXIF من النسخ المشتركة، لكن الموقع أو العنوان الظاهر على الصور قد يبقى. قد تتضمن ملفات ZIP للنسخ الاحتياطي التي تحتوي على الصور الأصلية بيانات EXIF وإحداثيات سجلات الصور. تحقّق من المحتوى والتطبيق المستلم قبل المشاركة.",
+              "notice": "تأتي إحداثيات التصوير من خدمات الموقع في Android. على الأجهزة التي تتوفر فيها خدمات Google Play، قد تُدمج إشارات GPS وWi-Fi وشبكات الهاتف المحمول والمستشعرات. تُحفظ الإحداثيات التي يتلقاها التطبيق في سجلات الصور على جهازك. إعداد دقة الموقع من Google منفصل عن إعداد تسجيل GPS في التطبيق. عند تفعيله، تجمع Google دوريًا بيانات دقة الموقع وتعالجها، مثل معلومات الإشارات اللاسلكية والمستشعرات. إيقاف تسجيل GPS في التطبيق لا يغيّر إعداد الجهاز هذا. يظل البحث التلقائي عن العنوان محظورًا.",
               "icon": {
                 "name": "location_on_rounded",
                 "codePoint": 63620,
@@ -22707,7 +22707,7 @@
             {
               "id": "report-picker",
               "title": "إرفاق صور بالتقرير",
-              "body": "قم بإرفاق صور المعرض التي تم التقاطها في تاريخ التقرير.",
+              "body": "أرفق بالتقرير الصور التي تختارها من المعرض.",
               "notice": null,
               "icon": null
             },
@@ -23975,8 +23975,8 @@
             {
               "id": "camera-gps-record",
               "title": "Registrazione della posizione GPS",
-              "body": "Fotocamera → Opzioni fotocamera → Registrazione della posizione GPS\n\nAlla nuova installazione, la registrazione GPS è disattivata per impostazione predefinita. L’autorizzazione alla posizione viene richiesta quando scegli di attivare il GPS nella fotocamera. Puoi rifiutare o chiudere l’avviso e continuare a scattare senza GPS. Puoi cambiare la scelta nelle opzioni della fotocamera.\n\nAttivando la registrazione GPS e consentendo l’accesso alla posizione, le coordinate di scatto valide vengono salvate nei record delle foto sul dispositivo. È possibile scattare e salvare foto anche con GPS disattivato, permesso negato o posizione non disponibile.\n\nLe coordinate, gli indirizzi, le foto esistenti e i dati EXIF delle foto originali vengono conservati. Scegliendo di condividere foto o esportare uno ZIP, i file inviati all’app destinataria selezionata possono includere coordinate e dati EXIF. Verificare le informazioni incluse prima della condivisione.",
-              "notice": null,
+              "body": "Fotocamera → Opzioni fotocamera → Registrazione della posizione GPS\n\nAlla nuova installazione, la registrazione GPS è disattivata per impostazione predefinita. L’autorizzazione alla posizione viene richiesta quando scegli di attivare il GPS nella fotocamera. Puoi rifiutare o chiudere l’avviso e continuare a scattare senza GPS. Puoi cambiare la scelta nelle opzioni della fotocamera.\n\nAttivando la registrazione GPS e consentendo l’accesso alla posizione, le coordinate di scatto valide vengono salvate nei record delle foto sul dispositivo. È possibile scattare e salvare foto anche con GPS disattivato, permesso negato o posizione non disponibile.\n\nLe coordinate, gli indirizzi e le foto esistenti, insieme ai dati EXIF delle foto originali, restano sul dispositivo. La condivisione di foto dalla galleria e l’esportazione di ZIP di foto rimuovono i dati EXIF dalle copie condivise, ma i luoghi o gli indirizzi visibili nelle foto possono rimanere. Gli ZIP di backup che includono foto originali possono contenere dati EXIF e coordinate dei registri delle foto. Controlla il contenuto e l’app destinataria prima di condividere.",
+              "notice": "Le coordinate di scatto provengono dai servizi di localizzazione Android. Sui dispositivi con Google Play Services possono essere combinati segnali GPS, Wi-Fi, della rete mobile e dei sensori. Le coordinate ricevute dall’app vengono salvate nei record delle foto sul dispositivo. La Precisione della geolocalizzazione Google è separata dall’impostazione di registrazione GPS dell’app. Quando è attiva, Google raccoglie ed elabora periodicamente dati sulla precisione della posizione, come informazioni sui segnali wireless e sui sensori. Disattivare la registrazione GPS nell’app non modifica questa impostazione del dispositivo. La ricerca automatica degli indirizzi resta bloccata.",
               "icon": {
                 "name": "location_on_rounded",
                 "codePoint": 63620,
@@ -24347,7 +24347,7 @@
             {
               "id": "report-picker",
               "title": "Allega foto al rapporto",
-              "body": "Allega le foto della galleria scattate alla data del rapporto.",
+              "body": "Allega al report le foto selezionate dalla galleria.",
               "notice": null,
               "icon": null
             },
@@ -25615,8 +25615,8 @@
             {
               "id": "camera-gps-record",
               "title": "บันทึกตำแหน่ง GPS",
-              "body": "กล้อง → ตัวเลือกกล้อง → บันทึกตำแหน่ง GPS\n\nเมื่อติดตั้งใหม่ การบันทึก GPS จะปิดอยู่ตามค่าเริ่มต้น แอปจะขอสิทธิ์ตำแหน่งเมื่อคุณเลือกเปิด GPS ในกล้อง คุณปฏิเสธหรือปิดคำชี้แจงแล้วถ่ายรูปต่อโดยปิด GPS ได้ และเปลี่ยนตัวเลือกได้ทุกเมื่อในตัวเลือกกล้อง\n\nเมื่อเปิดการบันทึก GPS และอนุญาตตำแหน่ง พิกัดขณะถ่ายที่ผ่านเกณฑ์จะถูกบันทึกในข้อมูลรูปภาพบนอุปกรณ์ แม้ปิด GPS ปฏิเสธสิทธิ์ หรือรับตำแหน่งไม่ได้ ก็ยังถ่ายและบันทึกรูปภาพได้\n\nพิกัด ที่อยู่ รูปภาพเดิม และ EXIF ของรูปต้นฉบับจะถูกเก็บไว้ เมื่อคุณเลือกแชร์รูปภาพหรือส่งออก ZIP ไฟล์ที่ส่งไปยังแอปผู้รับที่เลือกอาจมีพิกัดและ EXIF โปรดตรวจสอบข้อมูลที่รวมอยู่ก่อนแชร์",
-              "notice": null,
+              "body": "กล้อง → ตัวเลือกกล้อง → บันทึกตำแหน่ง GPS\n\nเมื่อติดตั้งใหม่ การบันทึก GPS จะปิดอยู่ตามค่าเริ่มต้น แอปจะขอสิทธิ์ตำแหน่งเมื่อคุณเลือกเปิด GPS ในกล้อง คุณปฏิเสธหรือปิดคำชี้แจงแล้วถ่ายรูปต่อโดยปิด GPS ได้ และเปลี่ยนตัวเลือกได้ทุกเมื่อในตัวเลือกกล้อง\n\nเมื่อเปิดการบันทึก GPS และอนุญาตตำแหน่ง พิกัดขณะถ่ายที่ผ่านเกณฑ์จะถูกบันทึกในข้อมูลรูปภาพบนอุปกรณ์ แม้ปิด GPS ปฏิเสธสิทธิ์ หรือรับตำแหน่งไม่ได้ ก็ยังถ่ายและบันทึกรูปภาพได้\n\nพิกัด ที่อยู่ รูปภาพที่มีอยู่ และ EXIF ของรูปภาพต้นฉบับจะยังคงอยู่ในอุปกรณ์ เมื่อแชร์รูปภาพจากแกลเลอรีหรือส่งออก ZIP รูปภาพ ระบบจะลบ EXIF ออกจากสำเนาที่แชร์ แต่ตำแหน่งหรือที่อยู่ที่มองเห็นในรูปภาพอาจยังคงอยู่ ZIP สำรองข้อมูลที่มีรูปภาพต้นฉบับอาจมี EXIF และพิกัดจากบันทึกรูปภาพ โปรดตรวจสอบเนื้อหาและแอปผู้รับก่อนแชร์",
+              "notice": "พิกัดขณะถ่ายภาพมาจากบริการตำแหน่งของ Android อุปกรณ์ที่มีบริการ Google Play อาจใช้สัญญาณ GPS, Wi-Fi, เครือข่ายมือถือ และเซ็นเซอร์ร่วมกัน พิกัดที่แอปได้รับจะบันทึกไว้ในระเบียนภาพถ่ายบนอุปกรณ์ของคุณ ความแม่นยำของตำแหน่งของ Google เป็นการตั้งค่าอุปกรณ์ที่แยกจากการบันทึก GPS ของแอป เมื่อเปิดใช้งาน Google จะเก็บรวบรวมและประมวลผลข้อมูลความแม่นยำของตำแหน่งเป็นระยะ เช่น ข้อมูลสัญญาณไร้สายและเซ็นเซอร์ การปิดการบันทึก GPS ในแอปจะไม่เปลี่ยนการตั้งค่าอุปกรณ์นี้ การค้นหาที่อยู่อัตโนมัติยังคงถูกปิดกั้น",
               "icon": {
                 "name": "location_on_rounded",
                 "codePoint": 63620,
@@ -25987,7 +25987,7 @@
             {
               "id": "report-picker",
               "title": "แนบรูปภาพในรายงาน",
-              "body": "แนบรูปถ่ายแกลเลอรี่ที่ถ่าย ณ วันที่รายงาน",
+              "body": "แนบรูปภาพที่เลือกจากแกลเลอรีลงในรายงาน",
               "notice": null,
               "icon": null
             },
@@ -26276,5 +26276,5 @@
       ]
     }
   },
-  "contentVersion": "cdbc9dbee3d4f383"
+  "contentVersion": "b409900a61c47dde"
 }

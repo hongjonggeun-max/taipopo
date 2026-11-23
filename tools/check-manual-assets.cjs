@@ -36,7 +36,7 @@ for (const code of codes) {
   assert.equal(locale.images.length, 4);
   if (!imagesOnly) assert.deepEqual(locale.chapters, publicManualChapters(resolved.locales[code].chapters.map(chapter => ({ id: chapter.id, title: chapter.title, screen: chapter.screen, icon: publicIcon(chapter.icon), features: chapter.features.map(feature => ({ id: feature.id, title: feature.title, body: feature.body, notice: feature.notice, icon: publicIcon(feature.icon) })) })), code, arb));
   assert.equal(locale.chapters.length, 6); assert.equal(locale.chapters.flatMap(c => c.features).length, 110);
-  assert.equal(locale.chapters.flatMap(c => c.features).filter(f => f.notice).length, 2);
+  assert.equal(locale.chapters.flatMap(c => c.features).filter(f => f.notice).length, 3);
   assert.equal(ui[code].contents, arb.manualContentsHint);
   assert.deepEqual(fs.readdirSync(path.join(root, 'guide/images', code)).sort(), data.imageOrder.map(id => `${id}.webp`).sort());
   for (const [index, image] of locale.images.entries()) {
@@ -65,4 +65,4 @@ for (const code of codes) {
   }
 }
 assert.equal(checked, 64); assert.equal(excluded, 1968); assert.equal(previews, 32);
-console.log(`PASS: 16 locales × 6 chapters / 110 production feature bodies / 2 notices; ${imagesOnly ? 'images-only provenance check' : 'current ARB/generated Dart with explicit website wording overrides'}; ${checked} byte-identical app WebPs (${bytes} bytes), ${previews} web-only previews; ${excluded} archives excluded.`);
+console.log(`PASS: 16 locales × 6 chapters / 110 production feature bodies / 3 notices; ${imagesOnly ? 'images-only provenance check' : 'current ARB/generated Dart with explicit website wording overrides'}; ${checked} byte-identical app WebPs (${bytes} bytes), ${previews} web-only previews; ${excluded} archives excluded.`);

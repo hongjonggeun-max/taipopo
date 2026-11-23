@@ -111,6 +111,14 @@ class Parser {
       const end = this.take(')').end;
       return { type: 'call', source: this.source, start, end, name: names[0], args, named };
     }
+    if (this.accept('?')) {
+      if (names.join('.') !== 'AppBuildEnvironment.directDriveEnabled') this.fail('Unsupported conditional expression', start);
+      const whenTrue = this.expression(); this.take(':'); const whenFalse = this.expression();
+      for (const branch of [whenTrue, whenFalse]) {
+        if (branch.type !== 'member' || branch.names.length !== 2 || branch.names[0] !== 'l') this.fail('Conditional branches must be localized members', branch.start);
+      }
+      return { type: 'directDriveText', source: this.source, start, end: this.peek().start, whenTrue, whenFalse };
+    }
     return { type: 'member', source: this.source, start, end: this.peek().start, names };
   }
 }
@@ -233,6 +241,11 @@ function resolveManual(appRoot) {
   }
   function value(node, env, usedKeys) {
     if (node.type === 'strings') return node.strings.map(raw => stringValue(raw, env, usedKeys)).join('');
+    if (node.type === 'directDriveText') {
+      // Validate both localization branches, then export the production (false) value.
+      value(node.whenTrue, env, usedKeys);
+      return value(node.whenFalse, env, usedKeys);
+    }
     if (node.type === 'member') {
       const names = node.names;
       if (names.length === 1 && names[0] === 'l') return env;
@@ -304,7 +317,7 @@ function resolveManual(appRoot) {
       chapter.features.forEach((feature, featureIndex) => { feature.chapterId = chapter.id; feature.order = featureIndex + 1; });
     });
     const allFeatures = chapters.flatMap(c => c.features);
-    assert.deepEqual(allFeatures.filter(f => f.notice !== null).map(f => f.id), ['workplace-gps-address', 'attendance']);
+    assert.deepEqual(allFeatures.filter(f => f.notice !== null).map(f => f.id), ['workplace-gps-address', 'attendance', 'camera-gps-record']);
     assert.deepEqual(allFeatures.filter(f => f.conditions.length).map(f => f.id), []);
     assert.equal(allFeatures.filter(f => f.iterationSource).length, 8);
     locales[code] = { name, direction: code === 'ar' ? 'rtl' : 'ltr', title: localized('userGuideTitle', env), intro: localized('manualIntro', env), chapters };
@@ -316,7 +329,7 @@ function resolveManual(appRoot) {
       if (node.type !== 'strings') throw Error(`Generated getter is not a literal: ${code}.${key}`);
       assert.equal(value(node, env), arb[key], `ARB/generated getter drift ${code}.${key}`);
     }
-    checks.push({ locale: code, chapters: 6, features: 110, images: 4, rows: 120, notices: 2, conditionalProductionFeatures: 0, tupleRows: 8, missingText: 0, duplicateFeatureIds: 0, arbAndGeneratedGettersMatch: true });
+    checks.push({ locale: code, chapters: 6, features: 110, images: 4, rows: 120, notices: 3, conditionalProductionFeatures: 0, tupleRows: 8, missingText: 0, duplicateFeatureIds: 0, arbAndGeneratedGettersMatch: true });
   }
   const firstIds = locales[languageOptions[0].code].chapters.flatMap(c => c.features.map(f => f.id));
   for (const locale of Object.values(locales)) assert.deepEqual(locale.chapters.flatMap(c => c.features.map(f => f.id)), firstIds);
@@ -326,7 +339,7 @@ function resolveManual(appRoot) {
       proof: { source: 'lib/config/app_build_environment.dart', expression: "directDriveEnabled = !isValidation && appFlavor != 'production'", validationDefinition } },
     validation: { status: 'PASS', meaning: 'Static parsing and exact source/locale metadata comparison only; no Flutter/app execution or runtime verification.',
       localeCount: 16, chaptersPerLocale: 6, featuresPerLocale: 110, featureRowsTotal: 1760, imagesPerLocale: 4, resolvedRowCountPerLocale: 120,
-      chapterFeatureCounts: EXPECTED_COUNTS, sourceLocalizationKeys: referencedKeys.size, noticesPerLocale: 2, tupleRowsPerLocale: 8, productionConditionalRowsPerLocale: 0,
+      chapterFeatureCounts: EXPECTED_COUNTS, sourceLocalizationKeys: referencedKeys.size, noticesPerLocale: 3, tupleRowsPerLocale: 8, productionConditionalRowsPerLocale: 0,
       uniqueIcons: Object.keys(icons).length, directionalIcons: Object.values(icons).filter(i => i.matchTextDirection).map(i => i.name),
       unsupportedSyntax: [], missingText: [], sourceHashesUnchanged: true, appWrites: false, appTestsBuildsInstallsRun: false, locales: checks },
     renderingContract: { source: BASE + 'manual_continuous_content.dart', order: 'chapter heading, optional one overview image, all chapter feature rows',

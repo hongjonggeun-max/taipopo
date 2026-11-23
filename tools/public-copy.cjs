@@ -8,7 +8,9 @@ function publicManualChapters(chapters, code, arb) {
   for (const feature of result.flatMap(chapter => chapter.features)) {
     const index = featureOrder.indexOf(feature.id === 'camera-capture' ? 'work-photos' : feature.id);
     if (index >= 0) feature.body = text.manualBodies[index];
-    if (feature.id === 'data-usage') feature.body = text.dataUsage;
+    if (feature.id === 'data-usage' && feature.body !== text.dataUsage) {
+      throw Error(`App/public data-usage copy differs: ${code}`);
+    }
     const menus = {
       'backup-device': ['backupFileSave', 'backupFileSaveSubtitle'],
       'backup-external': ['externalStorageBackupAction', 'externalStorageBackupActionSubtitle'],

@@ -39,7 +39,7 @@
     "diagnostics": "Keep existing default OFF and explicit opt-in; not a blanket finding of legal consent adequacy",
     "directDriveApi": "Keep disabled until written approval basis is secured; user-selected manual ZIP sharing is a separate path",
     "terms": "Concise user-facing confirmation UI; metadata stays internal. Validation progress and formal acceptance are different record types. Final documents/effective date are not yet configured; no public-release consent PASS.",
-    "externalFacts": "Apply requirements to active processing paths. Verify Geocoder is inactive in the final candidate before closing its launch impact. Retain separate Gmail/Firebase obligations and bounded OS-provider distinctions; no invented recipient/country/retention facts.",
+    "externalFacts": "Apply requirements to active paths. The restored Geolocator path uses Google Play services FLP where available and the plugin Android fallback otherwise. Assess actual app/SDK off-device processing separately from independently configured Google Location Accuracy. Automatic address lookup stays blocked; verify Geocoder zero separately. Do not infer collection Yes/No from local photo storage, OS-service documentation alone, or past GPS_PROVIDER evidence. Remaining notice/filing checks are before public release, not prerequisites for this restoration and validation.",
     "publication": "BLOCKED; operational policy adoption does not establish legal compliance",
     "additionalServiceCost": "Zero additional service cost and existing functionality are the baseline. Geoapify/mailbox replacement is not adopted or a release prerequisite; the signup request was withdrawn and the unsubmitted form closed."
   },
@@ -133,7 +133,7 @@
     "note9OsLocationOffScope": "v11 physical evidence retained as historical; v13 current OS-OFF execution is AVD, not relabelled physical execution.",
     "syntheticAvdGpsCaptureSkiaScope": "v10 historical control only; v13 default Impeller positive evidence is recorded separately."
   },
-  "activeLocationCandidateReview": "gpsWorkplaceFollowupReview",
+  "activeLocationCandidateReview": "geolocatorRestoreReview",
   "gpsWorkplaceFollowupReview": {
     "dateKst": "2026-11-22",
     "status": "BLOCKED",
@@ -156,5 +156,45 @@
     "scope": "v13 baseline retained separately. Prior-workplace import and pending-GPS capture were physically checked on v14; v15 adds expiry-only preview feedback, with synthetic Android fix/expiry/capture checked separately. Gmail/Firebase-production/formal terms/market/production-Play gates remain.",
     "expiredFixPreview": "PASS",
     "expiryDoesNotStartLookup": "PASS"
+  },
+  "geolocatorRestoreReview": {
+    "dateKst": "2026-11-23",
+    "status": "REVIEW_DRAFT_RELEASE_NOT_APPROVED",
+    "appSource": "C:\\TAIPOPO\\development\\gps-address-latency-20261119",
+    "privacyNoticeVersion": "2026-11-23",
+    "formalEffectiveDateUnchanged": "2026-08-23",
+    "requestedValidationVersionCode": 17,
+    "sourceVersions": {
+      "geolocator": "14.0.3",
+      "geolocator_android": "5.0.3",
+      "play-services-location": "21.2.0"
+    },
+    "requestPath": "High-accuracy stream, distanceFilter 0; GMS available: Fused Location Provider; otherwise plugin Android fallback; forceLocationManager not forced",
+    "automaticAddressEnabled": false,
+    "locationCollectionAnswer": "REVIEW_REQUIRED_BEFORE_PUBLIC_SUBMISSION",
+    "locationSharingAnswer": "REVIEW_REQUIRED_BEFORE_PUBLIC_SUBMISSION",
+    "separateScopes": [
+      "Coordinates received by the app and saved in local photo records",
+      "Confirmed off-device processing by app or included SDKs",
+      "Google Location Accuracy processing controlled by a separate device setting"
+    ],
+    "noSatelliteOnlyOrAllOnDeviceClaim": true,
+    "geocoderZeroVerification": "ROOT_CURRENT_CANDIDATE_VERIFICATION",
+    "deviceAndStorageVerification": "ROOT_CURRENT_CANDIDATE_VERIFICATION",
+    "restorationPreconditionsWithdrawn": [
+      "prove zero location collection",
+      "identify satellite failure cause",
+      "repair old AVD"
+    ],
+    "noticeLocales": 16,
+    "report": "C:/TAIPOPO/validation/20261123-geolocator-restore/policy-review.txt",
+    "currentReviewDocument": "C:/TAIPOPO/development/gps-address-latency-20261119/docs/release/local-gps-no-geocoder-data-safety-20261122.md",
+    "published": false,
+    "playSubmitted": false,
+    "sources": [
+      "https://support.google.com/googleplay/android-developer/answer/10787469?hl=ko",
+      "https://support.google.com/android/answer/15157297?hl=ko",
+      "https://developers.google.com/location-context/fused-location-provider"
+    ]
   }
 }
