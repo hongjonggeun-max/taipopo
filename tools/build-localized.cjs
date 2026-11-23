@@ -5,6 +5,7 @@ const path = require('node:path');
 const root = path.resolve(__dirname, '..');
 const policies = require('./privacy-content.json');
 const recordNotices = require('./record-tool-notices.json');
+const { brandImages } = require('./site-brand.cjs');
 const {
   renderPolicy,
 } = require('./privacy-page.cjs');
@@ -39,7 +40,7 @@ for (const [code, t] of Object.entries(locales)) {
     const localePage = page === 'privacy' ? 'privacy/' : '';
     const choices = Object.entries(locales).map(([id, item]) => `<a href="${up}${id}/${localePage}" lang="${id}"${id===code?' aria-current="true"':''}>${esc(item.name)}</a>`).join('');
     const picker = `<details class="language-picker"><summary aria-label="${esc(changeLanguage[code])}"><svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M3 12h18M12 3a15 15 0 0 1 0 18M12 3a15 15 0 0 0 0 18"></path></svg><span>${esc(t.name)}</span></summary><div class="language-options">${choices}</div></details>`;
-    const nav = `<header class="header wrap"><a class="brand" href="${root}">TAIPOPO</a><nav><a href="${root}">${esc(t.home)}</a><a href="${root}#features">${esc(t.features)}</a><a href="${root}support/">${esc(t.support)}</a><a href="${root}privacy/">${esc(t.privacy)}</a><a href="${guide}">${esc(t.guide)}</a></nav>${picker}</header>`;
+    const nav = `<header class="header wrap"><a class="brand" href="${root}">${brandImages(up)}</a><nav><a href="${root}">${esc(t.home)}</a><a href="${root}#features">${esc(t.features)}</a><a href="${root}support/">${esc(t.support)}</a><a href="${root}privacy/">${esc(t.privacy)}</a><a href="${guide}">${esc(t.guide)}</a></nav>${picker}</header>`;
     const pageName = page === 'support' ? t.support : page === 'privacy' ? renderPolicy(policies[code]).title : t.home;
     const description = page === 'support' ? t.help : page === 'privacy' ? renderPolicy(policies[code]).title : t.intro;
     const documentTitle = page === 'privacy' ? `${esc(pageName)} · TAIPOPO` : `TAIPOPO · ${esc(pageName)}`;
@@ -47,7 +48,7 @@ for (const [code, t] of Object.entries(locales)) {
   };
   const footer = `<footer><p>${esc(t.footer)}</p><small>TAIPOPO · ${esc(t.release)}</small></footer></main></body></html>`;
   const recordNotice = `<section class="glass" id="record-tool-notice"><h2>${esc(recordNotices[code].title)}</h2>${recordNotices[code].paragraphs.map(p=>`<p>${esc(p)}</p>`).join('')}</section>`;
-  const home = `${shell()}<section class="page-intro"><span class="eyebrow">TAIPOPO</span><h1>${esc(t.title)}</h1><p>${esc(t.intro)}</p><p>${esc(t.storage)}</p><a class="button primary" href="../guide/?lang=${code}">${esc(t.openGuide)}</a></section><section id="features" class="feature-grid"><article class="glass"><h2>${esc(t.records)}</h2><p>${esc(t.recordsText)}</p></article><article class="glass"><h2>${esc(t.photos)}</h2><p>${esc(t.photosText)}</p></article><article class="glass"><h2>${esc(t.settlements)}</h2><p>${esc(t.settlementsText)}</p></article></section><section class="glass"><h2>${esc(t.help)}</h2><a href="support/">${esc(t.support)}</a> · <a href="mailto:taipopo.app@gmail.com">${esc(t.contact)}</a></section>${recordNotice}${footer}`;
+  const home = `${shell()}<section class="page-intro"><span class="eyebrow">TAIPOPO</span><h1>${esc(t.title)}</h1><p>${esc(t.intro)}</p><p>${esc(t.storage)}</p><a class="button primary" href="../guide/?lang=${code}">${esc(t.openGuide)}</a></section><section id="features" class="feature-grid"><article class="glass compact-card"><h2>${esc(t.records)}</h2><p>${esc(t.recordsText)}</p></article><article class="glass compact-card"><h2>${esc(t.photos)}</h2><p>${esc(t.photosText)}</p></article><article class="glass compact-card"><h2>${esc(t.settlements)}</h2><p>${esc(t.settlementsText)}</p></article></section><section class="glass compact-card compact-support"><h2>${esc(t.help)}</h2><a href="support/">${esc(t.support)}</a> · <a href="mailto:taipopo.app@gmail.com">${esc(t.contact)}</a></section>${recordNotice}${footer}`;
   const support = `${shell(true,'support')}<section class="page-intro"><h1>${esc(t.support)}</h1><p>${esc(t.help)}</p><p><a href="mailto:taipopo.app@gmail.com">${esc(t.contact)}: taipopo.app@gmail.com</a></p><a class="button primary" href="../../guide/?lang=${code}">${esc(t.openGuide)}</a></section>${footer}`;
   const policy = renderPolicy(policies[code]);
   const privacy = `${shell(true,'privacy')}<section class="page-intro"><h1>${esc(policy.title)}</h1></section><div class="policy-content">${policy.html}</div>${footer}`;

@@ -254,9 +254,9 @@
             },
             {
               "id": "workplace-gps-address",
-              "title": "GPS 현재 위치로 주소 입력",
-              "body": "현재 위치의 주소를 가져와 근무지 주소에 입력합니다. 실제 주소를 확인하고 필요한 부분을 수정하세요.",
-              "notice": "GPS로 가져온 주소는 실제 근무지 주소와 다를 수 있습니다. 저장 전에 실제 주소를 다시 확인해 주세요.",
+              "title": "자동 주소 조회 중단",
+              "body": "이 버전은 근무지와 카메라의 자동 주소 조회를 제공하지 않으며, 주소 변환을 위해 좌표를 외부 주소 서비스로 보내지 않습니다. 주소는 직접 입력할 수 있고 기존 저장 주소는 유지됩니다.",
+              "notice": "이 GPS·주소 안내는 자동 주소 조회가 차단된 개발용 검증 후보에 적용됩니다. 기존 설치 버전의 동작과 다를 수 있습니다.\n\n자동 주소 조회가 차단된 버전에 적용되는 안내입니다. 이전 설치본에서는 주소 조회가 동작할 수 있으므로 해당 버전의 안내와 설정이 적용됩니다. 업데이트만으로 기존 기록이나 이미 외부에 전달된 정보가 삭제되지는 않습니다.",
               "icon": {
                 "name": "my_location_rounded",
                 "codePoint": 63728,
@@ -1015,8 +1015,8 @@
             {
               "id": "camera-gps-record",
               "title": "GPS 위치 기록",
-              "body": "GPS 기록을 끄면 앱의 사진 기록에 좌표를 저장하지 않습니다. 주소 표시는 별도 설정입니다. 주소 표시를 켜고 위치 권한을 허용하면 현재 위치로 주소를 확인해 표시하고, 촬영 시 사진 기록에 저장할 수 있습니다. 원본 JPEG에 포함된 EXIF는 그대로 보존합니다.",
-              "notice": null,
+              "body": "카메라 → 카메라 옵션 → GPS 위치 기록\n\n신규 설치 시 GPS 기록은 기본 OFF입니다. 카메라에서 GPS 켜기를 선택할 때 위치 권한을 요청하며, 거부하거나 안내를 닫아도 OFF 상태로 촬영을 계속할 수 있습니다. 카메라 옵션에서 언제든 변경할 수 있습니다.\n\nGPS 기록을 켜고 위치 권한을 허용하면 유효한 촬영 좌표를 기기 내부 사진 기록에 저장합니다. GPS를 끄거나 권한을 거부하거나 위치를 얻지 못해도 사진을 찍고 저장할 수 있습니다.\n\n기존 좌표·주소·사진과 원본 사진의 EXIF는 보존됩니다. 사용자가 직접 사진을 공유하거나 ZIP을 내보내면 좌표와 EXIF가 파일에 포함되어 선택한 수신 앱에 전달될 수 있으므로 공유 전에 포함 정보를 확인하세요.",
+              "notice": "이 GPS·주소 안내는 자동 주소 조회가 차단된 개발용 검증 후보에 적용됩니다. 기존 설치 버전의 동작과 다를 수 있습니다.\n\n촬영 좌표는 Android 위치 서비스로 얻습니다. Google Play 서비스가 있는 기기에서는 GPS·Wi-Fi·이동통신망·센서 신호를 함께 사용할 수 있습니다. 앱이 받은 좌표는 기기 내 사진 기록에 저장합니다. Google 위치 정확도는 앱의 GPS 기록 설정과 별개이며, 켜면 Google이 무선 신호·센서 등의 위치 정확도 데이터를 주기적으로 수집·처리합니다. 앱의 GPS 기록을 꺼도 이 기기 설정은 바뀌지 않습니다. 자동 주소 조회는 계속 차단됩니다.",
               "icon": {
                 "name": "location_on_rounded",
                 "codePoint": 63620,
@@ -1126,9 +1126,9 @@
             },
             {
               "id": "camera-address",
-              "title": "주소",
-              "body": "카메라 촬영 정보에 GPS 주소를 표시합니다.",
-              "notice": null,
+              "title": "근무지 주소",
+              "body": "선택한 근무지에 저장된 주소를 촬영 정보에 기본으로 표시합니다. GPS나 자동 주소 조회를 사용하지 않습니다. 카메라 옵션에서 끌 수 있으며, 저장된 주소가 없으면 표시하지 않습니다.",
+              "notice": "이 GPS·주소 안내는 자동 주소 조회가 차단된 개발용 검증 후보에 적용됩니다. 기존 설치 버전의 동작과 다를 수 있습니다.",
               "icon": {
                 "name": "map_outlined",
                 "codePoint": 61870,
@@ -1936,9 +1936,9 @@
             },
             {
               "id": "workplace-gps-address",
-              "title": "Use current GPS location for address",
-              "body": "Fill the workplace address from your current location. Check the actual address and edit it as needed.",
-              "notice": "The GPS address may differ from the actual workplace address. Check the actual address before saving.",
+              "title": "Automatic address lookup unavailable",
+              "body": "This version does not provide automatic workplace or camera address lookup and does not send coordinates to an external address service for geocoding. You can enter addresses manually, and existing saved addresses are retained.",
+              "notice": "This GPS and address guidance applies to the development validation candidate with automatic address lookup disabled. Existing installed versions may behave differently.\n\nThis notice applies to versions with automatic address lookup blocked. Earlier installations may still perform address lookups and remain subject to their version's notices and settings. Updating alone does not delete existing records or information already sent outside the device.",
               "icon": {
                 "name": "my_location_rounded",
                 "codePoint": 63728,
@@ -2697,8 +2697,8 @@
             {
               "id": "camera-gps-record",
               "title": "GPS Location Record",
-              "body": "When GPS Location Record is off, the app does not save coordinates in the photo record. Show Address is a separate setting. With Show Address on and location permission granted, the app can look up and display the address for your current location and save it to the photo record when you take a photo. EXIF metadata in the original JPEG is preserved as is.",
-              "notice": null,
+              "body": "Camera → Camera options → GPS Location Record\n\nGPS recording is OFF by default on a new installation. Location permission is requested when you choose to turn GPS on in the camera. You can refuse or dismiss the notice and continue taking photos with GPS off. You can change this anytime in camera options.\n\nWhen you enable GPS recording and allow location permission, valid capture coordinates are saved in photo records on your device. You can still take and save photos with GPS off, permission denied or location unavailable.\n\nExisting coordinates, addresses, photos and original photo EXIF are preserved. When you choose to share photos or export a ZIP, coordinates and EXIF may be included in the files sent to your selected recipient app. Check the included information before sharing.",
+              "notice": "This GPS and address guidance applies to the development validation candidate with automatic address lookup disabled. Existing installed versions may behave differently.\n\nCapture coordinates come from Android location services. On devices with Google Play services, GPS, Wi-Fi, mobile-network and sensor signals may be combined. Coordinates received by the app are saved in photo records on your device. Google Location Accuracy is separate from the app's GPS recording setting. When enabled, Google periodically collects and processes location-accuracy data such as wireless-signal and sensor information. Turning off GPS recording in the app does not change that device setting. Automatic address lookup remains blocked.",
               "icon": {
                 "name": "location_on_rounded",
                 "codePoint": 63620,
@@ -2808,9 +2808,9 @@
             },
             {
               "id": "camera-address",
-              "title": "Address",
-              "body": "Display the GPS address in the camera overlay.",
-              "notice": null,
+              "title": "Workplace address",
+              "body": "The selected workplace's saved address is shown in capture information by default. This uses neither GPS nor automatic address lookup. You can turn it off in camera options; no address is shown if none is saved.",
+              "notice": "This GPS and address guidance applies to the development validation candidate with automatic address lookup disabled. Existing installed versions may behave differently.",
               "icon": {
                 "name": "map_outlined",
                 "codePoint": 61870,
@@ -3618,9 +3618,9 @@
             },
             {
               "id": "workplace-gps-address",
-              "title": "用 GPS 当前位置填写地址",
-              "body": "将当前位置的地址填入工作地点地址。请核对实际地址并按需修改。",
-              "notice": "GPS获取的地址可能与实际工作地点地址不同。保存前请再次核对实际地址。",
+              "title": "自动地址查询不可用",
+              "body": "此版本不提供工作地点或相机的自动地址查询，也不会为了地址转换而向外部地址服务发送坐标。您可以手动输入地址，已保存的地址会保留。",
+              "notice": "此 GPS 和地址说明适用于已停用自动地址查询的开发验证候选版本。已安装的其他版本可能有不同的行为。\n\n本说明适用于已阻止自动地址查询的版本。先前安装的旧版本可能仍会查询地址，并适用该版本的说明和设置。仅更新应用不会删除现有记录或已发送到设备外的信息。",
               "icon": {
                 "name": "my_location_rounded",
                 "codePoint": 63728,
@@ -4379,8 +4379,8 @@
             {
               "id": "camera-gps-record",
               "title": "GPS定位记录",
-              "body": "关闭“GPS定位记录”后，应用不会在照片记录中保存坐标。“显示地址”是独立设置。开启此设置并授予定位权限后，应用可以根据当前位置查询并显示地址，并在拍摄时将地址保存到照片记录中。原始 JPEG 中已有的 EXIF 数据会原样保留。",
-              "notice": null,
+              "body": "相机 → 相机选项 → GPS定位记录\n\n新安装时，GPS 记录默认关闭。只有在相机中选择开启 GPS 时才会请求位置权限。拒绝或关闭说明后，仍可在 GPS 关闭的状态下继续拍摄，并可随时在相机选项中更改。\n\n开启 GPS 记录并允许位置权限后，有效的拍摄坐标会保存在设备内的照片记录中。即使 GPS 关闭、权限被拒绝或无法获取位置，也可以拍摄并保存照片。\n\n现有坐标、地址、照片及原始照片的 EXIF 会保留。当您主动选择分享照片或导出 ZIP 时，发送给所选接收应用的文件可能包含坐标和 EXIF。分享前请检查其中的信息。",
+              "notice": "此 GPS 和地址说明适用于已停用自动地址查询的开发验证候选版本。已安装的其他版本可能有不同的行为。\n\n拍摄坐标来自 Android 位置信息服务。在安装了 Google Play 服务的设备上，可能会结合使用 GPS、Wi-Fi、移动网络和传感器信号。应用收到的坐标保存在设备上的照片记录中。Google 位置信息精确度是独立于应用 GPS 记录选项的设备设置。开启后，Google 会定期收集和处理无线信号、传感器信息等位置精确度数据。在应用中关闭 GPS 记录不会更改这项设备设置。自动地址查询仍被禁用。",
               "icon": {
                 "name": "location_on_rounded",
                 "codePoint": 63620,
@@ -4490,9 +4490,9 @@
             },
             {
               "id": "camera-address",
-              "title": "地址",
-              "body": "在相机叠加层中显示 GPS 地址。",
-              "notice": null,
+              "title": "工作地点地址",
+              "body": "默认在拍摄信息中显示所选工作地点已保存的地址，不使用 GPS 或自动地址查询。您可以在相机选项中关闭；如果未保存地址，则不显示。",
+              "notice": "此 GPS 和地址说明适用于已停用自动地址查询的开发验证候选版本。已安装的其他版本可能有不同的行为。",
               "icon": {
                 "name": "map_outlined",
                 "codePoint": 61870,
@@ -5300,9 +5300,9 @@
             },
             {
               "id": "workplace-gps-address",
-              "title": "GPSの現在地から住所を入力",
-              "body": "現在地の住所を勤務先住所に入力します。実際の住所を確認し、必要に応じて修正してください。",
-              "notice": "GPSで取得した住所は実際の勤務先住所と異なる場合があります。保存前に実際の住所を確認してください。",
+              "title": "住所自動検索は利用できません",
+              "body": "このバージョンは勤務先とカメラの住所自動検索を提供せず、住所変換のために外部の住所サービスへ座標を送信しません。住所は手動で入力でき、保存済みの住所は保持されます。",
+              "notice": "このGPS・住所案内は、自動住所検索を停止した開発用検証候補に適用されます。既にインストールされているバージョンでは動作が異なる場合があります。\n\nこの案内は住所自動検索がブロックされたバージョンに適用されます。以前のインストール済みバージョンでは住所検索が動作する場合があり、そのバージョンの案内と設定が適用されます。更新だけでは既存の記録やすでに端末外へ送信された情報は削除されません。",
               "icon": {
                 "name": "my_location_rounded",
                 "codePoint": 63728,
@@ -6061,8 +6061,8 @@
             {
               "id": "camera-gps-record",
               "title": "GPS位置記録",
-              "body": "「GPS位置記録」をオフにすると、アプリ内の写真記録に座標は保存されません。「住所を表示」は別の設定です。この設定をオンにして位置情報の使用を許可すると、現在地から住所を取得して表示し、撮影時に写真記録へ保存できます。元のJPEGに含まれるEXIFはそのまま保持されます。",
-              "notice": null,
+              "body": "カメラ → カメラのオプション → GPS位置記録\n\n新規インストール時のGPS記録は初期設定でオフです。カメラでGPSをオンにすることを選んだ場合に位置情報の権限を求めます。拒否したり案内を閉じたりしても、GPSをオフにしたまま撮影を続けられます。カメラのオプションでいつでも変更できます。\n\nGPS記録をオンにして位置情報へのアクセスを許可すると、有効な撮影座標を端末内の写真記録に保存します。GPSがオフ、権限が拒否された場合や位置を取得できない場合も、写真を撮影・保存できます。\n\n既存の座標・住所・写真と元の写真のEXIFは保持されます。写真の共有やZIPの書き出しを自分で選択すると、座標やEXIFを含むファイルが選択した受信アプリに渡されることがあります。共有前に含まれる情報をご確認ください。",
+              "notice": "このGPS・住所案内は、自動住所検索を停止した開発用検証候補に適用されます。既にインストールされているバージョンでは動作が異なる場合があります。\n\n撮影座標は Android の位置情報サービスから取得します。Google Play 開発者サービスがある端末では、GPS、Wi-Fi、携帯電話網、センサーの信号が組み合わされる場合があります。アプリが受け取った座標は、端末内の写真記録に保存します。「Google 位置情報の精度」は、アプリの GPS 記録設定とは別の端末設定です。有効にすると、Google は無線信号やセンサー情報などの位置精度データを定期的に収集・処理します。アプリで GPS 記録をオフにしても、この端末設定は変わりません。住所の自動検索は引き続き無効です。",
               "icon": {
                 "name": "location_on_rounded",
                 "codePoint": 63620,
@@ -6172,9 +6172,9 @@
             },
             {
               "id": "camera-address",
-              "title": "住所",
-              "body": "カメラオーバーレイに GPS アドレスを表示します。",
-              "notice": null,
+              "title": "勤務先の住所",
+              "body": "選択した勤務先に保存されている住所を、初期設定で撮影情報に表示します。GPSや住所自動検索は使用しません。カメラのオプションでオフにでき、保存済みの住所がなければ表示しません。",
+              "notice": "このGPS・住所案内は、自動住所検索を停止した開発用検証候補に適用されます。既にインストールされているバージョンでは動作が異なる場合があります。",
               "icon": {
                 "name": "map_outlined",
                 "codePoint": 61870,
@@ -6982,9 +6982,9 @@
             },
             {
               "id": "workplace-gps-address",
-              "title": "मौजूदा GPS स्थान से पता भरें",
-              "body": "मौजूदा स्थान से कार्यस्थल का पता भरें। वास्तविक पता जाँचें और ज़रूरत हो तो सुधारें।",
-              "notice": "GPS से मिला पता कार्यस्थल के वास्तविक पते से अलग हो सकता है। सहेजने से पहले वास्तविक पता जाँचें।",
+              "title": "स्वतः पता खोज उपलब्ध नहीं",
+              "body": "यह संस्करण कार्यस्थल या कैमरे के लिए स्वतः पता खोज नहीं करता और निर्देशांकों को पते में बदलने के लिए किसी बाहरी पता सेवा को नहीं भेजता। आप पते स्वयं दर्ज कर सकते हैं और पहले से सहेजे गए पते बने रहते हैं।",
+              "notice": "ये GPS और पते के निर्देश उस विकास सत्यापन संस्करण पर लागू होते हैं जिसमें स्वचालित पता खोज बंद है। पहले से इंस्टॉल किए गए संस्करण अलग तरह से काम कर सकते हैं।\n\nयह नोटिस उन संस्करणों पर लागू है जिनमें स्वतः पता खोज अवरुद्ध है। पहले से इंस्टॉल पुराने संस्करण अब भी पता खोज सकते हैं और उनके अपने संस्करण के नोटिस और सेटिंग लागू रहते हैं। केवल अपडेट करने से मौजूदा रिकॉर्ड या डिवाइस से बाहर पहले भेजी गई जानकारी नहीं मिटती।",
               "icon": {
                 "name": "my_location_rounded",
                 "codePoint": 63728,
@@ -7743,8 +7743,8 @@
             {
               "id": "camera-gps-record",
               "title": "जीपीएस स्थान रिकार्ड",
-              "body": "“जीपीएस स्थान रिकार्ड” बंद होने पर ऐप फ़ोटो के रिकॉर्ड में निर्देशांक नहीं सहेजता। “पता दिखाएँ” एक अलग सेटिंग है। इसे चालू करने और स्थान की अनुमति देने पर ऐप मौजूदा स्थान का पता खोजकर दिखा सकता है और फ़ोटो लेते समय उसे फ़ोटो के रिकॉर्ड में सहेज सकता है। मूल JPEG में मौजूद EXIF डेटा ज्यों का त्यों रहता है।",
-              "notice": null,
+              "body": "कैमरा → कैमरा विकल्प → जीपीएस स्थान रिकार्ड\n\nनए इंस्टॉल में GPS रिकॉर्डिंग डिफ़ॉल्ट रूप से बंद रहती है। कैमरे में GPS चालू करने का विकल्प चुनने पर स्थान की अनुमति माँगी जाती है। अनुमति न देकर या नोटिस बंद करके भी GPS बंद रखते हुए फ़ोटो ले सकते हैं। इसे कैमरा विकल्पों में कभी भी बदल सकते हैं।\n\nGPS रिकॉर्डिंग चालू करने और स्थान की अनुमति देने पर, मान्य कैप्चर निर्देशांक आपके डिवाइस के फ़ोटो रिकॉर्ड में सहेजे जाते हैं। GPS बंद होने, अनुमति न देने या स्थान न मिलने पर भी आप फ़ोटो ले और सहेज सकते हैं।\n\nमौजूदा निर्देशांक, पते, फ़ोटो और मूल फ़ोटो का EXIF सुरक्षित रखा जाता है। फ़ोटो साझा करने या ZIP निर्यात करने का विकल्प चुनने पर, चुने गए प्राप्तकर्ता ऐप को भेजी गई फ़ाइलों में निर्देशांक और EXIF शामिल हो सकते हैं। साझा करने से पहले शामिल जानकारी जाँचें।",
+              "notice": "ये GPS और पते के निर्देश उस विकास सत्यापन संस्करण पर लागू होते हैं जिसमें स्वचालित पता खोज बंद है। पहले से इंस्टॉल किए गए संस्करण अलग तरह से काम कर सकते हैं।\n\nफ़ोटो के स्थान निर्देशांक Android की स्थान सेवाओं से मिलते हैं। Google Play सेवाओं वाले डिवाइस पर GPS, वाई-फ़ाई, मोबाइल नेटवर्क और सेंसर के सिग्नल एक साथ इस्तेमाल हो सकते हैं। ऐप को मिले निर्देशांक आपके डिवाइस के फ़ोटो रिकॉर्ड में सहेजे जाते हैं। Google की जगह की सटीक जानकारी की सेटिंग, ऐप की GPS रिकॉर्डिंग सेटिंग से अलग है। इसे चालू करने पर Google वायरलेस सिग्नल और सेंसर की जानकारी जैसे स्थान की सटीकता से जुड़े डेटा को समय-समय पर इकट्ठा और प्रोसेस करता है। ऐप में GPS रिकॉर्डिंग बंद करने से डिवाइस की यह सेटिंग नहीं बदलती। पते की अपने-आप खोज बंद रहती है।",
               "icon": {
                 "name": "location_on_rounded",
                 "codePoint": 63620,
@@ -7854,9 +7854,9 @@
             },
             {
               "id": "camera-address",
-              "title": "पता",
-              "body": "कैमरा ओवरले में जीपीएस पता प्रदर्शित करें।",
-              "notice": null,
+              "title": "कार्यस्थल का पता",
+              "body": "चुने गए कार्यस्थल का सहेजा हुआ पता कैप्चर जानकारी में डिफ़ॉल्ट रूप से दिखता है। इसके लिए GPS या स्वतः पता खोज का उपयोग नहीं होता। इसे कैमरा विकल्पों में बंद कर सकते हैं; पता सहेजा न हो तो कोई पता नहीं दिखता।",
+              "notice": "ये GPS और पते के निर्देश उस विकास सत्यापन संस्करण पर लागू होते हैं जिसमें स्वचालित पता खोज बंद है। पहले से इंस्टॉल किए गए संस्करण अलग तरह से काम कर सकते हैं।",
               "icon": {
                 "name": "map_outlined",
                 "codePoint": 61870,
@@ -8664,9 +8664,9 @@
             },
             {
               "id": "workplace-gps-address",
-              "title": "Usar localização GPS atual para o endereço",
-              "body": "Preencha o endereço do local de trabalho com a localização atual. Confira o endereço real e corrija se necessário.",
-              "notice": "O endereço do GPS pode ser diferente do endereço real do local de trabalho. Confira antes de salvar.",
+              "title": "Consulta automática de endereço indisponível",
+              "body": "Esta versão não oferece consulta automática de endereço para locais de trabalho ou câmera e não envia coordenadas a um serviço externo para geocodificação. Você pode inserir endereços manualmente, e os endereços já salvos são mantidos.",
+              "notice": "Estas orientações de GPS e endereço se aplicam à versão candidata de validação em desenvolvimento com a busca automática de endereços desativada. Versões já instaladas podem funcionar de forma diferente.\n\nEste aviso aplica-se às versões com consulta automática de endereço bloqueada. Instalações anteriores ainda podem realizar consultas e seguem os avisos e configurações da respectiva versão. Atualizar, por si só, não exclui registros existentes nem informações já enviadas para fora do dispositivo.",
               "icon": {
                 "name": "my_location_rounded",
                 "codePoint": 63728,
@@ -9425,8 +9425,8 @@
             {
               "id": "camera-gps-record",
               "title": "Registro de localização GPS",
-              "body": "Com “Registro de localização GPS” desativado, o aplicativo não salva coordenadas no registro da foto. “Mostrar endereço” é uma configuração separada. Se ela estiver ativada e houver permissão de localização, o aplicativo pode consultar e exibir o endereço da localização atual e salvá-lo no registro da foto no momento da captura. Os dados EXIF do JPEG original são preservados sem alterações.",
-              "notice": null,
+              "body": "Câmera → Opções da câmera → Registro de localização GPS\n\nEm uma nova instalação, o registro GPS fica desligado por padrão. A permissão de localização é solicitada quando você escolhe ativar o GPS na câmera. Você pode recusar ou fechar o aviso e continuar fotografando com o GPS desligado. A escolha pode ser alterada nas opções da câmera.\n\nAo ativar o registro GPS e permitir o acesso à localização, as coordenadas válidas da captura são salvas nos registros de fotos do dispositivo. Você pode tirar e salvar fotos com o GPS desligado, a permissão negada ou a localização indisponível.\n\nAs coordenadas, os endereços, as fotos existentes e os dados EXIF das fotos originais são preservados. Ao escolher compartilhar fotos ou exportar um ZIP, os arquivos enviados ao aplicativo destinatário selecionado podem incluir coordenadas e EXIF. Confira as informações incluídas antes de compartilhar.",
+              "notice": "Estas orientações de GPS e endereço se aplicam à versão candidata de validação em desenvolvimento com a busca automática de endereços desativada. Versões já instaladas podem funcionar de forma diferente.\n\nAs coordenadas da captura vêm dos serviços de localização do Android. Em dispositivos com os Serviços do Google Play, podem ser combinados sinais de GPS, Wi-Fi, redes móveis e sensores. As coordenadas recebidas pelo app são salvas nos registros de fotos do dispositivo. A Precisão de local do Google é independente da configuração de registro GPS do app. Quando ativada, o Google coleta e processa periodicamente dados de precisão de localização, como informações de sinais sem fio e sensores. Desativar o registro GPS no app não altera essa configuração do dispositivo. A consulta automática de endereços continua bloqueada.",
               "icon": {
                 "name": "location_on_rounded",
                 "codePoint": 63620,
@@ -9536,9 +9536,9 @@
             },
             {
               "id": "camera-address",
-              "title": "Endereço",
-              "body": "Exiba o endereço GPS na sobreposição da câmera.",
-              "notice": null,
+              "title": "Endereço do local de trabalho",
+              "body": "O endereço salvo do local de trabalho selecionado aparece por padrão nas informações da captura. Isso não usa GPS nem consulta automática de endereço. Você pode desativá-lo nas opções da câmera; se não houver endereço salvo, nenhum é exibido.",
+              "notice": "Estas orientações de GPS e endereço se aplicam à versão candidata de validação em desenvolvimento com a busca automática de endereços desativada. Versões já instaladas podem funcionar de forma diferente.",
               "icon": {
                 "name": "map_outlined",
                 "codePoint": 61870,
@@ -10346,9 +10346,9 @@
             },
             {
               "id": "workplace-gps-address",
-              "title": "Usar ubicación GPS actual para la dirección",
-              "body": "Rellena la dirección del lugar de trabajo con la ubicación actual. Compruebe la dirección real y corríjala si es necesario.",
-              "notice": "La dirección del GPS puede diferir de la dirección real del lugar de trabajo. Compruébela antes de guardar.",
+              "title": "Consulta automática de direcciones no disponible",
+              "body": "Esta versión no ofrece consultas automáticas de direcciones del lugar de trabajo ni de la cámara, y no envía coordenadas a un servicio externo para convertirlas en direcciones. Puede introducir direcciones manualmente y se conservan las ya guardadas.",
+              "notice": "Estas indicaciones de GPS y dirección se aplican a la versión candidata de validación en desarrollo con la búsqueda automática de direcciones desactivada. Las versiones ya instaladas pueden funcionar de otra manera.\n\nEste aviso se aplica a las versiones con la consulta automática de direcciones bloqueada. Las instalaciones anteriores pueden seguir realizando consultas y se rigen por los avisos y ajustes de su versión. Actualizar no elimina por sí solo los registros existentes ni la información ya enviada fuera del dispositivo.",
               "icon": {
                 "name": "my_location_rounded",
                 "codePoint": 63728,
@@ -11107,8 +11107,8 @@
             {
               "id": "camera-gps-record",
               "title": "Registro de ubicación GPS",
-              "body": "Al desactivar «Registro de ubicación GPS», la aplicación no guarda coordenadas en el registro de la foto. «Mostrar dirección» es un ajuste independiente. Si lo activas y concedes el permiso de ubicación, la aplicación puede consultar y mostrar la dirección de tu ubicación actual y guardarla en el registro de la foto al tomarla. Los datos EXIF del JPEG original se conservan tal como están.",
-              "notice": null,
+              "body": "cámara → Opciones de cámara → Registro de ubicación GPS\n\nEl registro GPS está desactivado por defecto en una instalación nueva. El permiso de ubicación se solicita cuando elige activar el GPS en la cámara. Puede rechazarlo o cerrar el aviso y seguir tomando fotos con el GPS desactivado. Puede cambiarlo cuando quiera en las opciones de la cámara.\n\nSi activa el registro GPS y concede el permiso de ubicación, las coordenadas válidas de captura se guardan en los registros de fotos del dispositivo. Puede tomar y guardar fotos con el GPS desactivado, el permiso denegado o la ubicación no disponible.\n\nSe conservan las coordenadas, direcciones, fotos y datos EXIF de las fotos originales existentes. Si decide compartir fotos o exportar un ZIP, los archivos enviados a la aplicación elegida pueden incluir coordenadas y datos EXIF. Revise la información incluida antes de compartir.",
+              "notice": "Estas indicaciones de GPS y dirección se aplican a la versión candidata de validación en desarrollo con la búsqueda automática de direcciones desactivada. Las versiones ya instaladas pueden funcionar de otra manera.\n\nLas coordenadas de captura proceden de los servicios de ubicación de Android. En dispositivos con Servicios de Google Play, pueden combinarse señales de GPS, Wi-Fi, redes móviles y sensores. Las coordenadas recibidas por la aplicación se guardan en los registros de fotos del dispositivo. La Precisión de la ubicación de Google es independiente del registro GPS de la aplicación. Si está activada, Google recopila y procesa periódicamente datos de precisión de ubicación, como información de señales inalámbricas y sensores. Desactivar el registro GPS en la aplicación no cambia ese ajuste del dispositivo. La consulta automática de direcciones sigue bloqueada.",
               "icon": {
                 "name": "location_on_rounded",
                 "codePoint": 63620,
@@ -11218,9 +11218,9 @@
             },
             {
               "id": "camera-address",
-              "title": "Dirección",
-              "body": "Muestra la dirección GPS en la superposición de la cámara.",
-              "notice": null,
+              "title": "Dirección del lugar de trabajo",
+              "body": "La dirección guardada del lugar de trabajo seleccionado se muestra de forma predeterminada en la información de captura. No utiliza GPS ni consulta automática de direcciones. Puede desactivarla en las opciones de la cámara; si no hay una dirección guardada, no se muestra ninguna.",
+              "notice": "Estas indicaciones de GPS y dirección se aplican a la versión candidata de validación en desarrollo con la búsqueda automática de direcciones desactivada. Las versiones ya instaladas pueden funcionar de otra manera.",
               "icon": {
                 "name": "map_outlined",
                 "codePoint": 61870,
@@ -12028,9 +12028,9 @@
             },
             {
               "id": "workplace-gps-address",
-              "title": "Utiliser l’adresse de la position GPS actuelle",
-              "body": "Renseignez l’adresse du lieu de travail à partir de votre position actuelle. Vérifiez l’adresse réelle et corrigez-la si nécessaire.",
-              "notice": "L’adresse GPS peut différer de l’adresse réelle du lieu de travail. Vérifiez-la avant d’enregistrer.",
+              "title": "Recherche automatique d’adresse indisponible",
+              "body": "Cette version ne propose pas de recherche automatique d’adresse pour les lieux de travail ou l’appareil photo et n’envoie pas de coordonnées à un service d’adresses externe pour le géocodage. Vous pouvez saisir les adresses manuellement ; les adresses déjà enregistrées sont conservées.",
+              "notice": "Ces indications GPS et d’adresse concernent la version candidate de validation en développement dont la recherche automatique d’adresse est désactivée. Les versions déjà installées peuvent fonctionner différemment.\n\nCet avis concerne les versions où la recherche automatique d’adresse est bloquée. Les installations antérieures peuvent encore effectuer des recherches et restent régies par les avis et réglages de leur version. Une mise à jour seule ne supprime ni les fiches existantes ni les informations déjà transmises hors de l’appareil.",
               "icon": {
                 "name": "my_location_rounded",
                 "codePoint": 63728,
@@ -12789,8 +12789,8 @@
             {
               "id": "camera-gps-record",
               "title": "Enregistrement de localisation GPS",
-              "body": "Lorsque « Enregistrement de localisation GPS » est désactivé, l’application n’enregistre pas de coordonnées dans la fiche de la photo. « Afficher l'adresse » est un réglage distinct. Si ce réglage est activé et que l’accès à la localisation est autorisé, l’application peut rechercher et afficher l’adresse correspondant à la position actuelle et l’enregistrer dans la fiche de la photo lors de la prise de vue. Les données EXIF présentes dans le JPEG d’origine sont conservées telles quelles.",
-              "notice": null,
+              "body": "Appareil photo → Options de l’appareil photo → Enregistrement de localisation GPS\n\nL’enregistrement GPS est désactivé par défaut lors d’une nouvelle installation. L’autorisation de localisation est demandée lorsque vous choisissez d’activer le GPS dans l’appareil photo. Vous pouvez refuser ou fermer l’avis et continuer à photographier sans GPS. Ce choix reste modifiable dans les options de l’appareil photo.\n\nSi vous activez l’enregistrement GPS et autorisez la localisation, les coordonnées de prise de vue valides sont enregistrées dans les fiches photo de votre appareil. Vous pouvez prendre et enregistrer des photos même avec le GPS désactivé, l’autorisation refusée ou la localisation indisponible.\n\nLes coordonnées, adresses, photos existantes et données EXIF des photos originales sont conservées. Lorsque vous choisissez de partager des photos ou d’exporter un ZIP, les fichiers transmis à l’application destinataire choisie peuvent contenir des coordonnées et des données EXIF. Vérifiez leur contenu avant le partage.",
+              "notice": "Ces indications GPS et d’adresse concernent la version candidate de validation en développement dont la recherche automatique d’adresse est désactivée. Les versions déjà installées peuvent fonctionner différemment.\n\nLes coordonnées de prise de vue proviennent des services de localisation Android. Sur les appareils dotés des services Google Play, les signaux GPS, Wi-Fi, de réseau mobile et des capteurs peuvent être combinés. Les coordonnées reçues par l’application sont enregistrées dans les fiches photo sur votre appareil. La Précision de la localisation Google est indépendante de l’enregistrement GPS de l’application. Lorsqu’elle est activée, Google collecte et traite périodiquement des données de précision de localisation, notamment des informations de signaux sans fil et de capteurs. Désactiver l’enregistrement GPS dans l’application ne modifie pas ce réglage de l’appareil. La recherche automatique d’adresses reste bloquée.",
               "icon": {
                 "name": "location_on_rounded",
                 "codePoint": 63620,
@@ -12900,9 +12900,9 @@
             },
             {
               "id": "camera-address",
-              "title": "Adresse",
-              "body": "Affichez l'adresse GPS dans la superposition de la caméra.",
-              "notice": null,
+              "title": "Adresse du lieu de travail",
+              "body": "L’adresse enregistrée du lieu de travail sélectionné apparaît par défaut dans les informations de prise de vue. Cela n’utilise ni le GPS ni une recherche automatique d’adresse. Vous pouvez désactiver cet affichage dans les options ; aucune adresse n’apparaît si aucune n’est enregistrée.",
+              "notice": "Ces indications GPS et d’adresse concernent la version candidate de validation en développement dont la recherche automatique d’adresse est désactivée. Les versions déjà installées peuvent fonctionner différemment.",
               "icon": {
                 "name": "map_outlined",
                 "codePoint": 61870,
@@ -13710,9 +13710,9 @@
             },
             {
               "id": "workplace-gps-address",
-              "title": "Adresse aus aktuellem GPS-Standort",
-              "body": "Übernehmen Sie die Adresse Ihres aktuellen Standorts als Arbeitsstättenadresse. Prüfen und korrigieren Sie sie bei Bedarf.",
-              "notice": "Die GPS-Adresse kann von der tatsächlichen Arbeitsstättenadresse abweichen. Prüfen Sie die Adresse vor dem Speichern.",
+              "title": "Automatische Adressabfrage nicht verfügbar",
+              "body": "Diese Version bietet keine automatische Adressabfrage für Arbeitsstätten oder die Kamera und sendet keine Koordinaten zur Geokodierung an einen externen Adressdienst. Adressen können Sie manuell eingeben; bereits gespeicherte Adressen bleiben erhalten.",
+              "notice": "Die vorliegenden GPS- und Adresshinweise gelten für den Entwicklungs-Testkandidaten mit deaktivierter automatischer Adresssuche. Bereits installierte Versionen können sich anders verhalten.\n\nDieser Hinweis gilt für Versionen mit gesperrter automatischer Adressabfrage. Frühere Installationen können weiterhin Adressen abfragen; für sie gelten die Hinweise und Einstellungen ihrer Version. Ein Update allein löscht weder vorhandene Datensätze noch bereits außerhalb des Geräts übermittelte Informationen.",
               "icon": {
                 "name": "my_location_rounded",
                 "codePoint": 63728,
@@ -14471,8 +14471,8 @@
             {
               "id": "camera-gps-record",
               "title": "GPS-Standortaufzeichnung",
-              "body": "Wenn „GPS-Standortaufzeichnung“ deaktiviert ist, speichert die App keine Koordinaten im Fotodatensatz. „Adresse anzeigen“ ist eine separate Einstellung. Wenn sie aktiviert ist und die Standortberechtigung erteilt wurde, kann die App die Adresse anhand des aktuellen Standorts ermitteln, anzeigen und bei der Aufnahme im Fotodatensatz speichern. Die im Original-JPEG enthaltenen EXIF-Daten bleiben unverändert.",
-              "notice": null,
+              "body": "Kamera → Kameraoptionen → GPS-Standortaufzeichnung\n\nBei einer Neuinstallation ist die GPS-Aufzeichnung standardmäßig AUS. Die Standortberechtigung wird angefragt, wenn Sie GPS in der Kamera einschalten. Sie können ablehnen oder den Hinweis schließen und mit ausgeschaltetem GPS weiter fotografieren. Die Auswahl lässt sich jederzeit in den Kameraoptionen ändern.\n\nWenn Sie die GPS-Aufzeichnung aktivieren und den Standortzugriff erlauben, werden gültige Aufnahmekoordinaten in den Fotodatensätzen auf Ihrem Gerät gespeichert. Auch bei ausgeschaltetem GPS, verweigerter Berechtigung oder nicht verfügbarem Standort können Sie Fotos aufnehmen und speichern.\n\nVorhandene Koordinaten, Adressen, Fotos und EXIF-Daten der Originalfotos bleiben erhalten. Wenn Sie Fotos teilen oder eine ZIP-Datei exportieren, können Koordinaten und EXIF-Daten in den Dateien an die gewählte Empfänger-App enthalten sein. Prüfen Sie die enthaltenen Informationen vor dem Teilen.",
+              "notice": "Die vorliegenden GPS- und Adresshinweise gelten für den Entwicklungs-Testkandidaten mit deaktivierter automatischer Adresssuche. Bereits installierte Versionen können sich anders verhalten.\n\nAufnahmekoordinaten stammen von den Android-Standortdiensten. Auf Geräten mit Google Play-Diensten können GPS-, WLAN-, Mobilfunk- und Sensorsignale kombiniert werden. Die von der App empfangenen Koordinaten werden in Fotodatensätzen auf Ihrem Gerät gespeichert. Die Google-Standortgenauigkeit ist von der GPS-Aufzeichnung der App getrennt. Ist sie aktiviert, erhebt und verarbeitet Google regelmäßig Daten zur Standortgenauigkeit, etwa Funk- und Sensorinformationen. Das Ausschalten der GPS-Aufzeichnung in der App ändert diese Geräteeinstellung nicht. Die automatische Adressabfrage bleibt gesperrt.",
               "icon": {
                 "name": "location_on_rounded",
                 "codePoint": 63620,
@@ -14582,9 +14582,9 @@
             },
             {
               "id": "camera-address",
-              "title": "Adresse",
-              "body": "Zeigen Sie die GPS-Adresse im Kamera-Overlay an.",
-              "notice": null,
+              "title": "Adresse der Arbeitsstätte",
+              "body": "Die gespeicherte Adresse der gewählten Arbeitsstätte wird standardmäßig in den Aufnahmeinformationen angezeigt. Dafür werden weder GPS noch eine automatische Adressabfrage verwendet. Sie können dies in den Kameraoptionen ausschalten; ohne gespeicherte Adresse wird keine angezeigt.",
+              "notice": "Die vorliegenden GPS- und Adresshinweise gelten für den Entwicklungs-Testkandidaten mit deaktivierter automatischer Adresssuche. Bereits installierte Versionen können sich anders verhalten.",
               "icon": {
                 "name": "map_outlined",
                 "codePoint": 61870,
@@ -15392,9 +15392,9 @@
             },
             {
               "id": "workplace-gps-address",
-              "title": "Isi alamat dari lokasi GPS saat ini",
-              "body": "Isi alamat tempat kerja dari lokasi saat ini. Periksa alamat sebenarnya dan ubah jika perlu.",
-              "notice": "Alamat GPS mungkin berbeda dari alamat tempat kerja yang sebenarnya. Periksa alamat sebelum menyimpan.",
+              "title": "Pencarian alamat otomatis tidak tersedia",
+              "body": "Versi ini tidak menyediakan pencarian alamat otomatis untuk tempat kerja atau kamera dan tidak mengirim koordinat ke layanan alamat eksternal untuk geocoding. Anda dapat memasukkan alamat secara manual, dan alamat yang sudah disimpan tetap dipertahankan.",
+              "notice": "Panduan GPS dan alamat ini berlaku untuk kandidat validasi pengembangan dengan pencarian alamat otomatis dinonaktifkan. Versi yang sudah terpasang dapat berperilaku berbeda.\n\nPemberitahuan ini berlaku untuk versi yang memblokir pencarian alamat otomatis. Instalasi versi sebelumnya mungkin masih melakukan pencarian dan tetap mengikuti pemberitahuan serta pengaturan versinya. Pembaruan saja tidak menghapus catatan yang ada atau informasi yang sudah dikirim ke luar perangkat.",
               "icon": {
                 "name": "my_location_rounded",
                 "codePoint": 63728,
@@ -16153,8 +16153,8 @@
             {
               "id": "camera-gps-record",
               "title": "Catatan Lokasi GPS",
-              "body": "Jika “Catatan Lokasi GPS” dimatikan, aplikasi tidak menyimpan koordinat dalam catatan foto. “Tampilkan Alamat” adalah pengaturan terpisah. Jika pengaturan ini diaktifkan dan izin lokasi diberikan, aplikasi dapat mencari dan menampilkan alamat berdasarkan lokasi saat ini, lalu menyimpannya dalam catatan foto saat foto diambil. Data EXIF yang ada pada JPEG asli dipertahankan apa adanya.",
-              "notice": null,
+              "body": "Kamera → Opsi kamera → Catatan Lokasi GPS\n\nPada instalasi baru, pencatatan GPS mati secara default. Izin lokasi diminta saat Anda memilih mengaktifkan GPS di kamera. Anda dapat menolak atau menutup pemberitahuan dan tetap memotret dengan GPS mati. Pilihan ini dapat diubah kapan saja di opsi kamera.\n\nJika Anda mengaktifkan pencatatan GPS dan mengizinkan akses lokasi, koordinat pemotretan yang valid disimpan dalam catatan foto di perangkat. Anda tetap dapat mengambil dan menyimpan foto saat GPS mati, izin ditolak, atau lokasi tidak tersedia.\n\nKoordinat, alamat, foto yang ada, serta EXIF foto asli dipertahankan. Saat Anda memilih berbagi foto atau mengekspor ZIP, koordinat dan EXIF dapat disertakan dalam berkas yang dikirim ke aplikasi penerima pilihan Anda. Periksa informasi yang disertakan sebelum berbagi.",
+              "notice": "Panduan GPS dan alamat ini berlaku untuk kandidat validasi pengembangan dengan pencarian alamat otomatis dinonaktifkan. Versi yang sudah terpasang dapat berperilaku berbeda.\n\nKoordinat pemotretan diperoleh dari layanan lokasi Android. Pada perangkat dengan layanan Google Play, sinyal GPS, Wi-Fi, jaringan seluler, dan sensor dapat digabungkan. Koordinat yang diterima aplikasi disimpan dalam catatan foto di perangkat Anda. Akurasi Lokasi Google terpisah dari pengaturan perekaman GPS aplikasi. Jika diaktifkan, Google secara berkala mengumpulkan dan memproses data akurasi lokasi, seperti informasi sinyal nirkabel dan sensor. Menonaktifkan perekaman GPS di aplikasi tidak mengubah pengaturan perangkat tersebut. Pencarian alamat otomatis tetap diblokir.",
               "icon": {
                 "name": "location_on_rounded",
                 "codePoint": 63620,
@@ -16264,9 +16264,9 @@
             },
             {
               "id": "camera-address",
-              "title": "Alamat",
-              "body": "Tampilkan alamat GPS di overlay kamera.",
-              "notice": null,
+              "title": "Alamat tempat kerja",
+              "body": "Alamat tersimpan dari tempat kerja yang dipilih ditampilkan secara default dalam informasi pemotretan. Ini tidak menggunakan GPS atau pencarian alamat otomatis. Anda dapat mematikannya di opsi kamera; alamat tidak ditampilkan jika belum ada yang disimpan.",
+              "notice": "Panduan GPS dan alamat ini berlaku untuk kandidat validasi pengembangan dengan pencarian alamat otomatis dinonaktifkan. Versi yang sudah terpasang dapat berperilaku berbeda.",
               "icon": {
                 "name": "map_outlined",
                 "codePoint": 61870,
@@ -17074,9 +17074,9 @@
             },
             {
               "id": "workplace-gps-address",
-              "title": "Điền địa chỉ từ vị trí GPS hiện tại",
-              "body": "Điền địa chỉ nơi làm việc từ vị trí hiện tại. Kiểm tra địa chỉ thực tế và sửa nếu cần.",
-              "notice": "Địa chỉ GPS có thể khác địa chỉ nơi làm việc thực tế. Hãy kiểm tra địa chỉ trước khi lưu.",
+              "title": "Không có tra cứu địa chỉ tự động",
+              "body": "Phiên bản này không cung cấp tra cứu địa chỉ tự động cho nơi làm việc hoặc máy ảnh và không gửi tọa độ đến dịch vụ địa chỉ bên ngoài để chuyển đổi. Bạn có thể nhập địa chỉ thủ công; địa chỉ đã lưu vẫn được giữ lại.",
+              "notice": "Hướng dẫn GPS và địa chỉ này áp dụng cho bản ứng viên kiểm thử đang phát triển đã tắt tra cứu địa chỉ tự động. Các phiên bản đã cài đặt có thể hoạt động khác.\n\nThông báo này áp dụng cho phiên bản đã chặn tra cứu địa chỉ tự động. Các bản cài đặt cũ có thể vẫn tra cứu và áp dụng thông báo, cài đặt của phiên bản đó. Chỉ cập nhật không xóa bản ghi hiện có hoặc thông tin đã gửi ra ngoài thiết bị.",
               "icon": {
                 "name": "my_location_rounded",
                 "codePoint": 63728,
@@ -17835,8 +17835,8 @@
             {
               "id": "camera-gps-record",
               "title": "Bản ghi vị trí GPS",
-              "body": "Khi tắt “Bản ghi vị trí GPS”, ứng dụng không lưu tọa độ vào bản ghi ảnh. “Hiển thị địa chỉ” là một cài đặt riêng. Khi bật cài đặt này và cấp quyền vị trí, ứng dụng có thể tra và hiển thị địa chỉ theo vị trí hiện tại, rồi lưu địa chỉ vào bản ghi ảnh khi chụp. Dữ liệu EXIF trong JPEG gốc được giữ nguyên.",
-              "notice": null,
+              "body": "Máy ảnh → Tùy chọn máy ảnh → Bản ghi vị trí GPS\n\nKhi cài mới, ghi GPS mặc định TẮT. Quyền vị trí được yêu cầu khi bạn chọn bật GPS trong máy ảnh. Bạn có thể từ chối hoặc đóng thông báo rồi tiếp tục chụp khi GPS tắt. Có thể thay đổi lựa chọn trong tùy chọn máy ảnh.\n\nKhi bật ghi GPS và cho phép vị trí, tọa độ chụp hợp lệ được lưu trong bản ghi ảnh trên thiết bị. Bạn vẫn có thể chụp và lưu ảnh khi tắt GPS, từ chối quyền hoặc không lấy được vị trí.\n\nTọa độ, địa chỉ, ảnh hiện có và EXIF của ảnh gốc được giữ nguyên. Khi bạn chọn chia sẻ ảnh hoặc xuất ZIP, tệp gửi đến ứng dụng nhận đã chọn có thể chứa tọa độ và EXIF. Hãy kiểm tra thông tin có trong tệp trước khi chia sẻ.",
+              "notice": "Hướng dẫn GPS và địa chỉ này áp dụng cho bản ứng viên kiểm thử đang phát triển đã tắt tra cứu địa chỉ tự động. Các phiên bản đã cài đặt có thể hoạt động khác.\n\nTọa độ chụp ảnh được lấy từ dịch vụ vị trí của Android. Trên thiết bị có Dịch vụ Google Play, các tín hiệu GPS, Wi-Fi, mạng di động và cảm biến có thể được kết hợp. Tọa độ ứng dụng nhận được được lưu trong bản ghi ảnh trên thiết bị của bạn. Độ chính xác của vị trí trên Google là chế độ cài đặt riêng của thiết bị, tách biệt với cài đặt ghi GPS của ứng dụng. Khi bật, Google định kỳ thu thập và xử lý dữ liệu về độ chính xác của vị trí, như thông tin tín hiệu không dây và cảm biến. Tắt ghi GPS trong ứng dụng không thay đổi chế độ cài đặt này của thiết bị. Tính năng tra cứu địa chỉ tự động vẫn bị chặn.",
               "icon": {
                 "name": "location_on_rounded",
                 "codePoint": 63620,
@@ -17946,9 +17946,9 @@
             },
             {
               "id": "camera-address",
-              "title": "Địa chỉ",
-              "body": "Hiển thị địa chỉ GPS trong lớp phủ camera.",
-              "notice": null,
+              "title": "Địa chỉ nơi làm việc",
+              "body": "Địa chỉ đã lưu của nơi làm việc được chọn hiển thị mặc định trong thông tin chụp. Việc này không dùng GPS hay tra cứu địa chỉ tự động. Bạn có thể tắt trong tùy chọn máy ảnh; nếu chưa lưu địa chỉ thì không hiển thị.",
+              "notice": "Hướng dẫn GPS và địa chỉ này áp dụng cho bản ứng viên kiểm thử đang phát triển đã tắt tra cứu địa chỉ tự động. Các phiên bản đã cài đặt có thể hoạt động khác.",
               "icon": {
                 "name": "map_outlined",
                 "codePoint": 61870,
@@ -18756,9 +18756,9 @@
             },
             {
               "id": "workplace-gps-address",
-              "title": "Ввести адрес по текущему местоположению GPS",
-              "body": "Заполните адрес места работы по текущему местоположению. Проверьте фактический адрес и при необходимости исправьте его.",
-              "notice": "Адрес GPS может отличаться от фактического адреса места работы. Проверьте его перед сохранением.",
+              "title": "Автоматический поиск адреса недоступен",
+              "body": "Эта версия не предоставляет автоматический поиск адресов для рабочих мест и камеры и не отправляет координаты во внешнюю адресную службу для геокодирования. Адреса можно вводить вручную; ранее сохранённые адреса остаются.",
+              "notice": "Эти сведения о GPS и адресах относятся к тестовому кандидату в разработке с отключённым автоматическим поиском адреса. Уже установленные версии могут работать иначе.\n\nЭто уведомление относится к версиям с заблокированным автоматическим поиском адресов. Ранее установленные версии могут продолжать поиск и регулируются уведомлениями и настройками своей версии. Одно обновление не удаляет существующие записи или сведения, уже переданные за пределы устройства.",
               "icon": {
                 "name": "my_location_rounded",
                 "codePoint": 63728,
@@ -19517,8 +19517,8 @@
             {
               "id": "camera-gps-record",
               "title": "Запись местоположения GPS",
-              "body": "Если настройка «Запись местоположения GPS» выключена, приложение не сохраняет координаты в записи о снимке. «Показать адрес» — отдельная настройка. Если она включена и доступ к местоположению разрешён, приложение может определить и показать адрес по текущему местоположению и сохранить его в записи о снимке при съёмке. Данные EXIF исходного JPEG сохраняются без изменений.",
-              "notice": null,
+              "body": "Камера → Параметры камеры → Запись местоположения GPS\n\nПри новой установке запись GPS по умолчанию выключена. Разрешение на местоположение запрашивается, когда вы выбираете включение GPS в камере. Можно отказаться или закрыть уведомление и продолжить съёмку без GPS. Выбор можно изменить в параметрах камеры.\n\nЕсли включить запись GPS и разрешить доступ к местоположению, допустимые координаты съёмки сохраняются в записях фотографий на устройстве. Можно снимать и сохранять фотографии и при выключенном GPS, отказе в разрешении или недоступном местоположении.\n\nСуществующие координаты, адреса, фотографии и EXIF оригинальных фотографий сохраняются. Если вы выбираете отправку фотографий или экспорт ZIP, файлы, передаваемые выбранному приложению-получателю, могут содержать координаты и EXIF. Перед отправкой проверьте включённую информацию.",
+              "notice": "Эти сведения о GPS и адресах относятся к тестовому кандидату в разработке с отключённым автоматическим поиском адреса. Уже установленные версии могут работать иначе.\n\nКоординаты съёмки поступают от служб геолокации Android. На устройствах с сервисами Google Play могут совместно использоваться сигналы GPS, Wi-Fi, мобильных сетей и датчиков. Полученные приложением координаты сохраняются в записях фотографий на устройстве. «Точность геолокации Google» — отдельная настройка устройства, не связанная с настройкой записи GPS в приложении. Когда она включена, Google периодически собирает и обрабатывает данные о точности местоположения, в том числе сведения о беспроводных сигналах и датчиках. Отключение записи GPS в приложении не изменяет эту настройку устройства. Автоматический поиск адресов остаётся заблокированным.",
               "icon": {
                 "name": "location_on_rounded",
                 "codePoint": 63620,
@@ -19628,9 +19628,9 @@
             },
             {
               "id": "camera-address",
-              "title": "Адрес",
-              "body": "Отобразите адрес GPS в наложении камеры.",
-              "notice": null,
+              "title": "Адрес рабочего места",
+              "body": "Сохранённый адрес выбранного рабочего места по умолчанию отображается в информации о съёмке. Для этого не используются GPS или автоматический поиск адреса. Отображение можно отключить в параметрах камеры; если адрес не сохранён, он не показывается.",
+              "notice": "Эти сведения о GPS и адресах относятся к тестовому кандидату в разработке с отключённым автоматическим поиском адреса. Уже установленные версии могут работать иначе.",
               "icon": {
                 "name": "map_outlined",
                 "codePoint": 61870,
@@ -20438,9 +20438,9 @@
             },
             {
               "id": "workplace-gps-address",
-              "title": "Adresi mevcut GPS konumundan doldur",
-              "body": "Mevcut konumunuzdan işyeri adresini doldurun. Gerçek adresi kontrol edip gerektiğinde düzeltin.",
-              "notice": "GPS adresi gerçek işyeri adresinden farklı olabilir. Kaydetmeden önce gerçek adresi kontrol edin.",
+              "title": "Otomatik adres araması kullanılamıyor",
+              "body": "Bu sürüm, iş yeri veya kamera için otomatik adres araması sunmaz ve adres dönüşümü için koordinatları haricî bir adres hizmetine göndermez. Adresleri elle girebilirsiniz; kayıtlı adresler korunur.",
+              "notice": "Bu GPS ve adres açıklamaları, otomatik adres araması kapatılmış geliştirme doğrulama adayı için geçerlidir. Önceden yüklenmiş sürümler farklı çalışabilir.\n\nBu bildirim, otomatik adres araması engellenmiş sürümler için geçerlidir. Önceden yüklenmiş sürümler adres aramaya devam edebilir ve kendi sürümlerinin bildirim ve ayarlarına tabidir. Güncelleme tek başına mevcut kayıtları veya cihaz dışına daha önce gönderilen bilgileri silmez.",
               "icon": {
                 "name": "my_location_rounded",
                 "codePoint": 63728,
@@ -21199,8 +21199,8 @@
             {
               "id": "camera-gps-record",
               "title": "GPS Konum Kaydı",
-              "body": "“GPS Konum Kaydı” kapalıyken uygulama, fotoğraf kaydına koordinat kaydetmez. “Adresi Göster” ayrı bir ayardır. Bu ayar açıksa ve konum izni verilmişse uygulama, mevcut konumdan adresi bulup gösterebilir ve çekim sırasında fotoğraf kaydına kaydedebilir. Orijinal JPEG dosyasındaki EXIF bilgileri olduğu gibi korunur.",
-              "notice": null,
+              "body": "Kamera → Kamera seçenekleri → GPS Konum Kaydı\n\nYeni kurulumda GPS kaydı varsayılan olarak KAPALIDIR. Konum izni, kamerada GPS'yi açmayı seçtiğinizde istenir. İzni reddedip veya bildirimi kapatıp GPS kapalıyken çekime devam edebilirsiniz. Seçiminizi kamera seçeneklerinden değiştirebilirsiniz.\n\nGPS kaydını açıp konum izni verdiğinizde, geçerli çekim koordinatları cihazınızdaki fotoğraf kayıtlarına kaydedilir. GPS kapalıyken, izin reddedildiğinde veya konum alınamadığında da fotoğraf çekip kaydedebilirsiniz.\n\nMevcut koordinatlar, adresler, fotoğraflar ve orijinal fotoğrafların EXIF verileri korunur. Fotoğraf paylaşmayı veya ZIP dışa aktarmayı seçtiğinizde, seçilen alıcı uygulamaya gönderilen dosyalarda koordinatlar ve EXIF bulunabilir. Paylaşmadan önce içerilen bilgileri kontrol edin.",
+              "notice": "Bu GPS ve adres açıklamaları, otomatik adres araması kapatılmış geliştirme doğrulama adayı için geçerlidir. Önceden yüklenmiş sürümler farklı çalışabilir.\n\nÇekim koordinatları Android konum hizmetlerinden alınır. Google Play hizmetleri bulunan cihazlarda GPS, Wi-Fi, mobil ağ ve sensör sinyalleri birleştirilebilir. Uygulamanın aldığı koordinatlar cihazınızdaki fotoğraf kayıtlarına kaydedilir. Google Konum Doğruluğu, uygulamanın GPS kayıt ayarından ayrı bir cihaz ayarıdır. Etkinleştirildiğinde Google, kablosuz sinyal ve sensör bilgileri gibi konum doğruluğu verilerini düzenli olarak toplar ve işler. Uygulamada GPS kaydını kapatmak bu cihaz ayarını değiştirmez. Otomatik adres sorgulama engellenmeye devam eder.",
               "icon": {
                 "name": "location_on_rounded",
                 "codePoint": 63620,
@@ -21310,9 +21310,9 @@
             },
             {
               "id": "camera-address",
-              "title": "Adres",
-              "body": "GPS adresini kamera arayüzünde görüntüleyin.",
-              "notice": null,
+              "title": "İş yeri adresi",
+              "body": "Seçilen iş yerinin kayıtlı adresi, çekim bilgilerinde varsayılan olarak gösterilir. Bunun için GPS veya otomatik adres araması kullanılmaz. Kamera seçeneklerinden kapatabilirsiniz; kayıtlı adres yoksa adres gösterilmez.",
+              "notice": "Bu GPS ve adres açıklamaları, otomatik adres araması kapatılmış geliştirme doğrulama adayı için geçerlidir. Önceden yüklenmiş sürümler farklı çalışabilir.",
               "icon": {
                 "name": "map_outlined",
                 "codePoint": 61870,
@@ -22120,9 +22120,9 @@
             },
             {
               "id": "workplace-gps-address",
-              "title": "إدخال العنوان من موقع GPS الحالي",
-              "body": "املأ عنوان مكان العمل من موقعك الحالي. تحقق من العنوان الفعلي وعدّله عند الحاجة.",
-              "notice": "قد يختلف عنوان GPS عن عنوان مكان العمل الفعلي. تحقق من العنوان الفعلي قبل الحفظ.",
+              "title": "البحث التلقائي عن العنوان غير متاح",
+              "body": "لا يوفر هذا الإصدار البحث التلقائي عن عنوان مكان العمل أو الكاميرا، ولا يرسل الإحداثيات إلى خدمة عناوين خارجية لتحويلها إلى عنوان. يمكنك إدخال العناوين يدويًا، وتبقى العناوين المحفوظة سابقًا محفوظة.",
+              "notice": "تنطبق إرشادات GPS والعنوان على نسخة التحقق التطويرية التي عُطّل فيها البحث التلقائي عن العنوان. وقد يختلف سلوك الإصدارات المثبتة سابقًا.\n\nينطبق هذا الإشعار على الإصدارات التي حُظر فيها البحث التلقائي عن العنوان. قد تظل الإصدارات المثبتة سابقًا تجري عمليات بحث، وتخضع لإشعارات إصدارها وإعداداته. لا يؤدي التحديث وحده إلى حذف السجلات الحالية أو المعلومات التي سبق إرسالها خارج الجهاز.",
               "icon": {
                 "name": "my_location_rounded",
                 "codePoint": 63728,
@@ -22881,8 +22881,8 @@
             {
               "id": "camera-gps-record",
               "title": "سجل موقع GPS",
-              "body": "عند إيقاف «سجل موقع GPS»، لا تُحفَظ الإحداثيات في سجل الصورة داخل التطبيق. «إظهار العنوان» إعداد مستقل. عند تفعيله والسماح للتطبيق بالوصول إلى الموقع، يمكن تحديد العنوان من موقعك الحالي وعرضه وحفظه في سجل الصورة عند التقاطها. تُحفَظ بيانات EXIF الموجودة في ملف JPEG الأصلي كما هي.",
-              "notice": null,
+              "body": "الكاميرا → خيارات الكاميرا → سجل موقع GPS\n\nيكون تسجيل GPS متوقفًا افتراضيًا عند التثبيت الجديد. يُطلب إذن الموقع عندما تختار تشغيل GPS في الكاميرا. يمكنك رفض الإذن أو إغلاق الإشعار ومواصلة التصوير مع إيقاف GPS. يمكنك تغيير ذلك في أي وقت من خيارات الكاميرا.\n\nعند تفعيل تسجيل GPS والسماح بإذن الموقع، تُحفظ إحداثيات التصوير الصالحة في سجلات الصور على جهازك. يمكنك التقاط الصور وحفظها حتى عند إيقاف GPS أو رفض الإذن أو تعذر تحديد الموقع.\n\nتُحفظ الإحداثيات والعناوين والصور السابقة وبيانات EXIF للصور الأصلية. عند اختيار مشاركة الصور أو تصدير ملف ZIP، قد تتضمن الملفات الإحداثيات وبيانات EXIF وتُنقل إلى التطبيق المستلِم الذي تختاره. تحقق من المعلومات المضمنة قبل المشاركة.",
+              "notice": "تنطبق إرشادات GPS والعنوان على نسخة التحقق التطويرية التي عُطّل فيها البحث التلقائي عن العنوان. وقد يختلف سلوك الإصدارات المثبتة سابقًا.\n\nتأتي إحداثيات التصوير من خدمات الموقع في Android. على الأجهزة التي تتوفر فيها خدمات Google Play، قد تُدمج إشارات GPS وWi-Fi وشبكات الهاتف المحمول والمستشعرات. تُحفظ الإحداثيات التي يتلقاها التطبيق في سجلات الصور على جهازك. إعداد دقة الموقع من Google منفصل عن إعداد تسجيل GPS في التطبيق. عند تفعيله، تجمع Google دوريًا بيانات دقة الموقع وتعالجها، مثل معلومات الإشارات اللاسلكية والمستشعرات. إيقاف تسجيل GPS في التطبيق لا يغيّر إعداد الجهاز هذا. يظل البحث التلقائي عن العنوان محظورًا.",
               "icon": {
                 "name": "location_on_rounded",
                 "codePoint": 63620,
@@ -22992,9 +22992,9 @@
             },
             {
               "id": "camera-address",
-              "title": "العنوان",
-              "body": "عرض عنوان GPS في تراكب الكاميرا.",
-              "notice": null,
+              "title": "عنوان مكان العمل",
+              "body": "يظهر عنوان مكان العمل المحدد والمحفوظ في معلومات التصوير افتراضيًا. لا يستخدم ذلك GPS أو البحث التلقائي عن العنوان. يمكنك إيقافه من خيارات الكاميرا، ولا يظهر عنوان إذا لم يكن هناك عنوان محفوظ.",
+              "notice": "تنطبق إرشادات GPS والعنوان على نسخة التحقق التطويرية التي عُطّل فيها البحث التلقائي عن العنوان. وقد يختلف سلوك الإصدارات المثبتة سابقًا.",
               "icon": {
                 "name": "map_outlined",
                 "codePoint": 61870,
@@ -23802,9 +23802,9 @@
             },
             {
               "id": "workplace-gps-address",
-              "title": "Usa la posizione GPS attuale per l’indirizzo",
-              "body": "Compila l’indirizzo del luogo di lavoro dalla posizione attuale. Verifica quello effettivo e correggilo se necessario.",
-              "notice": "L’indirizzo GPS può essere diverso da quello effettivo del luogo di lavoro. Verificalo prima di salvare.",
+              "title": "Ricerca automatica dell’indirizzo non disponibile",
+              "body": "Questa versione non offre la ricerca automatica degli indirizzi per luoghi di lavoro o fotocamera e non invia coordinate a un servizio esterno per il geocoding. È possibile inserire gli indirizzi manualmente e quelli già salvati vengono conservati.",
+              "notice": "Queste indicazioni GPS e indirizzo si applicano alla versione candidata di convalida in sviluppo con la ricerca automatica degli indirizzi disattivata. Le versioni già installate possono funzionare diversamente.\n\nQuesto avviso si applica alle versioni con ricerca automatica degli indirizzi bloccata. Le installazioni precedenti possono ancora effettuare ricerche e restano soggette agli avvisi e alle impostazioni della loro versione. Il solo aggiornamento non elimina i record esistenti né le informazioni già trasmesse fuori dal dispositivo.",
               "icon": {
                 "name": "my_location_rounded",
                 "codePoint": 63728,
@@ -24563,8 +24563,8 @@
             {
               "id": "camera-gps-record",
               "title": "Registrazione della posizione GPS",
-              "body": "Con «Registrazione della posizione GPS» disattivata, l’app non salva le coordinate nella scheda della foto. «Mostra indirizzo» è un’impostazione separata. Se l’impostazione è attiva e l’accesso alla posizione è autorizzato, l’app può trovare e mostrare l’indirizzo della posizione attuale e salvarlo nella scheda della foto al momento dello scatto. I dati EXIF del JPEG originale vengono conservati senza modifiche.",
-              "notice": null,
+              "body": "Fotocamera → Opzioni fotocamera → Registrazione della posizione GPS\n\nAlla nuova installazione, la registrazione GPS è disattivata per impostazione predefinita. L’autorizzazione alla posizione viene richiesta quando scegli di attivare il GPS nella fotocamera. Puoi rifiutare o chiudere l’avviso e continuare a scattare senza GPS. Puoi cambiare la scelta nelle opzioni della fotocamera.\n\nAttivando la registrazione GPS e consentendo l’accesso alla posizione, le coordinate di scatto valide vengono salvate nei record delle foto sul dispositivo. È possibile scattare e salvare foto anche con GPS disattivato, permesso negato o posizione non disponibile.\n\nLe coordinate, gli indirizzi, le foto esistenti e i dati EXIF delle foto originali vengono conservati. Scegliendo di condividere foto o esportare uno ZIP, i file inviati all’app destinataria selezionata possono includere coordinate e dati EXIF. Verificare le informazioni incluse prima della condivisione.",
+              "notice": "Queste indicazioni GPS e indirizzo si applicano alla versione candidata di convalida in sviluppo con la ricerca automatica degli indirizzi disattivata. Le versioni già installate possono funzionare diversamente.\n\nLe coordinate di scatto provengono dai servizi di localizzazione Android. Sui dispositivi con Google Play Services possono essere combinati segnali GPS, Wi-Fi, della rete mobile e dei sensori. Le coordinate ricevute dall’app vengono salvate nei record delle foto sul dispositivo. La Precisione della geolocalizzazione Google è separata dall’impostazione di registrazione GPS dell’app. Quando è attiva, Google raccoglie ed elabora periodicamente dati sulla precisione della posizione, come informazioni sui segnali wireless e sui sensori. Disattivare la registrazione GPS nell’app non modifica questa impostazione del dispositivo. La ricerca automatica degli indirizzi resta bloccata.",
               "icon": {
                 "name": "location_on_rounded",
                 "codePoint": 63620,
@@ -24674,9 +24674,9 @@
             },
             {
               "id": "camera-address",
-              "title": "Indirizzo",
-              "body": "Visualizza l'indirizzo GPS nella sovrapposizione della fotocamera.",
-              "notice": null,
+              "title": "Indirizzo del luogo di lavoro",
+              "body": "L’indirizzo salvato del luogo di lavoro selezionato viene mostrato per impostazione predefinita nelle informazioni di scatto. Non utilizza GPS né ricerca automatica dell’indirizzo. Puoi disattivarlo nelle opzioni della fotocamera; se non è salvato alcun indirizzo, non viene mostrato.",
+              "notice": "Queste indicazioni GPS e indirizzo si applicano alla versione candidata di convalida in sviluppo con la ricerca automatica degli indirizzi disattivata. Le versioni già installate possono funzionare diversamente.",
               "icon": {
                 "name": "map_outlined",
                 "codePoint": 61870,
@@ -25484,9 +25484,9 @@
             },
             {
               "id": "workplace-gps-address",
-              "title": "กรอกที่อยู่จากตำแหน่ง GPS ปัจจุบัน",
-              "body": "กรอกที่อยู่สถานที่ทำงานจากตำแหน่งปัจจุบัน ตรวจสอบที่อยู่จริงและแก้ไขตามต้องการ",
-              "notice": "ที่อยู่จาก GPS อาจต่างจากที่อยู่สถานที่ทำงานจริง โปรดตรวจสอบที่อยู่จริงก่อนบันทึก",
+              "title": "ไม่มีการค้นหาที่อยู่อัตโนมัติ",
+              "body": "เวอร์ชันนี้ไม่มีการค้นหาที่อยู่อัตโนมัติสำหรับสถานที่ทำงานหรือกล้อง และไม่ส่งพิกัดไปยังบริการที่อยู่ภายนอกเพื่อแปลงเป็นที่อยู่ คุณกรอกที่อยู่เองได้ และที่อยู่ที่บันทึกไว้ยังคงอยู่",
+              "notice": "คำแนะนำ GPS และที่อยู่นี้ใช้กับรุ่นทดสอบระหว่างการพัฒนาที่ปิดการค้นหาที่อยู่อัตโนมัติ รุ่นที่ติดตั้งอยู่เดิมอาจทำงานแตกต่างกัน\n\nคำชี้แจงนี้ใช้กับเวอร์ชันที่บล็อกการค้นหาที่อยู่อัตโนมัติ เวอร์ชันเก่าที่ติดตั้งอยู่อาจยังค้นหาที่อยู่ได้ และใช้คำชี้แจงและการตั้งค่าของเวอร์ชันนั้น การอัปเดตเพียงอย่างเดียวไม่ลบข้อมูลเดิมหรือข้อมูลที่ส่งออกจากอุปกรณ์ไปแล้ว",
               "icon": {
                 "name": "my_location_rounded",
                 "codePoint": 63728,
@@ -26245,8 +26245,8 @@
             {
               "id": "camera-gps-record",
               "title": "บันทึกตำแหน่ง GPS",
-              "body": "เมื่อปิด “บันทึกตำแหน่ง GPS” แอปจะไม่บันทึกพิกัดลงในบันทึกข้อมูลรูปภาพของแอป “แสดงที่อยู่” เป็นการตั้งค่าแยกต่างหาก เมื่อเปิดการตั้งค่านี้และอนุญาตให้เข้าถึงตำแหน่ง แอปสามารถค้นหาและแสดงที่อยู่จากตำแหน่งปัจจุบัน และบันทึกที่อยู่ลงในบันทึกข้อมูลรูปภาพเมื่อถ่ายภาพได้ ข้อมูล EXIF ในไฟล์ JPEG ต้นฉบับจะคงเดิม",
-              "notice": null,
+              "body": "กล้อง → ตัวเลือกกล้อง → บันทึกตำแหน่ง GPS\n\nเมื่อติดตั้งใหม่ การบันทึก GPS จะปิดอยู่ตามค่าเริ่มต้น แอปจะขอสิทธิ์ตำแหน่งเมื่อคุณเลือกเปิด GPS ในกล้อง คุณปฏิเสธหรือปิดคำชี้แจงแล้วถ่ายรูปต่อโดยปิด GPS ได้ และเปลี่ยนตัวเลือกได้ทุกเมื่อในตัวเลือกกล้อง\n\nเมื่อเปิดการบันทึก GPS และอนุญาตตำแหน่ง พิกัดขณะถ่ายที่ผ่านเกณฑ์จะถูกบันทึกในข้อมูลรูปภาพบนอุปกรณ์ แม้ปิด GPS ปฏิเสธสิทธิ์ หรือรับตำแหน่งไม่ได้ ก็ยังถ่ายและบันทึกรูปภาพได้\n\nพิกัด ที่อยู่ รูปภาพเดิม และ EXIF ของรูปต้นฉบับจะถูกเก็บไว้ เมื่อคุณเลือกแชร์รูปภาพหรือส่งออก ZIP ไฟล์ที่ส่งไปยังแอปผู้รับที่เลือกอาจมีพิกัดและ EXIF โปรดตรวจสอบข้อมูลที่รวมอยู่ก่อนแชร์",
+              "notice": "คำแนะนำ GPS และที่อยู่นี้ใช้กับรุ่นทดสอบระหว่างการพัฒนาที่ปิดการค้นหาที่อยู่อัตโนมัติ รุ่นที่ติดตั้งอยู่เดิมอาจทำงานแตกต่างกัน\n\nพิกัดขณะถ่ายภาพมาจากบริการตำแหน่งของ Android อุปกรณ์ที่มีบริการ Google Play อาจใช้สัญญาณ GPS, Wi-Fi, เครือข่ายมือถือ และเซ็นเซอร์ร่วมกัน พิกัดที่แอปได้รับจะบันทึกไว้ในระเบียนภาพถ่ายบนอุปกรณ์ของคุณ ความแม่นยำของตำแหน่งของ Google เป็นการตั้งค่าอุปกรณ์ที่แยกจากการบันทึก GPS ของแอป เมื่อเปิดใช้งาน Google จะเก็บรวบรวมและประมวลผลข้อมูลความแม่นยำของตำแหน่งเป็นระยะ เช่น ข้อมูลสัญญาณไร้สายและเซ็นเซอร์ การปิดการบันทึก GPS ในแอปจะไม่เปลี่ยนการตั้งค่าอุปกรณ์นี้ การค้นหาที่อยู่อัตโนมัติยังคงถูกปิดกั้น",
               "icon": {
                 "name": "location_on_rounded",
                 "codePoint": 63620,
@@ -26356,9 +26356,9 @@
             },
             {
               "id": "camera-address",
-              "title": "ที่อยู่",
-              "body": "แสดงที่อยู่ GPS ในการซ้อนทับของกล้อง",
-              "notice": null,
+              "title": "ที่อยู่สถานที่ทำงาน",
+              "body": "ที่อยู่ที่บันทึกไว้ของสถานที่ทำงานที่เลือกจะแสดงในข้อมูลการถ่ายโดยค่าเริ่มต้น โดยไม่ใช้ GPS หรือการค้นหาที่อยู่อัตโนมัติ คุณปิดได้ในตัวเลือกกล้อง และจะไม่แสดงที่อยู่หากยังไม่ได้บันทึกไว้",
+              "notice": "คำแนะนำ GPS และที่อยู่นี้ใช้กับรุ่นทดสอบระหว่างการพัฒนาที่ปิดการค้นหาที่อยู่อัตโนมัติ รุ่นที่ติดตั้งอยู่เดิมอาจทำงานแตกต่างกัน",
               "icon": {
                 "name": "map_outlined",
                 "codePoint": 61870,
@@ -26948,5 +26948,5 @@
       ]
     }
   },
-  "contentVersion": "2acee784e385bdc1"
+  "contentVersion": "3aea16194b49760f"
 }

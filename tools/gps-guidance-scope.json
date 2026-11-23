@@ -1,0 +1,18 @@
+{
+  "ar": "تنطبق إرشادات GPS والعنوان على نسخة التحقق التطويرية التي عُطّل فيها البحث التلقائي عن العنوان. وقد يختلف سلوك الإصدارات المثبتة سابقًا.",
+  "de": "Die vorliegenden GPS- und Adresshinweise gelten für den Entwicklungs-Testkandidaten mit deaktivierter automatischer Adresssuche. Bereits installierte Versionen können sich anders verhalten.",
+  "en": "This GPS and address guidance applies to the development validation candidate with automatic address lookup disabled. Existing installed versions may behave differently.",
+  "es": "Estas indicaciones de GPS y dirección se aplican a la versión candidata de validación en desarrollo con la búsqueda automática de direcciones desactivada. Las versiones ya instaladas pueden funcionar de otra manera.",
+  "fr": "Ces indications GPS et d’adresse concernent la version candidate de validation en développement dont la recherche automatique d’adresse est désactivée. Les versions déjà installées peuvent fonctionner différemment.",
+  "hi": "ये GPS और पते के निर्देश उस विकास सत्यापन संस्करण पर लागू होते हैं जिसमें स्वचालित पता खोज बंद है। पहले से इंस्टॉल किए गए संस्करण अलग तरह से काम कर सकते हैं।",
+  "id": "Panduan GPS dan alamat ini berlaku untuk kandidat validasi pengembangan dengan pencarian alamat otomatis dinonaktifkan. Versi yang sudah terpasang dapat berperilaku berbeda.",
+  "it": "Queste indicazioni GPS e indirizzo si applicano alla versione candidata di convalida in sviluppo con la ricerca automatica degli indirizzi disattivata. Le versioni già installate possono funzionare diversamente.",
+  "ja": "このGPS・住所案内は、自動住所検索を停止した開発用検証候補に適用されます。既にインストールされているバージョンでは動作が異なる場合があります。",
+  "ko": "이 GPS·주소 안내는 자동 주소 조회가 차단된 개발용 검증 후보에 적용됩니다. 기존 설치 버전의 동작과 다를 수 있습니다.",
+  "pt": "Estas orientações de GPS e endereço se aplicam à versão candidata de validação em desenvolvimento com a busca automática de endereços desativada. Versões já instaladas podem funcionar de forma diferente.",
+  "ru": "Эти сведения о GPS и адресах относятся к тестовому кандидату в разработке с отключённым автоматическим поиском адреса. Уже установленные версии могут работать иначе.",
+  "th": "คำแนะนำ GPS และที่อยู่นี้ใช้กับรุ่นทดสอบระหว่างการพัฒนาที่ปิดการค้นหาที่อยู่อัตโนมัติ รุ่นที่ติดตั้งอยู่เดิมอาจทำงานแตกต่างกัน",
+  "tr": "Bu GPS ve adres açıklamaları, otomatik adres araması kapatılmış geliştirme doğrulama adayı için geçerlidir. Önceden yüklenmiş sürümler farklı çalışabilir.",
+  "vi": "Hướng dẫn GPS và địa chỉ này áp dụng cho bản ứng viên kiểm thử đang phát triển đã tắt tra cứu địa chỉ tự động. Các phiên bản đã cài đặt có thể hoạt động khác.",
+  "zh": "此 GPS 和地址说明适用于已停用自动地址查询的开发验证候选版本。已安装的其他版本可能有不同的行为。"
+}
