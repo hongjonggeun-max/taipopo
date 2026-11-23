@@ -36,7 +36,8 @@ for (const [code, locale] of Object.entries(data.locales)) {
   for (const feature of features) {
     const previous = oldFeatures.find(f => f.id === feature.id);
     for (const field of ['title', 'notice', 'icon']) {
-      if (field === 'title' && ['camera-address','workplace-gps-address','camera-options','camera-coordinates'].includes(feature.id)) continue;
+      if (['title','icon'].includes(field) && feature.id === 'workplace-gps-address') continue;
+      if (field === 'title' && ['camera-address','camera-options','camera-coordinates'].includes(feature.id)) continue;
       if (field === 'notice' && feature.id === 'workplace-gps-address') continue;
       if (field === 'notice' && feature.id === 'camera-gps-record') {
         assert.equal(feature.notice, arb.localGpsProviderNotice, `${code}: current location provider notice differs from app`);
@@ -51,6 +52,8 @@ for (const [code, locale] of Object.entries(data.locales)) {
   assert.deepEqual(locale.images, baseline.locales[code].images, `${code}: image metadata changed`);
   assert.deepEqual(locale.chapters.map(c => [c.id, c.title, c.screen, c.icon]), baseline.locales[code].chapters.map(c => [c.id, c.title, c.screen, c.icon]));
   const body = id => features.find(f => f.id === id).body;
+  assert.equal(features.find(f => f.id === 'workplace-gps-address').title, arb.address);
+  assert.equal(features.find(f => f.id === 'workplace-gps-address').notice, null);
   assert.equal(features.find(f => f.id === 'camera-options').title, arb.cameraOptions, `${code}: camera options title`);
   assert.equal(features.find(f => f.id === 'camera-coordinates').title, arb.cameraGpsCoordinatesDisplay, `${code}: GPS display title`);
   assert.equal(body('camera-coordinates'), arb.manualPurposeCoordinates, `${code}: GPS display requires recording and valid fix`);

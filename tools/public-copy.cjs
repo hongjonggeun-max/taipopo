@@ -34,9 +34,9 @@ function publicManualChapters(chapters, code, arb) {
       feature.body = arb.showAddressSubtitle;
     }
     if (feature.id === 'workplace-gps-address') {
-      feature.title = arb.automaticAddressUnavailable;
+      feature.title = arb.address;
       feature.body = arb.manualPurposeWorkplaceGpsAddress;
-      feature.notice = arb.localGpsVersionScope;
+      feature.notice = null;
     }
     if (feature.id === 'restore') {
       feature.body = [

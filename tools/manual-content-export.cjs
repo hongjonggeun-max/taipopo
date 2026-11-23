@@ -317,7 +317,7 @@ function resolveManual(appRoot) {
       chapter.features.forEach((feature, featureIndex) => { feature.chapterId = chapter.id; feature.order = featureIndex + 1; });
     });
     const allFeatures = chapters.flatMap(c => c.features);
-    assert.deepEqual(allFeatures.filter(f => f.notice !== null).map(f => f.id), ['workplace-gps-address', 'attendance', 'camera-gps-record']);
+    assert.deepEqual(allFeatures.filter(f => f.notice !== null).map(f => f.id), ['attendance', 'camera-gps-record']);
     assert.deepEqual(allFeatures.filter(f => f.conditions.length).map(f => f.id), []);
     assert.equal(allFeatures.filter(f => f.iterationSource).length, 8);
     locales[code] = { name, direction: code === 'ar' ? 'rtl' : 'ltr', title: localized('userGuideTitle', env), intro: localized('manualIntro', env), chapters };
