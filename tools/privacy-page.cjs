@@ -124,7 +124,7 @@ function renderPolicy(policy) {
   }
 
   const html = [
-    `<section class="glass policy-summary">${renderLines([...metadata, `TAIPOPO ${policy.zipBackup.version}`, review.scope])}</section>`,
+    `<section class="glass policy-summary">${renderLines([...metadata, ...(policy.zipBackup.version ? [`TAIPOPO ${policy.zipBackup.version}`] : []), review.scope])}</section>`,
     ...sections.map(
       (section) =>
         `<section class="glass"${section === external ? ` data-web-review="${webDisclosures.reviewDate}"` : ''}><h2>${escapeHtml(section.heading)}</h2>${renderLines(section.lines)}</section>`,

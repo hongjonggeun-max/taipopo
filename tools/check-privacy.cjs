@@ -72,7 +72,9 @@ for (const code of codes) {
     source.zipBackup.version,
     source.noticeVersion,
     controller,
-    'Drive API',
+    arb.legacyDriveBackupNotice
+      .replaceAll('&', '&amp;').replaceAll('<', '&lt;')
+      .replaceAll('>', '&gt;').replaceAll('"', '&quot;'),
     'appDataFolder',
     'Firebase Crashlytics',
     'ML Kit',

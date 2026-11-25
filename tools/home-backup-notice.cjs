@@ -37,6 +37,10 @@ function applyHomepageBackupNotices(root = path.resolve(__dirname, '..')) {
         }
       }
       if (!html.includes(notice)) throw Error(`Backup notice missing: ${name}`);
+      // Existing homepages may contain a separate old deployment paragraph.
+      // Keep its position and source its current wording from the same locale.
+      const configuration = `<p data-current-config="${code}">${escapeHtml(locales[code].localConfig)}</p>`;
+      html = html.replace(/<p data-current-config="[a-z]+">[\s\S]*?<\/p>|<p>TAIPOPO 1\.0\.0\(17\):[^<]*<\/p>/gu, configuration);
       fs.writeFileSync(file, html);
       count++;
     }

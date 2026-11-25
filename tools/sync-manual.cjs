@@ -35,7 +35,7 @@ for (const { code, name } of languages) {
   const manifest = JSON.parse(rawManifest);
   const a = JSON.parse(read(`lib/l10n/app_${code}.arb`));
   if (!webText[code] || !a.retry || !a.manualImageError || !a.manualIntro) throw Error(`Missing localized controls: ${code}`);
-  ui[code] = { ...webText[code], name, title: a.userGuideTitle, intro: `TAIPOPO 1.0.0(17) · ${a.manualIntro}`, contents: a.manualContentsHint, retry: a.retry, error: a.manualImageError };
+  ui[code] = { ...webText[code], name, title: a.userGuideTitle, intro: `TAIPOPO · ${a.manualIntro}`, contents: a.manualContentsHint, retry: a.retry, error: a.manualImageError };
   const images = overviews.map((overview, index) => {
     const record = manifest[overview.id];
     const asset = `assets/manual/${code}/${overview.id}.webp`;

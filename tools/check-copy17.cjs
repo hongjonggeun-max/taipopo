@@ -74,7 +74,8 @@ for (const [code, locale] of Object.entries(data.locales)) {
   assert.ok(body('backup-share').includes(arb.backupFileDisclosure), `${code}: unencrypted backup scope missing`);
   assert.ok(body('restore').includes(arb.legacyDriveBackupNotice), `${code}: older Drive copy distinction missing`);
   assert.equal(body('data-usage'), copy[code].dataUsage);
-  assert.ok(body('data-usage').includes('1.0.0(17)'));
+  assert.equal(body('data-usage'), arb.manualHelpDataUsageNoDirectUpload, `${code}: version-neutral data-use scope differs from candidate`);
+  assert.ok(!/1\.0\.0\s*\(17\)/u.test(body('data-usage')), `${code}: unverified deployed version`);
   assert.equal(copy[code].services.length, 6);
   const oldTerms = oldPolicies[code].terms.body;
   const newTerms = policies[code].terms.body;

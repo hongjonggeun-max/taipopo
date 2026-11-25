@@ -31,7 +31,7 @@ for (const code of codes) {
   const manifest = JSON.parse(manifestBytes);
   excluded += Object.keys(manifest).length - 4;
   const arb = JSON.parse(fs.readFileSync(path.join(app, `lib/l10n/app_${code}.arb`), 'utf8'));
-  assert.equal(ui[code].title, arb.userGuideTitle); assert.equal(ui[code].intro, `TAIPOPO 1.0.0(17) · ${arb.manualIntro}`);
+  assert.equal(ui[code].title, arb.userGuideTitle); assert.equal(ui[code].intro, `TAIPOPO · ${arb.manualIntro}`);
   assert.equal(ui[code].error, arb.manualImageError); assert.equal(ui[code].retry, arb.retry);
   assert.equal(locale.images.length, 4);
   if (!imagesOnly) assert.deepEqual(locale.chapters, publicManualChapters(resolved.locales[code].chapters.map(chapter => ({ id: chapter.id, title: chapter.title, screen: chapter.screen, icon: publicIcon(chapter.icon), features: chapter.features.map(feature => ({ id: feature.id, title: feature.title, body: feature.body, notice: feature.notice, icon: publicIcon(feature.icon) })) })), code, arb));

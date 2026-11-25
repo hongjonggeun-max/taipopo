@@ -27,6 +27,8 @@ footer a[href^="mailto:"]{direction:ltr;unicode-bidi:isolate;overflow-wrap:anywh
 .compact-card p{font-size:16px;line-height:1.8;overflow-wrap:anywhere}
 .compact-support{margin-block:24px}
 .page-intro>p+p{margin-block-start:12px}
+/* Long external-copy references must wrap inside the existing home grid. */
+[data-current-backup]{overflow-wrap:anywhere}
 .page-intro>.button{margin-block-start:20px}
 main.wrap>footer:not(.footer){padding-block:24px 32px;display:grid;gap:8px;font-size:14px;line-height:1.8}
 .policy-content{max-width:1080px;margin-inline:auto}

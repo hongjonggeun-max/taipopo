@@ -2,6 +2,7 @@ const fs = require('node:fs');
 const path = require('node:path');
 const assert = require('node:assert/strict');
 const root = path.resolve(__dirname, '..');
+const appRoot = path.resolve(process.argv[2] || path.join(root, '..', 'gps-address-latency-20261119'));
 const data = require('./privacy-content.json');
 const review = require('./website-disclosures.json');
 const { renderPolicy, renderDeletion, renderSupportProcessing } = require('./privacy-page.cjs');
@@ -15,11 +16,12 @@ for (const [code, policy] of Object.entries(data)) {
   assert.ok(!text.scope.includes('1.0.0+21') && !text.qrCandidate.includes('1.0.0+21'), code);
   assert.ok(text.qrLegacy.includes('ML Kit') && text.qrCandidate.includes('ZXing'), code);
   assert.ok(policy.body.includes(policy.revisionDate), code);
-  assert.equal(policy.zipBackup.version, '1.0.0 (17)', code);
+  assert.equal(review.zipBackupVersion, '', 'Current website notices must not imply an unverified deployed version');
+  assert.equal(policy.zipBackup.version, review.zipBackupVersion, `${code}: version-neutral backup notice`);
   assert.ok(policy.body.includes(policy.zipBackup.privacy) && policy.deletion.body.includes(policy.zipBackup.privacy), code);
   // The inactive geocoder cache is not the current candidate's GPS policy.
   // Its preservation/share warning must match the localized app notice.
-  const appLocale = JSON.parse(fs.readFileSync(path.resolve(root, '..', 'gps-address-latency-20261119', 'lib/l10n', `app_${code}.arb`), 'utf8'));
+  const appLocale = JSON.parse(fs.readFileSync(path.join(appRoot, 'lib/l10n', `app_${code}.arb`), 'utf8'));
   assert.equal(text.gpsCache, appLocale.locationPreservationNotice, `${code}: GPS preservation/share scope`);
   assert.ok(text.gpsChoice.includes(appLocale.cameraGpsUsageNotice), `${code}: camera GPS choice`);
   assert.ok(text.gpsChoice.includes(appLocale.showAddressSubtitle), `${code}: saved workplace address`);

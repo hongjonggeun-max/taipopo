@@ -1513,7 +1513,7 @@
             {
               "id": "restore",
               "title": "복원",
-              "body": "설정 > 백업 및 복구\n\n기기에서 복구: 이 기기에 저장된 백업 목록에서 선택합니다.\n\nSD 카드·USB에서 복구: 연결된 SD 카드나 USB에서 백업 폴더를 선택합니다.\n\n백업 파일 불러오기: 기기 또는 파일 선택기에 표시되는 저장소에서 백업 ZIP을 선택하세요. 분할 백업은 같은 백업의 모든 파일이 필요합니다.\n\n저장한 백업으로 현재 앱 데이터를 교체하므로 먼저 현재 데이터도 백업하세요.\n\n구버전 Google Drive 사본: 이전 버전에서 만든 appDataFolder 백업이 있다면 현재 버전의 ZIP과 별개인 외부 사본입니다. 앱 초기화나 삭제만으로 그 사본이 삭제되지는 않습니다. 1.0.0(17)은 해당 사본의 직접 백업·복원·관리 기능을 제공하지 않습니다. 해당 Google 계정에서 관리·삭제하는 방법은 Google 공식 안내를 확인하세요. https://support.google.com/drive/answer/6374270",
+              "body": "설정 > 백업 및 복구\n\n기기에서 복구: 이 기기에 저장된 백업 목록에서 선택합니다.\n\nSD 카드·USB에서 복구: 연결된 SD 카드나 USB에서 백업 폴더를 선택합니다.\n\n백업 파일 불러오기: 기기 또는 파일 선택기에 표시되는 저장소에서 백업 ZIP을 선택하세요. 분할 백업은 같은 백업의 모든 파일이 필요합니다.\n\n저장한 백업으로 현재 앱 데이터를 교체하므로 먼저 현재 데이터도 백업하세요.\n\n구버전 Google Drive 사본: 이전 버전에서 만든 appDataFolder 백업이 있다면 현재 버전의 ZIP과 별개인 외부 사본입니다. 앱 초기화나 삭제만으로 그 사본이 삭제되지는 않습니다. 이 버전은 해당 사본의 직접 백업·복원·관리 기능을 제공하지 않습니다. 해당 Google 계정에서 관리·삭제하는 방법은 Google 공식 안내를 확인하세요. https://support.google.com/drive/answer/6374270",
               "notice": null,
               "icon": {
                 "name": "restore_outlined",
@@ -1604,7 +1604,7 @@
             {
               "id": "data-usage",
               "title": "데이터 사용",
-              "body": "데이터 사용 설정을 저장합니다. 1.0.0(17)은 백업을 직접 업로드하지 않으며, 이 설정은 공유창에서 선택한 다른 앱의 Wi-Fi·모바일 데이터 사용을 제어하지 않습니다.",
+              "body": "데이터 사용 설정을 저장합니다. 이 버전은 백업을 직접 업로드하지 않으며, 이 설정은 공유창에서 선택한 다른 앱의 Wi-Fi·모바일 데이터 사용을 제어하지 않습니다.",
               "notice": null,
               "icon": {
                 "name": "wifi",
@@ -3153,7 +3153,7 @@
             {
               "id": "restore",
               "title": "Restore",
-              "body": "Settings > Backup & Restore\n\nRestore from device backup list: Choose from the backup list saved on this device.\n\nRestore from SD card or USB: Choose a backup folder from a connected SD card or USB storage device.\n\nImport backup files: Choose the backup ZIP on your device or in storage shown by the file picker. A split backup requires every file from the same backup.\n\nRestoring replaces current app data with the backup, so back up your current data first.\n\nOlder Google Drive copies: if an earlier version created an appDataFolder backup, it is an external copy separate from the current version's ZIP. Resetting or uninstalling the app does not delete that copy. Version 1.0.0(17) does not directly back up, restore or manage it. See Google's official instructions for managing or deleting it in the Google account that owns it. https://support.google.com/drive/answer/6374270",
+              "body": "Settings > Backup & Restore\n\nRestore from device backup list: Choose from the backup list saved on this device.\n\nRestore from SD card or USB: Choose a backup folder from a connected SD card or USB storage device.\n\nImport backup files: Choose the backup ZIP on your device or in storage shown by the file picker. A split backup requires every file from the same backup.\n\nRestoring replaces current app data with the backup, so back up your current data first.\n\nOlder Google Drive copies: if an earlier version created an appDataFolder backup, it is an external copy separate from the current version's ZIP. Resetting or uninstalling the app does not delete that copy. This version does not directly back up, restore or manage it. See Google's official instructions for managing or deleting it in the Google account that owns it. https://support.google.com/drive/answer/6374270",
               "notice": null,
               "icon": {
                 "name": "restore_outlined",
@@ -3244,7 +3244,7 @@
             {
               "id": "data-usage",
               "title": "Data Usage",
-              "body": "Save your data-use preference. Version 1.0.0(17) does not upload backups directly. This setting does not control Wi-Fi or mobile data used by another app you select in the share sheet.",
+              "body": "Save your data-use preference. This version does not upload backups directly. This setting does not control Wi-Fi or mobile data used by another app you select in the share sheet.",
               "notice": null,
               "icon": {
                 "name": "wifi",
@@ -4793,7 +4793,7 @@
             {
               "id": "restore",
               "title": "恢复",
-              "body": "设置 > 备份与恢复\n\n从设备备份列表恢复: 从此设备上保存的备份列表中选择。\n\n从 SD 卡或 USB 恢复: 从已连接的 SD 卡或 USB 存储设备中选择备份文件夹。\n\n导入备份文件: 在设备或文件选择器显示的存储位置中选择备份 ZIP。分卷备份需要同一备份的全部文件。\n\n恢复会用备份替换当前应用数据，请先备份现有数据。\n\n旧版本的 Google Drive 副本：如果先前版本曾创建 appDataFolder 备份，它是独立于当前版本 ZIP 的外部副本。重置或卸载应用不会删除该副本。1.0.0(17) 不提供对该副本的直接备份、恢复或管理功能。请参阅 Google 官方说明，在拥有该副本的 Google 账号中管理或删除。 https://support.google.com/drive/answer/6374270",
+              "body": "设置 > 备份与恢复\n\n从设备备份列表恢复: 从此设备上保存的备份列表中选择。\n\n从 SD 卡或 USB 恢复: 从已连接的 SD 卡或 USB 存储设备中选择备份文件夹。\n\n导入备份文件: 在设备或文件选择器显示的存储位置中选择备份 ZIP。分卷备份需要同一备份的全部文件。\n\n恢复会用备份替换当前应用数据，请先备份现有数据。\n\n旧版本的 Google Drive 副本：如果先前版本曾创建 appDataFolder 备份，它是独立于当前版本 ZIP 的外部副本。重置或卸载应用不会删除该副本。此版本不提供对该副本的直接备份、恢复或管理功能。请参阅 Google 官方说明，在拥有该副本的 Google 账号中管理或删除。 https://support.google.com/drive/answer/6374270",
               "notice": null,
               "icon": {
                 "name": "restore_outlined",
@@ -4884,7 +4884,7 @@
             {
               "id": "data-usage",
               "title": "数据使用情况",
-              "body": "保存数据使用偏好。1.0.0(17)版本不会直接上传备份，此设置也不控制您在分享面板中选择的其他应用使用Wi-Fi或移动数据。",
+              "body": "保存数据使用偏好。此版本不会直接上传备份，此设置也不控制您在分享面板中选择的其他应用使用Wi-Fi或移动数据。",
               "notice": null,
               "icon": {
                 "name": "wifi",
@@ -6433,7 +6433,7 @@
             {
               "id": "restore",
               "title": "復元",
-              "body": "設定 > バックアップと復元\n\nデバイスのバックアップ一覧から復元: この端末に保存されたバックアップ一覧から選択します。\n\nSDカード・USBから復元: 接続されたSDカードまたはUSBストレージからバックアップフォルダを選択します。\n\nバックアップファイルを読み込む: 端末またはファイル選択画面に表示される保存先からバックアップ ZIP を選びます。分割バックアップでは、同じバックアップの全ファイルが必要です。\n\n復元すると現在のアプリデータがバックアップ内容に置き換わるため、先に現在のデータも保存してください。\n\n旧バージョンのGoogle Driveコピー：以前のバージョンで作成したappDataFolderバックアップがある場合、現在のバージョンのZIPとは別の外部コピーです。アプリの初期化やアンインストールだけでは削除されません。1.0.0(17)では、そのコピーの直接バックアップ・復元・管理機能を提供していません。所有するGoogleアカウントでの管理・削除方法はGoogleの公式案内をご確認ください。 https://support.google.com/drive/answer/6374270",
+              "body": "設定 > バックアップと復元\n\nデバイスのバックアップ一覧から復元: この端末に保存されたバックアップ一覧から選択します。\n\nSDカード・USBから復元: 接続されたSDカードまたはUSBストレージからバックアップフォルダを選択します。\n\nバックアップファイルを読み込む: 端末またはファイル選択画面に表示される保存先からバックアップ ZIP を選びます。分割バックアップでは、同じバックアップの全ファイルが必要です。\n\n復元すると現在のアプリデータがバックアップ内容に置き換わるため、先に現在のデータも保存してください。\n\n旧バージョンのGoogle Driveコピー：以前のバージョンで作成したappDataFolderバックアップがある場合、現在のバージョンのZIPとは別の外部コピーです。アプリの初期化やアンインストールだけでは削除されません。このバージョンでは、そのコピーの直接バックアップ・復元・管理機能を提供していません。所有するGoogleアカウントでの管理・削除方法はGoogleの公式案内をご確認ください。 https://support.google.com/drive/answer/6374270",
               "notice": null,
               "icon": {
                 "name": "restore_outlined",
@@ -6524,7 +6524,7 @@
             {
               "id": "data-usage",
               "title": "データ使用量",
-              "body": "データ使用の設定を保存します。1.0.0(17)ではバックアップを直接アップロードしません。この設定は共有画面で選んだ別のアプリのWi-Fi・モバイルデータ使用を制御しません。",
+              "body": "データ使用の設定を保存します。このバージョンではバックアップを直接アップロードしません。この設定は共有画面で選んだ別のアプリのWi-Fi・モバイルデータ使用を制御しません。",
               "notice": null,
               "icon": {
                 "name": "wifi",
@@ -8073,7 +8073,7 @@
             {
               "id": "restore",
               "title": "पुनर्स्थापित करें",
-              "body": "सेटिंग्स > बैकअप और पुनर्स्थापना\n\nडिवाइस बैकअप सूची से पुनर्स्थापित करें: इस डिवाइस पर सहेजी गई बैकअप सूची से चुनें।\n\nSD कार्ड या USB से पुनर्स्थापित करें: कनेक्ट किए गए SD कार्ड या USB स्टोरेज डिवाइस से बैकअप फ़ोल्डर चुनें।\n\nबैकअप फ़ाइलें आयात करें: डिवाइस या फ़ाइल चयनकर्ता में दिखने वाले स्टोरेज से बैकअप ZIP चुनें। कई हिस्सों वाले बैकअप के लिए उसी बैकअप की सभी फ़ाइलें चाहिए।\n\nपुनर्स्थापना मौजूदा डेटा को बैकअप से बदल देती है, इसलिए पहले मौजूदा डेटा का बैकअप लें।\n\nपुराने Google Drive प्रतिरूप: यदि किसी पुराने संस्करण ने appDataFolder में बैकअप बनाया था, तो वह वर्तमान संस्करण की ZIP से अलग एक बाहरी प्रतिरूप है। ऐप को रीसेट या अनइंस्टॉल करने से वह प्रतिरूप नहीं मिटता। संस्करण 1.0.0(17) उसका सीधे बैकअप बनाने, उसे पुनर्स्थापित करने या उसका प्रबंधन करने की सुविधा नहीं देता। उसके स्वामी Google खाते में उसका प्रबंधन करने या उसे मिटाने के लिए Google के आधिकारिक निर्देश देखें। https://support.google.com/drive/answer/6374270",
+              "body": "सेटिंग्स > बैकअप और पुनर्स्थापना\n\nडिवाइस बैकअप सूची से पुनर्स्थापित करें: इस डिवाइस पर सहेजी गई बैकअप सूची से चुनें।\n\nSD कार्ड या USB से पुनर्स्थापित करें: कनेक्ट किए गए SD कार्ड या USB स्टोरेज डिवाइस से बैकअप फ़ोल्डर चुनें।\n\nबैकअप फ़ाइलें आयात करें: डिवाइस या फ़ाइल चयनकर्ता में दिखने वाले स्टोरेज से बैकअप ZIP चुनें। कई हिस्सों वाले बैकअप के लिए उसी बैकअप की सभी फ़ाइलें चाहिए।\n\nपुनर्स्थापना मौजूदा डेटा को बैकअप से बदल देती है, इसलिए पहले मौजूदा डेटा का बैकअप लें।\n\nपुराने Google Drive प्रतिरूप: यदि किसी पुराने संस्करण ने appDataFolder में बैकअप बनाया था, तो वह वर्तमान संस्करण की ZIP से अलग एक बाहरी प्रतिरूप है। ऐप को रीसेट या अनइंस्टॉल करने से वह प्रतिरूप नहीं मिटता। यह संस्करण उसका सीधे बैकअप बनाने, उसे पुनर्स्थापित करने या उसका प्रबंधन करने की सुविधा नहीं देता। उसके स्वामी Google खाते में उसका प्रबंधन करने या उसे मिटाने के लिए Google के आधिकारिक निर्देश देखें। https://support.google.com/drive/answer/6374270",
               "notice": null,
               "icon": {
                 "name": "restore_outlined",
@@ -8164,7 +8164,7 @@
             {
               "id": "data-usage",
               "title": "डेटा उपयोग",
-              "body": "डेटा उपयोग की पसंद सहेजें। संस्करण 1.0.0(17) बैकअप सीधे अपलोड नहीं करता। यह सेटिंग शेयर मेनू में चुने गए दूसरे ऐप के Wi-Fi या मोबाइल डेटा उपयोग को नियंत्रित नहीं करती।",
+              "body": "डेटा उपयोग की पसंद सहेजें। यह संस्करण बैकअप सीधे अपलोड नहीं करता। यह सेटिंग शेयर मेनू में चुने गए दूसरे ऐप के Wi-Fi या मोबाइल डेटा उपयोग को नियंत्रित नहीं करती।",
               "notice": null,
               "icon": {
                 "name": "wifi",
@@ -9713,7 +9713,7 @@
             {
               "id": "restore",
               "title": "Restaurar",
-              "body": "Configurações > Backup e restauração\n\nRestaurar da lista de backups do dispositivo: Escolha na lista de backups salvos neste dispositivo.\n\nRestaurar de SD ou USB: Escolha uma pasta de backup em um cartão SD ou dispositivo USB conectado.\n\nImportar arquivos de backup: Selecione o ZIP de backup no dispositivo ou em um armazenamento exibido no seletor de arquivos. Um backup dividido exige todos os arquivos do mesmo backup.\n\nA restauração substitui os dados atuais pelo backup; faça antes uma cópia dos dados atuais.\n\nCópias antigas do Google Drive: se uma versão anterior criou um backup em appDataFolder, ele é uma cópia externa separada do ZIP da versão atual. Redefinir ou desinstalar o aplicativo não exclui essa cópia. A versão 1.0.0(17) não oferece backup, restauração ou gerenciamento direto dessa cópia. Consulte as instruções oficiais do Google para gerenciá-la ou excluí-la na conta do Google à qual ela pertence. https://support.google.com/drive/answer/6374270",
+              "body": "Configurações > Backup e restauração\n\nRestaurar da lista de backups do dispositivo: Escolha na lista de backups salvos neste dispositivo.\n\nRestaurar de SD ou USB: Escolha uma pasta de backup em um cartão SD ou dispositivo USB conectado.\n\nImportar arquivos de backup: Selecione o ZIP de backup no dispositivo ou em um armazenamento exibido no seletor de arquivos. Um backup dividido exige todos os arquivos do mesmo backup.\n\nA restauração substitui os dados atuais pelo backup; faça antes uma cópia dos dados atuais.\n\nCópias antigas do Google Drive: se uma versão anterior criou um backup em appDataFolder, ele é uma cópia externa separada do ZIP da versão atual. Redefinir ou desinstalar o aplicativo não exclui essa cópia. Esta versão não oferece backup, restauração ou gerenciamento direto dessa cópia. Consulte as instruções oficiais do Google para gerenciá-la ou excluí-la na conta do Google à qual ela pertence. https://support.google.com/drive/answer/6374270",
               "notice": null,
               "icon": {
                 "name": "restore_outlined",
@@ -9804,7 +9804,7 @@
             {
               "id": "data-usage",
               "title": "Uso de dados",
-              "body": "Salve sua preferência de uso de dados. A versão 1.0.0(17) não envia backups diretamente. Esta configuração não controla o uso de Wi-Fi ou dados móveis de outro app escolhido no menu de compartilhamento.",
+              "body": "Salve sua preferência de uso de dados. Esta versão não envia backups diretamente. Esta configuração não controla o uso de Wi-Fi ou dados móveis de outro app escolhido no menu de compartilhamento.",
               "notice": null,
               "icon": {
                 "name": "wifi",
@@ -11353,7 +11353,7 @@
             {
               "id": "restore",
               "title": "Restaurar",
-              "body": "Configuración > Copia de seguridad y restauración\n\nRestaurar desde la lista de copias del dispositivo: Elige de la lista de copias guardadas en este dispositivo.\n\nRestaurar desde SD o USB: Elige una carpeta de copia desde una tarjeta SD o dispositivo USB conectado.\n\nImportar archivos de copia de seguridad: Selecciona el ZIP en el dispositivo o en un almacenamiento que aparezca en el selector de archivos. Una copia dividida requiere todos los archivos de la misma copia.\n\nLa restauración sustituye los datos actuales por la copia; guarda antes los datos actuales.\n\nCopias antiguas de Google Drive: si una versión anterior creó una copia de seguridad en appDataFolder, es una copia externa distinta del ZIP de la versión actual. Restablecer o desinstalar la aplicación no elimina esa copia. La versión 1.0.0(17) no permite realizar, restaurar ni administrar directamente esas copias. Consulte las instrucciones oficiales de Google para administrarlas o eliminarlas en la cuenta de Google a la que pertenecen. https://support.google.com/drive/answer/6374270",
+              "body": "Configuración > Copia de seguridad y restauración\n\nRestaurar desde la lista de copias del dispositivo: Elige de la lista de copias guardadas en este dispositivo.\n\nRestaurar desde SD o USB: Elige una carpeta de copia desde una tarjeta SD o dispositivo USB conectado.\n\nImportar archivos de copia de seguridad: Selecciona el ZIP en el dispositivo o en un almacenamiento que aparezca en el selector de archivos. Una copia dividida requiere todos los archivos de la misma copia.\n\nLa restauración sustituye los datos actuales por la copia; guarda antes los datos actuales.\n\nCopias antiguas de Google Drive: si una versión anterior creó una copia de seguridad en appDataFolder, es una copia externa distinta del ZIP de la versión actual. Restablecer o desinstalar la aplicación no elimina esa copia. Esta versión no permite realizar, restaurar ni administrar directamente esas copias. Consulte las instrucciones oficiales de Google para administrarlas o eliminarlas en la cuenta de Google a la que pertenecen. https://support.google.com/drive/answer/6374270",
               "notice": null,
               "icon": {
                 "name": "restore_outlined",
@@ -11444,7 +11444,7 @@
             {
               "id": "data-usage",
               "title": "Uso de datos",
-              "body": "Guarda tu preferencia de uso de datos. La versión 1.0.0(17) no sube copias de seguridad directamente. Este ajuste no controla el Wi-Fi ni los datos móviles de otra aplicación elegida en el menú para compartir.",
+              "body": "Guarda tu preferencia de uso de datos. Esta versión no sube copias de seguridad directamente. Este ajuste no controla el Wi-Fi ni los datos móviles de otra aplicación elegida en el menú para compartir.",
               "notice": null,
               "icon": {
                 "name": "wifi",
@@ -12993,7 +12993,7 @@
             {
               "id": "restore",
               "title": "Restaurer",
-              "body": "Paramètres > Sauvegarde et restauration\n\nRestaurer depuis la liste de sauvegardes de l’appareil: Choisissez dans la liste des sauvegardes enregistrées sur cet appareil.\n\nRestaurer depuis SD ou USB: Choisissez un dossier de sauvegarde depuis une carte SD ou un périphérique USB connecté.\n\nImporter les fichiers de sauvegarde: Sélectionnez le ZIP sur l’appareil ou dans un espace de stockage affiché par le sélecteur de fichiers. Une sauvegarde fractionnée nécessite tous les fichiers de la même sauvegarde.\n\nLa restauration remplace les données actuelles par la sauvegarde ; sauvegardez d’abord vos données actuelles.\n\nAnciennes copies Google Drive : si une version antérieure a créé une sauvegarde dans appDataFolder, il s’agit d’une copie externe distincte du ZIP de la version actuelle. Réinitialiser ou désinstaller l’application ne supprime pas cette copie. La version 1.0.0(17) ne permet pas de la sauvegarder, restaurer ou gérer directement. Consultez les instructions officielles de Google pour la gérer ou la supprimer dans le compte Google auquel elle appartient. https://support.google.com/drive/answer/6374270",
+              "body": "Paramètres > Sauvegarde et restauration\n\nRestaurer depuis la liste de sauvegardes de l’appareil: Choisissez dans la liste des sauvegardes enregistrées sur cet appareil.\n\nRestaurer depuis SD ou USB: Choisissez un dossier de sauvegarde depuis une carte SD ou un périphérique USB connecté.\n\nImporter les fichiers de sauvegarde: Sélectionnez le ZIP sur l’appareil ou dans un espace de stockage affiché par le sélecteur de fichiers. Une sauvegarde fractionnée nécessite tous les fichiers de la même sauvegarde.\n\nLa restauration remplace les données actuelles par la sauvegarde ; sauvegardez d’abord vos données actuelles.\n\nAnciennes copies Google Drive : si une version antérieure a créé une sauvegarde dans appDataFolder, il s’agit d’une copie externe distincte du ZIP de la version actuelle. Réinitialiser ou désinstaller l’application ne supprime pas cette copie. Cette version ne permet pas de la sauvegarder, restaurer ou gérer directement. Consultez les instructions officielles de Google pour la gérer ou la supprimer dans le compte Google auquel elle appartient. https://support.google.com/drive/answer/6374270",
               "notice": null,
               "icon": {
                 "name": "restore_outlined",
@@ -13084,7 +13084,7 @@
             {
               "id": "data-usage",
               "title": "Utilisation des données",
-              "body": "Enregistrez votre préférence d’utilisation des données. La version 1.0.0(17) n’envoie pas directement de sauvegardes. Ce réglage ne contrôle pas le Wi-Fi ni les données mobiles d’une autre application choisie dans le menu de partage.",
+              "body": "Enregistrez votre préférence d’utilisation des données. Cette version n’envoie pas directement de sauvegardes. Ce réglage ne contrôle pas le Wi-Fi ni les données mobiles d’une autre application choisie dans le menu de partage.",
               "notice": null,
               "icon": {
                 "name": "wifi",
@@ -14633,7 +14633,7 @@
             {
               "id": "restore",
               "title": "Wiederherstellen",
-              "body": "Einstellungen > Sichern und Wiederherstellen\n\nAus Geräte-Backupliste wiederherstellen: Wähle aus der auf diesem Gerät gespeicherten Sicherungsliste.\n\nVon SD-Karte oder USB wiederherstellen: Wähle einen Sicherungsordner von einer verbundenen SD-Karte oder einem USB-Speichergerät.\n\nSicherungsdateien importieren: Wählen Sie die Sicherungs-ZIP auf dem Gerät oder an einem in der Dateiauswahl angezeigten Speicherort aus. Für eine geteilte Sicherung werden alle Dateien derselben Sicherung benötigt.\n\nDie Wiederherstellung ersetzt aktuelle App-Daten durch die Sicherung; sichern Sie deshalb zuerst Ihre aktuellen Daten.\n\nÄltere Google-Drive-Kopien: Hat eine frühere Version ein Backup in appDataFolder erstellt, ist dies eine externe Kopie, getrennt von der ZIP-Datei der aktuellen Version. Zurücksetzen oder Deinstallieren der App löscht diese Kopie nicht. Version 1.0.0(17) bietet dafür keine direkte Sicherung, Wiederherstellung oder Verwaltung. Hinweise zur Verwaltung oder Löschung im zugehörigen Google-Konto finden Sie in der offiziellen Google-Anleitung. https://support.google.com/drive/answer/6374270",
+              "body": "Einstellungen > Sichern und Wiederherstellen\n\nAus Geräte-Backupliste wiederherstellen: Wähle aus der auf diesem Gerät gespeicherten Sicherungsliste.\n\nVon SD-Karte oder USB wiederherstellen: Wähle einen Sicherungsordner von einer verbundenen SD-Karte oder einem USB-Speichergerät.\n\nSicherungsdateien importieren: Wählen Sie die Sicherungs-ZIP auf dem Gerät oder an einem in der Dateiauswahl angezeigten Speicherort aus. Für eine geteilte Sicherung werden alle Dateien derselben Sicherung benötigt.\n\nDie Wiederherstellung ersetzt aktuelle App-Daten durch die Sicherung; sichern Sie deshalb zuerst Ihre aktuellen Daten.\n\nÄltere Google-Drive-Kopien: Hat eine frühere Version ein Backup in appDataFolder erstellt, ist dies eine externe Kopie, getrennt von der ZIP-Datei der aktuellen Version. Zurücksetzen oder Deinstallieren der App löscht diese Kopie nicht. Diese Version bietet dafür keine direkte Sicherung, Wiederherstellung oder Verwaltung. Hinweise zur Verwaltung oder Löschung im zugehörigen Google-Konto finden Sie in der offiziellen Google-Anleitung. https://support.google.com/drive/answer/6374270",
               "notice": null,
               "icon": {
                 "name": "restore_outlined",
@@ -14724,7 +14724,7 @@
             {
               "id": "data-usage",
               "title": "Datennutzung",
-              "body": "Speichern Sie Ihre Einstellung zur Datennutzung. Version 1.0.0(17) lädt keine Backups direkt hoch. Diese Einstellung steuert weder WLAN noch mobile Daten einer anderen App, die Sie im Teilen-Menü auswählen.",
+              "body": "Speichern Sie Ihre Einstellung zur Datennutzung. Diese Version lädt keine Backups direkt hoch. Diese Einstellung steuert weder WLAN noch mobile Daten einer anderen App, die Sie im Teilen-Menü auswählen.",
               "notice": null,
               "icon": {
                 "name": "wifi",
@@ -16273,7 +16273,7 @@
             {
               "id": "restore",
               "title": "Pulihkan",
-              "body": "Pengaturan > Cadangkan & Pulihkan\n\nPulihkan dari daftar cadangan perangkat: Pilih dari daftar cadangan yang tersimpan di perangkat ini.\n\nPulihkan dari kartu SD atau USB: Pilih folder cadangan dari kartu SD atau perangkat penyimpanan USB yang terhubung.\n\nImpor file cadangan: Pilih ZIP cadangan dari perangkat atau penyimpanan yang tampil di pemilih file. Cadangan yang terbagi memerlukan semua file dari cadangan yang sama.\n\nPemulihan mengganti data aplikasi saat ini dengan cadangan, jadi cadangkan data saat ini terlebih dahulu.\n\nSalinan Google Drive versi lama: jika versi sebelumnya membuat cadangan di appDataFolder, salinan eksternal tersebut terpisah dari ZIP versi saat ini. Mereset atau menghapus aplikasi tidak menghapus salinan itu. Versi 1.0.0(17) tidak menyediakan pencadangan, pemulihan, atau pengelolaan langsung untuk salinan tersebut. Lihat petunjuk resmi Google untuk mengelola atau menghapusnya di akun Google pemiliknya. https://support.google.com/drive/answer/6374270",
+              "body": "Pengaturan > Cadangkan & Pulihkan\n\nPulihkan dari daftar cadangan perangkat: Pilih dari daftar cadangan yang tersimpan di perangkat ini.\n\nPulihkan dari kartu SD atau USB: Pilih folder cadangan dari kartu SD atau perangkat penyimpanan USB yang terhubung.\n\nImpor file cadangan: Pilih ZIP cadangan dari perangkat atau penyimpanan yang tampil di pemilih file. Cadangan yang terbagi memerlukan semua file dari cadangan yang sama.\n\nPemulihan mengganti data aplikasi saat ini dengan cadangan, jadi cadangkan data saat ini terlebih dahulu.\n\nSalinan Google Drive versi lama: jika versi sebelumnya membuat cadangan di appDataFolder, salinan eksternal tersebut terpisah dari ZIP versi saat ini. Mereset atau menghapus aplikasi tidak menghapus salinan itu. Versi ini tidak menyediakan pencadangan, pemulihan, atau pengelolaan langsung untuk salinan tersebut. Lihat petunjuk resmi Google untuk mengelola atau menghapusnya di akun Google pemiliknya. https://support.google.com/drive/answer/6374270",
               "notice": null,
               "icon": {
                 "name": "restore_outlined",
@@ -16364,7 +16364,7 @@
             {
               "id": "data-usage",
               "title": "Penggunaan Data",
-              "body": "Simpan preferensi penggunaan data. Versi 1.0.0(17) tidak mengunggah cadangan secara langsung. Pengaturan ini tidak mengontrol Wi-Fi atau data seluler aplikasi lain yang dipilih pada menu berbagi.",
+              "body": "Simpan preferensi penggunaan data. Versi ini tidak mengunggah cadangan secara langsung. Pengaturan ini tidak mengontrol Wi-Fi atau data seluler aplikasi lain yang dipilih pada menu berbagi.",
               "notice": null,
               "icon": {
                 "name": "wifi",
@@ -17913,7 +17913,7 @@
             {
               "id": "restore",
               "title": "Khôi phục",
-              "body": "Cài đặt > Sao lưu & Khôi phục\n\nKhôi phục từ danh sách bản sao lưu trên thiết bị: Chọn từ danh sách sao lưu đã lưu trên thiết bị này.\n\nKhôi phục từ thẻ SD hoặc USB: Chọn thư mục sao lưu từ thẻ SD hoặc thiết bị lưu trữ USB đã kết nối.\n\nNhập tệp sao lưu: Chọn tệp ZIP sao lưu trên thiết bị hoặc trong bộ nhớ được hiển thị trong trình chọn tệp. Bản sao lưu chia nhiều phần cần tất cả các tệp của cùng một bản sao lưu.\n\nKhôi phục sẽ thay dữ liệu hiện tại bằng bản sao lưu, vì vậy hãy sao lưu dữ liệu hiện tại trước.\n\nBản sao Google Drive từ phiên bản cũ: nếu phiên bản trước đã tạo bản sao lưu trong appDataFolder, đó là bản sao bên ngoài riêng biệt với ZIP của phiên bản hiện tại. Đặt lại hoặc gỡ cài đặt ứng dụng không xóa bản sao đó. Phiên bản 1.0.0(17) không cung cấp chức năng trực tiếp sao lưu, khôi phục hoặc quản lý bản sao này. Xem hướng dẫn chính thức của Google để quản lý hoặc xóa trong tài khoản Google sở hữu bản sao. https://support.google.com/drive/answer/6374270",
+              "body": "Cài đặt > Sao lưu & Khôi phục\n\nKhôi phục từ danh sách bản sao lưu trên thiết bị: Chọn từ danh sách sao lưu đã lưu trên thiết bị này.\n\nKhôi phục từ thẻ SD hoặc USB: Chọn thư mục sao lưu từ thẻ SD hoặc thiết bị lưu trữ USB đã kết nối.\n\nNhập tệp sao lưu: Chọn tệp ZIP sao lưu trên thiết bị hoặc trong bộ nhớ được hiển thị trong trình chọn tệp. Bản sao lưu chia nhiều phần cần tất cả các tệp của cùng một bản sao lưu.\n\nKhôi phục sẽ thay dữ liệu hiện tại bằng bản sao lưu, vì vậy hãy sao lưu dữ liệu hiện tại trước.\n\nBản sao Google Drive từ phiên bản cũ: nếu phiên bản trước đã tạo bản sao lưu trong appDataFolder, đó là bản sao bên ngoài riêng biệt với ZIP của phiên bản hiện tại. Đặt lại hoặc gỡ cài đặt ứng dụng không xóa bản sao đó. Phiên bản này không cung cấp chức năng trực tiếp sao lưu, khôi phục hoặc quản lý bản sao này. Xem hướng dẫn chính thức của Google để quản lý hoặc xóa trong tài khoản Google sở hữu bản sao. https://support.google.com/drive/answer/6374270",
               "notice": null,
               "icon": {
                 "name": "restore_outlined",
@@ -18004,7 +18004,7 @@
             {
               "id": "data-usage",
               "title": "Sử dụng dữ liệu",
-              "body": "Lưu tùy chọn sử dụng dữ liệu. Phiên bản 1.0.0(17) không trực tiếp tải bản sao lưu lên. Cài đặt này không kiểm soát Wi-Fi hay dữ liệu di động của ứng dụng khác được chọn trong trình đơn chia sẻ.",
+              "body": "Lưu tùy chọn sử dụng dữ liệu. Phiên bản này không trực tiếp tải bản sao lưu lên. Cài đặt này không kiểm soát Wi-Fi hay dữ liệu di động của ứng dụng khác được chọn trong trình đơn chia sẻ.",
               "notice": null,
               "icon": {
                 "name": "wifi",
@@ -19553,7 +19553,7 @@
             {
               "id": "restore",
               "title": "Восстановить",
-              "body": "Настройки > Резервное копирование и восстановление\n\nВосстановить из списка резервных копий устройства: Выберите из списка резервных копий, сохраненных на этом устройстве.\n\nВосстановить с SD или USB: Выберите папку резервной копии на подключенной SD-карте или USB-накопителе.\n\nИмпортировать файлы резервной копии: Выберите резервный ZIP на устройстве или в хранилище, которое отображается в окне выбора файлов. Для разделённой копии нужны все файлы одной и той же копии.\n\nВосстановление заменяет текущие данные приложения резервной копией, поэтому сначала сохраните и текущие данные.\n\nСтарые копии Google Диска: если предыдущая версия создала резервную копию в appDataFolder, это внешняя копия, отдельная от ZIP текущей версии. Сброс или удаление приложения не удаляет эту копию. Версия 1.0.0(17) не предоставляет её прямое резервное копирование, восстановление или управление. Инструкции по управлению или удалению в аккаунте Google, которому она принадлежит, доступны в официальной справке Google. https://support.google.com/drive/answer/6374270",
+              "body": "Настройки > Резервное копирование и восстановление\n\nВосстановить из списка резервных копий устройства: Выберите из списка резервных копий, сохраненных на этом устройстве.\n\nВосстановить с SD или USB: Выберите папку резервной копии на подключенной SD-карте или USB-накопителе.\n\nИмпортировать файлы резервной копии: Выберите резервный ZIP на устройстве или в хранилище, которое отображается в окне выбора файлов. Для разделённой копии нужны все файлы одной и той же копии.\n\nВосстановление заменяет текущие данные приложения резервной копией, поэтому сначала сохраните и текущие данные.\n\nСтарые копии Google Диска: если предыдущая версия создала резервную копию в appDataFolder, это внешняя копия, отдельная от ZIP текущей версии. Сброс или удаление приложения не удаляет эту копию. Эта версия не предоставляет её прямое резервное копирование, восстановление или управление. Инструкции по управлению или удалению в аккаунте Google, которому она принадлежит, доступны в официальной справке Google. https://support.google.com/drive/answer/6374270",
               "notice": null,
               "icon": {
                 "name": "restore_outlined",
@@ -19644,7 +19644,7 @@
             {
               "id": "data-usage",
               "title": "Использование данных",
-              "body": "Сохраните настройку использования сети. Версия 1.0.0(17) не загружает резервные копии напрямую. Эта настройка не управляет Wi-Fi или мобильными данными другого приложения, выбранного в меню отправки.",
+              "body": "Сохраните настройку использования сети. Эта версия не загружает резервные копии напрямую. Эта настройка не управляет Wi-Fi или мобильными данными другого приложения, выбранного в меню отправки.",
               "notice": null,
               "icon": {
                 "name": "wifi",
@@ -21193,7 +21193,7 @@
             {
               "id": "restore",
               "title": "Geri yükle",
-              "body": "Ayarlar > Yedekleme ve Geri Yükleme\n\nCihaz yedek listeden geri yükle: Bu cihazda kayıtlı yedek listesinden seç.\n\nSD kart veya USB’den geri yükle: Bağlı bir SD karttan veya USB depolama cihazından yedek klasörü seç.\n\nYedekleme dosyalarını içe aktar: Cihazdan veya dosya seçicide görünen depolama alanından yedek ZIP'i seçin. Bölünmüş yedek için aynı yedeğin tüm dosyaları gerekir.\n\nGeri yükleme mevcut verileri yedekle değiştirir; önce mevcut verilerinizi de yedekleyin.\n\nEski Google Drive kopyaları: Önceki bir sürüm appDataFolder içinde yedek oluşturduysa bu, mevcut sürümün ZIP dosyasından ayrı bir haricî kopyadır. Uygulamayı sıfırlamak veya kaldırmak bu kopyayı silmez. 1.0.0(17) sürümü bu kopya için doğrudan yedekleme, geri yükleme veya yönetim sunmaz. Kopyanın sahibi olan Google hesabında yönetme veya silme işlemleri için Google'ın resmî talimatlarına bakın. https://support.google.com/drive/answer/6374270",
+              "body": "Ayarlar > Yedekleme ve Geri Yükleme\n\nCihaz yedek listeden geri yükle: Bu cihazda kayıtlı yedek listesinden seç.\n\nSD kart veya USB’den geri yükle: Bağlı bir SD karttan veya USB depolama cihazından yedek klasörü seç.\n\nYedekleme dosyalarını içe aktar: Cihazdan veya dosya seçicide görünen depolama alanından yedek ZIP'i seçin. Bölünmüş yedek için aynı yedeğin tüm dosyaları gerekir.\n\nGeri yükleme mevcut verileri yedekle değiştirir; önce mevcut verilerinizi de yedekleyin.\n\nEski Google Drive kopyaları: Önceki bir sürüm appDataFolder içinde yedek oluşturduysa bu, mevcut sürümün ZIP dosyasından ayrı bir haricî kopyadır. Uygulamayı sıfırlamak veya kaldırmak bu kopyayı silmez. Bu sürüm bu kopya için doğrudan yedekleme, geri yükleme veya yönetim sunmaz. Kopyanın sahibi olan Google hesabında yönetme veya silme işlemleri için Google'ın resmî talimatlarına bakın. https://support.google.com/drive/answer/6374270",
               "notice": null,
               "icon": {
                 "name": "restore_outlined",
@@ -21284,7 +21284,7 @@
             {
               "id": "data-usage",
               "title": "Veri Kullanımı",
-              "body": "Veri kullanımı tercihinizi kaydedin. 1.0.0(17) sürümü yedekleri doğrudan yüklemez. Bu ayar paylaşım menüsünde seçtiğiniz başka bir uygulamanın Wi-Fi veya mobil veri kullanımını kontrol etmez.",
+              "body": "Veri kullanımı tercihinizi kaydedin. Bu sürüm yedekleri doğrudan yüklemez. Bu ayar paylaşım menüsünde seçtiğiniz başka bir uygulamanın Wi-Fi veya mobil veri kullanımını kontrol etmez.",
               "notice": null,
               "icon": {
                 "name": "wifi",
@@ -22833,7 +22833,7 @@
             {
               "id": "restore",
               "title": "استعادة",
-              "body": "الإعدادات > النسخ الاحتياطي والاستعادة\n\nاستعادة من قائمة نُسخ الجهاز الاحتياطية: اختر من قائمة النسخ الاحتياطية المحفوظة على هذا الجهاز.\n\nاستعادة من SD أو USB: اختر مجلد نسخة احتياطية من بطاقة SD أو جهاز تخزين USB متصل.\n\nاستيراد ملفات النسخة الاحتياطية: اختر ملف ZIP الاحتياطي من الجهاز أو من موقع التخزين الظاهر في أداة اختيار الملفات. تتطلب النسخة المقسّمة جميع ملفات النسخة نفسها.\n\nتستبدل الاستعادة بيانات التطبيق الحالية بالنسخة الاحتياطية، لذا انسخ البيانات الحالية أولًا.\n\nنسخ Google Drive من إصدارات سابقة: إذا أنشأ إصدار سابق نسخة احتياطية في appDataFolder، فهي نسخة خارجية منفصلة عن ملف ZIP في الإصدار الحالي. لا تؤدي إعادة ضبط التطبيق أو إزالته إلى حذف تلك النسخة. لا يوفر الإصدار 1.0.0(17) نسخها احتياطيًا أو استعادتها أو إدارتها مباشرة. راجع تعليمات Google الرسمية لإدارتها أو حذفها في حساب Google الذي يملكها. https://support.google.com/drive/answer/6374270",
+              "body": "الإعدادات > النسخ الاحتياطي والاستعادة\n\nاستعادة من قائمة نُسخ الجهاز الاحتياطية: اختر من قائمة النسخ الاحتياطية المحفوظة على هذا الجهاز.\n\nاستعادة من SD أو USB: اختر مجلد نسخة احتياطية من بطاقة SD أو جهاز تخزين USB متصل.\n\nاستيراد ملفات النسخة الاحتياطية: اختر ملف ZIP الاحتياطي من الجهاز أو من موقع التخزين الظاهر في أداة اختيار الملفات. تتطلب النسخة المقسّمة جميع ملفات النسخة نفسها.\n\nتستبدل الاستعادة بيانات التطبيق الحالية بالنسخة الاحتياطية، لذا انسخ البيانات الحالية أولًا.\n\nنسخ Google Drive من إصدارات سابقة: إذا أنشأ إصدار سابق نسخة احتياطية في appDataFolder، فهي نسخة خارجية منفصلة عن ملف ZIP في الإصدار الحالي. لا تؤدي إعادة ضبط التطبيق أو إزالته إلى حذف تلك النسخة. لا يوفر هذا الإصدار نسخها احتياطيًا أو استعادتها أو إدارتها مباشرة. راجع تعليمات Google الرسمية لإدارتها أو حذفها في حساب Google الذي يملكها. https://support.google.com/drive/answer/6374270",
               "notice": null,
               "icon": {
                 "name": "restore_outlined",
@@ -22924,7 +22924,7 @@
             {
               "id": "data-usage",
               "title": "استخدام البيانات",
-              "body": "احفظ تفضيل استخدام البيانات. لا يرفع الإصدار 1.0.0(17) النسخ الاحتياطية مباشرة. لا يتحكم هذا الإعداد في استخدام Wi-Fi أو بيانات الهاتف في تطبيق آخر تختاره من قائمة المشاركة.",
+              "body": "احفظ تفضيل استخدام البيانات. لا يرفع هذا الإصدار النسخ الاحتياطية مباشرة. لا يتحكم هذا الإعداد في استخدام Wi-Fi أو بيانات الهاتف في تطبيق آخر تختاره من قائمة المشاركة.",
               "notice": null,
               "icon": {
                 "name": "wifi",
@@ -24473,7 +24473,7 @@
             {
               "id": "restore",
               "title": "Ripristina",
-              "body": "Impostazioni > Backup e ripristino\n\nRipristina dall’elenco backup del dispositivo: Scegli dall’elenco dei backup salvati su questo dispositivo.\n\nRipristina da scheda SD o USB: Scegli una cartella di backup da una scheda SD o dispositivo USB collegato.\n\nImporta file di backup: Scegli lo ZIP di backup sul dispositivo o da una posizione mostrata nel selettore file. Un backup suddiviso richiede tutti i file dello stesso backup.\n\nIl ripristino sostituisce i dati attuali con il backup, quindi salva prima anche i dati attuali.\n\nVecchie copie Google Drive: se una versione precedente ha creato un backup in appDataFolder, si tratta di una copia esterna distinta dallo ZIP della versione attuale. Reimpostare o disinstallare l’app non elimina tale copia. La versione 1.0.0(17) non ne consente il backup, il ripristino o la gestione diretta. Consultare le istruzioni ufficiali di Google per gestirla o eliminarla nell’account Google a cui appartiene. https://support.google.com/drive/answer/6374270",
+              "body": "Impostazioni > Backup e ripristino\n\nRipristina dall’elenco backup del dispositivo: Scegli dall’elenco dei backup salvati su questo dispositivo.\n\nRipristina da scheda SD o USB: Scegli una cartella di backup da una scheda SD o dispositivo USB collegato.\n\nImporta file di backup: Scegli lo ZIP di backup sul dispositivo o da una posizione mostrata nel selettore file. Un backup suddiviso richiede tutti i file dello stesso backup.\n\nIl ripristino sostituisce i dati attuali con il backup, quindi salva prima anche i dati attuali.\n\nVecchie copie Google Drive: se una versione precedente ha creato un backup in appDataFolder, si tratta di una copia esterna distinta dallo ZIP della versione attuale. Reimpostare o disinstallare l’app non elimina tale copia. Questa versione non ne consente il backup, il ripristino o la gestione diretta. Consultare le istruzioni ufficiali di Google per gestirla o eliminarla nell’account Google a cui appartiene. https://support.google.com/drive/answer/6374270",
               "notice": null,
               "icon": {
                 "name": "restore_outlined",
@@ -24564,7 +24564,7 @@
             {
               "id": "data-usage",
               "title": "Utilizzo dei dati",
-              "body": "Salva la preferenza sull’uso dei dati. La versione 1.0.0(17) non carica direttamente i backup. Questa impostazione non controlla il Wi-Fi o i dati mobili di un’altra app scelta nel menu di condivisione.",
+              "body": "Salva la preferenza sull’uso dei dati. Questa versione non carica direttamente i backup. Questa impostazione non controlla il Wi-Fi o i dati mobili di un’altra app scelta nel menu di condivisione.",
               "notice": null,
               "icon": {
                 "name": "wifi",
@@ -26113,7 +26113,7 @@
             {
               "id": "restore",
               "title": "คืนค่า",
-              "body": "การตั้งค่า > สำรองและกู้คืน\n\nกู้คืนจากรายการข้อมูลสำรองในอุปกรณ์: เลือกจากรายการข้อมูลสำรองที่บันทึกไว้บนอุปกรณ์นี้\n\nกู้คืนจาก SD หรือ USB: เลือกโฟลเดอร์ข้อมูลสำรองจากการ์ด SD หรืออุปกรณ์เก็บข้อมูล USB ที่เชื่อมต่ออยู่\n\nนำเข้าไฟล์สำรอง: เลือกไฟล์ ZIP สำรองจากอุปกรณ์หรือพื้นที่จัดเก็บที่แสดงในตัวเลือกไฟล์ ข้อมูลสำรองแบบแบ่งไฟล์ต้องใช้ไฟล์ทุกส่วนจากชุดเดียวกัน\n\nการกู้คืนจะแทนที่ข้อมูลปัจจุบันด้วยข้อมูลสำรอง จึงควรสำรองข้อมูลปัจจุบันก่อน\n\nสำเนา Google Drive จากเวอร์ชันเก่า: หากเวอร์ชันก่อนหน้าสร้างข้อมูลสำรองใน appDataFolder ไว้ สำเนาภายนอกนั้นแยกจาก ZIP ของเวอร์ชันปัจจุบัน การรีเซ็ตหรือถอนการติดตั้งแอปไม่ลบสำเนานั้น เวอร์ชัน 1.0.0(17) ไม่มีฟังก์ชันสำรอง กู้คืน หรือจัดการสำเนานั้นโดยตรง โปรดดูคำแนะนำอย่างเป็นทางการของ Google สำหรับการจัดการหรือลบสำเนาในบัญชี Google ที่เป็นเจ้าของ https://support.google.com/drive/answer/6374270",
+              "body": "การตั้งค่า > สำรองและกู้คืน\n\nกู้คืนจากรายการข้อมูลสำรองในอุปกรณ์: เลือกจากรายการข้อมูลสำรองที่บันทึกไว้บนอุปกรณ์นี้\n\nกู้คืนจาก SD หรือ USB: เลือกโฟลเดอร์ข้อมูลสำรองจากการ์ด SD หรืออุปกรณ์เก็บข้อมูล USB ที่เชื่อมต่ออยู่\n\nนำเข้าไฟล์สำรอง: เลือกไฟล์ ZIP สำรองจากอุปกรณ์หรือพื้นที่จัดเก็บที่แสดงในตัวเลือกไฟล์ ข้อมูลสำรองแบบแบ่งไฟล์ต้องใช้ไฟล์ทุกส่วนจากชุดเดียวกัน\n\nการกู้คืนจะแทนที่ข้อมูลปัจจุบันด้วยข้อมูลสำรอง จึงควรสำรองข้อมูลปัจจุบันก่อน\n\nสำเนา Google Drive จากเวอร์ชันเก่า: หากเวอร์ชันก่อนหน้าสร้างข้อมูลสำรองใน appDataFolder ไว้ สำเนาภายนอกนั้นแยกจาก ZIP ของเวอร์ชันปัจจุบัน การรีเซ็ตหรือถอนการติดตั้งแอปไม่ลบสำเนานั้น เวอร์ชันนี้ ไม่มีฟังก์ชันสำรอง กู้คืน หรือจัดการสำเนานั้นโดยตรง โปรดดูคำแนะนำอย่างเป็นทางการของ Google สำหรับการจัดการหรือลบสำเนาในบัญชี Google ที่เป็นเจ้าของ https://support.google.com/drive/answer/6374270",
               "notice": null,
               "icon": {
                 "name": "restore_outlined",
@@ -26204,7 +26204,7 @@
             {
               "id": "data-usage",
               "title": "การใช้ข้อมูล",
-              "body": "บันทึกการตั้งค่าการใช้ข้อมูล เวอร์ชัน 1.0.0(17) ไม่อัปโหลดข้อมูลสำรองโดยตรง การตั้งค่านี้ไม่ควบคุม Wi-Fi หรือข้อมูลมือถือของแอปอื่นที่เลือกในเมนูแชร์",
+              "body": "บันทึกการตั้งค่าการใช้ข้อมูล เวอร์ชันนี้ ไม่อัปโหลดข้อมูลสำรองโดยตรง การตั้งค่านี้ไม่ควบคุม Wi-Fi หรือข้อมูลมือถือของแอปอื่นที่เลือกในเมนูแชร์",
               "notice": null,
               "icon": {
                 "name": "wifi",
@@ -26276,5 +26276,5 @@
       ]
     }
   },
-  "contentVersion": "9d4c5ac800f3864c"
+  "contentVersion": "cda85e714cfb0d2c"
 }

@@ -152,7 +152,7 @@ function resolveManual(appRoot) {
   const configuration = read('lib/config/app_build_environment.dart');
   if (!/static const bool directDriveEnabled\s*=\s*!isValidation\s*&&\s*appFlavor\s*!=\s*'production'\s*;/u.test(configuration)) throw Error('Review changed directDriveEnabled semantics');
   const validationDefinition = configuration.match(/static const bool isValidation\s*=([^;]+);/u)?.[1]?.replace(/\s+/gu, ' ').trim();
-  assert.equal(validationDefinition, 'appFlavor == deviceValidationFlavor || appFlavor == restorePolicyValidationFlavor || appFlavor == crashlyticsValidationFlavor || appFlavor == atomicValidationFlavor', 'Review changed validation flavor gate');
+  assert.equal(validationDefinition, 'appFlavor == deviceValidationFlavor || appFlavor == restorePolicyValidationFlavor || appFlavor == crashlyticsValidationFlavor || appFlavor == atomicValidationFlavor || appFlavor == v38ValidationFlavor', 'Review changed validation flavor gate');
   for (const flavor of ['deviceValidation', 'restorePolicyValidation', 'crashlyticsValidation', 'atomicValidation']) {
     assert.match(configuration, new RegExp(`static const String ${flavor}Flavor\\s*=\\s*'${flavor}'\\s*;`, 'u'));
   }
