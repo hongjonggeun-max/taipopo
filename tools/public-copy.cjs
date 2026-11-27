@@ -12,16 +12,10 @@ function publicManualChapters(chapters, code, arb) {
     if (feature.id === 'data-usage' && feature.body !== text.dataUsage) {
       throw Error(`App/public data-usage copy differs: ${code}`);
     }
-    const menus = {
-      'backup-device': ['backupFileSave', 'backupFileSaveSubtitle'],
-      'backup-external': ['externalStorageBackupAction', 'externalStorageBackupActionSubtitle'],
-      'backup-share': ['backupFileShare', 'backupFileShareSubtitle'],
-    };
-    if (menus[feature.id]) {
-      const [title, subtitle] = menus[feature.id];
-      feature.body = `${arb.settings} > ${arb.dataManagement} > ${arb[title]}\n${arb[subtitle]}`;
+    if (feature.id === 'restore') {
+      if (!arb.legacyDriveBackupNotice?.includes('appDataFolder')) throw Error(`Missing legacy Drive notice: ${code}`);
+      if (!feature.body.includes(arb.legacyDriveBackupNotice)) feature.body += `\n\n${arb.legacyDriveBackupNotice}`;
     }
-    if (feature.id === 'backup-share') feature.body += `\n\n${arb.backupFileDisclosure}`;
     if (feature.id === 'camera-gps-record') {
       feature.body = [`${arb.camera} → ${arb.cameraOptions} → ${arb.gpsLocationRecord}`, arb.cameraGpsUsageNotice, arb.gpsLocationRecordSubtitle, reviewedDisclosures[code].gpsCache].join('\n\n');
     }
@@ -39,16 +33,7 @@ function publicManualChapters(chapters, code, arb) {
       feature.body = arb.manualPurposeWorkplaceGpsAddress;
       feature.notice = null;
     }
-    if (feature.id === 'restore') {
-      feature.body = [
-        `${arb.settings} > ${arb.dataManagement}`,
-        `${arb.localRestoreSourceDevice}: ${arb.localRestoreDeviceActionSubtitle}`,
-        `${arb.localRestoreSourceExternal}: ${arb.localRestoreExternalActionSubtitle}`,
-        `${arb.externalBackupRestoreAction}: ${arb.externalBackupRestoreActionSubtitle}`,
-        arb.manualPurposeRestore.split('\n\n').slice(1).join('\n\n'),
-        arb.legacyDriveBackupNotice,
-      ].join('\n\n');
-    }
+
   }
   return result;
 }

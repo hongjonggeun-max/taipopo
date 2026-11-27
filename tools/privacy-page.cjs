@@ -127,12 +127,14 @@ function renderPolicy(policy) {
     for (const section of sections) section.lines = section.lines.map(line => line.replace(/\bmetadata\b/gu, '메타데이터(사진 부가정보)'));
   }
 
-  for (const [number, fields] of [[2, ['gpsChoice']], [5, ['currentBackup']], [6, ['crashDeletion']]]) {
+  for (const [number, fields] of [[2, ['gpsChoice']], [5, ['privacyBackupBuildGuidance']], [6, ['crashDeletion']]]) {
     const section = sections.find((entry) => entry.heading.startsWith(`${number}. `));
     if (!section || fields.some((field) => !review[field]?.trim())) {
       throw new Error(`Missing reviewed privacy details: ${policy.locale}/${number}`);
     }
-    section.lines.push('', ...fields.flatMap((field) => [review[field], '']));
+    section.lines.push('', ...fields.flatMap((field) => [
+      ...(field === 'privacyBackupBuildGuidance' ? review[field].split('\n') : [review[field]]), '',
+    ]));
   }
 
   if (!title || metadata.length < 3 || sections.length < 8) {

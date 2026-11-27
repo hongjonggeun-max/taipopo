@@ -1457,11 +1457,11 @@
             {
               "id": "backup",
               "title": "백업",
-              "body": "근무 기록과 사진, 설정을 별도 사본으로 보관하고 완료 결과를 확인합니다.",
+              "body": "설정에서 SD, USB (OTG), ZIP 중 하나를 엽니다. 백업 범위의 기본값은 모든 연도와 공용 데이터입니다. 새 백업은 연도를 선택할 수도 있습니다. 연결된 기록과 공용 데이터에는 다른 연도가 포함될 수 있습니다. 복원은 선택한 백업 묶음 전체에 적용됩니다.",
               "notice": null,
               "icon": {
-                "name": "archive_outlined",
-                "codePoint": 61058,
+                "name": "save_outlined",
+                "codePoint": 62260,
                 "color": "#1976F3",
                 "colorDark": "#1976F3",
                 "background": "transparent",
@@ -1470,12 +1470,12 @@
             },
             {
               "id": "backup-device",
-              "title": "기기에 백업",
-              "body": "설정 > 백업 및 복구 > 기기에 백업\n근무 기록, 설정, 사진 등을 백업 ZIP으로 기기에 보관합니다.",
+              "title": "SD · 백업 / 복원",
+              "body": "SD 또는 USB 화면에서 백업을 누르고 해당 저장장치의 폴더 하나를 선택합니다. 앱이 실제 저장장치 종류를 확인하며, 확인할 수 없는 폴더는 거부합니다. 생성된 백업 폴더의 파일을 모두 함께 보관하고, 이름을 바꾸거나 분할 파일을 개별 선택하지 마세요.",
               "notice": null,
               "icon": {
-                "name": "phone_android_outlined",
-                "codePoint": 62086,
+                "name": "sd_storage_outlined",
+                "codePoint": 62281,
                 "color": "#1976F3",
                 "colorDark": "#1976F3",
                 "background": "transparent",
@@ -1484,8 +1484,8 @@
             },
             {
               "id": "backup-external",
-              "title": "SD 카드·USB에 백업",
-              "body": "설정 > 백업 및 복구 > SD 카드·USB에 백업\n연결된 SD 카드나 USB 저장장치에 백업을 저장합니다.",
+              "title": "USB (OTG) · 백업 / 복원",
+              "body": "SD 또는 USB 화면에서 백업을 누르고 해당 저장장치의 폴더 하나를 선택합니다. 앱이 실제 저장장치 종류를 확인하며, 확인할 수 없는 폴더는 거부합니다. 생성된 백업 폴더의 파일을 모두 함께 보관하고, 이름을 바꾸거나 분할 파일을 개별 선택하지 마세요.",
               "notice": null,
               "icon": {
                 "name": "usb",
@@ -1498,8 +1498,8 @@
             },
             {
               "id": "backup-share",
-              "title": "외부 백업 만들기",
-              "body": "설정 > 백업 및 복구 > 외부 백업 만들기\n백업 ZIP을 만든 뒤 Android 공유창에서 보관할 앱을 선택하세요. 저장 상태는 선택한 앱에서 확인하세요. 분할 백업은 모든 파일을 함께 보관하세요.\n\n이 표준 ZIP은 백업 대상 업무 데이터, 설정, 사진 등의 암호화되지 않은 사본이며, 약관 확인·동의 기록은 포함하지 않습니다. 위치·촬영시각·기기정보 metadata가 포함될 수 있는 사진 원본과 근무지, 주소, 근무기록, 급여, 메모가 포함될 수 있습니다. 저장하거나 공유하면 선택한 사람 또는 앱이 열 수 있는 앱 외부 사본이 생성됩니다.",
+              "title": "ZIP · 백업 / 복원",
+              "body": "ZIP 화면에서 백업을 누르고 ZIP 파일 하나를 저장할 위치를 선택합니다. 공유는 그 파일을 다른 앱으로 전달하며, 받는 앱의 저장 완료를 확인하지는 않습니다. 복원할 때는 완전한 ZIP 파일 하나를 선택합니다. 앱이 내용을 자동으로 구분합니다.\n\n이 표준 ZIP은 백업 대상 업무 데이터, 설정, 사진 등의 암호화되지 않은 사본이며, 약관 확인·동의 기록은 포함하지 않습니다. 위치·촬영시각·기기정보 metadata가 포함될 수 있는 사진 원본과 근무지, 주소, 근무기록, 급여, 메모가 포함될 수 있습니다. 저장하거나 공유하면 선택한 사람 또는 앱이 열 수 있는 앱 외부 사본이 생성됩니다.",
               "notice": null,
               "icon": {
                 "name": "folder_zip_outlined",
@@ -1513,11 +1513,11 @@
             {
               "id": "restore",
               "title": "복원",
-              "body": "설정 > 백업 및 복구\n\n기기에서 복구: 이 기기에 저장된 백업 목록에서 선택합니다.\n\nSD 카드·USB에서 복구: 연결된 SD 카드나 USB에서 백업 폴더를 선택합니다.\n\n백업 파일 불러오기: 기기 또는 파일 선택기에 표시되는 저장소에서 백업 ZIP을 선택하세요. 분할 백업은 같은 백업의 모든 파일이 필요합니다.\n\nSD·USB에서는 “SD 카드·USB에서 복구”에서 백업 폴더를 고른 뒤, 해당 ZIP 파일들을 묶은 백업 한 세트를 선택합니다. 같은 세트의 모든 분할 파일을 함께 보관하세요. 누락·중복 등 문제가 확인된 세트는 선택할 수 없으며, 선택한 백업도 검사를 통과해야 교체 확인 단계로 넘어갑니다. 교체를 확정하기 전에 “취소”를 누르면 복원을 시작하지 않습니다. 실패·중단을 완료로 간주하지 말고 기록·금액·사진을 확인하세요.\n\n저장한 백업으로 현재 앱 데이터를 교체하므로 먼저 현재 데이터도 백업하세요.\n\n구버전 Google Drive 사본: 이전 버전에서 만든 appDataFolder 백업이 있다면 현재 버전의 ZIP과 별개인 외부 사본입니다. 앱 초기화나 삭제만으로 그 사본이 삭제되지는 않습니다. 이 버전은 해당 사본의 직접 백업·복원·관리 기능을 제공하지 않습니다. 해당 Google 계정에서 관리·삭제하는 방법은 Google 공식 안내를 확인하세요. https://support.google.com/drive/answer/6374270",
+              "body": "SD 또는 USB 복원은 폴더 하나를 선택한 뒤 목록에서 백업 묶음 하나를 선택합니다. ZIP 복원은 파일을 선택합니다. 앱이 묶음 전체와 파일을 검사한 뒤 확인 창을 한 번 표시합니다. 새 기록과 변경 없는 기록 수를 확인하고 복원을 누르세요.\n\n복원은 기존 기록을 유지하면서 기록을 추가합니다. 같은 ID의 내용이 같으면 건너뜁니다. ID 또는 파일의 내용이 충돌하면 변경을 적용하기 전에 전체 가져오기를 중단합니다. 기존 데이터에 추가할 때는 현재 설정을 유지하고, 빈 앱에는 백업의 설정을 적용합니다. 약관 수락, GPS 기록 선택, 진단 동의는 이전하지 않으며 현재 기기의 선택을 유지합니다. 저장된 사진 좌표, 원본 EXIF 정보, 업무 주소는 보존합니다.\n\n완료 메시지가 나올 때까지 저장장치를 연결한 채 기다린 뒤 화면을 나가거나 분리하세요. 이후 기록, 금액, 첨부파일을 확인하세요. 내부 저장공간이 부족하면 공간을 확보하고 다시 시도하세요. 복원이 중단되었다면 앱을 다시 열어 복구가 끝난 뒤 다른 변경을 하세요.\n\n이전 백업은 원본 그대로 보관하세요. 분할 백업은 개별 파일이 아니라 완전한 폴더를 하나의 묶음으로 선택합니다. 불완전하거나 손상되거나 서로 섞였거나 지원하지 않는 묶음은 거부합니다. 복원된 데이터를 확인할 때까지 원본 백업을 보관하세요.\n\n구버전 Google Drive 사본: 이전 버전에서 만든 appDataFolder 백업이 있다면 현재 버전의 ZIP과 별개인 외부 사본입니다. 앱 초기화나 삭제만으로 그 사본이 삭제되지는 않습니다. 이 버전은 해당 사본의 직접 백업·복원·관리 기능을 제공하지 않습니다. 해당 Google 계정에서 관리·삭제하는 방법은 Google 공식 안내를 확인하세요. https://support.google.com/drive/answer/6374270",
               "notice": null,
               "icon": {
-                "name": "restore_outlined",
-                "codePoint": 62232,
+                "name": "restore",
+                "codePoint": 58676,
                 "color": "#16C85C",
                 "colorDark": "#16C85C",
                 "background": "transparent",
@@ -3097,11 +3097,11 @@
             {
               "id": "backup",
               "title": "Backup",
-              "body": "Keep a separate copy of work records, photos and settings, and check completion.",
+              "body": "In Settings, open SD, USB (OTG), or ZIP. Backup range defaults to all years and shared data. You can choose a year for a new backup. Linked records and shared data may include other years. Restore always imports the whole selected backup set.",
               "notice": null,
               "icon": {
-                "name": "archive_outlined",
-                "codePoint": 61058,
+                "name": "save_outlined",
+                "codePoint": 62260,
                 "color": "#1976F3",
                 "colorDark": "#1976F3",
                 "background": "transparent",
@@ -3110,12 +3110,12 @@
             },
             {
               "id": "backup-device",
-              "title": "Back up to this device",
-              "body": "Settings > Backup & Restore > Back up to this device\nSave work records, settings, photos, and other data on your device as a backup ZIP.",
+              "title": "SD · Backup / Restore",
+              "body": "On the SD or USB page, tap Backup and choose one folder on that medium. The app checks the actual storage type and rejects a folder it cannot verify. Keep all files in the resulting backup folder together; do not rename or select individual parts.",
               "notice": null,
               "icon": {
-                "name": "phone_android_outlined",
-                "codePoint": 62086,
+                "name": "sd_storage_outlined",
+                "codePoint": 62281,
                 "color": "#1976F3",
                 "colorDark": "#1976F3",
                 "background": "transparent",
@@ -3124,8 +3124,8 @@
             },
             {
               "id": "backup-external",
-              "title": "Back up to SD card or USB",
-              "body": "Settings > Backup & Restore > Back up to SD card or USB\nSave the backup to a connected SD card or USB storage device.",
+              "title": "USB (OTG) · Backup / Restore",
+              "body": "On the SD or USB page, tap Backup and choose one folder on that medium. The app checks the actual storage type and rejects a folder it cannot verify. Keep all files in the resulting backup folder together; do not rename or select individual parts.",
               "notice": null,
               "icon": {
                 "name": "usb",
@@ -3138,8 +3138,8 @@
             },
             {
               "id": "backup-share",
-              "title": "Create external backup",
-              "body": "Settings > Backup & Restore > Create external backup\nAfter creating the backup ZIP, choose an app in the Android share sheet to keep it. Check the save status in the app you chose. Keep all files of a split backup together.\n\nThis standard ZIP is an unencrypted copy of the work data, settings, photos and other data included in the backup; it does not include Terms confirmation or acceptance records. It can include original photos and their location, capture-time, and device metadata, along with workplaces, addresses, work records, pay, and notes. Saving or sharing creates a copy outside the app that the selected person or app can open.",
+              "title": "ZIP · Backup / Restore",
+              "body": "On the ZIP page, tap Backup and choose where to save one ZIP file. Share opens another app with that file; it does not confirm that the receiving app saved it. To restore, choose one complete ZIP file. The app detects its contents automatically.\n\nThis standard ZIP is an unencrypted copy of the work data, settings, photos and other data included in the backup; it does not include Terms confirmation or acceptance records. It can include original photos and their location, capture-time, and device metadata, along with workplaces, addresses, work records, pay, and notes. Saving or sharing creates a copy outside the app that the selected person or app can open.",
               "notice": null,
               "icon": {
                 "name": "folder_zip_outlined",
@@ -3153,11 +3153,11 @@
             {
               "id": "restore",
               "title": "Restore",
-              "body": "Settings > Backup & Restore\n\nRestore from device backup list: Choose from the backup list saved on this device.\n\nRestore from SD card or USB: Choose a backup folder from a connected SD card or USB storage device.\n\nImport backup files: Choose the backup ZIP on your device or in storage shown by the file picker. A split backup requires every file from the same backup.\n\nFor SD or USB, open “Restore from SD card or USB”, choose the backup folder, then select one backup set that groups its ZIP files. Keep every part of the same set together. Sets with detected issues such as missing or duplicate parts cannot be selected; a selected backup must also pass validation before replacement confirmation. Choosing “Cancel” before confirming replacement does not start restoration. Do not treat a failure or interruption as completion; check records, amounts and photos.\n\nRestoring replaces current app data with the backup, so back up your current data first.\n\nOlder Google Drive copies: if an earlier version created an appDataFolder backup, it is an external copy separate from the current version's ZIP. Resetting or uninstalling the app does not delete that copy. This version does not directly back up, restore or manage it. See Google's official instructions for managing or deleting it in the Google account that owns it. https://support.google.com/drive/answer/6374270",
+              "body": "For SD or USB restore, choose one folder, then one backup set from the list. For ZIP restore, choose the file. The app checks the entire set and its files before showing one confirmation. Review the new and unchanged record counts, then tap Restore.\n\nRestore adds records and keeps existing records. The same ID with identical content is skipped. A conflicting ID or file stops the whole import before changes are applied. Existing settings are kept when adding to existing data; an empty app receives the backed-up settings. Terms acceptance, GPS recording choices, and diagnostic consent are not transferred; this device's choices are kept. Saved photo coordinates, original EXIF data, and work addresses are preserved.\n\nKeep the media connected and wait for the completion message before leaving or disconnecting it. Then check records, amounts, and attachments. If internal space is insufficient, free space and retry. After an interrupted restore, reopen the app so recovery can finish before further changes.\n\nKeep earlier backups unchanged. For a multipart backup, select its complete folder as one set, not individual parts. An incomplete, damaged, mixed, or unsupported set is rejected. Keep the original backup until the restored data has been checked.\n\nOlder Google Drive copies: if an earlier version created an appDataFolder backup, it is an external copy separate from the current version's ZIP. Resetting or uninstalling the app does not delete that copy. This version does not directly back up, restore or manage it. See Google's official instructions for managing or deleting it in the Google account that owns it. https://support.google.com/drive/answer/6374270",
               "notice": null,
               "icon": {
-                "name": "restore_outlined",
-                "codePoint": 62232,
+                "name": "restore",
+                "codePoint": 58676,
                 "color": "#16C85C",
                 "colorDark": "#16C85C",
                 "background": "transparent",
@@ -4737,11 +4737,11 @@
             {
               "id": "backup",
               "title": "备份",
-              "body": "将工作记录、照片和设置另存为备份副本，并确认完成结果。",
+              "body": "在设置中打开SD、USB (OTG)或ZIP。备份范围默认为所有年份和共享数据，也可为新备份选择某一年。关联记录和共享数据可能包含其他年份。恢复始终导入所选备份集的全部内容。",
               "notice": null,
               "icon": {
-                "name": "archive_outlined",
-                "codePoint": 61058,
+                "name": "save_outlined",
+                "codePoint": 62260,
                 "color": "#1976F3",
                 "colorDark": "#1976F3",
                 "background": "transparent",
@@ -4750,12 +4750,12 @@
             },
             {
               "id": "backup-device",
-              "title": "备份到此设备",
-              "body": "设置 > 备份与恢复 > 备份到此设备\n将工作记录、设置、照片等作为备份 ZIP 保存在设备上。",
+              "title": "SD · 备份 / 恢复",
+              "body": "在SD或USB页面点击备份，选择该存储设备上的一个文件夹。应用会核实实际设备类型，并拒绝无法核实的文件夹。请将生成的备份文件夹中的所有文件一起保存，不要重命名或单独选择分卷文件。",
               "notice": null,
               "icon": {
-                "name": "phone_android_outlined",
-                "codePoint": 62086,
+                "name": "sd_storage_outlined",
+                "codePoint": 62281,
                 "color": "#1976F3",
                 "colorDark": "#1976F3",
                 "background": "transparent",
@@ -4764,8 +4764,8 @@
             },
             {
               "id": "backup-external",
-              "title": "备份到 SD 卡或 USB",
-              "body": "设置 > 备份与恢复 > 备份到 SD 卡或 USB\n将备份保存到已连接的 SD 卡或 USB 存储设备。",
+              "title": "USB (OTG) · 备份 / 恢复",
+              "body": "在SD或USB页面点击备份，选择该存储设备上的一个文件夹。应用会核实实际设备类型，并拒绝无法核实的文件夹。请将生成的备份文件夹中的所有文件一起保存，不要重命名或单独选择分卷文件。",
               "notice": null,
               "icon": {
                 "name": "usb",
@@ -4778,8 +4778,8 @@
             },
             {
               "id": "backup-share",
-              "title": "创建外部备份",
-              "body": "设置 > 备份与恢复 > 创建外部备份\n创建备份 ZIP 后，在 Android 分享面板中选择用于保存的应用。请在所选应用中确认保存状态。分卷备份的所有文件须一同保管。\n\n此标准 ZIP 是备份范围内的工作数据、设置、照片等数据的未加密副本，不包含条款确认或接受记录。它可能包含原始照片及其位置、拍摄时间和设备元数据，以及工作地点、地址、工作记录、工资和备注。保存或分享会在应用外创建一份副本，所选人员或应用可以打开。",
+              "title": "ZIP · 备份 / 恢复",
+              "body": "在ZIP页面点击备份，选择一个ZIP文件的保存位置。分享会将文件交给其他应用，但不确认接收应用已保存。恢复时选择一个完整的ZIP文件，应用会自动识别内容。\n\n此标准 ZIP 是备份范围内的工作数据、设置、照片等数据的未加密副本，不包含条款确认或接受记录。它可能包含原始照片及其位置、拍摄时间和设备元数据，以及工作地点、地址、工作记录、工资和备注。保存或分享会在应用外创建一份副本，所选人员或应用可以打开。",
               "notice": null,
               "icon": {
                 "name": "folder_zip_outlined",
@@ -4793,11 +4793,11 @@
             {
               "id": "restore",
               "title": "恢复",
-              "body": "设置 > 备份与恢复\n\n从设备备份列表恢复: 从此设备上保存的备份列表中选择。\n\n从 SD 卡或 USB 恢复: 从已连接的 SD 卡或 USB 存储设备中选择备份文件夹。\n\n导入备份文件: 在设备或文件选择器显示的存储位置中选择备份 ZIP。分卷备份需要同一备份的全部文件。\n\n使用SD或USB时，打开“从 SD 卡或 USB 恢复”，选择备份文件夹，再选择一个将相关ZIP文件归为一组的备份集。请将同一备份集的所有分卷放在一起。已发现缺失、重复等问题的备份集不可选择；选中的备份也必须通过检查，才能进入替换确认步骤。在确认替换前选择“取消”不会开始恢复。不要将失败或中断视为完成；请检查记录、金额和照片。\n\n恢复会用备份替换当前应用数据，请先备份现有数据。\n\n旧版本的 Google Drive 副本：如果先前版本曾创建 appDataFolder 备份，它是独立于当前版本 ZIP 的外部副本。重置或卸载应用不会删除该副本。此版本不提供对该副本的直接备份、恢复或管理功能。请参阅 Google 官方说明，在拥有该副本的 Google 账号中管理或删除。 https://support.google.com/drive/answer/6374270",
+              "body": "从SD或USB恢复时，先选择一个文件夹，再从列表中选择一个备份集。ZIP恢复则选择文件。应用检查整个备份集及其文件后，只显示一次确认。核对新增和未变更记录数，然后点击恢复。\n\n恢复会保留现有记录并添加记录。ID和内容均相同的记录会跳过。ID或文件内容冲突时，会在应用任何更改前停止整个导入。向现有数据添加时保留当前设置；空应用使用备份中的设置。 条款接受状态、GPS记录选择和诊断同意不会转移，将保留当前设备的选择。 已保存的照片坐标、原始EXIF信息和工作地址会保留。\n\n保持存储设备连接，等待完成消息后再离开页面或拔出设备。随后检查记录、金额和附件。内部空间不足时，请腾出空间后重试。恢复中断后，请重新打开应用，等待恢复处理完成再进行其他更改。\n\n请保持以前的备份原样。分卷备份应选择完整文件夹作为一个备份集，不要选择单独分卷。不完整、损坏、混合或不支持的备份集会被拒绝。确认恢复数据之前，请保留原始备份。\n\n旧版本的 Google Drive 副本：如果先前版本曾创建 appDataFolder 备份，它是独立于当前版本 ZIP 的外部副本。重置或卸载应用不会删除该副本。此版本不提供对该副本的直接备份、恢复或管理功能。请参阅 Google 官方说明，在拥有该副本的 Google 账号中管理或删除。 https://support.google.com/drive/answer/6374270",
               "notice": null,
               "icon": {
-                "name": "restore_outlined",
-                "codePoint": 62232,
+                "name": "restore",
+                "codePoint": 58676,
                 "color": "#16C85C",
                 "colorDark": "#16C85C",
                 "background": "transparent",
@@ -6377,11 +6377,11 @@
             {
               "id": "backup",
               "title": "バックアップ",
-              "body": "勤務記録・写真・設定のコピーを別に保管し、完了を確認します。",
+              "body": "設定でSD、USB (OTG)、ZIPのいずれかを開きます。バックアップ範囲の初期値は全年度と共有データです。新しいバックアップでは年度も選べます。関連する記録や共有データには別の年度が含まれる場合があります。復元は選択したバックアップ一式全体が対象です。",
               "notice": null,
               "icon": {
-                "name": "archive_outlined",
-                "codePoint": 61058,
+                "name": "save_outlined",
+                "codePoint": 62260,
                 "color": "#1976F3",
                 "colorDark": "#1976F3",
                 "background": "transparent",
@@ -6390,12 +6390,12 @@
             },
             {
               "id": "backup-device",
-              "title": "この端末にバックアップ",
-              "body": "設定 > バックアップと復元 > この端末にバックアップ\n勤務記録、設定、写真などをバックアップ ZIP として端末に保存します。",
+              "title": "SD · バックアップ / 復元",
+              "body": "SDまたはUSB画面でバックアップを押し、その媒体のフォルダーを1つ選びます。アプリは実際の媒体の種類を確認し、確認できないフォルダーを拒否します。作成されたフォルダーの全ファイルを一緒に保管し、名前の変更や分割ファイルの個別選択はしないでください。",
               "notice": null,
               "icon": {
-                "name": "phone_android_outlined",
-                "codePoint": 62086,
+                "name": "sd_storage_outlined",
+                "codePoint": 62281,
                 "color": "#1976F3",
                 "colorDark": "#1976F3",
                 "background": "transparent",
@@ -6404,8 +6404,8 @@
             },
             {
               "id": "backup-external",
-              "title": "SDカード・USBにバックアップ",
-              "body": "設定 > バックアップと復元 > SDカード・USBにバックアップ\n接続されたSDカードまたはUSBストレージにバックアップを保存します。",
+              "title": "USB (OTG) · バックアップ / 復元",
+              "body": "SDまたはUSB画面でバックアップを押し、その媒体のフォルダーを1つ選びます。アプリは実際の媒体の種類を確認し、確認できないフォルダーを拒否します。作成されたフォルダーの全ファイルを一緒に保管し、名前の変更や分割ファイルの個別選択はしないでください。",
               "notice": null,
               "icon": {
                 "name": "usb",
@@ -6418,8 +6418,8 @@
             },
             {
               "id": "backup-share",
-              "title": "外部バックアップを作成",
-              "body": "設定 > バックアップと復元 > 外部バックアップを作成\nバックアップ ZIP を作成したら、Android の共有画面で保存先のアプリを選びます。保存状況は選んだアプリで確認してください。分割バックアップの全ファイルはまとめて保管してください。\n\nこの標準ZIPは、バックアップ対象の業務データ、設定、写真などの暗号化されていないコピーであり、規約の確認・同意記録は含みません。元の写真とその位置情報、撮影時刻、端末メタデータのほか、勤務先、住所、勤務記録、給与、メモが含まれる場合があります。保存または共有すると、選択した相手またはアプリが開けるアプリ外のコピーが作成されます。",
+              "title": "ZIP · バックアップ / 復元",
+              "body": "ZIP画面でバックアップを押し、1つのZIPファイルの保存先を選びます。共有はそのファイルを別のアプリへ渡す操作で、受信側の保存完了を確認するものではありません。復元時は完全なZIPファイルを1つ選びます。内容は自動判別されます。\n\nこの標準ZIPは、バックアップ対象の業務データ、設定、写真などの暗号化されていないコピーであり、規約の確認・同意記録は含みません。元の写真とその位置情報、撮影時刻、端末メタデータのほか、勤務先、住所、勤務記録、給与、メモが含まれる場合があります。保存または共有すると、選択した相手またはアプリが開けるアプリ外のコピーが作成されます。",
               "notice": null,
               "icon": {
                 "name": "folder_zip_outlined",
@@ -6433,11 +6433,11 @@
             {
               "id": "restore",
               "title": "復元",
-              "body": "設定 > バックアップと復元\n\nデバイスのバックアップ一覧から復元: この端末に保存されたバックアップ一覧から選択します。\n\nSDカード・USBから復元: 接続されたSDカードまたはUSBストレージからバックアップフォルダを選択します。\n\nバックアップファイルを読み込む: 端末またはファイル選択画面に表示される保存先からバックアップ ZIP を選びます。分割バックアップでは、同じバックアップの全ファイルが必要です。\n\nSD・USBでは「SDカード・USBから復元」からバックアップフォルダーを選び、対象のZIPファイルをまとめたバックアップセットを1つ選びます。同じセットの分割ファイルはすべて一緒に保管してください。欠落・重複などの問題が見つかったセットは選択できず、選んだバックアップも検査に合格してから置き換え確認へ進みます。置き換えを確定する前に「キャンセル」を選ぶと、復元は開始しません。失敗・中断を完了とみなさず、記録・金額・写真を確認してください。\n\n復元すると現在のアプリデータがバックアップ内容に置き換わるため、先に現在のデータも保存してください。\n\n旧バージョンのGoogle Driveコピー：以前のバージョンで作成したappDataFolderバックアップがある場合、現在のバージョンのZIPとは別の外部コピーです。アプリの初期化やアンインストールだけでは削除されません。このバージョンでは、そのコピーの直接バックアップ・復元・管理機能を提供していません。所有するGoogleアカウントでの管理・削除方法はGoogleの公式案内をご確認ください。 https://support.google.com/drive/answer/6374270",
+              "body": "SDまたはUSBから復元する場合はフォルダーを1つ選び、一覧からバックアップ一式を1つ選びます。ZIPの場合はファイルを選びます。全体と各ファイルの検査後に確認画面が1回表示されます。新規と変更なしの記録数を確認して復元を押します。\n\n復元は既存の記録を残して記録を追加します。同じIDで内容も同じならスキップします。IDやファイルの内容が競合すると、変更前に取り込み全体を中止します。既存データへの追加では現在の設定を保ち、データのないアプリにはバックアップの設定を適用します。 利用規約への同意、GPS記録の選択、診断への同意は移行せず、この端末の選択を維持します。 保存済みの写真の座標、元のEXIF情報、業務の住所は保持されます。\n\n完了メッセージが出るまで媒体を接続したまま待ち、その後に画面を離れたり取り外したりしてください。記録、金額、添付ファイルを確認します。内部容量が足りない場合は空きを確保して再試行します。復元が中断した場合はアプリを開き直し、回復が終わってから変更してください。\n\n以前のバックアップは変更せず保管してください。分割バックアップでは個々のファイルではなく、完全なフォルダーを一式として選びます。不完全、破損、混在、非対応の一式は拒否されます。復元データを確認するまで元のバックアップを保管してください。\n\n旧バージョンのGoogle Driveコピー：以前のバージョンで作成したappDataFolderバックアップがある場合、現在のバージョンのZIPとは別の外部コピーです。アプリの初期化やアンインストールだけでは削除されません。このバージョンでは、そのコピーの直接バックアップ・復元・管理機能を提供していません。所有するGoogleアカウントでの管理・削除方法はGoogleの公式案内をご確認ください。 https://support.google.com/drive/answer/6374270",
               "notice": null,
               "icon": {
-                "name": "restore_outlined",
-                "codePoint": 62232,
+                "name": "restore",
+                "codePoint": 58676,
                 "color": "#16C85C",
                 "colorDark": "#16C85C",
                 "background": "transparent",
@@ -8017,11 +8017,11 @@
             {
               "id": "backup",
               "title": "बैकअप",
-              "body": "कार्य रिकॉर्ड, फ़ोटो और सेटिंग की अलग प्रति रखें और पूरा होना जाँचें।",
+              "body": "सेटिंग में SD, USB (OTG) या ZIP खोलें। डिफ़ॉल्ट बैकअप में सभी वर्ष और साझा डेटा शामिल हैं। नए बैकअप के लिए एक वर्ष चुन सकते हैं। जुड़े रिकॉर्ड में अन्य वर्ष भी शामिल हो सकते हैं। बहाली हमेशा चुने गए पूरे बैकअप सेट को आयात करती है।",
               "notice": null,
               "icon": {
-                "name": "archive_outlined",
-                "codePoint": 61058,
+                "name": "save_outlined",
+                "codePoint": 62260,
                 "color": "#1976F3",
                 "colorDark": "#1976F3",
                 "background": "transparent",
@@ -8030,12 +8030,12 @@
             },
             {
               "id": "backup-device",
-              "title": "इस डिवाइस पर बैकअप लें",
-              "body": "सेटिंग्स > बैकअप और पुनर्स्थापना > इस डिवाइस पर बैकअप लें\nकार्य रिकॉर्ड, सेटिंग, फ़ोटो और अन्य डेटा को अपने डिवाइस पर बैकअप ZIP के रूप में सहेजें।",
+              "title": "SD · बैकअप / पुनर्स्थापित करें",
+              "body": "SD या USB पेज पर बैकअप दबाएँ और उसी माध्यम का एक फ़ोल्डर चुनें। ऐप वास्तविक स्टोरेज प्रकार जाँचता है और सत्यापित न होने वाले फ़ोल्डर को अस्वीकार करता है। बने बैकअप फ़ोल्डर की सभी फ़ाइलें साथ रखें; नाम न बदलें और अलग-अलग हिस्से न चुनें।",
               "notice": null,
               "icon": {
-                "name": "phone_android_outlined",
-                "codePoint": 62086,
+                "name": "sd_storage_outlined",
+                "codePoint": 62281,
                 "color": "#1976F3",
                 "colorDark": "#1976F3",
                 "background": "transparent",
@@ -8044,8 +8044,8 @@
             },
             {
               "id": "backup-external",
-              "title": "SD कार्ड या USB पर बैकअप",
-              "body": "सेटिंग्स > बैकअप और पुनर्स्थापना > SD कार्ड या USB पर बैकअप\nकनेक्ट किए गए SD कार्ड या USB स्टोरेज डिवाइस पर बैकअप सहेजें।",
+              "title": "USB (OTG) · बैकअप / पुनर्स्थापित करें",
+              "body": "SD या USB पेज पर बैकअप दबाएँ और उसी माध्यम का एक फ़ोल्डर चुनें। ऐप वास्तविक स्टोरेज प्रकार जाँचता है और सत्यापित न होने वाले फ़ोल्डर को अस्वीकार करता है। बने बैकअप फ़ोल्डर की सभी फ़ाइलें साथ रखें; नाम न बदलें और अलग-अलग हिस्से न चुनें।",
               "notice": null,
               "icon": {
                 "name": "usb",
@@ -8058,8 +8058,8 @@
             },
             {
               "id": "backup-share",
-              "title": "बाहरी बैकअप बनाएँ",
-              "body": "सेटिंग्स > बैकअप और पुनर्स्थापना > बाहरी बैकअप बनाएँ\nबैकअप ZIP बनाने के बाद उसे सहेजने के लिए Android की शेयर शीट में ऐप चुनें। सहेजने की स्थिति उसी ऐप में देखें। कई हिस्सों वाले बैकअप की सभी फ़ाइलें साथ रखें।\n\nयह मानक ZIP बैकअप में शामिल कार्य डेटा, सेटिंग, फ़ोटो और अन्य डेटा की बिना एन्क्रिप्ट की गई प्रति है; इसमें शर्तों की पुष्टि या स्वीकृति के अभिलेख शामिल नहीं होते। इसमें मूल फ़ोटो और उनके स्थान, कैप्चर समय और डिवाइस मेटाडेटा के साथ कार्यस्थल, पते, कार्य रिकॉर्ड, वेतन और नोट शामिल हो सकते हैं। सहेजने या साझा करने पर ऐप के बाहर एक प्रति बनती है जिसे चुना गया व्यक्ति या ऐप खोल सकता है।",
+              "title": "ZIP · बैकअप / पुनर्स्थापित करें",
+              "body": "ZIP पेज पर बैकअप दबाएँ और एक ZIP फ़ाइल सहेजने का स्थान चुनें। शेयर फ़ाइल को दूसरे ऐप को देता है, लेकिन उस ऐप में सहेजे जाने की पुष्टि नहीं करता। बहाली के लिए एक पूरी ZIP फ़ाइल चुनें। ऐप सामग्री को अपने आप पहचानता है।\n\nयह मानक ZIP बैकअप में शामिल कार्य डेटा, सेटिंग, फ़ोटो और अन्य डेटा की बिना एन्क्रिप्ट की गई प्रति है; इसमें शर्तों की पुष्टि या स्वीकृति के अभिलेख शामिल नहीं होते। इसमें मूल फ़ोटो और उनके स्थान, कैप्चर समय और डिवाइस मेटाडेटा के साथ कार्यस्थल, पते, कार्य रिकॉर्ड, वेतन और नोट शामिल हो सकते हैं। सहेजने या साझा करने पर ऐप के बाहर एक प्रति बनती है जिसे चुना गया व्यक्ति या ऐप खोल सकता है।",
               "notice": null,
               "icon": {
                 "name": "folder_zip_outlined",
@@ -8073,11 +8073,11 @@
             {
               "id": "restore",
               "title": "पुनर्स्थापित करें",
-              "body": "सेटिंग्स > बैकअप और पुनर्स्थापना\n\nडिवाइस बैकअप सूची से पुनर्स्थापित करें: इस डिवाइस पर सहेजी गई बैकअप सूची से चुनें।\n\nSD कार्ड या USB से पुनर्स्थापित करें: कनेक्ट किए गए SD कार्ड या USB स्टोरेज डिवाइस से बैकअप फ़ोल्डर चुनें।\n\nबैकअप फ़ाइलें आयात करें: डिवाइस या फ़ाइल चयनकर्ता में दिखने वाले स्टोरेज से बैकअप ZIP चुनें। कई हिस्सों वाले बैकअप के लिए उसी बैकअप की सभी फ़ाइलें चाहिए।\n\nSD या USB के लिए “SD कार्ड या USB से पुनर्स्थापित करें” खोलें, बैकअप फ़ोल्डर चुनें और फिर ZIP फ़ाइलों को समूहित करने वाला एक बैकअप सेट चुनें। एक ही सेट के सभी भाग साथ रखें। गायब या दोहरे भाग जैसी समस्या वाले सेट नहीं चुने जा सकते; चुने गए बैकअप को भी प्रतिस्थापन की पुष्टि से पहले जाँच पास करनी होगी। पुष्टि से पहले “रद्द करें” चुनने पर बहाली शुरू नहीं होती। विफलता या रुकावट को पूर्ण होना न मानें; रिकॉर्ड, राशि और फ़ोटो जाँचें।\n\nपुनर्स्थापना मौजूदा डेटा को बैकअप से बदल देती है, इसलिए पहले मौजूदा डेटा का बैकअप लें।\n\nपुराने Google Drive प्रतिरूप: यदि किसी पुराने संस्करण ने appDataFolder में बैकअप बनाया था, तो वह वर्तमान संस्करण की ZIP से अलग एक बाहरी प्रतिरूप है। ऐप को रीसेट या अनइंस्टॉल करने से वह प्रतिरूप नहीं मिटता। यह संस्करण उसका सीधे बैकअप बनाने, उसे पुनर्स्थापित करने या उसका प्रबंधन करने की सुविधा नहीं देता। उसके स्वामी Google खाते में उसका प्रबंधन करने या उसे मिटाने के लिए Google के आधिकारिक निर्देश देखें। https://support.google.com/drive/answer/6374270",
+              "body": "SD या USB से बहाली के लिए एक फ़ोल्डर, फिर सूची से एक बैकअप सेट चुनें। ZIP के लिए फ़ाइल चुनें। ऐप पूरे सेट और फ़ाइलों की जाँच के बाद एक पुष्टि दिखाता है। नए और अपरिवर्तित रिकॉर्ड की संख्या देखकर बहाल करें दबाएँ।\n\nबहाली मौजूदा रिकॉर्ड रखते हुए नए रिकॉर्ड जोड़ती है। समान ID और समान सामग्री वाले रिकॉर्ड छोड़ दिए जाते हैं। ID या फ़ाइल में टकराव होने पर कोई बदलाव करने से पहले पूरा आयात रुक जाता है। मौजूदा डेटा में जोड़ते समय वर्तमान सेटिंग रहती हैं; खाली ऐप को बैकअप की सेटिंग मिलती हैं। शर्तों की स्वीकृति, GPS रिकॉर्ड करने का विकल्प और निदान की सहमति स्थानांतरित नहीं होती; इस डिवाइस के विकल्प बने रहते हैं। फ़ोटो के सहेजे गए निर्देशांक, मूल EXIF डेटा और काम के पते सुरक्षित रहते हैं।\n\nमाध्यम जुड़ा रखें और पेज छोड़ने या उसे निकालने से पहले पूरा होने का संदेश आने दें। फिर रिकॉर्ड, रकम और अटैचमेंट जाँचें। अंदरूनी जगह कम हो तो जगह खाली करके फिर कोशिश करें। बहाली बीच में रुके तो ऐप फिर खोलें और आगे बदलाव से पहले रिकवरी पूरी होने दें।\n\nपुराने बैकअप बिना बदले रखें। कई हिस्सों वाले बैकअप के लिए अलग हिस्सों के बजाय पूरा फ़ोल्डर एक सेट के रूप में चुनें। अधूरा, क्षतिग्रस्त, मिला-जुला या असमर्थित सेट अस्वीकार होगा। बहाल डेटा जाँचने तक मूल बैकअप रखें।\n\nपुराने Google Drive प्रतिरूप: यदि किसी पुराने संस्करण ने appDataFolder में बैकअप बनाया था, तो वह वर्तमान संस्करण की ZIP से अलग एक बाहरी प्रतिरूप है। ऐप को रीसेट या अनइंस्टॉल करने से वह प्रतिरूप नहीं मिटता। यह संस्करण उसका सीधे बैकअप बनाने, उसे पुनर्स्थापित करने या उसका प्रबंधन करने की सुविधा नहीं देता। उसके स्वामी Google खाते में उसका प्रबंधन करने या उसे मिटाने के लिए Google के आधिकारिक निर्देश देखें। https://support.google.com/drive/answer/6374270",
               "notice": null,
               "icon": {
-                "name": "restore_outlined",
-                "codePoint": 62232,
+                "name": "restore",
+                "codePoint": 58676,
                 "color": "#16C85C",
                 "colorDark": "#16C85C",
                 "background": "transparent",
@@ -9657,11 +9657,11 @@
             {
               "id": "backup",
               "title": "Cópia de segurança",
-              "body": "Guarde uma cópia separada dos registros, fotos e configurações e confira a conclusão.",
+              "body": "Nas Definições, abra SD, USB (OTG) ou ZIP. Por padrão, a cópia inclui todos os anos e os dados compartilhados. É possível escolher um ano para uma nova cópia. Registros vinculados podem incluir outros anos. A restauração sempre importa todo o conjunto selecionado.",
               "notice": null,
               "icon": {
-                "name": "archive_outlined",
-                "codePoint": 61058,
+                "name": "save_outlined",
+                "codePoint": 62260,
                 "color": "#1976F3",
                 "colorDark": "#1976F3",
                 "background": "transparent",
@@ -9670,12 +9670,12 @@
             },
             {
               "id": "backup-device",
-              "title": "Fazer backup neste dispositivo",
-              "body": "Configurações > Backup e restauração > Fazer backup neste dispositivo\nGuarde registros de trabalho, configurações, fotos e outros dados no dispositivo como um ZIP de backup.",
+              "title": "SD · Cópia de segurança / Restaurar",
+              "body": "Na página SD ou USB, toque em Backup e escolha uma pasta nesse dispositivo. O aplicativo verifica o tipo real de armazenamento e rejeita pastas que não consegue verificar. Mantenha juntos todos os arquivos da pasta criada, sem renomear nem selecionar partes individuais.",
               "notice": null,
               "icon": {
-                "name": "phone_android_outlined",
-                "codePoint": 62086,
+                "name": "sd_storage_outlined",
+                "codePoint": 62281,
                 "color": "#1976F3",
                 "colorDark": "#1976F3",
                 "background": "transparent",
@@ -9684,8 +9684,8 @@
             },
             {
               "id": "backup-external",
-              "title": "Backup em cartão SD ou USB",
-              "body": "Configurações > Backup e restauração > Backup em cartão SD ou USB\nSalve o backup em um cartão SD ou dispositivo USB conectado.",
+              "title": "USB (OTG) · Cópia de segurança / Restaurar",
+              "body": "Na página SD ou USB, toque em Backup e escolha uma pasta nesse dispositivo. O aplicativo verifica o tipo real de armazenamento e rejeita pastas que não consegue verificar. Mantenha juntos todos os arquivos da pasta criada, sem renomear nem selecionar partes individuais.",
               "notice": null,
               "icon": {
                 "name": "usb",
@@ -9698,8 +9698,8 @@
             },
             {
               "id": "backup-share",
-              "title": "Criar backup externo",
-              "body": "Configurações > Backup e restauração > Criar backup externo\nApós criar o ZIP de backup, escolha um app no menu de compartilhamento do Android para guardá-lo. Confira o status do salvamento no app escolhido. Guarde juntos todos os arquivos de um backup dividido.\n\nEste ZIP padrão é uma cópia não criptografada dos dados de trabalho, configurações, fotos e outros dados incluídos no backup; não inclui registros de confirmação ou aceitação dos Termos. Ele pode incluir fotos originais e metadados de localização, hora de captura e dispositivo, além de locais de trabalho, endereços, registros de trabalho, pagamento e notas. Ao salvar ou compartilhar, é criada uma cópia fora do app que a pessoa ou app selecionado pode abrir.",
+              "title": "ZIP · Cópia de segurança / Restaurar",
+              "body": "Na página ZIP, toque em Backup e escolha onde salvar um arquivo ZIP. Compartilhar entrega o arquivo a outro aplicativo, mas não confirma que ele o salvou. Para restaurar, escolha um ZIP completo. O conteúdo é identificado automaticamente.\n\nEste ZIP padrão é uma cópia não criptografada dos dados de trabalho, configurações, fotos e outros dados incluídos no backup; não inclui registros de confirmação ou aceitação dos Termos. Ele pode incluir fotos originais e metadados de localização, hora de captura e dispositivo, além de locais de trabalho, endereços, registros de trabalho, pagamento e notas. Ao salvar ou compartilhar, é criada uma cópia fora do app que a pessoa ou app selecionado pode abrir.",
               "notice": null,
               "icon": {
                 "name": "folder_zip_outlined",
@@ -9713,11 +9713,11 @@
             {
               "id": "restore",
               "title": "Restaurar",
-              "body": "Configurações > Backup e restauração\n\nRestaurar da lista de backups do dispositivo: Escolha na lista de backups salvos neste dispositivo.\n\nRestaurar de SD ou USB: Escolha uma pasta de backup em um cartão SD ou dispositivo USB conectado.\n\nImportar arquivos de backup: Selecione o ZIP de backup no dispositivo ou em um armazenamento exibido no seletor de arquivos. Um backup dividido exige todos os arquivos do mesmo backup.\n\nPara SD ou USB, abra “Restaurar de SD ou USB”, escolha a pasta e depois um conjunto de backup que agrupe seus arquivos ZIP. Mantenha juntas todas as partes do mesmo conjunto. Conjuntos com problemas detectados, como partes ausentes ou duplicadas, não podem ser selecionados; o backup escolhido também deve passar pela verificação antes da confirmação da substituição. Escolher “Cancelar” antes de confirmar não inicia a restauração. Não considere falha ou interrupção como conclusão; confira registros, valores e fotos.\n\nA restauração substitui os dados atuais pelo backup; faça antes uma cópia dos dados atuais.\n\nCópias antigas do Google Drive: se uma versão anterior criou um backup em appDataFolder, ele é uma cópia externa separada do ZIP da versão atual. Redefinir ou desinstalar o aplicativo não exclui essa cópia. Esta versão não oferece backup, restauração ou gerenciamento direto dessa cópia. Consulte as instruções oficiais do Google para gerenciá-la ou excluí-la na conta do Google à qual ela pertence. https://support.google.com/drive/answer/6374270",
+              "body": "Para SD ou USB, escolha uma pasta e depois um conjunto de backup da lista. Para ZIP, escolha o arquivo. O aplicativo verifica todo o conjunto e seus arquivos antes de mostrar uma única confirmação. Confira as quantidades de registros novos e inalterados e toque em Restaurar.\n\nA restauração adiciona registros e mantém os existentes. O mesmo ID com conteúdo idêntico é ignorado. Um conflito de ID ou arquivo interrompe toda a importação antes de qualquer alteração. Ao adicionar a dados existentes, as configurações atuais são mantidas; um aplicativo vazio recebe as configurações do backup. A aceitação dos termos, a opção de registrar GPS e o consentimento para diagnósticos não são transferidos; as escolhas deste dispositivo são mantidas. As coordenadas salvas das fotos, os dados EXIF originais e os endereços de trabalho são preservados.\n\nMantenha o dispositivo conectado e espere a mensagem de conclusão antes de sair ou desconectá-lo. Depois confira registros, valores e anexos. Se faltar espaço interno, libere espaço e tente novamente. Após uma interrupção, reabra o aplicativo e aguarde a recuperação antes de fazer alterações.\n\nMantenha os backups anteriores intactos. Para um backup dividido, selecione a pasta completa como um conjunto, não partes individuais. Conjuntos incompletos, danificados, misturados ou incompatíveis são rejeitados. Guarde o original até conferir os dados restaurados.\n\nCópias antigas do Google Drive: se uma versão anterior criou um backup em appDataFolder, ele é uma cópia externa separada do ZIP da versão atual. Redefinir ou desinstalar o aplicativo não exclui essa cópia. Esta versão não oferece backup, restauração ou gerenciamento direto dessa cópia. Consulte as instruções oficiais do Google para gerenciá-la ou excluí-la na conta do Google à qual ela pertence. https://support.google.com/drive/answer/6374270",
               "notice": null,
               "icon": {
-                "name": "restore_outlined",
-                "codePoint": 62232,
+                "name": "restore",
+                "codePoint": 58676,
                 "color": "#16C85C",
                 "colorDark": "#16C85C",
                 "background": "transparent",
@@ -11297,11 +11297,11 @@
             {
               "id": "backup",
               "title": "Copia de seguridad",
-              "body": "Guarda una copia separada de registros, fotos y ajustes y comprueba que se complete.",
+              "body": "En Ajustes, abra SD, USB (OTG) o ZIP. El alcance predeterminado incluye todos los años y los datos compartidos. Puede elegir un año para una nueva copia. Los registros vinculados pueden abarcar otros años. Restaurar siempre importa el conjunto seleccionado completo.",
               "notice": null,
               "icon": {
-                "name": "archive_outlined",
-                "codePoint": 61058,
+                "name": "save_outlined",
+                "codePoint": 62260,
                 "color": "#1976F3",
                 "colorDark": "#1976F3",
                 "background": "transparent",
@@ -11310,12 +11310,12 @@
             },
             {
               "id": "backup-device",
-              "title": "Hacer copia en este dispositivo",
-              "body": "Configuración > Copia de seguridad y restauración > Hacer copia en este dispositivo\nGuarda registros de trabajo, ajustes, fotos y otros datos en el dispositivo como un ZIP de copia de seguridad.",
+              "title": "SD · Copia de seguridad / Restaurar",
+              "body": "En la página SD o USB, pulse Copia de seguridad y elija una carpeta de ese medio. La aplicación comprueba el tipo real de almacenamiento y rechaza las carpetas que no puede verificar. Mantenga juntos todos los archivos de la carpeta creada; no cambie los nombres ni seleccione partes individuales.",
               "notice": null,
               "icon": {
-                "name": "phone_android_outlined",
-                "codePoint": 62086,
+                "name": "sd_storage_outlined",
+                "codePoint": 62281,
                 "color": "#1976F3",
                 "colorDark": "#1976F3",
                 "background": "transparent",
@@ -11324,8 +11324,8 @@
             },
             {
               "id": "backup-external",
-              "title": "Copia en tarjeta SD o USB",
-              "body": "Configuración > Copia de seguridad y restauración > Copia en tarjeta SD o USB\nGuarda la copia en una tarjeta SD o dispositivo USB conectado.",
+              "title": "USB (OTG) · Copia de seguridad / Restaurar",
+              "body": "En la página SD o USB, pulse Copia de seguridad y elija una carpeta de ese medio. La aplicación comprueba el tipo real de almacenamiento y rechaza las carpetas que no puede verificar. Mantenga juntos todos los archivos de la carpeta creada; no cambie los nombres ni seleccione partes individuales.",
               "notice": null,
               "icon": {
                 "name": "usb",
@@ -11338,8 +11338,8 @@
             },
             {
               "id": "backup-share",
-              "title": "Crear copia de seguridad externa",
-              "body": "Configuración > Copia de seguridad y restauración > Crear copia de seguridad externa\nDespués de crear el ZIP, elige una aplicación en el menú para compartir de Android para guardarlo. Comprueba el estado del guardado en la aplicación elegida. Conserva juntos todos los archivos de una copia dividida.\n\nEste ZIP estándar es una copia sin cifrar de los datos de trabajo, ajustes, fotos y demás datos incluidos en la copia de seguridad; no incluye registros de confirmación o aceptación de las Condiciones. Puede incluir fotos originales y sus metadatos de ubicación, hora de captura y dispositivo, junto con lugares de trabajo, direcciones, registros de trabajo, pagos y notas. Al guardar o compartir, se crea una copia fuera de la app que la persona o app seleccionada puede abrir.",
+              "title": "ZIP · Copia de seguridad / Restaurar",
+              "body": "En la página ZIP, pulse Copia de seguridad y elija dónde guardar un archivo ZIP. Compartir entrega el archivo a otra aplicación, pero no confirma que esta lo haya guardado. Para restaurar, elija un ZIP completo. Su contenido se detecta automáticamente.\n\nEste ZIP estándar es una copia sin cifrar de los datos de trabajo, ajustes, fotos y demás datos incluidos en la copia de seguridad; no incluye registros de confirmación o aceptación de las Condiciones. Puede incluir fotos originales y sus metadatos de ubicación, hora de captura y dispositivo, junto con lugares de trabajo, direcciones, registros de trabajo, pagos y notas. Al guardar o compartir, se crea una copia fuera de la app que la persona o app seleccionada puede abrir.",
               "notice": null,
               "icon": {
                 "name": "folder_zip_outlined",
@@ -11353,11 +11353,11 @@
             {
               "id": "restore",
               "title": "Restaurar",
-              "body": "Configuración > Copia de seguridad y restauración\n\nRestaurar desde la lista de copias del dispositivo: Elige de la lista de copias guardadas en este dispositivo.\n\nRestaurar desde SD o USB: Elige una carpeta de copia desde una tarjeta SD o dispositivo USB conectado.\n\nImportar archivos de copia de seguridad: Selecciona el ZIP en el dispositivo o en un almacenamiento que aparezca en el selector de archivos. Una copia dividida requiere todos los archivos de la misma copia.\n\nPara SD o USB, abra «Restaurar desde SD o USB», elija la carpeta y luego un conjunto de copia de seguridad que agrupe sus archivos ZIP. Guarde juntas todas las partes del mismo conjunto. No se pueden seleccionar conjuntos con problemas detectados, como partes ausentes o duplicadas; la copia seleccionada también debe superar la validación antes de confirmar la sustitución. Elegir «Cancelar» antes de confirmar no inicia la restauración. No considere un fallo o una interrupción como finalización; compruebe registros, importes y fotos.\n\nLa restauración sustituye los datos actuales por la copia; guarda antes los datos actuales.\n\nCopias antiguas de Google Drive: si una versión anterior creó una copia de seguridad en appDataFolder, es una copia externa distinta del ZIP de la versión actual. Restablecer o desinstalar la aplicación no elimina esa copia. Esta versión no permite realizar, restaurar ni administrar directamente esas copias. Consulte las instrucciones oficiales de Google para administrarlas o eliminarlas en la cuenta de Google a la que pertenecen. https://support.google.com/drive/answer/6374270",
+              "body": "Para restaurar desde SD o USB, elija una carpeta y luego un conjunto de la lista. Para ZIP, elija el archivo. La aplicación comprueba el conjunto completo y sus archivos antes de mostrar una única confirmación. Revise los recuentos de registros nuevos y sin cambios y pulse Restaurar.\n\nLa restauración añade registros y conserva los existentes. Se omiten los registros con el mismo ID y contenido idéntico. Un conflicto de ID o archivo detiene toda la importación antes de aplicar cambios. Al añadir a datos existentes se conservan los ajustes actuales; una aplicación vacía recibe los ajustes de la copia. La aceptación de las condiciones, la opción de registrar GPS y el consentimiento para diagnósticos no se transfieren; se mantienen las opciones de este dispositivo. Se conservan las coordenadas guardadas de las fotos, los datos EXIF originales y las direcciones de trabajo.\n\nMantenga el medio conectado y espere el mensaje de finalización antes de salir o desconectarlo. Después compruebe registros, importes y adjuntos. Si falta espacio interno, libérelo y vuelva a intentarlo. Tras una restauración interrumpida, abra de nuevo la aplicación y deje que termine la recuperación antes de hacer cambios.\n\nConserve intactas las copias anteriores. Para una copia dividida, seleccione la carpeta completa como un conjunto, no partes sueltas. Se rechazan los conjuntos incompletos, dañados, mezclados o no compatibles. Guarde la copia original hasta comprobar los datos restaurados.\n\nCopias antiguas de Google Drive: si una versión anterior creó una copia de seguridad en appDataFolder, es una copia externa distinta del ZIP de la versión actual. Restablecer o desinstalar la aplicación no elimina esa copia. Esta versión no permite realizar, restaurar ni administrar directamente esas copias. Consulte las instrucciones oficiales de Google para administrarlas o eliminarlas en la cuenta de Google a la que pertenecen. https://support.google.com/drive/answer/6374270",
               "notice": null,
               "icon": {
-                "name": "restore_outlined",
-                "codePoint": 62232,
+                "name": "restore",
+                "codePoint": 58676,
                 "color": "#16C85C",
                 "colorDark": "#16C85C",
                 "background": "transparent",
@@ -12937,11 +12937,11 @@
             {
               "id": "backup",
               "title": "Sauvegarde",
-              "body": "Conservez une copie des relevés, photos et réglages, puis vérifiez la fin de la sauvegarde.",
+              "body": "Dans les paramètres, ouvrez SD, USB (OTG) ou ZIP. Par défaut, la sauvegarde couvre toutes les années et les données communes. Vous pouvez choisir une année pour une nouvelle sauvegarde. Les enregistrements liés peuvent inclure d’autres années. La restauration importe toujours l’ensemble sélectionné en entier.",
               "notice": null,
               "icon": {
-                "name": "archive_outlined",
-                "codePoint": 61058,
+                "name": "save_outlined",
+                "codePoint": 62260,
                 "color": "#1976F3",
                 "colorDark": "#1976F3",
                 "background": "transparent",
@@ -12950,12 +12950,12 @@
             },
             {
               "id": "backup-device",
-              "title": "Sauvegarder sur cet appareil",
-              "body": "Paramètres > Sauvegarde et restauration > Sauvegarder sur cet appareil\nEnregistrez vos données de travail, réglages, photos et autres données dans un ZIP de sauvegarde sur l’appareil.",
+              "title": "SD · Sauvegarde / Restaurer",
+              "body": "Sur la page SD ou USB, touchez Sauvegarder et choisissez un dossier sur ce support. L’application vérifie le type réel du support et refuse un dossier non vérifiable. Conservez tous les fichiers du dossier de sauvegarde ensemble, sans renommer ni sélectionner les parties séparément.",
               "notice": null,
               "icon": {
-                "name": "phone_android_outlined",
-                "codePoint": 62086,
+                "name": "sd_storage_outlined",
+                "codePoint": 62281,
                 "color": "#1976F3",
                 "colorDark": "#1976F3",
                 "background": "transparent",
@@ -12964,8 +12964,8 @@
             },
             {
               "id": "backup-external",
-              "title": "Sauvegarde sur carte SD ou USB",
-              "body": "Paramètres > Sauvegarde et restauration > Sauvegarde sur carte SD ou USB\nEnregistre la sauvegarde sur une carte SD ou un périphérique USB connecté.",
+              "title": "USB (OTG) · Sauvegarde / Restaurer",
+              "body": "Sur la page SD ou USB, touchez Sauvegarder et choisissez un dossier sur ce support. L’application vérifie le type réel du support et refuse un dossier non vérifiable. Conservez tous les fichiers du dossier de sauvegarde ensemble, sans renommer ni sélectionner les parties séparément.",
               "notice": null,
               "icon": {
                 "name": "usb",
@@ -12978,8 +12978,8 @@
             },
             {
               "id": "backup-share",
-              "title": "Créer une sauvegarde externe",
-              "body": "Paramètres > Sauvegarde et restauration > Créer une sauvegarde externe\nAprès avoir créé le ZIP, choisissez une application dans le menu de partage Android pour le conserver. Vérifiez l’état de l’enregistrement dans l’application choisie. Conservez ensemble tous les fichiers d’une sauvegarde fractionnée.\n\nCe ZIP standard est une copie non chiffrée des données de travail, réglages, photos et autres données incluses dans la sauvegarde ; il ne contient pas les traces de confirmation ou d'acceptation des Conditions. Il peut inclure les photos originales et leurs métadonnées de lieu, d’heure de prise de vue et d’appareil, ainsi que les lieux de travail, adresses, relevés de travail, salaires et notes. L’enregistrement ou le partage crée une copie hors de l’application que la personne ou l’app sélectionnée peut ouvrir.",
+              "title": "ZIP · Sauvegarde / Restaurer",
+              "body": "Sur la page ZIP, touchez Sauvegarder et choisissez où enregistrer un fichier ZIP. Partager transmet le fichier à une autre application, sans confirmer son enregistrement par celle-ci. Pour restaurer, choisissez un ZIP complet. Son contenu est détecté automatiquement.\n\nCe ZIP standard est une copie non chiffrée des données de travail, réglages, photos et autres données incluses dans la sauvegarde ; il ne contient pas les traces de confirmation ou d'acceptation des Conditions. Il peut inclure les photos originales et leurs métadonnées de lieu, d’heure de prise de vue et d’appareil, ainsi que les lieux de travail, adresses, relevés de travail, salaires et notes. L’enregistrement ou le partage crée une copie hors de l’application que la personne ou l’app sélectionnée peut ouvrir.",
               "notice": null,
               "icon": {
                 "name": "folder_zip_outlined",
@@ -12993,11 +12993,11 @@
             {
               "id": "restore",
               "title": "Restaurer",
-              "body": "Paramètres > Sauvegarde et restauration\n\nRestaurer depuis la liste de sauvegardes de l’appareil: Choisissez dans la liste des sauvegardes enregistrées sur cet appareil.\n\nRestaurer depuis SD ou USB: Choisissez un dossier de sauvegarde depuis une carte SD ou un périphérique USB connecté.\n\nImporter les fichiers de sauvegarde: Sélectionnez le ZIP sur l’appareil ou dans un espace de stockage affiché par le sélecteur de fichiers. Une sauvegarde fractionnée nécessite tous les fichiers de la même sauvegarde.\n\nPour une carte SD ou une clé USB, ouvrez « Restaurer depuis SD ou USB », choisissez le dossier, puis un jeu de sauvegarde regroupant ses fichiers ZIP. Conservez ensemble toutes les parties du même jeu. Les jeux présentant des problèmes détectés, comme des parties manquantes ou en double, ne sont pas sélectionnables ; la sauvegarde choisie doit aussi être validée avant la confirmation du remplacement. Choisir « Annuler » avant de confirmer ne lance pas la restauration. Ne considérez pas un échec ou une interruption comme un achèvement ; vérifiez les enregistrements, montants et photos.\n\nLa restauration remplace les données actuelles par la sauvegarde ; sauvegardez d’abord vos données actuelles.\n\nAnciennes copies Google Drive : si une version antérieure a créé une sauvegarde dans appDataFolder, il s’agit d’une copie externe distincte du ZIP de la version actuelle. Réinitialiser ou désinstaller l’application ne supprime pas cette copie. Cette version ne permet pas de la sauvegarder, restaurer ou gérer directement. Consultez les instructions officielles de Google pour la gérer ou la supprimer dans le compte Google auquel elle appartient. https://support.google.com/drive/answer/6374270",
+              "body": "Pour SD ou USB, choisissez un dossier, puis un ensemble de sauvegarde dans la liste. Pour ZIP, choisissez le fichier. L’application vérifie tout l’ensemble et ses fichiers avant d’afficher une seule confirmation. Vérifiez le nombre d’enregistrements nouveaux et inchangés, puis touchez Restaurer.\n\nLa restauration ajoute des enregistrements et conserve ceux qui existent. Un même identifiant au contenu identique est ignoré. Un conflit d’identifiant ou de fichier arrête toute l’importation avant modification. Les réglages existants sont conservés lors d’un ajout ; une application vide reçoit ceux de la sauvegarde. L'acceptation des conditions, le choix d'enregistrer le GPS et le consentement aux diagnostics ne sont pas transférés ; les choix de cet appareil sont conservés. Les coordonnées enregistrées des photos, les données EXIF d'origine et les adresses de travail sont conservées.\n\nGardez le support connecté et attendez le message de fin avant de quitter la page ou de le débrancher. Vérifiez ensuite les enregistrements, montants et pièces jointes. Si l’espace interne manque, libérez-en et réessayez. Après une interruption, rouvrez l’application et laissez la récupération finir avant toute modification.\n\nConservez les anciennes sauvegardes sans les modifier. Pour une sauvegarde en plusieurs parties, sélectionnez le dossier complet comme un seul ensemble. Les ensembles incomplets, endommagés, mélangés ou non pris en charge sont refusés. Gardez l’original jusqu’à la vérification des données restaurées.\n\nAnciennes copies Google Drive : si une version antérieure a créé une sauvegarde dans appDataFolder, il s’agit d’une copie externe distincte du ZIP de la version actuelle. Réinitialiser ou désinstaller l’application ne supprime pas cette copie. Cette version ne permet pas de la sauvegarder, restaurer ou gérer directement. Consultez les instructions officielles de Google pour la gérer ou la supprimer dans le compte Google auquel elle appartient. https://support.google.com/drive/answer/6374270",
               "notice": null,
               "icon": {
-                "name": "restore_outlined",
-                "codePoint": 62232,
+                "name": "restore",
+                "codePoint": 58676,
                 "color": "#16C85C",
                 "colorDark": "#16C85C",
                 "background": "transparent",
@@ -14577,11 +14577,11 @@
             {
               "id": "backup",
               "title": "Sicherung",
-              "body": "Sichern Sie Arbeitseinträge, Fotos und Einstellungen separat und prüfen Sie den Abschluss.",
+              "body": "Öffnen Sie in den Einstellungen SD, USB (OTG) oder ZIP. Standardmäßig werden alle Jahre und gemeinsame Daten gesichert. Für eine neue Sicherung können Sie ein Jahr wählen. Verknüpfte Datensätze können andere Jahre umfassen. Die Wiederherstellung übernimmt immer den gesamten gewählten Sicherungssatz.",
               "notice": null,
               "icon": {
-                "name": "archive_outlined",
-                "codePoint": 61058,
+                "name": "save_outlined",
+                "codePoint": 62260,
                 "color": "#1976F3",
                 "colorDark": "#1976F3",
                 "background": "transparent",
@@ -14590,12 +14590,12 @@
             },
             {
               "id": "backup-device",
-              "title": "Auf diesem Gerät sichern",
-              "body": "Einstellungen > Sichern und Wiederherstellen > Auf diesem Gerät sichern\nSpeichern Sie Arbeitsaufzeichnungen, Einstellungen, Fotos und weitere Daten als Sicherungs-ZIP auf Ihrem Gerät.",
+              "title": "SD · Sicherung / Wiederherstellen",
+              "body": "Tippen Sie auf der SD- oder USB-Seite auf Sichern und wählen Sie einen Ordner auf diesem Medium. Die App prüft den tatsächlichen Medientyp und lehnt nicht überprüfbare Ordner ab. Bewahren Sie alle Dateien des Sicherungsordners zusammen auf. Benennen Sie keine Teile um und wählen Sie sie nicht einzeln aus.",
               "notice": null,
               "icon": {
-                "name": "phone_android_outlined",
-                "codePoint": 62086,
+                "name": "sd_storage_outlined",
+                "codePoint": 62281,
                 "color": "#1976F3",
                 "colorDark": "#1976F3",
                 "background": "transparent",
@@ -14604,8 +14604,8 @@
             },
             {
               "id": "backup-external",
-              "title": "Auf SD-Karte oder USB sichern",
-              "body": "Einstellungen > Sichern und Wiederherstellen > Auf SD-Karte oder USB sichern\nSpeichert die Sicherung auf einer verbundenen SD-Karte oder einem USB-Speichergerät.",
+              "title": "USB (OTG) · Sicherung / Wiederherstellen",
+              "body": "Tippen Sie auf der SD- oder USB-Seite auf Sichern und wählen Sie einen Ordner auf diesem Medium. Die App prüft den tatsächlichen Medientyp und lehnt nicht überprüfbare Ordner ab. Bewahren Sie alle Dateien des Sicherungsordners zusammen auf. Benennen Sie keine Teile um und wählen Sie sie nicht einzeln aus.",
               "notice": null,
               "icon": {
                 "name": "usb",
@@ -14618,8 +14618,8 @@
             },
             {
               "id": "backup-share",
-              "title": "Externe Sicherung erstellen",
-              "body": "Einstellungen > Sichern und Wiederherstellen > Externe Sicherung erstellen\nWählen Sie nach dem Erstellen der Sicherungs-ZIP im Android-Teilen-Menü eine App zum Speichern aus. Prüfen Sie den Speicherstatus in der ausgewählten App. Bewahren Sie alle Dateien einer geteilten Sicherung zusammen auf.\n\nDiese Standard-ZIP-Datei ist eine unverschlüsselte Kopie der für das Backup vorgesehenen Arbeitsdaten, Einstellungen, Fotos und weiterer gesicherter Daten; Bestätigungs- und Annahmeprotokolle zu den Bedingungen sind nicht enthalten. Sie kann Originalfotos mit Standort-, Aufnahmezeit- und Gerätemetadaten sowie Arbeitsorte, Adressen, Arbeitsaufzeichnungen, Lohnangaben und Notizen enthalten. Beim Speichern oder Teilen wird außerhalb der App eine Kopie erstellt, die die ausgewählte Person oder App öffnen kann.",
+              "title": "ZIP · Sicherung / Wiederherstellen",
+              "body": "Tippen Sie auf der ZIP-Seite auf Sichern und wählen Sie den Speicherort für eine ZIP-Datei. Teilen übergibt die Datei an eine andere App, bestätigt aber nicht deren Speicherung. Wählen Sie zur Wiederherstellung eine vollständige ZIP-Datei. Der Inhalt wird automatisch erkannt.\n\nDiese Standard-ZIP-Datei ist eine unverschlüsselte Kopie der für das Backup vorgesehenen Arbeitsdaten, Einstellungen, Fotos und weiterer gesicherter Daten; Bestätigungs- und Annahmeprotokolle zu den Bedingungen sind nicht enthalten. Sie kann Originalfotos mit Standort-, Aufnahmezeit- und Gerätemetadaten sowie Arbeitsorte, Adressen, Arbeitsaufzeichnungen, Lohnangaben und Notizen enthalten. Beim Speichern oder Teilen wird außerhalb der App eine Kopie erstellt, die die ausgewählte Person oder App öffnen kann.",
               "notice": null,
               "icon": {
                 "name": "folder_zip_outlined",
@@ -14633,11 +14633,11 @@
             {
               "id": "restore",
               "title": "Wiederherstellen",
-              "body": "Einstellungen > Sichern und Wiederherstellen\n\nAus Geräte-Backupliste wiederherstellen: Wähle aus der auf diesem Gerät gespeicherten Sicherungsliste.\n\nVon SD-Karte oder USB wiederherstellen: Wähle einen Sicherungsordner von einer verbundenen SD-Karte oder einem USB-Speichergerät.\n\nSicherungsdateien importieren: Wählen Sie die Sicherungs-ZIP auf dem Gerät oder an einem in der Dateiauswahl angezeigten Speicherort aus. Für eine geteilte Sicherung werden alle Dateien derselben Sicherung benötigt.\n\nÖffnen Sie für SD oder USB „Von SD-Karte oder USB wiederherstellen“, wählen Sie den Backup-Ordner und dann einen Backup-Satz, der seine ZIP-Dateien zusammenfasst. Bewahren Sie alle Teile desselben Satzes gemeinsam auf. Sätze mit erkannten Problemen wie fehlenden oder doppelten Teilen sind nicht auswählbar; auch ein ausgewähltes Backup muss die Prüfung erfolgreich bestehen, bevor die Bestätigung zum Ersetzen angezeigt wird. „Abbrechen“ vor dieser Bestätigung startet keine Wiederherstellung. Werten Sie Fehler oder Unterbrechungen nicht als Abschluss; prüfen Sie Datensätze, Beträge und Fotos.\n\nDie Wiederherstellung ersetzt aktuelle App-Daten durch die Sicherung; sichern Sie deshalb zuerst Ihre aktuellen Daten.\n\nÄltere Google-Drive-Kopien: Hat eine frühere Version ein Backup in appDataFolder erstellt, ist dies eine externe Kopie, getrennt von der ZIP-Datei der aktuellen Version. Zurücksetzen oder Deinstallieren der App löscht diese Kopie nicht. Diese Version bietet dafür keine direkte Sicherung, Wiederherstellung oder Verwaltung. Hinweise zur Verwaltung oder Löschung im zugehörigen Google-Konto finden Sie in der offiziellen Google-Anleitung. https://support.google.com/drive/answer/6374270",
+              "body": "Wählen Sie für SD oder USB zuerst einen Ordner und dann einen Sicherungssatz aus der Liste. Wählen Sie für ZIP die Datei. Nach Prüfung des gesamten Satzes und aller Dateien erscheint eine Bestätigung. Prüfen Sie die Anzahl neuer und unveränderter Datensätze und tippen Sie auf Wiederherstellen.\n\nDie Wiederherstellung fügt Datensätze hinzu und erhält vorhandene. Identische Inhalte mit derselben ID werden übersprungen. Abweichende Inhalte einer ID oder Datei stoppen den gesamten Import vor jeder Änderung. Bei vorhandenen Daten bleiben die Einstellungen erhalten; eine leere App übernimmt die gesicherten Einstellungen. Die Zustimmung zu den Nutzungsbedingungen, die Auswahl zur GPS-Aufzeichnung und die Diagnoseeinwilligung werden nicht übertragen; die Auswahl dieses Geräts bleibt erhalten. Gespeicherte Fotokoordinaten, ursprüngliche EXIF-Daten und Arbeitsadressen bleiben erhalten.\n\nLassen Sie das Medium angeschlossen und warten Sie auf die Abschlussmeldung, bevor Sie die Seite verlassen oder das Medium entfernen. Prüfen Sie danach Datensätze, Beträge und Anhänge. Bei zu wenig internem Speicher schaffen Sie Platz und versuchen es erneut. Öffnen Sie nach einer Unterbrechung die App erneut und warten Sie die Wiederherstellung ab, bevor Sie Änderungen vornehmen.\n\nBewahren Sie ältere Sicherungen unverändert auf. Wählen Sie bei mehrteiligen Sicherungen den vollständigen Ordner als einen Satz, nicht einzelne Teile. Unvollständige, beschädigte, vermischte oder nicht unterstützte Sätze werden abgelehnt. Behalten Sie das Original, bis Sie die wiederhergestellten Daten geprüft haben.\n\nÄltere Google-Drive-Kopien: Hat eine frühere Version ein Backup in appDataFolder erstellt, ist dies eine externe Kopie, getrennt von der ZIP-Datei der aktuellen Version. Zurücksetzen oder Deinstallieren der App löscht diese Kopie nicht. Diese Version bietet dafür keine direkte Sicherung, Wiederherstellung oder Verwaltung. Hinweise zur Verwaltung oder Löschung im zugehörigen Google-Konto finden Sie in der offiziellen Google-Anleitung. https://support.google.com/drive/answer/6374270",
               "notice": null,
               "icon": {
-                "name": "restore_outlined",
-                "codePoint": 62232,
+                "name": "restore",
+                "codePoint": 58676,
                 "color": "#16C85C",
                 "colorDark": "#16C85C",
                 "background": "transparent",
@@ -16217,11 +16217,11 @@
             {
               "id": "backup",
               "title": "Cadangan",
-              "body": "Simpan salinan terpisah catatan kerja, foto, dan pengaturan, lalu periksa penyelesaiannya.",
+              "body": "Di Pengaturan, buka SD, USB (OTG), atau ZIP. Rentang bawaan mencakup semua tahun dan data bersama. Anda dapat memilih tahun untuk cadangan baru. Catatan tertaut dapat mencakup tahun lain. Pemulihan selalu mengimpor seluruh kumpulan cadangan yang dipilih.",
               "notice": null,
               "icon": {
-                "name": "archive_outlined",
-                "codePoint": 61058,
+                "name": "save_outlined",
+                "codePoint": 62260,
                 "color": "#1976F3",
                 "colorDark": "#1976F3",
                 "background": "transparent",
@@ -16230,12 +16230,12 @@
             },
             {
               "id": "backup-device",
-              "title": "Cadangkan ke perangkat ini",
-              "body": "Pengaturan > Cadangkan & Pulihkan > Cadangkan ke perangkat ini\nSimpan catatan kerja, pengaturan, foto, dan data lain di perangkat sebagai ZIP cadangan.",
+              "title": "SD · Cadangan / Pulihkan",
+              "body": "Pada halaman SD atau USB, ketuk Cadangkan dan pilih satu folder pada media itu. Aplikasi memeriksa jenis media sebenarnya dan menolak folder yang tidak dapat diverifikasi. Simpan semua file dalam folder cadangan bersama-sama; jangan ganti nama atau pilih bagian secara terpisah.",
               "notice": null,
               "icon": {
-                "name": "phone_android_outlined",
-                "codePoint": 62086,
+                "name": "sd_storage_outlined",
+                "codePoint": 62281,
                 "color": "#1976F3",
                 "colorDark": "#1976F3",
                 "background": "transparent",
@@ -16244,8 +16244,8 @@
             },
             {
               "id": "backup-external",
-              "title": "Cadangkan ke kartu SD atau USB",
-              "body": "Pengaturan > Cadangkan & Pulihkan > Cadangkan ke kartu SD atau USB\nSimpan cadangan ke kartu SD atau perangkat penyimpanan USB yang terhubung.",
+              "title": "USB (OTG) · Cadangan / Pulihkan",
+              "body": "Pada halaman SD atau USB, ketuk Cadangkan dan pilih satu folder pada media itu. Aplikasi memeriksa jenis media sebenarnya dan menolak folder yang tidak dapat diverifikasi. Simpan semua file dalam folder cadangan bersama-sama; jangan ganti nama atau pilih bagian secara terpisah.",
               "notice": null,
               "icon": {
                 "name": "usb",
@@ -16258,8 +16258,8 @@
             },
             {
               "id": "backup-share",
-              "title": "Buat cadangan eksternal",
-              "body": "Pengaturan > Cadangkan & Pulihkan > Buat cadangan eksternal\nSetelah ZIP cadangan dibuat, pilih aplikasi untuk menyimpannya di menu berbagi Android. Periksa status penyimpanan di aplikasi pilihan Anda. Simpan semua file cadangan yang terbagi secara bersama-sama.\n\nZIP standar ini adalah salinan tanpa enkripsi dari data kerja, pengaturan, foto, dan data lain yang termasuk dalam cadangan; catatan konfirmasi atau penerimaan Ketentuan tidak disertakan. File ini dapat berisi foto asli beserta metadata lokasi, waktu pengambilan, dan perangkat, serta tempat kerja, alamat, catatan kerja, gaji, dan memo. Menyimpan atau membagikannya membuat salinan di luar aplikasi yang dapat dibuka oleh orang atau aplikasi yang dipilih.",
+              "title": "ZIP · Cadangan / Pulihkan",
+              "body": "Pada halaman ZIP, ketuk Cadangkan dan pilih tempat menyimpan satu file ZIP. Bagikan mengirim file ke aplikasi lain, tetapi tidak memastikan aplikasi penerima menyimpannya. Untuk memulihkan, pilih satu ZIP lengkap. Isinya dikenali otomatis.\n\nZIP standar ini adalah salinan tanpa enkripsi dari data kerja, pengaturan, foto, dan data lain yang termasuk dalam cadangan; catatan konfirmasi atau penerimaan Ketentuan tidak disertakan. File ini dapat berisi foto asli beserta metadata lokasi, waktu pengambilan, dan perangkat, serta tempat kerja, alamat, catatan kerja, gaji, dan memo. Menyimpan atau membagikannya membuat salinan di luar aplikasi yang dapat dibuka oleh orang atau aplikasi yang dipilih.",
               "notice": null,
               "icon": {
                 "name": "folder_zip_outlined",
@@ -16273,11 +16273,11 @@
             {
               "id": "restore",
               "title": "Pulihkan",
-              "body": "Pengaturan > Cadangkan & Pulihkan\n\nPulihkan dari daftar cadangan perangkat: Pilih dari daftar cadangan yang tersimpan di perangkat ini.\n\nPulihkan dari kartu SD atau USB: Pilih folder cadangan dari kartu SD atau perangkat penyimpanan USB yang terhubung.\n\nImpor file cadangan: Pilih ZIP cadangan dari perangkat atau penyimpanan yang tampil di pemilih file. Cadangan yang terbagi memerlukan semua file dari cadangan yang sama.\n\nUntuk SD atau USB, buka “Pulihkan dari kartu SD atau USB”, pilih folder cadangan, lalu satu set cadangan yang mengelompokkan file ZIP-nya. Simpan semua bagian dari set yang sama bersama-sama. Set dengan masalah terdeteksi, seperti bagian hilang atau ganda, tidak dapat dipilih; cadangan yang dipilih juga harus lolos pemeriksaan sebelum konfirmasi penggantian. Memilih “Batalkan” sebelum konfirmasi tidak memulai pemulihan. Jangan anggap kegagalan atau gangguan sebagai selesai; periksa catatan, jumlah uang, dan foto.\n\nPemulihan mengganti data aplikasi saat ini dengan cadangan, jadi cadangkan data saat ini terlebih dahulu.\n\nSalinan Google Drive versi lama: jika versi sebelumnya membuat cadangan di appDataFolder, salinan eksternal tersebut terpisah dari ZIP versi saat ini. Mereset atau menghapus aplikasi tidak menghapus salinan itu. Versi ini tidak menyediakan pencadangan, pemulihan, atau pengelolaan langsung untuk salinan tersebut. Lihat petunjuk resmi Google untuk mengelola atau menghapusnya di akun Google pemiliknya. https://support.google.com/drive/answer/6374270",
+              "body": "Untuk SD atau USB, pilih satu folder lalu satu kumpulan cadangan dari daftar. Untuk ZIP, pilih filenya. Aplikasi memeriksa seluruh kumpulan dan file sebelum menampilkan satu konfirmasi. Tinjau jumlah catatan baru dan tidak berubah, lalu ketuk Pulihkan.\n\nPemulihan menambahkan catatan dan mempertahankan catatan yang ada. ID yang sama dengan isi identik dilewati. Konflik ID atau file menghentikan seluruh impor sebelum perubahan diterapkan. Saat menambah ke data yang ada, pengaturan tetap dipertahankan; aplikasi kosong menerima pengaturan cadangan. Persetujuan ketentuan, pilihan perekaman GPS, dan persetujuan diagnostik tidak dipindahkan; pilihan di perangkat ini tetap dipertahankan. Koordinat foto yang tersimpan, data EXIF asli, dan alamat pekerjaan tetap dipertahankan.\n\nBiarkan media terhubung dan tunggu pesan selesai sebelum keluar atau mencabutnya. Setelah itu periksa catatan, jumlah uang, dan lampiran. Jika ruang internal kurang, kosongkan ruang dan coba lagi. Setelah pemulihan terputus, buka kembali aplikasi dan tunggu pemulihan selesai sebelum membuat perubahan.\n\nSimpan cadangan lama tanpa perubahan. Untuk cadangan terbagi, pilih folder lengkap sebagai satu kumpulan, bukan bagian terpisah. Kumpulan yang tidak lengkap, rusak, tercampur, atau tidak didukung akan ditolak. Simpan cadangan asli sampai data hasil pemulihan diperiksa.\n\nSalinan Google Drive versi lama: jika versi sebelumnya membuat cadangan di appDataFolder, salinan eksternal tersebut terpisah dari ZIP versi saat ini. Mereset atau menghapus aplikasi tidak menghapus salinan itu. Versi ini tidak menyediakan pencadangan, pemulihan, atau pengelolaan langsung untuk salinan tersebut. Lihat petunjuk resmi Google untuk mengelola atau menghapusnya di akun Google pemiliknya. https://support.google.com/drive/answer/6374270",
               "notice": null,
               "icon": {
-                "name": "restore_outlined",
-                "codePoint": 62232,
+                "name": "restore",
+                "codePoint": 58676,
                 "color": "#16C85C",
                 "colorDark": "#16C85C",
                 "background": "transparent",
@@ -17857,11 +17857,11 @@
             {
               "id": "backup",
               "title": "Sao lưu",
-              "body": "Lưu bản sao riêng của bản ghi, ảnh và cài đặt rồi kiểm tra hoàn tất.",
+              "body": "Trong Cài đặt, mở SD, USB (OTG) hoặc ZIP. Phạm vi mặc định gồm mọi năm và dữ liệu dùng chung. Bạn có thể chọn một năm cho bản sao lưu mới. Các bản ghi liên kết có thể thuộc năm khác. Khôi phục luôn nhập toàn bộ bộ sao lưu đã chọn.",
               "notice": null,
               "icon": {
-                "name": "archive_outlined",
-                "codePoint": 61058,
+                "name": "save_outlined",
+                "codePoint": 62260,
                 "color": "#1976F3",
                 "colorDark": "#1976F3",
                 "background": "transparent",
@@ -17870,12 +17870,12 @@
             },
             {
               "id": "backup-device",
-              "title": "Sao lưu vào thiết bị này",
-              "body": "Cài đặt > Sao lưu & Khôi phục > Sao lưu vào thiết bị này\nLưu hồ sơ công việc, cài đặt, ảnh và dữ liệu khác trên thiết bị dưới dạng tệp ZIP sao lưu.",
+              "title": "SD · Sao lưu / Khôi phục",
+              "body": "Trên trang SD hoặc USB, nhấn Sao lưu rồi chọn một thư mục trên thiết bị đó. Ứng dụng kiểm tra loại thiết bị thực tế và từ chối thư mục không thể xác minh. Giữ mọi tệp trong thư mục sao lưu cùng nhau; không đổi tên hay chọn riêng từng phần.",
               "notice": null,
               "icon": {
-                "name": "phone_android_outlined",
-                "codePoint": 62086,
+                "name": "sd_storage_outlined",
+                "codePoint": 62281,
                 "color": "#1976F3",
                 "colorDark": "#1976F3",
                 "background": "transparent",
@@ -17884,8 +17884,8 @@
             },
             {
               "id": "backup-external",
-              "title": "Sao lưu vào thẻ SD hoặc USB",
-              "body": "Cài đặt > Sao lưu & Khôi phục > Sao lưu vào thẻ SD hoặc USB\nLưu bản sao lưu vào thẻ SD hoặc thiết bị lưu trữ USB đã kết nối.",
+              "title": "USB (OTG) · Sao lưu / Khôi phục",
+              "body": "Trên trang SD hoặc USB, nhấn Sao lưu rồi chọn một thư mục trên thiết bị đó. Ứng dụng kiểm tra loại thiết bị thực tế và từ chối thư mục không thể xác minh. Giữ mọi tệp trong thư mục sao lưu cùng nhau; không đổi tên hay chọn riêng từng phần.",
               "notice": null,
               "icon": {
                 "name": "usb",
@@ -17898,8 +17898,8 @@
             },
             {
               "id": "backup-share",
-              "title": "Tạo bản sao lưu bên ngoài",
-              "body": "Cài đặt > Sao lưu & Khôi phục > Tạo bản sao lưu bên ngoài\nSau khi tạo tệp ZIP sao lưu, hãy chọn ứng dụng để lưu trong bảng chia sẻ Android. Kiểm tra trạng thái lưu trong ứng dụng đã chọn. Giữ tất cả các tệp của bản sao lưu chia nhiều phần cùng nhau.\n\nTệp ZIP tiêu chuẩn này là bản sao không được mã hóa của dữ liệu công việc, cài đặt, ảnh và dữ liệu khác thuộc phạm vi sao lưu; không bao gồm bản ghi xác nhận hoặc chấp nhận Điều khoản. Tệp có thể bao gồm ảnh gốc và siêu dữ liệu vị trí, thời gian chụp, thiết bị, cùng với nơi làm việc, địa chỉ, hồ sơ làm việc, tiền lương và ghi chú. Khi lưu hoặc chia sẻ, một bản sao bên ngoài ứng dụng sẽ được tạo và người hoặc ứng dụng được chọn có thể mở.",
+              "title": "ZIP · Sao lưu / Khôi phục",
+              "body": "Trên trang ZIP, nhấn Sao lưu và chọn nơi lưu một tệp ZIP. Chia sẻ chuyển tệp sang ứng dụng khác nhưng không xác nhận ứng dụng nhận đã lưu. Để khôi phục, chọn một tệp ZIP đầy đủ. Nội dung được nhận diện tự động.\n\nTệp ZIP tiêu chuẩn này là bản sao không được mã hóa của dữ liệu công việc, cài đặt, ảnh và dữ liệu khác thuộc phạm vi sao lưu; không bao gồm bản ghi xác nhận hoặc chấp nhận Điều khoản. Tệp có thể bao gồm ảnh gốc và siêu dữ liệu vị trí, thời gian chụp, thiết bị, cùng với nơi làm việc, địa chỉ, hồ sơ làm việc, tiền lương và ghi chú. Khi lưu hoặc chia sẻ, một bản sao bên ngoài ứng dụng sẽ được tạo và người hoặc ứng dụng được chọn có thể mở.",
               "notice": null,
               "icon": {
                 "name": "folder_zip_outlined",
@@ -17913,11 +17913,11 @@
             {
               "id": "restore",
               "title": "Khôi phục",
-              "body": "Cài đặt > Sao lưu & Khôi phục\n\nKhôi phục từ danh sách bản sao lưu trên thiết bị: Chọn từ danh sách sao lưu đã lưu trên thiết bị này.\n\nKhôi phục từ thẻ SD hoặc USB: Chọn thư mục sao lưu từ thẻ SD hoặc thiết bị lưu trữ USB đã kết nối.\n\nNhập tệp sao lưu: Chọn tệp ZIP sao lưu trên thiết bị hoặc trong bộ nhớ được hiển thị trong trình chọn tệp. Bản sao lưu chia nhiều phần cần tất cả các tệp của cùng một bản sao lưu.\n\nVới SD hoặc USB, mở “Khôi phục từ thẻ SD hoặc USB”, chọn thư mục sao lưu rồi chọn một bộ sao lưu gom các tệp ZIP của nó. Giữ cùng nhau mọi phần của cùng một bộ. Không thể chọn bộ có vấn đề đã phát hiện như thiếu hoặc trùng phần; bản đã chọn cũng phải vượt qua kiểm tra trước bước xác nhận thay thế. Chọn “Hủy bỏ” trước khi xác nhận sẽ không bắt đầu khôi phục. Đừng coi lỗi hoặc gián đoạn là hoàn tất; hãy kiểm tra bản ghi, số tiền và ảnh.\n\nKhôi phục sẽ thay dữ liệu hiện tại bằng bản sao lưu, vì vậy hãy sao lưu dữ liệu hiện tại trước.\n\nBản sao Google Drive từ phiên bản cũ: nếu phiên bản trước đã tạo bản sao lưu trong appDataFolder, đó là bản sao bên ngoài riêng biệt với ZIP của phiên bản hiện tại. Đặt lại hoặc gỡ cài đặt ứng dụng không xóa bản sao đó. Phiên bản này không cung cấp chức năng trực tiếp sao lưu, khôi phục hoặc quản lý bản sao này. Xem hướng dẫn chính thức của Google để quản lý hoặc xóa trong tài khoản Google sở hữu bản sao. https://support.google.com/drive/answer/6374270",
+              "body": "Với SD hoặc USB, chọn một thư mục rồi chọn một bộ sao lưu trong danh sách. Với ZIP, chọn tệp. Ứng dụng kiểm tra toàn bộ bộ sao lưu và các tệp trước khi hiển thị một lần xác nhận. Xem số bản ghi mới và không đổi rồi nhấn Khôi phục.\n\nKhôi phục thêm bản ghi và giữ nguyên bản ghi hiện có. Bản ghi có cùng ID và nội dung giống nhau được bỏ qua. Xung đột ID hoặc tệp sẽ dừng toàn bộ quá trình nhập trước khi thay đổi. Khi thêm vào dữ liệu hiện có, cài đặt được giữ lại; ứng dụng trống nhận cài đặt từ bản sao lưu. Việc chấp nhận điều khoản, lựa chọn ghi GPS và đồng ý chẩn đoán không được chuyển sang; các lựa chọn trên thiết bị này được giữ nguyên. Tọa độ ảnh đã lưu, dữ liệu EXIF gốc và địa chỉ công việc được giữ nguyên.\n\nGiữ kết nối thiết bị và chờ thông báo hoàn tất trước khi rời trang hoặc ngắt kết nối. Sau đó kiểm tra bản ghi, số tiền và tệp đính kèm. Nếu thiếu bộ nhớ trong, giải phóng dung lượng và thử lại. Sau khi khôi phục bị gián đoạn, mở lại ứng dụng và đợi phục hồi xong trước khi thay đổi tiếp.\n\nGiữ nguyên các bản sao lưu cũ. Với bản sao lưu nhiều phần, chọn cả thư mục thành một bộ, không chọn từng phần. Bộ không đầy đủ, hỏng, bị trộn hoặc không được hỗ trợ sẽ bị từ chối. Giữ bản gốc đến khi đã kiểm tra dữ liệu khôi phục.\n\nBản sao Google Drive từ phiên bản cũ: nếu phiên bản trước đã tạo bản sao lưu trong appDataFolder, đó là bản sao bên ngoài riêng biệt với ZIP của phiên bản hiện tại. Đặt lại hoặc gỡ cài đặt ứng dụng không xóa bản sao đó. Phiên bản này không cung cấp chức năng trực tiếp sao lưu, khôi phục hoặc quản lý bản sao này. Xem hướng dẫn chính thức của Google để quản lý hoặc xóa trong tài khoản Google sở hữu bản sao. https://support.google.com/drive/answer/6374270",
               "notice": null,
               "icon": {
-                "name": "restore_outlined",
-                "codePoint": 62232,
+                "name": "restore",
+                "codePoint": 58676,
                 "color": "#16C85C",
                 "colorDark": "#16C85C",
                 "background": "transparent",
@@ -19497,11 +19497,11 @@
             {
               "id": "backup",
               "title": "Резервное копирование",
-              "body": "Сохраняйте отдельную копию рабочих записей, фотографий и настроек и проверяйте завершение.",
+              "body": "В настройках откройте SD, USB (OTG) или ZIP. По умолчанию копируются все годы и общие данные. Для новой копии можно выбрать год. Связанные записи могут относиться к другим годам. При восстановлении всегда импортируется весь выбранный комплект.",
               "notice": null,
               "icon": {
-                "name": "archive_outlined",
-                "codePoint": 61058,
+                "name": "save_outlined",
+                "codePoint": 62260,
                 "color": "#1976F3",
                 "colorDark": "#1976F3",
                 "background": "transparent",
@@ -19510,12 +19510,12 @@
             },
             {
               "id": "backup-device",
-              "title": "Создать резервную копию на этом устройстве",
-              "body": "Настройки > Резервное копирование и восстановление > Создать резервную копию на этом устройстве\nСохраните рабочие записи, настройки, фотографии и другие данные на устройстве в виде резервного ZIP-архива.",
+              "title": "SD · Резервное копирование / Восстановить",
+              "body": "На странице SD или USB нажмите «Резервная копия» и выберите одну папку на носителе. Приложение проверяет фактический тип носителя и отклоняет непроверяемую папку. Храните все файлы созданной папки вместе. Не переименовывайте и не выбирайте отдельные части.",
               "notice": null,
               "icon": {
-                "name": "phone_android_outlined",
-                "codePoint": 62086,
+                "name": "sd_storage_outlined",
+                "codePoint": 62281,
                 "color": "#1976F3",
                 "colorDark": "#1976F3",
                 "background": "transparent",
@@ -19524,8 +19524,8 @@
             },
             {
               "id": "backup-external",
-              "title": "Резервная копия на SD-карту или USB",
-              "body": "Настройки > Резервное копирование и восстановление > Резервная копия на SD-карту или USB\nСохранить резервную копию на подключенную SD-карту или USB-накопитель.",
+              "title": "USB (OTG) · Резервное копирование / Восстановить",
+              "body": "На странице SD или USB нажмите «Резервная копия» и выберите одну папку на носителе. Приложение проверяет фактический тип носителя и отклоняет непроверяемую папку. Храните все файлы созданной папки вместе. Не переименовывайте и не выбирайте отдельные части.",
               "notice": null,
               "icon": {
                 "name": "usb",
@@ -19538,8 +19538,8 @@
             },
             {
               "id": "backup-share",
-              "title": "Создать внешнюю резервную копию",
-              "body": "Настройки > Резервное копирование и восстановление > Создать внешнюю резервную копию\nСоздав резервный ZIP, выберите приложение для его хранения в меню «Поделиться» Android. Проверьте, что сохранение завершено, в выбранном приложении. Храните все файлы разделённой копии вместе.\n\nЭтот стандартный ZIP-файл — незашифрованная копия рабочих данных, настроек, фотографий и других данных, включённых в резервную копию; записи о подтверждении или принятии Условий в него не входят. Он может содержать исходные фотографии и метаданные о местоположении, времени съемки и устройстве, а также места работы, адреса, записи о работе, оплату и заметки. При сохранении или отправке создается копия вне приложения, которую сможет открыть выбранный человек или приложение.",
+              "title": "ZIP · Резервное копирование / Восстановить",
+              "body": "На странице ZIP нажмите «Резервная копия» и выберите место для одного ZIP-файла. Отправка передаёт файл другому приложению, но не подтверждает его сохранение. Для восстановления выберите полный ZIP-файл. Содержимое определяется автоматически.\n\nЭтот стандартный ZIP-файл — незашифрованная копия рабочих данных, настроек, фотографий и других данных, включённых в резервную копию; записи о подтверждении или принятии Условий в него не входят. Он может содержать исходные фотографии и метаданные о местоположении, времени съемки и устройстве, а также места работы, адреса, записи о работе, оплату и заметки. При сохранении или отправке создается копия вне приложения, которую сможет открыть выбранный человек или приложение.",
               "notice": null,
               "icon": {
                 "name": "folder_zip_outlined",
@@ -19553,11 +19553,11 @@
             {
               "id": "restore",
               "title": "Восстановить",
-              "body": "Настройки > Резервное копирование и восстановление\n\nВосстановить из списка резервных копий устройства: Выберите из списка резервных копий, сохраненных на этом устройстве.\n\nВосстановить с SD или USB: Выберите папку резервной копии на подключенной SD-карте или USB-накопителе.\n\nИмпортировать файлы резервной копии: Выберите резервный ZIP на устройстве или в хранилище, которое отображается в окне выбора файлов. Для разделённой копии нужны все файлы одной и той же копии.\n\nДля SD или USB откройте «Восстановить с SD или USB», выберите папку, затем один комплект резервной копии, объединяющий его ZIP-файлы. Храните все части одного комплекта вместе. Комплекты с обнаруженными проблемами, например отсутствующими или повторяющимися частями, недоступны для выбора; выбранная копия также должна пройти проверку до подтверждения замены. Выбор «Отмена» до подтверждения не запускает восстановление. Не считайте сбой или прерывание завершением; проверьте записи, суммы и фотографии.\n\nВосстановление заменяет текущие данные приложения резервной копией, поэтому сначала сохраните и текущие данные.\n\nСтарые копии Google Диска: если предыдущая версия создала резервную копию в appDataFolder, это внешняя копия, отдельная от ZIP текущей версии. Сброс или удаление приложения не удаляет эту копию. Эта версия не предоставляет её прямое резервное копирование, восстановление или управление. Инструкции по управлению или удалению в аккаунте Google, которому она принадлежит, доступны в официальной справке Google. https://support.google.com/drive/answer/6374270",
+              "body": "Для SD или USB выберите папку, затем один комплект из списка. Для ZIP выберите файл. Приложение проверит весь комплект и файлы, затем покажет одно подтверждение. Проверьте число новых и неизменённых записей и нажмите «Восстановить».\n\nВосстановление добавляет записи, сохраняя существующие. Одинаковые ID с одинаковым содержимым пропускаются. Конфликт ID или файла останавливает весь импорт до внесения изменений. При добавлении к существующим данным настройки сохраняются; пустое приложение получает настройки из копии. Принятие условий, выбор записи GPS и согласие на диагностику не переносятся; сохраняются настройки выбора на этом устройстве. Сохранённые координаты фотографий, исходные данные EXIF и рабочие адреса сохраняются.\n\nНе отключайте носитель и дождитесь сообщения о завершении, прежде чем уходить со страницы. Затем проверьте записи, суммы и вложения. При нехватке внутренней памяти освободите место и повторите попытку. После прерывания откройте приложение снова и дождитесь восстановления перед новыми изменениями.\n\nСохраняйте прежние копии без изменений. Для многотомной копии выбирайте полную папку как один комплект, а не отдельные части. Неполные, повреждённые, смешанные или неподдерживаемые комплекты отклоняются. Храните оригинал до проверки восстановленных данных.\n\nСтарые копии Google Диска: если предыдущая версия создала резервную копию в appDataFolder, это внешняя копия, отдельная от ZIP текущей версии. Сброс или удаление приложения не удаляет эту копию. Эта версия не предоставляет её прямое резервное копирование, восстановление или управление. Инструкции по управлению или удалению в аккаунте Google, которому она принадлежит, доступны в официальной справке Google. https://support.google.com/drive/answer/6374270",
               "notice": null,
               "icon": {
-                "name": "restore_outlined",
-                "codePoint": 62232,
+                "name": "restore",
+                "codePoint": 58676,
                 "color": "#16C85C",
                 "colorDark": "#16C85C",
                 "background": "transparent",
@@ -21137,11 +21137,11 @@
             {
               "id": "backup",
               "title": "Yedekleme",
-              "body": "Çalışma kayıtları, fotoğraflar ve ayarların ayrı kopyasını saklayıp tamamlandığını kontrol edin.",
+              "body": "Ayarlar’da SD, USB (OTG) veya ZIP’i açın. Varsayılan yedek aralığı tüm yılları ve ortak verileri kapsar. Yeni yedek için bir yıl seçebilirsiniz. Bağlı kayıtlar başka yılları içerebilir. Geri yükleme her zaman seçilen yedek kümesinin tamamını içe aktarır.",
               "notice": null,
               "icon": {
-                "name": "archive_outlined",
-                "codePoint": 61058,
+                "name": "save_outlined",
+                "codePoint": 62260,
                 "color": "#1976F3",
                 "colorDark": "#1976F3",
                 "background": "transparent",
@@ -21150,12 +21150,12 @@
             },
             {
               "id": "backup-device",
-              "title": "Bu cihaza yedekle",
-              "body": "Ayarlar > Yedekleme ve Geri Yükleme > Bu cihaza yedekle\nİş kayıtlarını, ayarları, fotoğrafları ve diğer verileri cihazda yedek ZIP olarak saklayın.",
+              "title": "SD · Yedekleme / Geri yükle",
+              "body": "SD veya USB sayfasında Yedekle’ye dokunup o ortamda bir klasör seçin. Uygulama gerçek ortam türünü doğrular ve doğrulayamadığı klasörü reddeder. Oluşan yedek klasöründeki tüm dosyaları bir arada tutun; parçaları yeniden adlandırmayın veya tek tek seçmeyin.",
               "notice": null,
               "icon": {
-                "name": "phone_android_outlined",
-                "codePoint": 62086,
+                "name": "sd_storage_outlined",
+                "codePoint": 62281,
                 "color": "#1976F3",
                 "colorDark": "#1976F3",
                 "background": "transparent",
@@ -21164,8 +21164,8 @@
             },
             {
               "id": "backup-external",
-              "title": "SD karta veya USB’ye yedekle",
-              "body": "Ayarlar > Yedekleme ve Geri Yükleme > SD karta veya USB’ye yedekle\nYedeği bağlı bir SD karta veya USB depolama cihazına kaydet.",
+              "title": "USB (OTG) · Yedekleme / Geri yükle",
+              "body": "SD veya USB sayfasında Yedekle’ye dokunup o ortamda bir klasör seçin. Uygulama gerçek ortam türünü doğrular ve doğrulayamadığı klasörü reddeder. Oluşan yedek klasöründeki tüm dosyaları bir arada tutun; parçaları yeniden adlandırmayın veya tek tek seçmeyin.",
               "notice": null,
               "icon": {
                 "name": "usb",
@@ -21178,8 +21178,8 @@
             },
             {
               "id": "backup-share",
-              "title": "Harici yedek oluştur",
-              "body": "Ayarlar > Yedekleme ve Geri Yükleme > Harici yedek oluştur\nYedek ZIP'i oluşturduktan sonra saklamak için Android paylaşım menüsünden bir uygulama seçin. Kaydetme durumunu seçtiğiniz uygulamada kontrol edin. Bölünmüş bir yedeğin tüm dosyalarını birlikte saklayın.\n\nBu standart ZIP, yedeğe dâhil edilen iş verileri, ayarlar, fotoğraflar ve diğer verilerin şifrelenmemiş bir kopyasıdır; Koşulları onaylama veya kabul kayıtlarını içermez. Orijinal fotoğraflar ve bunların konum, çekim zamanı ve cihaz meta verilerinin yanı sıra iş yerleri, adresler, çalışma kayıtları, ücret ve notları içerebilir. Kaydetmek veya paylaşmak, seçilen kişi ya da uygulamanın açabileceği uygulama dışında bir kopya oluşturur.",
+              "title": "ZIP · Yedekleme / Geri yükle",
+              "body": "ZIP sayfasında Yedekle’ye dokunup tek bir ZIP dosyasının kaydedileceği yeri seçin. Paylaş, dosyayı başka bir uygulamaya iletir; alıcı uygulamanın kaydettiğini doğrulamaz. Geri yüklemek için tam bir ZIP dosyası seçin. İçerik otomatik algılanır.\n\nBu standart ZIP, yedeğe dâhil edilen iş verileri, ayarlar, fotoğraflar ve diğer verilerin şifrelenmemiş bir kopyasıdır; Koşulları onaylama veya kabul kayıtlarını içermez. Orijinal fotoğraflar ve bunların konum, çekim zamanı ve cihaz meta verilerinin yanı sıra iş yerleri, adresler, çalışma kayıtları, ücret ve notları içerebilir. Kaydetmek veya paylaşmak, seçilen kişi ya da uygulamanın açabileceği uygulama dışında bir kopya oluşturur.",
               "notice": null,
               "icon": {
                 "name": "folder_zip_outlined",
@@ -21193,11 +21193,11 @@
             {
               "id": "restore",
               "title": "Geri yükle",
-              "body": "Ayarlar > Yedekleme ve Geri Yükleme\n\nCihaz yedek listeden geri yükle: Bu cihazda kayıtlı yedek listesinden seç.\n\nSD kart veya USB’den geri yükle: Bağlı bir SD karttan veya USB depolama cihazından yedek klasörü seç.\n\nYedekleme dosyalarını içe aktar: Cihazdan veya dosya seçicide görünen depolama alanından yedek ZIP'i seçin. Bölünmüş yedek için aynı yedeğin tüm dosyaları gerekir.\n\nSD veya USB için “SD kart veya USB’den geri yükle” öğesini açın, yedek klasörünü ve ardından ZIP dosyalarını gruplayan tek bir yedek setini seçin. Aynı setin tüm parçalarını bir arada tutun. Eksik veya yinelenen parçalar gibi sorunlar saptanan setler seçilemez; seçilen yedek de değiştirme onayından önce doğrulamayı geçmelidir. Onaydan önce “İptal” seçilirse geri yükleme başlamaz. Hata veya kesintiyi tamamlanma saymayın; kayıtları, tutarları ve fotoğrafları kontrol edin.\n\nGeri yükleme mevcut verileri yedekle değiştirir; önce mevcut verilerinizi de yedekleyin.\n\nEski Google Drive kopyaları: Önceki bir sürüm appDataFolder içinde yedek oluşturduysa bu, mevcut sürümün ZIP dosyasından ayrı bir haricî kopyadır. Uygulamayı sıfırlamak veya kaldırmak bu kopyayı silmez. Bu sürüm bu kopya için doğrudan yedekleme, geri yükleme veya yönetim sunmaz. Kopyanın sahibi olan Google hesabında yönetme veya silme işlemleri için Google'ın resmî talimatlarına bakın. https://support.google.com/drive/answer/6374270",
+              "body": "SD veya USB’den geri yüklerken bir klasör, ardından listeden bir yedek kümesi seçin. ZIP için dosyayı seçin. Uygulama kümenin ve dosyaların tamamını denetleyip tek bir onay gösterir. Yeni ve değişmeyen kayıt sayılarını inceleyip Geri yükle’ye dokunun.\n\nGeri yükleme mevcut kayıtları koruyarak kayıt ekler. Aynı ID ve aynı içerik atlanır. Çakışan ID veya dosya, değişiklik yapılmadan tüm içe aktarmayı durdurur. Mevcut verilere eklerken ayarlar korunur; boş uygulama yedekteki ayarları alır. Koşulların kabulü, GPS kaydı seçimi ve tanılama onayı aktarılmaz; bu cihazdaki seçimler korunur. Kaydedilmiş fotoğraf koordinatları, özgün EXIF verileri ve iş adresleri korunur.\n\nOrtamı bağlı tutun; sayfadan çıkmadan veya bağlantıyı kesmeden önce tamamlanma mesajını bekleyin. Ardından kayıtları, tutarları ve ekleri kontrol edin. İç alan yetersizse yer açıp yeniden deneyin. Kesilen geri yüklemeden sonra uygulamayı açın ve yeni değişikliklerden önce kurtarmanın bitmesini bekleyin.\n\nÖnceki yedekleri değiştirmeden saklayın. Çok parçalı yedekte tek tek parçaları değil, tam klasörü bir küme olarak seçin. Eksik, bozuk, karışık veya desteklenmeyen kümeler reddedilir. Geri yüklenen verileri kontrol edene kadar asıl yedeği saklayın.\n\nEski Google Drive kopyaları: Önceki bir sürüm appDataFolder içinde yedek oluşturduysa bu, mevcut sürümün ZIP dosyasından ayrı bir haricî kopyadır. Uygulamayı sıfırlamak veya kaldırmak bu kopyayı silmez. Bu sürüm bu kopya için doğrudan yedekleme, geri yükleme veya yönetim sunmaz. Kopyanın sahibi olan Google hesabında yönetme veya silme işlemleri için Google'ın resmî talimatlarına bakın. https://support.google.com/drive/answer/6374270",
               "notice": null,
               "icon": {
-                "name": "restore_outlined",
-                "codePoint": 62232,
+                "name": "restore",
+                "codePoint": 58676,
                 "color": "#16C85C",
                 "colorDark": "#16C85C",
                 "background": "transparent",
@@ -22777,11 +22777,11 @@
             {
               "id": "backup",
               "title": "النسخ الاحتياطي",
-              "body": "احتفظ بنسخة منفصلة من سجلات العمل والصور والإعدادات وتحقّق من اكتمالها.",
+              "body": "افتح SD أو USB (OTG) أو ZIP من الإعدادات. يشمل النطاق الافتراضي جميع السنوات والبيانات المشتركة. يمكنك اختيار سنة لنسخة جديدة. قد تتضمن السجلات المرتبطة سنوات أخرى. تستورد الاستعادة دائمًا مجموعة النسخ المختارة كاملة.",
               "notice": null,
               "icon": {
-                "name": "archive_outlined",
-                "codePoint": 61058,
+                "name": "save_outlined",
+                "codePoint": 62260,
                 "color": "#1976F3",
                 "colorDark": "#1976F3",
                 "background": "transparent",
@@ -22790,12 +22790,12 @@
             },
             {
               "id": "backup-device",
-              "title": "نسخ احتياطي إلى هذا الجهاز",
-              "body": "الإعدادات > النسخ الاحتياطي والاستعادة > نسخ احتياطي إلى هذا الجهاز\nاحفظ سجلات العمل والإعدادات والصور وغيرها على الجهاز في ملف ZIP احتياطي.",
+              "title": "SD · النسخ الاحتياطي / استعادة",
+              "body": "في صفحة SD أو USB، اضغط النسخ الاحتياطي واختر مجلدًا واحدًا على ذلك الوسيط. يتحقق التطبيق من نوع التخزين الفعلي ويرفض المجلد الذي لا يمكن التحقق منه. احتفظ بكل ملفات مجلد النسخة معًا، ولا تغيّر أسماء الأجزاء أو تختَرها منفردة.",
               "notice": null,
               "icon": {
-                "name": "phone_android_outlined",
-                "codePoint": 62086,
+                "name": "sd_storage_outlined",
+                "codePoint": 62281,
                 "color": "#1976F3",
                 "colorDark": "#1976F3",
                 "background": "transparent",
@@ -22804,8 +22804,8 @@
             },
             {
               "id": "backup-external",
-              "title": "نسخ احتياطي إلى بطاقة SD أو USB",
-              "body": "الإعدادات > النسخ الاحتياطي والاستعادة > نسخ احتياطي إلى بطاقة SD أو USB\nاحفظ النسخة الاحتياطية على بطاقة SD أو جهاز تخزين USB متصل.",
+              "title": "USB (OTG) · النسخ الاحتياطي / استعادة",
+              "body": "في صفحة SD أو USB، اضغط النسخ الاحتياطي واختر مجلدًا واحدًا على ذلك الوسيط. يتحقق التطبيق من نوع التخزين الفعلي ويرفض المجلد الذي لا يمكن التحقق منه. احتفظ بكل ملفات مجلد النسخة معًا، ولا تغيّر أسماء الأجزاء أو تختَرها منفردة.",
               "notice": null,
               "icon": {
                 "name": "usb",
@@ -22818,8 +22818,8 @@
             },
             {
               "id": "backup-share",
-              "title": "إنشاء نسخة احتياطية خارجية",
-              "body": "الإعدادات > النسخ الاحتياطي والاستعادة > إنشاء نسخة احتياطية خارجية\nبعد إنشاء ملف ZIP الاحتياطي، اختر تطبيقًا لحفظه من قائمة المشاركة في Android. تحقق من حالة الحفظ في التطبيق الذي اخترته. احتفظ بجميع ملفات النسخة المقسّمة معًا.\n\nملف ZIP القياسي هذا نسخة غير مشفرة من بيانات العمل والإعدادات والصور وغيرها من البيانات المشمولة بالنسخ الاحتياطي، ولا يتضمن سجلات تأكيد الشروط أو قبولها. قد يتضمن الصور الأصلية وبيانات الموقع ووقت الالتقاط والجهاز، إلى جانب مواقع العمل والعناوين وسجلات العمل والأجور والملاحظات. عند الحفظ أو المشاركة يتم إنشاء نسخة خارج التطبيق يمكن للشخص أو التطبيق المحدد فتحها.",
+              "title": "ZIP · النسخ الاحتياطي / استعادة",
+              "body": "في صفحة ZIP، اضغط النسخ الاحتياطي واختر مكان حفظ ملف ZIP واحد. تنقل المشاركة الملف إلى تطبيق آخر، لكنها لا تؤكد أن التطبيق المستلم حفظه. للاستعادة، اختر ملف ZIP كاملًا. يتعرف التطبيق على المحتوى تلقائيًا.\n\nملف ZIP القياسي هذا نسخة غير مشفرة من بيانات العمل والإعدادات والصور وغيرها من البيانات المشمولة بالنسخ الاحتياطي، ولا يتضمن سجلات تأكيد الشروط أو قبولها. قد يتضمن الصور الأصلية وبيانات الموقع ووقت الالتقاط والجهاز، إلى جانب مواقع العمل والعناوين وسجلات العمل والأجور والملاحظات. عند الحفظ أو المشاركة يتم إنشاء نسخة خارج التطبيق يمكن للشخص أو التطبيق المحدد فتحها.",
               "notice": null,
               "icon": {
                 "name": "folder_zip_outlined",
@@ -22833,11 +22833,11 @@
             {
               "id": "restore",
               "title": "استعادة",
-              "body": "الإعدادات > النسخ الاحتياطي والاستعادة\n\nاستعادة من قائمة نُسخ الجهاز الاحتياطية: اختر من قائمة النسخ الاحتياطية المحفوظة على هذا الجهاز.\n\nاستعادة من SD أو USB: اختر مجلد نسخة احتياطية من بطاقة SD أو جهاز تخزين USB متصل.\n\nاستيراد ملفات النسخة الاحتياطية: اختر ملف ZIP الاحتياطي من الجهاز أو من موقع التخزين الظاهر في أداة اختيار الملفات. تتطلب النسخة المقسّمة جميع ملفات النسخة نفسها.\n\nبالنسبة إلى SD أو USB، افتح «استعادة من SD أو USB»، واختر مجلد النسخ الاحتياطي، ثم مجموعة نسخ احتياطي واحدة تجمع ملفات ZIP الخاصة بها. احتفظ بجميع أجزاء المجموعة معًا. لا يمكن اختيار المجموعات التي اكتُشفت فيها مشاكل مثل أجزاء مفقودة أو مكررة؛ ويجب أن تجتاز النسخة المختارة التحقق قبل تأكيد الاستبدال. اختيار «إلغاء» قبل تأكيد الاستبدال لا يبدأ الاستعادة. لا تعتبر الفشل أو الانقطاع اكتمالًا؛ افحص السجلات والمبالغ والصور.\n\nتستبدل الاستعادة بيانات التطبيق الحالية بالنسخة الاحتياطية، لذا انسخ البيانات الحالية أولًا.\n\nنسخ Google Drive من إصدارات سابقة: إذا أنشأ إصدار سابق نسخة احتياطية في appDataFolder، فهي نسخة خارجية منفصلة عن ملف ZIP في الإصدار الحالي. لا تؤدي إعادة ضبط التطبيق أو إزالته إلى حذف تلك النسخة. لا يوفر هذا الإصدار نسخها احتياطيًا أو استعادتها أو إدارتها مباشرة. راجع تعليمات Google الرسمية لإدارتها أو حذفها في حساب Google الذي يملكها. https://support.google.com/drive/answer/6374270",
+              "body": "للاستعادة من SD أو USB، اختر مجلدًا ثم مجموعة نسخ واحدة من القائمة. أما ZIP فاختر الملف. يفحص التطبيق المجموعة كاملة وملفاتها قبل عرض تأكيد واحد. راجع أعداد السجلات الجديدة والتي لم تتغير، ثم اضغط استعادة.\n\nتضيف الاستعادة سجلات وتحافظ على السجلات الموجودة. يُتجاوز المعرّف نفسه إذا كان المحتوى مطابقًا. يوقف تعارض معرّف أو ملف الاستيراد كله قبل تطبيق أي تغيير. تبقى الإعدادات الحالية عند الإضافة إلى بيانات موجودة؛ ويتلقى التطبيق الفارغ إعدادات النسخة. لا يتم نقل قبول الشروط أو اختيار تسجيل GPS أو الموافقة على التشخيص؛ وتُحفظ اختيارات هذا الجهاز. تُحفظ إحداثيات الصور المسجلة وبيانات EXIF الأصلية وعناوين العمل.\n\nأبقِ الوسيط متصلًا وانتظر رسالة الاكتمال قبل مغادرة الصفحة أو فصله. ثم تحقق من السجلات والمبالغ والمرفقات. إذا لم تكفِ المساحة الداخلية، حرر مساحة وأعد المحاولة. بعد انقطاع الاستعادة، أعد فتح التطبيق وانتظر اكتمال التعافي قبل إجراء تغييرات أخرى.\n\nاحتفظ بالنسخ السابقة دون تعديل. للنسخة متعددة الأجزاء، اختر المجلد الكامل كمجموعة واحدة، لا الأجزاء المنفردة. تُرفض المجموعات الناقصة أو التالفة أو المختلطة أو غير المدعومة. احتفظ بالنسخة الأصلية حتى تتحقق من البيانات المستعادة.\n\nنسخ Google Drive من إصدارات سابقة: إذا أنشأ إصدار سابق نسخة احتياطية في appDataFolder، فهي نسخة خارجية منفصلة عن ملف ZIP في الإصدار الحالي. لا تؤدي إعادة ضبط التطبيق أو إزالته إلى حذف تلك النسخة. لا يوفر هذا الإصدار نسخها احتياطيًا أو استعادتها أو إدارتها مباشرة. راجع تعليمات Google الرسمية لإدارتها أو حذفها في حساب Google الذي يملكها. https://support.google.com/drive/answer/6374270",
               "notice": null,
               "icon": {
-                "name": "restore_outlined",
-                "codePoint": 62232,
+                "name": "restore",
+                "codePoint": 58676,
                 "color": "#16C85C",
                 "colorDark": "#16C85C",
                 "background": "transparent",
@@ -24417,11 +24417,11 @@
             {
               "id": "backup",
               "title": "Backup",
-              "body": "Conserva una copia separata di registri, foto e impostazioni e verifica il completamento.",
+              "body": "Nelle impostazioni, apri SD, USB (OTG) o ZIP. L’intervallo predefinito comprende tutti gli anni e i dati condivisi. Puoi scegliere un anno per un nuovo backup. I record collegati possono includere altri anni. Il ripristino importa sempre l’intero insieme selezionato.",
               "notice": null,
               "icon": {
-                "name": "archive_outlined",
-                "codePoint": 61058,
+                "name": "save_outlined",
+                "codePoint": 62260,
                 "color": "#1976F3",
                 "colorDark": "#1976F3",
                 "background": "transparent",
@@ -24430,12 +24430,12 @@
             },
             {
               "id": "backup-device",
-              "title": "Esegui backup su questo dispositivo",
-              "body": "Impostazioni > Backup e ripristino > Esegui backup su questo dispositivo\nSalva registri di lavoro, impostazioni, foto e altri dati sul dispositivo come ZIP di backup.",
+              "title": "SD · Backup / Ripristina",
+              "body": "Nella pagina SD o USB, tocca Backup e scegli una cartella su quel supporto. L’app verifica il tipo effettivo di memoria e rifiuta le cartelle non verificabili. Conserva insieme tutti i file della cartella creata, senza rinominare o selezionare le singole parti.",
               "notice": null,
               "icon": {
-                "name": "phone_android_outlined",
-                "codePoint": 62086,
+                "name": "sd_storage_outlined",
+                "codePoint": 62281,
                 "color": "#1976F3",
                 "colorDark": "#1976F3",
                 "background": "transparent",
@@ -24444,8 +24444,8 @@
             },
             {
               "id": "backup-external",
-              "title": "Backup su scheda SD o USB",
-              "body": "Impostazioni > Backup e ripristino > Backup su scheda SD o USB\nSalva il backup su una scheda SD o dispositivo USB collegato.",
+              "title": "USB (OTG) · Backup / Ripristina",
+              "body": "Nella pagina SD o USB, tocca Backup e scegli una cartella su quel supporto. L’app verifica il tipo effettivo di memoria e rifiuta le cartelle non verificabili. Conserva insieme tutti i file della cartella creata, senza rinominare o selezionare le singole parti.",
               "notice": null,
               "icon": {
                 "name": "usb",
@@ -24458,8 +24458,8 @@
             },
             {
               "id": "backup-share",
-              "title": "Crea backup esterno",
-              "body": "Impostazioni > Backup e ripristino > Crea backup esterno\nDopo aver creato lo ZIP, scegli un’app in cui conservarlo dal menu di condivisione di Android. Controlla lo stato del salvataggio nell’app selezionata. Conserva insieme tutti i file di un backup suddiviso.\n\nQuesto ZIP standard è una copia non crittografata dei dati di lavoro, delle impostazioni, delle foto e degli altri dati inclusi nel backup; non contiene i registri di conferma o accettazione delle Condizioni. Può includere le foto originali e i relativi metadati di posizione, ora di scatto e dispositivo, insieme a luoghi di lavoro, indirizzi, registri di lavoro, paghe e note. Salvando o condividendo viene creata una copia fuori dall’app che la persona o l’app selezionata può aprire.",
+              "title": "ZIP · Backup / Ripristina",
+              "body": "Nella pagina ZIP, tocca Backup e scegli dove salvare un file ZIP. Condividi passa il file a un’altra app, ma non conferma che sia stato salvato. Per il ripristino, scegli un ZIP completo. Il contenuto viene riconosciuto automaticamente.\n\nQuesto ZIP standard è una copia non crittografata dei dati di lavoro, delle impostazioni, delle foto e degli altri dati inclusi nel backup; non contiene i registri di conferma o accettazione delle Condizioni. Può includere le foto originali e i relativi metadati di posizione, ora di scatto e dispositivo, insieme a luoghi di lavoro, indirizzi, registri di lavoro, paghe e note. Salvando o condividendo viene creata una copia fuori dall’app che la persona o l’app selezionata può aprire.",
               "notice": null,
               "icon": {
                 "name": "folder_zip_outlined",
@@ -24473,11 +24473,11 @@
             {
               "id": "restore",
               "title": "Ripristina",
-              "body": "Impostazioni > Backup e ripristino\n\nRipristina dall’elenco backup del dispositivo: Scegli dall’elenco dei backup salvati su questo dispositivo.\n\nRipristina da scheda SD o USB: Scegli una cartella di backup da una scheda SD o dispositivo USB collegato.\n\nImporta file di backup: Scegli lo ZIP di backup sul dispositivo o da una posizione mostrata nel selettore file. Un backup suddiviso richiede tutti i file dello stesso backup.\n\nPer SD o USB, apri «Ripristina da scheda SD o USB», scegli la cartella e poi un set di backup che raggruppa i suoi file ZIP. Conserva insieme tutte le parti dello stesso set. I set con problemi rilevati, come parti mancanti o duplicate, non sono selezionabili; anche il backup scelto deve superare la verifica prima della conferma della sostituzione. Scegliere «Annulla» prima della conferma non avvia il ripristino. Non considerare un errore o un’interruzione come completamento; controlla record, importi e foto.\n\nIl ripristino sostituisce i dati attuali con il backup, quindi salva prima anche i dati attuali.\n\nVecchie copie Google Drive: se una versione precedente ha creato un backup in appDataFolder, si tratta di una copia esterna distinta dallo ZIP della versione attuale. Reimpostare o disinstallare l’app non elimina tale copia. Questa versione non ne consente il backup, il ripristino o la gestione diretta. Consultare le istruzioni ufficiali di Google per gestirla o eliminarla nell’account Google a cui appartiene. https://support.google.com/drive/answer/6374270",
+              "body": "Per SD o USB, scegli una cartella e poi un insieme di backup dall’elenco. Per ZIP, scegli il file. L’app controlla l’intero insieme e i file prima di mostrare un’unica conferma. Controlla i conteggi dei record nuovi e invariati, poi tocca Ripristina.\n\nIl ripristino aggiunge record e mantiene quelli esistenti. Lo stesso ID con contenuto identico viene ignorato. Un conflitto di ID o file interrompe tutta l’importazione prima delle modifiche. Aggiungendo dati si mantengono le impostazioni attuali; un’app vuota riceve quelle del backup. L'accettazione delle condizioni, la scelta di registrare il GPS e il consenso alla diagnostica non vengono trasferiti; vengono mantenute le scelte di questo dispositivo. Le coordinate salvate delle foto, i dati EXIF originali e gli indirizzi di lavoro vengono conservati.\n\nTieni collegato il supporto e attendi il messaggio di completamento prima di uscire o scollegarlo. Controlla poi record, importi e allegati. Se lo spazio interno non basta, liberalo e riprova. Dopo un’interruzione, riapri l’app e attendi il recupero prima di altre modifiche.\n\nConserva invariati i backup precedenti. Per un backup suddiviso, seleziona la cartella completa come un unico insieme, non le singole parti. Gli insiemi incompleti, danneggiati, misti o non supportati vengono rifiutati. Conserva l’originale finché non hai controllato i dati ripristinati.\n\nVecchie copie Google Drive: se una versione precedente ha creato un backup in appDataFolder, si tratta di una copia esterna distinta dallo ZIP della versione attuale. Reimpostare o disinstallare l’app non elimina tale copia. Questa versione non ne consente il backup, il ripristino o la gestione diretta. Consultare le istruzioni ufficiali di Google per gestirla o eliminarla nell’account Google a cui appartiene. https://support.google.com/drive/answer/6374270",
               "notice": null,
               "icon": {
-                "name": "restore_outlined",
-                "codePoint": 62232,
+                "name": "restore",
+                "codePoint": 58676,
                 "color": "#16C85C",
                 "colorDark": "#16C85C",
                 "background": "transparent",
@@ -26057,11 +26057,11 @@
             {
               "id": "backup",
               "title": "สำรองข้อมูล",
-              "body": "เก็บสำเนาบันทึกงาน รูป และการตั้งค่าแยกไว้ แล้วตรวจสอบว่าสำเร็จ",
+              "body": "เปิด SD, USB (OTG) หรือ ZIP ในการตั้งค่า ค่าเริ่มต้นของช่วงสำรองคือทุกปีและข้อมูลที่ใช้ร่วมกัน คุณเลือกปีสำหรับการสำรองใหม่ได้ รายการที่เชื่อมโยงอาจรวมปีอื่นด้วย การกู้คืนจะนำเข้าชุดสำรองที่เลือกทั้งชุดเสมอ",
               "notice": null,
               "icon": {
-                "name": "archive_outlined",
-                "codePoint": 61058,
+                "name": "save_outlined",
+                "codePoint": 62260,
                 "color": "#1976F3",
                 "colorDark": "#1976F3",
                 "background": "transparent",
@@ -26070,12 +26070,12 @@
             },
             {
               "id": "backup-device",
-              "title": "สำรองข้อมูลไปยังอุปกรณ์นี้",
-              "body": "การตั้งค่า > สำรองและกู้คืน > สำรองข้อมูลไปยังอุปกรณ์นี้\nเก็บบันทึกงาน การตั้งค่า รูปภาพ และข้อมูลอื่น ๆ ไว้ในอุปกรณ์เป็นไฟล์ ZIP สำรอง",
+              "title": "SD · สำรองข้อมูล / คืนค่า",
+              "body": "ที่หน้า SD หรือ USB แตะสำรองข้อมูลแล้วเลือกหนึ่งโฟลเดอร์บนสื่อนั้น แอปตรวจชนิดสื่อจริงและปฏิเสธโฟลเดอร์ที่ยืนยันไม่ได้ เก็บทุกไฟล์ในโฟลเดอร์สำรองไว้ด้วยกัน ห้ามเปลี่ยนชื่อหรือเลือกไฟล์แต่ละส่วนแยกกัน",
               "notice": null,
               "icon": {
-                "name": "phone_android_outlined",
-                "codePoint": 62086,
+                "name": "sd_storage_outlined",
+                "codePoint": 62281,
                 "color": "#1976F3",
                 "colorDark": "#1976F3",
                 "background": "transparent",
@@ -26084,8 +26084,8 @@
             },
             {
               "id": "backup-external",
-              "title": "สำรองข้อมูลไปยังการ์ด SD หรือ USB",
-              "body": "การตั้งค่า > สำรองและกู้คืน > สำรองข้อมูลไปยังการ์ด SD หรือ USB\nบันทึกข้อมูลสำรองไปยังการ์ด SD หรืออุปกรณ์เก็บข้อมูล USB ที่เชื่อมต่ออยู่",
+              "title": "USB (OTG) · สำรองข้อมูล / คืนค่า",
+              "body": "ที่หน้า SD หรือ USB แตะสำรองข้อมูลแล้วเลือกหนึ่งโฟลเดอร์บนสื่อนั้น แอปตรวจชนิดสื่อจริงและปฏิเสธโฟลเดอร์ที่ยืนยันไม่ได้ เก็บทุกไฟล์ในโฟลเดอร์สำรองไว้ด้วยกัน ห้ามเปลี่ยนชื่อหรือเลือกไฟล์แต่ละส่วนแยกกัน",
               "notice": null,
               "icon": {
                 "name": "usb",
@@ -26098,8 +26098,8 @@
             },
             {
               "id": "backup-share",
-              "title": "สร้างข้อมูลสำรองภายนอก",
-              "body": "การตั้งค่า > สำรองและกู้คืน > สร้างข้อมูลสำรองภายนอก\nหลังจากสร้างไฟล์ ZIP สำรองแล้ว ให้เลือกแอปที่จะใช้เก็บไฟล์จากเมนูแชร์ของ Android ตรวจสอบสถานะการบันทึกในแอปที่เลือก และเก็บไฟล์ทุกส่วนของข้อมูลสำรองแบบแบ่งไฟล์ไว้ด้วยกัน\n\nไฟล์ ZIP มาตรฐานนี้เป็นสำเนาที่ไม่ได้เข้ารหัสของข้อมูลที่อยู่ในขอบเขตการสำรอง เช่น ข้อมูลงาน การตั้งค่า และรูปภาพ โดยไม่รวมบันทึกการยืนยันหรือยอมรับข้อกำหนด อาจมีรูปภาพต้นฉบับและข้อมูลเมตาตำแหน่ง เวลาในการถ่าย และอุปกรณ์ รวมถึงสถานที่ทำงาน ที่อยู่ บันทึกการทำงาน ค่าจ้าง และบันทึกย่อ การบันทึกหรือแชร์จะสร้างสำเนานอกแอปที่บุคคลหรือแอปที่เลือกสามารถเปิดได้",
+              "title": "ZIP · สำรองข้อมูล / คืนค่า",
+              "body": "ที่หน้า ZIP แตะสำรองข้อมูลแล้วเลือกที่บันทึกไฟล์ ZIP หนึ่งไฟล์ การแชร์ส่งไฟล์ไปยังแอปอื่น แต่ไม่ยืนยันว่าแอปผู้รับบันทึกแล้ว หากต้องการกู้คืน ให้เลือก ZIP ที่ครบถ้วนหนึ่งไฟล์ แอปจะตรวจรูปแบบเนื้อหาเอง\n\nไฟล์ ZIP มาตรฐานนี้เป็นสำเนาที่ไม่ได้เข้ารหัสของข้อมูลที่อยู่ในขอบเขตการสำรอง เช่น ข้อมูลงาน การตั้งค่า และรูปภาพ โดยไม่รวมบันทึกการยืนยันหรือยอมรับข้อกำหนด อาจมีรูปภาพต้นฉบับและข้อมูลเมตาตำแหน่ง เวลาในการถ่าย และอุปกรณ์ รวมถึงสถานที่ทำงาน ที่อยู่ บันทึกการทำงาน ค่าจ้าง และบันทึกย่อ การบันทึกหรือแชร์จะสร้างสำเนานอกแอปที่บุคคลหรือแอปที่เลือกสามารถเปิดได้",
               "notice": null,
               "icon": {
                 "name": "folder_zip_outlined",
@@ -26113,11 +26113,11 @@
             {
               "id": "restore",
               "title": "คืนค่า",
-              "body": "การตั้งค่า > สำรองและกู้คืน\n\nกู้คืนจากรายการข้อมูลสำรองในอุปกรณ์: เลือกจากรายการข้อมูลสำรองที่บันทึกไว้บนอุปกรณ์นี้\n\nกู้คืนจาก SD หรือ USB: เลือกโฟลเดอร์ข้อมูลสำรองจากการ์ด SD หรืออุปกรณ์เก็บข้อมูล USB ที่เชื่อมต่ออยู่\n\nนำเข้าไฟล์สำรอง: เลือกไฟล์ ZIP สำรองจากอุปกรณ์หรือพื้นที่จัดเก็บที่แสดงในตัวเลือกไฟล์ ข้อมูลสำรองแบบแบ่งไฟล์ต้องใช้ไฟล์ทุกส่วนจากชุดเดียวกัน\n\nสำหรับ SD หรือ USB ให้เปิด “กู้คืนจาก SD หรือ USB” เลือกโฟลเดอร์สำรองข้อมูล แล้วเลือกหนึ่งชุดข้อมูลสำรองที่รวมไฟล์ ZIP ของชุดนั้น เก็บทุกส่วนของชุดเดียวกันไว้ด้วยกัน ชุดที่พบปัญหา เช่น ส่วนที่ขาดหรือซ้ำ จะเลือกไม่ได้ และชุดที่เลือกต้องผ่านการตรวจสอบก่อนถึงขั้นยืนยันการแทนที่ การเลือก “ยกเลิก” ก่อนยืนยันจะไม่เริ่มกู้คืน อย่าถือว่าความล้มเหลวหรือการหยุดชะงักคือเสร็จสมบูรณ์ ให้ตรวจสอบบันทึก จำนวนเงิน และรูปภาพ\n\nการกู้คืนจะแทนที่ข้อมูลปัจจุบันด้วยข้อมูลสำรอง จึงควรสำรองข้อมูลปัจจุบันก่อน\n\nสำเนา Google Drive จากเวอร์ชันเก่า: หากเวอร์ชันก่อนหน้าสร้างข้อมูลสำรองใน appDataFolder ไว้ สำเนาภายนอกนั้นแยกจาก ZIP ของเวอร์ชันปัจจุบัน การรีเซ็ตหรือถอนการติดตั้งแอปไม่ลบสำเนานั้น เวอร์ชันนี้ ไม่มีฟังก์ชันสำรอง กู้คืน หรือจัดการสำเนานั้นโดยตรง โปรดดูคำแนะนำอย่างเป็นทางการของ Google สำหรับการจัดการหรือลบสำเนาในบัญชี Google ที่เป็นเจ้าของ https://support.google.com/drive/answer/6374270",
+              "body": "หากกู้คืนจาก SD หรือ USB ให้เลือกหนึ่งโฟลเดอร์แล้วเลือกหนึ่งชุดสำรองจากรายการ หากเป็น ZIP ให้เลือกไฟล์ แอปจะตรวจทั้งชุดและทุกไฟล์ก่อนแสดงการยืนยันหนึ่งครั้ง ตรวจจำนวนรายการใหม่และรายการที่ไม่เปลี่ยน แล้วแตะกู้คืน\n\nการกู้คืนเพิ่มรายการและเก็บรายการเดิมไว้ ID เดียวกันที่มีเนื้อหาเหมือนกันจะถูกข้าม หาก ID หรือไฟล์มีเนื้อหาขัดแย้ง จะหยุดนำเข้าทั้งชุดก่อนเปลี่ยนแปลง เมื่อเพิ่มในข้อมูลเดิมจะเก็บการตั้งค่าปัจจุบันไว้ ส่วนแอปที่ว่างจะรับการตั้งค่าจากสำรอง การยอมรับข้อกำหนด ตัวเลือกการบันทึก GPS และความยินยอมด้านการวินิจฉัยจะไม่ถูกโอน โดยจะคงตัวเลือกของอุปกรณ์นี้ไว้ พิกัดภาพที่บันทึกไว้ ข้อมูล EXIF ต้นฉบับ และที่อยู่ของงานจะยังคงอยู่\n\nเชื่อมต่อสื่อไว้และรอข้อความเสร็จสิ้นก่อนออกจากหน้าหรือถอดสื่อ จากนั้นตรวจรายการ จำนวนเงิน และไฟล์แนบ หากพื้นที่ภายในไม่พอ ให้เพิ่มพื้นที่ว่างแล้วลองใหม่ หากกู้คืนถูกขัดจังหวะ ให้เปิดแอปอีกครั้งและรอการกู้กลับให้เสร็จก่อนแก้ไขต่อ\n\nเก็บสำรองเก่าไว้โดยไม่แก้ไข สำหรับสำรองหลายส่วน ให้เลือกทั้งโฟลเดอร์เป็นหนึ่งชุด ไม่เลือกแต่ละส่วน ชุดที่ไม่ครบ เสียหาย ปะปน หรือไม่รองรับจะถูกปฏิเสธ เก็บต้นฉบับไว้จนกว่าจะตรวจข้อมูลที่กู้คืนแล้ว\n\nสำเนา Google Drive จากเวอร์ชันเก่า: หากเวอร์ชันก่อนหน้าสร้างข้อมูลสำรองใน appDataFolder ไว้ สำเนาภายนอกนั้นแยกจาก ZIP ของเวอร์ชันปัจจุบัน การรีเซ็ตหรือถอนการติดตั้งแอปไม่ลบสำเนานั้น เวอร์ชันนี้ ไม่มีฟังก์ชันสำรอง กู้คืน หรือจัดการสำเนานั้นโดยตรง โปรดดูคำแนะนำอย่างเป็นทางการของ Google สำหรับการจัดการหรือลบสำเนาในบัญชี Google ที่เป็นเจ้าของ https://support.google.com/drive/answer/6374270",
               "notice": null,
               "icon": {
-                "name": "restore_outlined",
-                "codePoint": 62232,
+                "name": "restore",
+                "codePoint": 58676,
                 "color": "#16C85C",
                 "colorDark": "#16C85C",
                 "background": "transparent",
@@ -26276,5 +26276,5 @@
       ]
     }
   },
-  "contentVersion": "9fca254137c7b3bb"
+  "contentVersion": "d248e695307b9026"
 }

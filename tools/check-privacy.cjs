@@ -83,8 +83,11 @@ for (const code of codes) {
     'ZIP/PDF',
     'taipopo.app@gmail.com',
     '<div class="policy-content">',
-    ...['gpsChoice', 'gpsCache', 'currentBackup', 'crashDeletion'].map(
-      (field) => webDisclosures.locales[code][field]
+    ...['gpsChoice', 'gpsCache', 'privacyBackupBuildGuidance', 'crashDeletion'].flatMap(
+      (field) => field === 'privacyBackupBuildGuidance'
+        ? webDisclosures.locales[code][field].split('\n').filter(Boolean)
+        : [webDisclosures.locales[code][field]],
+    ).map((value) => value
         .replaceAll('&', '&amp;').replaceAll('<', '&lt;')
         .replaceAll('>', '&gt;').replaceAll('"', '&quot;'),
     ),

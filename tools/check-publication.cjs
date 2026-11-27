@@ -12,7 +12,7 @@ let count = 0;
 for (const [code, policy] of Object.entries(data)) {
   assert.equal(policy.locale, code);
   const text = review.locales[code];
-  for (const key of ['heading', 'scope', 'qrLegacy', 'qrCandidate', 'international', 'otherInternational', 'deletion', 'accountScope', 'localConfig', 'gpsChoice', 'gpsCache', 'currentBackup', 'crashDeletion', 'metadataResidualNotice', 'privacyDateLabel', 'privacyDateScope']) assert.ok(text[key]?.trim(), `${code}: ${key}`);
+  for (const key of ['heading', 'scope', 'qrLegacy', 'qrCandidate', 'international', 'otherInternational', 'deletion', 'accountScope', 'localConfig', 'gpsChoice', 'gpsCache', 'currentBackup', 'privacyBackupBuildGuidance', 'crashDeletion', 'metadataResidualNotice', 'privacyDateLabel', 'privacyDateScope']) assert.ok(text[key]?.trim(), `${code}: ${key}`);
   assert.ok(!text.scope.includes('1.0.0+21') && !text.qrCandidate.includes('1.0.0+21'), code);
   assert.ok(text.qrLegacy.includes('ML Kit') && text.qrCandidate.includes('ZXing'), code);
   assert.ok(policy.body.includes(policy.revisionDate), code);
@@ -34,7 +34,7 @@ for (const [code, policy] of Object.entries(data)) {
   const privacy = fs.readFileSync(path.join(root, code, 'privacy/index.html'), 'utf8');
   assert.ok(privacy.includes(renderPolicy(policy).html), `Reviewed policy missing: ${code}`);
   const visibleText = privacy.replace(/<[^>]*>/gu, '');
-  for (const value of [text.scope, text.qrLegacy, text.qrCandidate, text.localConfig, text.gpsChoice, text.gpsCache, text.currentBackup, text.crashDeletion, ...copy[code].services]) {
+  for (const value of [text.scope, text.qrLegacy, text.qrCandidate, text.localConfig, text.gpsChoice, text.gpsCache, ...text.privacyBackupBuildGuidance.split('\n').filter(Boolean), text.crashDeletion, ...copy[code].services]) {
     const escaped = value.replaceAll('&', '&amp;').replaceAll('<', '&lt;').replaceAll('>', '&gt;').replaceAll('"', '&quot;');
     assert.ok(visibleText.includes(escaped), `Published fact missing: ${code}`);
   }
