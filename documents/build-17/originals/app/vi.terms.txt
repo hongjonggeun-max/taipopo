@@ -1,0 +1,40 @@
+Bản dự thảo để xem xét · phiên bản 2026-11-07. Ngày có hiệu lực chưa được xác nhận. Ngày phiên bản/xem xét này không phải ngày có hiệu lực và không thay đổi ngày có hiệu lực của Chính sách quyền riêng tư.
+
+Điều khoản sử dụng TAIPOPO
+
+Ngày có hiệu lực: sẽ được xác nhận trước khi phát hành chính thức
+
+Điều khoản này điều chỉnh việc sử dụng TAIPOPO (“App”) và quyền, nghĩa vụ, trách nhiệm của người dùng. Cài đặt hoặc dùng App nghĩa là đồng ý.
+
+1. Mục đích và phạm vi
+App giúp quản lý nơi làm việc, chấm công, hồ sơ, ảnh, quyết toán, báo cáo, sao lưu và cài đặt trên thiết bị. Tính năng có thể thay đổi.
+
+2. Trách nhiệm
+Người dùng chịu trách nhiệm về tính chính xác, hợp pháp và quyền sử dụng thông tin nhập, chụp, đính kèm hoặc chia sẻ, và không được vi phạm quyền của bên thứ ba.
+
+3. Ảnh và tài liệu
+Người dùng quản lý nội dung tạo hoặc lưu trong App. Hồ sơ và PDF chỉ hỗ trợ quản lý công việc, không bảo đảm hiệu lực pháp lý hoặc yêu cầu của tổ chức.
+
+4. Lưu trữ và sao lưu
+Dữ liệu ở trên thiết bị và có thể mất. Lưu hồ sơ công việc, cài đặt, ảnh và dữ liệu khác trên thiết bị dưới dạng tệp ZIP sao lưu. Sau khi tạo tệp ZIP sao lưu, hãy chọn ứng dụng để lưu trong bảng chia sẻ Android. Kiểm tra trạng thái lưu trong ứng dụng đã chọn. Giữ tất cả các tệp của bản sao lưu chia nhiều phần cùng nhau.
+
+5. Tệp ZIP sao lưu và bản sao bên ngoài
+TAIPOPO tạo tệp ZIP sao lưu trên thiết bị. Khi bạn xuất, các tệp được chuyển cho ứng dụng bạn chọn trong bảng chia sẻ. Bạn có thể quản lý hoặc xóa bản sao bên ngoài tại nơi đã lưu.
+
+6. Quyền
+Quyền camera, vị trí, ảnh/lưu trữ và thông báo dùng cho tính năng liên quan; từ chối có thể giới hạn tính năng.
+
+7. Cấm
+Cấm sử dụng trái pháp luật, truy cập trái phép, can thiệp App, vượt bảo mật, phát tán malware, thông tin sai hoặc tài liệu xâm phạm quyền.
+
+8. Thay đổi
+TAIPOPO có thể thay đổi, thêm hoặc ngừng tính năng vì bảo mật, cải tiến, vận hành hoặc pháp luật, và sẽ thông báo thay đổi quan trọng khi có thể.
+
+9. Trách nhiệm
+Trong phạm vi luật cho phép, TAIPOPO không chịu trách nhiệm về mất mát do lỗi người dùng, lỗi bên ngoài, không sao lưu, chia sẻ trái phép hoặc vi phạm. Trách nhiệm không thể loại trừ vẫn giữ nguyên.
+
+10. Quyền riêng tư
+Chính sách quyền riêng tư và Hướng dẫn xóa dữ liệu điều chỉnh thông tin cá nhân, quyền, lưu trữ và xóa.
+
+11. Luật và liên hệ
+Áp dụng luật Hàn Quốc, thẩm quyền tranh chấp theo luật áp dụng. Liên hệ: taipopo.app@gmail.com

@@ -1,0 +1,25 @@
+İnceleme taslağı · sürüm 2026-11-07. Yürürlük tarihi henüz kesinleşmemiştir. Bu sürüm/inceleme tarihi yürürlük tarihi değildir ve Gizlilik Politikası'nın yürürlük tarihini değiştirmez.
+Yürürlük tarihi: resmi yayından önce onaylanacak
+Bu Koşullar TAIPOPO (“Uygulama”) kullanımını ve kullanıcının hak, yükümlülük ve sorumluluklarını düzenler. Yüklemek veya kullanmak kabul anlamına gelir.
+1. Amaç ve kapsam
+Uygulama iş yerleri, devam, kayıtlar, fotoğraflar, hesaplaşmalar, raporlar, yedekler ve ayarları cihazda yönetmeye yardım eder. Özellikler değişebilir.
+2. Sorumluluk
+Kullanıcı girdiği, çektiği, eklediği veya paylaştığı bilgilerin doğruluğu, yasallığı ve kullanım yetkisinden sorumludur ve üçüncü kişi haklarını ihlal etmemelidir.
+3. Fotoğraflar ve belgeler
+Kullanıcı uygulamada oluşturulan veya saklanan içerikleri yönetir. Kayıtlar ve PDF’ler iş yönetimi kolaylığı içindir; hukuki etki veya kurum şartı garantilemez.
+4. Depolama ve yedek
+Veriler cihazda saklanır ve kaybolabilir. Önemli veriler Google Drive backup, cihaz yedeği, harici depolama, paylaşım veya dışa aktarma ile ayrı tutulmalıdır.
+5. Google Drive ve harici kullanım
+Google Drive backup/restore, yerel veya harici yedekler, paylaşım ve dışa aktarma yalnızca kullanıcı başlatırsa olur. Reset veya kaldırma Drive yedeklerini ya da harici dosyaları otomatik silmez. Yeni Google Drive yedeklemelerini siz başlatırsınız. Yükleme ağ politikası izin verirse uygulama sonraki açılışında koşulları karşılayan kesintiye uğramış bir yüklemeyi otomatik olarak sürdürebilir.
+6. İzinler
+Kamera, konum, fotoğraf/depolama ve bildirim izinleri ilgili özellikler için kullanılır; reddedilirse özellikler sınırlanabilir.
+7. Yasaklar
+Yasa dışı kullanım, yetkisiz erişim, müdahale, güvenliği aşma, zararlı yazılım, yanlış bilgi veya hak ihlal eden materyal dağıtımı yasaktır.
+8. Değişiklik
+TAIPOPO güvenlik, iyileştirme, işletim veya hukuk için özellikleri değiştirebilir, ekleyebilir veya durdurabilir ve önemli değişiklikleri mümkün olduğunda bildirir.
+9. Sorumluluk
+Yasanın izin verdiği ölçüde TAIPOPO kullanıcı hataları, harici arızalar, yedeksizlik, yetkisiz paylaşım veya ihlal kaynaklı kayıplardan sorumlu değildir. Hariç tutulamayan sorumluluk saklıdır.
+10. Gizlilik
+Gizlilik Politikası ve Veri Silme Kılavuzu kişisel bilgiler, izinler, depolama ve silmeyi düzenler.
+11. Hukuk ve iletişim
+Kore Cumhuriyeti hukuku uygulanır, uyuşmazlık yetkisi geçerli hukuka göre belirlenir. İletişim: taipopo.app@gmail.com

@@ -1,0 +1,25 @@
+समीक्षा मसौदा · संस्करण 2026-11-07। प्रभावी तारीख अभी तय नहीं है। यह संस्करण या समीक्षा तारीख प्रभावी तारीख नहीं है और गोपनीयता नीति की प्रभावी तारीख नहीं बदलती।
+प्रभावी तिथि: आधिकारिक रिलीज़ से पहले पुष्टि की जाएगी
+ये शर्तें TAIPOPO (“App”) के उपयोग और user के अधिकार, दायित्व और जिम्मेदारियां तय करती हैं। App install या use करने पर user सहमत होता है।
+1. उद्देश्य और दायरा
+App device पर workplaces, attendance, records, photos, settlements, reports, backups और settings manage करने में मदद करता है। Features बदल सकते हैं।
+2. User responsibility
+User entered, captured, attached या shared information की accuracy, legality और authority के लिए responsible है और third-party rights infringe नहीं करेगा।
+3. Photos और documents
+User App में created या stored content manage करता है। Records और PDFs work management convenience के लिए हैं और legal effect या organization requirements guarantee नहीं करते।
+4. Storage और backup
+Data device पर stored होता है और lost हो सकता है। Important data Google Drive backup, device backup, external storage, sharing या export से अलग रखना चाहिए।
+5. Google Drive और external use
+Google Drive backup/restore, local/external backups, sharing और export सिर्फ user शुरू करे तब होते हैं। Reset या removal Drive backups या external files automatically delete नहीं करता। Google Drive पर नया बैकअप आप शुरू करते हैं। अपलोड की नेटवर्क नीति अनुमति देती है तो ऐप अगली बार शुरू होने पर शर्तें पूरी करने वाले रुके हुए अपलोड को अपने आप जारी रख सकता है।
+6. Permissions
+Camera, location, photo/storage और notification permissions related features के लिए उपयोग होते हैं; deny करने पर features limited हो सकते हैं।
+7. Prohibited use
+Illegal use, unauthorized access, interference, security bypass, malware, false information या rights-infringing material distribution prohibited है।
+8. Changes
+TAIPOPO security, improvement, operation या legal compliance के लिए features change, add या discontinue कर सकता है और important changes बताने की कोशिश करेगा।
+9. Liability
+कानून द्वारा अनुमत सीमा तक TAIPOPO user errors, external failures, no backup, unauthorized sharing या violation से losses के लिए responsible नहीं है। Non-excludable liability unaffected रहती है।
+10. Privacy
+Privacy Policy और Data Deletion Guide personal information, permissions, storage और deletion पर लागू होते हैं।
+11. Law और contact
+Republic of Korea law लागू होगा, dispute jurisdiction applicable law से तय होगा। Contact: taipopo.app@gmail.com

@@ -1,0 +1,99 @@
+TAIPOPO Gizlilik Politikası
+
+Yürürlük tarihi: 2026-08-23
+Son güncelleme: 2026-11-11
+Kişisel veri sorumlusu ve gizlilik koruma sorumlusu: bağımsız geliştirici Jonggeun Hong
+
+1. Veri sorumlusu ve iletişim
+Kişisel veri sorumlusu ve gizlilik koruma sorumlusu: bağımsız geliştirici Jonggeun Hong
+
+Kişisel verilerin işlenmesi, uygulama verilerinin silinme prosedürü ve haklarınızın kullanılması hakkındaki sorular aşağıdaki e-posta adresine gönderilebilir.
+
+taipopo.app@gmail.com
+
+2. İşlenen bilgiler
+TAIPOPO, devam takibi, iş yerleri, fotoğraf kayıtları, mutabakatlar ve rapor yönetimi için gereken bilgileri esas olarak kullanıcının cihazındaki uygulama depolama alanında saklar. Şu anda doğrulanan uygulamaya göre TAIPOPO, kullanıcının iş verilerini kendi sunucusuna yükleyip saklayacak bir yapıda değildir.
+• Kullanıcı ve çalışan bilgileri: çalışan adı, telefon numarası, e-posta, adres ve ayrıntılı adres, ücret hesaplama ölçütleri, ödeme tarihi, ödeme yöntemi, banka, hesap numarası ve hesap sahibi
+• İş yeri bilgileri: iş yeri adı, adres ve ayrıntılı adres, şirket adı, yönetici adı, iletişim bilgileri, iş yeri notları ve iş yeri ekleri
+• Devam ve iş kayıtları: giriş ve çıkış saatleri, çalışma ve mola süresi, iş notları, mutabakat verileri, rapor verileri ve ilgili kayıt durumunun kopyaları
+• Fotoğraf ve görüntü bilgileri: orijinal fotoğrafları, düzenlenmiş fotoğrafları, görüntüleme görsellerini, küçük resimleri ve diğer türetilmiş görselleri, kullanıcının belirlediği fotoğraf kategorilerini, fotoğraflara eklenen işaretleri ve açıklamaları, çekim zamanını ve fotoğraflarla bağlantılı iş yeri veya iş bilgilerini içerir
+• Konum ve adres bilgileri: kullanıcı konum izni verdiğinde ve ilgili özellikleri kullandığında GPS koordinatları ve adres bilgileri. Uygulama, koordinatları adrese dönüştürmek için Android işletim sisteminin coğrafi kodlama hizmetini çağırır; cihaz ve işletim sistemi yapılandırmasına bağlı olarak bu işlem ağı kullanabilir. Adres gösterimi açık, konum izni verilmiş ve geçerli koordinatlar mevcutsa kamera koordinatları adrese dönüştürmeyi isteyebilir. Yalnızca GPS kaydı yapmak adres dönüştürme isteği başlatmaz.
+• Fotoğraf meta verileri: orijinal fotoğraf dosyaları, EXIF gibi çekimle ilgili meta verileri (fotoğrafa ait ek bilgiler) içerebilir. Uygulama, fotoğrafları görüntülemek ve paylaşmak ve PDF oluşturmak için fotoğraf yönü bilgilerini okuyabilir veya türetilmiş görsellere uygulayabilir.
+• Ayarlar ve tanılama: uygulama ayarları, bildirim, kamera ve yedekleme ayarları, yedekleme ve geri yükleme ilerleme bilgileri, uygulama kararlılığı ve hata tanılama bilgileri
+
+3. İşleme amaçları ve dayanakları
+Yukarıdaki bilgiler, kullanıcının uygulamaya girdiği veya eklediği bilgilerden, uygulamada çektiği fotoğraflardan ya da doğrudan çalıştırdığı özellikler aracılığıyla elde edilen bilgilerden oluşur. Bilgiler devam ve iş yönetimi, fotoğraf kaydı, hesaplaşma, rapor, PDF, yedekleme, geri yükleme, bildirim, hata tanılama ve talepler için kullanılır.
+
+4. Saklama süresi
+İş verileri ve fotoğraflar; kayıtlar silinene, fotoğraflar kalıcı olarak silinene, tüm veriler sıfırlanana, uygulama kaldırılana veya işletim sistemi üzerinden uygulama verileri temizlenene kadar uygulamada kalabilir. Bölüm 10’daki çöp kutusu kuralları ve istisnaları da geçerlidir. Tüm verileri sıfırlama, cihazdaki uygulama tarafından yönetilen alanda bulunan ayarları, iş verilerini, fotoğrafları, oluşturulan PDF’leri, ekleri, dışa aktarılan dosyaları, yedekleme verilerini, önbelleği ve geçici dosyaları siler. Uygulama tarafından yönetilen alanın dışında saklanan kopyalar ayrıca silinmelidir. Dışa aktarılan ZIP/PDF/fotoğraf dosyaları ve harici depolamadaki kopyalar kayıtlı oldukları yerden ayrıca silinmelidir. Firebase Crashlytics’e gönderilen tanılama bilgileri ilgili işlev ve politikalara göre işlenir.
+
+5. Yedek ZIP'ler ve harici kopyalar
+TAIPOPO yedek ZIP'i cihazda oluşturur. Dışa aktardığınızda dosyalar paylaşım menüsünde seçtiğiniz uygulamaya aktarılır. Dışarıda saklanan kopyaları kaydedildikleri konumda yönetebilir veya silebilirsiniz.
+
+Bu standart ZIP, uygulama verilerinin eksiksiz ve şifrelenmemiş bir kopyasıdır. Orijinal fotoğraflar ve bunların konum, çekim zamanı ve cihaz meta verilerinin yanı sıra iş yerleri, adresler, çalışma kayıtları, ücret ve notları içerebilir. Kaydetmek veya paylaşmak, seçilen kişi ya da uygulamanın açabileceği uygulama dışında bir kopya oluşturur.
+
+6. Firebase Crashlytics
+Firebase Crashlytics tanılaması varsayılan olarak kapalıdır. İzin verirseniz hata kodları, temizlenmiş çağrı izleri, SDK kurulum tanımlayıcıları ile cihaz ve uygulama tanılama bilgileri Google Firebase’e gönderilebilir. Uygulama çalışma kayıtlarını, fotoğrafları veya başvuru metnini tanılama içeriği olarak göndermez. Kayıt, kamera ve yedekleme izin vermeden de kullanılabilir.
+
+Geri çekme uygulamanın yeni hata raporlarını engeller. Devam eden SDK aktarımları geri alınamaz. Geri çekme veya bu güncellemenin geçiş işlemi sonrası Firebase yeniden başlamadan önce saklanan Crashlytics raporları ve kuyruktaki Firebase oturum tanılamaları silinir; temizleme başarısızsa Firebase hata raporlaması kapalı kalır. Aynı işlemde yeniden izin vermek, kapalı dönemin raporlarını geriye dönük göndermemek için tam işlem yeniden başlatmasını ve temizliği bekler. Sunucuya gönderilmiş bilgilerin silinmesi ayrı istek gerektirir. Bu tercih ML Kit tanılamasını kontrol etmez. Saklanan ML Kit teknik tanılamaları ayrıca gönderilebilir.
+
+Crashlytics tanılama bilgileri, kullanıcının iş kayıtlarından, fotoğraflarından ve mutabakat verilerinden ayrıdır. Uygulamanın yerel verilerini sıfırlamak veya uygulamayı kaldırmak, Firebase Crashlytics’e daha önce gönderilmiş tanılama bilgilerini otomatik olarak silmez. İlgili sorular aşağıdaki e-posta adresine gönderilebilir; gerçek işlem kapsamı Firebase özelliklerine ve politikalarına göre değişebilir.
+
+Firebase’in resmi açıklamasına göre Crashlytics, çökme anındaki çağrı izlerini ve ilişkili tanımlayıcıları 90 gün sakladıktan sonra bunları canlı ve yedek sistemlerden silme sürecini başlatır.
+
+7. QR tanıma
+QR taraması kamerayı ve cihazınızdaki ZXing’i kullanır. QR görüntüleri ve tanınan içerik bir tanıma hizmetine gönderilmez.
+
+Bu değişiklik, önceki sürümlerde ML Kit tarafından oluşturulan tanılama kuyruklarını veya sunuculara gönderilmiş bilgileri otomatik olarak silmez. Geçmiş verilerin silinmesi ve kalan kuyrukların olası iletimi ayrı doğrulama gerektirir.
+
+8. Üçüncü taraflar ve harici işleme
+Doğrulanan uygulamaya göre TAIPOPO iş verilerini kendi sunucusunda merkezi olarak saklamaz veya satmaz. İlgili hizmetlerin koşulları ve gizlilik politikaları da uygulanabilir.
+
+9. Fotoğraf, PDF ve ZIP paylaşımı ve dışa aktarma
+Fotoğraflar, PDF'ler, ZIP dosyaları ve diğer dışa aktarılan dosyalar yalnızca kullanıcı bunları paylaşmayı, kaydetmeyi veya dışa aktarmayı doğrudan seçtiğinde kullanıcının seçtiği harici uygulamaya, depolama konumuna, bulut depolama, USB veya harici depolama cihazına kopyalanabilir. Uygulama tarafından yönetilen alanın dışına aktarılan kopyaların saklanması ve silinmesi uygulamaya, depolama konumuna, hizmete ve kullanıcı ayarlarına göre değişebilir.
+
+10. Silme ve kullanıcı hakları
+Fotoğraflar, notlar, iş yerleri, mutabakatlar ve raporlar dahil olmak üzere çöp kutusuna taşınan öğeler geri yüklenebilir veya kalıcı olarak silinebilir. Silinme tarihinden itibaren 30 gün boyunca çöp kutusunda kalan öğeler, çöp kutusu bir sonraki kez açıldığında kalıcı olarak silinir ve kalıcı silme sonrasında uygulamanın çöp kutusundan geri yüklenemez. Kullanıcı, 30 gün dolmadan önce de bir öğeyi kalıcı olarak silebilir.
+
+Silinme tarihi bilgisi olmayan eski öğeler, süreye dayalı otomatik silme kapsamı dışındadır. Başka kayıtlarda halen kullanılan fotoğraflar silme sırasında korunur. Veri geri yüklenirken veya kayıtlar normal şekilde yüklenemediğinde otomatik temizleme ertelenebilir.
+Kullanıcılar uygulamadaki kayıtları görüntüleyebilir, düzenleyebilir ve silebilir; fotoğraflar çöp kutusundan geri yüklenebilir veya kalıcı olarak silinebilir. Tüm verileri sıfırlama, cihazdaki uygulama tarafından yönetilen alanda bulunan ayarları, iş verilerini, fotoğrafları, oluşturulan PDF’leri, ekleri, dışa aktarılan dosyaları, yedekleme verilerini, önbelleği ve geçici dosyaları siler. Cihazdaki uygulama tarafından yönetilen veriler, Ayarlar > Veri Yönetimi > Tüm Verileri Sıfırla yolundan silinebilir.
+
+Downloads klasörüne dışa aktarılan dosyalar, başka bir uygulamaya, e-postaya, bulut depolama, USB veya harici depolama cihazına paylaşılan ya da kopyalanan ZIP/PDF/fotoğraf dosyaları ve Crashlytics'e zaten gönderilmiş tanılama bilgileri yerel sıfırlama işleminden ayrıdır. Gizlilik soruları ve uygulama verisi silme prosedürü soruları taipopo.app@gmail.com adresine gönderilebilir.
+
+Erişim, düzeltme, silme, işlemenin durdurulması, uygulama verilerini silme prosedürüne ilişkin yönlendirme veya kanuni temsilci aracılığıyla hakların kullanılması talepleri taipopo.app@gmail.com adresine gönderilebilir. Bir talep işlenirken başvuru sahibinin kimliğini veya meşru yetkisini doğrulamak için gereken asgari bilgilerin kontrol edilmesi gerekebilir.
+
+11. Güvenlik ve otomatik veri toplama
+Uygulama iş verilerini ve fotoğrafları öncelikle cihazdaki uygulama depolama alanında yönetir. Doğrulanan yapıya göre TAIPOPO iş verilerini otomatik toplamak için kendi web çerezlerini veya benzeri dosyaları kullanmaz.
+
+12. Çocuklar ve politika değişiklikleri
+TAIPOPO, 14 yaşın altındaki çocukları birincil kullanıcı kitlesi olarak hedefleyen bir hizmet olarak tasarlanmamıştır. Bu politika, kanunlar, hizmetler veya özelliklerdeki değişikliklere göre revize edilebilir ve değişiklikler bir uygulama güncellemesi veya uygulama içi bildirimle duyurulur.
+
+Ek bilgilendirme (2026-10-25)
+
+Mevcut dağıtım yapılandırmasında reklamlar ve yeni PRO satın almaları devre dışıdır. Daha önce doğrulanmış satın alma hakları korunur.
+
+Mevcut satın almaların kontrolü veya geri yüklenmesi ve ürün bilgisi sorguları sırasında Google Play ürün kimlikleri, satın alma durumu ve doğrulama verileri işlenebilir. Ödeme yöntemi bilgileri Google Play tarafından işlenir.
+
+TAIPOPO kayıtları ve fotoğrafları cihazınızda saklanır. Geliştirici kayıtları ayrı bir sunucuda tutmaz. Önemli verileri düzenli olarak yedekleyin.
+
+Cihazın kaybolması veya bozulması, uygulamanın kaldırılması ya da verilerinin temizlenmesi kayıt ve fotoğraf kaybına yol açabilir. Yalnızca aynı cihazdaki yedekler de kaybolabilir; önemli yedekleri cihaz dışında da saklayın. Yedeklerin tamamlanmasını, konumunu, dosya durumunu ve hesap erişimini kontrol edip yönetin. Geliştirici ayrı bir sunucuda kayıt kopyası tutmaz ve geçerli bir yedek olmadan kurtarmaya yardımcı olamayabilir. Tanılama gibi harici işlemler için gizlilik politikasının ilgili bölümlerine bakın.
+
+13. Site ziyaretleri ve tema depolaması · 2026-11-07
+
+Site GitHub Pages üzerinde barındırılır. GitHub, güvenlik amacıyla ziyaretçilerin IP adreslerini kaydeder. Bu sitede üyelik, reklam izleyicisi veya ziyaret analizi betiği yoktur. Barındırma kapsamındaki işleme ve saklama GitHub politikasında açıklanır: https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement
+
+Tarayıcı yalnızca açık/koyu tema seçimini taipopo-site-theme altında saklar. Silmek için tarayıcıdaki bu siteye ait verileri temizleyin veya destekleniyorsa site depolamasını engelleyin. Açık temayı seçmek kayıtlı değeri değiştirir, silmez. Site depolama olmadan çalışır; kayıtlı seçim okunamıyorsa açık tema kullanılır.
+
+14. E-posta başvuruları
+
+Site e-posta uygulamanızı açar ve başvuruları kendisi almaz veya saklamaz. E-posta gönderdiğinizde geliştirici, yanıt vermek, sorun gidermek veya hak taleplerini ele almak için gönderen adresini, mesajı, ekleri ve gönderilen cihaz bilgilerini alır ve işler. Uygulama taslakları uygulama/derleme sürümü, Android sürümü, model ve dili içerebilir; göndermeden önce kontrol edip gereksiz bilgileri silin. Alınan e-postalar Gmail ve seçtiğiniz e-posta hizmetinin politikalarına göre işlenir. Saklama veya silme için taipopo.app@gmail.com adresine yazın. Google politikası: https://policies.google.com/privacy
+
+15. Geçerli hukuk kapsamındaki haklar
+
+Geçerli hukukun tanıdığı ölçüde erişim, düzeltme, silme, işlemenin kısıtlanması ve veri taşınabilirliği talep edebilir, itiraz edebilir ve rızaya dayalı işlemler için rızanızı geri çekebilirsiniz. Geri çekme, önceki işlemenin hukuka uygunluğunu etkilemez. Talepleri taipopo.app@gmail.com adresine gönderin; yalnızca kimlik veya yetki doğrulaması için gerekli bilgiler istenebilir. Yetkili veri koruma makamına da şikâyette bulunabilirsiniz. AEA makamları dizini: https://www.edpb.europa.eu/about-edpb/our-members_en
+
+Yalnızca cihazda bulunan kayıtları uygulamada yönetirsiniz. Sadece uygulamayı kullanmanız bu kayıtları geliştiriciye göndermez ve geliştirici bunları uzaktan silemez. E-posta veya dış hizmetlere gönderilen veriler ayrı değerlendirilir.
+
+16. İzinler ve işleme dayanakları
+
+Android izinleri belirli işlevleri açar; tek başlarına tüm kişisel veri işlemleri için hukuki dayanak veya genel rıza oluşturmaz. İzni geri çekmek, yerel kayıtları silmek ve dış kopyaları silmek ayrı işlemlerdir. Dış hizmetlerin işleme ve saklaması kendi politikalarına tabidir.

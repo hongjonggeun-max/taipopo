@@ -1,0 +1,40 @@
+Projet pour examen · version 2026-11-07. La date d’entrée en vigueur reste à confirmer. Cette date de version ou d’examen n’est pas une date d’effet et ne modifie pas celle de la Politique de confidentialité.
+
+Conditions d’utilisation de TAIPOPO
+
+Date d’entrée en vigueur : à confirmer avant la sortie officielle
+
+Ces conditions régissent l’utilisation de TAIPOPO (« App ») ainsi que les droits, obligations et responsabilités de l’utilisateur. Installer ou utiliser l’App vaut acceptation.
+
+1. Objet et périmètre
+L’App aide à gérer lieux de travail, présences, dossiers, photos, règlements, rapports, sauvegardes et paramètres sur l’appareil. Les fonctions peuvent changer par mise à jour.
+
+2. Responsabilité
+L’utilisateur est responsable de l’exactitude, de la légalité et du droit d’utiliser les informations saisies, capturées, jointes ou partagées, sans porter atteinte aux droits de tiers.
+
+3. Photos et documents
+L’utilisateur gère les contenus créés ou stockés dans l’App. Les dossiers et PDF facilitent la gestion du travail et ne garantissent pas d’effet juridique ni d’exigences d’un organisme.
+
+4. Stockage et sauvegarde
+Les données sont stockées par défaut sur l’appareil et peuvent être perdues. Enregistrez vos données de travail, réglages, photos et autres données dans un ZIP de sauvegarde sur l’appareil. Après avoir créé le ZIP, choisissez une application dans le menu de partage Android pour le conserver. Vérifiez l’état de l’enregistrement dans l’application choisie. Conservez ensemble tous les fichiers d’une sauvegarde fractionnée.
+
+5. Sauvegardes ZIP et copies externes
+TAIPOPO crée le ZIP de sauvegarde sur l’appareil. Lors de l’exportation, les fichiers sont remis à l’application sélectionnée dans le menu de partage. Vous pouvez gérer ou supprimer les copies externes à leur emplacement de stockage.
+
+6. Permissions
+Les permissions caméra, emplacement, photos ou stockage et notifications servent aux fonctions liées et peuvent limiter les fonctions si refusées.
+
+7. Interdictions
+Sont interdits les usages illégaux, accès non autorisés, perturbations, contournements de sécurité et distributions de malware, fausses informations ou contenus illicites.
+
+8. Changements
+TAIPOPO peut modifier, ajouter ou arrêter des fonctions pour sécurité, amélioration, exploitation ou conformité, et informera les changements importants si possible.
+
+9. Responsabilité
+Dans la mesure permise par la loi, TAIPOPO n’est pas responsable des pertes dues aux erreurs de l’utilisateur, pannes externes, absence de sauvegarde, partage non autorisé ou violation. La responsabilité non excluable n’est pas limitée.
+
+10. Confidentialité
+La politique de confidentialité et le guide de suppression des données régissent informations personnelles, permissions, stockage et suppression.
+
+11. Droit et contact
+La loi de la République de Corée s’applique, et la compétence suit la loi applicable. Contact : taipopo.app@gmail.com

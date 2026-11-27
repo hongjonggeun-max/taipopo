@@ -8,6 +8,7 @@ const arbDir = path.resolve(
 const policies = require('./privacy-content.json');
 const { renderPolicy } = require('./privacy-page.cjs');
 const webDisclosures = require('./website-disclosures.json');
+const { policyBodyMatchesApp } = require('./reviewed-app-copy.cjs');
 const codes = [
   'ar',
   'de',
@@ -38,7 +39,7 @@ for (const code of codes) {
   const source = policies[code];
   if (
     source.effectiveDate !== arb.privacyPolicyEffectiveDate ||
-    source.body !== arb.privacyPolicyBody ||
+    !policyBodyMatchesApp(source, arb) ||
     source.processingNotice !== arb.privacyPolicyProcessingNotice ||
     source.noticeVersion !== arb.privacyPolicyNoticeVersion
   ) {

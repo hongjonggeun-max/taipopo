@@ -2,6 +2,7 @@ const officialKoreanPolicyUrl =
   'https://taipopo.app/ko/privacy/';
 const webDisclosures = require('./website-disclosures.json');
 const { copy } = require('./public-copy.cjs');
+const { renderBuild17Access } = require('./build17-access.cjs');
 
 function reviewedDisclosure(policy) {
   const review = webDisclosures.locales[policy.locale];
@@ -107,11 +108,26 @@ function renderPolicy(policy) {
   external.lines.push('', ...copy[policy.locale].services);
   const retention = sections.find(section => section.heading.startsWith('4. '));
   retention.lines.push('', policy.websiteNotice.paragraphs.at(-1));
+  const information = sections.find(section => section.heading.startsWith('2. '));
+  const legacyPhotoLines = information.lines.filter(line =>
+    /EXIF/iu.test(line) && !line.startsWith('• '));
+  if (legacyPhotoLines.length !== 1 || !review.metadataResidualNotice?.trim()) {
+    throw new Error(`Expected one imported photo-sharing paragraph: ${policy.locale}`);
+  }
+  // Keep the imported app text as provenance. The website distinguishes
+  // processed gallery copies, remaining image metadata/pixels and backups.
+  information.lines = information.lines.map(line =>
+    line === legacyPhotoLines[0] ? review.gpsCache : line);
+  const dateIndex = metadata.findIndex(line => line.includes(policy.effectiveDate));
+  if (dateIndex < 0 || !review.privacyDateLabel?.trim() || !review.privacyDateScope?.trim()) {
+    throw new Error(`Missing qualified existing policy date: ${policy.locale}`);
+  }
+  metadata[dateIndex] = `${review.privacyDateLabel}: ${policy.effectiveDate}`;
   if (policy.locale === 'ko') {
     for (const section of sections) section.lines = section.lines.map(line => line.replace(/\bmetadata\b/gu, '메타데이터(사진 부가정보)'));
   }
 
-  for (const [number, fields] of [[2, ['gpsChoice', 'gpsCache']], [5, ['currentBackup']], [6, ['crashDeletion']]]) {
+  for (const [number, fields] of [[2, ['gpsChoice']], [5, ['currentBackup']], [6, ['crashDeletion']]]) {
     const section = sections.find((entry) => entry.heading.startsWith(`${number}. `));
     if (!section || fields.some((field) => !review[field]?.trim())) {
       throw new Error(`Missing reviewed privacy details: ${policy.locale}/${number}`);
@@ -124,7 +140,7 @@ function renderPolicy(policy) {
   }
 
   const html = [
-    `<section class="glass policy-summary">${renderLines([...metadata, ...(policy.zipBackup.version ? [`TAIPOPO ${policy.zipBackup.version}`] : []), review.scope])}</section>`,
+    `<section class="glass policy-summary" data-policy-date-status="unconfirmed">${renderLines([review.privacyDateScope, ...metadata, ...(policy.zipBackup.version ? [`TAIPOPO ${policy.zipBackup.version}`] : []), review.scope])}</section>`,
     ...sections.map(
       (section) =>
         `<section class="glass"${section === external ? ` data-web-review="${webDisclosures.reviewDate}"` : ''}><h2>${escapeHtml(section.heading)}</h2>${renderLines(section.lines)}</section>`,
@@ -142,7 +158,7 @@ function renderPolicy(policy) {
       : []),
     `<section class="glass"><h2>${escapeHtml(copy[policy.locale].salesHeading)}</h2>${renderLines([review.localConfig, policy.websiteNotice.paragraphs[2]])}</section>`,
   ].join('');
-  return { title, html };
+  return { title, html: renderBuild17Access(policy.locale) + html };
 }
 
 function renderTerms(policy) {
@@ -165,7 +181,7 @@ function renderTerms(policy) {
   }
   const html = `<section class="glass policy-summary" data-review-version="${escapeHtml(policy.noticeVersion)}">${renderLines([reviewNotice, copy[policy.locale].termsImplementationStatus])}</section>` +
     sections.map((section) => `<section class="glass">${section.heading ? `<h2>${escapeHtml(section.heading)}</h2>` : ''}${renderLines(section.lines)}</section>`).join('');
-  return { title, html, reviewNotice };
+  return { title, html: renderBuild17Access(policy.locale) + html, reviewNotice };
 }
 
 function renderDeletion(policy) {

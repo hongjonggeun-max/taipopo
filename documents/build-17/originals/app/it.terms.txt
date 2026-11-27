@@ -1,0 +1,40 @@
+Bozza da esaminare · versione 2026-11-07. La data di efficacia non è ancora confermata. Questa data di versione/revisione non è una data di efficacia e non modifica quella dell’Informativa sulla privacy.
+
+Termini d’uso di TAIPOPO
+
+Data di entrata in vigore: da confermare prima del rilascio ufficiale
+
+Questi Termini regolano l’uso di TAIPOPO (“App”) e diritti, obblighi e responsabilità dell’utente. Installare o usare l’App implica accettazione.
+
+1. Scopo e ambito
+L’App aiuta a gestire luoghi di lavoro, presenze, registri, foto, liquidazioni, report, backup e impostazioni sul dispositivo. Le funzioni possono cambiare.
+
+2. Responsabilità
+L’utente risponde di accuratezza, liceità e diritto d’uso delle informazioni inserite, acquisite, allegate o condivise e non deve violare diritti di terzi.
+
+3. Foto e documenti
+L’utente gestisce contenuti creati o salvati nell’App. Registri e PDF servono alla gestione del lavoro e non garantiscono efficacia legale o requisiti di enti.
+
+4. Archiviazione e backup
+I dati sono sul dispositivo e possono perdersi. Salva registri di lavoro, impostazioni, foto e altri dati sul dispositivo come ZIP di backup. Dopo aver creato lo ZIP, scegli un’app in cui conservarlo dal menu di condivisione di Android. Controlla lo stato del salvataggio nell’app selezionata. Conserva insieme tutti i file di un backup suddiviso.
+
+5. ZIP di backup e copie esterne
+TAIPOPO crea lo ZIP di backup sul dispositivo. Quando lo esporti, i file vengono consegnati all’app scelta nel menu di condivisione. Puoi gestire o eliminare le copie esterne dalla posizione in cui le hai salvate.
+
+6. Permessi
+Permessi fotocamera, posizione, foto o archiviazione e notifiche servono alle funzioni correlate e possono limitarle se negati.
+
+7. Divieti
+Sono vietati usi illegali, accessi non autorizzati, interferenze, elusione della sicurezza e distribuzione di malware, false informazioni o materiali lesivi.
+
+8. Modifiche
+TAIPOPO può modificare, aggiungere o interrompere funzioni per sicurezza, miglioramento, operatività o legge, comunicando cambi importanti se possibile.
+
+9. Responsabilità
+Nei limiti di legge, TAIPOPO non risponde per perdite da errori utente, guasti esterni, mancati backup, condivisioni non autorizzate o violazioni. La responsabilità non escludibile resta ferma.
+
+10. Privacy
+Informativa privacy e guida cancellazione dati regolano informazioni personali, permessi, archiviazione e cancellazione.
+
+11. Legge e contatto
+Si applica la legge della Repubblica di Corea e la competenza segue la legge applicabile. Contatto: taipopo.app@gmail.com

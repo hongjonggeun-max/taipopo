@@ -15,6 +15,8 @@ const copy = JSON.parse(read('tools/public-copy.json'));
 const readiness = JSON.parse(read('tools/publication-readiness.json'));
 const disclosures = JSON.parse(read('tools/website-disclosures.json'));
 const { escapeHtml } = require('./privacy-page.cjs');
+const { renderBuild17Access } = require('./build17-access.cjs');
+const { policyBodyMatchesApp } = require('./reviewed-app-copy.cjs');
 const baseline = JSON.parse(execFileSync('git', ['show', '6939c57671c1efdcca69ea1ce6f7e9d38e41b299:guide/manual.json'], { cwd: root, encoding: 'utf8', maxBuffer: 8 * 1024 * 1024 }));
 const oldPolicies = JSON.parse(execFileSync('git', ['show', '6939c57671c1efdcca69ea1ce6f7e9d38e41b299:tools/privacy-content.json'], { cwd: root, encoding: 'utf8', maxBuffer: 8 * 1024 * 1024 }));
 const removed = ['backup-drive', 'drive-management', 'restore-drive'];
@@ -66,7 +68,10 @@ for (const [code, locale] of Object.entries(data.locales)) {
   assert.ok(body('restore').includes(arb.manualPurposeRestore.split('\n\n').at(-1)), `${code}: replacement warning missing`);
   assert.ok(body('camera-gps-record').includes(arb.gpsLocationRecordSubtitle), `${code}: local GPS purpose missing`);
   assert.ok(body('camera-gps-record').includes(arb.cameraGpsUsageNotice), `${code}: camera-first default-OFF choice missing`);
-  assert.ok(body('camera-gps-record').includes(arb.locationPreservationNotice), `${code}: existing EXIF/share scope missing`);
+  assert.ok(body('camera-gps-record').includes(disclosures.locales[code].gpsCache), `${code}: reviewed EXIF/share scope missing`);
+  assert.ok(body('camera-gps-record').includes(arb.locationPreservationNotice) &&
+    body('camera-gps-record').includes(disclosures.locales[code].metadataResidualNotice), `${code}: candidate and existing-version scope missing`);
+  assert.ok(body('restore').includes(arb.manualPurposeRestore.split('\n\n').slice(1).join('\n\n')), `${code}: set validation/confirmation/cancel procedure missing`);
   for (const [id,key] of [['camera-address','showAddressSubtitle'],['workplace-gps-address','manualPurposeWorkplaceGpsAddress']]) {
     assert.equal(body(id),arb[key],`${code}/${id}: blocked address notice differs`);
     assert.ok(!body(id).includes(arb.cameraAddressLookupNotice)&&!body(id).includes(arb.workplaceGpsLookupDisclosure),`${code}/${id}: obsolete opt-in address promise`);
@@ -88,7 +93,7 @@ for (const [code, locale] of Object.entries(data.locales)) {
   assert.ok(section(newTerms,5).includes(arb.backupFileDisclosure), `${code}: terms backup scope missing`);
   for (const field of ['manualStart','externalReset']) assert.ok(section(newTerms,5).includes(copy[code][field]), `${code}: verified ${field} condition missing`);
   assert.ok(!newTerms.includes(copy[code].sharingResponsibility), `${code}: blanket external-processing responsibility retained`);
-  assert.equal(policies[code].body, arb.privacyPolicyBody, `${code}: current app privacy text not synchronized`);
+  assert.ok(policyBodyMatchesApp(policies[code], arb), `${code}: app differs beyond the reviewed sharing paragraph`);
   assert.equal(policies[code].processingNotice, arb.privacyPolicyProcessingNotice, `${code}: current app notices not synchronized`);
   assert.ok(copy[code].externalIntroduction?.trim(), `${code}: named external processing introduction missing`);
   assert.equal(policies[code].effectiveDate, oldPolicies[code].effectiveDate, `${code}: policy effective date invented`);
@@ -96,7 +101,22 @@ for (const [code, locale] of Object.entries(data.locales)) {
   assert.ok(policies[code].deletion.body.includes(resetPath), `${code}: wrong reset path`);
   for (const route of ['', 'privacy/', 'terms/', 'deletion/', 'support/']) {
     const html = read(`${code}/${route}index.html`);
-    const visible = html.replace(/<script\b[^>]*>[\s\S]*?<\/script>/gu, '').replace(/<[^>]*>/gu, '');
+    // The user-facing preserved-document notice is intentionally a review
+    // notice. Require that exact localized block while keeping the existing
+    // internal-draft wording prohibition for the remaining current content.
+    const buildAccess = renderBuild17Access(code);
+    if (['privacy/', 'terms/'].includes(route)) {
+      assert.ok(html.includes(buildAccess), `${code}/${route}: build17 access notice missing`);
+      assert.equal((html.match(/class="glass policy-build-access"/gu) || []).length, 1, `${code}/${route}: repeated build17 access notice`);
+    }
+    // This exact public date/applicability disclosure is intentional. Keep the
+    // internal-draft wording prohibition everywhere outside the two reviewed
+    // notices, rather than permitting draft text across the policy body.
+    const dateDisclosure = `<p>${escapeHtml(disclosures.locales[code].privacyDateScope)}</p>`;
+    if (route === 'privacy/') assert.equal(html.split(dateDisclosure).length - 1, 1, `${code}: qualified date notice missing/repeated`);
+    const visible = html.replace(buildAccess, '')
+      .replace(route === 'privacy/' ? dateDisclosure : '\u0000', '')
+      .replace(/<script\b[^>]*>[\s\S]*?<\/script>/gu, '').replace(/<[^>]*>/gu, '');
     if (['privacy/', 'deletion/', 'support/'].includes(route)) {
       for (const paragraph of copy[code].supportMailPolicy.split('\n\n')) {
         assert.ok(paragraph.trim() && visible.includes(escapeHtml(paragraph)), `${code}/${route}: approved support retention/deletion policy missing`);

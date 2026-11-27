@@ -50,7 +50,9 @@ for (const [code, policy] of Object.entries(policies)) {
     for (const [, raw] of html.matchAll(/(?:href|src)="([^"]+)"/gu)) {
       if (/^(?:https?:|mailto:|#|data:)/u.test(raw)) continue;
       const decoded = decodeURIComponent(raw.split(/[?#]/u, 1)[0]);
-      let target = path.resolve(path.dirname(file), decoded || '.');
+      let target = decoded.startsWith('/')
+        ? path.join(root, decoded.slice(1))
+        : path.resolve(path.dirname(file), decoded || '.');
       if (!path.extname(target)) target = path.join(target, 'index.html');
       if (!fs.existsSync(target)) throw new Error(`Broken local link ${raw}: ${code}/${relative}`);
     }

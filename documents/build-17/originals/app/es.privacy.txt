@@ -1,0 +1,99 @@
+Política de privacidad de TAIPOPO
+
+Fecha de entrada en vigor: 2026-08-23
+Última actualización: 2026-11-11
+Responsable del tratamiento y responsable de privacidad: desarrollador independiente Jonggeun Hong
+
+1. Responsable del tratamiento y contacto
+Responsable del tratamiento y responsable de privacidad: desarrollador independiente Jonggeun Hong
+
+Las consultas sobre el tratamiento de datos personales, el procedimiento de eliminación de datos de la aplicación y el ejercicio de sus derechos pueden enviarse a la dirección de correo electrónico indicada a continuación.
+
+taipopo.app@gmail.com
+
+2. Información tratada
+TAIPOPO almacena la información necesaria para gestionar asistencia, lugares de trabajo, registros fotográficos, liquidaciones e informes principalmente en el área de almacenamiento de la app en el dispositivo del usuario. Según la implementación confirmada actualmente, TAIPOPO no está estructurada para subir y conservar los datos laborales del usuario en un servidor propio.
+• Información de usuario y trabajador: nombre del trabajador, número de teléfono, correo electrónico, dirección y dirección detallada, criterios de cálculo salarial, fecha de pago, método de pago, banco, número de cuenta y titular de la cuenta
+• Información del lugar de trabajo: nombre, dirección y dirección detallada del lugar de trabajo, nombre de la empresa, nombre del responsable, información de contacto, notas del lugar de trabajo y archivos adjuntos del lugar de trabajo
+• Registros de asistencia y trabajo: horas de entrada y salida, tiempo de trabajo y descanso, notas de trabajo, datos de liquidación, datos de informes e instantáneas relacionadas
+• Información de fotos e imágenes: incluye fotos originales, fotos editadas, imágenes de visualización, miniaturas y otras imágenes derivadas, categorías de fotos indicadas por el usuario, marcas y anotaciones añadidas a las fotos, hora de captura e información del lugar de trabajo o de la tarea vinculada a las fotos
+• Información de ubicación y dirección: coordenadas GPS e información de dirección cuando el usuario concede permiso de ubicación y utiliza las funciones relacionadas. Para convertir las coordenadas en una dirección, la aplicación llama al servicio de geocodificación del sistema operativo Android; según la configuración del dispositivo y del sistema operativo, este proceso puede usar la red. La cámara puede solicitar la conversión de coordenadas en una dirección si está activada la visualización de la dirección, se ha concedido el permiso de ubicación y hay coordenadas válidas. El registro GPS por sí solo no solicita esa conversión.
+• Metadatos de archivos de foto: los archivos de foto originales pueden contener metadatos relacionados con la captura (información adicional de la foto), como EXIF. La aplicación puede leer la información de orientación de la foto o reflejarla en imágenes derivadas para mostrar y compartir fotos y generar PDF.
+• Ajustes y diagnóstico: ajustes de la app, ajustes de notificaciones, cámara y copias de seguridad, información de progreso de copia de seguridad y restauración, e información de estabilidad y diagnóstico de errores de la app
+
+3. Finalidades y fundamentos del tratamiento
+La información descrita anteriormente procede de lo que usted introduce, fotografía o adjunta en la aplicación, o de las funciones que ejecuta directamente. La información se usa para gestión de asistencia y trabajo, registros fotográficos, liquidaciones, informes y PDF, copias de seguridad, restauración, notificaciones, diagnóstico de errores y consultas.
+
+4. Conservación
+Los datos de trabajo y las fotos pueden conservarse en la aplicación hasta que elimine registros, borre fotos de forma permanente, restablezca todos los datos, desinstale la aplicación o borre sus datos desde el sistema operativo. También se aplican las reglas y excepciones de la papelera de la sección 10. Restablecer todos los datos elimina los ajustes, datos de trabajo, fotos, PDF generados, archivos adjuntos, archivos exportados, datos de copia de seguridad, caché y archivos temporales del área del dispositivo gestionada por la aplicación. Las copias almacenadas fuera del área gestionada por la aplicación deben eliminarse por separado. Debe borrar por separado los archivos ZIP/PDF/fotos exportados y las copias en almacenamiento externo, en su ubicación de destino. Los datos de diagnóstico enviados a Firebase Crashlytics se tratan según sus funciones y políticas.
+
+5. Copias ZIP y copias externas
+TAIPOPO crea el ZIP de copia de seguridad en el dispositivo. Al exportarlo, los archivos se entregan a la aplicación que elijas en el menú para compartir. Puedes gestionar o eliminar las copias externas en el lugar donde las guardaste.
+
+Este ZIP estándar es una copia completa y sin cifrar de los datos de la app. Puede incluir fotos originales y sus metadatos de ubicación, hora de captura y dispositivo, junto con lugares de trabajo, direcciones, registros de trabajo, pagos y notas. Al guardar o compartir, se crea una copia fuera de la app que la persona o app seleccionada puede abrir.
+
+6. Firebase Crashlytics
+El diagnóstico de Firebase Crashlytics está desactivado por defecto. Si lo permite, se pueden enviar a Google Firebase códigos de error, trazas depuradas e identificadores de instalación y diagnósticos del dispositivo y la app del SDK. La app no envía registros de trabajo, fotos ni textos de consultas como contenido diagnóstico. Los registros, la cámara y las copias siguen disponibles sin permitirlo.
+
+La retirada bloquea nuevos informes de error de la app. No puede recuperarse el tráfico SDK ya en curso. Antes de reiniciar Firebase tras una retirada o la migración de esta actualización se eliminan los informes Crashlytics retenidos y los diagnósticos de sesión Firebase en cola; si falla la limpieza, el envío de errores Firebase sigue desactivado. Permitir de nuevo en el mismo proceso espera un reinicio completo y la limpieza, evitando enviar después informes del período desactivado. Borrar información ya enviada al servidor requiere una solicitud aparte. Esta opción no controla el diagnóstico ML Kit. Los diagnósticos técnicos ML Kit retenidos pueden enviarse por separado.
+
+La información de diagnóstico de Crashlytics está separada de los registros de trabajo, fotos y datos de liquidación del usuario. Restablecer los datos locales de la aplicación o desinstalarla no elimina automáticamente la información de diagnóstico ya enviada a Firebase Crashlytics. Las consultas relacionadas pueden enviarse al correo electrónico indicado abajo, y el alcance real de gestión puede variar según las funciones y políticas de Firebase.
+
+Según la información oficial de Firebase, Crashlytics conserva durante 90 días las trazas de llamadas a funciones en el momento del fallo y los identificadores relacionados; después comienza el proceso de eliminarlos de los sistemas activos y de copia de seguridad.
+
+7. Reconocimiento de QR
+El escaneo QR utiliza la cámara y ZXing en el dispositivo. Las imágenes QR y el contenido reconocido no se envían a un servicio de reconocimiento.
+
+El cambio no elimina automáticamente las colas de diagnóstico generadas por ML Kit en versiones anteriores ni la información ya enviada a servidores. La eliminación de datos anteriores y la posible transmisión de colas pendientes requieren una verificación aparte.
+
+8. Terceros y tratamiento externo
+Según la implementación comprobada, TAIPOPO no almacena de forma centralizada los datos de trabajo en un servidor propio ni los vende. También pueden aplicarse las condiciones y políticas de privacidad de cada servicio.
+
+9. Compartir y exportar fotos, PDF y ZIP
+Las fotos, PDF, ZIP y otros archivos de exportación pueden copiarse a una app externa, ubicación de almacenamiento, nube, USB o dispositivo de almacenamiento externo seleccionado por el usuario solo cuando el usuario elige directamente compartir, guardar o exportar. La conservación y eliminación de copias transferidas fuera del área gestionada por la app puede variar según la app, ubicación de almacenamiento, servicio y ajustes del usuario.
+
+10. Eliminación y derechos del usuario
+Los elementos enviados a la papelera, incluidas fotos, notas, lugares de trabajo, liquidaciones e informes, se pueden restaurar o eliminar de forma permanente. Los elementos que lleven 30 días en la papelera desde la fecha de eliminación se eliminarán de forma permanente la próxima vez que se abra la papelera y ya no podrán restaurarse desde la papelera de la app. El usuario también puede eliminarlos de forma permanente antes de que transcurran 30 días.
+
+Los elementos antiguos sin información sobre la fecha de eliminación se excluyen de la eliminación automática basada en el tiempo. Las fotos que sigan siendo utilizadas por otros registros se protegen durante la eliminación. La limpieza automática puede aplazarse mientras se restauran datos o cuando los registros no puedan cargarse correctamente.
+El usuario puede ver, editar y eliminar registros en la app, y las fotos pueden restaurarse desde la papelera o eliminarse permanentemente. Restablecer todos los datos elimina los ajustes, datos de trabajo, fotos, PDF generados, archivos adjuntos, archivos exportados, datos de copia de seguridad, caché y archivos temporales del área del dispositivo gestionada por la aplicación. Los datos gestionados por la aplicación en el dispositivo pueden eliminarse desde Configuración > Gestión de datos > Restablecer todos los datos.
+
+Los archivos exportados a Downloads, ZIP/PDF/fotos compartidos o copiados a otra app, correo electrónico, nube, USB o almacenamiento externo y la información de diagnóstico ya enviada a Crashlytics son independientes del restablecimiento local. Las consultas de privacidad y sobre el procedimiento de eliminación de datos de la app pueden enviarse a taipopo.app@gmail.com.
+
+Las solicitudes de acceso, rectificación, eliminación, limitación del tratamiento, orientación sobre el procedimiento de eliminación de datos de la app o ejercicio de derechos por un representante legal pueden enviarse a taipopo.app@gmail.com. Durante la tramitación de una solicitud, puede ser necesario comprobar la información mínima necesaria para verificar la identidad del solicitante o su autoridad legítima.
+
+11. Seguridad y recopilación automática de datos
+La aplicación gestiona los datos de trabajo y las fotos principalmente en su área de almacenamiento en el dispositivo. Según la estructura comprobada, TAIPOPO no utiliza cookies web propias ni archivos similares para recopilar automáticamente datos de trabajo.
+
+12. Menores y cambios de la política
+TAIPOPO no es un servicio diseñado principalmente para menores de 14 años. Esta política puede modificarse según cambios en leyes, servicios o funciones, y los cambios se comunicarán mediante una actualización de la app o un aviso dentro de la app.
+
+Aviso adicional (2026-10-25)
+
+La publicidad y las nuevas compras PRO están desactivadas en la configuración de distribución actual. Se conservan los derechos de compra verificados anteriormente.
+
+La consulta o restauración de compras existentes y la consulta de productos pueden procesar identificadores de producto de Google Play, estados de compra y datos de verificación. Google Play gestiona los datos del método de pago.
+
+Los registros y las fotos de TAIPOPO se guardan en tu dispositivo. El desarrollador no conserva los registros en un servidor separado. Haz copias de los datos importantes con regularidad.
+
+La pérdida o avería del dispositivo, desinstalar la app o borrar sus datos puede causar la pérdida de registros y fotos. Las copias guardadas solo en el mismo dispositivo también pueden perderse; conserva las importantes también fuera de él. Comprueba y gestiona la finalización, ubicación, estado de los archivos y acceso a la cuenta. El desarrollador no conserva copias de los registros en un servidor separado y quizá no pueda ayudar a recuperarlos sin una copia válida. Consulta la política de privacidad para el tratamiento externo, como el diagnóstico de errores.
+
+13. Visitas al sitio y almacenamiento del tema · 2026-11-07
+
+El sitio se aloja en GitHub Pages. GitHub registra las direcciones IP de los visitantes por seguridad. Este sitio no incluye registro de usuarios, rastreadores publicitarios ni scripts de análisis de visitas. El tratamiento y la conservación del alojamiento se describen en la política de privacidad de GitHub: https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement
+
+El navegador solo guarda la elección del tema claro u oscuro en taipopo-site-theme. Borre los datos de este sitio en el navegador para eliminarla, o bloquee el almacenamiento del sitio si su navegador lo permite. Elegir el modo claro cambia el valor guardado, no lo elimina. El sitio funciona sin almacenamiento; si no puede leer una elección guardada, utiliza el modo claro.
+
+14. Consultas por correo electrónico
+
+El sitio abre su aplicación de correo y no recibe ni almacena consultas por sí mismo. Si envía un correo, el desarrollador recibe y trata la dirección del remitente, el mensaje, los adjuntos y los datos del dispositivo enviados para responder, resolver problemas o tramitar solicitudes de derechos. Los borradores de la app pueden incluir versión y compilación, versión de Android, modelo y idioma; revise y elimine los datos innecesarios antes de enviarlos. El correo recibido se trata mediante Gmail y el servicio de correo elegido, conforme a sus políticas. Consulte sobre conservación o eliminación en taipopo.app@gmail.com. Política de privacidad de Google: https://policies.google.com/privacy
+
+15. Derechos conforme a la ley aplicable
+
+Cuando la ley aplicable reconozca estos derechos, puede solicitar acceso, rectificación, supresión, limitación, oposición y portabilidad, y retirar el consentimiento para el tratamiento basado en él. La retirada no afecta a la licitud del tratamiento anterior. Envíe las solicitudes a taipopo.app@gmail.com; solo se podrá pedir la información necesaria para verificar su identidad o representación. También puede reclamar ante la autoridad de protección de datos competente. Directorio del EEE: https://www.edpb.europa.eu/about-edpb/our-members_en
+
+Los registros que solo están en el dispositivo se gestionan en la app. El desarrollador no los recibe por el mero uso de la app ni puede borrarlos a distancia. Los datos enviados por correo o a servicios externos se consideran por separado.
+
+16. Permisos y bases del tratamiento
+
+Los permisos de Android habilitan funciones concretas; por sí solos no constituyen una base jurídica ni un consentimiento general para todo tratamiento de datos personales. Retirar permisos, borrar registros locales y eliminar copias externas son acciones distintas. El tratamiento y la conservación de los servicios externos siguen sus políticas.

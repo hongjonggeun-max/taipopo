@@ -1,0 +1,25 @@
+Draf tinjauan · versi 2026-11-07. Tanggal berlaku belum dikonfirmasi. Tanggal versi/tinjauan ini bukan tanggal berlaku dan tidak mengubah tanggal berlaku Kebijakan Privasi.
+Tanggal berlaku: akan dikonfirmasi sebelum rilis resmi
+Ketentuan ini mengatur penggunaan TAIPOPO (“App”) serta hak, kewajiban, dan tanggung jawab pengguna. Memasang atau menggunakan App berarti menyetujui ketentuan ini.
+1. Tujuan dan ruang lingkup
+App membantu mengelola tempat kerja, kehadiran, catatan, foto, settlement, laporan, backup, dan pengaturan di perangkat. Fitur dapat berubah.
+2. Tanggung jawab pengguna
+Pengguna bertanggung jawab atas akurasi, legalitas, dan hak penggunaan informasi yang dimasukkan, diambil, dilampirkan, atau dibagikan, dan tidak boleh melanggar hak pihak lain.
+3. Foto dan dokumen
+Pengguna mengelola konten yang dibuat atau disimpan App. Catatan dan PDF hanya membantu pengelolaan kerja dan tidak menjamin efek hukum atau syarat lembaga.
+4. Penyimpanan dan backup
+Data disimpan di perangkat dan dapat hilang. Data penting harus disimpan terpisah melalui Google Drive backup, backup perangkat, penyimpanan eksternal, berbagi, atau ekspor.
+5. Google Drive dan eksternal
+Google Drive backup/restore, backup lokal atau eksternal, berbagi, dan ekspor hanya terjadi saat dimulai pengguna. Reset atau menghapus App tidak otomatis menghapus backup Drive atau file eksternal. Anda memulai pencadangan baru ke Google Drive. Jika kebijakan jaringan untuk unggahan mengizinkan, aplikasi dapat otomatis melanjutkan unggahan terputus yang memenuhi syarat saat berikutnya dibuka.
+6. Izin
+Izin kamera, lokasi, foto atau penyimpanan, dan notifikasi digunakan untuk fitur terkait dan dapat membatasi fitur jika ditolak.
+7. Larangan
+Dilarang penggunaan ilegal, akses tanpa izin, gangguan App, bypass keamanan, penyebaran malware, informasi palsu, atau materi pelanggar hak.
+8. Perubahan
+TAIPOPO dapat mengubah, menambah, atau menghentikan fitur untuk keamanan, peningkatan, operasi, atau hukum, dan memberi tahu perubahan penting jika memungkinkan.
+9. Tanggung jawab
+Sejauh diizinkan hukum, TAIPOPO tidak bertanggung jawab atas kerugian akibat kesalahan pengguna, kegagalan eksternal, tidak backup, berbagi tanpa izin, atau pelanggaran. Tanggung jawab yang tidak dapat dikecualikan tetap berlaku.
+10. Privasi
+Kebijakan Privasi dan Panduan Penghapusan Data mengatur informasi pribadi, izin, penyimpanan, dan penghapusan.
+11. Hukum dan kontak
+Berlaku hukum Republik Korea, dan yurisdiksi sengketa mengikuti hukum yang berlaku. Kontak: taipopo.app@gmail.com

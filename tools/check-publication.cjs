@@ -12,22 +12,24 @@ let count = 0;
 for (const [code, policy] of Object.entries(data)) {
   assert.equal(policy.locale, code);
   const text = review.locales[code];
-  for (const key of ['heading', 'scope', 'qrLegacy', 'qrCandidate', 'international', 'otherInternational', 'deletion', 'accountScope', 'localConfig', 'gpsChoice', 'gpsCache', 'currentBackup', 'crashDeletion']) assert.ok(text[key]?.trim(), `${code}: ${key}`);
+  for (const key of ['heading', 'scope', 'qrLegacy', 'qrCandidate', 'international', 'otherInternational', 'deletion', 'accountScope', 'localConfig', 'gpsChoice', 'gpsCache', 'currentBackup', 'crashDeletion', 'metadataResidualNotice', 'privacyDateLabel', 'privacyDateScope']) assert.ok(text[key]?.trim(), `${code}: ${key}`);
   assert.ok(!text.scope.includes('1.0.0+21') && !text.qrCandidate.includes('1.0.0+21'), code);
   assert.ok(text.qrLegacy.includes('ML Kit') && text.qrCandidate.includes('ZXing'), code);
   assert.ok(policy.body.includes(policy.revisionDate), code);
   assert.equal(review.zipBackupVersion, '', 'Current website notices must not imply an unverified deployed version');
   assert.equal(policy.zipBackup.version, review.zipBackupVersion, `${code}: version-neutral backup notice`);
   assert.ok(policy.body.includes(policy.zipBackup.privacy) && policy.deletion.body.includes(policy.zipBackup.privacy), code);
-  // The inactive geocoder cache is not the current candidate's GPS policy.
-  // Its preservation/share warning must match the localized app notice.
+  // The frozen app notice overstates removal for the rotated-JPEG fallback.
+  // The website must retain the reviewed residual-metadata qualification.
   const appLocale = JSON.parse(fs.readFileSync(path.join(appRoot, 'lib/l10n', `app_${code}.arb`), 'utf8'));
-  assert.equal(text.gpsCache, appLocale.locationPreservationNotice, `${code}: GPS preservation/share scope`);
+  assert.ok(text.gpsCache.includes(text.metadataResidualNotice), `${code}: residual EXIF qualification`);
+  assert.notEqual(text.gpsCache, appLocale.locationPreservationNotice, `${code}: unqualified app notice must not overwrite website review`);
   assert.ok(text.gpsChoice.includes(appLocale.cameraGpsUsageNotice), `${code}: camera GPS choice`);
   assert.ok(text.gpsChoice.includes(appLocale.showAddressSubtitle), `${code}: saved workplace address`);
   assert.ok(text.currentBackup.includes('appDataFolder') && text.crashDeletion.includes('FID'), code);
   const resetRoute = policy.deletion.body.split('\n').find((line) => line.split(' > ').length === 3);
   assert.ok(resetRoute, code);
+  assert.equal(resetRoute, `${appLocale.settings} > ${appLocale.storageManagement} > ${appLocale.resetAllData}`, `${code}: actual data-management reset route`);
   assert.ok(!policy.deletion.body.split('\n').some((line) => line.split(' > ').length > 3), code);
   const privacy = fs.readFileSync(path.join(root, code, 'privacy/index.html'), 'utf8');
   assert.ok(privacy.includes(renderPolicy(policy).html), `Reviewed policy missing: ${code}`);

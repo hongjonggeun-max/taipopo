@@ -1,5 +1,6 @@
 'use strict';
 const copy = require('./public-copy.json');
+const { locales: reviewedDisclosures } = require('./website-disclosures.json');
 const featureOrder = ['memo', 'work-photos', 'camera-flash', 'camera-memo', 'camera-exposure', 'camera-landscape'];
 function publicManualChapters(chapters, code, arb) {
   const text = copy[code];
@@ -22,7 +23,7 @@ function publicManualChapters(chapters, code, arb) {
     }
     if (feature.id === 'backup-share') feature.body += `\n\n${arb.backupFileDisclosure}`;
     if (feature.id === 'camera-gps-record') {
-      feature.body = [`${arb.camera} → ${arb.cameraOptions} → ${arb.gpsLocationRecord}`, arb.cameraGpsUsageNotice, arb.gpsLocationRecordSubtitle, arb.locationPreservationNotice].join('\n\n');
+      feature.body = [`${arb.camera} → ${arb.cameraOptions} → ${arb.gpsLocationRecord}`, arb.cameraGpsUsageNotice, arb.gpsLocationRecordSubtitle, reviewedDisclosures[code].gpsCache].join('\n\n');
     }
     if (feature.id === 'camera-options') feature.title = arb.cameraOptions;
     if (feature.id === 'camera-coordinates') {
@@ -44,7 +45,7 @@ function publicManualChapters(chapters, code, arb) {
         `${arb.localRestoreSourceDevice}: ${arb.localRestoreDeviceActionSubtitle}`,
         `${arb.localRestoreSourceExternal}: ${arb.localRestoreExternalActionSubtitle}`,
         `${arb.externalBackupRestoreAction}: ${arb.externalBackupRestoreActionSubtitle}`,
-        arb.manualPurposeRestore.split('\n\n').at(-1),
+        arb.manualPurposeRestore.split('\n\n').slice(1).join('\n\n'),
         arb.legacyDriveBackupNotice,
       ].join('\n\n');
     }

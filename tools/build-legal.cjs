@@ -97,4 +97,5 @@ function updateSet(code, prefix) {
 
 for (const code of Object.keys(policies)) updateSet(code, code);
 updateSet('ko', '');
-console.log('Updated policy/support notices and 16 localized terms/deletion drafts plus Korean root routes. No deployment.');
+const archiveCount = require('./build17-documents.cjs').buildBuild17Documents();
+console.log(`Updated policy/support notices and 16 localized terms/deletion drafts plus Korean root routes; ${archiveCount} preserved build17 document pages. No deployment.`);

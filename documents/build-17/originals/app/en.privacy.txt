@@ -1,0 +1,99 @@
+TAIPOPO Privacy Policy
+
+Effective date: 2026-08-23
+Last updated: 2026-11-11
+Data controller and privacy officer: independent developer Jonggeun Hong
+
+1. Data Controller and Contact
+Data controller and privacy officer: independent developer Jonggeun Hong
+
+Questions about the processing of personal information, the app data deletion procedure, and exercising your rights can be sent to the email address below.
+
+taipopo.app@gmail.com
+
+2. Information Processed
+TAIPOPO stores information needed for attendance, workplaces, photo records, settlements, and report management primarily in the app storage area on the user's device. Based on the currently confirmed implementation, TAIPOPO is not structured to upload and store the user's work data on its own server.
+• User and worker information: worker name, phone number, email, address and detailed address, wage calculation criteria, payment date, payment method, bank, account number, and account holder
+• Workplace information: workplace name, address and detailed address, company name, manager name, contact information, workplace memos, and workplace attachments
+• Attendance and work records: check-in and check-out times, work and break time, work memos, settlement data, report data, and related snapshots
+• Photo and image information: includes original photos, edited photos, display images, thumbnails and other derived images, user-designated photo categories, markings and annotations added to photos, capture time, and workplace or work information linked to photos
+• Location and address information: GPS coordinates and address information when the user grants location permission and uses the related features. To convert coordinates into an address, the app calls the Android operating system’s geocoding service; depending on the device and operating-system configuration, this process may use the network. The camera may request address conversion when address display is on, location permission is granted, and valid coordinates are available. GPS recording alone does not request address conversion.
+• Photo metadata: original photo files may contain capture-related metadata (additional photo information), such as EXIF. The app may read photo orientation information or apply it to derived images to display and share photos and generate PDFs.
+• Settings and diagnostics: app settings, notification, camera and backup settings, backup and restore progress information, and app stability and error diagnostic information
+
+3. Purposes and Basis for Processing
+The information described above comes from what you enter, capture or attach in the app, or from your direct use of its features. Information is used to provide attendance and work record management, photo records storage, settlement, report and PDF creation, backup and restore, notifications, error diagnostics, and inquiry handling.
+
+4. Retention
+Work data and photos may remain in the app's storage until you delete individual items, permanently delete photos, reset all data, uninstall the app, or clear its data through the operating system. The trash rules and exceptions in section 10 also apply. Reset All Data deletes settings, work data, photos, generated PDFs, attachments, exported files, backup data, caches, and temporary files within the app-managed area on the device. Copies stored outside the app-managed area must be deleted separately. You must delete exported ZIP/PDF/photo files and copies on external storage separately at their saved locations. Diagnostic data sent to Firebase Crashlytics is handled according to Firebase's features and policies.
+
+5. Backup ZIPs and external copies
+TAIPOPO creates the backup ZIP on your device. When you export it, the files are passed to the app you select in the share sheet. Manage or delete copies stored outside TAIPOPO at the location where you saved them.
+
+This standard ZIP is a complete, unencrypted app-data copy. It can include original photos and their location, capture-time, and device metadata, along with workplaces, addresses, work records, pay, and notes. Saving or sharing creates a copy outside the app that the selected person or app can open.
+
+6. Firebase Crashlytics
+Firebase Crashlytics diagnostics are off by default. If you allow them, error codes, sanitized call traces, and SDK installation identifiers, device and app diagnostics may be sent to Google Firebase. The app does not send work records, photos or inquiry text as diagnostic content. You can use records, camera and backups without allowing diagnostics.
+
+Withdrawal blocks new error reports from the app. SDK traffic already in progress cannot be recalled. Before Firebase restarts after withdrawal or this update’s migration, retained Crashlytics reports and queued Firebase session diagnostics are removed; cleanup failure keeps Firebase error reporting off. Allowing again in the same app process waits for a full process restart and cleanup, preventing retroactive submission of OFF-period reports. Deleting information already sent to the server requires a separate request. This choice does not control ML Kit diagnostics. Retained ML Kit technical diagnostics may be sent separately.
+
+Crashlytics diagnostic information is separate from the user's work records, photos, and settlement data. Resetting the app’s local data or uninstalling the app does not automatically delete diagnostic information already sent to Firebase Crashlytics. Related inquiries can be sent to the email below, and the actual handling scope may vary depending on Firebase features and policies.
+
+According to Firebase’s official guidance, Crashlytics retains call traces from the time of a crash and related identifiers for 90 days, then begins the process of deleting them from live and backup systems.
+
+7. QR recognition
+QR scanning uses the camera and ZXing on your device. QR images and decoded content are not sent to a recognition service.
+
+Replacing the decoder does not automatically delete diagnostic queues generated by ML Kit in previous versions or information already sent to servers. Deletion of past data and possible transmission of retained queues require separate verification.
+
+8. Third Parties and External Processing
+Based on the confirmed implementation, TAIPOPO does not centrally store your work data on its own server or sell it. Each service's terms and privacy policy may also apply.
+
+9. Sharing and Exporting Photos, PDFs and ZIP Files
+Photos, PDFs, ZIP files, and other export files may be copied to an external app, storage location, cloud, USB, or external storage device selected by the user only when the user directly chooses to share, save, or export them. Retention and deletion of copies transferred outside the app-managed area may vary depending on the app, storage location, service, and user settings.
+
+10. Deletion and Your Rights
+Items moved to the trash, including photos, memos, workplaces, settlements, and reports, can be restored or permanently deleted. Items that have been in the trash for 30 days from the deletion date are permanently deleted the next time the trash is opened and cannot be restored from the app's trash after permanent deletion. A user can also permanently delete an item before 30 days.
+
+Legacy items without deletion-date information are excluded from time-based automatic deletion. Photos still used by other records are protected during deletion. Automatic cleanup may be deferred while data is being restored or records cannot be loaded normally.
+Users can view, edit, and delete records in the app, and photos can be restored from the trash or permanently deleted. Reset All Data deletes settings, work data, photos inside the app, PDFs created inside the app, attachments, export/backup data inside the app, and cache/temp data in the app-managed area on the device. App-managed data on the device can be deleted through Settings > Data Management > Reset All Data.
+
+Files exported to Downloads, ZIP/PDF/photo files shared or copied to another app, email, cloud, USB, or external storage device, and diagnostic information already sent to Crashlytics are separate from local reset. Privacy inquiries and app data deletion procedure questions can be sent to taipopo.app@gmail.com.
+
+Requests for access, correction, deletion, suspension of processing, guidance on the app data deletion procedure, or exercise of rights by a statutory representative can be sent to taipopo.app@gmail.com. While handling a request, the minimum information needed to verify the requester’s identity or legitimate authority may be requested.
+
+11. Security and Automatic Data Collection
+The app primarily manages work data and photos in its storage area on your device. Based on the confirmed app structure, TAIPOPO does not use its own web cookies or similar files to automatically collect your work data.
+
+12. Children and Policy Changes
+TAIPOPO is not designed primarily for children under the age of 14. This policy may be revised according to changes in laws, services, or features, and changes will be announced through an app update or in-app notice.
+
+Additional notice (2026-10-25)
+
+Advertising and new PRO purchases are disabled in the current distribution configuration. Previously verified purchase entitlements are retained.
+
+Checking or restoring existing purchases and querying product information may process Google Play product IDs, purchase status and purchase verification data. Payment method information is handled by Google Play.
+
+TAIPOPO records and photos are stored on your device. The developer does not keep records on a separate server. Back up important data regularly.
+
+Device loss or failure, uninstalling the app, or clearing app data can cause loss of records and photos. Backups stored only on the same device can also be lost; keep important backups outside the device too. You need to check and manage backup completion, location, file condition, and account access. The developer keeps no record copies on a separate server and may be unable to help recover data without a valid backup. See the relevant privacy policy sections for external service processing such as diagnostics.
+
+13. Website visits and theme storage · 2026-11-07
+
+The website is hosted on GitHub Pages. GitHub records visitors' IP addresses for security. This site has no sign-up, advertising trackers or analytics scripts. Hosting processing and retention are described in the GitHub Privacy Statement: https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement
+
+The browser stores only the light/dark theme choice under taipopo-site-theme. Clear this site's browser data to remove it, or block site storage in your browser where supported to refuse persistence. Selecting light mode changes the saved value; it does not remove it. The site works without storage; if no saved choice can be read, it defaults to light mode.
+
+14. Email inquiries
+
+The website opens your email app and does not itself receive or store inquiries. If you send an email, the developer receives and processes the sender address, message, attachments and any device details you send to respond, troubleshoot or handle a rights request. App email drafts can include app/build version, Android version, device model and language; review and remove unnecessary details before sending. Received mail is handled through Gmail and your chosen email service under their policies. For questions about retention or deletion of received mail, contact taipopo.app@gmail.com. Google Privacy Policy: https://policies.google.com/privacy
+
+15. Rights under applicable law
+
+Where applicable law provides them, you may request access, correction, deletion, restriction of processing, objection or data portability, and withdraw consent for processing based on consent. Withdrawal does not affect the lawfulness of earlier processing. Send requests to taipopo.app@gmail.com; only information necessary to verify identity or authority may be requested. You may also complain to the competent data protection authority. EEA authority directory: https://www.edpb.europa.eu/about-edpb/our-members_en
+
+You manage device-only records in the app. The developer does not receive those records merely because you use the app and cannot remotely delete them. Data you send by email or through external services must be considered separately.
+
+16. Permissions and processing grounds
+
+Android permissions enable particular functions; they do not by themselves establish a legal basis or blanket consent for all personal-data processing. Permission withdrawal, deletion of local records and deletion of external copies are separate actions. External services' processing and retention follow the relevant service policies.

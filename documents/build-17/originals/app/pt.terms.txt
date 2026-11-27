@@ -1,0 +1,40 @@
+Minuta para revisão · versão 2026-11-07. A data de vigência ainda não foi confirmada. Esta data de versão/revisão não é uma data de vigência e não altera a vigência da Política de Privacidade.
+
+Termos de Uso do TAIPOPO
+
+Data de vigência: a confirmar antes do lançamento oficial
+
+Estes Termos regem o uso do TAIPOPO (“App”) e direitos, obrigações e responsabilidades do usuário. Instalar ou usar o App significa concordar.
+
+1. Finalidade e escopo
+O App ajuda a gerenciar locais de trabalho, presença, registros, fotos, acertos, relatórios, backups e configurações no dispositivo. Recursos podem mudar.
+
+2. Responsabilidade
+O usuário responde pela exatidão, legalidade e direito de uso das informações inseridas, capturadas, anexadas ou compartilhadas, sem violar direitos de terceiros.
+
+3. Fotos e documentos
+O usuário gerencia conteúdos criados ou salvos no App. Registros e PDFs servem à gestão do trabalho e não garantem efeito legal nem requisitos de entidades.
+
+4. Armazenamento e backup
+Dados ficam no dispositivo e podem ser perdidos. Guarde registros de trabalho, configurações, fotos e outros dados no dispositivo como um ZIP de backup. Após criar o ZIP de backup, escolha um app no menu de compartilhamento do Android para guardá-lo. Confira o status do salvamento no app escolhido. Guarde juntos todos os arquivos de um backup dividido.
+
+5. ZIPs de backup e cópias externas
+O TAIPOPO cria o ZIP de backup no dispositivo. Ao exportá-lo, os arquivos são enviados ao app que você escolheu no menu de compartilhamento. Gerencie ou exclua as cópias externas no local onde foram salvas.
+
+6. Permissões
+Permissões de câmera, localização, fotos ou armazenamento e notificações são usadas por recursos relacionados e podem limitá-los se negadas.
+
+7. Proibições
+São proibidos uso ilegal, acesso não autorizado, interferência, bypass de segurança e distribuição de malware, informações falsas ou material infrator.
+
+8. Alterações
+TAIPOPO pode alterar, adicionar ou encerrar recursos por segurança, melhoria, operação ou lei, avisando mudanças importantes quando possível.
+
+9. Responsabilidade
+Na medida da lei, TAIPOPO não responde por perdas de erros do usuário, falhas externas, falta de backup, compartilhamento não autorizado ou violação. Responsabilidade não excluível permanece.
+
+10. Privacidade
+Política de Privacidade e Guia de Exclusão de Dados regem informações pessoais, permissões, armazenamento e exclusão.
+
+11. Lei e contato
+Aplica-se a lei da República da Coreia, e a jurisdição segue a lei aplicável. Contato: taipopo.app@gmail.com

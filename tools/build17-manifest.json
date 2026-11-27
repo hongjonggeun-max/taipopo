@@ -1,0 +1,520 @@
+{
+  "schema": 1,
+  "buildNumber": 17,
+  "applicability": "undetermined",
+  "webPublicationRecordDate": "2026-11-20",
+  "documents": [
+    {
+      "locale": "ar",
+      "document": "terms",
+      "source": "app",
+      "textFile": "documents/build-17/originals/app/ar.terms.txt",
+      "sha256": "d8ecad752fe0fe97cc8a2cc6d8c0109bb94da2015b85219f3a737f6f4282b75b",
+      "evidence": "retained-app-display-composition-and-compiled-build"
+    },
+    {
+      "locale": "ar",
+      "document": "privacy",
+      "source": "app",
+      "textFile": "documents/build-17/originals/app/ar.privacy.txt",
+      "sha256": "668515e5a24ad7fa944dddc30b391ad8d71ea0234f45951180271c14d6cc9c4c",
+      "evidence": "retained-app-display-composition-and-compiled-build"
+    },
+    {
+      "locale": "de",
+      "document": "terms",
+      "source": "app",
+      "textFile": "documents/build-17/originals/app/de.terms.txt",
+      "sha256": "2a1ae441f5a67ba955d3020443e86b0b0f5eb39c92b8773cade6abdbd731210b",
+      "evidence": "retained-app-display-composition-and-compiled-build"
+    },
+    {
+      "locale": "de",
+      "document": "privacy",
+      "source": "app",
+      "textFile": "documents/build-17/originals/app/de.privacy.txt",
+      "sha256": "f0fe96b15a1f91325463b54fe4e0fc356cb2703ffecd9b86ad8fd534b26bd2d8",
+      "evidence": "retained-app-display-composition-and-compiled-build"
+    },
+    {
+      "locale": "en",
+      "document": "terms",
+      "source": "app",
+      "textFile": "documents/build-17/originals/app/en.terms.txt",
+      "sha256": "bdcc4047c58512b4ef8040399153e6a325b28bf1cb5f04195c399231b6b7e926",
+      "evidence": "retained-app-display-composition-and-compiled-build"
+    },
+    {
+      "locale": "en",
+      "document": "privacy",
+      "source": "app",
+      "textFile": "documents/build-17/originals/app/en.privacy.txt",
+      "sha256": "3d1c38110a4c7cda3bcd9e2d9fb5f6462059398609f1e0df45bfda875f6fe706",
+      "evidence": "retained-app-display-composition-and-compiled-build"
+    },
+    {
+      "locale": "es",
+      "document": "terms",
+      "source": "app",
+      "textFile": "documents/build-17/originals/app/es.terms.txt",
+      "sha256": "b4f021569c9c90aeef3cf264c86478fff19622c2f82a38335030803561f35452",
+      "evidence": "retained-app-display-composition-and-compiled-build"
+    },
+    {
+      "locale": "es",
+      "document": "privacy",
+      "source": "app",
+      "textFile": "documents/build-17/originals/app/es.privacy.txt",
+      "sha256": "15f5af5c70d5a250c5722bb88f668ae8a2d7af3f470511603364f86a029b8285",
+      "evidence": "retained-app-display-composition-and-compiled-build"
+    },
+    {
+      "locale": "fr",
+      "document": "terms",
+      "source": "app",
+      "textFile": "documents/build-17/originals/app/fr.terms.txt",
+      "sha256": "41e4594967bdda7c6beda5532f4de750fa69ae9cf94a00599db1661e659e11ee",
+      "evidence": "retained-app-display-composition-and-compiled-build"
+    },
+    {
+      "locale": "fr",
+      "document": "privacy",
+      "source": "app",
+      "textFile": "documents/build-17/originals/app/fr.privacy.txt",
+      "sha256": "0fb065dc3eb672d0146102295bc67441be32189b5a7f5c5a95d91e654ce8e4cd",
+      "evidence": "retained-app-display-composition-and-compiled-build"
+    },
+    {
+      "locale": "hi",
+      "document": "terms",
+      "source": "app",
+      "textFile": "documents/build-17/originals/app/hi.terms.txt",
+      "sha256": "ef599dd65cca8aec5edbb28eaa5610aa6465764e1dee20674a69684bd1becd9e",
+      "evidence": "retained-app-display-composition-and-compiled-build"
+    },
+    {
+      "locale": "hi",
+      "document": "privacy",
+      "source": "app",
+      "textFile": "documents/build-17/originals/app/hi.privacy.txt",
+      "sha256": "e0a261a4b067282dff269024e01e432067243a8a2b357b9042ebcf6158e07483",
+      "evidence": "retained-app-display-composition-and-compiled-build"
+    },
+    {
+      "locale": "id",
+      "document": "terms",
+      "source": "app",
+      "textFile": "documents/build-17/originals/app/id.terms.txt",
+      "sha256": "7d61272863f4d41480e154c6bcdc6a4da0951b82b790358cf61632bebe8c0f96",
+      "evidence": "retained-app-display-composition-and-compiled-build"
+    },
+    {
+      "locale": "id",
+      "document": "privacy",
+      "source": "app",
+      "textFile": "documents/build-17/originals/app/id.privacy.txt",
+      "sha256": "074508e172396a77d63c0dc7ab812783cd01821d2fd4f2997817250e91798912",
+      "evidence": "retained-app-display-composition-and-compiled-build"
+    },
+    {
+      "locale": "it",
+      "document": "terms",
+      "source": "app",
+      "textFile": "documents/build-17/originals/app/it.terms.txt",
+      "sha256": "79357ef6e50d75972e373d875760523c8bd2fcd45fbfc410bc757c0013c9465c",
+      "evidence": "retained-app-display-composition-and-compiled-build"
+    },
+    {
+      "locale": "it",
+      "document": "privacy",
+      "source": "app",
+      "textFile": "documents/build-17/originals/app/it.privacy.txt",
+      "sha256": "a966ea2f9b566606077c8c11227be0e749c0bd620b2755d0157c92e24698fc48",
+      "evidence": "retained-app-display-composition-and-compiled-build"
+    },
+    {
+      "locale": "ja",
+      "document": "terms",
+      "source": "app",
+      "textFile": "documents/build-17/originals/app/ja.terms.txt",
+      "sha256": "c991a44de4763c69b6c5a186dff0eb49537578e35d7af7ac45b908a0c07b404f",
+      "evidence": "retained-app-display-composition-and-compiled-build"
+    },
+    {
+      "locale": "ja",
+      "document": "privacy",
+      "source": "app",
+      "textFile": "documents/build-17/originals/app/ja.privacy.txt",
+      "sha256": "5dcfda5603d81cad1fa1d6311660af563e1391c1ad435493ced961afe3f57ed6",
+      "evidence": "retained-app-display-composition-and-compiled-build"
+    },
+    {
+      "locale": "ko",
+      "document": "terms",
+      "source": "app",
+      "textFile": "documents/build-17/originals/app/ko.terms.txt",
+      "sha256": "3cfb84eb5f321ce5cef0ef753295741d90efd47dd8e9a4b956bf14c7dec9d495",
+      "evidence": "retained-app-display-composition-and-compiled-build"
+    },
+    {
+      "locale": "ko",
+      "document": "privacy",
+      "source": "app",
+      "textFile": "documents/build-17/originals/app/ko.privacy.txt",
+      "sha256": "3aab70d211c9bcc58275f8c05f71492a27b0d56bde0bed71e853a002b2d9bb1c",
+      "evidence": "retained-app-display-composition-and-compiled-build"
+    },
+    {
+      "locale": "pt",
+      "document": "terms",
+      "source": "app",
+      "textFile": "documents/build-17/originals/app/pt.terms.txt",
+      "sha256": "db8ffa4090cacacc24f60edb3343645a3507bb81108889a2872075aa8f317401",
+      "evidence": "retained-app-display-composition-and-compiled-build"
+    },
+    {
+      "locale": "pt",
+      "document": "privacy",
+      "source": "app",
+      "textFile": "documents/build-17/originals/app/pt.privacy.txt",
+      "sha256": "e901265779733e034482edf79cf6989b1504f9b4ededdeab5612a16d225b6258",
+      "evidence": "retained-app-display-composition-and-compiled-build"
+    },
+    {
+      "locale": "ru",
+      "document": "terms",
+      "source": "app",
+      "textFile": "documents/build-17/originals/app/ru.terms.txt",
+      "sha256": "e7e565305f55700f58a6b5d5d4241b7905b225bb3068644fa3da690b8bf0d797",
+      "evidence": "retained-app-display-composition-and-compiled-build"
+    },
+    {
+      "locale": "ru",
+      "document": "privacy",
+      "source": "app",
+      "textFile": "documents/build-17/originals/app/ru.privacy.txt",
+      "sha256": "2c86f0e25fb8a29eafa057dd1f0d2af2f80d21aa4c164f6d39b5b4b8b173c430",
+      "evidence": "retained-app-display-composition-and-compiled-build"
+    },
+    {
+      "locale": "th",
+      "document": "terms",
+      "source": "app",
+      "textFile": "documents/build-17/originals/app/th.terms.txt",
+      "sha256": "7f851acd690a8b9f406419e21ea792625a61fd256e45c408ef6dc4507d9b9543",
+      "evidence": "retained-app-display-composition-and-compiled-build"
+    },
+    {
+      "locale": "th",
+      "document": "privacy",
+      "source": "app",
+      "textFile": "documents/build-17/originals/app/th.privacy.txt",
+      "sha256": "4bdc9fb60c68b3fa6cc3c984d33da57aec90c9ba7f69311df29bd3eec516d637",
+      "evidence": "retained-app-display-composition-and-compiled-build"
+    },
+    {
+      "locale": "tr",
+      "document": "terms",
+      "source": "app",
+      "textFile": "documents/build-17/originals/app/tr.terms.txt",
+      "sha256": "0eaf6a90e9c8a29bf4d9f69e76f37df4042c5f148320d198d96158b9ec5ca4d0",
+      "evidence": "retained-app-display-composition-and-compiled-build"
+    },
+    {
+      "locale": "tr",
+      "document": "privacy",
+      "source": "app",
+      "textFile": "documents/build-17/originals/app/tr.privacy.txt",
+      "sha256": "7ddceeaad4b4bd9f1d9690f30e7d64cc7d62d2be72e4ec78b52aaf6e345527d2",
+      "evidence": "retained-app-display-composition-and-compiled-build"
+    },
+    {
+      "locale": "vi",
+      "document": "terms",
+      "source": "app",
+      "textFile": "documents/build-17/originals/app/vi.terms.txt",
+      "sha256": "d986dcaf6fd19d48277a288b684862b665d25b6c6a910cb1f3d3531c5fa963ed",
+      "evidence": "retained-app-display-composition-and-compiled-build"
+    },
+    {
+      "locale": "vi",
+      "document": "privacy",
+      "source": "app",
+      "textFile": "documents/build-17/originals/app/vi.privacy.txt",
+      "sha256": "3a78fb25647a6a5ba59beb4c21813a7e84a72d0bba572a104a83ae6a7a452cb6",
+      "evidence": "retained-app-display-composition-and-compiled-build"
+    },
+    {
+      "locale": "zh",
+      "document": "terms",
+      "source": "app",
+      "textFile": "documents/build-17/originals/app/zh.terms.txt",
+      "sha256": "3c21de5d3d3029598a230fb75cf349f401bb1d46fb1a61f2632d574cfe59e866",
+      "evidence": "retained-app-display-composition-and-compiled-build"
+    },
+    {
+      "locale": "zh",
+      "document": "privacy",
+      "source": "app",
+      "textFile": "documents/build-17/originals/app/zh.privacy.txt",
+      "sha256": "6eb227136c41614ad4a91259b378147633f37b4d2f1508fcffbbaa163db59d61",
+      "evidence": "retained-app-display-composition-and-compiled-build"
+    },
+    {
+      "locale": "ar",
+      "document": "terms",
+      "source": "web",
+      "textFile": "documents/build-17/originals/web/ar.terms.txt",
+      "sha256": "1d9232579316ea33614d66d3531fc138de27bda14bf259eceafa8ec4bb340e9c",
+      "evidence": "published-source-and-publication-record"
+    },
+    {
+      "locale": "ar",
+      "document": "privacy",
+      "source": "web",
+      "textFile": "documents/build-17/originals/web/ar.privacy.txt",
+      "sha256": "0a345bc40cd25bfc037c91b01d077cb4e3df4cc72254472c7a66d46d90a3bb91",
+      "evidence": "published-source-and-retained-http"
+    },
+    {
+      "locale": "de",
+      "document": "terms",
+      "source": "web",
+      "textFile": "documents/build-17/originals/web/de.terms.txt",
+      "sha256": "beae04180edd205bd8b63dd6e4162fdc0a2d5bccd70003e65290bc09b41af15a",
+      "evidence": "published-source-and-publication-record"
+    },
+    {
+      "locale": "de",
+      "document": "privacy",
+      "source": "web",
+      "textFile": "documents/build-17/originals/web/de.privacy.txt",
+      "sha256": "feda704e15885c0316c28438388b02dac967ee4b402c7c9c80deddd392605316",
+      "evidence": "published-source-and-retained-http"
+    },
+    {
+      "locale": "en",
+      "document": "terms",
+      "source": "web",
+      "textFile": "documents/build-17/originals/web/en.terms.txt",
+      "sha256": "53fd0dd48c1ba71a7eafcbc2e4f906d0afb9bcdafdc700e75dd0812c2c7480c7",
+      "evidence": "published-source-and-publication-record"
+    },
+    {
+      "locale": "en",
+      "document": "privacy",
+      "source": "web",
+      "textFile": "documents/build-17/originals/web/en.privacy.txt",
+      "sha256": "8e682bfcd94455ed6848cba3c5c23527c6ffdeeb8deea57c9545d2794cae97a7",
+      "evidence": "published-source-and-retained-http"
+    },
+    {
+      "locale": "es",
+      "document": "terms",
+      "source": "web",
+      "textFile": "documents/build-17/originals/web/es.terms.txt",
+      "sha256": "bf1cd2036284164576f3129da3fe8d4cd1fc9b2a873115849411b59814edd30e",
+      "evidence": "published-source-and-publication-record"
+    },
+    {
+      "locale": "es",
+      "document": "privacy",
+      "source": "web",
+      "textFile": "documents/build-17/originals/web/es.privacy.txt",
+      "sha256": "f758c434887a13f02061e51210de0724bed1ae7f83acbc6fcecb47eb4b9110ba",
+      "evidence": "published-source-and-retained-http"
+    },
+    {
+      "locale": "fr",
+      "document": "terms",
+      "source": "web",
+      "textFile": "documents/build-17/originals/web/fr.terms.txt",
+      "sha256": "a3d5a4a01f9e12976a1a2976f557994920bf210f15f02edad4dc41fc0a97f31d",
+      "evidence": "published-source-and-publication-record"
+    },
+    {
+      "locale": "fr",
+      "document": "privacy",
+      "source": "web",
+      "textFile": "documents/build-17/originals/web/fr.privacy.txt",
+      "sha256": "f94edd749b63650b5385e41ab67fb43d4171a1bb544ebea37024acf1d8a5c391",
+      "evidence": "published-source-and-retained-http"
+    },
+    {
+      "locale": "hi",
+      "document": "terms",
+      "source": "web",
+      "textFile": "documents/build-17/originals/web/hi.terms.txt",
+      "sha256": "37945ae51360cd935803e8d0b7901ef94255a425c56eca7fe361b4468efd4d0b",
+      "evidence": "published-source-and-publication-record"
+    },
+    {
+      "locale": "hi",
+      "document": "privacy",
+      "source": "web",
+      "textFile": "documents/build-17/originals/web/hi.privacy.txt",
+      "sha256": "e0eb50a7635abc26ac0484bf9bb6dd5244766c50089f3a86f8fdf4dc74a14c93",
+      "evidence": "published-source-and-retained-http"
+    },
+    {
+      "locale": "id",
+      "document": "terms",
+      "source": "web",
+      "textFile": "documents/build-17/originals/web/id.terms.txt",
+      "sha256": "0ba22c9890c544ac1af90b6b89b87fd24944dfaa44914e770e83230a0ddf0a3c",
+      "evidence": "published-source-and-publication-record"
+    },
+    {
+      "locale": "id",
+      "document": "privacy",
+      "source": "web",
+      "textFile": "documents/build-17/originals/web/id.privacy.txt",
+      "sha256": "9544561c8d0a7e3e1db4f8c1bc9f8269e3b3aa4ee947ec0a87c4e94a4860bd09",
+      "evidence": "published-source-and-retained-http"
+    },
+    {
+      "locale": "it",
+      "document": "terms",
+      "source": "web",
+      "textFile": "documents/build-17/originals/web/it.terms.txt",
+      "sha256": "de21fef15224cafae9335868e0506d8b12cef63fdcfcc9f308bb7d3920c79168",
+      "evidence": "published-source-and-publication-record"
+    },
+    {
+      "locale": "it",
+      "document": "privacy",
+      "source": "web",
+      "textFile": "documents/build-17/originals/web/it.privacy.txt",
+      "sha256": "79963c98b357c52661bdb7b7278b8f3bf23e276824055695c956a56c3d995795",
+      "evidence": "published-source-and-retained-http"
+    },
+    {
+      "locale": "ja",
+      "document": "terms",
+      "source": "web",
+      "textFile": "documents/build-17/originals/web/ja.terms.txt",
+      "sha256": "668ce12ed66d3e24c6d499989221c7a64f14ca643b5710793206ab3ce1eacd7f",
+      "evidence": "published-source-and-publication-record"
+    },
+    {
+      "locale": "ja",
+      "document": "privacy",
+      "source": "web",
+      "textFile": "documents/build-17/originals/web/ja.privacy.txt",
+      "sha256": "932f5d987d6f5c005bb9dbb4592b0c1d4a6c66f2f88aaab69ff52d602929d832",
+      "evidence": "published-source-and-retained-http"
+    },
+    {
+      "locale": "ko",
+      "document": "terms",
+      "source": "web",
+      "textFile": "documents/build-17/originals/web/ko.terms.txt",
+      "sha256": "9dc22e419b69a2e11949bfbaed8ff3b469e480abd507f99ab0a42b71082e123d",
+      "evidence": "published-source-and-publication-record"
+    },
+    {
+      "locale": "ko",
+      "document": "privacy",
+      "source": "web",
+      "textFile": "documents/build-17/originals/web/ko.privacy.txt",
+      "sha256": "f62c95b3acb8947b9dcea143e7a1c4118c8eb7a5f401022dfcc6b8d9ebf6e874",
+      "evidence": "published-source-and-retained-http"
+    },
+    {
+      "locale": "pt",
+      "document": "terms",
+      "source": "web",
+      "textFile": "documents/build-17/originals/web/pt.terms.txt",
+      "sha256": "cfad239d3fbadda47dbe742d1562d9f418b62482831719d54df04a408fb49912",
+      "evidence": "published-source-and-publication-record"
+    },
+    {
+      "locale": "pt",
+      "document": "privacy",
+      "source": "web",
+      "textFile": "documents/build-17/originals/web/pt.privacy.txt",
+      "sha256": "21c13307278fd77f4855e66735f18f1983c4d58c97dadc277321a7a13c294a81",
+      "evidence": "published-source-and-retained-http"
+    },
+    {
+      "locale": "ru",
+      "document": "terms",
+      "source": "web",
+      "textFile": "documents/build-17/originals/web/ru.terms.txt",
+      "sha256": "4eb592c07fda806a7ff0fa4fa9e12d00fd5b0f53889108ff256f9ca99238e273",
+      "evidence": "published-source-and-publication-record"
+    },
+    {
+      "locale": "ru",
+      "document": "privacy",
+      "source": "web",
+      "textFile": "documents/build-17/originals/web/ru.privacy.txt",
+      "sha256": "31cdd38c0666f62d2f6d73bb9dead05ead965488698bb9203f66faa1111356f4",
+      "evidence": "published-source-and-retained-http"
+    },
+    {
+      "locale": "th",
+      "document": "terms",
+      "source": "web",
+      "textFile": "documents/build-17/originals/web/th.terms.txt",
+      "sha256": "6454ea430a5bd14a69e7d5c2936acb96cddc6ea6519f0d0e49060bd744c1b6de",
+      "evidence": "published-source-and-publication-record"
+    },
+    {
+      "locale": "th",
+      "document": "privacy",
+      "source": "web",
+      "textFile": "documents/build-17/originals/web/th.privacy.txt",
+      "sha256": "68321b1df00ab610c993fdc1ab9d3c4a472a84eb34606d1a918d1b3290410bd1",
+      "evidence": "published-source-and-retained-http"
+    },
+    {
+      "locale": "tr",
+      "document": "terms",
+      "source": "web",
+      "textFile": "documents/build-17/originals/web/tr.terms.txt",
+      "sha256": "173b634ab8ace64487d074c476e1e1c23f34c336c746bafb2f6edb48284116f1",
+      "evidence": "published-source-and-publication-record"
+    },
+    {
+      "locale": "tr",
+      "document": "privacy",
+      "source": "web",
+      "textFile": "documents/build-17/originals/web/tr.privacy.txt",
+      "sha256": "5266c5032d2ebb5d3c18556a8d786a8844717b4bd12516e1b1a646652d9cf92e",
+      "evidence": "published-source-and-retained-http"
+    },
+    {
+      "locale": "vi",
+      "document": "terms",
+      "source": "web",
+      "textFile": "documents/build-17/originals/web/vi.terms.txt",
+      "sha256": "155479b4bd9f7dff0677f467b28956e3630962305fcc2a85219863d624c32386",
+      "evidence": "published-source-and-publication-record"
+    },
+    {
+      "locale": "vi",
+      "document": "privacy",
+      "source": "web",
+      "textFile": "documents/build-17/originals/web/vi.privacy.txt",
+      "sha256": "d6023f0a6ea6c3eaa48ef6c4a50f3de538c876c1f4938f5bb0396d1c77e99b33",
+      "evidence": "published-source-and-retained-http"
+    },
+    {
+      "locale": "zh",
+      "document": "terms",
+      "source": "web",
+      "textFile": "documents/build-17/originals/web/zh.terms.txt",
+      "sha256": "6ca0beb11a444ef8056b006f6f9a56edefcc8fedf45fb53e0d0e3b5b786484fc",
+      "evidence": "published-source-and-publication-record"
+    },
+    {
+      "locale": "zh",
+      "document": "privacy",
+      "source": "web",
+      "textFile": "documents/build-17/originals/web/zh.privacy.txt",
+      "sha256": "d13c485ec5e3f4eb70cdcb1f260e78a6e7b1da490a67fc3d922a6fbee186024c",
+      "evidence": "published-source-and-retained-http"
+    }
+  ]
+}

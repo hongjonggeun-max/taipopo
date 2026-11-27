@@ -1,0 +1,25 @@
+Prüfentwurf · Version 2026-11-07. Das Datum des Inkrafttretens ist noch nicht bestätigt. Dieses Versions-/Prüfdatum ist kein Wirksamkeitsdatum und ändert nicht das Inkrafttreten der Datenschutzerklärung.
+Gültig ab: wird vor der offiziellen Veröffentlichung bestätigt
+Diese Bedingungen regeln die Nutzung von TAIPOPO („App“) sowie Rechte, Pflichten und Verantwortlichkeiten der Nutzer. Durch Installation oder Nutzung der App stimmt der Nutzer diesen Bedingungen zu.
+1. Zweck und Umfang
+Die App hilft, Arbeitsorte, Anwesenheit, Arbeitsdaten, Fotos, Abrechnungen, Berichte, Backups und zugehörige Einstellungen auf dem Gerät zu verwalten. Funktionen und Bildschirme können sich durch Updates ändern.
+2. Verantwortung des Nutzers
+Der Nutzer ist für Richtigkeit, Rechtmäßigkeit und Nutzungsberechtigung der eingegebenen, aufgenommenen, angehängten oder geteilten Informationen verantwortlich und darf keine Rechte Dritter verletzen.
+3. Fotos, Daten und Dokumente
+Der Nutzer verwaltet Fotos, Arbeitsdaten, Abrechnungen und Berichte, die in der App erstellt oder gespeichert werden. App-Daten und PDFs dienen der Arbeitsverwaltung und garantieren keine Rechtswirkung oder Erfüllung bestimmter Anforderungen.
+4. Gerätespeicher und Backup
+Daten werden standardmäßig auf dem Gerät gespeichert und können durch Geräteverlust, Defekt, App-Entfernung, Systembereinigung oder Zurücksetzen verloren gehen. Wichtige Daten sollten separat über Google Drive backup, Gerätesicherung, externen Speicher, Teilen oder Export gesichert werden.
+5. Google Drive und externes Teilen
+Google Drive backup/restore, lokale oder externe Backups sowie Teilen oder Export erfolgen nur bei direktem Start durch den Nutzer. Zurücksetzen der App-Daten oder Entfernen der App löscht Drive-Backups oder außerhalb kopierte Dateien nicht automatisch. Neue Google Drive-Backups werden vom Nutzer gestartet. Wenn es die Netzwerkrichtlinie für Uploads erlaubt, kann die App beim nächsten Start einen unterbrochenen Upload automatisch fortsetzen, sofern die Voraussetzungen erfüllt sind.
+6. Berechtigungen
+Kamera-, Standort-, Foto- oder Speicher- und Benachrichtigungsberechtigungen werden für die jeweiligen Funktionen verwendet. Werden sie verweigert oder widerrufen, können Funktionen eingeschränkt sein.
+7. Verbotene Nutzung
+Rechtswidrige Nutzung, unbefugter Zugriff, Störung des App-Betriebs, Umgehung von Sicherheit sowie Verbreitung von Schadsoftware, Falschinformationen oder rechtsverletzenden Inhalten sind untersagt.
+8. Änderung oder Einstellung
+TAIPOPO kann Funktionen aus Sicherheits-, Verbesserungs-, Betriebs- oder Rechtsgründen ändern, hinzufügen oder einstellen und wichtige Änderungen nach Möglichkeit mitteilen.
+9. Haftung
+Soweit gesetzlich zulässig haftet TAIPOPO nicht für Verluste durch Nutzereingabefehler, Geräte-, Netzwerk- oder externe Dienstfehler, fehlende Backups, unbefugtes Teilen oder Verstöße gegen diese Bedingungen. Gesetzlich nicht ausschließbare Haftung bleibt unberührt.
+10. Datenschutz
+Datenschutzrichtlinie und Anleitung zum Löschen von Daten regeln personenbezogene Informationen, Berechtigungen, Speicherung und Löschung.
+11. Recht und Kontakt
+Diese Bedingungen unterliegen den Gesetzen der Republik Korea; die Zuständigkeit richtet sich nach anwendbarem Recht. Kontakt: taipopo.app@gmail.com
